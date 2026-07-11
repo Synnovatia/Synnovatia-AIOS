@@ -93,10 +93,11 @@ These are how you know your EVOLV-OS is working:
 │   ├── team-member.md       # Template for team members (sector + role context)
 │   ├── group/key-metrics.md # Auto-generated live metrics (Stripe, HubSpot) — read each session
 │   └── import/              # Drop documents here for Claude to analyze
-├── data/                    # DataOS — local SQLite database + manual metrics baseline
-│   ├── data.db               # Daily snapshots from connected sources
-│   ├── key-metrics.md        # Manual baseline + goals-progress tracking
-│   └── collect.log           # Daily collection job output
+├── data/                    # DataOS + IntelOS — local database, metrics, meeting archive
+│   ├── data.db                    # Daily snapshots from connected sources
+│   ├── key-metrics.md             # Manual baseline + goals-progress tracking
+│   ├── collect.log                # Daily collection job output
+│   └── meeting-summaries/         # Manual/fallback meeting notes (pre-2026-07-11 or non-Zoom)
 ├── scripts/                 # DataOS collectors (Stripe live; HubSpot via MCP; GA manual)
 ├── config/                  # launchd job for daily 6am data collection
 ├── docs/                    # System documentation
@@ -141,6 +142,16 @@ Claude will:
 
 Claude can also run live queries against `data/data.db` directly if you ask about trends over time.
 
+### Finding and saving meetings
+
+Say: **"Find that meeting with [name]"** or **"What did we decide about [topic]?"**
+
+Claude searches your Zoom account directly (meetings, transcripts, AI summaries, recordings) — no manual work needed for any meeting from 2026-07-11 onward, since cloud recording and auto-summary are both on.
+
+For older meetings, or calls on a platform other than Zoom, say: **"Save this meeting summary: [paste]"** — Claude structures it and saves it to `data/meeting-summaries/`.
+
+Slack is not connected (not used in the business).
+
 ### Saving your work
 
 Say: **"Save my work"**
@@ -181,6 +192,8 @@ Claude will read the module's install guide and walk you through it step by step
 | "Update my metrics" | Refreshes key-metrics.md from HubSpot/Stripe + asks for manual numbers |
 | "Write a report on [X]" | Produces a structured, professional output based on your context |
 | "Save my work" | Updates HISTORY.md and docs, then guides you to commit in GitHub Desktop |
+| "Find that meeting with [name]" | Searches Zoom directly for meetings, transcripts, summaries |
+| "Save this meeting summary: [paste]" | Structures and saves to data/meeting-summaries/ |
 
 ### Setting up Cowork scheduled tasks
 

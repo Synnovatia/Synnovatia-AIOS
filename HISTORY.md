@@ -8,6 +8,19 @@
 
 ---
 
+## 2026-07-11 (continued)
+
+### IntelOS Installed
+- Discovered the "meeting recorder" connector already available is Zoom (not Fireflies/Fathom) — recommended sticking with Zoom's built-in AI Companion rather than adding a redundant tool
+- No Slack (not used in the business); no department/team classification (solo practice, single bucket)
+- Diagnosed via live testing that recent real meetings had no summary/recording despite the connector working — found two root causes in Zoom account settings:
+  - "Meeting summary with AI" had "Auto-start when meeting starts" unchecked — fixed
+  - "Automatic recording" was set to "Record to computer" instead of "Record in the cloud" — fixed
+- Both settings changed directly in Jackie's Zoom account (via browser, after she signed in) and verified persisted after reload
+- Created `data/meeting-summaries/` as a manual fallback for pre-fix or non-Zoom meetings
+- Added "find that meeting" / "save this meeting summary" workflows to CLAUDE.md
+- Added `docs/intel-os.md`, noting meetings before 2026-07-11 aren't retrievable via Zoom (recorded locally, not to the cloud)
+
 ## 2026-07-11
 
 ### ContextOS Installed

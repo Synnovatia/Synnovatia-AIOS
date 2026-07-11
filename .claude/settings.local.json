@@ -22,7 +22,15 @@
       "Bash(launchctl load *)",
       "Bash(launchctl list *)",
       "Bash(.venv/bin/python scripts/collect.py)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(grep -E \"^\\\\.env$|data\\\\.db\")",
+      "mcp__mcp-registry__list_connectors",
+      "mcp__mcp-registry__search_mcp_registry",
+      "mcp__f5e04d0d-75dc-4bb7-852e-dcef648c4d8d__search_meetings",
+      "mcp__f5e04d0d-75dc-4bb7-852e-dcef648c4d8d__get_meeting_assets",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__navigate",
+      "mcp__claude-in-chrome__computer"
     ]
   }
 }
