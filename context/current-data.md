@@ -19,13 +19,18 @@
 
 | Metric | Value | As Of | Source |
 |--------|-------|-------|--------|
-| Income, year to date | $17,000 | Jul 2026 | Self-reported |
+| Income, year to date (self-reported total) | $17,000 | Jul 2026 | Self-reported |
+| Stripe revenue, year to date (net of refunds) | $11,785 | Jul 11, 2026 | Stripe (live, `data/data.db`) |
+| Stripe revenue, month to date | $1,599 | Jul 11, 2026 | Stripe (live) |
+| Stripe total customers (all-time) | 48 | Jul 11, 2026 | Stripe (live) |
 | Projected income, full year 2026 (no changes) | ~$35,000 | Jul 2026 | Self-reported estimate |
 | Target income, annualized (with growth plan) | ~$100,000/yr | Goal | Strategy target |
-| Seven Figure Forum members | 4 (target: 6 by Jan 2027) | Jul 2026 | Self-reported |
-| Mastermind for the Messy Middle members | 5 (target: 8-10 by Oct 2026) | Jul 2026 | Self-reported |
+| Seven Figure Forum members | 4 (target: 6 by Jan 2027) | Jul 2026 | HubSpot segment "Seven Figure Forum" |
+| Mastermind for the Messy Middle members | 5 (target: 8-10 by Oct 2026) | Jul 2026 | HubSpot segment "Q1 2026 Mastermind" |
 | Weekly capacity on Synnovatia | ~3 hrs/day | Jul 2026 | Self-reported |
 | Weekly capacity on school (cultural anthropology) | ~20 hrs/week | Jul 2026 | Self-reported |
+
+> **Note:** Stripe revenue ($11,785 YTD, net of refunds) is still lower than self-reported total income ($17,000) — the remaining ~$5,200 gap likely reflects income through non-Stripe channels (cash, check, Quicken-tracked). Both are tracked here until reconciled. See `context/group/key-metrics.md` for the live auto-generated version of the Stripe numbers.
 
 ## Current State
 

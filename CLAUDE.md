@@ -87,11 +87,18 @@ These are how you know your EVOLV-OS is working:
 │   ├── business-info.md     # What Synnovatia does
 │   ├── personal-info.md     # Who Jackie is, her role
 │   ├── strategy.md          # Current priorities and goals
-│   ├── current-data.md      # Key metrics and current state
+│   ├── current-data.md      # Key metrics and current state (manual snapshot)
 │   ├── brand-voice.md       # "Different Is Better Than Better" positioning & voice rules
 │   ├── general-business.md  # Shared company snapshot — give to team members
 │   ├── team-member.md       # Template for team members (sector + role context)
+│   ├── group/key-metrics.md # Auto-generated live metrics (Stripe, HubSpot) — read each session
 │   └── import/              # Drop documents here for Claude to analyze
+├── data/                    # DataOS — local SQLite database + manual metrics baseline
+│   ├── data.db               # Daily snapshots from connected sources
+│   ├── key-metrics.md        # Manual baseline + goals-progress tracking
+│   └── collect.log           # Daily collection job output
+├── scripts/                 # DataOS collectors (Stripe live; HubSpot via MCP; GA manual)
+├── config/                  # launchd job for daily 6am data collection
 ├── docs/                    # System documentation
 │   ├── _index.md            # Documentation routing index
 │   └── _templates/          # Templates for creating new docs
@@ -118,7 +125,21 @@ Say this at the start of every session:
 
 > **"Initialize my session"**
 
-Claude will read your context files, `HISTORY.md` (what's been built), and `docs/_index.md` (documentation routing), then confirm it understands your business, current priorities, and what you're working on.
+Claude will read your context files, `HISTORY.md` (what's been built), `docs/_index.md` (documentation routing), and `context/group/key-metrics.md` (latest business numbers), then confirm it understands your business, current priorities, and what you're working on.
+
+### Updating your metrics
+
+Say: **"Update my metrics"**
+
+Claude will:
+1. Pull live numbers from connected sources (HubSpot CRM, Stripe revenue)
+2. Ask you for numbers from sources that aren't auto-connected (Quicken, Google Analytics, mastermind headcounts)
+3. Rewrite `context/group/key-metrics.md` and `context/current-data.md` with the fresh snapshot
+
+**Live/automated:** HubSpot (CRM), Stripe (revenue — runs daily at 6am automatically via `scripts/collect.py`)
+**Manual (tell Claude when asked):** Quicken, Google Analytics, mastermind enrollment counts
+
+Claude can also run live queries against `data/data.db` directly if you ask about trends over time.
 
 ### Saving your work
 
@@ -157,6 +178,7 @@ Claude will read the module's install guide and walk you through it step by step
 | "Update my context" | Updates context/ files with new info you provide |
 | "What's my current status?" | Reads context + HISTORY.md, gives a summary |
 | "Brainstorm [topic]" | Explores options and trade-offs before taking action |
+| "Update my metrics" | Refreshes key-metrics.md from HubSpot/Stripe + asks for manual numbers |
 | "Write a report on [X]" | Produces a structured, professional output based on your context |
 | "Save my work" | Updates HISTORY.md and docs, then guides you to commit in GitHub Desktop |
 

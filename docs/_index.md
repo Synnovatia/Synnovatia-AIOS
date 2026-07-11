@@ -14,7 +14,7 @@
 
 | Condition | Doc | Summary |
 |-----------|-----|---------|
-| _(docs will appear here as you build systems — the /commit command adds them automatically)_ | | |
+| Working with metrics, collectors, or `data/data.db` | `docs/data-os.md` | Daily data pipeline — Stripe (live) + HubSpot (on-demand), auto-generates `context/group/key-metrics.md` |
 
 ## Integrations
 

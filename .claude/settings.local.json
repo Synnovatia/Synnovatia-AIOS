@@ -3,7 +3,26 @@
     "allow": [
       "Bash(pandoc -t markdown \"/Users/jackienagel/Downloads/Synnovatia_DiB_Brand_Voice_Messaging_OnePager.docx\")",
       "Bash(python3 -c \"import docx\")",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(grep -i \"\\\\.env$\")",
+      "Bash(git rev-list *)",
+      "Bash(ls -la data)",
+      "Bash(ls -la context/group)",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__get_crm_objects",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__search_crm_objects",
+      "Bash(python3 -m venv --help)",
+      "Bash(python3 -m pip --version)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(.venv/bin/python scripts/collect.py --sources stripe)",
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(.venv/bin/python scripts/generate_metrics.py)",
+      "Bash(cp \"/Users/jackienagel/Desktop/Synnovatia AIOS/config/com.aios.data-collect.plist\" ~/Library/LaunchAgents/com.aios.data-collect.plist)",
+      "Bash(launchctl unload *)",
+      "Bash(launchctl load *)",
+      "Bash(launchctl list *)",
+      "Bash(.venv/bin/python scripts/collect.py)",
+      "Bash(git add *)"
     ]
   }
 }
