@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc -t markdown \"/Users/jackienagel/Downloads/Synnovatia_DiB_Brand_Voice_Messaging_OnePager.docx\")",
+      "Bash(python3 -c \"import docx\")",
+      "Bash(python3)"
+    ]
+  }
+}
