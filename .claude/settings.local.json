@@ -30,7 +30,20 @@
       "mcp__f5e04d0d-75dc-4bb7-852e-dcef648c4d8d__get_meeting_assets",
       "mcp__claude-in-chrome__tabs_context_mcp",
       "mcp__claude-in-chrome__navigate",
-      "mcp__claude-in-chrome__computer"
+      "mcp__claude-in-chrome__computer",
+      "Bash(ls reference/)",
+      "Bash(ls docs/_templates/)",
+      "Bash(grep -n -A 20 -i \"task audit\" GETTING-STARTED.md)",
+      "Read(//Users/jackienagel/Desktop/**)",
+      "Bash(awk -F',' '{print $8}')",
+      "Bash(rm -f \"/Users/jackienagel/Desktop/Synnovatia AIOS/client-reengagement/.DS_Store\")",
+      "Bash(python3 client-reengagement/scripts/check_reengagement.py)",
+      "Bash(python3 client-reengagement/scripts/list_pending_replies.py)",
+      "Bash(python3 client-reengagement/scripts/list_opportunities.py)",
+      "Bash(python3 -c ' *)",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__search_threads",
+      "Bash(python3 client-reengagement/scripts/response_rate_report.py)",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__create_draft"
     ]
   }
 }

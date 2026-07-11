@@ -8,6 +8,21 @@
 
 ---
 
+## 2026-07-11 (continued, part 2)
+
+### Task Audit Started
+- Created `context/task-audit.md` — scoreboard for the Task Automation % KPI, drafted from known context plus recurring items spotted in the Zoom calendar
+- Open questions still pending from Jackie: time spent on LinkedIn metrics/invoicing/mastermind admin, mastermind scheduling process, scope of "bookkeeping" help wanted, other recurring tasks
+
+### Client Re-engagement System Migrated
+- Found and migrated a pre-existing, fully-built re-engagement system from Jackie's Desktop (`synnovatia-client-reengagement`) into the workspace as `client-reengagement/` — 176-client roster, 6-month cadence, Gmail draft generation, reply/opportunity tracking, all pure-stdlib Python (no dependencies)
+- Fixed one data gap: Marc Friedenberg had no reference date; set to 2026-07-11 per Jackie's instruction (only Gmail trace was a thin 2017 auto-reply)
+- Verified full pipeline end-to-end: 156 clients due, 4 awaiting reply check, 1 opportunity flagged (Ginny Kenyon — Idaho Medicare consulting + Chronic Disease University)
+- Added `docs/client-reengagement.md`, flagged a possible Monday-vs-Tuesday send-day discrepancy in the existing outreach log for Jackie to check
+- Drafted the first batch of 5 re-engagement emails into Gmail (Angela Broadwell, Beryl Smith, Christy Carroll, Sivakumar Veerappan, Lesley Goldberg) — personalized from real Gmail/HubSpot history, never auto-sent
+- Set a one-time scheduled reminder for Tuesday 2026-07-14 at 9am to prompt Jackie to review and send those drafts
+- **Note:** `client-reengagement/data/roster.csv` and `meeting_notes.csv` contain real client PII (names, emails, personal notes). This now lives in the private GitHub repo along with everything else — flagging for visibility, not blocking, since the repo is private and Jackie approved the migration.
+
 ## 2026-07-11 (continued)
 
 ### IntelOS Installed

@@ -108,6 +108,10 @@ These are how you know your EVOLV-OS is working:
 │   ├── infra-os/            # Version control + documentation
 │   ├── data-os/             # Business data pipeline
 │   └── intel-os/            # Meeting + Slack intelligence
+├── client-reengagement/     # 6-month client check-in cadence (176-client roster, migrated 2026-07-11)
+│   ├── README.md            # Full weekly workflow
+│   ├── data/                 # roster.csv, due_now.csv, outreach_log.csv, meeting_notes.csv
+│   └── scripts/               # check_reengagement.py, log_outreach.py, list_opportunities.py, etc.
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
 ├── reference/               # Templates, examples, reusable patterns
@@ -152,6 +156,21 @@ For older meetings, or calls on a platform other than Zoom, say: **"Save this me
 
 Slack is not connected (not used in the business).
 
+### Client re-engagement
+
+A full 6-month check-in cadence system lives in `client-reengagement/` (176-client roster, originally built outside this workspace and migrated in on 2026-07-11). Weekly rhythm, send day is Tuesday:
+
+Say things like:
+- **"Who's due for a check-in?"** → runs `check_reengagement.py`, refreshes `client-reengagement/data/due_now.csv`
+- **"Draft the next batch"** → Claude drafts personalized re-engagement emails into Gmail (oldest-overdue first), pulling context from HubSpot/past notes. Never sent automatically — always your review in Gmail.
+- **"I sent to [name]"** → logs it: `log_outreach.py sent <email>`, resets their cadence clock
+- **"Who's awaiting a reply check?"** → runs `list_pending_replies.py`; Claude checks Gmail for actual replies and logs outcomes (`responded` / `no_response` / `meeting_scheduled`)
+- **"[Name]'s meeting happened, here's what we discussed: ..."** → logs `meeting_completed`, drafts a personalized post-call follow-up email, flags any opportunity + next action
+- **"Any open opportunities?"** → runs `list_opportunities.py` — surfaces pending post-call emails and flagged follow-up opportunities
+- **"How's the response rate looking?"** → runs `response_rate_report.py` — reply rate by day of week, to confirm Tuesday is actually the best send day
+
+Full details: `client-reengagement/README.md`
+
 ### Saving your work
 
 Say: **"Save my work"**
@@ -194,6 +213,8 @@ Claude will read the module's install guide and walk you through it step by step
 | "Save my work" | Updates HISTORY.md and docs, then guides you to commit in GitHub Desktop |
 | "Find that meeting with [name]" | Searches Zoom directly for meetings, transcripts, summaries |
 | "Save this meeting summary: [paste]" | Structures and saves to data/meeting-summaries/ |
+| "Who's due for a check-in?" | Refreshes and shows who's overdue in the client re-engagement cadence |
+| "Draft the next batch" | Drafts personalized re-engagement emails into Gmail for your review |
 
 ### Setting up Cowork scheduled tasks
 
