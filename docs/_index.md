@@ -18,6 +18,7 @@
 | Finding meetings, transcripts, or summaries | `docs/intel-os.md` | Zoom-based meeting intelligence — live search, auto-recording + auto-summary as of 2026-07-11 |
 | Working with client check-ins, re-engagement, or `client-reengagement/` | `docs/client-reengagement.md` | 6-month cadence system — 176-client roster, Gmail drafts, reply/opportunity tracking |
 | Drafting LinkedIn content, outreach, or prospecting | `context/linkedin-marketing.md` | ICP, content pillars/cadence, outreach templates, hard boundary against automating LinkedIn actions |
+| Drafting HubSpot marketing emails (Active Engagers/Drifting/Lapsed segments) | `context/hubspot-marketing.md` | Segment definitions, cadence per segment, "What I'm Watching" content thread — Claude drafts, Jackie sends via HubSpot |
 
 ## Integrations
 

@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-07-12 (continued, part 6)
+
+### HubSpot Marketing Built — 1:1 Client Generation
+- Verified HubSpot segments before building: Active Engagers (340, opened/clicked within 90 days) confirmed via live property filter exact match; Drifting (382) and Lapsed (511) taken as Jackie's ground truth since saved-list membership isn't queryable through this connector (a rough date-filter approximation only found 88, confirming the saved lists use more precise logic than raw filters)
+- Designed segment-specific cadence: Active Engagers biweekly (direct CTA — general + a Messy Middle-fit-women variant targeting the 397-contact overlap segment), Drifting monthly (value-first), Lapsed bi-monthly (explicitly NOT a repeat of a prior "we miss you"/"stay in touch" win-back sequence — pure value only, reusing/adapting the same content at lower frequency)
+- Introduced a recurring "What I'm Watching" economic-trends content thread, cross-cutting Drifting and Lapsed sends, positioning Jackie as someone who tracks the broader economy for her clients
+- Confirmed execution boundary: no tool access to create/send HubSpot marketing emails — Claude drafts, Jackie builds and sends in HubSpot
+- 3 recurring scheduled reminders set (2nd/16th, 9th, 23rd of odd months) to draft each segment's content on cadence
+- Drafted and saved the first round of copy: `outputs/hubspot-marketing/2026-07-12-first-round-drafts.md`
+- Documented in `context/hubspot-marketing.md`, logged in task audit and docs index
+
 ## 2026-07-12 (continued, part 5)
 
 ### LinkedIn Marketing Built
