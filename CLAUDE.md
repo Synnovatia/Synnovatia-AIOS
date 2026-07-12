@@ -112,6 +112,8 @@ These are how you know your EVOLV-OS is working:
 │   ├── README.md            # Full weekly workflow
 │   ├── data/                 # roster.csv, due_now.csv, outreach_log.csv, meeting_notes.csv
 │   └── scripts/               # check_reengagement.py, log_outreach.py, list_opportunities.py, etc.
+├── personal/                # Non-business reference docs (workout plans, etc.)
+│   └── workout-plan.md      # Strength training program (Fortify-compatible)
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
 ├── reference/               # Templates, examples, reusable patterns

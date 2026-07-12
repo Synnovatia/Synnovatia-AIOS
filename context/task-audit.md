@@ -47,10 +47,10 @@
 
 | Task | Frequency | Est. Time | Automation Potential | Status | Notes |
 |---|---|---|---|---|---|
-| Grocery shopping / menu planning | Weekly | TBD | Medium | Not started | Claude can generate menus/lists; shopping itself stays manual |
+| Grocery shopping / menu planning | Weekly (Tuesday check-in) | TBD | Medium | **In Progress** | Full profile in `personal/meal-planning.md`. Diet: Mayo Clinic-style, high protein, whole foods. Recurring reminder set 2026-07-12 (Tuesdays 6:06pm) — Jackie checks sale ads at Sprouts/Smart & Final/Albertsons herself and reports back; Claude builds the dinner menu + shopping list. (Tried browser-automating the sale scan first — too fragile, same lesson as LinkedIn.) |
 | Food delivery coordination | As needed | TBD | Medium | Not started | |
 | Workout planning | Recurring (calendar shows "Workout // Strength") | TBD | High | Not started | Claude can generate/adjust a plan; execution is physical |
-| Working out (time block) | Recurring | TBD | Low | Not started | Flagged 2026-07-12 as a protected time block to schedule, alongside workout *planning* above — execution is inherently physical/human |
+| Working out (time block) | Recurring, weekdays + Sat, 8:30am start | ~1-1.5 hrs/day, 5 days/wk | High | **Automated** (2026-07-12) | Google Calendar recurring series: Mon 3-mi walk (8:30-9:30), Tue hill warm-up+strength (8:30-9:45), Wed long hike 90+min (8:30-10:00), Thu hill warm-up+strength (8:30-9:45), Sat 4-5mi walk (8:30-10:00). Fri/Sun off. No end date. Conflicts get moved per-occurrence on request — e.g. Wed 7/22 hike moved to 9:15 (Strategize call at 8:00), Thu 7/23 strength skipped (heavy hiking days). |
 | Weight stabilization/reduction tracking | Ongoing | TBD | Medium | Not started | |
 | Cooking | Recurring | TBD | Low | Not started | Flagged 2026-07-12. Claude can help with menu planning (see grocery row above) but the cooking itself is physical/human |
 | Cleaning | Recurring | TBD | Low | Not started | Flagged 2026-07-12 |

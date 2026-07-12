@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-07-12 (continued, part 4)
+
+### New `personal/` Folder — Workout & Meal Planning
+- Built a full workout schedule on Google Calendar: 5 recurring weekly sessions (Mon walk, Tue/Thu hill warm-up + strength, Wed long hike, Sat walk), 8:30am starts, color-coded Peacock (light blue); school events color-coded Grape (purple)
+- Handled two real one-off conflicts per Jackie's own rule (move if it bumps a meeting): moved the 7/22 hike to 9:15am (clear of a client call), skipped 7/23 strength training (heavy hiking days)
+- Designed a full-body A/B strength program (`personal/workout-plan.md`) matched to her equipment, goals (strength, bone density, longevity, balance, energy), and Fortify's progressive-overload tracking model
+- Captured a full diet/meal-planning profile (`personal/meal-planning.md`) — Mayo Clinic diet-style, high protein, whole foods, specific breakfast/lunch patterns, dinner protein rotation
+- Attempted live sale-scanning on Sprouts' site via browser automation — confirmed pricing data is real and accurate when reached, but the search UI was too unreliable for repeatable weekly use. Same conclusion as the earlier LinkedIn decision: paste-in beats fragile automation. Recurring Tuesday 6:06pm reminder set instead — Jackie checks sale ads herself, Claude builds the week's dinner menu and shopping list from what she reports
+- Added `personal/` to the workspace structure in CLAUDE.md
+
 ## 2026-07-12 (continued, part 3)
 
 ### Task Audit — Backlog Rounded Out
