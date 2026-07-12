@@ -19,6 +19,8 @@ You are the founder and sole practitioner of Synnovatia. You are semi-retired by
 
 You are also currently a **cultural anthropology student**, dedicating roughly **20 hours a week** to school. This is a real, ongoing capacity constraint — factor it in when helping plan time, workload, or new commitments.
 
+Your husband is **Leon Carroll**, a New York Times bestselling author. Household finances and bill-paying span both his business, **The Veritas Collective**, and Synnovatia — see `context/task-audit.md` for the twice-monthly invoicing/bookkeeping workflow that covers all of it.
+
 ## Key Responsibilities
 
 - Delivering 1:1 "solutions on the fly" consulting and monthly retainer engagements
