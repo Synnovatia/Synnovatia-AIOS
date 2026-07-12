@@ -8,6 +8,14 @@
 
 ---
 
+## 2026-07-12 (continued, part 5)
+
+### LinkedIn Marketing Built
+- Created `context/linkedin-marketing.md`: ICP (B2B service owners, $350K-$4M, bootstrapped, "Messy Middle" language), 3 connection-request templates + 1 follow-up template, content pillars (thought leadership/story/client win), commenting guidance
+- Hard boundary set: no browser automation on LinkedIn itself (posting/commenting/connecting) — real risk of account restriction, not just fragility. Claude drafts, Jackie always acts manually.
+- Recurring reminder set (later revised): batch-drafts all 3 upcoming posts on Fridays 9am; Jackie schedules each via LinkedIn's own scheduler for 7:30am Mon/Wed/Fri
+- Logged in `context/task-audit.md` and `docs/_index.md`
+
 ## 2026-07-12 (continued, part 4)
 
 ### New `personal/` Folder — Workout & Meal Planning

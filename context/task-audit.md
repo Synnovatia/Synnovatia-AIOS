@@ -40,7 +40,9 @@
 |---|---|---|---|---|---|
 | Grow Messy Middle membership | New | TBD | Medium | Not started | Currently 4 real members (Elise, Wilma, Amy, Sandra) + Jackie. Women-only group, $250K-$500K band. |
 | Grow Seven Figure Forum membership | New | TBD | Medium | Not started | Currently 4 members (Zoey Smith, Mark Chapman, Christina Carlson, Anne Laguzza) + Jackie. $1M+ band. Target: 6 members by Jan 2027 (see `context/strategy.md`). |
-| LinkedIn marketing (content/outreach, not just metrics tracking) | New | TBD | Medium | Not started | Distinct from the existing weekly LinkedIn metrics check-in — this is about actively marketing on LinkedIn (content, engagement, prospecting), not just measuring it. |
+| LinkedIn marketing — original content | Draft: Fridays 9am (batch of 3). Live: Mon/Wed/Fri 7:30am | ~15-20 min review/schedule on Friday | High | **Fully Built** (2026-07-12) | Full system in `context/linkedin-marketing.md`. Friday reminder batch-drafts all 3 posts (Mon thought leadership, Wed story, Fri client win) in brand voice. Jackie schedules each via LinkedIn's own scheduler for 7:30am — no auto-posting (LinkedIn detects/restricts automation, real account risk). |
+| LinkedIn marketing — outreach/prospecting | As needed | TBD | Medium | **Templates Built** | ICP + 3 connection-request templates + 1 follow-up template in `context/linkedin-marketing.md`. Claude can't safely search/connect on LinkedIn itself — Jackie does the actual searching/connecting; Claude drafts messages when given a prospect. |
+| LinkedIn marketing — commenting/engagement | Reactive | TBD | Low | **Guidance Built** | No live visibility into Jackie's feed, so this stays reactive — Jackie shares what she's seeing, Claude drafts comment angles per the voice guidance in `context/linkedin-marketing.md`. |
 | Re-engage less-engaged leads (HubSpot) | New | TBD | Medium | Not started | 7,665 HubSpot contacts sit at "lead" lifecycle stage (as of 2026-07-12) — a large, largely untapped pool distinct from the 176-client `client-reengagement/` roster (which is for past *clients*, not never-converted leads). Needs its own scoping: segmentation, messaging, cadence. |
 
 ## Personal
