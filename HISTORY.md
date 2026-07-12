@@ -8,6 +8,25 @@
 
 ---
 
+## 2026-07-12 (continued)
+
+### Fixed Daily DataOS Automation (Real Bug)
+- Discovered the 6am automated Stripe collection had been silently failing since setup — a macOS TCC privacy restriction blocks background (launchd) processes from reading files inside the protected Desktop folder
+- The venv's Python binary (nested in Developer Command Line Tools) couldn't be granted Full Disk Access — stayed permanently greyed out in System Settings, a known macOS quirk for non-bundle binaries in deep framework paths
+- Fix: routed the launchd job through `/bin/bash -c "..."` instead of invoking the venv python directly — a standard system binary that Full Disk Access handles correctly. Verified working end-to-end after Jackie granted access to `/bin/bash`.
+- Workspace stays on the Desktop as Jackie wanted (declined the alternative of moving it outside the protected folder)
+- Documented in `docs/data-os.md` with a warning not to revert the plist to direct python invocation
+
+### Task Audit — Business Side Fully Closed Out
+- Closed all remaining open items from the business task audit (see previous session)
+
+### School / Personal Round Started
+- Captured school schedule: current class (Biological Anthropology) ends 2026-07-17; next term (Bioanthropology Lab + Statistics, online, self-paced, weekly deadlines) runs 2026-08-31 to 2026-10-25
+- Established a hard boundary in `context/personal-info.md`: Claude may never draft anything Jackie submits as coursework (her program prohibits AI in documentation) — Claude's role is limited to discussion/comprehension help and logistics (reminders, scheduling)
+- Built Google Calendar study-block schedule with Pomodoro structure (25 min work/5 min break): 10:30-12:00, 12:30-1:30, 3:00-5:00, for both the current week (Jul 13-17) and as a recurring weekday pattern for the next term (Aug 31-Oct 25)
+- Scheduled a one-time check-in for 2026-08-25 to get the real syllabus deadlines and build weekly deadline reminders once known
+- Task audit personal/school section updated to reflect all of this — only Messy Middle growth marketing remains open workspace-wide
+
 ## 2026-07-12 (new session)
 
 ### Task Audit Completed (Business Side)

@@ -44,7 +44,10 @@
 | Vacation planning | As needed | TBD | Medium | Not started | |
 | Home maintenance planning | As needed | TBD | Medium | Not started | |
 | Birthday/anniversary cards & gifts | Recurring (per occasion) | TBD | High | Not started | Claude can track dates and draft/suggest gifts |
-| School homework | Recurring (calendar shows multiple "Homework" blocks/week) | ~20 hrs/week total (school capacity, not just homework) | Low | N/A | Not an automation target — core capacity constraint, see `context/personal-info.md` |
+| School homework/coursework | Weekly deadlines, self-paced | ~20 hrs/week total (school capacity, not just homework) | Low | N/A | Not an automation target — core capacity constraint, see `context/personal-info.md`. **Hard boundary: no AI in anything submitted** — Claude may only discuss/explain readings to help Jackie's own understanding, never draft notes/answers. |
+| School: study-block calendar (this week) | Mon-Fri, 2026-07-13 to 07-17 | — | High | **Automated** (2026-07-12) | Google Calendar events, Pomodoro-structured (25/5): 10:30-12:00 (study), 12:30-1:30 (study), 3:00-5:00 (homework), Biological Anthropology final week |
+| School: study-block calendar (next term) | Mon-Fri, 2026-08-31 to 10-25 | — | High | **Automated** (2026-07-12) | Same 3-block Pomodoro pattern set up as recurring weekday Google Calendar events for Bioanthropology Lab & Statistics. Deadlines within each block still unknown — see check-in below. |
+| School: weekly deadline reminders | Weekly (once term starts) | — | High | Scheduled | One-time check-in scheduled 2026-08-25 to get the real syllabus deadlines and set up recurring deadline reminders once known (separate from the study-block calendar, which is already built). |
 
 ---
 

@@ -69,6 +69,7 @@ cat data/collect.log
 - **Google Analytics is not connected.** Blocked by a Google Cloud org policy (`iam.disableServiceAccountKeyCreation`) on Jackie's account. Update GA numbers manually via "update my metrics" instead of trying to re-enable the policy.
 - **Quicken has no API.** Manual updates only.
 - **`data/key-metrics.md` vs `context/group/key-metrics.md`:** the former is a manually-maintained baseline + goals tracker; the latter is fully auto-generated from `data/data.db` on every collection run. Don't confuse the two.
+- **The launchd job runs through `/bin/bash -c "..."`, not the venv python directly.** Fixed 2026-07-12: the workspace lives on the Desktop, which macOS's TCC privacy system protects from background processes. The venv's python binary (a symlink into `/Library/Developer/CommandLineTools/...`) couldn't be granted Full Disk Access — it stayed permanently greyed out in System Settings, a known macOS quirk with non-bundle binaries in deep framework paths. Routing through `/bin/bash` (a standard top-level system binary) let Jackie grant Full Disk Access successfully. If the plist's `ProgramArguments` is ever changed back to invoke the venv python directly, this will silently break again with a `PermissionError` on `pyvenv.cfg`.
 
 ## Dependencies
 

@@ -7,8 +7,9 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/jackienagel/Desktop/Synnovatia AIOS/.venv/bin/python</string>
-        <string>/Users/jackienagel/Desktop/Synnovatia AIOS/scripts/collect.py</string>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>'/Users/jackienagel/Desktop/Synnovatia AIOS/.venv/bin/python' '/Users/jackienagel/Desktop/Synnovatia AIOS/scripts/collect.py'</string>
     </array>
 
     <key>StartCalendarInterval</key>

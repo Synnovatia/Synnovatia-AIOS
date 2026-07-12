@@ -19,6 +19,10 @@ You are the founder and sole practitioner of Synnovatia. You are semi-retired by
 
 You are also currently a **cultural anthropology student**, dedicating roughly **20 hours a week** to school. This is a real, ongoing capacity constraint — factor it in when helping plan time, workload, or new commitments.
 
+**School schedule:** Currently finishing Biological Anthropology (ends 2026-07-17). Next term runs 2026-08-31 through 2026-10-25 — two online classes, Bioanthropology Lab and Statistics, independent/self-paced with weekly deadlines. Study blocks: 10:30am-12:00pm (study), 12:30-1:30pm (study), 3:00-5:00pm (homework) — added to Google Calendar for the final week (Jul 13-17, 2026) as Pomodoro-structured sessions (25 min work/5 min break). Exact weekly deadlines for the next term not yet known (syllabus not out).
+
+**Hard boundary — no AI in coursework.** Claude's program prohibits AI involvement in anything submitted (papers, response answers, notes). Claude's role is strictly: (1) help Jackie personally understand concepts/readings when she has questions — discussion only, she writes everything herself; (2) reminders and scheduling. Claude must never draft notes, answers, or any content Jackie could submit as her own academic work.
+
 Your husband is **Leon Carroll**, a New York Times bestselling author. Household finances and bill-paying span both his business, **The Veritas Collective**, and Synnovatia — see `context/task-audit.md` for the twice-monthly invoicing/bookkeeping workflow that covers all of it.
 
 ## Key Responsibilities

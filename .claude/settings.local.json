@@ -44,7 +44,12 @@
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__search_threads",
       "Bash(python3 client-reengagement/scripts/response_rate_report.py)",
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__create_draft",
-      "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__create_event"
+      "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__create_event",
+      "Bash(readlink -f .venv/bin/python3)",
+      "Bash(python3 -c \"import os; print\\(os.path.realpath\\('.venv/bin/python3'\\)\\)\")",
+      "Bash(launchctl unload ~/Library/LaunchAgents/com.aios.data-collect.plist 2>/dev/null *)",
+      "Bash(launchctl start *)",
+      "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__delete_event"
     ]
   }
 }
