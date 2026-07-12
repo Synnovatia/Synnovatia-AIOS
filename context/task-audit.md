@@ -19,7 +19,9 @@
 | Identify potential clients (LinkedIn/database) + outreach strategy | Not yet scheduled | TBD | Medium | Not started | Claude can draft prospect lists and outreach angles; sending/relationship-building stays human |
 | Re-engage former clients | Weekly (Tuesdays) | TBD | High | **In Progress** | Full system migrated from a pre-existing build 2026-07-11: `client-reengagement/` — 176-client roster, 6-month cadence, Gmail draft generation, opportunity tracking. 156 currently due; 4 awaiting reply check; 1 opportunity flagged (Ginny Kenyon) |
 | Respond to email (general) | Daily | ~30 min/day (~3.5 hrs/week) | Medium | Not started | Claude could draft/triage responses for review; sending stays human |
-| Rebrand rollout (website redesign, DiB positioning) | One-time project, not recurring | TBD | Medium | In Progress | `context/brand-voice.md` is ready to drive copy; website build itself is a project, not a recurring task |
+| Rebrand rollout — website redesign | One-time project, not recurring | TBD | Medium | In Progress | New site build reflecting the "Different Is Better Than Better" positioning. `context/brand-voice.md` ready to drive copy. |
+| Rebrand rollout — style guide | One-time project, not recurring | TBD | Medium | In Progress | An existing `Style Guide Synnovatia.pdf` was spotted on Jackie's Desktop (2026-07-11, during the client re-engagement folder search) — worth reviewing to see if it should be updated/merged with the new DiB brand voice rather than started fresh. |
+| Rebrand rollout — brand voice | One-time project, not recurring | TBD | Medium | **Built** | `context/brand-voice.md` — positioning thesis, voice rules, messaging pillars, locked CTA copy, AI-tell avoidance policy. Ready to drive all future copy/content work. |
 
 ## Client & Mastermind Delivery
 
@@ -31,7 +33,15 @@
 | Mastermind: Monday "hot topics" email | Seven Figure Forum: irregular (4-7 week gaps, always Friday) — Aug 7, Sep 11, Oct 30, Dec 11 2026. Messy Middle: every other Friday, restarts Q4 2026 (Oct 9, Oct 23, Nov 6, Nov 20, Dec 4, Dec 18) | Small, but wants a reminder | High | **Fully Built** | 20 one-time reminders scheduled 2026-07-11: 8 for Seven Figure Forum (Zoey Smith, Mark Chapman, Christina Carlson, Anne Laguzza — $1M+ band), 12 for Messy Middle (Elise Eidsness, Wilma Nachsin, Amy Hage, Sandra Roe — $250K-$500K band). Each drafts the hot-topics email into Gmail and researches 2 articles matched to the group's revenue band. |
 | Mastermind: Wednesday agenda day | Same cadence as above | Small | Medium | **Fully Built** | Jackie drafts the agenda herself from member feedback and posts to Google Calendar — Claude's job is just the reminder + having the 2 articles ready, not drafting the agenda. Reminders scheduled alongside the Monday ones. |
 | Mastermind: Messy Middle meeting dates | 6 dates, Q4 2026 | — | High | **Automated** (2026-07-11) | Added to Jackie's Google Calendar: Oct 9, Oct 23, Nov 6, Nov 20, Dec 4, Dec 18, 8:00-9:15am Pacific. No attendee invites sent — calendar blocks only. |
-| Grow Messy Middle membership (marketing) | New, not yet scoped | TBD | Medium | Not started | Currently 4 real members (Elise, Wilma, Amy, Sandra) + Jackie. Women-only group. Flagged 2026-07-11 as a target for membership growth — not yet planned. |
+
+## Marketing & Growth Initiatives (flagged 2026-07-12, not yet scoped)
+
+| Task | Frequency | Est. Time | Automation Potential | Status | Notes |
+|---|---|---|---|---|---|
+| Grow Messy Middle membership | New | TBD | Medium | Not started | Currently 4 real members (Elise, Wilma, Amy, Sandra) + Jackie. Women-only group, $250K-$500K band. |
+| Grow Seven Figure Forum membership | New | TBD | Medium | Not started | Currently 4 members (Zoey Smith, Mark Chapman, Christina Carlson, Anne Laguzza) + Jackie. $1M+ band. Target: 6 members by Jan 2027 (see `context/strategy.md`). |
+| LinkedIn marketing (content/outreach, not just metrics tracking) | New | TBD | Medium | Not started | Distinct from the existing weekly LinkedIn metrics check-in — this is about actively marketing on LinkedIn (content, engagement, prospecting), not just measuring it. |
+| Re-engage less-engaged leads (HubSpot) | New | TBD | Medium | Not started | 7,665 HubSpot contacts sit at "lead" lifecycle stage (as of 2026-07-12) — a large, largely untapped pool distinct from the 176-client `client-reengagement/` roster (which is for past *clients*, not never-converted leads). Needs its own scoping: segmentation, messaging, cadence. |
 
 ## Personal
 
@@ -40,7 +50,11 @@
 | Grocery shopping / menu planning | Weekly | TBD | Medium | Not started | Claude can generate menus/lists; shopping itself stays manual |
 | Food delivery coordination | As needed | TBD | Medium | Not started | |
 | Workout planning | Recurring (calendar shows "Workout // Strength") | TBD | High | Not started | Claude can generate/adjust a plan; execution is physical |
+| Working out (time block) | Recurring | TBD | Low | Not started | Flagged 2026-07-12 as a protected time block to schedule, alongside workout *planning* above — execution is inherently physical/human |
 | Weight stabilization/reduction tracking | Ongoing | TBD | Medium | Not started | |
+| Cooking | Recurring | TBD | Low | Not started | Flagged 2026-07-12. Claude can help with menu planning (see grocery row above) but the cooking itself is physical/human |
+| Cleaning | Recurring | TBD | Low | Not started | Flagged 2026-07-12 |
+| Yard work | Recurring | TBD | Low | Not started | Flagged 2026-07-12 |
 | Vacation planning | As needed | TBD | Medium | Not started | |
 | Home maintenance planning | As needed | TBD | Medium | Not started | |
 | Birthday/anniversary cards & gifts | Recurring (per occasion) | TBD | High | Not started | Claude can track dates and draft/suggest gifts |

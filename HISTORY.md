@@ -8,6 +8,13 @@
 
 ---
 
+## 2026-07-12 (continued, part 3)
+
+### Task Audit — Backlog Rounded Out
+- Added a new "Marketing & Growth Initiatives" section: Messy Middle growth, Seven Figure Forum growth (target 6 by Jan 2027), LinkedIn marketing (distinct from the existing metrics check-in), and re-engaging HubSpot's 7,665 "lead"-stage contacts (a pool distinct from the 176-client re-engagement roster) — all flagged, none yet scoped
+- Expanded the Personal section: working out (as a protected time block), cooking, cleaning, yard work — flagged for future scoping
+- Broke the rebrand rollout into three explicit line items: website redesign (in progress), style guide (in progress — noted an existing `Style Guide Synnovatia.pdf` on Jackie's Desktop worth reviewing/merging rather than starting fresh), and brand voice (built — `context/brand-voice.md`)
+
 ## 2026-07-12 (continued)
 
 ### Fixed Daily DataOS Automation (Real Bug)
