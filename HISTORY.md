@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-07-12 (new session)
+
+### Task Audit Completed (Business Side)
+- Captured real time estimates: LinkedIn check-in (15 min/wk), invoicing/bookkeeping/bill-pay (~10 hrs/month, spans personal + household + husband Leon Carroll's business The Veritas Collective + Synnovatia), email response (~30 min/day)
+- LinkedIn: decided on paste-in over browser automation (more reliable) — recurring Friday 9:10am reminder set
+- Bill-pay/bookkeeping: recurring reminder set for the 15th and 30th of every month; Jackie keeps executing payments herself (Claude cannot move money)
+- Built full Monday/Wednesday mastermind admin system for both groups:
+  - **Seven Figure Forum** ($1M+ band): 8 one-time reminders across all 4 confirmed 2026 meeting dates (Aug 7, Sep 11, Oct 30, Dec 11) — members Zoey Smith, Mark Chapman, Christina Carlson, Anne Laguzza
+  - **Mastermind for the Messy Middle** ($250K-$500K band, women-only, restarts Q4): 12 one-time reminders across 6 confirmed dates (Oct 9, Oct 23, Nov 6, Nov 20, Dec 4, Dec 18) — members Elise Eidsness, Wilma Nachsin, Amy Hage, Sandra Roe. Corrected an initial mix-up: Christina Carlson moved from Messy Middle to Seven Figure Forum, not a Messy Middle member.
+  - All 6 Messy Middle Q4 dates added directly to Jackie's Google Calendar (8:00-9:15am Pacific, no attendee invites)
+- Remaining open: Messy Middle growth marketing (currently 4 real members), and a separate personal/school task-audit round
+
 ## 2026-07-11 (continued, part 2)
 
 ### Task Audit Started
