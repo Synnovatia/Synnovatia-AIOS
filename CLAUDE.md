@@ -66,7 +66,7 @@ These are how you know your EVOLV-OS is working:
 
 ## Context Summary
 
-**Business:** Synnovatia — solo strategic consulting practice (27 yrs experience) serving bootstrapped B2B service businesses, $350K–$4M revenue, via 1:1 consulting, monthly retainers, and two mastermind groups (Mastermind for the Messy Middle, Seven Figure Forum)
+**Business:** Synnovatia — solo strategic consulting practice (27 yrs experience) serving bootstrapped B2B service businesses, $250K–$4M revenue, via 1:1 consulting, monthly retainers, and two mastermind groups (Mastermind for the Messy Middle, Seven Figure Forum)
 **Role:** Jackie — founder and sole practitioner, semi-retired (~3 hrs/day on the business), also a cultural anthropology student (~20 hrs/week)
 **Current focus:** Growing to 5 new monthly clients within 3 months; growing both masterminds; rolling out the "Different Is Better Than Better" rebrand (website + brand voice) to support a 40% rate increase within 6 months
 **Key metric to watch:** Annual income — currently ~$17K YTD, ~$35K projected without changes, targeting ~$100K/yr with the growth plan
@@ -89,6 +89,9 @@ These are how you know your EVOLV-OS is working:
 │   ├── strategy.md          # Current priorities and goals
 │   ├── current-data.md      # Key metrics and current state (manual snapshot)
 │   ├── brand-voice.md       # "Different Is Better Than Better" positioning & voice rules
+│   ├── style-guide.md       # Visual identity — colors, typography, type scale (2026 Edition)
+│   ├── linkedin-marketing.md    # LinkedIn content/outreach strategy
+│   ├── hubspot-marketing.md     # HubSpot segment-based email marketing strategy
 │   ├── general-business.md  # Shared company snapshot — give to team members
 │   ├── team-member.md       # Template for team members (sector + role context)
 │   ├── group/key-metrics.md # Auto-generated live metrics (Stripe, HubSpot) — read each session

@@ -8,6 +8,15 @@
 
 ---
 
+## 2026-07-13
+
+### Brand Voice & Style Guide Rebuilt from Master Source Documents
+- Imported two authoritative documents Jackie provided: `DiB_Interview_Synthesis_Master.docx` (full interview synthesis, not the one-pager summary previously used) and `Synnovatia_Style_Guide_2026.docx` (2026 Edition visual identity)
+- Rebuilt `context/brand-voice.md` with much richer proof points, a cross-interview theme tracker by signal strength (Strong vs. Emerging), and additional messaging principles from Craig Ullom's external observer interview (video as trust accelerator, buyer decision-style targeting, discovery call as conversion moment)
+- Created `context/style-guide.md` — full visual identity: navy/gold/teal palette with hex codes, Fraunces/Barlow/Barlow Condensed typography system, type scale, retire/keep list
+- **Caught and fixed a real data error:** the official style guide states the audience revenue range is $250K–$4M, not the $350K–$4M this workspace had been using. Corrected everywhere it appeared: `business-info.md`, `CLAUDE.md`, `linkedin-marketing.md`, the saved HubSpot first-round draft, and all 3 scheduled task prompts that generate future content (LinkedIn drafting, HubSpot Active Engagers, HubSpot Drifting)
+- Registered both new files in `docs/_index.md` and CLAUDE.md's workspace structure
+
 ## 2026-07-12 (continued, part 6)
 
 ### HubSpot Marketing Built — 1:1 Client Generation

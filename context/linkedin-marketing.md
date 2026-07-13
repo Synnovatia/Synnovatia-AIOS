@@ -15,7 +15,7 @@ All of the following, in priority order matching `context/strategy.md`:
 
 - **Role:** Founder, CEO, Owner, President — the actual decision-maker, not an employee
 - **Business:** B2B service business
-- **Revenue:** $350K–$4M (Stage II / "Messy Middle" per brand positioning) — within that, $250K-$500K skews toward Messy Middle mastermind fit, $1M+ skews toward Seven Figure Forum fit
+- **Revenue:** $250K–$4M (Stage II / "Messy Middle" per brand positioning) — within that, $250K-$500K skews toward Messy Middle mastermind fit, $1M+ skews toward Seven Figure Forum fit
 - **Team size:** Typically 5-10 people (mix of employees/subcontractors)
 - **Funding:** Bootstrapped — no VC/PE/angel capital (this is a core brand-voice distinction, not incidental)
 - **Signal to look for:** LinkedIn posts/bio language about feeling stuck, stalled growth, "wearing too many hats," wanting outside perspective — this is "Messy Middle" language, the audience's actual felt experience

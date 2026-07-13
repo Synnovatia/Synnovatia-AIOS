@@ -53,7 +53,19 @@
       "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__list_events",
       "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__update_event",
       "mcp__scheduled-tasks__list_scheduled_tasks",
-      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__search_properties"
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__search_properties",
+      "WebSearch",
+      "Bash(which pandoc *)",
+      "Bash(unzip -o -q /Users/jackienagel/Downloads/DiB_Interview_Synthesis_Master.docx -d /private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/9d887d4b-c2b1-46d8-a93b-c38a10ceeb7b/scratchpad/docx_extract2/dib)",
+      "Bash(unzip -o -q '/Users/jackienagel/Downloads/files 2/Synnovatia_Style_Guide_2026.docx' -d /private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/9d887d4b-c2b1-46d8-a93b-c38a10ceeb7b/scratchpad/docx_extract2/style)",
+      "Bash(grep -n \"350K\\\\|350,000\\\\|\\\\\\\\\\\\$350\" context/hubspot-marketing.md context/strategy.md context/current-data.md)",
+      "Bash(grep -n \"Revenue\\\\|\\\\\\\\\\\\$350\\\\|\\\\\\\\\\\\$250\" context/hubspot-marketing.md)",
+      "Bash(grep -rn \"350K–\\\\$4M\\\\|350K-\\\\$4M\\\\|\\\\\\\\\\\\$350K\" --include=\"*.md\" context/ CLAUDE.md docs/ client-reengagement/ personal/ outputs/)",
+      "Bash(sed -i '' 's/\\\\$350K-\\\\$4M range/\\\\$250K-\\\\$4M range/' \"outputs/hubspot-marketing/2026-07-12-first-round-drafts.md\")",
+      "Bash(grep -n \"250K-\\\\$4M\\\\|350K-\\\\$4M\" \"outputs/hubspot-marketing/2026-07-12-first-round-drafts.md\")",
+      "Bash(grep -rl \"350K\" ~/.claude/scheduled-tasks/ 2>/dev/null)",
+      "Bash(sed -i '' 's/\\\\$350K-\\\\$4M/\\\\$250K-\\\\$4M/g' ~/.claude/scheduled-tasks/linkedin-content-drafting/SKILL.md ~/.claude/scheduled-tasks/hubspot-drifting-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-active-engagers-draft/SKILL.md)",
+      "Bash(grep -rn '250K-$4M\\\\|350K-$4M' ~/.claude/scheduled-tasks/linkedin-content-drafting/SKILL.md ~/.claude/scheduled-tasks/hubspot-drifting-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-active-engagers-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-lapsed-draft/SKILL.md ~/.claude/scheduled-tasks/messymiddle-monday-hottopics-oct5/SKILL.md)"
     ]
   }
 }

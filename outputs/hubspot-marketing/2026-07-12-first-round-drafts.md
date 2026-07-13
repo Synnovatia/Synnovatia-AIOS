@@ -46,7 +46,7 @@ _Home segment: Drifting (monthly). Lapsed can reuse/adapt this same cycle's edit
 
 Hi [First Name],
 
-A few things I'm keeping an eye on right now, for anyone running a service business in the $350K-$4M range:
+A few things I'm keeping an eye on right now, for anyone running a service business in the $250K-$4M range:
 
 **Borrowing costs are still shaping hiring decisions.** If you've been holding off on bringing someone on because financing feels uncertain, you're not alone — a lot of the owners I talk to are making the same calculation. Worth revisiting quarterly rather than deciding once and shelving it.
 

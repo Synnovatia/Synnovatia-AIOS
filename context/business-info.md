@@ -11,6 +11,7 @@
 - **strategy.md** captures the goals you're driving toward
 - **current-data.md** tracks progress and informs decisions
 - **brand-voice.md** governs how Synnovatia sounds in any client-facing writing
+- **style-guide.md** governs the visual identity — colors, typography, type scale
 
 ---
 
@@ -23,7 +24,7 @@ The positioning thesis, drawn from a formal client interview study ("Different I
 ## Who Synnovatia Serves
 
 - **Segment:** Bootstrapped B2B service businesses, no outside capital (no VC/PE/angel funding)
-- **Revenue range:** $350K–$4M ("Stage II entrepreneurs" navigating the "Messy Middle" — stalled growth, resource constraints, strategic complexity)
+- **Revenue range:** $250K–$4M ("Stage II entrepreneurs" navigating the "Messy Middle" — stalled growth, resource constraints, strategic complexity)
 - **Team size:** Typically 5-10 people, often a mix of employees and subcontractors
 - **Niche:** None beyond B2B service industry broadly
 
@@ -42,7 +43,7 @@ The positioning thesis, drawn from a formal client interview study ("Different I
 - Long-term client relationships are common — several clients of 10+ years
 - Long-term plan: bring in another consultant to serve the $250K–$500K segment, freeing Jackie to focus on higher-level strategy clients and business development
 - Differentiators: 27 years of cross-industry pattern recognition; educator background (Corporate Coach University, Coach University, taught small business development/marketing); Entrepreneurship certification from UCLA; runs her own business so clients see her as a peer, not an outside "expert"; practical, honest, emotionally attuned, and stays engaged with client problems between sessions
-- See `brand-voice.md` for full positioning, voice rules, and proof points from the client research
+- See `brand-voice.md` for full positioning, voice rules, and proof points from the client research; `style-guide.md` for the visual identity (colors, typography)
 
 ---
 

@@ -1,21 +1,21 @@
 # Key Metrics
 
-> Auto-generated from database. Last updated: 2026-07-12
+> Auto-generated from database. Last updated: 2026-07-13
 > Source: `data/data.db` | Regenerate: `python scripts/generate_metrics.py`
 
 ## Revenue (Stripe)
 | Metric | Value | As Of |
 |--------|-------|-------|
-| Revenue MTD (main) | $1,599 | 2026-07-12 |
-| Revenue YTD (main) | $11,785 | 2026-07-12 |
-| Refunds MTD | $0 | 2026-07-12 |
-| Invoices paid MTD | 1 | 2026-07-12 |
-| Customers billed MTD | 2 | 2026-07-12 |
-| Total customers (all-time) | 48 | 2026-07-12 |
+| Revenue MTD (main) | $1,599 | 2026-07-13 |
+| Revenue YTD (main) | $11,785 | 2026-07-13 |
+| Refunds MTD | $0 | 2026-07-13 |
+| Invoices paid MTD | 1 | 2026-07-13 |
+| Customers billed MTD | 2 | 2026-07-13 |
+| Total customers (all-time) | 48 | 2026-07-13 |
 
 _Note: Revenue = net Charges (gross charges minus refunds), matching the Stripe dashboard total. Jackie's self-reported total income (including any non-Stripe payments) is tracked separately in `context/current-data.md`._
 
 ## Data Freshness
 | Source | Latest Record | Status |
 |--------|---------------|--------|
-| stripe_daily | 2026-07-12 | Connected |
+| stripe_daily | 2026-07-13 | Connected |
