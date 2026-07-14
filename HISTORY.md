@@ -8,6 +8,32 @@
 
 ---
 
+## 2026-07-14
+
+### Daily Session + Re-Engagement Batch Sent
+- Ran morning session: today's calendar, due reminders (9am re-engagement review, 6:06pm grocery check-in), confirmed 6am Stripe collection ran clean (revenue unchanged from yesterday)
+- Pulled background on Angela Broadwell before Jackie reviewed the drafted re-engagement email — found a single 2005 Gmail thread (a coaching-client relationship, "unit"/"consultants" language suggests a direct-sales business Jackie was coaching around her Corporate Coach University era) and a HubSpot record showing "customer" since 2018 with an unspecified touchpoint as recent as May 2026
+- Jackie confirmed all 5 re-engagement drafts sent (Angela Broadwell, Sivakumar Veerappan, Christy Carroll, Beryl Smith, Lesley Goldberg) — logged via `log_outreach.py sent` for each, resetting their 6-month cadence clocks and recording the Tuesday send day in `outreach_log.csv`
+
+## 2026-07-13 (continued, part 4)
+
+### Messy Middle Growth Plan
+- Wrote `plans/2026-07-13-messy-middle-growth.md` addressing the open "Grow Messy Middle membership" task-audit item: 4 real members → 7-9 by Oct 2026 cohort restart → 8-10 by Jan 2027 for a second cohort
+- Three prioritized channels per Jackie's direction: a dedicated push to HubSpot's existing 397-contact "Messy Middle-fit women" segment (not just a variant inside Active Engagers), LinkedIn content/outreach weighted toward the ICP, and a first pass mining the 176-client re-engagement roster for past clients who fit the band
+- Caught and fixed a real data inconsistency while scoping: `business-info.md` listed the Messy Middle revenue band as $250K–$700K, conflicting with the $250K–$500K used everywhere else (task-audit, LinkedIn/HubSpot marketing docs) — corrected to $250K–$500K, confirmed via Jackie
+- Updated `context/task-audit.md` to reflect the plan is written, execution not yet started
+
+### Dashboard Scoping — Paused Pending a Personal-Goals Layer
+- Built an interactive mockup (`outputs/dashboard/2026-07-13-mockup.html`, published as an Artifact) comparing reminders scope (business-only vs. everything) and refresh cadence (auto every morning vs. on-demand) using real Stripe/mastermind/reminder data, with click-to-toggle live comparison rather than static description
+- Jackie's process feedback, saved to memory: ask thorough clarifying questions before building anything nontrivial, and show visual mockups rather than just describing options — noted for all future builds
+- Scope shifted mid-conversation: Jackie wants the dashboard to mix personal and business goals under a "Goal Progress" headline, not stay business-only as first scoped
+- Concluded (Jackie's call, following a brainstorm exchange) that a personal-goals context layer (baselines/targets for things like weight, workout consistency — mirroring how `strategy.md`/`current-data.md` work for the business) should be built before the dashboard itself, so it displays real data rather than placeholders — **not yet started**, dashboard build is on hold until that groundwork is done
+
+### Pomodoro Study Timer Built
+- Verified the "Pomodoro" structure (mis-transcribed as "Commodore") is correctly labeled on this week's calendar blocks (10:30am/12:30pm/3pm, Mon–Fri, ×3/×2/×4 cycles) via live Google Calendar query; flagged a real conflict (7/13's 10-11am Adrian Delli Colli call overlapping the first study block)
+- Built `personal/pomodoro-timer.html` (published as an Artifact): initially wall-clock-automatic, then rebuilt per Jackie's request into a fully manual model — pick a block, Start/Pause/Skip/Reset each 25-min focus or 5-min break segment yourself, never auto-advances. Times display as "10:30am to 12pm" / "3pm to 5pm" rather than military time, per Jackie's request.
+- Explored phone notifications for break/focus transitions: the `PushNotification` tool's Remote Control phone-push path did not reach Jackie's phone (confirmed via live test — only a desktop notification appeared); the "Enable remote control by default" app setting Jackie found is unrelated (session continuity across CLI/web, not phone push). iMessage to 310-809-6232 confirmed working as the reliable fallback — saved to memory (`reference_phone-alert-channel.md`) as the default channel going forward. Workflow: Jackie tells Claude live when a segment starts, Claude schedules a one-time task for the right number of minutes out that sends the iMessage alert.
+
 ## 2026-07-13 (continued, part 3)
 
 ### Converted Health/Home-Upkeep Reminders from Calendar Events to Scheduled Tasks + New Personal Items

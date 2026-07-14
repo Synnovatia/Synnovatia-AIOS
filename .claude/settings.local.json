@@ -69,7 +69,10 @@
       "Skill(artifact-design)",
       "Skill(artifact-design:*)",
       "mcp__visualize__read_me",
-      "mcp__Read_and_Send_iMessages__send_imessage"
+      "mcp__Read_and_Send_iMessages__send_imessage",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__list_drafts",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__get_message",
+      "Bash(git check-ignore *)"
     ]
   }
 }

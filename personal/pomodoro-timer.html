@@ -1,0 +1,473 @@
+<h2 class="sr-only">Manual Pomodoro study timer for this week's Biological Anthropology study and homework blocks — pick a block, then start, pause, or skip each 25-minute focus or 5-minute break segment yourself</h2>
+
+<style>
+  :root {
+    --navy: #0D1F4E;
+    --navy-mid: #1A3A7A;
+    --gold: #B29200;
+    --gold-light: #F5C842;
+    --teal: #0F6E56;
+    --teal-light: #5DCAA5;
+    --cream: #F7F6F2;
+    --ink: #444441;
+    --line: #DEDBD1;
+    --card: #FFFFFF;
+
+    --bg: var(--cream);
+    --fg: var(--ink);
+    --fg-soft: #7A776E;
+    --surface: var(--card);
+    --surface-line: var(--line);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: var(--navy);
+      --fg: #EDEEF5;
+      --fg-soft: #A9B2CE;
+      --surface: var(--navy-mid);
+      --surface-line: #2C4A8F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: var(--navy); --fg: #EDEEF5; --fg-soft: #A9B2CE;
+    --surface: var(--navy-mid); --surface-line: #2C4A8F;
+  }
+  :root[data-theme="light"] {
+    --bg: var(--cream); --fg: var(--ink); --fg-soft: #7A776E;
+    --surface: var(--card); --surface-line: var(--line);
+  }
+
+  .pom-root {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 26px 22px 34px;
+    max-width: 640px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .pom-root, .pom-root * { box-sizing: border-box; }
+  .body-face { font-family: Arial, Helvetica, sans-serif; }
+  .label-face {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase; letter-spacing: 0.09em; font-weight: 700;
+  }
+
+  .eyebrow { font-size: 11px; color: var(--teal); margin: 0 0 4px; }
+  :root[data-theme="dark"] .eyebrow { color: var(--teal-light); }
+  .title { font-family: Georgia, serif; font-size: 26px; font-weight: 400; margin: 0 0 18px; }
+
+  .block-picker {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px;
+  }
+  .block-btn {
+    font-family: Arial, sans-serif; font-size: 13px;
+    padding: 8px 12px; border-radius: 4px; border: 1px solid var(--surface-line);
+    background: var(--surface); color: var(--fg-soft); cursor: pointer; text-align: left;
+    line-height: 1.4;
+  }
+  .block-btn strong { display: block; font-size: 13px; color: var(--fg); }
+  .block-btn span { font-size: 11.5px; }
+  .block-btn[aria-pressed="true"] {
+    border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold);
+  }
+  :root[data-theme="dark"] .block-btn[aria-pressed="true"] { border-color: var(--gold-light); box-shadow: inset 0 0 0 1px var(--gold-light); }
+  .block-btn[aria-pressed="true"] strong { color: var(--fg); }
+
+  .enable-row { display: flex; justify-content: flex-end; margin-bottom: 14px; }
+  .enable-btn {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 11.5px; font-weight: 700;
+    padding: 7px 14px; border-radius: 3px; border: 1px solid var(--surface-line);
+    background: transparent; color: var(--fg-soft); cursor: pointer;
+  }
+  .enable-btn[data-on="true"] { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+
+  .stage {
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 6px;
+    padding: 28px 24px 22px;
+    text-align: center;
+    margin-bottom: 18px;
+    transition: border-color 0.4s;
+  }
+  .stage.phase-focus { border-color: var(--gold); }
+  .stage.phase-break { border-color: var(--teal); }
+
+  .phase-tag {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase; letter-spacing: 0.1em; font-size: 13px; font-weight: 700;
+    margin: 0 0 6px;
+  }
+  .phase-focus .phase-tag { color: var(--gold); }
+  :root[data-theme="dark"] .phase-focus .phase-tag { color: var(--gold-light); }
+  .phase-break .phase-tag { color: var(--teal); }
+  :root[data-theme="dark"] .phase-break .phase-tag { color: var(--teal-light); }
+  .phase-idle .phase-tag, .phase-done .phase-tag { color: var(--fg-soft); }
+
+  .countdown {
+    font-family: Georgia, serif;
+    font-size: 64px;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    margin: 4px 0 6px;
+  }
+  .countdown.is-running { opacity: 1; }
+  .countdown.is-paused { opacity: 0.55; }
+  .stage-detail { font-family: Arial, sans-serif; font-size: 14px; color: var(--fg-soft); margin: 0 0 18px; }
+
+  .controls { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .ctrl-btn {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; font-weight: 700;
+    padding: 10px 20px; border-radius: 4px; border: 1px solid var(--surface-line);
+    background: transparent; color: var(--fg); cursor: pointer;
+  }
+  .ctrl-btn.primary { border-color: var(--gold); background: var(--gold); color: var(--navy); }
+  :root[data-theme="dark"] .ctrl-btn.primary { border-color: var(--gold-light); background: var(--gold-light); }
+  .ctrl-btn:disabled { opacity: 0.4; cursor: default; }
+
+  .stage-note {
+    font-family: Arial, sans-serif; font-size: 13px; color: var(--fg-soft);
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--surface-line);
+  }
+
+  .week-card {
+    background: var(--surface); border: 1px solid var(--surface-line);
+    border-radius: 6px; padding: 16px 20px;
+  }
+  .week-card h3 {
+    font-family: Arial Narrow, Arial, sans-serif; text-transform: uppercase;
+    letter-spacing: 0.08em; font-size: 12px; color: var(--fg-soft); margin: 0 0 10px;
+  }
+  .week-list { list-style: none; margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 13.5px; }
+  .week-list li {
+    display: grid; grid-template-columns: 90px 1fr 60px; gap: 10px;
+    padding: 8px 0; border-top: 1px solid var(--surface-line); align-items: baseline;
+  }
+  .week-list li:first-child { border-top: none; }
+  .week-list li.is-today { color: var(--fg); font-weight: bold; }
+  .week-list li:not(.is-today) { color: var(--fg-soft); }
+  .wl-day { font-variant-numeric: tabular-nums; }
+  .wl-cycles { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .footnote {
+    font-family: Arial, sans-serif; font-size: 12px; color: var(--fg-soft);
+    margin-top: 14px; line-height: 1.6;
+  }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="pom-root">
+  <p class="eyebrow label-face">Biological Anthropology · Final Week</p>
+  <h1 class="title">Study Timer</h1>
+
+  <div class="block-picker" id="blockPicker"></div>
+
+  <div class="enable-row">
+    <button class="enable-btn" id="enableBtn" data-on="false">🔔 Enable sound &amp; alerts</button>
+  </div>
+
+  <div class="stage phase-idle" id="stage">
+    <p class="phase-tag" id="phaseTag">Loading…</p>
+    <p class="countdown" id="countdown">--:--</p>
+    <p class="stage-detail" id="stageDetail"></p>
+    <div class="controls" id="controls">
+      <button class="ctrl-btn primary" id="startPauseBtn">Start</button>
+      <button class="ctrl-btn" id="skipBtn">Skip segment</button>
+      <button class="ctrl-btn" id="resetBtn">Reset</button>
+    </div>
+    <div class="stage-note" id="stageNote" style="display:none;"></div>
+  </div>
+
+  <div class="week-card">
+    <h3>This Week's Blocks</h3>
+    <ul class="week-list" id="weekList"></ul>
+  </div>
+
+  <p class="footnote">
+    Pulls each block's cycle count straight from the calendar (×3, ×2, ×4), but you control the clock — press Start to begin a 25-min focus or 5-min break segment, Skip to end it early, or Reset to restart it. When a segment hits zero it stops itself automatically and waits for you to start the next one — it never auto-advances. Sound/alerts only fire while this tab stays open. Schedule covers through Friday 7/17 (last day of class) — next term's blocks aren't built yet, pending the 8/25 syllabus check-in.
+  </p>
+</div>
+
+<script>
+(function() {
+  var FOCUS_SEC = 25 * 60, BREAK_SEC = 5 * 60;
+
+  var schedule = {
+    "2026-07-13": [
+      { label: "Study Block", start: "10:30", end: "12:00", cycles: 3, note: "Your 10:00–11:00am call with Adrian Delli Colli overlaps the first 30 minutes of this block." },
+      { label: "Study Block", start: "12:30", end: "13:30", cycles: 2 },
+      { label: "Homework",    start: "15:00", end: "17:00", cycles: 4 }
+    ],
+    "2026-07-14": [
+      { label: "Study Block", start: "10:30", end: "12:00", cycles: 3 },
+      { label: "Study Block", start: "12:30", end: "13:30", cycles: 2 },
+      { label: "Homework",    start: "15:00", end: "17:00", cycles: 4 }
+    ],
+    "2026-07-15": [
+      { label: "Study Block", start: "10:30", end: "12:00", cycles: 3 },
+      { label: "Study Block", start: "12:30", end: "13:30", cycles: 2 },
+      { label: "Homework",    start: "15:00", end: "17:00", cycles: 4 }
+    ],
+    "2026-07-16": [
+      { label: "Study Block", start: "10:30", end: "12:00", cycles: 3 },
+      { label: "Study Block", start: "12:30", end: "13:30", cycles: 2 },
+      { label: "Homework",    start: "15:00", end: "17:00", cycles: 4 }
+    ],
+    "2026-07-17": [
+      { label: "Study Block", start: "10:30", end: "12:00", cycles: 3 },
+      { label: "Study Block", start: "12:30", end: "13:30", cycles: 2 },
+      { label: "Homework",    start: "15:00", end: "17:00", cycles: 4, note: "Last day of class." }
+    ]
+  };
+
+  function dateKey(d) {
+    return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+  }
+  function timeOnDate(baseDate, hhmm) {
+    var parts = hhmm.split(":").map(Number);
+    var d = new Date(baseDate);
+    d.setHours(parts[0], parts[1], 0, 0);
+    return d;
+  }
+  function fmtClock(d) {
+    var h = d.getHours(), m = d.getMinutes();
+    var ampm = h >= 12 ? "pm" : "am";
+    var h12 = h % 12; if (h12 === 0) h12 = 12;
+    return h12 + ":" + String(m).padStart(2,"0") + ampm;
+  }
+  function fmtCountdown(totalSec) {
+    totalSec = Math.max(0, Math.round(totalSec));
+    var m = Math.floor(totalSec/60), s = totalSec % 60;
+    return String(m).padStart(2,"0") + ":" + String(s).padStart(2,"0");
+  }
+  function fmt12(hhmm) {
+    var parts = hhmm.split(":").map(Number);
+    var h = parts[0], m = parts[1];
+    var ampm = h >= 12 ? "pm" : "am";
+    var h12 = h % 12; if (h12 === 0) h12 = 12;
+    return m === 0 ? (h12 + ampm) : (h12 + ":" + String(m).padStart(2,"0") + ampm);
+  }
+  function fmtRange(start, end) {
+    return fmt12(start) + " to " + fmt12(end);
+  }
+
+  var audioCtx = null;
+  function ensureAudio() {
+    if (!audioCtx) { try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch(e) {} }
+  }
+  function beep() {
+    if (!audioCtx) return;
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.connect(gain); gain.connect(audioCtx.destination);
+    osc.frequency.value = 720;
+    gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.25, audioCtx.currentTime + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.5);
+    osc.start(); osc.stop(audioCtx.currentTime + 0.55);
+  }
+  var alertsOn = false;
+  var enableBtn = document.getElementById("enableBtn");
+  enableBtn.addEventListener("click", function() {
+    alertsOn = !alertsOn;
+    enableBtn.dataset.on = String(alertsOn);
+    enableBtn.textContent = alertsOn ? "🔔 Sound & alerts on" : "🔔 Enable sound & alerts";
+    if (alertsOn) {
+      ensureAudio();
+      if (window.Notification && Notification.permission === "default") Notification.requestPermission();
+      beep();
+    }
+  });
+  function notify(title, body) {
+    beep();
+    if (window.Notification && Notification.permission === "granted") {
+      try { new Notification(title, { body: body }); } catch(e) {}
+    }
+  }
+
+  var todayKey = dateKey(new Date());
+  var todaysBlocks = schedule[todayKey] || null;
+  var selectedIdx = 0;
+  var seg = null; // { phase: 'focus'|'break'|'done', cycle, remaining, running }
+
+  if (todaysBlocks) {
+    var now = new Date();
+    var activeIdx = -1, nextIdx = -1, nextStart = null;
+    for (var i = 0; i < todaysBlocks.length; i++) {
+      var b = todaysBlocks[i];
+      var bStart = timeOnDate(now, b.start), bEnd = timeOnDate(now, b.end);
+      if (now >= bStart && now <= bEnd) { activeIdx = i; }
+      if (bStart > now && (nextStart === null || bStart < nextStart)) { nextStart = bStart; nextIdx = i; }
+    }
+    selectedIdx = activeIdx >= 0 ? activeIdx : (nextIdx >= 0 ? nextIdx : todaysBlocks.length - 1);
+  }
+
+  function newSeg() {
+    return { phase: "focus", cycle: 1, remaining: FOCUS_SEC, running: false };
+  }
+
+  var stageEl = document.getElementById("stage");
+  var phaseTagEl = document.getElementById("phaseTag");
+  var countdownEl = document.getElementById("countdown");
+  var stageDetailEl = document.getElementById("stageDetail");
+  var stageNoteEl = document.getElementById("stageNote");
+  var controlsEl = document.getElementById("controls");
+  var startPauseBtn = document.getElementById("startPauseBtn");
+  var skipBtn = document.getElementById("skipBtn");
+  var resetBtn = document.getElementById("resetBtn");
+
+  function currentBlock() {
+    return todaysBlocks ? todaysBlocks[selectedIdx] : null;
+  }
+
+  function advanceSegment(block) {
+    if (seg.phase === "focus") {
+      seg.phase = "break";
+      seg.remaining = BREAK_SEC;
+    } else if (seg.phase === "break") {
+      if (seg.cycle < block.cycles) {
+        seg.cycle += 1;
+        seg.phase = "focus";
+        seg.remaining = FOCUS_SEC;
+      } else {
+        seg.phase = "done";
+        seg.remaining = 0;
+      }
+    }
+    seg.running = false;
+  }
+
+  function renderPicker() {
+    var picker = document.getElementById("blockPicker");
+    picker.innerHTML = "";
+    if (!todaysBlocks) return;
+    todaysBlocks.forEach(function(b, idx) {
+      var btn = document.createElement("button");
+      btn.className = "block-btn";
+      btn.setAttribute("aria-pressed", String(idx === selectedIdx));
+      btn.innerHTML = "<strong>" + b.label + "</strong><span>" + fmtRange(b.start, b.end) + " ×" + b.cycles + "</span>";
+      btn.addEventListener("click", function() {
+        selectedIdx = idx;
+        seg = newSeg();
+        renderPicker();
+        renderStage();
+      });
+      picker.appendChild(btn);
+    });
+  }
+
+  function renderStage() {
+    stageEl.classList.remove("phase-focus", "phase-break", "phase-idle", "phase-done");
+    stageNoteEl.style.display = "none";
+    countdownEl.classList.remove("is-running", "is-paused");
+
+    if (!todaysBlocks) {
+      stageEl.classList.add("phase-idle");
+      phaseTagEl.textContent = "No blocks today";
+      countdownEl.textContent = "--:--";
+      stageDetailEl.textContent = "Nothing scheduled for Biological Anthropology today.";
+      controlsEl.style.display = "none";
+      return;
+    }
+    controlsEl.style.display = "flex";
+    var block = currentBlock();
+
+    if (seg.phase === "done") {
+      stageEl.classList.add("phase-done");
+      phaseTagEl.textContent = "Block complete";
+      countdownEl.textContent = "✓";
+      stageDetailEl.textContent = block.label + " — all " + block.cycles + " cycles done. Nice work.";
+      startPauseBtn.textContent = "Start";
+      startPauseBtn.disabled = true;
+      skipBtn.disabled = true;
+      resetBtn.disabled = false;
+      if (block.note) { stageNoteEl.style.display = "block"; stageNoteEl.textContent = block.note; }
+      return;
+    }
+
+    stageEl.classList.add(seg.phase === "focus" ? "phase-focus" : "phase-break");
+    phaseTagEl.textContent = (seg.phase === "focus" ? "Focus" : "Break") + " — cycle " + seg.cycle + " of " + block.cycles;
+    countdownEl.textContent = fmtCountdown(seg.remaining);
+    countdownEl.classList.add(seg.running ? "is-running" : "is-paused");
+    stageDetailEl.textContent = block.label + (seg.running ? " — in progress" : " — paused, press Start when ready");
+    startPauseBtn.textContent = seg.running ? "Pause" : (seg.remaining === (seg.phase === "focus" ? FOCUS_SEC : BREAK_SEC) ? "Start" : "Resume");
+    startPauseBtn.disabled = false;
+    skipBtn.disabled = false;
+    resetBtn.disabled = false;
+    if (block.note) { stageNoteEl.style.display = "block"; stageNoteEl.textContent = block.note; }
+  }
+
+  startPauseBtn.addEventListener("click", function() {
+    if (!seg || seg.phase === "done") return;
+    ensureAudio();
+    seg.running = !seg.running;
+    renderStage();
+  });
+  skipBtn.addEventListener("click", function() {
+    if (!seg || seg.phase === "done") return;
+    var block = currentBlock();
+    var wasPhase = seg.phase, wasCycle = seg.cycle;
+    advanceSegment(block);
+    notify(seg.phase === "done" ? "Block complete" : (seg.phase === "focus" ? "Focus" : "Break") + " — cycle " + seg.cycle,
+           block.label + (seg.phase === "done" ? " finished." : " segment skipped."));
+    renderStage();
+  });
+  resetBtn.addEventListener("click", function() {
+    seg = newSeg();
+    renderStage();
+  });
+
+  function renderWeekList() {
+    var ul = document.getElementById("weekList");
+    ul.innerHTML = "";
+    var days = Object.keys(schedule).sort();
+    days.forEach(function(dk) {
+      var d = new Date(dk + "T00:00:00");
+      var dayName = d.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+      schedule[dk].forEach(function(b) {
+        var li = document.createElement("li");
+        if (dk === todayKey) li.className = "is-today";
+        var dayCell = document.createElement("span");
+        dayCell.className = "wl-day";
+        dayCell.textContent = dayName;
+        var labelCell = document.createElement("span");
+        labelCell.textContent = b.label + " · " + fmtRange(b.start, b.end);
+        var cyclesCell = document.createElement("span");
+        cyclesCell.className = "wl-cycles";
+        cyclesCell.textContent = "×" + b.cycles;
+        li.appendChild(dayCell); li.appendChild(labelCell); li.appendChild(cyclesCell);
+        ul.appendChild(li);
+      });
+    });
+  }
+
+  seg = newSeg();
+  renderPicker();
+  renderStage();
+  renderWeekList();
+
+  setInterval(function() {
+    if (seg && seg.running && seg.phase !== "done") {
+      seg.remaining -= 1;
+      if (seg.remaining <= 0) {
+        var block = currentBlock();
+        var finishedPhase = seg.phase, finishedCycle = seg.cycle;
+        advanceSegment(block);
+        notify(
+          seg.phase === "done" ? "Block complete" : (seg.phase === "focus" ? "Back to focus" : "Take a break"),
+          block.label + " — " + (seg.phase === "done" ? "all cycles done" : "cycle " + seg.cycle + " of " + block.cycles)
+        );
+      }
+      renderStage();
+    }
+  }, 1000);
+})();
+</script>
