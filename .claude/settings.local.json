@@ -65,7 +65,11 @@
       "Bash(grep -n \"250K-\\\\$4M\\\\|350K-\\\\$4M\" \"outputs/hubspot-marketing/2026-07-12-first-round-drafts.md\")",
       "Bash(grep -rl \"350K\" ~/.claude/scheduled-tasks/ 2>/dev/null)",
       "Bash(sed -i '' 's/\\\\$350K-\\\\$4M/\\\\$250K-\\\\$4M/g' ~/.claude/scheduled-tasks/linkedin-content-drafting/SKILL.md ~/.claude/scheduled-tasks/hubspot-drifting-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-active-engagers-draft/SKILL.md)",
-      "Bash(grep -rn '250K-$4M\\\\|350K-$4M' ~/.claude/scheduled-tasks/linkedin-content-drafting/SKILL.md ~/.claude/scheduled-tasks/hubspot-drifting-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-active-engagers-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-lapsed-draft/SKILL.md ~/.claude/scheduled-tasks/messymiddle-monday-hottopics-oct5/SKILL.md)"
+      "Bash(grep -rn '250K-$4M\\\\|350K-$4M' ~/.claude/scheduled-tasks/linkedin-content-drafting/SKILL.md ~/.claude/scheduled-tasks/hubspot-drifting-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-active-engagers-draft/SKILL.md ~/.claude/scheduled-tasks/hubspot-lapsed-draft/SKILL.md ~/.claude/scheduled-tasks/messymiddle-monday-hottopics-oct5/SKILL.md)",
+      "Skill(artifact-design)",
+      "Skill(artifact-design:*)",
+      "mcp__visualize__read_me",
+      "mcp__Read_and_Send_iMessages__send_imessage"
     ]
   }
 }

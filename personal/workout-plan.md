@@ -4,6 +4,14 @@
 
 ---
 
+## Weekly Schedule (live on Google Calendar)
+
+Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hill warm-up + strength (8:30-9:45) · Wed long hike 90+min (8:30-10:00) · Thu hill warm-up + strength (8:30-9:45) · Sat 4-5mi walk (8:30-10:00). Fri/Sun off. Conflicts get moved per-occurrence on request rather than rescheduling the series.
+
+**Weekly check-in:** Sunday mornings, 8:00am — recurring Google Calendar reminder to log weight, body fat %, and waist measurement. See `personal/task-audit.md`.
+
+---
+
 ## Context
 
 - **Experience:** Consistent strength training for 2-3 years

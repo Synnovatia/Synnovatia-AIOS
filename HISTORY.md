@@ -8,7 +8,40 @@
 
 ---
 
+## 2026-07-13 (continued, part 3)
+
+### Converted Health/Home-Upkeep Reminders from Calendar Events to Scheduled Tasks + New Personal Items
+- Caught an inconsistency: earlier today's health and home-upkeep reminders were built as passive Google Calendar events, but this workspace's established pattern (bill-pay, grocery check-in, LinkedIn metrics) uses Cowork **scheduled tasks** instead, which proactively notify Jackie rather than waiting to be noticed on a calendar
+- Deleted all 8 calendar events created earlier today (Sunday weigh-in, annual physical, and the 6 home-upkeep reminders) and recreated them as scheduled tasks: `weekly-weigh-in-reminder`, `annual-physical-reminder`, `window-cleaning-reminder`, `granite-sealing-reminder` (18-month cadence handled via self-rescheduling — the task updates its own next fireAt when it runs, since cron can't express 18-month intervals), `ac-cleaning-reminder`, `tree-trimming-reminder`, `pest-inspection-reminder`, `spa-supplies-reminder` (6-month cadence expressed natively via `0 9 27 2,8 *`, matching the Feb 27/Aug 27 phase)
+- Confirmed the existing bill-pay/bookkeeping reminder stays at the 15th/30th (Jackie's "16th" mention was treated as approximation, not a correction)
+- Added 5 new scheduled tasks for new personal items Jackie provided: `optometry-reminder` (annual, Dr. Do, every March 1 ahead of the usual April visit), `account-reconciliation-reminder` (30th of month, 4 accounts — household/personal/Synnovatia/The Veritas Collective), `yard-bush-bonsai-trim-reminder` (twice yearly, March 1 & Nov 1, 3 bonsai trees), `vegetable-garden-planning-reminder` (March 1, plan + order seeds), `vegetable-garden-planting-reminder` (April 25, plant)
+- Updated `personal/task-audit.md`, `personal/home-upkeep.md` (added Yard/Landscaping and Vegetable Garden sections), and `context/task-audit.md` (new account-reconciliation row alongside the existing bill-pay row) to reflect all of the above
+
+## 2026-07-13 (continued, part 2)
+
+### Home Upkeep Scoped: House Cleaning, Home Systems, Pool/Spa
+- Walked through home upkeep task-by-task with Jackie, starting with house cleaning (yard/landscaping still open — deferred)
+- Created `personal/home-upkeep.md` — vendor contacts and cadence for: window cleaning (George Medrano, annual/October), granite clean/seal (Fuller Stone Care, every 18 months, last done April 2025), AC unit cleaning (Command Comfort, annual, last done April 2026), tree trimming (Art Green Care, annual fall/September), pest inspection & treatment (Center Termite, annual/June), spa supplies/filter reorder (Spa Daddy online, every 6 months, last ordered 2/27/2026). House cleaning and spa cleaning are DIY every 2 weeks — no reminder needed.
+- Added 6 recurring Google Calendar reminders (no attendee invites, free/transparent blocks) for the vendor-scheduled items above, anchored to their actual last-serviced dates where known
+- Updated `personal/task-audit.md`: replaced the placeholder "Cleaning" row with the real breakdown above, all now **Automated**; "Home maintenance planning" moved from Not Started to In Progress; "Yard work" left open pending scoping
+
+## 2026-07-13 (continued)
+
+### Health Tracking Automated: Weekly Weigh-In + Annual Physical Reminder
+- Added a recurring Google Calendar event, Sundays 8:00-8:15am — log weight, body fat %, and waist measurement (no attendee invite, calendar block only, marked free/transparent)
+- Added a one-time Google Calendar reminder for 2026-10-01 to book the annual physical with Dr. Torna, since the appointment is usually in November and Jackie wants a head start on scheduling
+- Updated `personal/task-audit.md`: "Weight stabilization/reduction tracking" moved from Not Started to **Automated**; added a new "Annual physical" row
+- Added a "Weekly check-in" note to `personal/workout-plan.md` pointing to the new Sunday reminder
+- Dentist cleanings (11/18/2026, 3/24/2027) were already added to the calendar directly by Jackie — no action needed
+- Home upkeep cadence (car maintenance, house upkeep) deferred — Jackie wants to think it through before scoping
+
 ## 2026-07-13
+
+### Personal Task Audit Separated from Business Task Audit
+- Jackie asked to pull the "Personal" section out of `context/task-audit.md` (a business-context file) and consolidate it in `personal/`, alongside the existing `personal/meal-planning.md` and `personal/workout-plan.md`
+- Created `personal/task-audit.md` — moved grocery/meal planning, workout planning, the automated workout calendar block, weight tracking, cooking/cleaning/yard work, vacation planning, home maintenance, birthday/anniversary gifts, and all 3 school rows
+- `context/task-audit.md` now points to `personal/task-audit.md` instead of duplicating the content — business-side audit only
+- Folded the full weekly workout calendar detail (days/times, Mon walk through Sat walk, Fri/Sun off) into `personal/workout-plan.md` so it's the single source of truth for the workout routine, not just the strength-day exercises
 
 ### Brand Voice & Style Guide Rebuilt from Master Source Documents
 - Imported two authoritative documents Jackie provided: `DiB_Interview_Synthesis_Master.docx` (full interview synthesis, not the one-pager summary previously used) and `Synnovatia_Style_Guide_2026.docx` (2026 Edition visual identity)

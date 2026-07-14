@@ -32,7 +32,7 @@ The positioning thesis, drawn from a formal client interview study ("Different I
 
 - **Solutions on the Fly** (as-needed 1:1 consulting): $140 / 30 min, $275 / 60 min
 - **Monthly retainers:** $325/mo (1 meeting), $600/mo (2×60min meetings), $1,100/mo (4 meetings)
-- **Mastermind for the Messy Middle** — women-only group, businesses roughly $250K–$700K revenue, quarterly cohort at $675/quarter
+- **Mastermind for the Messy Middle** — women-only group, businesses roughly $250K–$500K revenue, quarterly cohort at $675/quarter
 - **Seven Figure Forum** — mixed-gender group, businesses around $1M+ revenue
 
 ## Key Context

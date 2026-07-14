@@ -30,6 +30,7 @@
 | Meeting notes/summaries | Per meeting | Was ~10-15 min/meeting manual | High | **Automated** (2026-07-11) | Zoom auto-records + auto-summarizes; ask Claude to find/search any meeting |
 | Client/mastermind metrics tracking | Daily | Was manual dashboard-checking | High | **Automated** (2026-07-11) | Stripe + HubSpot feed `context/group/key-metrics.md` automatically |
 | Invoicing / bookkeeping / bill paying | 15th & 30th of every month | ~10 hrs/month total | Medium | **In Progress** | Scope is broader than Synnovatia — also covers personal, household, and husband Leon Carroll's business (The Veritas Collective). Jackie keeps executing payments herself (hard boundary: Claude cannot move money). Recurring reminder set 2026-07-11 for the 15th/30th (Feb naturally skips the 30th, no 30th to fire on). Claude offers light assistance (summarizing numbers, answering questions) each time — active categorization/reconciliation not yet requested. |
+| Account reconciliation | 30th of every month | TBD | Medium | **Automated** (2026-07-13) | 4 accounts: household, personal, Synnovatia, The Veritas Collective, Inc. Scheduled task `account-reconciliation-reminder` — separate from the bill-pay reminder above, though it lands on the same day. |
 | Mastermind: Monday "hot topics" email | Seven Figure Forum: irregular (4-7 week gaps, always Friday) — Aug 7, Sep 11, Oct 30, Dec 11 2026. Messy Middle: every other Friday, restarts Q4 2026 (Oct 9, Oct 23, Nov 6, Nov 20, Dec 4, Dec 18) | Small, but wants a reminder | High | **Fully Built** | 20 one-time reminders scheduled 2026-07-11: 8 for Seven Figure Forum (Zoey Smith, Mark Chapman, Christina Carlson, Anne Laguzza — $1M+ band), 12 for Messy Middle (Elise Eidsness, Wilma Nachsin, Amy Hage, Sandra Roe — $250K-$500K band). Each drafts the hot-topics email into Gmail and researches 2 articles matched to the group's revenue band. |
 | Mastermind: Wednesday agenda day | Same cadence as above | Small | Medium | **Fully Built** | Jackie drafts the agenda herself from member feedback and posts to Google Calendar — Claude's job is just the reminder + having the 2 articles ready, not drafting the agenda. Reminders scheduled alongside the Monday ones. |
 | Mastermind: Messy Middle meeting dates | 6 dates, Q4 2026 | — | High | **Automated** (2026-07-11) | Added to Jackie's Google Calendar: Oct 9, Oct 23, Nov 6, Nov 20, Dec 4, Dec 18, 8:00-9:15am Pacific. No attendee invites sent — calendar blocks only. |
@@ -38,7 +39,7 @@
 
 | Task | Frequency | Est. Time | Automation Potential | Status | Notes |
 |---|---|---|---|---|---|
-| Grow Messy Middle membership | New | TBD | Medium | Not started | Currently 4 real members (Elise, Wilma, Amy, Sandra) + Jackie. Women-only group, $250K-$500K band. |
+| Grow Messy Middle membership | New | TBD | Medium | **In Progress** (plan written 2026-07-13) | Currently 4 real members (Elise, Wilma, Amy, Sandra) + Jackie. Women-only group, $250K-$500K band. Full plan: `plans/2026-07-13-messy-middle-growth.md` — 3 channels (HubSpot 397 segment, LinkedIn, re-engagement roster mining), targeting 3-5 new by Oct 2026. |
 | Grow Seven Figure Forum membership | New | TBD | Medium | Not started | Currently 4 members (Zoey Smith, Mark Chapman, Christina Carlson, Anne Laguzza) + Jackie. $1M+ band. Target: 6 members by Jan 2027 (see `context/strategy.md`). |
 | LinkedIn marketing — original content | Draft: Fridays 9am (batch of 3). Live: Mon/Wed/Fri 7:30am | ~15-20 min review/schedule on Friday | High | **Fully Built** (2026-07-12) | Full system in `context/linkedin-marketing.md`. Friday reminder batch-drafts all 3 posts (Mon thought leadership, Wed story, Fri client win) in brand voice. Jackie schedules each via LinkedIn's own scheduler for 7:30am — no auto-posting (LinkedIn detects/restricts automation, real account risk). |
 | LinkedIn marketing — outreach/prospecting | As needed | TBD | Medium | **Templates Built** | ICP + 3 connection-request templates + 1 follow-up template in `context/linkedin-marketing.md`. Claude can't safely search/connect on LinkedIn itself — Jackie does the actual searching/connecting; Claude drafts messages when given a prospect. |
@@ -50,23 +51,7 @@
 
 ## Personal
 
-| Task | Frequency | Est. Time | Automation Potential | Status | Notes |
-|---|---|---|---|---|---|
-| Grocery shopping / menu planning | Weekly (Tuesday check-in) | TBD | Medium | **In Progress** | Full profile in `personal/meal-planning.md`. Diet: Mayo Clinic-style, high protein, whole foods. Recurring reminder set 2026-07-12 (Tuesdays 6:06pm) — Jackie checks sale ads at Sprouts/Smart & Final/Albertsons herself and reports back; Claude builds the dinner menu + shopping list. (Tried browser-automating the sale scan first — too fragile, same lesson as LinkedIn.) |
-| Food delivery coordination | As needed | TBD | Medium | Not started | |
-| Workout planning | Recurring (calendar shows "Workout // Strength") | TBD | High | Not started | Claude can generate/adjust a plan; execution is physical |
-| Working out (time block) | Recurring, weekdays + Sat, 8:30am start | ~1-1.5 hrs/day, 5 days/wk | High | **Automated** (2026-07-12) | Google Calendar recurring series: Mon 3-mi walk (8:30-9:30), Tue hill warm-up+strength (8:30-9:45), Wed long hike 90+min (8:30-10:00), Thu hill warm-up+strength (8:30-9:45), Sat 4-5mi walk (8:30-10:00). Fri/Sun off. No end date. Conflicts get moved per-occurrence on request — e.g. Wed 7/22 hike moved to 9:15 (Strategize call at 8:00), Thu 7/23 strength skipped (heavy hiking days). |
-| Weight stabilization/reduction tracking | Ongoing | TBD | Medium | Not started | |
-| Cooking | Recurring | TBD | Low | Not started | Flagged 2026-07-12. Claude can help with menu planning (see grocery row above) but the cooking itself is physical/human |
-| Cleaning | Recurring | TBD | Low | Not started | Flagged 2026-07-12 |
-| Yard work | Recurring | TBD | Low | Not started | Flagged 2026-07-12 |
-| Vacation planning | As needed | TBD | Medium | Not started | |
-| Home maintenance planning | As needed | TBD | Medium | Not started | |
-| Birthday/anniversary cards & gifts | Recurring (per occasion) | TBD | High | Not started | Claude can track dates and draft/suggest gifts |
-| School homework/coursework | Weekly deadlines, self-paced | ~20 hrs/week total (school capacity, not just homework) | Low | N/A | Not an automation target — core capacity constraint, see `context/personal-info.md`. **Hard boundary: no AI in anything submitted** — Claude may only discuss/explain readings to help Jackie's own understanding, never draft notes/answers. |
-| School: study-block calendar (this week) | Mon-Fri, 2026-07-13 to 07-17 | — | High | **Automated** (2026-07-12) | Google Calendar events, Pomodoro-structured (25/5): 10:30-12:00 (study), 12:30-1:30 (study), 3:00-5:00 (homework), Biological Anthropology final week |
-| School: study-block calendar (next term) | Mon-Fri, 2026-08-31 to 10-25 | — | High | **Automated** (2026-07-12) | Same 3-block Pomodoro pattern set up as recurring weekday Google Calendar events for Bioanthropology Lab & Statistics. Deadlines within each block still unknown — see check-in below. |
-| School: weekly deadline reminders | Weekly (once term starts) | — | High | Scheduled | One-time check-in scheduled 2026-08-25 to get the real syllabus deadlines and set up recurring deadline reminders once known (separate from the study-block calendar, which is already built). |
+Moved to `personal/task-audit.md` (2026-07-13) to keep the personal side of the KPI scoreboard separate from business tasks. See that file for grocery/meal planning, workout, weight tracking, cooking/cleaning/yard work, vacation, home maintenance, gifts, and school.
 
 ---
 
@@ -80,8 +65,8 @@
 
 ## Still Open
 
-1. **Messy Middle growth marketing** — currently 4 real members, needs a plan to grow (women-only group)
-2. **Personal + school round** — deferred to a separate pass per Jackie's request (2026-07-11)
+1. **Messy Middle growth marketing** — plan written 2026-07-13 (`plans/2026-07-13-messy-middle-growth.md`); execution (dedicated HubSpot send, roster mining, LinkedIn weighting) not yet started
+2. **Personal + school round** — completed 2026-07-12, now tracked separately in `personal/task-audit.md`
 
 ---
 
