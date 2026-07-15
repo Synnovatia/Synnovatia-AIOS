@@ -8,6 +8,31 @@
 
 ---
 
+## 2026-07-15
+
+### Morning Brief Skill Used + Bill-Pay Cadence Moved
+- Ran the new "morning" skill for the first time — gathered today's calendar (birthday call, long hike, study/homework blocks), checked Gmail for anything needing a reply (nothing), and surfaced two real items: the bill-pay reminder due today, and a heads-up that tomorrow's calendar carries a long-standing anniversary reminder for Dana Carr & Associates (a friend/referral partner going back to 2013, confirmed via Gmail history) with an offer to draft a note
+- Moved the bill-pay/bookkeeping reminder from the 15th/30th to the 20th/30th per Jackie's request — updated the scheduled task and `context/task-audit.md`
+
+### HubSpot Active Engagers Send — Pulled Forward, Sent Early
+- Drafted the Active Engagers (340) biweekly send a day early at Jackie's request, ahead of its normal 7/16 cadence — general version (book-a-call) plus the Messy Middle women segment (397), the latter written as the dedicated push flagged in the growth plan (Oct 9 cohort deadline as urgency)
+- Jackie rewrote the Messy Middle version herself with a much stronger personal angle ("a different kind of room," women needing a space for the whole of their real life, not just the P&L) — Claude lightly shaped it for email flow but kept her language and rhythm intact
+- Iterated the general version per Jackie's direction: she's testing a website form (day/time/objective/pricing) instead of a direct calendar link so she can follow up with people who click but don't finish; CTA and preview text went through two rounds to land on Jackie's own wording ("Ready to start the conversation" / "An outside read on what's got you stuck") — saved as a voice-preference memory (sentence case, conversational, not Title Case ad copy)
+- Both emails sent/scheduled: Messy Middle version sent 7/15 (logged as the growth plan's first completed action), general version scheduled for 7/22 7:30am
+
+### Personal-Goals Layer Built (Unblocks the Dashboard)
+- Captured real baselines in a new file, `personal/health-goals.md`, mirroring how `strategy.md`/`current-data.md` work for the business: weight 143.5 lbs → 135-138 lbs, body fat 38.3% → 30%, waist 31.5in → 28in
+- Checked the MCP registry for a Welltory or general fitness-app connector — none exists. Restructured `personal/workout-logs/session-log.csv` to a general schema (any workout/walk, not just strength days) with a new HRV column, since Jackie will self-report avg HR/HRV/METs per session for Claude to log and periodically use to suggest program adjustments
+- Logged today's long hike (3.67 mi, 90 min, avg HR 120, 372 METs) as the first entry under the new schema
+- This closes the item that was blocking the dashboard build — next session can move to the dashboard itself
+
+### LinkedIn's First Real Batch Drafted
+- Jackie asked to jump ahead of the normal Friday batch-draft cadence (which hasn't fired yet — this is the system's first real output) and add an extra post for this Friday (7/17) that the normal cadence would have skipped
+- Drafted 4 posts total (Fri 7/17 client win, Mon 7/20 thought leadership, Wed 7/22 story, Fri 7/24 client win), then iterated significantly per feedback: shortened and sharpened for wit, caught and fixed a real problem where nearly every post leaned on the same anaphoric/negation-heavy cadence ("not X, it's Y") that the brand-voice doc already flags as an AI tell, and rewrote all four with more natural sentence variation
+- Additional voice notes captured and saved to memory: no jargon (caught "scoped the account," replaced with plain language), say "conversation" not "session," say "strategizing" not "consulting" (matches Jackie's actual title, Small Business Strategist)
+- Decided against hashtags (LinkedIn's algorithm no longer rewards them) and against an in-post link on the 7/22 story (algorithm penalizes outbound links; tonally it's a story post, not a pitch) — engagement question added only to the 7/20 thought-leadership post, since it's the one post making a claim worth discussing, not tacked on as generic engagement bait
+- All 4 scheduled via LinkedIn's own scheduler
+
 ## 2026-07-14 (continued)
 
 ### Weekly Menu, Grocery List, and Workout Program Updated

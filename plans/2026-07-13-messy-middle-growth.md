@@ -49,7 +49,7 @@ This segment already exists and is already getting a mastermind-application CTA 
 
 ## First Actions
 
-1. Tag the 397 HubSpot segment's next scheduled send (2026-07-16, per the existing biweekly cadence) as the first "dedicated push" send — lead with the mastermind, not a variant
+1. ~~Tag the 397 HubSpot segment's next scheduled send (2026-07-16, per the existing biweekly cadence) as the first "dedicated push" send — lead with the mastermind, not a variant~~ **Done 2026-07-15** — sent a day early, using Jackie's own "different vibe when women gather in a room" angle rather than the original draft copy. See `outputs/hubspot-marketing/2026-07-16-second-round-drafts.md`.
 2. Draft the standalone mastermind-invitation email for that segment (separate task, next session)
 3. Do a first pass over `client-reengagement/data/roster.csv` to flag likely $250K-$500K women-owned fits for Jackie to confirm
 4. Note in Friday's LinkedIn batch-draft (next: 2026-07-18) to weight one post toward Messy Middle mastermind experience
