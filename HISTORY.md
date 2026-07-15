@@ -8,6 +8,19 @@
 
 ---
 
+## 2026-07-14 (continued)
+
+### Weekly Menu, Grocery List, and Workout Program Updated
+- Built this week's dinner menu + shopping list from Jackie's reported sale finds (Sprouts BOGO beef/chicken, wild-caught shrimp, Farmer's Market Friday, Albertsons, Trader Joe's) as a printable PDF (`personal/grocery-lists/2026-07-14-menu-and-grocery-list.pdf`) — checkboxes per item, organized by store
+- Iterated per feedback: fixed a checkbox font-rendering bug (Unicode ☐ rendered as a solid black square — switched to plain `[ ]` text), added a recipe (ingredients + steps + time estimate) for each dinner, then reordered so each recipe sits directly under the menu instead of in a separate back section
+- Added a new standing rule to `personal/meal-planning.md`: Saturday is burger night every week (burgers, salad, chips) — updated this week's already-built menu to match since Saturday hadn't happened yet
+- Built today's Day A strength-training session as a fillable printable log (`personal/workout-logs/2026-07-14-day-a.pdf`) — blank weight/rep columns per set, matching the plan's double-progression tracking
+- Assessed whether 6 exercises fills the 45-60 min session target (estimated ~35-45 min with proper rest) — added a 7th, Dumbbell Farmer's Carry, to `personal/workout-plan.md` Day A
+- Jackie reported real session data (weights/reps per exercise, duration, heart rate, METs) — logged to two new tracking files, `personal/workout-logs/exercise-log.csv` (per-set) and `session-log.csv` (per-session), and ran a progression analysis: most exercises exceeded their target rep range and are ready for a weight increase next Tuesday. Flagged one clearly implausible reported number (a 2:14.7 min/mile walking pace) rather than logging it as fact.
+- Formalized Glute Bridge (added mid-session by Jackie, not in the original plan) as Day A's 8th exercise
+- Mirrored the loaded-carry addition into Day B as Single-Arm Suitcase Carry (not a plain copy — chosen to avoid duplicating Day B's existing Stability Ball Hip Bridge/Hamstring Curl, which already covers glute-bridge-style work)
+- Added Band Face Pull (3x12-15) to both Day A and Day B for posture/upper-back work, given how much sitting the school Pomodoro blocks and desk work add up to — neither day had a true rear-delt/scapular exercise before, just horizontal rows
+
 ## 2026-07-14
 
 ### Daily Session + Re-Engagement Batch Sent

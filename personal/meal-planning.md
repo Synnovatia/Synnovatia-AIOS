@@ -18,6 +18,7 @@ High protein, whole foods emphasis (Mayo Clinic diet-style) — lots of vegetabl
 - Fish at least once a week
 - Rotates: chicken breast, beef, pork chops
 - Protein choice largely driven by what's on sale
+- **Saturday is burger night (standing):** burgers, salad, chips — every week, don't suggest an alternative Saturday dinner
 
 ## Stores & Shopping Pattern
 

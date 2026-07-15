@@ -32,6 +32,9 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 | Single-Arm Dumbbell Row | 3 x 8-12/side |
 | Single-Leg Balance Reach (bodyweight) | 2 x 8-10/side |
 | Plank | 2 x 30-45 sec |
+| Dumbbell Farmer's Carry | 3 x 40-60 ft |
+| Glute Bridge | 3 x 15 |
+| Band Face Pull | 3 x 12-15 |
 
 ## Day B — Thursday
 
@@ -43,6 +46,8 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 | Band Bent-Over Row | 3 x 10-15 |
 | Stability Ball Hip Bridge/Hamstring Curl | 2 x 10-12 |
 | Side Plank | 2 x 20-30 sec/side |
+| Single-Arm Suitcase Carry | 3 x 40-60 ft/side |
+| Band Face Pull | 3 x 12-15 |
 
 ---
 

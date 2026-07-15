@@ -1,0 +1,24 @@
+date,day_type,exercise,set,weight_lbs,reps_or_time,target,note
+2026-07-14,A,Goblet Squat,1,15,15,3x8-12,exceeded top of range
+2026-07-14,A,Goblet Squat,2,20,15,3x8-12,exceeded top of range at increased weight
+2026-07-14,A,Goblet Squat,3,20,15,3x8-12,exceeded top of range at increased weight
+2026-07-14,A,Dumbbell Romanian Deadlift,1,15,15,3x8-12,exceeded top of range
+2026-07-14,A,Dumbbell Romanian Deadlift,2,20,15,3x8-12,exceeded top of range at increased weight
+2026-07-14,A,Dumbbell Romanian Deadlift,3,20,15,3x8-12,exceeded top of range at increased weight
+2026-07-14,A,Dumbbell Floor/Bench Press,1,15,15,3x8-12,exceeded top of range
+2026-07-14,A,Dumbbell Floor/Bench Press,2,20,10,3x8-12,within range at increased weight
+2026-07-14,A,Dumbbell Floor/Bench Press,3,20,10,3x8-12,within range at increased weight
+2026-07-14,A,Single-Arm Dumbbell Row,1,15,15,3x8-12/side,exceeded top of range
+2026-07-14,A,Single-Arm Dumbbell Row,2,15,15,3x8-12/side,exceeded top of range
+2026-07-14,A,Single-Arm Dumbbell Row,3,15,15,3x8-12/side,exceeded top of range
+2026-07-14,A,Single-Leg Balance Reach,1,bodyweight,15,2x8-10/side,exceeded top of range
+2026-07-14,A,Single-Leg Balance Reach,2,bodyweight,15,2x8-10/side,exceeded top of range
+2026-07-14,A,Plank,1,bodyweight,45sec,2x30-45sec,at top of range
+2026-07-14,A,Plank,2,bodyweight,45sec,2x30-45sec,at top of range
+2026-07-14,A,Plank,3,bodyweight,45sec,2x30-45sec,extra 3rd set beyond plan's 2
+2026-07-14,A,Dumbbell Farmer's Carry,1,10,not given,3x40-60ft,first time logged; new exercise added this week
+2026-07-14,A,Dumbbell Farmer's Carry,2,15,not given,3x40-60ft,first time logged
+2026-07-14,A,Dumbbell Farmer's Carry,3,20,not given,3x40-60ft,first time logged
+2026-07-14,A,Glute Bridge,1,bodyweight,15,not in documented plan,added mid-session by Jackie; not yet formalized in workout-plan.md
+2026-07-14,A,Glute Bridge,2,bodyweight,15,not in documented plan,added mid-session
+2026-07-14,A,Glute Bridge,3,bodyweight,15,not in documented plan,added mid-session
