@@ -10,6 +10,13 @@
 
 ## 2026-07-16
 
+### Pre-Meeting Objective Emails — Built
+- Closed out the original task-audit's Quick Win #5 (post-meeting follow-ups were already covered by `client-reengagement/`)
+- Scoped it first rather than assuming: confirmed this is for **existing/ongoing clients only** (new clients' first meeting is handled by the onboarding redirect flow instead), that Boomerang's own "Objective" field is only sometimes used by clients at booking, and the ask should go out 4 days before the meeting when it's missing
+- Built `pre-meeting-objective-check`, a new daily scheduled task: watches Boomerang booking confirmations, skips anyone already tracked in `data/onboarding/tracking.csv` (new clients), logs everyone else in `data/meeting-prep/tracking.csv`, and drafts a short objective-ask email 4 days out if nothing was captured at booking
+- Documented in `context/meeting-prep.md`, registered in `docs/_index.md` and `CLAUDE.md`, marked Built in `context/task-audit.md`
+- **Caught a real gap right after building it:** Jackie pointed out meetings are sometimes booked verbally at the end of a call and never go through Boomerang, so the Gmail-only detection would have missed them entirely. Redesigned as calendar-first: scans the next 7 days on her Google Calendar and recognizes client meetings via her existing green (`colorId` 10) "Strategize // Name // Jackie" convention, or Boomerang's own event fingerprint — either way lands as a calendar event, so this is a superset of the original design. Confirmed the real pattern against her actual calendar (found a genuine example: "Strategize // Lanise // Jackie," green, 7/29) before finalizing. Bonus simplification: Boomerang embeds its "Objective: ..." field directly in the calendar event description, so no separate Gmail parsing is needed for that anymore either.
+
 ### Client Onboarding Sequence — Built
 - Reviewed the original task-audit follow-up (`outputs/2026-07-15-task-audit-followup.md`) and picked up the top open Quick Win: client onboarding. Found a prior, more detailed scoping session for this same feature in a now-deleted workspace (`aios-starter-kit-main`, 2026-07-06/07) — reused every real decision from it, but rebuilt the architecture around what Synnovatia AIOS actually has today (live HubSpot/Gmail MCP access, Claude scheduled tasks) instead of the old plan's standalone-scripts-plus-private-app-token approach
 - Wrote `plans/2026-07-16-client-onboarding-sequence.md`, then ran a live test: submitted the Agreement form, booked a test Boomerang slot, and (after Jackie fixed an issue) submitted the Client Profile form — all three real notification emails captured and matched exactly the predicted HubSpot-native-form pattern, confirming detection logic without guessing
