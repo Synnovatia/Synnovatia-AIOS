@@ -92,6 +92,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── style-guide.md       # Visual identity — colors, typography, type scale (2026 Edition)
 │   ├── linkedin-marketing.md    # LinkedIn content/outreach strategy
 │   ├── hubspot-marketing.md     # HubSpot segment-based email marketing strategy
+│   ├── client-onboarding.md     # New client welcome/agreement/profile/scheduling tracking
 │   ├── general-business.md  # Shared company snapshot — give to team members
 │   ├── team-member.md       # Template for team members (sector + role context)
 │   ├── group/key-metrics.md # Auto-generated live metrics (Stripe, HubSpot) — read each session
@@ -100,7 +101,8 @@ These are how you know your EVOLV-OS is working:
 │   ├── data.db                    # Daily snapshots from connected sources
 │   ├── key-metrics.md             # Manual baseline + goals-progress tracking
 │   ├── collect.log                # Daily collection job output
-│   └── meeting-summaries/         # Manual/fallback meeting notes (pre-2026-07-11 or non-Zoom)
+│   ├── meeting-summaries/         # Manual/fallback meeting notes (pre-2026-07-11 or non-Zoom)
+│   └── onboarding/tracking.csv    # Client onboarding checklist state (source of truth, not HubSpot properties)
 ├── scripts/                 # DataOS collectors (Stripe live; HubSpot via MCP; GA manual)
 ├── config/                  # launchd job for daily 6am data collection
 ├── docs/                    # System documentation
@@ -121,6 +123,7 @@ These are how you know your EVOLV-OS is working:
 ├── outputs/                 # Work products and deliverables
 │   └── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
 ├── reference/               # Templates, examples, reusable patterns
+│   └── email-templates/     # onboarding-welcome.md, onboarding-reminder.md
 └── shares/                  # Packaged systems for sharing
 ```
 

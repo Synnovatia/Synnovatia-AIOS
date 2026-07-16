@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-07-16
+
+### Client Onboarding Sequence — Built
+- Reviewed the original task-audit follow-up (`outputs/2026-07-15-task-audit-followup.md`) and picked up the top open Quick Win: client onboarding. Found a prior, more detailed scoping session for this same feature in a now-deleted workspace (`aios-starter-kit-main`, 2026-07-06/07) — reused every real decision from it, but rebuilt the architecture around what Synnovatia AIOS actually has today (live HubSpot/Gmail MCP access, Claude scheduled tasks) instead of the old plan's standalone-scripts-plus-private-app-token approach
+- Wrote `plans/2026-07-16-client-onboarding-sequence.md`, then ran a live test: submitted the Agreement form, booked a test Boomerang slot, and (after Jackie fixed an issue) submitted the Client Profile form — all three real notification emails captured and matched exactly the predicted HubSpot-native-form pattern, confirming detection logic without guessing
+- Rewrote the welcome email into 4 numbered steps per Jackie's direction (new Client Profile form link, redirect-based scheduling copy) — new Gmail draft `r-7642630703959118390` replaces the old one
+- Discovered a real tool limitation: the HubSpot MCP connector here can read/search properties and create/update records, but can't create new custom property definitions — pivoted the 4-step checklist to a local CSV (`data/onboarding/tracking.csv`), matching the same pattern already used by `client-reengagement/`, rather than asking Jackie to create 5 properties by hand
+- Built the daily `onboarding-daily-check` scheduled task (8:10am): detects new Closed-Won deals, drafts personalized welcome emails (draft-only), watches Gmail for the 3 confirmation types, checks Stripe for invoice-paid, and sends a reminder draft every 5 days if anything's still incomplete
+- Documented the system in `context/client-onboarding.md`, registered in `docs/_index.md` and `CLAUDE.md`, marked **Built** in `context/task-audit.md`
+- **End-to-end test, same day:** discovered 26 pre-existing Closed-Won deals in HubSpot (dating to 2022-2023) — seeded `data/onboarding/tracking.csv` with all 26 marked pre-existing so the daily check won't try to backfill-onboard real past clients. Created one test deal (Jackie's own confirmed contact, associated with the earlier live-test emails), ran the full flow manually: new-deal detection, personalized welcome draft, and all 3 checklist items (agreement/profile/meeting) correctly matched against the real test emails from the live test — invoice-paid correctly stayed open (no matching paid invoice in Stripe). Test deal deleted from HubSpot and its tracking row removed after verifying.
+
 ## 2026-07-15
 
 ### Dashboard Revised — Merged Business Goals, To Dos, Checkable Reminders, Daily Auto-Refresh
