@@ -119,6 +119,7 @@ These are how you know your EVOLV-OS is working:
 │   └── workout-plan.md      # Strength training program (Fortify-compatible)
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
+│   └── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
 ├── reference/               # Templates, examples, reusable patterns
 └── shares/                  # Packaged systems for sharing
 ```

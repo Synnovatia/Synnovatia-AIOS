@@ -10,6 +10,22 @@
 
 ## 2026-07-15
 
+### Dashboard Revised — Merged Business Goals, To Dos, Checkable Reminders, Daily Auto-Refresh
+- Reworked the v1 layout per feedback: Business + Growth Goals merged into one "Business Goals" card (revenue, new-retainer progress, mastermind growth all together); Personal card moved below it; revenue number resized down for visual consistency with the rest of the card
+- Revenue now tracks two goals: $35,000 for 2026 (primary progress bar, 33.7%) and $100,000 for 2027 (smaller "Next" note) — removed the self-reported-vs-Stripe reconciliation flag entirely and standardized on Stripe as the sole revenue source
+- Added a "To Do" list to the Business Goals card: the 40% rate increase (Jan 2027), launching a 2nd Mastermind for the Messy Middle (Jan 2027), and marketing that 2nd cohort aggressively starting Oct 2026 — plus a distinctly-styled (non-caution) "Future idea" note about eventually adding a sales-funnel view (prospects → calls → close rate)
+- Reminders are now checkable — each item has a real checkbox persisted via localStorage (per-item `data-id`, survives page reloads) — and now include personal reminders (grocery/shopping, home maintenance, workout days from `personal/workout-plan.md`), not just business ones, all still gated by the business-only/everything scope toggle
+- Established `outputs/dashboard/dashboard.html` (+ `dashboard-fragment.html` for artifact publishing) as the **canonical, undated, living file** — replaces `2026-07-15-dashboard-v1.html` (deleted; superseded same-session) so a daily job and the published artifact always point at one stable path/URL. `2026-07-13-mockup.html` stays as-is, frozen for history.
+- Set up `dashboard-daily-refresh`, a new scheduled task (7:05am daily) that pulls fresh Stripe/health/reminder data and republishes the dashboard to the same artifact URL (`https://claude.ai/code/artifact/634fa6be-828d-48f4-aa6b-16481f6e013a`) each morning — the "Auto, every morning" refresh mode is now real, not just a UI toggle
+- Answered where LinkedIn/HubSpot engagement metrics and client-reengagement follow-up should live: LinkedIn has no dedicated time-series log yet (current-data.md/key-metrics.md hold prose only) — flagged as a future build item; HubSpot email performance is trackable via the connector's `get_campaign_attribution_reports`/`get_content_analytics_report` tools whenever asked; client re-engagement already has full response/follow-up tracking in `client-reengagement/data/outreach_log.csv` and `meeting_notes.csv` — no new system needed there
+
+### Dashboard v1 Built — Business + Personal Snapshot
+- Picked up from the 2026-07-13 mockup (`outputs/dashboard/2026-07-13-mockup.html`) and its 5 open questions; resolved them: combined business + personal headline (not a single stat), added a monthly revenue trend, reminders link out to their source app, and desktop is the primary device
+- Built `outputs/dashboard/2026-07-15-dashboard-v1.html` using the same navy/gold/teal style-guide system as the mockup: Business card (revenue vs. $100K goal, new-retainer-client progress tracked from Jul 1 2026, rate-increase progress), Personal card (weight/body fat/waist vs. goals from `personal/health-goals.md`, workout sessions this week), Growth Goals card (Messy Middle 5/8-10, Seven Figure Forum 4/6), and a real Reminders list pulled from the actual scheduled-task queue
+- Flagged honestly rather than faked: the revenue trend line only has 5 days of history (data collection started 2026-07-11) and will fill in over time; the $17,000 self-reported income vs. $11,785 Stripe gap (~$5,200) is surfaced as an open reconciliation item, not hidden
+- Registered in `docs/_index.md`, `context/task-audit.md`, and `CLAUDE.md`'s workspace structure
+- Published to claude.ai as a viewable artifact in addition to the saved file
+
 ### Morning Brief Skill Used + Bill-Pay Cadence Moved
 - Ran the new "morning" skill for the first time — gathered today's calendar (birthday call, long hike, study/homework blocks), checked Gmail for anything needing a reply (nothing), and surfaced two real items: the bill-pay reminder due today, and a heads-up that tomorrow's calendar carries a long-standing anniversary reminder for Dana Carr & Associates (a friend/referral partner going back to 2013, confirmed via Gmail history) with an offer to draft a note
 - Moved the bill-pay/bookkeeping reminder from the 15th/30th to the 20th/30th per Jackie's request — updated the scheduled task and `context/task-audit.md`

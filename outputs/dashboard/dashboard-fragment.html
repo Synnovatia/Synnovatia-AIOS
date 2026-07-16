@@ -1,0 +1,680 @@
+<title>Synnovatia Dashboard</title>
+<h2 class="sr-only">Synnovatia dashboard — business and personal snapshot, built from real Stripe, HubSpot, and health-tracking data</h2>
+
+<style>
+  :root {
+    --navy: #0D1F4E;
+    --navy-mid: #1A3A7A;
+    --gold: #B29200;
+    --gold-light: #F5C842;
+    --teal: #0F6E56;
+    --teal-light: #5DCAA5;
+    --cream: #F7F6F2;
+    --ink: #444441;
+    --line: #DEDBD1;
+    --card: #FFFFFF;
+    --future: #1A3A7A;
+    --future-bg: #E8ECF5;
+
+    --bg: var(--cream);
+    --fg: var(--ink);
+    --fg-soft: #7A776E;
+    --surface: var(--card);
+    --surface-line: var(--line);
+    --accent: var(--gold);
+    --accent-2: var(--teal);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: var(--navy);
+      --fg: #EDEEF5;
+      --fg-soft: #A9B2CE;
+      --surface: var(--navy-mid);
+      --surface-line: #2C4A8F;
+      --accent: var(--gold-light);
+      --accent-2: var(--teal-light);
+      --future: var(--teal-light);
+      --future-bg: #1F3560;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: var(--navy);
+    --fg: #EDEEF5;
+    --fg-soft: #A9B2CE;
+    --surface: var(--navy-mid);
+    --surface-line: #2C4A8F;
+    --accent: var(--gold-light);
+    --accent-2: var(--teal-light);
+    --future: var(--teal-light);
+    --future-bg: #1F3560;
+  }
+  :root[data-theme="light"] {
+    --bg: var(--cream);
+    --fg: var(--ink);
+    --fg-soft: #7A776E;
+    --surface: var(--card);
+    --surface-line: var(--line);
+    --accent: var(--gold);
+    --accent-2: var(--teal);
+    --future: #1A3A7A;
+    --future-bg: #E8ECF5;
+  }
+
+  .dash-root {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 28px 24px 40px;
+    box-sizing: border-box;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .dash-root, .dash-root * { box-sizing: border-box; }
+  .label-face {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--surface-line);
+    margin-bottom: 20px;
+  }
+  .brand-eyebrow {
+    font-size: 11px;
+    color: var(--accent-2);
+    margin: 0 0 4px;
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+  }
+  .dash-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .status-badge {
+    font-family: Arial, sans-serif;
+    font-size: 12.5px;
+    color: var(--fg-soft);
+    text-align: right;
+    line-height: 1.5;
+    max-width: 260px;
+  }
+  .status-badge strong { color: var(--fg); }
+
+  .control-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .control-label {
+    font-size: 11px;
+    color: var(--fg-soft);
+    margin-bottom: 6px;
+  }
+  .segmented {
+    display: inline-flex;
+    border: 1px solid var(--surface-line);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .segmented button {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 14px;
+    border: none;
+    background: transparent;
+    color: var(--fg-soft);
+    cursor: pointer;
+  }
+  .segmented button[aria-pressed="true"] {
+    background: var(--accent);
+    color: var(--navy);
+  }
+  .segmented button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: -2px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+  .stack { display: flex; flex-direction: column; gap: 18px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 4px;
+    padding: 18px 20px;
+  }
+  .card h3.eyebrow {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-2);
+    margin: 0 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .card h3.eyebrow span.card-sub {
+    color: var(--fg-soft);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Revenue: sized to sit level with other stats, not a dominant hero number */
+  .rev-number {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-variant-numeric: tabular-nums;
+    margin: 0 0 2px;
+  }
+  .rev-sub {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: var(--fg-soft);
+    margin: 0 0 10px;
+  }
+  .progress-track {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--surface-line);
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 4px;
+  }
+  .progress-caption {
+    font-family: Arial, sans-serif;
+    font-size: 12.5px;
+    color: var(--fg-soft);
+    display: flex;
+    justify-content: space-between;
+  }
+  .goal-next {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: var(--fg-soft);
+    margin: 8px 0 0;
+    font-style: italic;
+  }
+
+  .spark-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin: 4px 0 10px;
+  }
+  .spark-row svg { display: block; flex-shrink: 0; }
+  .spark-note {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: var(--fg-soft);
+    font-style: italic;
+  }
+
+  .divider { border-top: 1px solid var(--surface-line); margin: 16px 0; }
+
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 7px 0;
+    border-top: 1px solid var(--surface-line);
+  }
+  .stat-row:first-child { border-top: none; padding-top: 0; }
+  .stat-row .stat-name { color: var(--fg); }
+  .stat-row .stat-val { font-variant-numeric: tabular-nums; color: var(--fg-soft); white-space: nowrap; }
+  .stat-row .stat-val strong { color: var(--fg); font-weight: 700; }
+
+  .mm-row { margin-bottom: 16px; }
+  .mm-row:last-child { margin-bottom: 0; }
+  .mm-row-head {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .mm-row-head .count { font-variant-numeric: tabular-nums; color: var(--fg-soft); }
+
+  h4.subhead {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--fg-soft);
+    margin: 0 0 10px;
+  }
+
+  .todo-list { list-style: none; margin: 0; padding: 0; font-family: Arial, sans-serif; font-size: 14px; }
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 0;
+    border-top: 1px solid var(--surface-line);
+  }
+  .todo-list li:first-child { border-top: none; padding-top: 0; }
+  .todo-due {
+    font-family: Arial Narrow, Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    white-space: nowrap;
+    padding-top: 1px;
+  }
+
+  .future-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 12.5px;
+    color: var(--future);
+    background: var(--future-bg);
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin-top: 14px;
+    line-height: 1.5;
+  }
+  .future-note .flag-mark { flex-shrink: 0; }
+
+  .reminders-card { grid-row: span 2; }
+  .rem-section { margin-bottom: 20px; }
+  .rem-section:last-child { margin-bottom: 0; }
+  .rem-section h4 {
+    font-family: Arial Narrow, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--fg-soft);
+    margin: 0 0 8px;
+  }
+  .rem-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14.5px;
+  }
+  .rem-list li {
+    border-top: 1px solid var(--surface-line);
+  }
+  .rem-list li:first-child { border-top: none; }
+  .rem-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 0;
+    cursor: pointer;
+  }
+  .rem-check {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: var(--accent-2);
+    cursor: pointer;
+  }
+  .rem-time {
+    font-variant-numeric: tabular-nums;
+    color: var(--fg-soft);
+    font-size: 13px;
+    white-space: nowrap;
+    min-width: 60px;
+    padding-top: 1px;
+  }
+  .rem-body { flex: 1; }
+  .rem-body a.rem-link {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-2);
+  }
+  .rem-body a.rem-link:hover { color: var(--accent-2); }
+  .rem-body a.rem-link:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+  .rem-tag {
+    font-family: Arial Narrow, Arial, sans-serif;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-2);
+    display: block;
+    margin-top: 2px;
+  }
+  .rem-text { display: block; }
+  .rem-row.is-done .rem-text { text-decoration: line-through; color: var(--fg-soft); }
+  .rem-row.is-done .rem-tag { opacity: 0.6; }
+  .rem-empty {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(--fg-soft);
+    font-style: italic;
+    padding: 6px 0;
+  }
+  .rem-only-personal { display: none; }
+  .show-everything .rem-only-personal { display: block; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="dash-root">
+
+  <div class="topbar">
+    <div>
+      <p class="brand-eyebrow">Synnovatia · Internal</p>
+      <h1 class="dash-title">The Dashboard</h1>
+    </div>
+    <div class="status-badge" id="statusBadge">
+      <strong>Refreshed automatically ~7am</strong><br>
+      Jul 15, 2026
+    </div>
+  </div>
+
+  <div class="control-row">
+    <div>
+      <div class="control-label label-face">Refresh mode</div>
+      <div class="segmented" id="refreshToggle">
+        <button aria-pressed="true" data-mode="auto">Auto, every morning</button>
+        <button aria-pressed="false" data-mode="ondemand">On-demand only</button>
+      </div>
+    </div>
+    <div>
+      <div class="control-label label-face">Reminders scope</div>
+      <div class="segmented" id="scopeToggle">
+        <button aria-pressed="true" data-scope="business">Business only</button>
+        <button aria-pressed="false" data-scope="everything">Everything</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid" id="dashGrid">
+    <div class="stack">
+
+      <div class="card">
+        <h3 class="eyebrow">Business Goals <span class="card-sub">Stripe + HubSpot, live</span></h3>
+
+        <p class="rev-number">$11,785 <span style="font-size:14px; font-weight:normal; color:var(--fg-soft);">YTD</span></p>
+        <p class="rev-sub">$1,599 this month &middot; 48 customers all-time &middot; net of refunds</p>
+
+        <div class="spark-row">
+          <svg width="100" height="24" viewBox="0 0 100 24" role="img" aria-label="Revenue tracked flat at $1,599 MTD across the 5 days collected so far">
+            <polyline points="4,12 26,12 50,12 74,12 96,12" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <circle cx="96" cy="12" r="2.5" fill="var(--accent-2)"></circle>
+          </svg>
+          <span class="spark-note">5 days tracked so far &mdash; trend builds daily</span>
+        </div>
+
+        <div class="progress-track"><div class="progress-fill" style="width: 33.7%"></div></div>
+        <div class="progress-caption">
+          <span>$11,785 of $35,000 &middot; 2026 goal</span>
+          <span>33.7%</span>
+        </div>
+        <p class="goal-next">Next: $100,000 annualized by 2027</p>
+
+        <div class="divider"></div>
+
+        <div class="stat-row">
+          <span class="stat-name">New retainer clients (since Jul 1, 2026)</span>
+          <span class="stat-val"><strong>0</strong> of 5 &middot; by ~Oct 2026</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="mm-row">
+          <div class="mm-row-head"><span>Mastermind for the Messy Middle (Oct 2026)</span><span class="count">5 / 8&ndash;10</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width: 56%; background: var(--accent-2);"></div></div>
+        </div>
+        <div class="mm-row">
+          <div class="mm-row-head"><span>Seven Figure Forum (Jan 2027)</span><span class="count">4 / 6</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width: 67%; background: var(--accent-2);"></div></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h4 class="subhead">To Do</h4>
+        <ul class="todo-list">
+          <li><span>Roll out 40% rate increase (post-rebrand)</span><span class="todo-due">Jan 2027</span></li>
+          <li><span>Market 2nd Messy Middle cohort aggressively</span><span class="todo-due">Starting Oct 2026</span></li>
+          <li><span>Launch 2nd Mastermind for the Messy Middle</span><span class="todo-due">Jan 2027</span></li>
+        </ul>
+
+        <div class="future-note"><span class="flag-mark">&#9733;</span> Future idea: a sales-funnel view (prospects &rarr; sales calls &rarr; close rate) once that pipeline is tracked somewhere trackable.</div>
+      </div>
+
+    </div>
+
+    <div class="card reminders-card" id="remindersCard">
+      <h3 class="eyebrow">Reminders</h3>
+
+      <div class="rem-section">
+        <h4>Today &middot; Wed Jul 15</h4>
+        <ul class="rem-list">
+          <li class="rem-empty">Nothing scheduled today</li>
+        </ul>
+      </div>
+
+      <div class="rem-section">
+        <h4>This Week</h4>
+        <ul class="rem-list">
+          <li>
+            <label class="rem-row" data-id="2026-07-16-hubspot-active">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Thu 10am</span>
+              <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://app.hubspot.com/" target="_blank" rel="noopener">HubSpot Active Engagers draft (340 contacts)</a></span><span class="rem-tag">Marketing</span></span>
+            </label>
+          </li>
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-07-16-workout-b">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Thu</span>
+              <span class="rem-body"><span class="rem-text">Workout &mdash; hill warm-up + strength (Day B)</span><span class="rem-tag">Personal</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="rem-row" data-id="2026-07-17-linkedin-draft">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Fri 9:07am</span>
+              <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn batch-draft (3 posts)</a></span><span class="rem-tag">Marketing</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="rem-row" data-id="2026-07-17-linkedin-metrics">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Fri 9:10am</span>
+              <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://www.linkedin.com/analytics/" target="_blank" rel="noopener">LinkedIn metrics check-in</a></span><span class="rem-tag">Marketing</span></span>
+            </label>
+          </li>
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-07-18-walk">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Sat</span>
+              <span class="rem-body"><span class="rem-text">5-mile walk</span><span class="rem-tag">Personal</span></span>
+            </label>
+          </li>
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-07-19-weighin">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Sun 8:05am</span>
+              <span class="rem-body"><span class="rem-text">Weekly weigh-in (weight, body fat, waist)</span><span class="rem-tag">Personal</span></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rem-section">
+        <h4>Coming Up</h4>
+        <ul class="rem-list">
+          <li>
+            <label class="rem-row" data-id="2026-07-20-billpay">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Jul 20</span>
+              <span class="rem-body"><span class="rem-text">Bill-pay / bookkeeping</span><span class="rem-tag">Invoicing</span></span>
+            </label>
+          </li>
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-07-22-grocery">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Jul 22</span>
+              <span class="rem-body"><span class="rem-text">Grocery sale check-in + menu planning</span><span class="rem-tag">Personal</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="rem-row" data-id="2026-07-23-hubspot-lapsed">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Jul 23</span>
+              <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://app.hubspot.com/" target="_blank" rel="noopener">HubSpot Lapsed segment draft (511 contacts)</a></span><span class="rem-tag">Marketing</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="rem-row" data-id="2026-07-28-ginny">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Jul 28</span>
+              <span class="rem-body"><span class="rem-text">Follow up: Ginny Kenyon, Chronic Disease University</span><span class="rem-tag">Business dev</span></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rem-section">
+        <h4>Later</h4>
+        <ul class="rem-list">
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-08-27-spa">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Aug 27</span>
+              <span class="rem-body"><span class="rem-text">Reorder spa supplies/filters</span><span class="rem-tag">Home</span></span>
+            </label>
+          </li>
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-09-01-treetrim">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Sep 1</span>
+              <span class="rem-body"><span class="rem-text">Schedule tree trimming (Art Green Care)</span><span class="rem-tag">Home</span></span>
+            </label>
+          </li>
+          <li class="rem-only-personal">
+            <label class="rem-row" data-id="2026-10-01-homebatch">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Oct 1</span>
+              <span class="rem-body"><span class="rem-text">3 home reminders due: window cleaning, AC cleaning, granite seal</span><span class="rem-tag">Home</span></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stack">
+
+      <div class="card">
+        <h3 class="eyebrow">Personal <span class="card-sub">weekly weigh-in + workout log</span></h3>
+        <div class="stat-row">
+          <span class="stat-name">Weight</span>
+          <span class="stat-val"><strong>143.5 lbs</strong> &rarr; goal 135&ndash;138</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Body fat</span>
+          <span class="stat-val"><strong>38.3%</strong> &rarr; goal 30%</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Waist</span>
+          <span class="stat-val"><strong>31.5 in</strong> &rarr; goal 28 in</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Sessions logged this week</span>
+          <span class="stat-val"><strong>2</strong> &middot; strength + long hike</span>
+        </div>
+        <p class="spark-note" style="display:block; margin-top: 10px;">Baseline captured Jul 15, 2026 &mdash; this is day one. Progress shows up here after Sunday's weigh-in.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+(function() {
+  var scopeToggle = document.getElementById('scopeToggle');
+  var dashGrid = document.getElementById('dashGrid');
+  scopeToggle.addEventListener('click', function(e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    Array.from(scopeToggle.children).forEach(function(b) { b.setAttribute('aria-pressed', 'false'); });
+    btn.setAttribute('aria-pressed', 'true');
+    dashGrid.classList.toggle('show-everything', btn.dataset.scope === 'everything');
+  });
+
+  var refreshToggle = document.getElementById('refreshToggle');
+  var statusBadge = document.getElementById('statusBadge');
+  refreshToggle.addEventListener('click', function(e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    Array.from(refreshToggle.children).forEach(function(b) { b.setAttribute('aria-pressed', 'false'); });
+    btn.setAttribute('aria-pressed', 'true');
+    if (btn.dataset.mode === 'auto') {
+      statusBadge.innerHTML = '<strong>Refreshed automatically ~7am</strong><br>Jul 15, 2026';
+    } else {
+      statusBadge.innerHTML = '<strong>Refreshed just now</strong><br>Updates only when you ask';
+    }
+  });
+
+  // Reminder checkboxes — persisted per item id via localStorage
+  var STORE_KEY = 'synnovatia-dashboard-checks';
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { state = {}; }
+
+  document.querySelectorAll('.rem-row').forEach(function(row) {
+    var id = row.dataset.id;
+    var box = row.querySelector('.rem-check');
+    if (state[id]) {
+      box.checked = true;
+      row.classList.add('is-done');
+    }
+    box.addEventListener('change', function() {
+      state[id] = box.checked;
+      row.classList.toggle('is-done', box.checked);
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    });
+  });
+})();
+</script>
