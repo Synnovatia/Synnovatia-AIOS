@@ -93,7 +93,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── linkedin-marketing.md    # LinkedIn content/outreach strategy
 │   ├── hubspot-marketing.md     # HubSpot segment-based email marketing strategy
 │   ├── client-onboarding.md     # New client welcome/agreement/profile/scheduling tracking
-│   ├── meeting-prep.md          # Pre-meeting objective ask for existing/ongoing clients
+│   ├── meeting-prep.md          # Pre-meeting objective ask + post-meeting recap for existing/ongoing clients
 │   ├── general-business.md  # Shared company snapshot — give to team members
 │   ├── team-member.md       # Template for team members (sector + role context)
 │   ├── group/key-metrics.md # Auto-generated live metrics (Stripe, HubSpot) — read each session
@@ -104,7 +104,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── collect.log                # Daily collection job output
 │   ├── meeting-summaries/         # Manual/fallback meeting notes (pre-2026-07-11 or non-Zoom)
 │   ├── onboarding/tracking.csv    # Client onboarding checklist state (source of truth, not HubSpot properties)
-│   └── meeting-prep/tracking.csv # Pre-meeting objective-ask state for existing clients
+│   └── meeting-prep/tracking.csv # Pre-meeting objective-ask + post-meeting recap state for existing clients
 ├── scripts/                 # DataOS collectors (Stripe live; HubSpot via MCP; GA manual)
 ├── config/                  # launchd job for daily 6am data collection
 ├── docs/                    # System documentation
@@ -125,7 +125,7 @@ These are how you know your EVOLV-OS is working:
 ├── outputs/                 # Work products and deliverables
 │   └── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
 ├── reference/               # Templates, examples, reusable patterns
-│   └── email-templates/     # onboarding-welcome.md, onboarding-reminder.md
+│   └── email-templates/     # onboarding-welcome.md, onboarding-reminder.md, pre-meeting-objective.md, post-meeting-recap.md
 └── shares/                  # Packaged systems for sharing
 ```
 

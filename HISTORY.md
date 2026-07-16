@@ -10,6 +10,13 @@
 
 ## 2026-07-16
 
+### Post-Meeting Recap Emails — Built
+- Closed out the other half of the original audit's Quick Win #5 — post-meeting follow-ups already existed via `client-reengagement/`, but only for former/lapsed-client re-engagement calls (manually triggered). This is the automatic version for regular ongoing 1:1 client sessions, kept deliberately separate so there's no double-emailing the same call.
+- Scoped it first: confirmed same client population as the pre-meeting task, kept as a distinct system from client-reengagement, decided on a brief-recap-plus-action-items format, and same-day timing (not next-morning) — which meant hourly checks (8am-8pm) rather than once-daily.
+- Checked Zoom for a real example to validate against before building the detection logic (same discipline as the calendar-pattern check for pre-meeting): found a genuine past "Strategize // Lanise // Jackie" call, but it predates the 2026-07-11 auto-record/summary setup, so no real summary data exists yet — built against the tool's documented schema (`meeting_summary` with quick recap, full text, next steps) instead, flagged as needing live validation against the first real post-7/11 client session.
+- Built `post-meeting-recap-check`: reuses the exact same calendar-based meeting detection as `pre-meeting-objective-check` (shares `data/meeting-prep/tracking.csv`, extended with `zoom_meeting_number` and `recap_sent_date` columns), extracts the Zoom meeting ID straight from the calendar event's own description, pulls the AI summary once ready, and drafts a recap with light tone-editing (not raw AI text) plus action items.
+- Rewrote `context/meeting-prep.md` to document the full pre+post lifecycle as one system, updated `docs/_index.md`, `CLAUDE.md`, and `context/task-audit.md`.
+
 ### Pre-Meeting Objective Emails — Built
 - Closed out the original task-audit's Quick Win #5 (post-meeting follow-ups were already covered by `client-reengagement/`)
 - Scoped it first rather than assuming: confirmed this is for **existing/ongoing clients only** (new clients' first meeting is handled by the onboarding redirect flow instead), that Boomerang's own "Objective" field is only sometimes used by clients at booking, and the ask should go out 4 days before the meeting when it's missing
