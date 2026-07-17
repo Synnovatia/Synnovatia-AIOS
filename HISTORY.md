@@ -8,7 +8,22 @@
 
 ---
 
+## 2026-07-17
+
+### USAA Bill Snoozed + Bill-Pay Cadence Moved to 17th/30th
+- Jackie asked to snooze a same-day USAA bill reminder email until bill-pay day, "on repeat each month" — investigated true snooze options first rather than assuming: the Gmail MCP connector has no snooze primitive (not a public Gmail API feature at all), and even label add/remove came back as needing additional permissions the connector doesn't have here (confirmed after two reconnect attempts, still failing — flagged as likely a fixed scope limit rather than something fixable by reconnecting again)
+- Jackie pointed out Boomerang (the same Baydin product already used for meeting scheduling) has a real snooze feature in the Gmail UI itself — used Claude in Chrome to snooze the actual USAA email via native Gmail/Boomerang snooze, until Mon Jul 20, 7:00 AM
+- The "repeat every month" part has no native recurring-snooze option (it's strictly one-time per email), and browser-automating that unattended monthly was flagged as the wrong call — this exact workspace already learned that lesson twice (LinkedIn auto-posting, the grocery sale scan)
+- Jackie's actual fix instead: moved the twice-monthly bill-pay reminder from the 20th/30th to the **17th/30th**, so it lines up with when USAA bills actually arrive — removes the need to snooze anything going forward, no automation required
+- Updated `context/task-audit.md` (cadence history) and the dashboard's reminders (today's bill-pay added for the 17th, next one shown for the 30th)
+
 ## 2026-07-16
+
+### LinkedIn Metrics Time-Series Log — Built
+- Closed out the "Still Open" item flagged 2026-07-15: the weekly LinkedIn check-in was only ever writing prose into `context/current-data.md`/`data/key-metrics.md`, so there was no real trend to chart despite tracking it since mid-June
+- Created `data/linkedin-metrics/log.csv` (date, profile_views_90d, post_impressions_7d, followers, search_appearances_7d, notes), seeded with the one real data point that existed — the 2026-06-12 baseline (views 45, impressions 12, followers 5,771, search 81), which had been sitting unused in a calendar event description
+- Updated `weekly-linkedin-metrics-reminder` to log Jackie's weekly paste-in as a dated CSV row going forward instead of prose
+- Ready to feed the dashboard the same way Stripe data does, once there's more than one data point — noted as a natural next step, not done yet (only asked to build the log itself)
 
 ### Post-Meeting Recap Emails — Built
 - Closed out the other half of the original audit's Quick Win #5 — post-meeting follow-ups already existed via `client-reengagement/`, but only for former/lapsed-client re-engagement calls (manually triggered). This is the automatic version for regular ongoing 1:1 client sessions, kept deliberately separate so there's no double-emailing the same call.
