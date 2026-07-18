@@ -1,0 +1,2 @@
+date,day,duration_min,avg_hr,mets,notes
+2026-07-17,Fri,53,123,345,mets value is MET-minutes from Welltory (duration x avg METs) not raw METs

@@ -17,6 +17,19 @@
 - Jackie's actual fix instead: moved the twice-monthly bill-pay reminder from the 20th/30th to the **17th/30th**, so it lines up with when USAA bills actually arrive — removes the need to snooze anything going forward, no automation required
 - Updated `context/task-audit.md` (cadence history) and the dashboard's reminders (today's bill-pay added for the 17th, next one shown for the 30th)
 
+### Strength Training Log tool — built, with Day B presets
+- Built a fast-entry logging artifact (published to claude.ai) for strength training: exercise, set number, reps, weight, plus session-level avg HR, duration, and METs. Small-multiples bar chart of the day's sets (weight ramp per exercise, reps labeled on each bar), a day-over-day trend chart per exercise once a second session exists, and a CSV export matching a new permanent-log schema.
+- Added quick-add preset chips for "Strength Training - Day B": Dumbbell Sumo Deadlift, Dumbbell Reverse Lunge (per side), Dumbbell Overhead Press, Band Bent Over Row, Stability Ball Hip Bridge, Side Plank (per side), Single Arm Suitcase Carry (per side), Band Face Pull. Corrected two exercise names from "Jumbo" to "Dumbbell" after Jackie caught a voice-transcription slip on both.
+- Created the permanent log files `data/strength-training-log.csv` (one row per set) and `data/strength-training-sessions.csv` (one row per session — METs value noted as MET-minutes from Welltory, not raw METs, since 53 min × ~6.5 METs ≈ the 345 Jackie reported). Logged the first real session: 2026-07-17, 23 sets across 8 exercises, 53 min, avg HR 123.
+- Documented the logging schema and Day B routine in `context/personal-life.md`.
+- Continued light iteration on the Synnovatia Dashboard artifact (business goals, reminders, personal health stats card).
+- Drafted a follow-up email for today's AIOS session attendees (thanks for attending, recording + Adrian's audit tool arriving Monday, a rundown of this week's builds) — text only, not sent or drafted into an email tool; Jackie edited and finalized it herself.
+
+### Workspace mix-up — found and resolved
+- All of the above (dashboard, strength log tool, InfraOS "save my work" workflow) actually ran in a separate Cowork session pointed at a fresh, disconnected copy of the EVOLV-OS starter template (`~/Downloads/evolv-os-template-cowork-main`), not this workspace — went unnoticed because both look identical at a glance, and the copy's context files being empty templates wasn't flagged as unusual at the time.
+- Surfaced when GitHub Desktop's Current Repository list showed two different repos after following the InfraOS install steps: `synnovatia-evolv-os` (the disconnected copy, no meaningful history) and this workspace, `Synnovatia AIOS` (already a tracked repo on `origin/main`, already had InfraOS/DataOS/IntelOS installed). Confirmed via Finder path (`Desktop/Synnovatia AIOS`, iCloud-synced).
+- Reconciled by copying the two genuinely new files from the disconnected copy into this workspace: `context/personal-life.md` (didn't exist here) and the two strength-training CSVs. Nothing else needed merging — this workspace was already ahead on everything else. The dashboard and strength-log tool artifacts are unaffected either way since they live on claude.ai, not in either folder.
+
 ## 2026-07-16
 
 ### LinkedIn Metrics Time-Series Log — Built
