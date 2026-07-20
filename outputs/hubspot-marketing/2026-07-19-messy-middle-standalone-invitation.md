@@ -4,7 +4,8 @@
 
 ---
 
-**Suggested send:** Late August 2026 (plan's timeline has the dedicated push running through late Aug, with applications/conversations closing out in September ahead of the Oct 9 kickoff). Flagging the application deadline below as a proposed date — **September 25** — adjust if you want more or less runway before Oct 9.
+**Send date:** Wednesday, August 26, 2026 (confirmed by Jackie 2026-07-20)
+**Applications close:** Friday, September 25, 2026 (confirmed by Jackie 2026-07-20) — two weeks before the Oct 9 kickoff, deliberately, so application review and intake conversations aren't crammed into a single week during Jackie's school term (Aug 31–Oct 23). A follow-up nudge sends Sept 16 to offset the shorter window.
 
 **Subject:** Applications close September 25 for the October cohort
 
@@ -22,7 +23,7 @@ $675 for the quarter. Six sessions. A room of peers who get it, not a course you
 
 If you've been thinking about applying, September 25 is the date to have it in by.
 
-[Apply for Consideration]
+[Apply for Consideration] → https://www.synnovatia.com/messy-middle-mastermind/
 
 Jackie
 
@@ -33,4 +34,16 @@ Jackie
 - Kept the "6 to 8 members" framing consistent with what the July 15 email already told this same list — didn't introduce a different capacity number.
 - No em dashes in the body copy (cleaned per the AI-tell policy in `brand-voice.md`) except one in this notes section, which isn't part of the send.
 - CTA uses the locked mastermind copy exactly: "Apply for Consideration."
-- Didn't invent an application process/link — Jackie fills in whatever the actual apply mechanism is (form, reply-to-email, etc.) when building this in HubSpot.
+- **Apply link (added 2026-07-20, PLACEHOLDER):** `https://www.synnovatia.com/messy-middle-mastermind/`. Jackie flagged that the site may be replaced by the "Different Is Better Than Better" redesign before the Aug 26 send — re-verify this URL on the Aug 19 build day and swap it if the new site is live.
+
+### Landing page vs. email — three mismatches to resolve before sending (found 2026-07-20 by checking the live page)
+
+| | Live page says | This email says |
+|---|---|---|
+| Revenue band | $200–350K | $250K–$500K |
+| Cohort size | 6–10 participants | "a handful of seats" against 4 already in, framed 6–8 elsewhere |
+| Application timing | "reviewed on a rolling basis, you'll hear within 2 business days" | hard deadline of September 25 |
+
+The revenue band is the one that matters most — the email targets a segment built on $250K–$500K (per `context/strategy.md`), but a recipient who clicks through reads $200–350K and may conclude she's the wrong fit. Either the page is stale or the segment definition is.
+
+The rolling-basis line also undercuts the deadline the whole email is built on. The page needs the September 25 date on it, or the urgency evaporates on click.

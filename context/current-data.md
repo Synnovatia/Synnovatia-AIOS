@@ -17,6 +17,8 @@
 
 ## Key Metrics
 
+> **Counting convention (set 2026-07-20):** all mastermind member counts are **participants only and exclude Jackie**, who facilitates rather than occupying a seat. Where a room has non-paying seats, total headcount and paying members are tracked separately — headcount alone overstates revenue.
+
 | Metric | Value | As Of | Source |
 |--------|-------|-------|--------|
 | Income, year to date (self-reported total) | $17,000 | Jul 2026 | Self-reported |
@@ -25,8 +27,9 @@
 | Stripe total customers (all-time) | 48 | Jul 11, 2026 | Stripe (live) |
 | Projected income, full year 2026 (no changes) | ~$35,000 | Jul 2026 | Self-reported estimate |
 | Target income, annualized (with growth plan) | ~$100,000/yr | Goal | Strategy target |
-| Seven Figure Forum members | 4 (target: 6 by Jan 2027) | Jul 2026 | HubSpot segment "Seven Figure Forum" |
-| Mastermind for the Messy Middle members | 5 (target: 8-10 by Oct 2026) | Jul 2026 | HubSpot segment "Q1 2026 Mastermind" |
+| Seven Figure Forum members | 4 (target: 6 by Jan 2027) — **includes Christina Carlson**, who moved over from the Messy Middle; verified 2026-07-20, not stale | Jul 2026 | Jackie |
+| Mastermind for the Messy Middle members | 4 total, **2 paying** (target: **8 total by Oct 2026, so 6 are paying**) | Jul 2026 | Confirmed by Jackie 2026-07-20 |
+| — the 2 non-paying seats | Family member + close friend. **Staying non-paying permanently, by Jackie's choice** (2026-07-20). Treat as a fixed cost of the room, not a conversion opportunity — never draft an upgrade/payment ask to them. | Jul 2026 | Jackie |
 | Weekly capacity on Synnovatia | ~3 hrs/day | Jul 2026 | Self-reported |
 | Weekly capacity on school (cultural anthropology) | ~20 hrs/week | Jul 2026 | Self-reported |
 

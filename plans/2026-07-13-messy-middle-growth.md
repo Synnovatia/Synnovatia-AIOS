@@ -10,7 +10,7 @@
 
 - **Current:** 4 real members (Elise Eidsness, Wilma Nachsin, Amy Hage, Sandra Roe)
 - **By October 2026:** +3-5 new members (7-9 total)
-- **By January 2027:** 7-10 total members — enough to launch a **second cohort**
+- **By January 2027:** 8 total members (revised 2026-07-20) — the top of the 6-8 capacity range. Only 2 of the current 4 are paying, so 8 total is what produces 6 paying members. Enough to launch a **second cohort**.
 - Restarts Q4 2026 (first confirmed meeting Oct 9)
 
 That's a ~3-month runway to fill 3-5 seats before the cohort restarts.
@@ -45,7 +45,7 @@ This segment already exists and is already getting a mastermind-application CTA 
 | Early Sep 2026 | Check progress — how many prospects in pipeline, adjust channel mix if one is underperforming |
 | Late Sep 2026 | Applications/conversations should be closing — target 3-5 new members confirmed before Oct 9 kickoff |
 | Oct 9, 2026 | Cohort restarts with (ideally) 7-9 total members |
-| Through Dec 2026 | Continue lower-intensity push toward 8-10 total by Jan 2027, to support second-cohort launch |
+| Through Dec 2026 | Continue lower-intensity push toward 8 total (6 paying) by Jan 2027, to support second-cohort launch |
 
 ## First Actions
 
@@ -57,7 +57,7 @@ This segment already exists and is already getting a mastermind-application CTA 
 ## Open Questions for Jackie
 
 - Any existing members willing to be asked for referrals directly? (Not yet a channel above — could be the warmest source of all, but needs Jackie's relationship to activate)
-- Is there a hard cap on cohort size, or is 7-10 a soft target with room to run higher if applications are strong?
+- RESOLVED 2026-07-20: advertised capacity is 6-8 (page, emails, goals all standardized). The internal target is 8 — two current members are unpaid, so a full room of 8 is what yields 6 paying.
 
 ---
 

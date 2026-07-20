@@ -227,6 +227,7 @@ Claude will read the module's install guide and walk you through it step by step
 | "Save this meeting summary: [paste]" | Structures and saves to data/meeting-summaries/ |
 | "Who's due for a check-in?" | Refreshes and shows who's overdue in the client re-engagement cadence |
 | "Draft the next batch" | Drafts personalized re-engagement emails into Gmail for your review |
+| "Launch a new mastermind cohort" | Walks the T-minus checklist in `context/mastermind-launch.md` — dates, page audit, invitation + nudge, intake window |
 
 ### Setting up Cowork scheduled tasks
 

@@ -8,6 +8,7 @@ Tracks former/current clients and manages a 6-month check-in cadence, with respo
 - `data/due_now.csv` — output of the cadence check, oldest/most-overdue first
 - `data/outreach_log.csv` — one row per outreach attempt, used to compute reply rate by day of week
 - `data/meeting_notes.csv` — one row per completed call: notes, flagged opportunities, next action, post-call email status
+- `data/someday_contacts.csv` — people skipped from the automated weekly batch for lack of real correspondence/context, but that Jackie still wants to reach out to eventually, manually, on her own timeline. Don't re-flag these in the weekly auto-draft skip list once they're here — they've already been triaged.
 
 ## Weekly workflow
 

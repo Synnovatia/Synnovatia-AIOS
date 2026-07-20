@@ -16,7 +16,7 @@
 ## Current Priorities
 
 1. **New client acquisition** — sign 5 new monthly (retainer) clients within the next 3 months (by ~October 2026)
-2. **Grow the masterminds** — Seven Figure Forum: 4 → 6 members by January 2027. Mastermind for the Messy Middle: add 3-5 new members by October 2026, then reach 7-10 total members by January 2027 in order to launch a **second** Messy Middle cohort
+2. **Grow the masterminds** — Seven Figure Forum: 4 → 6 members by January 2027. Mastermind for the Messy Middle: currently 4 members of whom only **2 are paying**. Target is **8 total by October 2026, so that 6 members are paying**. Then launch a **second** Messy Middle cohort in January 2027. (Revised 2026-07-20: advertised capacity on the website is a flat 8 seats (changed from 6-10); the goal is a full 8, because two permanently unpaid seats mean total headcount overstates revenue by two members.)
 3. **Rebrand and reposition** — roll out the "Different Is Better Than Better" positioning and brand voice (website redesign, new messaging) in order to support a **40% rate increase within 6 months** (by ~January 2027)
 
 ## What Success Looks Like

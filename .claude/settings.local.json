@@ -112,7 +112,15 @@
       "Bash(python3 scripts/log_outreach.py responded julie@jlatter.com)",
       "Bash(python3 scripts/log_outreach.py no_response yaffa@remarriedwithchildren.org)",
       "Bash(python3 scripts/log_outreach.py no_response penny@st-j.com)",
-      "Bash(awk -F',' 'NR>1 && $6!=\"\" {print $1\" \"$2\",\"$3\",\"$6}' data/due_now.csv)"
+      "Bash(awk -F',' 'NR>1 && $6!=\"\" {print $1\" \"$2\",\"$3\",\"$6}' data/due_now.csv)",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__get_thread",
+      "WebFetch(domain:www.synnovatia.com)",
+      "Read(//Users/jackienagel/.claude/scheduled-tasks/messymiddle-invitation-build-aug24/**)",
+      "Bash(sed -i '' 's/^3\\\\. Check `context\\\\/current-data.md`/4. Check `context\\\\/current-data.md`/; s/^4\\\\. Confirm the Oct 9 kickoff/5. Confirm the Oct 9 kickoff/' SKILL.md)",
+      "Bash(curl -sI \"https://www.synnovatia.com/messy-middle-mastermind/\")",
+      "Bash(curl -s \"https://www.synnovatia.com/messy-middle-mastermind/\")",
+      "Bash(sed -i '' 's/Target is \\\\*\\\\*8 total by October 2026 — filling the room to the top of the 6-8 capacity range so that 6 members are paying\\\\*\\\\*/Target is **8 total by October 2026, so that 6 members are paying**/; s/\\(Revised 2026-07-20: advertised cohort capacity is 6-8; the \\\\*igoal\\\\* is 8/\\(Revised 2026-07-20: advertised capacity on the website is a flat 8 seats; the goal is a full 8/' context/strategy.md)",
+      "Bash(sed -i '' 's/advertised cohort capacity is 6-8; the \\\\*goal\\\\* is 8, because two unpaid seats mean total headcount overstates revenue by two members./advertised capacity on the website is a flat 8 seats \\(changed from 6-10\\); the goal is a full 8, because two permanently unpaid seats mean total headcount overstates revenue by two members./' context/strategy.md)"
     ]
   }
 }
