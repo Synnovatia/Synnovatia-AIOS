@@ -170,7 +170,7 @@ Slack is not connected (not used in the business).
 
 ### Client re-engagement
 
-A full 6-month check-in cadence system lives in `client-reengagement/` (176-client roster, originally built outside this workspace and migrated in on 2026-07-11). Weekly rhythm, send day is Tuesday:
+A full 6-month check-in cadence system lives in `client-reengagement/` (176-client roster, originally built outside this workspace and migrated in on 2026-07-11). Weekly rhythm: Claude drafts the batch automatically **Monday 7am** (`client-reengagement-monday-drafting`, 5 emails), Jackie reviews Monday and **sends Tuesday**:
 
 Say things like:
 - **"Who's due for a check-in?"** → runs `check_reengagement.py`, refreshes `client-reengagement/data/due_now.csv`

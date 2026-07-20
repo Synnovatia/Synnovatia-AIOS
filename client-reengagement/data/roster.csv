@@ -1,9 +1,9 @@
 first_name,last_name,email,client_since,hubspot_id,last_checkin,next_checkin_due,status,last_status_date,notes
 Ginny,Kenyon,gkenyon@kenyonhcc.com,2011-10-19,28,2026-07-07,,meeting_completed,2026-07-07,last_checkin from Gmail search
-Dianne,Pearce,coachdian@gmail.com,2011-11-08,4,2026-07-06,,sent,2026-07-06,last_checkin from Gmail search
-Yaffa,Balsam,yaffa@remarriedwithchildren.org,2012-02-13,15,2026-07-06,,sent,2026-07-06,last_checkin from Gmail search; email updated via LinkedIn 2026-07-06 (rebranded to Remarried with Children); old domain bounced
-Julie,Goldman,julie@jlatter.com,2012-05-11,95,2026-07-06,,sent,2026-07-06,last_checkin from Gmail search
-Penny,St. John,penny@st-j.com,2012-05-23,196,2026-07-06,,sent,2026-07-06,last_checkin from Gmail search
+Dianne,Pearce,coachdian@gmail.com,2011-11-08,4,2026-07-20,,responded,2026-07-20,last_checkin from Gmail search
+Yaffa,Balsam,yaffa@remarriedwithchildren.org,2012-02-13,15,2026-07-06,,no_response,2026-07-20,last_checkin from Gmail search; email updated via LinkedIn 2026-07-06 (rebranded to Remarried with Children); old domain bounced
+Julie,Goldman,julie@jlatter.com,2012-05-11,95,2026-07-20,,responded,2026-07-20,last_checkin from Gmail search
+Penny,St. John,penny@st-j.com,2012-05-23,196,2026-07-06,,no_response,2026-07-20,last_checkin from Gmail search
 Donna,Dobrovich,donna@dfdcoaching.com,2012-06-20,440,2017-07-20,,,,last_checkin from Gmail search
 Mamie,Washington,mamie_washington@yahoo.com,2012-08-13,9742,2021-10-21,,,,last_checkin from Gmail search
 Marvin,Velazquez,sicilianmarie@gmail.com,2012-08-14,9760,2025-09-06,,,,last_checkin from Gmail search
@@ -25,7 +25,7 @@ Sivakumar,Veerappan,siva@anubavam.com,2013-10-12,36930,2026-07-14,,sent,2026-07-
 Suzi,Waddill-Goad,suziq7@msn.com,2013-10-12,36978,2022-03-11,,,,last_checkin from Gmail search
 Sandra,Roe,sandra@helloearthclub.com,2013-10-12,36911,2026-05-20,,,,last_checkin from Gmail search
 Bill,Graybill,billgbill@hotmail.com,2013-10-12,36632,,,,,no Gmail thread found; using HubSpot client_since
-Hallie Jane,Culpepper,hallie.jane@yahoo.com,2013-10-12,36746,2014-11-04,,,,last_checkin from Gmail search
+Hallie Jane,Culpepper,hallie.jane@yahoo.com,2013-10-12,36746,2026-07-20,,sent,2026-07-20,last_checkin from Gmail search
 Carrie,Spell-Hansson,cspellhansson@gmail.com,2013-10-12,42407,2018-05-30,,,,last_checkin from Gmail search
 Richard,Greenbaum,rwg@rwgreenbaum.com,2013-10-12,36935,2021-11-01,,,,last_checkin from Gmail search
 raffi,saroyan,raffi@readytoview.com,2013-10-12,36918,2024-02-19,,,,last_checkin from Gmail search
@@ -41,7 +41,7 @@ Robert A,Johnson,robert@socket.net,2013-10-12,37051,2018-02-06,,,,last_checkin f
 Marianne,Brooks,mariannebrooks@yahoo.com,2013-10-12,42447,2026-04-16,,,,last_checkin from Gmail search
 Izzy,Assencoa,iassencoa@aol.com,2013-10-12,37029,,,,,no Gmail thread found; using HubSpot client_since
 Connie,Weatherman,connie@auntconnieswellbeing.com,2013-10-12,37020,,,,,no Gmail thread found; using HubSpot client_since
-Kurt,Fagan,kmf@faganfagan.com,2013-12-24,42797,2014-05-08,,,,last_checkin from Gmail search
+Kurt,Fagan,kmf@faganfagan.com,2013-12-24,42797,2026-07-20,,sent,2026-07-20,last_checkin from Gmail search
 Michael,Pfau,mike@crosswayslifecoaching.com,2013-12-24,43368,2021-10-26,,,,last_checkin from Gmail search
 Beth,Cole,beth.a.cole@gmail.com,2013-12-24,42599,,,,,no Gmail thread found; using HubSpot client_since
 Carol,Kulencavich,ckulencavich@pdmcpas.com,2013-12-24,43125,2024-11-12,,,,last_checkin from Gmail search
@@ -154,14 +154,14 @@ Amy,Hage,amy@focusandfuel.com,2023-08-18,36296445,2026-04-23,,,,last_checkin fro
 josh,lipton,josh@campfirecycling.com,2023-11-26,36300145,,,,,no Gmail thread found; using HubSpot client_since
 ,,href@firstlegal.com,2024-10-22,70897139094,,,,,no Gmail thread found; using HubSpot client_since
 Parmod,Kumar,pkumar@gs1india.org,2025-12-30,189197802056,,,,,no Gmail thread found; using HubSpot client_since
-Andrea,Beaulieu,andrea@andreabeaulieu.com,2014-06-23,,2014-07-09,,,,"Added manually (not in HubSpot); confirmed via Gmail correspondence + LinkedIn (Phoenix AZ, speaking/presentation coach)"
+Andrea,Beaulieu,andrea@andreabeaulieu.com,2014-06-23,,2026-07-20,,sent,2026-07-20,"Added manually (not in HubSpot); confirmed via Gmail correspondence + LinkedIn (Phoenix AZ, speaking/presentation coach)"
 Desiree,Saddler,info.saddlerconsultinggroup@gmail.com,2022-08-30,,2022-12-29,,,,"Added manually (not in HubSpot); confirmed via Gmail + LinkedIn (LA, Principal/Owner Saddler Consulting Group). Old domain saddlerconsulting.com bounced Aug 2022 - use gmail address"
 Donna,Amy,damy@marykay.com,2003-10-20,,2003-10-20,,,,"Added manually; only a web form submission found, weak signal"
 Jacquie,Goodwill,jacquie.goodwill@outlook.com,2024-05-20,,2024-05-20,,,,Added manually; older address jacquie@peninsulastrategic.com also on file
 Melinda,Flynn,homes@melindaflynn.com,2013-12-16,,2013-12-16,,,,"Added manually; only outbound email found, no reply on record"
-Joe,Van Wyke,joe@vanwykdesign.com,2014-05-07,,2014-05-07,,,,Added manually via Gmail
+Joe,Van Wyke,joe@vanwykdesign.com,2014-05-07,,2026-07-20,,sent,2026-07-20,Added manually via Gmail
 Linda,Johnson,llvassoc@aol.com,2020-07-20,,2020-07-20,,,,Added manually via Gmail; thread re: health update
-Margaret,Jacoby,margaretjacoby45@gmail.com,2016-12-15,,2016-12-15,,,,Added manually via Gmail
+Margaret,Jacoby,margaretjacoby45@gmail.com,2016-12-15,,2026-07-20,,sent,2026-07-20,Added manually via Gmail
 Maryan,Odabaee,maryamo76@yahoo.com,2008-11-13,,2013-12-16,,,,Added manually; spelled Maryam in emails
 Pam,Lambert,pkayelambert@yahoo.com,2013-07-24,,2013-07-24,,,,Added manually via Gmail
 Norma,Dawson,nadlaw@kidlike.com,2018-01-30,,2018-01-30,,,,Added manually via Gmail

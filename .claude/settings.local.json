@@ -106,7 +106,13 @@
       "Bash(pmset -g sched)",
       "Bash(pmset -g custom)",
       "Bash(python3 scripts/check_reengagement.py)",
-      "Bash(python3 scripts/response_rate_report.py)"
+      "Bash(python3 scripts/response_rate_report.py)",
+      "Bash(python3 scripts/list_pending_replies.py)",
+      "Bash(python3 scripts/log_outreach.py responded coachdian@gmail.com)",
+      "Bash(python3 scripts/log_outreach.py responded julie@jlatter.com)",
+      "Bash(python3 scripts/log_outreach.py no_response yaffa@remarriedwithchildren.org)",
+      "Bash(python3 scripts/log_outreach.py no_response penny@st-j.com)",
+      "Bash(awk -F',' 'NR>1 && $6!=\"\" {print $1\" \"$2\",\"$3\",\"$6}' data/due_now.csv)"
     ]
   }
 }

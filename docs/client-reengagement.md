@@ -7,7 +7,7 @@
 ```
 [roster.csv] --> [check_reengagement.py] --> [due_now.csv] --> Claude drafts batch --> [Gmail Drafts]
                                                                         |
-                                                          Jackie reviews + sends (Tuesdays)
+                                            drafted Mondays 7am (scheduled task), sent Tuesdays
                                                                         |
                                                           [log_outreach.py sent] --> [outreach_log.csv]
                                                                         |
@@ -35,7 +35,7 @@
 
 ## How It Works
 
-See `client-reengagement/README.md` for the full weekly workflow — it's authoritative, don't duplicate it here. Summary: Tuesday is the intended send day; Claude drafts into Gmail (never auto-sends); Jackie reviews and sends; outcomes get logged back into the roster to reset the cadence clock.
+See `client-reengagement/README.md` for the full weekly workflow — it's authoritative, don't duplicate it here. Summary: the `client-reengagement-monday-drafting` scheduled task runs Mondays 7am — it checks Gmail for replies to prior batches, refreshes the due list, and drafts 5 emails into Gmail (never auto-sends). Jackie reviews Monday and sends Tuesday; outcomes get logged back into the roster to reset the cadence clock.
 
 ## Configuration
 
@@ -46,7 +46,8 @@ No API keys — uses the Gmail MCP connector (already authorized) for drafting/s
 - **All scripts use only the Python standard library** (csv, datetime, pathlib, argparse) — no venv or pip install needed. Run with plain `python3`.
 - **Never auto-send.** Every email is a Gmail draft; Jackie sends manually. This is a hard rule, not a default that can be relaxed.
 - **Marc Friedenberg (row 176 in roster.csv)** had no `client_since`/`last_checkin` on migration — only a thin 2017 Gmail trace (an out-of-office auto-reply). Reference date was set to 2026-07-11 per Jackie's instruction, so he won't show as due until ~2027-01-11.
-- **Response rate report showed all 5 logged sends on a Monday**, not the documented Tuesday send day, as of migration (2026-07-11) — worth checking with Jackie whether that's intentional or the Tuesday cadence hasn't actually started yet.
+- **Reply outcomes have never been logged.** Both sent batches (7/06 and 7/14, 5 each) sit in `outreach_log.csv` with empty `replied` columns — nobody ran the Gmail reply check. The Monday task now does this first thing each week, but the response-rate report is meaningless until that backlog is worked through.
+- **The 7/06 batch went out on a Monday**, the 7/14 batch on a Tuesday — mixed history, so day-of-week reply-rate data won't be comparable for a while.
 - **`meeting_completed` requires `--notes`** — the script will refuse to log without them, by design (keeps `meeting_notes.csv` meaningful).
 
 ## Dependencies
@@ -58,4 +59,5 @@ No API keys — uses the Gmail MCP connector (already authorized) for drafting/s
 
 | Date | Change |
 |------|--------|
+| 2026-07-20 | Weekly drafting automated. Discovered there had never been a recurring task — "Tuesday" was documentation only, and both prior batches were drafted by hand. Created `client-reengagement-monday-drafting` (Mondays 7am): reply check on prior batches, then 5 new drafts, oldest-overdue first. Send day stays Tuesday; Monday drafting gives Jackie a full day to review. |
 | 2026-07-11 | Migrated from a pre-existing standalone build on Jackie's Desktop (`synnovatia-client-reengagement`) into the AIOS workspace as `client-reengagement/`. Fixed one data gap (Marc Friedenberg, missing reference date). Verified all 5 scripts run correctly from the new location — 176 clients loaded, 156 due, 4 awaiting reply, 1 opportunity flagged. |
