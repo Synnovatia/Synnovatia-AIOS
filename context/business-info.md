@@ -17,7 +17,7 @@
 
 ## Organization Overview
 
-Synnovatia is a solo strategic consulting practice founded and run by Jackie, built on 27 years of experience working with hundreds of small businesses. Synnovatia helps bootstrapped B2B service business owners recognize patterns in what works and what doesn't when it comes to growth and scaling — combining coaching, consulting, advising, and research into a practical, relationship-driven advisory model.
+Synnovatia is a solo strategic consulting practice founded and run by Jackie, built on 25+ years of experience working with hundreds of small businesses. Synnovatia helps bootstrapped B2B service business owners recognize patterns in what works and what doesn't when it comes to growth and scaling — combining coaching, consulting, advising, and research into a practical, relationship-driven advisory model.
 
 The positioning thesis, drawn from a formal client interview study ("Different Is Better Than Better" — see `brand-voice.md`), is that Synnovatia wins by being *different* rather than *better along the same dimensions* as competitors — sitting at the intersection of Fortune 500-grade strategic expertise and genuine peer-level relational depth.
 
@@ -42,7 +42,7 @@ The positioning thesis, drawn from a formal client interview study ("Different I
 - Client acquisition is primarily referral, SEO/website, and repeat/returning former clients
 - Long-term client relationships are common — several clients of 10+ years
 - Long-term plan: bring in another consultant to serve the $250K–$500K segment, freeing Jackie to focus on higher-level strategy clients and business development
-- Differentiators: 27 years of cross-industry pattern recognition; educator background (Corporate Coach University, Coach University, taught small business development/marketing); Entrepreneurship certification from UCLA; runs her own business so clients see her as a peer, not an outside "expert"; practical, honest, emotionally attuned, and stays engaged with client problems between sessions
+- Differentiators: 25+ years of cross-industry pattern recognition; educator background (Corporate Coach University, Coach University, taught small business development/marketing); Entrepreneurship certification from UCLA; runs her own business so clients see her as a peer, not an outside "expert"; practical, honest, emotionally attuned, and stays engaged with client problems between sessions
 - See `brand-voice.md` for full positioning, voice rules, and proof points from the client research; `style-guide.md` for the visual identity (colors, typography)
 
 ---

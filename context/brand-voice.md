@@ -80,7 +80,7 @@ The more clients who echo the same idea unprompted, the stronger the positioning
 
 ## Locked CTA Copy
 
-- **Nav:** "Let's Have a Conversation"
+- **Nav:** "Schedule a Conversation" *(changed 2026-07-18 from "Let's Have a Conversation" per homepage redesign)*
 - **Body/Closing:** "Start the Conversation"
 - **Mastermind:** "Apply for Consideration"
 - **Booking:** "Find a Time That Works"
@@ -91,7 +91,7 @@ The more clients who echo the same idea unprompted, the stronger the positioning
 - Boxed trait pills
 - 3-column testimonial grids
 - Per-section eyebrows (max two per page)
-- Anaphoric/negation-heavy cadence
+- Anaphoric/negation-heavy cadence — includes "It's not X. It's Y." pivots, stacked ultra-short punchy fragments, repeated sentence openers, "Here's the thing" openers, and formulaic triads. **Standing rule (2026-07-20):** every draft gets an explicit cadence-scrub pass before Jackie sees it — she should never have to ask.
 
 ---
 

@@ -8,6 +8,32 @@
 
 ---
 
+## 2026-07-20
+
+### LinkedIn Batch Reviewed + New Standing Rule: Scrub AI Cadence Before Presenting
+- Reviewed the 7/27–7/31 LinkedIn batch (drafted early in a separate 7/20 session, moved up from the Friday cadence due to a schedule conflict): scrubbed AI-tell rhythms from all three posts (stacked punchy fragments, "It's not X. It's Y." negation pivots) and fixed a real accuracy problem in the Wednesday Messy Middle post — it claimed "six other women" understood a member, but the cohort is 4 members, so no member sees six others; now "a room of women running businesses her size." Jackie scheduled all three via LinkedIn's scheduler.
+- **New standing rule per Jackie: every draft gets an AI-cadence scrub before she sees it — she should never have to ask.** Saved to persistent memory, added to `context/linkedin-marketing.md` (mandatory final pass) and expanded the AI-Tell Policy bullet in `context/brand-voice.md` with the specific patterns (negation pivots, fragment stacks, anaphora, "Here's the thing" openers, formulaic triads).
+
+### LinkedIn Drafting Moved to Mondays 7am
+- Changed the `linkedin-content-drafting` scheduled task from Fridays 9am to **Mondays 7am**, drafting the *following* week's Mon/Wed/Fri posts — Jackie reviews and schedules the same morning, so every post is queued a full week before it goes live. Next run: Mon 7/27, drafting for Aug 3/5/7 (no gap, no double-draft against the already-scheduled 7/27–7/31 batch).
+- Task prompt also rewritten to bake in the cadence-scrub rule and to save each batch to `outputs/linkedin/` as a dated file. Updated `context/linkedin-marketing.md` and `context/task-audit.md` to match. The Friday 9:10am LinkedIn *metrics* paste-in reminder was left on Fridays (separate task; offered to move it, Jackie hasn't asked).
+
+## 2026-07-18 – 2026-07-19 (catch-up — sessions that didn't log to HISTORY)
+
+### Website Redesign Started
+- First homepage concept mockup created: `outputs/website-redesign/2026-07-16-homepage-mockup.html` ("Synnovatia — Homepage Concept")
+- Nav CTA copy locked as "Schedule a Conversation" (changed 2026-07-18 from "Let's Have a Conversation") in `context/brand-voice.md`
+
+### Messy Middle Growth — First Action #2 Done
+- Drafted the standalone mastermind-invitation email for the 397-contact Messy Middle women segment (`outputs/hubspot-marketing/2026-07-19-messy-middle-standalone-invitation.md`) — practical-urgency angle (seats + deadline), distinct from the warmth-led 7/15 send. Proposed: send late August, applications close September 25 — both awaiting Jackie's confirmation before she builds/sends in HubSpot. Plan and task-audit updated.
+
+### Smaller Updates
+- Experience framing corrected from "27 years" to "25+ years" in `CLAUDE.md` and `context/business-info.md`
+- Weekly weigh-in logged 7/19 (145 lbs, 38% body fat, 31 in waist) and **HRV added to the weekly check-in** (first reading: 27) — `personal/health-goals.md` schema updated
+- Workouts logged: 7/17 Strength Day B (53 min, avg HR 123, 345 MET-min) and 7/18 walk (4.6 mi, 99 min) in `personal/workout-logs/session-log.csv`
+- `client-reengagement/data/due_now.csv` refreshed — the 5 clients emailed 7/14 dropped off the due list
+- Dashboard files and `context/group/key-metrics.md` updated by the daily automated refreshes (routine)
+
 ## 2026-07-17
 
 ### USAA Bill Snoozed + Bill-Pay Cadence Moved to 17th/30th

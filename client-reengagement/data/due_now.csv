@@ -1,7 +1,5 @@
 first_name,last_name,email,client_since,hubspot_id,last_checkin,next_checkin_due,status,last_status_date,notes
 Donna,Amy,damy@marykay.com,2003-10-20,,2003-10-20,2004-04-20,,,"Added manually; only a web form submission found, weak signal"
-Angela,Broadwell,angelabroadwell@msn.com,2018-07-11,26104499,2005-07-29,2006-01-29,,,last_checkin from Gmail search
-Beryl,Smith,beryl@bcsstaffing.net,2013-05-14,26023,2009-01-19,2009-07-19,,,last_checkin from Gmail search
 Enid,McGraw,eynez@sbcglobal.net,2009-12-30,,2009-12-30,2010-06-30,,,"Added manually via LinkedIn; connected since 2009, mutual connection Anne Laguzza (also in roster)"
 Pam,Lambert,pkayelambert@yahoo.com,2013-07-24,,2013-07-24,2014-01-24,,,Added manually via Gmail
 Raylene,Baron,rbaron@techlink.org,2013-09-30,,2013-09-30,2014-03-30,,,"Added manually; only auto-reply found, weak signal"
@@ -13,13 +11,10 @@ Deborah,Hamilton,deborahhamilton123@yahoo.com,2013-10-12,36702,,2014-04-12,,,no 
 Diane,Ellis,diane@dianecunningham.com,2013-10-12,36669,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
 Izzy,Assencoa,iassencoa@aol.com,2013-10-12,37029,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
 Connie,Weatherman,connie@auntconnieswellbeing.com,2013-10-12,37020,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Christy,Carroll,christycarroll@msn.com,2013-10-12,36662,2013-12-16,2014-06-16,,,last_checkin from Gmail search
 Melinda,Flynn,homes@melindaflynn.com,2013-12-16,,2013-12-16,2014-06-16,,,"Added manually; only outbound email found, no reply on record"
 Maryan,Odabaee,maryamo76@yahoo.com,2008-11-13,,2013-12-16,2014-06-16,,,Added manually; spelled Maryam in emails
-Sivakumar,Veerappan,siva@anubavam.com,2013-10-12,36930,2013-12-18,2014-06-18,,,last_checkin from Gmail search
 Beth,Cole,beth.a.cole@gmail.com,2013-12-24,42599,,2014-06-24,,,no Gmail thread found; using HubSpot client_since
 David G.,Kinney,david@thekinneygroup.com,2013-12-24,42986,,2014-06-24,,,no Gmail thread found; using HubSpot client_since
-Lesley,Goldberg,lgworkout@aol.com,2013-10-12,36780,2014-04-18,2014-10-18,,,last_checkin from Gmail search
 Joe,Van Wyke,joe@vanwykdesign.com,2014-05-07,,2014-05-07,2014-11-07,,,Added manually via Gmail
 Kurt,Fagan,kmf@faganfagan.com,2013-12-24,42797,2014-05-08,2014-11-08,,,last_checkin from Gmail search
 Andrea,Beaulieu,andrea@andreabeaulieu.com,2014-06-23,,2014-07-09,2015-01-09,,,"Added manually (not in HubSpot); confirmed via Gmail correspondence + LinkedIn (Phoenix AZ, speaking/presentation coach)"

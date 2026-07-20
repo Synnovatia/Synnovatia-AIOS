@@ -66,7 +66,7 @@ These are how you know your EVOLV-OS is working:
 
 ## Context Summary
 
-**Business:** Synnovatia — solo strategic consulting practice (27 yrs experience) serving bootstrapped B2B service businesses, $250K–$4M revenue, via 1:1 consulting, monthly retainers, and two mastermind groups (Mastermind for the Messy Middle, Seven Figure Forum)
+**Business:** Synnovatia — solo strategic consulting practice (25+ yrs experience) serving bootstrapped B2B service businesses, $250K–$4M revenue, via 1:1 consulting, monthly retainers, and two mastermind groups (Mastermind for the Messy Middle, Seven Figure Forum)
 **Role:** Jackie — founder and sole practitioner, semi-retired (~3 hrs/day on the business), also a cultural anthropology student (~20 hrs/week)
 **Current focus:** Growing to 5 new monthly clients within 3 months; growing both masterminds; rolling out the "Different Is Better Than Better" rebrand (website + brand voice) to support a 40% rate increase within 6 months
 **Key metric to watch:** Annual income — currently ~$17K YTD, ~$35K projected without changes, targeting ~$100K/yr with the growth plan
@@ -123,7 +123,8 @@ These are how you know your EVOLV-OS is working:
 │   └── workout-plan.md      # Strength training program (Fortify-compatible)
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
-│   └── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
+│   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
+│   └── website-redesign/     # "Different Is Better Than Better" website mockups (homepage concept)
 ├── reference/               # Templates, examples, reusable patterns
 │   └── email-templates/     # onboarding-welcome.md, onboarding-reminder.md, pre-meeting-objective.md, post-meeting-recap.md
 └── shares/                  # Packaged systems for sharing

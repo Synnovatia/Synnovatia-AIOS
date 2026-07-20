@@ -24,11 +24,13 @@ All of the following, in priority order matching `context/strategy.md`:
 
 **Posts go live 3x/week — Monday, Wednesday, Friday, 7:30am Pacific**, via LinkedIn's own "schedule post" feature (Jackie queues them herself — Claude never posts or schedules anything directly).
 
-**Drafting happens in one batch on Fridays, 9am Pacific** — Claude drafts all three upcoming posts at once, Jackie reviews and schedules them via LinkedIn.
+**Drafting happens in one batch on Mondays, 7am Pacific** (moved 2026-07-20 from Fridays 9am) — Claude drafts the *following* week's three posts at once, Jackie reviews and schedules them via LinkedIn the same morning. Each post is therefore queued a full week before it goes live.
+
+**Mandatory final pass before presenting any draft (added 2026-07-20, per Jackie):** scrub all AI-tell cadence — "It's not X. It's Y." negation pivots, stacked punchy fragments, anaphoric repetition, "Here's the thing"-style openers, formulaic triads. See the AI-Tell Policy in `context/brand-voice.md`. Jackie should never have to ask for this; drafts arrive already scrubbed.
 
 | Day | Pillar | Notes |
 |---|---|---|
-| Monday | Thought leadership | A pattern/insight from 27 years of cross-industry consulting. Precise, not generic — name the revenue range/stage per voice rules. |
+| Monday | Thought leadership | A pattern/insight from 25+ years of cross-industry consulting. Precise, not generic — name the revenue range/stage per voice rules. |
 | Wednesday | Story | Personal or client story that humanizes the "peer, not guru" positioning. Warmth through specificity, not platitudes. |
 | Friday | Client win | A real result or transformation (anonymized/generalized unless a client has explicitly agreed to be named — check before naming anyone). Confident, not boastful — let the result speak. |
 
