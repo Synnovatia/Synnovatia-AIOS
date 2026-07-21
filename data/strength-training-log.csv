@@ -1,25 +1,52 @@
 date,day,exercise,set_number,reps,weight_lbs,notes
-2026-07-17,Fri,Band Bent Over Row,1,15,0,
-2026-07-17,Fri,Band Bent Over Row,2,15,0,
-2026-07-17,Fri,Band Bent Over Row,3,15,0,
-2026-07-17,Fri,Band Face Pull,1,15,0,
-2026-07-17,Fri,Band Face Pull,2,15,0,
-2026-07-17,Fri,Band Face Pull,3,15,0,
-2026-07-17,Fri,Dumbbell Sumo Deadlift,1,15,20,
-2026-07-17,Fri,Dumbbell Sumo Deadlift,2,15,20,
-2026-07-17,Fri,Dumbbell Sumo Deadlift,3,15,20,
-2026-07-17,Fri,Dumbbell Overhead Press,1,15,8,
-2026-07-17,Fri,Dumbbell Overhead Press,2,15,10,
-2026-07-17,Fri,Dumbbell Overhead Press,3,15,10,
-2026-07-17,Fri,Dumbbell Reverse Lunge (per side),1,15,10,
-2026-07-17,Fri,Dumbbell Reverse Lunge (per side),2,15,10,
-2026-07-17,Fri,Dumbbell Reverse Lunge (per side),3,15,15,
-2026-07-17,Fri,Side Plank (per side),1,30,0,
-2026-07-17,Fri,Side Plank (per side),2,30,0,
-2026-07-17,Fri,Side Plank (per side),3,30,0,
-2026-07-17,Fri,Single Arm Suitcase Carry (per side),1,0,20,
-2026-07-17,Fri,Single Arm Suitcase Carry (per side),2,0,25,
-2026-07-17,Fri,Single Arm Suitcase Carry (per side),3,0,25,
-2026-07-17,Fri,Stability Ball Hip Bridge,1,15,0,
-2026-07-17,Fri,Stability Ball Hip Bridge,2,8,0,
-2026-07-17,Fri,Stability Ball Hip Bridge,3,0,0,
+2026-07-17,B,Band Bent Over Row,1,15,0,
+2026-07-17,B,Band Bent Over Row,2,15,0,
+2026-07-17,B,Band Bent Over Row,3,15,0,
+2026-07-17,B,Band Face Pull,1,15,0,
+2026-07-17,B,Band Face Pull,2,15,0,
+2026-07-17,B,Band Face Pull,3,15,0,
+2026-07-17,B,Dumbbell Sumo Deadlift,1,15,20,
+2026-07-17,B,Dumbbell Sumo Deadlift,2,15,20,
+2026-07-17,B,Dumbbell Sumo Deadlift,3,15,20,
+2026-07-17,B,Dumbbell Overhead Press,1,15,8,
+2026-07-17,B,Dumbbell Overhead Press,2,15,10,
+2026-07-17,B,Dumbbell Overhead Press,3,15,10,
+2026-07-17,B,Dumbbell Reverse Lunge (per side),1,15,10,
+2026-07-17,B,Dumbbell Reverse Lunge (per side),2,15,10,
+2026-07-17,B,Dumbbell Reverse Lunge (per side),3,15,15,
+2026-07-17,B,Side Plank (per side),1,30,0,
+2026-07-17,B,Side Plank (per side),2,30,0,
+2026-07-17,B,Side Plank (per side),3,30,0,
+2026-07-17,B,Single Arm Suitcase Carry (per side),1,0,20,
+2026-07-17,B,Single Arm Suitcase Carry (per side),2,0,25,
+2026-07-17,B,Single Arm Suitcase Carry (per side),3,0,25,
+2026-07-17,B,Stability Ball Hip Bridge,1,15,0,
+2026-07-17,B,Stability Ball Hip Bridge,2,8,0,
+2026-07-17,B,Stability Ball Hip Bridge,3,0,0,
+2026-07-21,A,Goblet Squat (dumbbell),1,15,15,
+2026-07-21,A,Goblet Squat (dumbbell),2,15,15,
+2026-07-21,A,Goblet Squat (dumbbell),3,15,15,
+2026-07-21,A,Dumbbell Romanian Deadlift,1,15,20,
+2026-07-21,A,Dumbbell Romanian Deadlift,2,15,20,
+2026-07-21,A,Dumbbell Romanian Deadlift,3,15,20,
+2026-07-21,A,Dumbbell Floor/Bench Press,1,15,15,
+2026-07-21,A,Dumbbell Floor/Bench Press,2,15,15,
+2026-07-21,A,Dumbbell Floor/Bench Press,3,15,15,
+2026-07-21,A,Single-Arm Dumbbell Row (per side),1,15,15,
+2026-07-21,A,Single-Arm Dumbbell Row (per side),2,15,15,
+2026-07-21,A,Single-Arm Dumbbell Row (per side),3,15,15,
+2026-07-21,A,Single-Leg Balance Reach (per side),1,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Single-Leg Balance Reach (per side),2,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Single-Leg Balance Reach (per side),3,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Plank,1,45,,reps column = seconds held
+2026-07-21,A,Plank,2,45,,reps column = seconds held
+2026-07-21,A,Plank,3,45,,reps column = seconds held
+2026-07-21,A,Dumbbell Farmer's Carry,1,40,40,reps column = feet carried
+2026-07-21,A,Dumbbell Farmer's Carry,2,40,40,reps column = feet carried
+2026-07-21,A,Dumbbell Farmer's Carry,3,40,40,reps column = feet carried
+2026-07-21,A,Glute Bridge,1,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Glute Bridge,2,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Glute Bridge,3,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Band Face Pull,1,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Band Face Pull,2,15,,bodyweight/band — no weight tracked
+2026-07-21,A,Band Face Pull,3,15,,bodyweight/band — no weight tracked

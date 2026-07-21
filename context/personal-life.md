@@ -28,10 +28,17 @@ _Current weight / body fat % / waist targets and baseline: TBD — the old "Goal
 
 Tracked via Apple Watch (HRV) and iPhone Health app.
 
-**Strength Training - Day B exercises:** Dumbbell Sumo Deadlift, Dumbbell Reverse Lunge (per side), Dumbbell Overhead Press, Band Bent Over Row, Stability Ball Hip Bridge, Side Plank (per side), Single Arm Suitcase Carry (per side), Band Face Pull. Pre-loaded as quick-add chips in the Strength Training Log tool (artifact).
+**Strength Training - Day A exercises:** Goblet Squat (dumbbell), Dumbbell Romanian Deadlift, Dumbbell Floor/Bench Press, Single-Arm Dumbbell Row (per side), Single-Leg Balance Reach (per side), Plank, Dumbbell Farmer's Carry, Glute Bridge, Band Face Pull.
+
+**Strength Training - Day B exercises:** Dumbbell Sumo Deadlift, Dumbbell Reverse Lunge (per side), Dumbbell Overhead Press, Band Bent Over Row, Stability Ball Hip Bridge, Side Plank (per side), Single Arm Suitcase Carry (per side), Band Face Pull.
+
+Both days are pre-loaded in the Strength Training Log tool (artifact), which auto-detects A vs B from the day of week (Tue/Thu) and asks before switching if it would wipe already-logged sets. Most exercises track reps + weight, but a few track something else — the tool shows the right fields automatically:
+- **Reps only, no weight** (bodyweight/band): Single-Leg Balance Reach, Glute Bridge, Band Face Pull, Band Bent Over Row, Stability Ball Hip Bridge
+- **Seconds only, no weight** (isometric hold): Plank, Side Plank
+- **Feet + weight** (loaded carry): Dumbbell Farmer's Carry, Single Arm Suitcase Carry
 
 **Strength training logs** (split so weight/reps that change set-to-set, e.g. pyramid/ramping sets, are easy to call out as you go):
-- `data/strength-training-log.csv` — one row per set: date, day, exercise, set_number, reps, weight_lbs, notes. Log sets as you do them, e.g. "squat set 1: 10 at 135, set 2: 8 at 155, set 3: 6 at 175" — Claude appends one row per set.
+- `data/strength-training-log.csv` — one row per set: date, day (A/B), exercise, set_number, reps, weight_lbs, notes. For the seconds/feet exercises above, the `reps` column holds that value instead (noted per-row). Log sets as you do them, e.g. "squat set 1: 10 at 135, set 2: 8 at 155, set 3: 6 at 175" — Claude appends one row per set. You can also log a whole session at once by copying the tool's CSV export and pasting it here.
 - `data/strength-training-sessions.csv` — one row per session: date, day, duration_min, avg_hr, mets, notes. Give Claude these once at the end of a workout, e.g. "that was 42 minutes, avg HR 128, METs 6."
 
 Ask Claude for a day-over-day or week-over-week comparison any time — it reads straight from these files.
@@ -65,4 +72,4 @@ _Not yet scoped — bills/financial admin, car maintenance, home upkeep cadence 
 
 ---
 
-_Last updated: 2026-07-13_
+_Last updated: 2026-07-21_

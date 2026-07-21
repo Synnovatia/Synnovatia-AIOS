@@ -120,7 +120,19 @@
       "Bash(curl -sI \"https://www.synnovatia.com/messy-middle-mastermind/\")",
       "Bash(curl -s \"https://www.synnovatia.com/messy-middle-mastermind/\")",
       "Bash(sed -i '' 's/Target is \\\\*\\\\*8 total by October 2026 — filling the room to the top of the 6-8 capacity range so that 6 members are paying\\\\*\\\\*/Target is **8 total by October 2026, so that 6 members are paying**/; s/\\(Revised 2026-07-20: advertised cohort capacity is 6-8; the \\\\*igoal\\\\* is 8/\\(Revised 2026-07-20: advertised capacity on the website is a flat 8 seats; the goal is a full 8/' context/strategy.md)",
-      "Bash(sed -i '' 's/advertised cohort capacity is 6-8; the \\\\*goal\\\\* is 8, because two unpaid seats mean total headcount overstates revenue by two members./advertised capacity on the website is a flat 8 seats \\(changed from 6-10\\); the goal is a full 8, because two permanently unpaid seats mean total headcount overstates revenue by two members./' context/strategy.md)"
+      "Bash(sed -i '' 's/advertised cohort capacity is 6-8; the \\\\*goal\\\\* is 8, because two unpaid seats mean total headcount overstates revenue by two members./advertised capacity on the website is a flat 8 seats \\(changed from 6-10\\); the goal is a full 8, because two permanently unpaid seats mean total headcount overstates revenue by two members./' context/strategy.md)",
+      "Bash(curl -s -o fraunces.woff2 \"https://fonts.gstatic.com/s/fraunces/v38/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8oRcTn.woff2\")",
+      "Bash(curl -s -o lexenddeca.woff2 \"https://fonts.gstatic.com/s/lexenddeca/v25/K2F1fZFYk-dHSE0UPPuwQ5qnJy_YZ2ON.woff2\")",
+      "Bash(base64 -i fraunces.woff2 -o fraunces.b64)",
+      "Bash(base64 -i lexenddeca.woff2 -o lexenddeca.b64)",
+      "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,7,21\\).strftime\\('%A · %B %d %Y'\\)\\)\")",
+      "Bash(ls -la ~/.claude/scheduled-tasks/dashboard-daily-refresh/ 2>&1; echo \"---\"; find ~/.claude -iname \"*log*\" -newer \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/dashboard/dashboard.html\" 2>/dev/null | grep -i dashboard; echo \"---search wider---\"; find ~/.claude -path \"*scheduled*\" -newer /dev/null -mtime -2 2>/dev/null | grep -i dashboard)",
+      "Bash(pmset -g log)",
+      "Skill(dataviz)",
+      "Skill(dataviz:*)",
+      "Bash(node scripts/validate_palette.js \"#2A6B63,#B5551F\" --mode light)",
+      "Bash(python3 scripts/validate_palette.py \"#2A6B63,#B5551F\" --mode light)",
+      "Bash(python3 scripts/validate_palette.py \"#0E8A72,#C2571C\" --mode dark)"
     ]
   }
 }

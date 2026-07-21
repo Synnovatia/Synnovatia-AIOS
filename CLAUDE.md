@@ -124,6 +124,7 @@ These are how you know your EVOLV-OS is working:
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
 │   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
+│   ├── strength-log/         # Strength Training Log tool source (published as a claude.ai artifact)
 │   └── website-redesign/     # "Different Is Better Than Better" website mockups (homepage concept)
 ├── reference/               # Templates, examples, reusable patterns
 │   └── email-templates/     # onboarding-welcome.md, onboarding-reminder.md, pre-meeting-objective.md, post-meeting-recap.md
