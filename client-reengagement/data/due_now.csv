@@ -1,147 +1,144 @@
-first_name,last_name,email,client_since,hubspot_id,last_checkin,next_checkin_due,status,last_status_date,notes
-Donna,Amy,damy@marykay.com,2003-10-20,,2003-10-20,2004-04-20,,,"Added manually; only a web form submission found, weak signal"
-Enid,McGraw,eynez@sbcglobal.net,2009-12-30,,2009-12-30,2010-06-30,,,"Added manually via LinkedIn; connected since 2009, mutual connection Anne Laguzza (also in roster)"
-Pam,Lambert,pkayelambert@yahoo.com,2013-07-24,,2013-07-24,2014-01-24,,,Added manually via Gmail
-Raylene,Baron,rbaron@techlink.org,2013-09-30,,2013-09-30,2014-03-30,,,"Added manually; only auto-reply found, weak signal"
-Anita,Ferns,nitaferns@gmail.com,2013-10-12,36853,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Erwin,Lesman,drlesman@verizon.net,2013-10-12,36709,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Bill,Graybill,billgbill@hotmail.com,2013-10-12,36632,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Bea,Nicoletti,beatricenohoice@yahoo.com,2013-10-12,36610,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Deborah,Hamilton,deborahhamilton123@yahoo.com,2013-10-12,36702,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Diane,Ellis,diane@dianecunningham.com,2013-10-12,36669,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Izzy,Assencoa,iassencoa@aol.com,2013-10-12,37029,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Connie,Weatherman,connie@auntconnieswellbeing.com,2013-10-12,37020,,2014-04-12,,,no Gmail thread found; using HubSpot client_since
-Melinda,Flynn,homes@melindaflynn.com,2013-12-16,,2013-12-16,2014-06-16,,,"Added manually; only outbound email found, no reply on record"
-Maryan,Odabaee,maryamo76@yahoo.com,2008-11-13,,2013-12-16,2014-06-16,,,Added manually; spelled Maryam in emails
-Beth,Cole,beth.a.cole@gmail.com,2013-12-24,42599,,2014-06-24,,,no Gmail thread found; using HubSpot client_since
-David G.,Kinney,david@thekinneygroup.com,2013-12-24,42986,,2014-06-24,,,no Gmail thread found; using HubSpot client_since
-Catherine,Chevalier,catherine@notmaurice.com,2015-01-19,,2015-01-19,2015-07-19,,,Added manually via Gmail
-Aida,Figgins,afiggins@pdmcpas.com,2018-10-08,26750363,2015-02-16,2015-08-16,,,last_checkin from Gmail search
-Barbara,Sullivan,SULLIVANBA@aol.com,2015-06-12,,2015-06-12,2015-12-12,,,Added manually via Gmail
-Kirsten,"Bullock, MBA, CFRE",kirsten@bullockconsulting.net,2014-05-28,62836,2016-02-19,2016-08-19,,,last_checkin from Gmail search
-Kathleen,Cook,claudette1913@yahoo.com,2016-04-24,7118045,,2016-10-24,,,no Gmail thread found; using HubSpot client_since
-Melissa,Czepaniewski,melissa.czepaniewski@calcpa.org,2016-04-04,6227146,2016-04-27,2016-10-27,,,last_checkin from Gmail search
-Joseph,Aquilion,joeyy12467@yahoo.com,2018-07-11,26104295,2016-05-03,2016-11-03,,,last_checkin from Gmail search
-Skeeter,Betty,skeeterbetty@yahoo.com,2016-08-30,11098395,,2017-02-28,,,no Gmail thread found; using HubSpot client_since
-Petros,Lefteris,trygonian@gmail.com,2017-01-08,14414895,2017-02-13,2017-08-13,,,last_checkin from Gmail search
-Debi,Johnson,djmgmt@earthlink.net,2017-03-01,,2017-03-01,2017-09-01,,,Added manually via Gmail
-Donna,Dobrovich,donna@dfdcoaching.com,2012-06-20,440,2017-07-20,2018-01-20,,,last_checkin from Gmail search
-Pallavi,Valabhji,pvalabhji@yahoo.ca,2016-03-17,5406646,2017-10-05,2018-04-05,,,last_checkin from Gmail search
-Diahana,Barnes,dbarnes@learnease.com,2018-10-08,26749646,2018-01-16,2018-07-16,,,last_checkin from Gmail search
-Norma,Dawson,nadlaw@kidlike.com,2018-01-30,,2018-01-30,2018-07-30,,,Added manually via Gmail
-Annette,Davis,annette@ready4hire.com,2014-06-02,64079,2018-02-01,2018-08-01,,,last_checkin from Gmail search
-Robert A,Johnson,robert@socket.net,2013-10-12,37051,2018-02-06,2018-08-06,,,last_checkin from Gmail search
-Sheree,Bergman,hthlifecoaching@gmail.com,2016-07-09,10357445,2018-02-06,2018-08-06,,,last_checkin from Gmail search
-Paul,Okon,paulokon06@gmail.com,2018-03-21,25542295,2018-03-30,2018-09-30,,,last_checkin from Gmail search
-Carrie,Spell-Hansson,cspellhansson@gmail.com,2013-10-12,42407,2018-05-30,2018-11-30,,,last_checkin from Gmail search
-Phyllis,Washington,phyllis@coachphyl.com,2018-08-20,26382595,,2019-02-20,,,no Gmail thread found; using HubSpot client_since
-Jonathan,Karlen,jkarlen@karlen.com,2017-10-06,24421095,2018-08-31,2019-02-28,,,last_checkin from Gmail search
-Sue,Mandel,drsue@suemandelphd.com,2018-09-10,,2018-09-10,2019-03-10,,,Added manually; also used smandelphd@gmail.com and suemandel@firstattachments.com previously
-Miven,Trageser,miventrageser@gmail.com,2013-09-04,34073,2018-09-11,2019-03-11,,,last_checkin from Gmail search
-Steve,Pitchford,steve@srpdirect.com,2016-02-02,3157345,2018-09-18,2019-03-18,,,last_checkin from Gmail search
-Alan,Armijo,info@powerpartners.us,2018-09-11,26560445,2018-10-03,2019-04-03,,,last_checkin from Gmail search
-Eric,Mead,emead@elpcreativesolutions.com,2018-10-08,26750804,,2019-04-08,,,no Gmail thread found; using HubSpot client_since
-Marieke,Hensel,mariekehensel@gmail.com,2018-10-09,,2018-10-09,2019-04-09,,,"Added manually; only outbound email found, no reply on record"
-Gary,Dhadda,gary@nctrans.net,2018-10-10,26762695,,2019-04-10,,,no Gmail thread found; using HubSpot client_since
-Alana,Miranda,mirandaworldmarketing@gmail.com,2018-10-08,26750261,2018-10-25,2019-04-25,,,last_checkin from Gmail search
-Alberto,Vercellotti,vercellotti.alberto@gmail.com,2016-04-08,6412746,2018-10-26,2019-04-26,,,last_checkin from Gmail search
-Elizabeth,Teliz-McQuarrie,elizabeth@decodegreatness.com,2018-11-06,27086095,,2019-05-06,,,no Gmail thread found; using HubSpot client_since
-Melissa,Luce,melissaluce103@hotmail.com,2018-11-06,27089395,,2019-05-06,,,no Gmail thread found; using HubSpot client_since
-Maria,Hall,mariaehall@yahoo.com,2018-12-04,27724095,,2019-06-04,,,no Gmail thread found; using HubSpot client_since
-Tony,Novak,tony@tonynovak.com,2018-12-31,28298545,,2019-06-30,,,no Gmail thread found; using HubSpot client_since
-Caleigh,Darragh,caleigh.darragh@gmail.com,2018-09-27,26674395,2019-01-02,2019-07-02,,,last_checkin from Gmail search
-Beth,Clarke,beth@littlemonkeymarketing.com,2017-08-15,23023145,2019-04-08,2019-10-08,,,last_checkin from Gmail search
-Paul,MachEighty,paulcorneaau@gmail.com,2019-06-12,30504695,,2019-12-12,,,no Gmail thread found; using HubSpot client_since
-Maria Aidyl,Zamora,aidylzamora@yahoo.com,2019-06-21,30557145,,2019-12-21,,,no Gmail thread found; using HubSpot client_since
-David,Díaz Robisco,robiscoasesores@yahoo.es,2014-05-06,59147,2019-07-09,2020-01-09,,,last_checkin from Gmail search
-Martica,Jenkins,mktica@gmail.com,2018-01-11,25172745,2019-07-10,2020-01-10,,,last_checkin from Gmail search
-A.Yamina,Collins,a_yamina_c@hotmail.com,2014-01-01,,2019-07-16,2020-01-16,,,"Added manually; only outbound email found, no reply on record"
-Kimberly,Von Slomski,kimberly@ladoulacare.com,2017-07-14,21639045,2019-07-17,2020-01-17,,,last_checkin from Gmail search
-Denise,Wilson,flamewilson@yahoo.com,2013-10-12,37023,2020-03-04,2020-09-04,,,last_checkin from Gmail search
-Candy,Messer,candy@abandp.com,2013-12-24,374997,2020-03-27,2020-09-27,,,last_checkin from Gmail search
-Leatt,Gilboa,lgilboa@firstlegal.com,2020-01-16,31590345,2020-04-07,2020-10-07,,,last_checkin from Gmail search
-Michelle Sami,Wehbe,michelle.s.wehbe@hotmail.com,2020-04-11,32122295,,2020-10-11,,,no Gmail thread found; using HubSpot client_since
-Carolynn,Aristone,carolynn@cirllc.com,2014-12-07,142739,2020-04-22,2020-10-22,,,last_checkin from Gmail search
-Linda,Johnson,llvassoc@aol.com,2020-07-20,,2020-07-20,2021-01-20,,,Added manually via Gmail; thread re: health update
-Kimala,Franklin,fandlconsulting@yahoo.com,2018-04-24,25725545,2020-12-07,2021-06-07,,,last_checkin from Gmail search
-Brooke L.,Billingsley,brooke@perstrat.com,2013-12-24,42700,2020-12-09,2021-06-09,,,last_checkin from Gmail search
-Drisa A.,Carrizo,drisa@dacadvisory.com,2018-08-27,26441245,2020-12-09,2021-06-09,,,last_checkin from Gmail search
-Liz,Mohler,mrslizmohler@gmail.com,2016-02-17,3898145,2020-12-21,2021-06-21,,,last_checkin from Gmail search
-Shadi,"Halavi-Shaolian, Esq.",shadihalavi@gmail.com,2018-10-08,26749602,2020-12-28,2021-06-28,,,last_checkin from Gmail search
-Tracy,Foshee,tracylane876@yahoo.com,2020-11-02,33170495,2020-12-30,2021-06-30,,,last_checkin from Gmail search
-M Waqas,Joiya,mwaqasjoiya501@gmail.com,2020-11-25,33252245,2020-12-30,2021-06-30,,,last_checkin from Gmail search
-Susan,Parrish,scpmail2020@gmail.com,2021-01-11,33407795,,2021-07-11,,,no Gmail thread found; using HubSpot client_since
-Morgan,Sheets,morgan@livingwellenterprises.biz,2021-04-05,33786545,2021-04-05,2021-10-05,,,last_checkin from Gmail search
-Chris,Lane,chrislanemb@gmail.com,2019-01-30,29004595,2021-04-16,2021-10-16,,,last_checkin from Gmail search
-Edwell,Mambane,edwell@ngoola.com,2021-03-22,33722545,2021-05-25,2021-11-25,,,last_checkin from Gmail search
-Michael,Waltz,mike@loyaltyvidz.com,2020-09-01,32949995,2021-06-05,2021-12-05,,,last_checkin from Gmail search
-Kate,McCullough,kmccullough.va@gmail.com,2021-07-30,34230945,2021-08-30,2022-02-28,,,last_checkin from Gmail search
-Nicole,Comer,ncomer@npconsultingstream.com,2018-10-08,26749748,2021-10-14,2022-04-14,,,last_checkin from Gmail search
-Mamie,Washington,mamie_washington@yahoo.com,2012-08-13,9742,2021-10-21,2022-04-21,,,last_checkin from Gmail search
-Michael,Pfau,mike@crosswayslifecoaching.com,2013-12-24,43368,2021-10-26,2022-04-26,,,last_checkin from Gmail search
-Dora,Goncalves,dora.p.goncalves@gmail.com,2015-02-09,179753,2021-10-26,2022-04-26,,,last_checkin from Gmail search
-Sibo,Ncube,sibo1986@gmail.com,2015-03-18,2261595,2021-10-29,2022-04-29,,,last_checkin from Gmail search
-Richard,Greenbaum,rwg@rwgreenbaum.com,2013-10-12,36935,2021-11-01,2022-05-01,,,last_checkin from Gmail search
-Linda,Pogo,pogo63@socket.net,2013-10-12,36908,2021-11-12,2022-05-12,,,last_checkin from Gmail search
-Christine,Meshell,christine@jcmgreenhouse.com,2022-02-20,34851145,,2022-08-20,,,no Gmail thread found; using HubSpot client_since
-Suzi,Waddill-Goad,suziq7@msn.com,2013-10-12,36978,2022-03-11,2022-09-11,,,last_checkin from Gmail search
-Sherry,Schaefer,sscargo1001@gmail.com,2021-11-16,34566595,2022-04-13,2022-10-13,,,last_checkin from Gmail search
-Jill,Cohen,jill@jillcohenmediation.com,2018-01-23,26750333,2022-05-09,2022-11-09,,,last_checkin from Gmail search
-Hamid M.,Kashani - AIA,hamid@habitatarchitecture.com,2013-10-12,36748,2022-05-21,2022-11-21,,,last_checkin from Gmail search
-Joan,Riddle,mjr@nici-group.com,2015-02-26,223464,2022-05-24,2022-11-24,,,last_checkin from Gmail search
-clara,bassett,clarabassett@yahoo.com,2018-10-08,26750257,2022-06-03,2022-12-03,,,last_checkin from Gmail search
-Diana,Pointer,dpointer101@gmail.com,2017-12-03,24973445,2022-06-24,2022-12-24,,,last_checkin from Gmail search
-Rhiannon,Acre,rhiannona@cambrianhomecare.com,2012-08-25,10376,2022-07-06,2023-01-06,,,last_checkin from Gmail search
-Shari,Holland,sholland57@gmail.com,2015-04-25,277889,2022-07-14,2023-01-14,,,last_checkin from Gmail search
-Lisa,Black,suki.snuggles@gmail.com,2020-07-14,32659595,2022-07-19,2023-01-19,,,last_checkin from Gmail search
-Hava,Volterra,hava@parsleycooks.com,2014-03-13,53232,2022-08-03,2023-02-03,,,last_checkin from Gmail search
-Tabitha,Nichols,tshncl@yahoo.com,2022-08-11,35464445,,2023-02-11,,,no Gmail thread found; using HubSpot client_since
-Elyse,Koenig,elyse@elysekoenig.com,2020-11-23,33245045,2022-08-16,2023-02-16,,,last_checkin from Gmail search
-Déborah,BORIEL,debora.boriel@gmail.com,2022-09-18,35674395,,2023-03-18,,,no Gmail thread found; using HubSpot client_since
-Tracey,Bloodsaw,bloodsawleo3x@aol.com,2022-10-02,35747945,,2023-04-02,,,no Gmail thread found; using HubSpot client_since
-Jo Lynn,"Deal, APR",jolynndeal@mymarketingcafe.com,2013-07-25,30210,2022-10-04,2023-04-04,,,last_checkin from Gmail search
-Terri,Kashani,terri@habitatarchitecture.com,2013-10-12,37054,2022-10-10,2023-04-10,,,last_checkin from Gmail search
-FrankEvans,Kileo,batteryandsolarpower@gmail.com,2022-10-16,35792495,2022-10-22,2023-04-22,,,last_checkin from Gmail search
-David,Fahey,davidf@pedders.com.au,2022-11-04,35927945,,2023-05-04,,,no Gmail thread found; using HubSpot client_since
-Brad,Gusich,gusichb@yahoo.com,2013-09-04,36642,2022-11-10,2023-05-10,,,last_checkin from Gmail search
-Melissa,Blackmer,thementalhealthchick@gmail.com,2022-11-10,35945195,,2023-05-10,,,no Gmail thread found; using HubSpot client_since
-Diane,Darling,diane@dianedarling.com,2018-10-08,26749921,2022-11-12,2023-05-12,,,last_checkin from Gmail search
-Sheila,Jackson,thesheiladjackson@gmail.com,2022-12-27,36071445,,2023-06-27,,,no Gmail thread found; using HubSpot client_since
-Desiree,Saddler,info.saddlerconsultinggroup@gmail.com,2022-08-30,,2022-12-29,2023-06-29,,,"Added manually (not in HubSpot); confirmed via Gmail + LinkedIn (LA, Principal/Owner Saddler Consulting Group). Old domain saddlerconsulting.com bounced Aug 2022 - use gmail address"
-Cora,Willard,cora@redhenbusiness.com,2023-01-01,36087266,,2023-07-01,,,no Gmail thread found; using HubSpot client_since
-Megan,Shane,megan@dhleonardconsulting.com,2019-09-24,31025895,2023-03-10,2023-09-10,,,last_checkin from Gmail search
-Randy,Ziebarth,randy@inplayshowroom.com,2022-10-07,35767095,2023-03-21,2023-09-21,,,last_checkin from Gmail search
-Hank,Parker,hparker@pdmcpas.com,2018-10-08,26750374,2023-03-24,2023-09-24,,,last_checkin from Gmail search
-Myrna,Daramy,hello@myrnadaramy.com,2019-06-05,30463395,2023-04-25,2023-10-25,,,last_checkin from Gmail search
-Tanya,Jeannet,tanya@rockmybaby.ch,2016-05-05,7582595,2023-05-19,2023-11-19,,,last_checkin from Gmail search
-Shripal,Gandhi,shripal.gandhi@gmail.com,2023-06-22,36224545,,2023-12-22,,,no Gmail thread found; using HubSpot client_since
-Angela,Webb,webb214@yahoo.com,2023-07-18,36224845,,2024-01-18,,,no Gmail thread found; using HubSpot client_since
-Mary,O'Maley,maryomaley@outlook.com,2018-10-08,26749616,2023-07-25,2024-01-25,,,last_checkin from Gmail search
-Amy,Hage,amyhage@yahoo.com,2023-06-30,36224695,2023-09-06,2024-03-06,,,last_checkin from Gmail search
-Amanda,Perrot,amanda@alchemelife.com,2022-07-01,35305645,2023-09-19,2024-03-19,,,last_checkin from Gmail search
-josh,lipton,josh@campfirecycling.com,2023-11-26,36300145,,2024-05-26,,,no Gmail thread found; using HubSpot client_since
-Jennylyn,Pringle,jen@fusionmineralpaint.com,2018-04-17,25688145,2023-11-29,2024-05-29,,,last_checkin from Gmail search
-Meridith,Powell,mere@valuespeaker.com,2018-10-08,26750647,2024-01-01,2024-07-01,,,last_checkin from Gmail search
-Maxine,Fuller,maxinefuller1@gmail.com,2013-10-12,42712,2024-02-12,2024-08-12,,,last_checkin from Gmail search
-Chrissy,Galdieei,chrissy@silkbridaleaston.com,2022-10-07,35767745,2024-02-17,2024-08-17,,,last_checkin from Gmail search
-raffi,saroyan,raffi@readytoview.com,2013-10-12,36918,2024-02-19,2024-08-19,,,last_checkin from Gmail search
-Jacquie,Goodwill,jacquie.goodwill@outlook.com,2024-05-20,,2024-05-20,2024-11-20,,,Added manually; older address jacquie@peninsulastrategic.com also on file
-Cristina,Espiritu,cristinaespiritu@gmail.com,2020-09-08,32964345,2024-06-24,2024-12-24,,,last_checkin from Gmail search
-Terri,Wallin,terri@wallinenterprises.com,2013-12-24,43048,2024-07-07,2025-01-07,,,last_checkin from Gmail search
-Christopher,Kreidel,risto.qts@icloud.com,2018-10-08,26750510,2024-08-02,2025-02-02,,,last_checkin from Gmail search
-Kim,Milne,kjmilne61@gmail.com,2020-11-02,33169595,2024-08-06,2025-02-06,,,last_checkin from Gmail search
-,,href@firstlegal.com,2024-10-22,70897139094,,2025-04-22,,,no Gmail thread found; using HubSpot client_since
-John,Lanza,john@snigglezoo.com,2016-02-18,7747395,2024-11-04,2025-05-04,,,last_checkin from Gmail search
-Carol,Kulencavich,ckulencavich@pdmcpas.com,2013-12-24,43125,2024-11-12,2025-05-12,,,last_checkin from Gmail search
-,,hreff@firstlegal.com,2022-01-11,34715195,2025-01-27,2025-07-27,,,last_checkin from Gmail search
-,,dlittle@firstlegal.com,2023-01-05,36100295,2025-02-27,2025-08-27,,,last_checkin from Gmail search
-Katrina,Spivek,katrinaspivek@gmail.com,2020-10-20,33121995,2025-04-02,2025-10-02,,,last_checkin from Gmail search
-katie,hammond,katie@thelastlayer.co,2016-01-15,2349745,2025-05-28,2025-11-28,,,last_checkin from Gmail search
-Steve,Tyssee,steve@redondopt.com,2013-10-12,36938,2025-07-30,2026-01-30,,,last_checkin from Gmail search
-Nia,Troup,ntroup@firstlegal.com,2017-07-17,21783495,2025-07-30,2026-01-30,,,last_checkin from Gmail search
-Nicole,Tyson,ntyson@firstlegal.com,2022-11-29,35998145,2025-07-30,2026-01-30,,,last_checkin from Gmail search
-Madalyn,Ward,madvet1@gmail.com,2021-10-12,34452845,2025-08-06,2026-02-06,,,last_checkin from Gmail search
-Marvin,Velazquez,sicilianmarie@gmail.com,2012-08-14,9760,2025-09-06,2026-03-06,,,last_checkin from Gmail search
-Christina,Carlson,christina@unstuck.network,2023-04-24,36212245,2025-10-02,2026-04-02,,,last_checkin from Gmail search
-Parmod,Kumar,pkumar@gs1india.org,2025-12-30,189197802056,,2026-06-30,,,no Gmail thread found; using HubSpot client_since
-Parmod,Dhiman,parmdhiman@gmail.com,2018-10-08,26750279,2026-01-05,2026-07-05,,,last_checkin from Gmail search
+first_name,last_name,email,client_since,hubspot_id,last_checkin,next_checkin_due,status,last_status_date,notes,priority
+Donna,Dobrovich,donna@dfdcoaching.com,2012-06-20,440,2017-07-20,2018-01-20,,,last_checkin from Gmail search,1
+Beth,Clarke,beth@littlemonkeymarketing.com,2017-08-15,23023145,2019-04-08,2019-10-08,,,last_checkin from Gmail search,1
+Donna,Amy,damy@marykay.com,2003-10-20,,2003-10-20,2004-04-20,,,"Added manually; only a web form submission found, weak signal",
+Enid,McGraw,eynez@sbcglobal.net,2009-12-30,,2009-12-30,2010-06-30,,,"Added manually via LinkedIn; connected since 2009, mutual connection Anne Laguzza (also in roster)",
+Pam,Lambert,pkayelambert@yahoo.com,2013-07-24,,2013-07-24,2014-01-24,,,Added manually via Gmail,
+Raylene,Baron,rbaron@techlink.org,2013-09-30,,2013-09-30,2014-03-30,,,"Added manually; only auto-reply found, weak signal",
+Anita,Ferns,nitaferns@gmail.com,2013-10-12,36853,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Erwin,Lesman,drlesman@verizon.net,2013-10-12,36709,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Bill,Graybill,billgbill@hotmail.com,2013-10-12,36632,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Bea,Nicoletti,beatricenohoice@yahoo.com,2013-10-12,36610,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Deborah,Hamilton,deborahhamilton123@yahoo.com,2013-10-12,36702,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Diane,Ellis,diane@dianecunningham.com,2013-10-12,36669,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Izzy,Assencoa,iassencoa@aol.com,2013-10-12,37029,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Connie,Weatherman,connie@auntconnieswellbeing.com,2013-10-12,37020,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
+Melinda,Flynn,homes@melindaflynn.com,2013-12-16,,2013-12-16,2014-06-16,,,"Added manually; only outbound email found, no reply on record",
+Maryan,Odabaee,maryamo76@yahoo.com,2008-11-13,,2013-12-16,2014-06-16,,,Added manually; spelled Maryam in emails,
+Beth,Cole,beth.a.cole@gmail.com,2013-12-24,42599,,2014-06-24,,,no Gmail thread found; using HubSpot client_since,
+David G.,Kinney,david@thekinneygroup.com,2013-12-24,42986,,2014-06-24,,,no Gmail thread found; using HubSpot client_since,
+Catherine,Chevalier,catherine@notmaurice.com,2015-01-19,,2015-01-19,2015-07-19,,,Added manually via Gmail,
+Aida,Figgins,afiggins@pdmcpas.com,2018-10-08,26750363,2015-02-16,2015-08-16,,,last_checkin from Gmail search,
+Barbara,Sullivan,SULLIVANBA@aol.com,2015-06-12,,2015-06-12,2015-12-12,,,Added manually via Gmail,
+Kirsten,"Bullock, MBA, CFRE",kirsten@bullockconsulting.net,2014-05-28,62836,2016-02-19,2016-08-19,,,last_checkin from Gmail search,
+Kathleen,Cook,claudette1913@yahoo.com,2016-04-24,7118045,,2016-10-24,,,no Gmail thread found; using HubSpot client_since,
+Melissa,Czepaniewski,melissa.czepaniewski@calcpa.org,2016-04-04,6227146,2016-04-27,2016-10-27,,,last_checkin from Gmail search,
+Joseph,Aquilion,joeyy12467@yahoo.com,2018-07-11,26104295,2016-05-03,2016-11-03,,,last_checkin from Gmail search,
+Skeeter,Betty,skeeterbetty@yahoo.com,2016-08-30,11098395,,2017-02-28,,,no Gmail thread found; using HubSpot client_since,
+Petros,Lefteris,trygonian@gmail.com,2017-01-08,14414895,2017-02-13,2017-08-13,,,last_checkin from Gmail search,
+Debi,Johnson,djmgmt@earthlink.net,2017-03-01,,2017-03-01,2017-09-01,,,Added manually via Gmail,
+Pallavi,Valabhji,pvalabhji@yahoo.ca,2016-03-17,5406646,2017-10-05,2018-04-05,,,last_checkin from Gmail search,
+Norma,Dawson,nadlaw@kidlike.com,2018-01-30,,2018-01-30,2018-07-30,,,Added manually via Gmail,
+Annette,Davis,annette@ready4hire.com,2014-06-02,64079,2018-02-01,2018-08-01,,,last_checkin from Gmail search,
+Robert A,Johnson,robert@socket.net,2013-10-12,37051,2018-02-06,2018-08-06,,,last_checkin from Gmail search,
+Sheree,Bergman,hthlifecoaching@gmail.com,2016-07-09,10357445,2018-02-06,2018-08-06,,,last_checkin from Gmail search,
+Paul,Okon,paulokon06@gmail.com,2018-03-21,25542295,2018-03-30,2018-09-30,,,last_checkin from Gmail search,
+Carrie,Spell-Hansson,cspellhansson@gmail.com,2013-10-12,42407,2018-05-30,2018-11-30,,,last_checkin from Gmail search,
+Phyllis,Washington,phyllis@coachphyl.com,2018-08-20,26382595,,2019-02-20,,,no Gmail thread found; using HubSpot client_since,
+Jonathan,Karlen,jkarlen@karlen.com,2017-10-06,24421095,2018-08-31,2019-02-28,,,last_checkin from Gmail search,
+Sue,Mandel,drsue@suemandelphd.com,2018-09-10,,2018-09-10,2019-03-10,,,Added manually; also used smandelphd@gmail.com and suemandel@firstattachments.com previously,
+Miven,Trageser,miventrageser@gmail.com,2013-09-04,34073,2018-09-11,2019-03-11,,,last_checkin from Gmail search,
+Steve,Pitchford,steve@srpdirect.com,2016-02-02,3157345,2018-09-18,2019-03-18,,,last_checkin from Gmail search,
+Alan,Armijo,info@powerpartners.us,2018-09-11,26560445,2018-10-03,2019-04-03,,,last_checkin from Gmail search,
+Eric,Mead,emead@elpcreativesolutions.com,2018-10-08,26750804,,2019-04-08,,,no Gmail thread found; using HubSpot client_since,
+Marieke,Hensel,mariekehensel@gmail.com,2018-10-09,,2018-10-09,2019-04-09,,,"Added manually; only outbound email found, no reply on record",
+Gary,Dhadda,gary@nctrans.net,2018-10-10,26762695,,2019-04-10,,,no Gmail thread found; using HubSpot client_since,
+Alana,Miranda,mirandaworldmarketing@gmail.com,2018-10-08,26750261,2018-10-25,2019-04-25,,,last_checkin from Gmail search,
+Alberto,Vercellotti,vercellotti.alberto@gmail.com,2016-04-08,6412746,2018-10-26,2019-04-26,,,last_checkin from Gmail search,
+Elizabeth,Teliz-McQuarrie,elizabeth@decodegreatness.com,2018-11-06,27086095,,2019-05-06,,,no Gmail thread found; using HubSpot client_since,
+Melissa,Luce,melissaluce103@hotmail.com,2018-11-06,27089395,,2019-05-06,,,no Gmail thread found; using HubSpot client_since,
+Maria,Hall,mariaehall@yahoo.com,2018-12-04,27724095,,2019-06-04,,,no Gmail thread found; using HubSpot client_since,
+Tony,Novak,tony@tonynovak.com,2018-12-31,28298545,,2019-06-30,,,no Gmail thread found; using HubSpot client_since,
+Caleigh,Darragh,caleigh.darragh@gmail.com,2018-09-27,26674395,2019-01-02,2019-07-02,,,last_checkin from Gmail search,
+Paul,MachEighty,paulcorneaau@gmail.com,2019-06-12,30504695,,2019-12-12,,,no Gmail thread found; using HubSpot client_since,
+Maria Aidyl,Zamora,aidylzamora@yahoo.com,2019-06-21,30557145,,2019-12-21,,,no Gmail thread found; using HubSpot client_since,
+David,Díaz Robisco,robiscoasesores@yahoo.es,2014-05-06,59147,2019-07-09,2020-01-09,,,last_checkin from Gmail search,
+Martica,Jenkins,mktica@gmail.com,2018-01-11,25172745,2019-07-10,2020-01-10,,,last_checkin from Gmail search,
+A.Yamina,Collins,a_yamina_c@hotmail.com,2014-01-01,,2019-07-16,2020-01-16,,,"Added manually; only outbound email found, no reply on record",
+Kimberly,Von Slomski,kimberly@ladoulacare.com,2017-07-14,21639045,2019-07-17,2020-01-17,,,last_checkin from Gmail search,
+Denise,Wilson,flamewilson@yahoo.com,2013-10-12,37023,2020-03-04,2020-09-04,,,last_checkin from Gmail search,
+Candy,Messer,candy@abandp.com,2013-12-24,374997,2020-03-27,2020-09-27,,,last_checkin from Gmail search,
+Leatt,Gilboa,lgilboa@firstlegal.com,2020-01-16,31590345,2020-04-07,2020-10-07,,,last_checkin from Gmail search,
+Michelle Sami,Wehbe,michelle.s.wehbe@hotmail.com,2020-04-11,32122295,,2020-10-11,,,no Gmail thread found; using HubSpot client_since,
+Carolynn,Aristone,carolynn@cirllc.com,2014-12-07,142739,2020-04-22,2020-10-22,,,last_checkin from Gmail search,
+Linda,Johnson,llvassoc@aol.com,2020-07-20,,2020-07-20,2021-01-20,,,Added manually via Gmail; thread re: health update,
+Kimala,Franklin,fandlconsulting@yahoo.com,2018-04-24,25725545,2020-12-07,2021-06-07,,,last_checkin from Gmail search,
+Brooke L.,Billingsley,brooke@perstrat.com,2013-12-24,42700,2020-12-09,2021-06-09,,,last_checkin from Gmail search,
+Drisa A.,Carrizo,drisa@dacadvisory.com,2018-08-27,26441245,2020-12-09,2021-06-09,,,last_checkin from Gmail search,
+Liz,Mohler,mrslizmohler@gmail.com,2016-02-17,3898145,2020-12-21,2021-06-21,,,last_checkin from Gmail search,
+Shadi,"Halavi-Shaolian, Esq.",shadihalavi@gmail.com,2018-10-08,26749602,2020-12-28,2021-06-28,,,last_checkin from Gmail search,
+Tracy,Foshee,tracylane876@yahoo.com,2020-11-02,33170495,2020-12-30,2021-06-30,,,last_checkin from Gmail search,
+M Waqas,Joiya,mwaqasjoiya501@gmail.com,2020-11-25,33252245,2020-12-30,2021-06-30,,,last_checkin from Gmail search,
+Susan,Parrish,scpmail2020@gmail.com,2021-01-11,33407795,,2021-07-11,,,no Gmail thread found; using HubSpot client_since,
+Morgan,Sheets,morgan@livingwellenterprises.biz,2021-04-05,33786545,2021-04-05,2021-10-05,,,last_checkin from Gmail search,
+Chris,Lane,chrislanemb@gmail.com,2019-01-30,29004595,2021-04-16,2021-10-16,,,last_checkin from Gmail search,
+Edwell,Mambane,edwell@ngoola.com,2021-03-22,33722545,2021-05-25,2021-11-25,,,last_checkin from Gmail search,
+Michael,Waltz,mike@loyaltyvidz.com,2020-09-01,32949995,2021-06-05,2021-12-05,,,last_checkin from Gmail search,
+Kate,McCullough,kmccullough.va@gmail.com,2021-07-30,34230945,2021-08-30,2022-02-28,,,last_checkin from Gmail search,
+Nicole,Comer,ncomer@npconsultingstream.com,2018-10-08,26749748,2021-10-14,2022-04-14,,,last_checkin from Gmail search,
+Mamie,Washington,mamie_washington@yahoo.com,2012-08-13,9742,2021-10-21,2022-04-21,,,last_checkin from Gmail search,
+Michael,Pfau,mike@crosswayslifecoaching.com,2013-12-24,43368,2021-10-26,2022-04-26,,,last_checkin from Gmail search,
+Dora,Goncalves,dora.p.goncalves@gmail.com,2015-02-09,179753,2021-10-26,2022-04-26,,,last_checkin from Gmail search,
+Sibo,Ncube,sibo1986@gmail.com,2015-03-18,2261595,2021-10-29,2022-04-29,,,last_checkin from Gmail search,
+Richard,Greenbaum,rwg@rwgreenbaum.com,2013-10-12,36935,2021-11-01,2022-05-01,,,last_checkin from Gmail search,
+Linda,Pogo,pogo63@socket.net,2013-10-12,36908,2021-11-12,2022-05-12,,,last_checkin from Gmail search,
+Christine,Meshell,christine@jcmgreenhouse.com,2022-02-20,34851145,,2022-08-20,,,no Gmail thread found; using HubSpot client_since,
+Sherry,Schaefer,sscargo1001@gmail.com,2021-11-16,34566595,2022-04-13,2022-10-13,,,last_checkin from Gmail search,
+Jill,Cohen,jill@jillcohenmediation.com,2018-01-23,26750333,2022-05-09,2022-11-09,,,last_checkin from Gmail search,
+Hamid M.,Kashani - AIA,hamid@habitatarchitecture.com,2013-10-12,36748,2022-05-21,2022-11-21,,,last_checkin from Gmail search,
+Joan,Riddle,mjr@nici-group.com,2015-02-26,223464,2022-05-24,2022-11-24,,,last_checkin from Gmail search,
+clara,bassett,clarabassett@yahoo.com,2018-10-08,26750257,2022-06-03,2022-12-03,,,last_checkin from Gmail search,
+Diana,Pointer,dpointer101@gmail.com,2017-12-03,24973445,2022-06-24,2022-12-24,,,last_checkin from Gmail search,
+Rhiannon,Acre,rhiannona@cambrianhomecare.com,2012-08-25,10376,2022-07-06,2023-01-06,,,last_checkin from Gmail search,
+Shari,Holland,sholland57@gmail.com,2015-04-25,277889,2022-07-14,2023-01-14,,,last_checkin from Gmail search,
+Lisa,Black,suki.snuggles@gmail.com,2020-07-14,32659595,2022-07-19,2023-01-19,,,last_checkin from Gmail search,
+Hava,Volterra,hava@parsleycooks.com,2014-03-13,53232,2022-08-03,2023-02-03,,,last_checkin from Gmail search,
+Tabitha,Nichols,tshncl@yahoo.com,2022-08-11,35464445,,2023-02-11,,,no Gmail thread found; using HubSpot client_since,
+Elyse,Koenig,elyse@elysekoenig.com,2020-11-23,33245045,2022-08-16,2023-02-16,,,last_checkin from Gmail search,
+Déborah,BORIEL,debora.boriel@gmail.com,2022-09-18,35674395,,2023-03-18,,,no Gmail thread found; using HubSpot client_since,
+Tracey,Bloodsaw,bloodsawleo3x@aol.com,2022-10-02,35747945,,2023-04-02,,,no Gmail thread found; using HubSpot client_since,
+Jo Lynn,"Deal, APR",jolynndeal@mymarketingcafe.com,2013-07-25,30210,2022-10-04,2023-04-04,,,last_checkin from Gmail search,
+Terri,Kashani,terri@habitatarchitecture.com,2013-10-12,37054,2022-10-10,2023-04-10,,,last_checkin from Gmail search,
+FrankEvans,Kileo,batteryandsolarpower@gmail.com,2022-10-16,35792495,2022-10-22,2023-04-22,,,last_checkin from Gmail search,
+David,Fahey,davidf@pedders.com.au,2022-11-04,35927945,,2023-05-04,,,no Gmail thread found; using HubSpot client_since,
+Brad,Gusich,gusichb@yahoo.com,2013-09-04,36642,2022-11-10,2023-05-10,,,last_checkin from Gmail search,
+Melissa,Blackmer,thementalhealthchick@gmail.com,2022-11-10,35945195,,2023-05-10,,,no Gmail thread found; using HubSpot client_since,
+Diane,Darling,diane@dianedarling.com,2018-10-08,26749921,2022-11-12,2023-05-12,,,last_checkin from Gmail search,
+Sheila,Jackson,thesheiladjackson@gmail.com,2022-12-27,36071445,,2023-06-27,,,no Gmail thread found; using HubSpot client_since,
+Desiree,Saddler,info.saddlerconsultinggroup@gmail.com,2022-08-30,,2022-12-29,2023-06-29,,,"Added manually (not in HubSpot); confirmed via Gmail + LinkedIn (LA, Principal/Owner Saddler Consulting Group). Old domain saddlerconsulting.com bounced Aug 2022 - use gmail address",
+Megan,Shane,megan@dhleonardconsulting.com,2019-09-24,31025895,2023-03-10,2023-09-10,,,last_checkin from Gmail search,
+Randy,Ziebarth,randy@inplayshowroom.com,2022-10-07,35767095,2023-03-21,2023-09-21,,,last_checkin from Gmail search,
+Hank,Parker,hparker@pdmcpas.com,2018-10-08,26750374,2023-03-24,2023-09-24,,,last_checkin from Gmail search,
+Myrna,Daramy,hello@myrnadaramy.com,2019-06-05,30463395,2023-04-25,2023-10-25,,,last_checkin from Gmail search,
+Tanya,Jeannet,tanya@rockmybaby.ch,2016-05-05,7582595,2023-05-19,2023-11-19,,,last_checkin from Gmail search,
+Shripal,Gandhi,shripal.gandhi@gmail.com,2023-06-22,36224545,,2023-12-22,,,no Gmail thread found; using HubSpot client_since,
+Angela,Webb,webb214@yahoo.com,2023-07-18,36224845,,2024-01-18,,,no Gmail thread found; using HubSpot client_since,
+Mary,O'Maley,maryomaley@outlook.com,2018-10-08,26749616,2023-07-25,2024-01-25,,,last_checkin from Gmail search,
+Amy,Hage,amyhage@yahoo.com,2023-06-30,36224695,2023-09-06,2024-03-06,,,last_checkin from Gmail search,
+Amanda,Perrot,amanda@alchemelife.com,2022-07-01,35305645,2023-09-19,2024-03-19,,,last_checkin from Gmail search,
+josh,lipton,josh@campfirecycling.com,2023-11-26,36300145,,2024-05-26,,,no Gmail thread found; using HubSpot client_since,
+Jennylyn,Pringle,jen@fusionmineralpaint.com,2018-04-17,25688145,2023-11-29,2024-05-29,,,last_checkin from Gmail search,
+Meridith,Powell,mere@valuespeaker.com,2018-10-08,26750647,2024-01-01,2024-07-01,,,last_checkin from Gmail search,
+Maxine,Fuller,maxinefuller1@gmail.com,2013-10-12,42712,2024-02-12,2024-08-12,,,last_checkin from Gmail search,
+Chrissy,Galdieei,chrissy@silkbridaleaston.com,2022-10-07,35767745,2024-02-17,2024-08-17,,,last_checkin from Gmail search,
+raffi,saroyan,raffi@readytoview.com,2013-10-12,36918,2024-02-19,2024-08-19,,,last_checkin from Gmail search,
+Jacquie,Goodwill,jacquie.goodwill@outlook.com,2024-05-20,,2024-05-20,2024-11-20,,,Added manually; older address jacquie@peninsulastrategic.com also on file,
+Cristina,Espiritu,cristinaespiritu@gmail.com,2020-09-08,32964345,2024-06-24,2024-12-24,,,last_checkin from Gmail search,
+Terri,Wallin,terri@wallinenterprises.com,2013-12-24,43048,2024-07-07,2025-01-07,,,last_checkin from Gmail search,
+Christopher,Kreidel,risto.qts@icloud.com,2018-10-08,26750510,2024-08-02,2025-02-02,,,last_checkin from Gmail search,
+Kim,Milne,kjmilne61@gmail.com,2020-11-02,33169595,2024-08-06,2025-02-06,,,last_checkin from Gmail search,
+,,href@firstlegal.com,2024-10-22,70897139094,,2025-04-22,,,no Gmail thread found; using HubSpot client_since,
+John,Lanza,john@snigglezoo.com,2016-02-18,7747395,2024-11-04,2025-05-04,,,last_checkin from Gmail search,
+Carol,Kulencavich,ckulencavich@pdmcpas.com,2013-12-24,43125,2024-11-12,2025-05-12,,,last_checkin from Gmail search,
+,,hreff@firstlegal.com,2022-01-11,34715195,2025-01-27,2025-07-27,,,last_checkin from Gmail search,
+,,dlittle@firstlegal.com,2023-01-05,36100295,2025-02-27,2025-08-27,,,last_checkin from Gmail search,
+Katrina,Spivek,katrinaspivek@gmail.com,2020-10-20,33121995,2025-04-02,2025-10-02,,,last_checkin from Gmail search,
+katie,hammond,katie@thelastlayer.co,2016-01-15,2349745,2025-05-28,2025-11-28,,,last_checkin from Gmail search,
+Steve,Tyssee,steve@redondopt.com,2013-10-12,36938,2025-07-30,2026-01-30,,,last_checkin from Gmail search,
+Nia,Troup,ntroup@firstlegal.com,2017-07-17,21783495,2025-07-30,2026-01-30,,,last_checkin from Gmail search,
+Nicole,Tyson,ntyson@firstlegal.com,2022-11-29,35998145,2025-07-30,2026-01-30,,,last_checkin from Gmail search,
+Madalyn,Ward,madvet1@gmail.com,2021-10-12,34452845,2025-08-06,2026-02-06,,,last_checkin from Gmail search,
+Marvin,Velazquez,sicilianmarie@gmail.com,2012-08-14,9760,2025-09-06,2026-03-06,,,last_checkin from Gmail search,
+Christina,Carlson,christina@unstuck.network,2023-04-24,36212245,2025-10-02,2026-04-02,,,last_checkin from Gmail search,
+Parmod,Kumar,pkumar@gs1india.org,2025-12-30,189197802056,,2026-06-30,,,no Gmail thread found; using HubSpot client_since,
+Parmod,Dhiman,parmdhiman@gmail.com,2018-10-08,26750279,2026-01-05,2026-07-05,,,last_checkin from Gmail search,

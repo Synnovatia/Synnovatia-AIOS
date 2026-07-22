@@ -28,11 +28,37 @@ Women running service businesses, owner-level title, business type consistent wi
 |---|---|---|---|
 | **Beth Clarke** | Little Monkey Marketing | President | Marketing agency |
 | **Suzi Waddill-Goad** | Suzanne M. Waddill-Goad & Company | President/Principal Consultant | Healthcare consulting. **Jackie has an active email conversation going with her right now (2026-07-22)** — any mastermind mention should come through that thread naturally, not as a separate pitch |
-| **Cora Willard** | Red Hen Business Services | Owner | Management consulting |
-| **Diahana Barnes** | LearnEASE, LLC | Success Strategist & Leadership Coach | |
 | **Beryl Smith** | BCS Staffing, Inc. | President | Staffing firm — team-based, likely in or above band |
 | **Donna Dobrovich** | DFD & Associates | Owner | |
-| **Brooke L. Billingsley** | Task To Touch™ e-Learning | CEO | |
+
+### Pre-outreach research — 5 Tier 1 names, 2026-07-22
+
+Jackie asked for background before reaching out. Gmail history plus current public information on each. **Only one of the five survives as a Messy Middle candidate.**
+
+**Beth Clarke — Little Monkey Marketing.** The only remaining fit, with a caveat.
+- Business is alive and has moved up: LLC re-established **July 2020 in Los Angeles** (was New York when Jackie knew her), active in CA records, now described as a boutique full-service creative agency with a team — PR, SEM/SEO, social. She's Founder & CEO. Note HubSpot says "President" and her old signature said "Creative Director."
+- **She was pitched the mastermind at least three times (Dec 2017, Jan 2018, Jan 2019) and never joined.** Consistently interested, consistently too busy. In Feb 2019 she wrote that she was "slowly moving my way to working full time for a few larger clients."
+- Warm relationship regardless: she guest-taught for Jackie's Eureka! community, referred a graphic designer, and they traded personal notes (her father's care, Jackie's sprained ankle). **Last contact April 2019 — seven years.**
+- **Approach:** reconnect first, mastermind later. A fourth invitation as the opening move would repeat what already didn't work three times.
+
+**Brooke Billingsley — likely Seven Figure Forum, not Messy Middle.**
+- CEO of **Perception Strategies, Inc.** (Indianapolis) since Nov 1998 — described publicly as the **nation's largest healthcare mystery shopping company**, a qualitative research firm. Also CEO of Task To Touch, LLC (healthcare e-learning, distributed via Healthstream) — which is what HubSpot recorded, i.e. the smaller sub-brand, not the main company. Professional speaker with agency representation.
+- Genuine friendship in the record: birthday notes, Jackie following her husband's illness in 2018, and Brooke sharing her Dec 2020 remarriage. **Last contact Dec 2020.**
+- A 28-year-old firm holding a "nation's largest" position is almost certainly past the $250K–$500K band. **Recommend moving her to the Forum list.**
+
+**Diahana Barnes — weak fit.**
+- Now a **Wellness Specialist at Pacific Retirement Services / Rogue Valley Manor** (employed) and owner of Harmony Fitness Studio. LearnEASE, LLC is publicly described as a family-run access-control company for lodges — not the leadership-coaching practice the roster implies.
+- Relationship is one thread: a single virtual coffee, **January 2018**. Nothing since.
+- Employed elsewhere, different business, and effectively no relationship to reactivate.
+
+**Donna Dobrovich — uncertain, probably below band.**
+- Still active: **DFD & Associates**, founded 1999, executive/leadership coaching, ICF-certified via New Ventures West, based in Arizona, also listed as an associate coach with Peak Performance Coaching. Being an associate at another firm suggests a solo practice rather than a team.
+- History is warm but old: real conversations 2013–2015 including her mother's illness. Jackie invited her to a women's group coaching program in Dec 2013 and Donna said it "sounds" appealing but never joined. **Jackie's last outreach — "Hey Stranger," July 2017 — got no reply. Nine years since any response.**
+- Solo executive coaches typically sit below $250K. Worth a reconnect, but not a mastermind pitch on the first touch.
+
+**Cora Willard — disqualified.** See the exclusions section below.
+
+---
 
 ## Tier 2 — Plausible, need Jackie's read (10)
 
@@ -74,6 +100,7 @@ Lisa Black · Christine Meshell · Amanda Perrot · Elyse Koenig (CEO) · Maxine
 | **Candy Messer** | Affordable Bookkeeping and Payroll Services, Inc. | President/CEO | Team-based B2B firm |
 | **Katie Hammond** | 9SPR | President | PR agency. Jackie has active recent correspondence with her about employee issues — the warmest of the four |
 | **Jo Lynn Deal** | myMarketing Cafe | President | Marketing/PR. Long history with Jackie through the Virtually Anywhere group |
+| **Brooke L. Billingsley** | **Perception Strategies, Inc.** (Indianapolis) | CEO since Nov 1998 | Moved from the Messy Middle list 2026-07-22 after research. Publicly described as the **nation's largest healthcare mystery shopping company**; also CEO of Task To Touch, LLC (healthcare e-learning via Healthstream) — the sub-brand HubSpot had recorded. Professional speaker with agency representation. Real friendship in the record: birthday notes, Jackie following her husband's illness (2018), Brooke sharing her Dec 2020 remarriage. **Last contact Dec 2020.** **Jackie's plan (2026-07-22): re-engage as a friend first, well before any Forum conversation.** Stays in `roster.csv`; re-engagement email drafted 2026-07-22 and pulled forward — she sat 65th of 143 in the due queue, roughly mid-October at 5/week. **Sensitivity when writing to her:** she was following a husband's serious illness in 2018 and remarried in Dec 2020 "so excited to be in love again," which suggests she was widowed. Nothing in the record confirms it. Keep both husbands out of any draft and let her raise what she wants. |
 
 ### Diane Leonard — already in motion, and already pitched once
 
@@ -112,6 +139,26 @@ Also worth a look if the Forum takes professional-practice partners: **Carol Kul
 **Men (~30)** — group is women-only.
 
 **Below band on the evidence available** — Diana Pointer (revenue on file: **under $10,000**), Sherry Schaefer (**$150,000**, coaching).
+
+**Disqualified — felony conviction (1): Cora Willard**, Red Hen Business Services.
+
+Researched 2026-07-22 ahead of outreach. Cora G. Willard pleaded guilty to a felony count of **wire fraud** and was **sentenced to one year and a day in federal prison**, plus **$849,000 in restitution**. She used Red Hen Business Services — her bookkeeping and money-management firm — to make nearly 100 unauthorized wire transfers to herself from a client's bank account between Nov 2019 and June 2022, continuing after he asked her to close the account. The victim ran a wealth management business and had entrusted her with his accounts and records.
+
+Confirmed against the U.S. Department of Justice press release (Eastern District of Missouri) and multiple independent news outlets. There is no Gmail correspondence with her at all; she entered the roster via HubSpot with a 2023-01-01 `client_since` date.
+
+**Actions taken 2026-07-22, per Jackie:**
+- ✅ **Removed from `client-reengagement/data/roster.csv`** (176 → 175 clients). `due_now.csv` regenerated; she appears in neither. The Monday drafting task can no longer generate an email to her.
+- ✅ **Not an Aug 26 risk after all.** Jackie checked in HubSpot 2026-07-22: **Cora is not a member of the "Messy Middle-fit women" segment**, so she was never going to receive the standalone mastermind invitation. (The connector here cannot query or edit list membership — no list-management capability — so this had to be verified by hand.)
+- ⚠️ **But she is still receiving and opening Jackie's marketing email** via other segments. That most likely means the **Active Engagers** list, which is defined by engagement and whose biweekly send carries a direct **"book a call"** CTA. A convicted embezzler being actively invited to book a consulting call is a sharper problem than the mastermind invitation would have been.
+- **Suppression attempted 2026-07-22, only partly successful:**
+  | Property | Result |
+  |---|---|
+  | `hs_email_optout` ("Opted out of all email") | **Blocked** — read-only via the API; HubSpot sets it only through its own subscription-preferences system |
+  | `portal_unsubscribe` ("Unsubscribe from all emails") | ✅ **Set to `true`**, verified on the record |
+  | `hs_marketable_status` → false | **Blocked** — connector lacks the `marketable-contacts-write` scope |
+- ⚠️ **Net: only `portal_unsubscribe` is in place, and its enforcement at send time could not be verified from here.** Two manual steps remain for Jackie in the HubSpot UI: (1) open Cora's record and confirm the communication-subscriptions section shows her unsubscribed from all email; (2) **Contacts → select Cora → Actions → Set as non-marketing contact**, which is the hard block — HubSpot structurally cannot send marketing email to a non-marketing contact.
+
+**Removed from the roster entirely (1): Diahana Barnes.** Removed 2026-07-22 per Jackie, after research showed she is now a Wellness Specialist at Pacific Retirement Services and owner of Harmony Fitness Studio — employed elsewhere, different line of work, and the entire relationship was a single virtual coffee in Jan 2018. Not a client relationship worth a 6-month cadence. Roster 175 → 174.
 
 **Retired (1)** — **Terri Wallin** (Wallin Enterprises, CEO). Confirmed retired by Jackie 2026-07-20. Removed from mastermind consideration entirely, but **stays in the client re-engagement roster** — the relationship continues, only the mastermind pitch doesn't apply. She is not in `someday_contacts.csv` and will keep surfacing in the normal 6-month cadence, which is correct.
 

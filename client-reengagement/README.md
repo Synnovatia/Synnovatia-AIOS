@@ -4,7 +4,8 @@ Tracks former/current clients and manages a 6-month check-in cadence, with respo
 
 ## Files
 
-- `data/roster.csv` — every client: name, email, `client_since`, `last_checkin`, `status`, `last_status_date`, notes
+- `data/roster.csv` — every client: name, email, `client_since`, `last_checkin`, `status`, `last_status_date`, notes, `priority`
+  - **`priority`** — put any non-empty value (use `1`) to push someone to the **top of the queue**, ahead of everyone else no matter how overdue they are. Added 2026-07-22 for warm or strategic contacts Jackie wants to reach sooner than the oldest-overdue rotation allows — e.g. someone she plans to invite to a mastermind later and wants to re-establish the relationship with first. Within the priority group, most-overdue still sorts first. Clear the field once they've been contacted, unless you want them prioritized again next cycle.
 - `data/due_now.csv` — output of the cadence check, oldest/most-overdue first
 - `data/outreach_log.csv` — one row per outreach attempt, used to compute reply rate by day of week
 - `data/meeting_notes.csv` — one row per completed call: notes, flagged opportunities, next action, post-call email status

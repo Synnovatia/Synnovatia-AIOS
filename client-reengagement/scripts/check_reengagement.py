@@ -36,7 +36,9 @@ def main():
             rows.append(row)
 
     due = [r for r in rows if r["_days_overdue"] >= 0]
-    due.sort(key=lambda r: -r["_days_overdue"])
+    # Priority contacts sort to the top regardless of how overdue they are.
+    # Within each group, most-overdue first.
+    due.sort(key=lambda r: (0 if r.get("priority", "").strip() else 1, -r["_days_overdue"]))
 
     with open(DUE_OUT, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
