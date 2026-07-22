@@ -160,10 +160,14 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.3fr 1fr 0.95fr;
     gap: 18px;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .reminders-card { grid-row: span 1; }
+  }
+  @media (max-width: 620px) {
     .grid { grid-template-columns: 1fr; }
   }
   .stack { display: flex; flex-direction: column; gap: 18px; }
@@ -393,8 +397,44 @@
     font-style: italic;
     padding: 6px 0;
   }
-  .rem-only-personal { display: none; }
-  .show-everything .rem-only-personal { display: block; }
+  .brief-shape {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: var(--fg-soft);
+    margin: -2px 0 0;
+    line-height: 1.5;
+  }
+  .brief-list { list-style: none; margin: 0; padding: 0; }
+  .brief-item {
+    padding: 9px 0;
+    border-top: 1px solid var(--surface-line);
+  }
+  .brief-item:first-child { border-top: none; padding-top: 0; }
+  .brief-item-title {
+    font-family: Arial, sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--fg);
+    margin: 0 0 3px;
+  }
+  .brief-item-title a { color: inherit; }
+  .brief-item-title a.rem-link { border-bottom: 1px solid var(--accent-2); text-decoration: none; }
+  .brief-item-title a.rem-link:hover { color: var(--accent-2); }
+  .brief-sentence {
+    font-family: Arial, sans-serif;
+    font-size: 12.5px;
+    color: var(--fg-soft);
+    margin: 0;
+    line-height: 1.5;
+  }
+  .brief-empty {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: var(--fg-soft);
+    font-style: italic;
+    padding: 6px 0;
+    margin: 0;
+  }
 
   .sr-only {
     position: absolute; width: 1px; height: 1px;
@@ -413,7 +453,7 @@
     </div>
     <div class="status-badge" id="statusBadge">
       <strong>Refreshed automatically ~7am</strong><br>
-      Jul 21, 2026
+      Jul 22, 2026
     </div>
   </div>
 
@@ -423,13 +463,6 @@
       <div class="segmented" id="refreshToggle">
         <button aria-pressed="true" data-mode="auto">Auto, every morning</button>
         <button aria-pressed="false" data-mode="ondemand">On-demand only</button>
-      </div>
-    </div>
-    <div>
-      <div class="control-label label-face">Reminders scope</div>
-      <div class="segmented" id="scopeToggle">
-        <button aria-pressed="true" data-scope="business">Business only</button>
-        <button aria-pressed="false" data-scope="everything">Everything</button>
       </div>
     </div>
   </div>
@@ -444,11 +477,11 @@
         <p class="rev-sub">$1,599 this month &middot; 48 customers all-time &middot; net of refunds</p>
 
         <div class="spark-row">
-          <svg width="100" height="24" viewBox="0 0 100 24" role="img" aria-label="Revenue tracked flat at $1,599 MTD across the 11 days collected so far">
+          <svg width="100" height="24" viewBox="0 0 100 24" role="img" aria-label="Revenue tracked flat at $1,599 MTD across the 12 days collected so far">
             <polyline points="4,12 13,12 22,12 31,12 40,12 49,12 58,12 67,12 76,12 87,12 96,12" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
             <circle cx="96" cy="12" r="2.5" fill="var(--accent-2)"></circle>
           </svg>
-          <span class="spark-note">11 days tracked so far &mdash; trend builds daily</span>
+          <span class="spark-note">12 days tracked so far &mdash; trend builds daily</span>
         </div>
 
         <div class="progress-track"><div class="progress-fill" style="width: 33.7%"></div></div>
@@ -494,20 +527,13 @@
       <h3 class="eyebrow">Reminders</h3>
 
       <div class="rem-section">
-        <h4>Today &middot; Tue Jul 21</h4>
+        <h4>Today &middot; Wed Jul 22</h4>
         <ul class="rem-list">
-          <li class="rem-only-personal">
-            <label class="rem-row" data-id="2026-07-21-workout-a">
+          <li>
+            <label class="rem-row" data-id="2026-07-22-hike">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">&mdash;</span>
-              <span class="rem-body"><span class="rem-text">Workout &mdash; hill warm-up + strength (Day A)</span><span class="rem-tag">Personal</span></span>
-            </label>
-          </li>
-          <li class="rem-only-personal">
-            <label class="rem-row" data-id="2026-07-21-grocery">
-              <input type="checkbox" class="rem-check">
-              <span class="rem-time">6pm</span>
-              <span class="rem-body"><span class="rem-text">Grocery sale check-in + menu planning</span><span class="rem-tag">Personal</span></span>
+              <span class="rem-body"><span class="rem-text">Long hike (90+ min)</span><span class="rem-tag">Personal</span></span>
             </label>
           </li>
         </ul>
@@ -516,14 +542,7 @@
       <div class="rem-section">
         <h4>This Week</h4>
         <ul class="rem-list">
-          <li class="rem-only-personal">
-            <label class="rem-row" data-id="2026-07-22-hike">
-              <input type="checkbox" class="rem-check">
-              <span class="rem-time">Wed</span>
-              <span class="rem-body"><span class="rem-text">Long hike (90+ min)</span><span class="rem-tag">Personal</span></span>
-            </label>
-          </li>
-          <li class="rem-only-personal">
+          <li>
             <label class="rem-row" data-id="2026-07-23-workout-b">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Thu</span>
@@ -544,14 +563,14 @@
               <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://www.linkedin.com/dashboard/" target="_blank" rel="noopener">LinkedIn metrics check-in</a></span><span class="rem-tag">Marketing</span></span>
             </label>
           </li>
-          <li class="rem-only-personal">
+          <li>
             <label class="rem-row" data-id="2026-07-25-walk">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Sat</span>
               <span class="rem-body"><span class="rem-text">4&ndash;5 mile walk</span><span class="rem-tag">Personal</span></span>
             </label>
           </li>
-          <li class="rem-only-personal">
+          <li>
             <label class="rem-row" data-id="2026-07-26-weighin">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Sun 8:05am</span>
@@ -572,19 +591,19 @@
               <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn batch-draft (3 posts for the week)</a></span><span class="rem-tag">Marketing</span></span>
             </label>
           </li>
+          <li>
+            <label class="rem-row" data-id="2026-07-28-ginny">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Tue 9am</span>
+              <span class="rem-body"><span class="rem-text">Follow up: Ginny Kenyon, Chronic Disease University</span><span class="rem-tag">Business dev</span></span>
+            </label>
+          </li>
         </ul>
       </div>
 
       <div class="rem-section">
         <h4>Coming Up</h4>
         <ul class="rem-list">
-          <li>
-            <label class="rem-row" data-id="2026-07-28-ginny">
-              <input type="checkbox" class="rem-check">
-              <span class="rem-time">Jul 28</span>
-              <span class="rem-body"><span class="rem-text">Follow up: Ginny Kenyon, Chronic Disease University</span><span class="rem-tag">Business dev</span></span>
-            </label>
-          </li>
           <li>
             <label class="rem-row" data-id="2026-07-30-billpay">
               <input type="checkbox" class="rem-check">
@@ -593,10 +612,24 @@
             </label>
           </li>
           <li>
+            <label class="rem-row" data-id="2026-07-30-acctrecon">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Jul 30</span>
+              <span class="rem-body"><span class="rem-text">Reconcile 4 accounts</span><span class="rem-tag">Invoicing</span></span>
+            </label>
+          </li>
+          <li>
             <label class="rem-row" data-id="2026-08-03-7fig-hottopics">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Aug 3</span>
               <span class="rem-body"><span class="rem-text">Draft hot-topics email for Seven Figure Forum (ahead of Aug 7 meeting)</span><span class="rem-tag">Mastermind</span></span>
+            </label>
+          </li>
+          <li>
+            <label class="rem-row" data-id="2026-08-04-markchapman">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Aug 4</span>
+              <span class="rem-body"><span class="rem-text">Review + send Mark Chapman AIOS follow-up email draft</span><span class="rem-tag">Business dev</span></span>
             </label>
           </li>
           <li>
@@ -613,27 +646,41 @@
               <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://app.hubspot.com/" target="_blank" rel="noopener">HubSpot Drifting segment draft (382 contacts)</a></span><span class="rem-tag">Marketing</span></span>
             </label>
           </li>
+          <li>
+            <label class="rem-row" data-id="2026-08-19-messymiddle-invite">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Aug 19</span>
+              <span class="rem-body"><span class="rem-text"><a class="rem-link" href="https://app.hubspot.com/" target="_blank" rel="noopener">Build Messy Middle invitation in HubSpot</a></span><span class="rem-tag">Mastermind</span></span>
+            </label>
+          </li>
         </ul>
       </div>
 
       <div class="rem-section">
         <h4>Later</h4>
         <ul class="rem-list">
-          <li class="rem-only-personal">
+          <li>
+            <label class="rem-row" data-id="2026-08-25-schoolterm">
+              <input type="checkbox" class="rem-check">
+              <span class="rem-time">Aug 25</span>
+              <span class="rem-body"><span class="rem-text">Check in on new term syllabus, set up weekly deadline reminders</span><span class="rem-tag">School</span></span>
+            </label>
+          </li>
+          <li>
             <label class="rem-row" data-id="2026-08-27-spa">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Aug 27</span>
               <span class="rem-body"><span class="rem-text">Reorder spa supplies/filters</span><span class="rem-tag">Home</span></span>
             </label>
           </li>
-          <li class="rem-only-personal">
+          <li>
             <label class="rem-row" data-id="2026-09-01-treetrim">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Sep 1</span>
               <span class="rem-body"><span class="rem-text">Schedule tree trimming (Art Green Care)</span><span class="rem-tag">Home</span></span>
             </label>
           </li>
-          <li class="rem-only-personal">
+          <li>
             <label class="rem-row" data-id="2026-10-01-homebatch">
               <input type="checkbox" class="rem-check">
               <span class="rem-time">Oct 1</span>
@@ -642,6 +689,31 @@
           </li>
         </ul>
       </div>
+    </div>
+
+    <div class="card" id="briefCard">
+      <h3 class="eyebrow">Morning Brief <span class="card-sub">calendar + email, today</span></h3>
+      <p class="brief-shape">Open day &mdash; a hike from 8&ndash;9:30am, nothing else on the calendar.</p>
+
+      <div class="divider"></div>
+
+      <h4 class="subhead">Needs Attention</h4>
+      <ul class="brief-list">
+        <li class="brief-item">
+          <p class="brief-item-title"><a class="rem-link" href="https://mail.google.com/mail/u/0/#all/19f81ac4fd3717bf" target="_blank" rel="noopener">Joe's asking how you and the family are doing</a></p>
+          <p class="brief-sentence">In his reply to your note, Joe closed by asking you to catch him up on you and your family &mdash; still open.</p>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h4 class="subhead">Resolved</h4>
+      <ul class="brief-list">
+        <li class="brief-item">
+          <p class="brief-item-title">Andrea wrapped up the catch-up warmly</p>
+          <p class="brief-sentence">She replied in the thread this morning thanking you and wishing you well &mdash; nothing more needed there.</p>
+        </li>
+      </ul>
     </div>
 
     <div class="stack">
@@ -666,7 +738,7 @@
         </div>
         <div class="stat-row">
           <span class="stat-name">Sessions logged this week</span>
-          <span class="stat-val"><strong>1</strong> &middot; walk</span>
+          <span class="stat-val"><strong>2</strong> &middot; walk, strength</span>
         </div>
         <p class="spark-note" style="display:block; margin-top: 10px;">Second weigh-in logged Jul 19 &mdash; small week-to-week moves so far (weight +1.5 lbs, waist &minus;0.5 in vs. the Jul 15 baseline). Trend will get clearer over the next few check-ins.</p>
       </div>
@@ -679,16 +751,6 @@
 
 <script>
 (function() {
-  var scopeToggle = document.getElementById('scopeToggle');
-  var dashGrid = document.getElementById('dashGrid');
-  scopeToggle.addEventListener('click', function(e) {
-    var btn = e.target.closest('button');
-    if (!btn) return;
-    Array.from(scopeToggle.children).forEach(function(b) { b.setAttribute('aria-pressed', 'false'); });
-    btn.setAttribute('aria-pressed', 'true');
-    dashGrid.classList.toggle('show-everything', btn.dataset.scope === 'everything');
-  });
-
   var refreshToggle = document.getElementById('refreshToggle');
   var statusBadge = document.getElementById('statusBadge');
   refreshToggle.addEventListener('click', function(e) {
@@ -697,7 +759,7 @@
     Array.from(refreshToggle.children).forEach(function(b) { b.setAttribute('aria-pressed', 'false'); });
     btn.setAttribute('aria-pressed', 'true');
     if (btn.dataset.mode === 'auto') {
-      statusBadge.innerHTML = '<strong>Refreshed automatically ~7am</strong><br>Jul 21, 2026';
+      statusBadge.innerHTML = '<strong>Refreshed automatically ~7am</strong><br>Jul 22, 2026';
     } else {
       statusBadge.innerHTML = '<strong>Refreshed just now</strong><br>Updates only when you ask';
     }

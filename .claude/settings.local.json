@@ -132,7 +132,24 @@
       "Skill(dataviz:*)",
       "Bash(node scripts/validate_palette.js \"#2A6B63,#B5551F\" --mode light)",
       "Bash(python3 scripts/validate_palette.py \"#2A6B63,#B5551F\" --mode light)",
-      "Bash(python3 scripts/validate_palette.py \"#0E8A72,#C2571C\" --mode dark)"
+      "Bash(python3 scripts/validate_palette.py \"#0E8A72,#C2571C\" --mode dark)",
+      "Bash(python3 scripts/log_outreach.py meeting_completed coachdian@gmail.com --notes \"Zoom catch-up from the 7/06 re-engagement outreach. Dianne is writing a book and wants to engage Jackie to coach her through it.\" --opportunity \"Book coaching engagement — Dianne wants Jackie to coach her on writing her book\" --next-action \"Send email with discovery questions + links to Leon's ghost series books \\(drafting for 7/22 send\\)\")",
+      "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,7,22\\).strftime\\('%A, %B %d %Y'\\)\\); print\\(datetime.date\\(2026,7,23\\).strftime\\('%A'\\)\\)\")",
+      "Bash(python3 -c \"import sqlite3; con=sqlite3.connect\\('data/data.db'\\); [print\\(r\\) for r in con.execute\\('select date, revenue_mtd from stripe_daily order by date'\\).fetchall\\(\\)]\")",
+      "Bash(python3 scripts/log_outreach.py responded andrea@andreabeaulieu.com)",
+      "Bash(mkdir -p \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/morning-brief\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(npm install *)",
+      "Bash(cd \"/Users/jackienagel/Desktop/Synnovatia AIOS\" && echo \"=== .claude/settings.json ===\" && cat .claude/settings.json 2>/dev/null; echo; echo \"=== .claude/settings.local.json ===\" && cat .claude/settings.local.json 2>/dev/null; echo; echo \"=== ~/.claude/settings.json ===\" && cat ~/.claude/settings.json 2>/dev/null)",
+      "Edit(outputs/dashboard/dashboard.html)",
+      "Edit(outputs/dashboard/dashboard-fragment.html)",
+      "Bash(python3 -c \"import sqlite3; con=sqlite3.connect\\('data/data.db'\\); *)",
+      "Artifact",
+      "Bash(awk -F, '{print $NF}')",
+      "Bash(python3 scripts/log_outreach.py sent suziq7@msn.com)",
+      "Bash(python3 scripts/log_outreach.py responded joe@vanwykdesign.com)",
+      "Bash(python3 scripts/log_outreach.py responded diane@dhleonardconsulting.com)"
     ]
   }
 }

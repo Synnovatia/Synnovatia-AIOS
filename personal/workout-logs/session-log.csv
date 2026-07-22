@@ -1,7 +1,8 @@
 date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
-2026-07-14,Strength (Day A) + hill warm-up,62,118,not captured,313,"Reported as: strength 224 METs (118 avg HR, ~45 min), hill warm-up 89 METs (15 min), total exercise time 62 min. A separately-mentioned outdoor-walk pace (\"2:14.7 min/mile\") was flagged as implausible and never confirmed. HRV not reported for this session - tracking started 2026-07-15."
+2026-07-14,Strength (Day A) + hill warm-up,62,118,not captured,313,"Reported as: strength 224 METs (118 avg HR, ~45 min), hill warm-up 89 METs (15 min), total exercise time 62 min. A separately-mentioned outdoor-walk pace (\2:14.7 min/mile\"") was flagged as implausible and never confirmed. HRV not reported for this session - tracking started 2026-07-15."""
 2026-07-15,Long Hike,90,120,not captured,372,"3.67 miles, avg pace 22:20/mile. HRV not reported."
 2026-07-17,Strength (Day B),53,123,not captured,345,"Reported via Welltory: 53 min, avg HR 123, 345 MET-minutes. Per-set detail (23 sets across 8 exercises) logged separately in data/strength-training-log.csv using the Strength Training Log tool."
 2026-07-18,Walk,99,105,not captured,219,"4.6 miles, avg pace 21:36/mile. HRV not reported."
 2026-07-20,Walk,50,124,not captured,332,"3.0 miles, avg pace 16:50/mile. HRV not reported."
 2026-07-21,Strength (Day A),53,131,not captured,356,"Reported via Welltory: 53 min, avg HR 131, 356 MET-minutes. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv using the Strength Training Log tool."
+2026-07-22,Hike,69,128,42,387,"3.6 miles, reported avg pace 19:38/mile. Note: 69 min over 3.6 mi computes to 19:10/mile - the 19:38 figure is likely moving-pace vs. elapsed time, logged as reported."

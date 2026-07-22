@@ -23,6 +23,35 @@
 - Today's actual Day A session (2026-07-21) logged for real: 27 sets across 9 exercises, plus session summary (53 min, avg HR 131, 356 MET-minutes) via `personal/workout-logs/session-log.csv`. While entering it, standardized the `day` column in `data/strength-training-log.csv` to use A/B (matching the tool) instead of the weekday abbreviation it used before (7/17's rows changed from "Fri" to "B") — one consistent convention going forward.
 - Updated `context/personal-life.md` with the full Day A exercise list and the per-type field rules (previously only documented Day B's exercise list).
 
+## 2026-07-22
+
+### Dianne Pearce — First Re-engagement Conversion, Book Coaching Engagement Opened
+- **The re-engagement system produced its first real engagement.** Cold email 7/06 → warm reply 7/09 → Zoom 7/21 → coaching engagement in motion. Dianne is a client from 2011 who hadn't heard from Jackie in years.
+- She's writing a book (a story that needs telling) and asked Jackie to coach her. Logged as `meeting_completed` with the opportunity flagged; post-call email sent 7/22.
+- **Discovery email built collaboratively.** Claude's first draft was 7 generic book-coaching questions; Jackie chose "accountability + structure" as the engagement's center, which redirected them toward capacity, working patterns, and what accountability actually works on her. Jackie then supplied her own 12 questions in three groups (Coaching Engagement / The Book / Writing Process) — better than Claude's, especially "what makes you want to avoid picking up your pen," which gets at the real thing sideways. Claude kept her wording and handled grouping, flow, and typos only.
+- **Corrected a name error before it shipped:** Leon's surname is **Carroll**, not Nagel. He co-writes the "Ghosts of…" series with **Mark Harmon** (Harper Select). All three book links verified against publisher/Amazon pages rather than guessed — *Ghosts of Honolulu*, *Ghosts of Panama*, *Ghosts of Sicily* (Apr 2026). Jackie's Boomerang calendar link (`meeting60`) recovered from a Nov 2025 email to Wilma.
+- **Rate decided: $275 USD/hr** returning-client rate (vs. $325 standard, ~15% discount), **billed in USD**. Jackie explored quoting in CAD since Dianne is in Edmonton; the math ruled it out — $325 CAD nets only ~$232 USD (−29%) and $300 CAD nets ~$214 (−34%). If she ever wants a CAD figure, ~$385 CAD ≈ $275 USD. Recorded in `meeting_notes.csv`, including the open question of whether Dianne is grandfathered through the Jan 2027 rate increase.
+
+### Roster Mining — Started, and It Reframed Itself
+- Picked up First Action #3 from `plans/2026-07-13-messy-middle-growth.md`. Pulled all 155 HubSpot-linked contacts from the 176-client roster. Output: `outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md`.
+- **Data reality:** job title ~75% populated (the workhorse — cleanly separates owners from employees), company ~75%, industry ~10%, **annual revenue ~5%, gender 0%.** The two fields most needed barely exist.
+- **HubSpot's revenue field proved unusable, three times over:** Amy Hage (current Messy Middle member) shows $50,000; Mark Chapman (current Seven Figure Forum member) shows $200,000; and Diane Leonard's $300,000 — the one figure that looked trustworthy and was called the roster's best match — is also stale, since Jackie places her at Forum level. Screening has to run on Jackie's knowledge, and a low figure is not grounds to exclude anyone.
+- **The exercise inverted.** Jackie moved Candy Messer, Katie Hammond, Jo Lynn Deal, and Diane Leonard up to **Seven Figure Forum** prospects. Since the Forum isn't women-only, removing that filter surfaced five more (Chris Lane — $2MM on file, the roster's highest — plus David Kinney, Hava Volterra, Sivakumar Veerappan, Hamid Kashani). Net: the Forum needs **2 seats and now has 9 candidates**; the Messy Middle needs **4 and has 7**, thinning as review continues. Roster mining began as a Messy Middle channel and is turning out to be a Forum channel — every name Jackie promoted moved *up*, because these relationships are 15+ years old and the businesses grew.
+- **Terri Wallin removed** — retired (Jackie's knowledge, invisible in every data source). Stays in the re-engagement roster; only the mastermind pitch doesn't apply. Noted that more of the 27 are likely retired, and it's worth asking rather than discovering post-invitation.
+- **Diane Leonard has history that changes the approach:** Jackie already pitched her the mastermind on 2026-06-29 (no reply — consistent with her being above the Messy Middle band). Then a Zoom invite meant for *Dianne Pearce* went to her by mistake on 7/21; she declined, and replied warmly anyway. Jackie proposed a catch-up 7/22 and is awaiting her availability. The Forum conversation should happen on that call.
+- ⚠️ **Flagged an active confusion risk: Dianne Pearce vs. Diane Leonard** — nearly identical names, both live, and a calendar invite already went to the wrong one this week.
+
+### Re-engagement Outcomes Logged
+- **Andrea Beaulieu** → responded (replied 7/21 and again 7/22; still doing speaking/leadership coaching)
+- **Joe Van Wyke** → responded (per Jackie; the reply isn't visible in Gmail search, so it likely came via another channel — logged on her word, noted as unverified)
+- **Diane Leonard** → responded · **Suzi Waddill-Goad** → sent 7/22 (Jackie's own outreach, outside the batch)
+- Beryl Smith deliberately left pending at 8 days rather than marked `no_response` — the 2-3 week rule exists so people aren't written off before their real follow-up.
+- Running total from the 7/20 batch: **2 replies out of 5 in two days.**
+
+### Personal
+- Hike logged 7/22: 3.6 mi, 69 min, avg HR 128, **387 MET-minutes — highest single session in the log**. Reported pace 19:38/mi doesn't reconcile with 69 min over 3.6 mi (computes to 19:10); logged as reported with the discrepancy noted, likely moving vs. elapsed time.
+- **First session-level HRV captured: 42**, up from 27 at the 7/19 weigh-in. Flagged that the two aren't cleanly comparable (different capture contexts) and that a consistent measurement time would make the trend readable.
+
 ## 2026-07-20
 
 ### Messy Middle Launch Locked In — Dates, Landing Page Fixes, and a Reusable Launch Checklist
