@@ -156,7 +156,9 @@ Confirmed against the U.S. Department of Justice press release (Eastern District
   | `hs_email_optout` ("Opted out of all email") | **Blocked** — read-only via the API; HubSpot sets it only through its own subscription-preferences system |
   | `portal_unsubscribe` ("Unsubscribe from all emails") | ✅ **Set to `true`**, verified on the record |
   | `hs_marketable_status` → false | **Blocked** — connector lacks the `marketable-contacts-write` scope |
-- ⚠️ **Net: only `portal_unsubscribe` is in place, and its enforcement at send time could not be verified from here.** Two manual steps remain for Jackie in the HubSpot UI: (1) open Cora's record and confirm the communication-subscriptions section shows her unsubscribed from all email; (2) **Contacts → select Cora → Actions → Set as non-marketing contact**, which is the hard block — HubSpot structurally cannot send marketing email to a non-marketing contact.
+- ✅ **RESOLVED 2026-07-22. Jackie set her as a non-marketing contact and then deleted the HubSpot contact outright.** Verified: contact ID 36087266 returns `notFound`. With no contact record, the unsubscribe and marketable-status questions are moot — there is nothing left to send to, and nothing to maintain.
+
+> **This document is now the only record of why.** She is gone from both `roster.csv` and HubSpot, so nothing in either system explains the removal. If contacts are ever re-imported — a list upload, an integration sync, a re-migration from an old export — **Cora Willard / cora@redhenbusiness.com / Red Hen Business Services** could reappear with no flag attached. Check here before re-adding anyone.
 
 **Removed from the roster entirely (1): Diahana Barnes.** Removed 2026-07-22 per Jackie, after research showed she is now a Wellness Specialist at Pacific Retirement Services and owner of Harmony Fitness Studio — employed elsewhere, different line of work, and the entire relationship was a single virtual coffee in Jan 2018. Not a client relationship worth a 6-month cadence. Roster 175 → 174.
 
