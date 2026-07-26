@@ -150,7 +150,24 @@
       "Bash(python3 scripts/log_outreach.py sent suziq7@msn.com)",
       "Bash(python3 scripts/log_outreach.py responded joe@vanwykdesign.com)",
       "Bash(python3 scripts/log_outreach.py responded diane@dhleonardconsulting.com)",
-      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__manage_crm_objects"
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__manage_crm_objects",
+      "Bash(cat \"/Users/jackienagel/.claude/scheduled-tasks/hubspot-lapsed-draft/SKILL.md\")",
+      "Read(//Users/jackienagel/.claude/scheduled-tasks/**)",
+      "Bash(node -e \"const{chromium}=require\\('playwright'\\);\\(async\\(\\)=>{const b=await chromium.launch\\({executablePath:'/opt/pw-browsers/chromium'}\\);const p=await b.newPage\\({viewport:{width:960,height:1000}}\\);await p.goto\\('file://$\\(pwd\\)/morning_brief_2026-07-23.html'\\);await p.waitForTimeout\\(600\\);await p.screenshot\\({path:'brief.png',fullPage:true}\\);await b.close\\(\\);}\\)\\(\\);\")",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Bash(find / -maxdepth 4 -iname \"node\" -type f)",
+      "Read(//opt/**)",
+      "Bash(command -v node npm)",
+      "Read(//Users/jackienagel/**)",
+      "Bash(brew --prefix node)",
+      "Bash(cp \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/efc8a93d-4dcb-4b9e-ab49-f6da54ae8981/scratchpad/morning_brief_2026-07-24.html\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/_tmp_brief_preview.html\" *)",
+      "Bash(grep -o \"Friday.\\\\{0,20\\\\}\" /private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/efc8a93d-4dcb-4b9e-ab49-f6da54ae8981/scratchpad/morning_brief_2026-07-24.html)",
+      "Bash(xxd)",
+      "Bash(pkill -f \"http.server 8934\")",
+      "Bash(awk -F',' '$1>=\"2026-07-20\" && $1<=\"2026-07-26\"{print $1, $2}' personal/workout-logs/session-log.csv)",
+      "Bash(awk -F',' '$1>=\"2026-07-20\" && $1<=\"2026-07-26\"' personal/workout-logs/session-log.csv)",
+      "WebFetch(domain:claude.ai)"
     ]
   }
 }

@@ -23,6 +23,18 @@
 - Today's actual Day A session (2026-07-21) logged for real: 27 sets across 9 exercises, plus session summary (53 min, avg HR 131, 356 MET-minutes) via `personal/workout-logs/session-log.csv`. While entering it, standardized the `day` column in `data/strength-training-log.csv` to use A/B (matching the tool) instead of the weekday abbreviation it used before (7/17's rows changed from "Fri" to "B") — one consistent convention going forward.
 - Updated `context/personal-life.md` with the full Day A exercise list and the per-type field rules (previously only documented Day B's exercise list).
 
+## 2026-07-26
+
+### Weekend Health Logging + Two Standing Rules
+- Logged a heavy training stretch: Thu 7/23 walk (3.33 mi — flagged that the reported 21:45 pace can't reconcile with 53 min over that distance, which computes to 15:55; logged as reported), Fri 7/24 hike (5.2 mi, 150 min, **924 MET-min — biggest single session on record**), Sat 7/25 two walks (6.64 mi combined), Sun 7/26 hike (3.8 mi) + short walk. Seven sessions for the week ending 7/26.
+- **Sunday weigh-in (7/26):** weight 146.4 lbs, body fat 37.6% (down 0.7 pts from the 7/15 baseline — the direction that matters), waist 31 in, HRV 24. Updated `health-goals.md` current-metrics + history.
+- **HRV watch flagged, honestly:** three readings now (27 → 42 → 24), this morning's the lowest, consistent with accumulated load. Advised keeping the day easy; Jackie hiked anyway. Framed next Sunday's reading as the real signal — a third consecutive drop would mean debt, a bounce means she's absorbing the work. Not acted on, just watched.
+- **Dashboard updated on request** (not waiting for the 7am refresh): Personal card now shows 146.4 / 37.6% / HRV 24 / 7 sessions, with a recovery note. Both `dashboard.html` and `dashboard-fragment.html` edited in sync; artifact republished to the stable URL (needed `force` because the prior day's 7am refresh, a separate session, held the latest — verified first that nothing would be lost).
+- **Two standing rules added to `health-goals.md`, per Jackie:**
+  1. **Recovery walks read low on MET-minutes and that's expected** — stop flagging low METs on an easy/short/low-HR walk; still flag genuine pace-vs-distance reconciliation errors.
+  2. **A Sunday session counts toward the upcoming week**, not the week just ended, so the weekly tally isn't retroactively inflated on a Sunday.
+- Routine scheduled-task outputs also landed this week and are included in this commit: `outputs/hubspot-marketing/2026-07-23-lapsed-draft.md` (bi-monthly Lapsed segment draft, drafted 7/23), a LinkedIn-metrics log row, and daily `key-metrics.md` refreshes.
+
 ## 2026-07-22
 
 ### Dianne Pearce — First Re-engagement Conversion, Book Coaching Engagement Opened
