@@ -2,6 +2,8 @@
 
 > Personal-side scoreboard for the "Task Automation %" KPI — moved out of `context/task-audit.md` (2026-07-13) to keep business and personal tracking separate. See that file for the business-side audit.
 
+> **Refreshed 2026-07-27.** Of the automatable personal tasks, ~15 are automated (all recurring service/home-maintenance reminders, weigh-in, physical, optometry, workouts, next-term study blocks), 2–3 in progress (grocery/menu, home-maintenance planning), a handful not yet started (food delivery, vacation, birthday/anniversary), and the physical ones (cooking, cleaning, yard, spa) are human by design. Shareable summary for Evolv: `outputs/2026-07-27-evolv-os-progress-report.md`.
+
 ---
 
 ## How to read this
@@ -17,7 +19,7 @@
 |---|---|---|---|---|---|
 | Grocery shopping / menu planning | Weekly (Tuesday check-in) | TBD | Medium | **In Progress** | Full profile in `personal/meal-planning.md`. Diet: Mayo Clinic-style, high protein, whole foods. Recurring reminder set 2026-07-12 (Tuesdays 6:06pm) — Jackie checks sale ads at Sprouts/Smart & Final/Albertsons herself and reports back; Claude builds the dinner menu + shopping list. (Tried browser-automating the sale scan first — too fragile, same lesson as LinkedIn.) |
 | Food delivery coordination | As needed | TBD | Medium | Not started | |
-| Workout planning | Recurring (calendar shows "Workout // Strength") | TBD | High | Not started | Claude can generate/adjust a plan; execution is physical. See `personal/workout-plan.md` for the current strength program. |
+| Workout planning + logging | Recurring | ~10 min/session manual | High | **Built** (2026-07-17) | `personal/workout-plan.md` holds the A/B strength program; the Strength Training Log tool (published claude.ai artifact) captures per-set data. Jackie reports each session's HR/HRV/METs; Claude logs to `personal/workout-logs/` and reviews the trend for program adjustments. Standing rules added 2026-07-26 (recovery walks read low on METs = fine; Sunday sessions count toward the coming week). |
 | Working out (time block) | Recurring, weekdays + Sat, 8:30am start | ~1-1.5 hrs/day, 5 days/wk | High | **Automated** (2026-07-12) | Google Calendar recurring series: Mon 3-mi walk (8:30-9:30), Tue hill warm-up+strength (8:30-9:45), Wed long hike 90+min (8:30-10:00), Thu hill warm-up+strength (8:30-9:45), Sat 4-5mi walk (8:30-10:00). Fri/Sun off. No end date. Conflicts get moved per-occurrence on request — e.g. Wed 7/22 hike moved to 9:15 (Strategize call at 8:00), Thu 7/23 strength skipped (heavy hiking days). |
 | Weight stabilization/reduction tracking | Weekly (Sunday morning) | ~15 min/week | High | **Automated** (2026-07-13) | Scheduled task `weekly-weigh-in-reminder`, Sundays 8:00am — log weight, body fat %, and waist measurement. Baseline + goal captured 2026-07-15 in `personal/health-goals.md` (143.5 lbs / 38.3% body fat / 31.5in waist → 135-138 lbs / 30% / 28in). |
 | Annual physical | Yearly, usually November | — | High | **Automated** (2026-07-13) | Scheduled task `annual-physical-reminder`, fires every Oct 1 to book with Dr. Torna ahead of the usual November slot. |
@@ -45,7 +47,7 @@
 |---|---|---|---|---|---|
 | School homework/coursework | Weekly deadlines, self-paced | ~20 hrs/week total (school capacity, not just homework) | Low | N/A | Not an automation target — core capacity constraint, see `context/personal-info.md`. **Hard boundary: no AI in anything submitted** — Claude may only discuss/explain readings to help Jackie's own understanding, never draft notes/answers. |
 | School: study-block calendar (this week) | Mon-Fri, 2026-07-13 to 07-17 | — | High | **Automated** (2026-07-12) | Google Calendar events, Pomodoro-structured (25/5): 10:30-12:00 (study), 12:30-1:30 (study), 3:00-5:00 (homework), Biological Anthropology final week |
-| School: study-block calendar (next term) | Mon-Fri, 2026-08-31 to 10-25 | — | High | **Automated** (2026-07-12) | Same 3-block Pomodoro pattern set up as recurring weekday Google Calendar events for Bioanthropology Lab & Statistics. Deadlines within each block still unknown — see check-in below. |
+| School: study-block calendar (next term) | Mon-Fri, 2026-08-31 to 10-23 | — | High | **Automated** (2026-07-12) | Same 3-block Pomodoro pattern set up as recurring weekday Google Calendar events for Bioanthropology Lab & Statistics (2 classes, 4 credits). Term end corrected to 10-23 (was 10-25) on 2026-07-20. Deadlines within each block still unknown — see check-in below. |
 | School: weekly deadline reminders | Weekly (once term starts) | — | High | Scheduled | One-time check-in scheduled 2026-08-25 to get the real syllabus deadlines and set up recurring deadline reminders once known (separate from the study-block calendar, which is already built). |
 
 ---

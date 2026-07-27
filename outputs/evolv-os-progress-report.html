@@ -1,0 +1,549 @@
+<title>Synnovatia — EVOLV-OS Progress Report</title>
+<style>
+  :root {
+    --ground: #F7F6F2;
+    --surface: #FFFFFF;
+    --surface-2: #FBFAF7;
+    --ink: #26261F;
+    --ink-soft: #6B6A60;
+    --line: #E4E1D6;
+    --navy: #0D1F4E;
+    --navy-2: #1A3A7A;
+    --on-navy: #EDEEF5;
+    --on-navy-soft: #AEB7D2;
+    --on-navy-line: #2C4A8F;
+    --accent: #B29200;
+    --accent-ink: #7C6600;
+    --done: #0F6E56;
+    --done-bg: #E4EFEA;
+    --prog: #9A7A00;
+    --prog-bg: #F4EED8;
+    --todo: #8A8A82;
+    --todo-bg: #ECEAE2;
+    --meter-track: #E4E1D6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0A1838;
+      --surface: #10224C;
+      --surface-2: #0E1F45;
+      --ink: #ECEEF6;
+      --ink-soft: #A6AFCB;
+      --line: #26407A;
+      --navy: #07132E;
+      --navy-2: #12244F;
+      --on-navy: #ECEEF6;
+      --on-navy-soft: #A6AFCB;
+      --on-navy-line: #24407C;
+      --accent: #F5C842;
+      --accent-ink: #F5C842;
+      --done: #5DCAA5;
+      --done-bg: #113A31;
+      --prog: #E7C55C;
+      --prog-bg: #3A3212;
+      --todo: #8894B4;
+      --todo-bg: #1B2E58;
+      --meter-track: #22386B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0A1838;
+    --surface: #10224C;
+    --surface-2: #0E1F45;
+    --ink: #ECEEF6;
+    --ink-soft: #A6AFCB;
+    --line: #26407A;
+    --navy: #07132E;
+    --navy-2: #12244F;
+    --on-navy: #ECEEF6;
+    --on-navy-soft: #A6AFCB;
+    --on-navy-line: #24407C;
+    --accent: #F5C842;
+    --accent-ink: #F5C842;
+    --done: #5DCAA5;
+    --done-bg: #113A31;
+    --prog: #E7C55C;
+    --prog-bg: #3A3212;
+    --todo: #8894B4;
+    --todo-bg: #1B2E58;
+    --meter-track: #22386B;
+  }
+  :root[data-theme="light"] {
+    --ground: #F7F6F2;
+    --surface: #FFFFFF;
+    --surface-2: #FBFAF7;
+    --ink: #26261F;
+    --ink-soft: #6B6A60;
+    --line: #E4E1D6;
+    --navy: #0D1F4E;
+    --navy-2: #1A3A7A;
+    --on-navy: #EDEEF5;
+    --on-navy-soft: #AEB7D2;
+    --on-navy-line: #2C4A8F;
+    --accent: #B29200;
+    --accent-ink: #7C6600;
+    --done: #0F6E56;
+    --done-bg: #E4EFEA;
+    --prog: #9A7A00;
+    --prog-bg: #F4EED8;
+    --todo: #8A8A82;
+    --todo-bg: #ECEAE2;
+    --meter-track: #E4E1D6;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .report {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: Georgia, "Times New Roman", serif; }
+  .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11.5px;
+    font-weight: 700;
+  }
+  .tnum { font-variant-numeric: tabular-nums; }
+
+  /* ---- Header band ---- */
+  .masthead {
+    background: var(--navy);
+    color: var(--on-navy);
+    padding: 56px 24px 0;
+  }
+  .masthead-inner, .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .masthead .eyebrow { color: var(--accent); margin-bottom: 20px; }
+  .masthead h1 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(38px, 7vw, 62px);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  .masthead .lede {
+    font-size: clamp(16px, 2.4vw, 19px);
+    color: var(--on-navy-soft);
+    max-width: 60ch;
+    margin: 0 0 34px;
+    line-height: 1.55;
+  }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 36px;
+    padding: 20px 0 30px;
+    border-top: 1px solid var(--on-navy-line);
+  }
+  .meta-item .eyebrow { color: var(--on-navy-soft); display: block; margin-bottom: 4px; letter-spacing: 0.12em; }
+  .meta-item .meta-val { font-size: 14.5px; color: var(--on-navy); }
+
+  /* ---- KPI strip ---- */
+  .kpi-strip {
+    background: var(--navy-2);
+    padding: 4px 24px 40px;
+    margin-top: -1px;
+  }
+  .kpi-grid {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--on-navy-line);
+    border: 1px solid var(--on-navy-line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .kpi {
+    background: var(--navy);
+    padding: 22px 22px 24px;
+  }
+  .kpi .eyebrow { color: var(--accent); margin-bottom: 14px; }
+  .kpi-figure {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    line-height: 1;
+    color: var(--on-navy);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .kpi-figure small { font-size: 21px; color: var(--on-navy-soft); }
+  .kpi-note { font-size: 13px; color: var(--on-navy-soft); line-height: 1.45; }
+  .kpi-meter {
+    height: 6px;
+    border-radius: 4px;
+    background: var(--on-navy-line);
+    overflow: hidden;
+    margin: 10px 0 10px;
+  }
+  .kpi-meter > span {
+    display: block;
+    height: 100%;
+    width: 77%;
+    background: var(--accent);
+    border-radius: 4px;
+  }
+
+  /* ---- Body ---- */
+  .body { padding: 8px 24px 64px; }
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  section:first-child { border-top: none; }
+  .sec-eyebrow { color: var(--accent-ink); margin-bottom: 12px; }
+  h2.serif {
+    font-weight: 400;
+    font-size: clamp(24px, 4vw, 31px);
+    line-height: 1.12;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .sec-intro { color: var(--ink-soft); max-width: 64ch; margin: 0 0 26px; }
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent-ink); }
+
+  /* ---- Build layers ---- */
+  .layers { display: flex; flex-direction: column; gap: 16px; }
+  .layer {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 24px;
+  }
+  .layer-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  .layer-head h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .layer-tag {
+    font-family: -apple-system, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--done);
+    background: var(--done-bg);
+    padding: 3px 9px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .layer-sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 16px; }
+  .build-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .build-list li { padding-left: 20px; position: relative; }
+  .build-list li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 9px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--done);
+  }
+  .build-list b { color: var(--ink); font-weight: 700; }
+  .build-list .was { color: var(--ink-soft); font-style: italic; }
+
+  .callout {
+    margin-top: 16px;
+    padding: 16px 18px;
+    border-left: 3px solid var(--accent);
+    background: var(--surface-2);
+    border-radius: 0 8px 8px 0;
+    font-size: 14.5px;
+  }
+  .callout b { color: var(--accent-ink); }
+
+  /* ---- Tables ---- */
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th, td { text-align: left; padding: 12px 14px; vertical-align: top; }
+  thead th {
+    font-family: -apple-system, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-soft);
+    border-bottom: 1.5px solid var(--line);
+  }
+  tbody tr { border-bottom: 1px solid var(--line); }
+  tbody tr:last-child { border-bottom: none; }
+  td b { font-weight: 700; }
+  .pill {
+    display: inline-block;
+    font-family: -apple-system, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .pill.prog { color: var(--prog); background: var(--prog-bg); }
+  .pill.todo { color: var(--todo); background: var(--todo-bg); }
+  .pill.done { color: var(--done); background: var(--done-bg); }
+
+  /* ---- Principles ---- */
+  .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .principle { background: var(--surface); padding: 20px 22px; }
+  .principle h4 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .principle p { font-size: 14px; color: var(--ink-soft); margin: 0; line-height: 1.55; }
+
+  /* ---- Closing thesis ---- */
+  .thesis {
+    background: var(--navy);
+    color: var(--on-navy);
+    border-radius: 14px;
+    padding: 40px 34px;
+    margin-top: 8px;
+  }
+  .thesis .eyebrow { color: var(--accent); margin-bottom: 18px; }
+  .thesis p {
+    font-family: Georgia, serif;
+    font-size: clamp(20px, 3.2vw, 26px);
+    line-height: 1.4;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .thesis .accent { color: var(--accent); font-style: italic; }
+
+  footer {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 30px 24px 56px;
+    color: var(--ink-soft);
+    font-size: 12.5px;
+    line-height: 1.6;
+    border-top: 1px solid var(--line);
+  }
+  footer code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11.5px;
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 700px) {
+    .kpi-grid { grid-template-columns: 1fr; }
+    .principles { grid-template-columns: 1fr; }
+    .masthead { padding-top: 40px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .report { animation: fade .5s ease both; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  }
+</style>
+
+<div class="report">
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <span class="eyebrow">EVOLV-OS Program · Progress Report</span>
+      <h1>Two hours a day,<br>running the whole practice.</h1>
+      <p class="lede">In sixteen days, Synnovatia went from an empty starter kit to a working AI operating system — and it has already paid for itself with its first re-engaged client.</p>
+      <div class="meta-row">
+        <div class="meta-item"><span class="eyebrow">Prepared for</span><span class="meta-val">Evolv AI — EVOLV-OS Program</span></div>
+        <div class="meta-item"><span class="eyebrow">Business</span><span class="meta-val">Synnovatia · Jackie Nagel</span></div>
+        <div class="meta-item"><span class="eyebrow">Window</span><span class="meta-val tnum">Jul 11 – Jul 27, 2026</span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="kpi-strip">
+    <div class="kpi-grid">
+      <div class="kpi">
+        <span class="eyebrow">Task Automation</span>
+        <div class="kpi-figure tnum">77<small>%</small></div>
+        <div class="kpi-meter"><span></span></div>
+        <div class="kpi-note">23 of 30 recurring business tasks systematized. Was ~0% on July 11.</div>
+      </div>
+      <div class="kpi">
+        <span class="eyebrow">Away-From-Desk Autonomy</span>
+        <div class="kpi-figure">Daily ops<br><span style="font-size:21px; color:var(--on-navy-soft);">run unattended</span></div>
+        <div class="kpi-note" style="margin-top:8px;">Metrics, dashboard, brief, onboarding, meeting prep, and marketing drafts all fire on schedule.</div>
+      </div>
+      <div class="kpi">
+        <span class="eyebrow">First Conversion</span>
+        <div class="kpi-figure tnum">16<small> days</small></div>
+        <div class="kpi-note" style="margin-top:8px;">Cold re-engagement email → Zoom → signed book-coaching engagement. A client last active in 2011.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="wrap">
+
+      <section>
+        <h2 class="serif">A practice that fits in three hours a day</h2>
+        <p>Synnovatia is a solo strategic-consulting practice for bootstrapped B2B service businesses ($250K–$4M), delivering 1:1 consulting, monthly retainers, and two masterminds. Its founder runs the business on about three hours a day while carrying roughly twenty hours a week of graduate coursework — so <b>recovered time is the entire point</b> of the EVOLV-OS build, not a nice-to-have.</p>
+        <p>In just over two weeks the workspace has stood up four layers — Context, Data, Intelligence, and the Automate layer now actively running — inventoried around thirty recurring business tasks, and systematized twenty-three of them. What follows is what that actually means in practice.</p>
+      </section>
+
+      <section>
+        <span class="eyebrow sec-eyebrow">The Three KPIs</span>
+        <h2 class="serif">How we know it's working</h2>
+        <p class="sec-intro">The program measures three things. A note on the first: a task counts as <em>systematized</em> when a scheduled job or repeatable process now carries the mechanical work. Where a human still reviews and sends — every client email is draft-only — that is a deliberate design choice, not an unfinished one. The drafting, tracking, and timing are offloaded; the judgment and the send stay human on purpose.</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>KPI</th><th>Where it started</th><th>Where it is now</th></tr></thead>
+            <tbody>
+              <tr><td><b>Task Automation %</b></td><td>~0% — nothing automated</td><td><b>≈ 77%</b> of recurring business tasks systematized (23 of 30)</td></tr>
+              <tr><td><b>Away-From-Desk Autonomy</b></td><td>Low — daily manual checks of metrics, reminders, follow-ups</td><td>Materially higher — data, dashboard, brief, onboarding, meeting prep, marketing, and re-engagement all run on schedule</td></tr>
+              <tr><td><b>Revenue Per Employee</b></td><td>Solo (revenue ÷ 1)</td><td>Still solo — and that's the win: one person holding a growing practice, two masterminds, and a rebrand without adding headcount</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <span class="eyebrow sec-eyebrow">The Automate Layer</span>
+        <h2 class="serif">What's been built</h2>
+        <p class="sec-intro">Grouped by what it does. Everything below runs today — the daily systems unattended, the client-facing and marketing systems draft-only for review.</p>
+
+        <div class="layers">
+          <div class="layer">
+            <div class="layer-head"><h3>Data &amp; Intelligence</h3><span class="layer-tag">Runs daily · unattended</span></div>
+            <p class="layer-sub">The numbers and the morning picture, gathered before the day starts.</p>
+            <ul class="build-list">
+              <li><b>Live business metrics</b> — Stripe revenue collected every morning at 6am; HubSpot on demand. <span class="was">Was: manual dashboard-checking.</span></li>
+              <li><b>The Dashboard</b> — business + personal snapshot rebuilt and republished each morning to a stable link. <span class="was">Was: 5–10 min/day across three sources.</span></li>
+              <li><b>Morning brief</b> — weekday 7:10am gather of calendar and unanswered email, rendered to read.</li>
+              <li><b>Meeting intelligence</b> — every Zoom auto-records and auto-summarizes; any past meeting is searchable. <span class="was">Was: 10–15 min/meeting of notes.</span></li>
+            </ul>
+          </div>
+
+          <div class="layer">
+            <div class="layer-head"><h3>Client lifecycle</h3><span class="layer-tag">Draft-only · human sends</span></div>
+            <p class="layer-sub">From first welcome to long-dormant reconnection, drafted and tracked — never sent without review.</p>
+            <ul class="build-list">
+              <li><b>Onboarding</b> — detects new Closed-Won deals, drafts the welcome, tracks the agreement/profile/scheduling/invoice checklist, nudges if it stalls. <span class="was">Was: 20–30 min/client.</span></li>
+              <li><b>Pre-meeting objective &amp; post-meeting recap</b> — calendar-detected for 1:1 clients; drafts the objective ask days out and a same-day recap with action items from the Zoom summary.</li>
+              <li><b>Client re-engagement</b> — a 174-client roster on a 6-month cadence. Each Monday: check replies, refresh the due list, draft five personalized reconnections with a priority queue for warm contacts.</li>
+            </ul>
+            <div class="callout"><b>The proof.</b> On July 22 this system produced the practice's first re-engagement conversion — a client last active in 2011, reached by a cold email on July 6 and signed for book coaching sixteen days later.</div>
+          </div>
+
+          <div class="layer">
+            <div class="layer-head"><h3>Marketing</h3><span class="layer-tag">Draft-only · on a calendar</span></div>
+            <p class="layer-sub">A content operation that keeps cadence without keeping the founder at the keyboard.</p>
+            <ul class="build-list">
+              <li><b>LinkedIn</b> — three posts batch-drafted each Monday for the following week, in brand voice, with an automatic pass to scrub "AI-tell" cadence before she sees them.</li>
+              <li><b>HubSpot email</b> — three segments (Active Engagers, Drifting, Lapsed), each on its own cadence, now with a performance log that benchmarks every send's open, click, and unsubscribe rates.</li>
+              <li><b>Mastermind growth</b> — a reusable cohort-launch checklist, a twice-monthly candidate-pipeline review, and a roster-mining pass that surfaced nine qualified prospects across the two groups.</li>
+            </ul>
+          </div>
+
+          <div class="layer">
+            <div class="layer-head"><h3>Operations &amp; personal</h3><span class="layer-tag">Reminders · logs</span></div>
+            <p class="layer-sub">The recurring obligations that quietly eat a week, put on rails.</p>
+            <ul class="build-list">
+              <li><b>Bookkeeping, bill-pay &amp; reconciliation</b> — reminders aligned to real bill-arrival dates, spanning the practice, household, and a spouse's business. <span class="was">Money movement stays human by hard rule.</span></li>
+              <li><b>Home &amp; health</b> — every recurring service (HVAC, pest, tree, granite, spa, garden, windows), the annual physical and eye exam, the weekly weigh-in, and the workout program on automated reminders or logs.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <span class="eyebrow sec-eyebrow">Underway</span>
+        <h2 class="serif">In progress</h2>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Initiative</th><th>Status</th><th>State</th></tr></thead>
+            <tbody>
+              <tr><td><b>"Different Is Better Than Better" rebrand</b></td><td><span class="pill prog">In progress</span></td><td>Brand voice + 2026 style guide complete; website redesign underway. Supports a targeted ~40% rate increase by Jan 2027.</td></tr>
+              <tr><td><b>Mastermind growth</b></td><td><span class="pill prog">In progress</span></td><td>Messy Middle invitation locked for Aug 26, cohort Oct 9. Seven Figure Forum: 9 candidates, 2 in live conversation, 2 seats to fill.</td></tr>
+              <tr><td><b>Invoicing / bookkeeping assist</b></td><td><span class="pill prog">In progress</span></td><td>Reminder cadence in place; deeper categorization help not yet requested.</td></tr>
+              <tr><td><b>LinkedIn metrics tracking</b></td><td><span class="pill prog">In progress</span></td><td>Weekly paste-in logged to a time series — chosen over fragile browser automation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <span class="eyebrow sec-eyebrow">Next</span>
+        <h2 class="serif">Not yet started — deliberately</h2>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Task</th><th>Status</th><th>Why it's waiting</th></tr></thead>
+            <tbody>
+              <tr><td><b>General email triage</b></td><td><span class="pill todo">Not started</span></td><td>~3.5 hrs/week — the largest remaining time sink, and the strongest candidate for the next build.</td></tr>
+              <tr><td><b>Prospect identification + outbound</b></td><td><span class="pill todo">Not started</span></td><td>Claude can draft lists and angles; relationship-building stays human.</td></tr>
+              <tr><td><b>Sales-funnel tracking</b></td><td><span class="pill todo">Not started</span></td><td>Flagged; needs a decision on where pipeline data lives before it's built.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <span class="eyebrow sec-eyebrow">Principles in Practice</span>
+        <h2 class="serif">What we learned building it</h2>
+        <p class="sec-intro">The program's principles held up under real use — here is where each earned its keep.</p>
+        <div class="principles">
+          <div class="principle">
+            <h4>Borrow before you build</h4>
+            <p>The re-engagement system was migrated from an existing build, not re-created; one mastermind-reminder pattern was reused across twenty dated tasks.</p>
+          </div>
+          <div class="principle">
+            <h4>Human-in-the-loop by default</h4>
+            <p>Every client and marketing email is draft-only; money never moves without the founder. That's why the system can be trusted to run unattended.</p>
+          </div>
+          <div class="principle">
+            <h4>Reject fragile automation honestly</h4>
+            <p>Browser-automating LinkedIn posting and grocery-sale scanning were tried and rejected as unreliable. A reliable reminder beat a fragile robot.</p>
+          </div>
+          <div class="principle">
+            <h4>Verify before acting</h4>
+            <p>A pre-outreach research pass caught a former client with a federal wire-fraud conviction before a warm email went out — a save the raw data never would have surfaced.</p>
+          </div>
+          <div class="principle">
+            <h4>The data narrows; the human decides</h4>
+            <p>The CRM's revenue field was wrong on every contact checked, and retirements were invisible everywhere. The tools shortlist; the founder's knowledge is the filter.</p>
+          </div>
+          <div class="principle">
+            <h4>Layers, not leaps</h4>
+            <p>Four layers in sixteen days, each independently useful the day it shipped — no big-bang rebuild, no month of setup before the first payoff.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="border-top:none; padding-bottom:8px;">
+        <div class="thesis">
+          <span class="eyebrow">The Headline</span>
+          <p>One semi-retired founder, three business hours a day, now runs a growing consulting practice, two masterminds, a live re-engagement pipeline, and a full rebrand — with the mechanical work of two-dozen recurring tasks handed to the system, and the judgment kept <span class="accent">firmly human.</span></p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    Generated from the Synnovatia EVOLV-OS workspace. Source scoreboards: <code>context/task-audit.md</code> (business) and <code>personal/task-audit.md</code> (personal). Full build history in <code>HISTORY.md</code>. · Reporting window Jul 11–27, 2026.
+  </footer>
+
+</div>
