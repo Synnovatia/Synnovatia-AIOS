@@ -35,6 +35,13 @@
 - Today's actual Day A session (2026-07-21) logged for real: 27 sets across 9 exercises, plus session summary (53 min, avg HR 131, 356 MET-minutes) via `personal/workout-logs/session-log.csv`. While entering it, standardized the `day` column in `data/strength-training-log.csv` to use A/B (matching the tool) instead of the weekday abbreviation it used before (7/17's rows changed from "Fri" to "B") — one consistent convention going forward.
 - Updated `context/personal-life.md` with the full Day A exercise list and the per-type field rules (previously only documented Day B's exercise list).
 
+## 2026-07-27
+
+### Active Engagers Send Stats + Unsubscribe Policy
+- Reviewed the 7/22 Active Engagers send: 29.23% open (strong), 0.86% click / 2.94% CTOR (soft), 2 bounces, **5 unsubscribes = 1.43% (~3× the healthy threshold)** — consistent with a hard "book a call" CTA. Keep direct asks to Active Engagers only; Drifting/Lapsed stay value-first. Watch whether the Aug 2 send's unsub rate stays elevated.
+- Started a **Send Performance Log** in `context/hubspot-marketing.md` (this send is row one) with benchmarks, so future sends have a comparison baseline.
+- **Recorded an unsubscribe-handling policy:** never delete an unsubscriber — HubSpot auto-suppresses them, and deleting destroys the compliance record (re-import could make them emailable again, a CAN-SPAM/GDPR risk). Do-nothing is correct; non-marketing is an optional tidy-up; delete is never right. Noted the distinction from deleting Cora Willard for cause on 7/22.
+
 ## 2026-07-26
 
 ### Weekend Health Logging + Two Standing Rules

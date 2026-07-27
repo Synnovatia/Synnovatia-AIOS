@@ -36,6 +36,20 @@ A monthly economic-trends piece: what's happening in the economy, what to watch 
 - Brand voice throughout: peer not guru, precise not generic, warm not soft, confident not boastful, equip not help (see `context/brand-voice.md`)
 - List segmentation (382/511/397) lives in Jackie's HubSpot Lists — Claude can't query these directly, relies on Jackie's counts
 
+## Handling Unsubscribes (decided 2026-07-26)
+
+- **Never delete an unsubscriber.** HubSpot auto-suppresses anyone who clicks unsubscribe — they will not receive future marketing without any action. Deleting the contact destroys that suppression record, so if they ever re-enter the system (import, form fill, integration sync) they come back emailable — a CAN-SPAM / GDPR violation. The unsubscribe record is a compliance asset; keep it.
+- **Do nothing is the correct default** — suppression already holds. Optionally set them **non-marketing** to trim the billable marketing-contact count; that's safe and keeps the unsubscribe intact. Non-marketing >> delete, always.
+- Distinct from deleting a contact *for cause* (e.g. Cora Willard, 2026-07-22 — removed entirely, no relationship wanted). That's not an unsubscribe and is the rare exception.
+
+## Send Performance Log
+
+Running record of real send stats, newest first. Benchmarks for consulting/professional-services email: opens ~20-25% (soft metric — Apple Mail Privacy inflates), unsub healthy under ~0.5%.
+
+| Date | Segment | Open | Click (of sent) | CTOR | Bounce | Unsub | Notes |
+|---|---|---|---|---|---|---|---|
+| 2026-07-22 | Active Engagers (~340) | 29.23% | 0.86% | 2.94% | 2 (~0.6%) | 5 (1.43%) | General direct-CTA "book a call" send. Opens strong (well above norm), clicks soft, **unsub ~3× the healthy threshold** — consistent with a hard sales CTA. Keep direct asks to Active Engagers only; Drifting/Lapsed stay value-first. Watch whether the next Active Engagers send's unsub rate stays elevated or was a one-off. |
+
 ---
 
 _Update as campaigns run and results come in — note what's working per segment._
