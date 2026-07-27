@@ -6,6 +6,26 @@
 
 ---
 
+## Status Log
+
+Running log of outreach status against the candidates below, kept current by the twice-monthly mastermind-outreach-status-check task.
+
+**2026-07-27** — Monday re-engagement batch sent reconnect-only emails (no mastermind/Forum mention) to three candidates from this doc:
+- **Beth Clarke** (Tier 1, Little Monkey Marketing) — first contact since April 2019 (7 years)
+- **Donna Dobrovich** (Tier 1, DFD & Associates) — first contact since July 2017 (9 years)
+- **Brooke Billingsley** (Forum, Perception Strategies) — first contact since Dec 2020. The drafted version's "no agenda" line was cut before sending, per Jackie's usual edit pattern — sent version closes "I miss you and would love to catch up properly if your schedule allows."
+
+All three are awaiting reply; no next step until they respond, per this doc's "reconnect first, mastermind later" plan for each.
+
+**Also outstanding as of 2026-07-27** (reconnect emails sent, no reply yet): Beryl Smith (Tier 1, sent 7/14, 13 days), Sivakumar Veerappan (Forum, sent 7/14, 13 days), Kurt Fagan (Forum, sent 7/20, 7 days), Suzi Waddill-Goad (Tier 1, sent 7/22, 5 days). **Diane Leonard** (Forum) reconnected via a misdirected-invite thread on 7/21 and Jackie proposed catching up 7/22 — still awaiting her availability; raise the Forum on that call, not before.
+
+**2026-07-27 (queue review, ahead of the 8/26 Messy Middle invitation):** Checked where the remaining untouched candidates sit in the 6-month auto-cadence queue. Only two would reach a natural reconnect touch before applications close 9/25 — everyone else in Tier 2/3 wouldn't surface until October–January. Jackie's calls on that review:
+- **Connie Weatherman flagged `priority=1`** in `roster.csv` — pulls her to the front of the queue so she gets a reconnect touch ahead of 8/26, matching how Beth Clarke and Donna Dobrovich were prioritized 7/22.
+- **David G. Kinney removed** from the Forum candidate table entirely — no reason recorded, Jackie's call. Stays in the normal re-engagement roster, just off the mastermind list. See the Excluded section below.
+- **Katie Hammond, Brooke Billingsley, and Sivakumar Veerappan confirmed as Seven Figure Forum candidates**, not Messy Middle — they were already listed there in this doc; flagging here only to correct a chat summary that grouped them alongside the Messy Middle queue-timing discussion without distinguishing. The Forum has no application deadline (2 seats to fill, meets every 6 weeks), so none of the three are time-pressured against 8/26/9/25/10/9.
+
+---
+
 ## What the data could and couldn't tell us
 
 | Field | Coverage | Useful? |
@@ -121,7 +141,6 @@ Owner-level, larger or team-based businesses. Jackie confirms revenue.
 | Name | Company | Title | Signal |
 |---|---|---|---|
 | **Chris Lane** | Fluted Partition | — | **Revenue on file: $2MM** — the highest figure anywhere in the roster. Packaging, so product rather than service; Jackie's call whether that fits the room. |
-| **David G. Kinney** | The Kinney Group | President & CEO | |
 | **Hava Volterra** | Parsley | Co-Founder & CEO | Venture-backed, Bay Area. Reconnected with Jackie in 2020 ("very fond memories of our work together"), referred by Margaret Jacoby |
 | **Sivakumar Veerappan** | Anubavam | Founder & CEO | IT services. Already received a re-engagement email 7/14 — coordinate timing |
 | **Hamid M. Kashani** | Habitat Architecture, INC | President & Owner | |
@@ -139,6 +158,8 @@ Also worth a look if the Forum takes professional-practice partners: **Carol Kul
 **Men (~30)** — group is women-only.
 
 **Below band on the evidence available** — Diana Pointer (revenue on file: **under $10,000**), Sherry Schaefer (**$150,000**, coaching).
+
+**Removed by Jackie's call (1): David G. Kinney**, The Kinney Group. Pulled from Forum consideration 2026-07-27, no reason recorded — stays in the normal client re-engagement roster.
 
 **Disqualified — felony conviction (1): Cora Willard**, Red Hen Business Services.
 

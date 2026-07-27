@@ -167,7 +167,13 @@
       "Bash(pkill -f \"http.server 8934\")",
       "Bash(awk -F',' '$1>=\"2026-07-20\" && $1<=\"2026-07-26\"{print $1, $2}' personal/workout-logs/session-log.csv)",
       "Bash(awk -F',' '$1>=\"2026-07-20\" && $1<=\"2026-07-26\"' personal/workout-logs/session-log.csv)",
-      "WebFetch(domain:claude.ai)"
+      "WebFetch(domain:claude.ai)",
+      "Bash(awk -F, '$NF!=\"\" && $NF!=\"priority\"' data/due_now.csv)",
+      "Bash(mkdir -p \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/morning-brief\" *)",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__update_draft",
+      "Bash(python3 scripts/log_outreach.py --help)",
+      "Bash(python3 scripts/log_outreach.py sent annette@ready4hire.com --notes \"Sent via LinkedIn DM instead of email - annette@ready4hire.com appears outdated\")",
+      "Bash(python3 scripts/log_outreach.py sent kirsten@bullockconsulting.net --notes \"Sent via LinkedIn DM instead of email - kirsten@bullockconsulting.net no longer valid\")"
     ]
   }
 }
