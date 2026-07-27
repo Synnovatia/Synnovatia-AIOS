@@ -173,7 +173,11 @@
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__update_draft",
       "Bash(python3 scripts/log_outreach.py --help)",
       "Bash(python3 scripts/log_outreach.py sent annette@ready4hire.com --notes \"Sent via LinkedIn DM instead of email - annette@ready4hire.com appears outdated\")",
-      "Bash(python3 scripts/log_outreach.py sent kirsten@bullockconsulting.net --notes \"Sent via LinkedIn DM instead of email - kirsten@bullockconsulting.net no longer valid\")"
+      "Bash(python3 scripts/log_outreach.py sent kirsten@bullockconsulting.net --notes \"Sent via LinkedIn DM instead of email - kirsten@bullockconsulting.net no longer valid\")",
+      "Bash(python3 -c \"import reportlab\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 scripts/generate_pdf.py outputs/synnovatia-2026-07-27.json outputs/synnovatia-2026-07-27.pdf)",
+      "Bash(open \"/Users/jackienagel/Downloads/task-audit-adrian-does-ai/outputs/synnovatia-2026-07-27.pdf\")"
     ]
   }
 }

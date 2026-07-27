@@ -28,6 +28,14 @@ All of the following, in priority order matching `context/strategy.md`:
 
 **Mandatory final pass before presenting any draft (added 2026-07-20, per Jackie):** scrub all AI-tell cadence — "It's not X. It's Y." negation pivots, stacked punchy fragments, anaphoric repetition, "Here's the thing"-style openers, formulaic triads. See the AI-Tell Policy in `context/brand-voice.md`. Jackie should never have to ask for this; drafts arrive already scrubbed.
 
+**Also mandatory, same pass (added 2026-07-27, from observing Jackie's own edits on the Aug 3-7 batch):** push toward blunter, plainer, warmer phrasing before presenting — don't wait for her to edit it out herself.
+- **Cut corporate/consultant jargon**, even when accurate: "pivot," "runway," "leverage," "optimize." Swap for the plain word ("lesson learned," "can't get away with that").
+- **Cut throat-clearing and meta-explanation.** Don't set up an insight ("I expected X, instead Y") — just state it. Don't explain why a detail matters ("which is where almost every client conversation starts") — cut the clause entirely if the detail already lands on its own.
+- **Default shorter.** Jackie's edits consistently collapsed 2-3 sentences into 1, and cut whole paragraphs that elaborated on a point already made. When a paragraph restates or justifies the paragraph before it, cut it.
+- **Warmth reads as informal punctuation, not polish.** A well-placed exclamation point, ellipsis, or a rhetorical question answered in a parenthetical ("Can you imagine?! Of course, you can!") is on-voice — don't smooth these out in the name of cleaner prose. This is different from the AI-tell scrub above: formulaic-and-flat gets cut, personal-and-energetic gets kept or even leaned into.
+- **Numerals over spelled-out fractions/numbers** in casual context ("1/3" not "a third").
+- The client-win pillar in particular tends toward a bigger rewrite than the other two — Jackie will cut an entire reflective/explanatory paragraph and replace it with one plainspoken closing line ("That's a win/win in my book"). Favor economy over thoroughness there especially.
+
 | Day | Pillar | Notes |
 |---|---|---|
 | Monday | Thought leadership | A pattern/insight from 25+ years of cross-industry consulting. Precise, not generic — name the revenue range/stage per voice rules. |

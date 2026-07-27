@@ -35,7 +35,25 @@
 - Today's actual Day A session (2026-07-21) logged for real: 27 sets across 9 exercises, plus session summary (53 min, avg HR 131, 356 MET-minutes) via `personal/workout-logs/session-log.csv`. While entering it, standardized the `day` column in `data/strength-training-log.csv` to use A/B (matching the tool) instead of the weekday abbreviation it used before (7/17's rows changed from "Fri" to "B") — one consistent convention going forward.
 - Updated `context/personal-life.md` with the full Day A exercise list and the per-type field rules (previously only documented Day B's exercise list).
 
-## 2026-07-27
+## 2026-07-27 (continued, part 2)
+
+### LinkedIn Voice: New Standing Editing-Style Rule
+- Jackie reviewed, edited, and scheduled the Aug 3–7 batch same-day. Diffed her edits against the original drafts across all three posts to extract the pattern rather than guess at it.
+- **Pattern identified:** cut corporate/consultant jargon even when accurate (pivot → lesson learned, runway → can't get away with that); cut throat-clearing setup and meta-explanation — state the insight, don't narrate arriving at it; default shorter, collapsing or cutting whole paragraphs that just elaborate a point already made (Friday's post lost two paragraphs for one closing line); but **keep and even lean into informal warmth** — exclamation points, an ellipsis, a rhetorical question answered in a parenthetical ("Can you imagine?! Of course, you can!"). Plain and warm at once, not smoothed into polish.
+- Explicitly noted the boundary against the existing AI-tell cadence scrub, since the two rules could otherwise conflict: formulaic-and-flat gets cut (that rule), personal-and-energetic gets kept (this one).
+- Baked into **both** `context/linkedin-marketing.md` and the `linkedin-content-drafting` scheduled task's own SKILL.md prompt directly — the task runs as its own process each Monday and doesn't see chat memory, so the reference doc alone wouldn't have reached it.
+
+## 2026-07-27 (continued)
+
+### Adrian's Task Audit Tool Run for Synnovatia
+- Ran the "Task Audit — by Adrian Does AI" tool (`~/Downloads/task-audit-adrian-does-ai/`) against Synnovatia. Rather than the live 10-minute interview, scored it directly from everything the workspace already knows — flagged that choice to Jackie explicitly, since the tool's normal use is a guided conversation.
+- **Different yardstick from the 7/27 Evolv report:** this rubric is broader (includes personal/life-admin) and counts human-only ("white") tasks in the denominator, so the headline number reads differently on purpose. **Result: 81% Task Automation** — 18 green, 11 yellow, **0 red**, 7 white, across 36 tasks. Zero red is notable: nothing in the business is currently stuck waiting on AI capability.
+- Top quick wins per the tool's scoring: email triage (~3.5 hrs/week, still fully manual — the largest remaining block), birthday/anniversary tracking, and a simple prospect-list/sales-funnel tracker.
+- Generated and opened `outputs/synnovatia-2026-07-27.json` + `.pdf` in that folder (alongside Adrian's own July 10 self-audit) and sent the PDF to Jackie to share.
+
+### Monday Workout + Scheduled-Task Outputs
+- Logged Monday's walk: 3.1 mi, 60 min, HR 104, 85 MET-min — first entry of the new training week (Sunday sessions count toward the coming week, per the 2026-07-26 rule).
+- Monday 7am scheduled tasks fired: `outputs/linkedin/2026-08-03-to-08-07-drafts.md` (Aug 3–7 batch, 3 posts) drafted. **Reviewed, edited, and scheduled by Jackie same day** via LinkedIn's own scheduler for 7:30am Mon/Wed/Fri.
 
 ### Active Engagers Send Stats + Unsubscribe Policy
 - Reviewed the 7/22 Active Engagers send: 29.23% open (strong), 0.86% click / 2.94% CTOR (soft), 2 bounces, **5 unsubscribes = 1.43% (~3× the healthy threshold)** — consistent with a hard "book a call" CTA. Keep direct asks to Active Engagers only; Drifting/Lapsed stay value-first. Watch whether the Aug 2 send's unsub rate stays elevated.
