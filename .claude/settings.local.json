@@ -177,7 +177,11 @@
       "Bash(python3 -c \"import reportlab\")",
       "Bash(pip3 install *)",
       "Bash(python3 scripts/generate_pdf.py outputs/synnovatia-2026-07-27.json outputs/synnovatia-2026-07-27.pdf)",
-      "Bash(open \"/Users/jackienagel/Downloads/task-audit-adrian-does-ai/outputs/synnovatia-2026-07-27.pdf\")"
+      "Bash(open \"/Users/jackienagel/Downloads/task-audit-adrian-does-ai/outputs/synnovatia-2026-07-27.pdf\")",
+      "Bash(claude --version)",
+      "Skill(schedule)",
+      "Skill(schedule:*)",
+      "Bash(uuidgen)"
     ]
   }
 }

@@ -92,6 +92,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── style-guide.md       # Visual identity — colors, typography, type scale (2026 Edition)
 │   ├── linkedin-marketing.md    # LinkedIn content/outreach strategy
 │   ├── hubspot-marketing.md     # HubSpot segment-based email marketing strategy
+│   ├── business-intel-digest.md # One-time seed copy of the 2026-07-27 research pull; superseded by the "What I'm Watching" cloud routine below
 │   ├── client-onboarding.md     # New client welcome/agreement/profile/scheduling tracking
 │   ├── meeting-prep.md          # Pre-meeting objective ask + post-meeting recap for existing/ongoing clients
 │   ├── general-business.md  # Shared company snapshot — give to team members
@@ -192,9 +193,10 @@ Claude will:
 1. Update `HISTORY.md` with what was done this session
 2. Check if any docs need updating
 3. List the files that changed
-4. Prompt you to open GitHub Desktop and commit
+4. **Write the commit summary for you** — one line, matching this repo's existing style (plain sentence case, semicolon-joined clauses, no period), ready to paste into GitHub Desktop's Summary field
+5. Prompt you to open GitHub Desktop and commit
 
-In GitHub Desktop: review the changed files, write a short description, click **Commit to main**, then **Push origin**.
+In GitHub Desktop: review the changed files, paste in the summary Claude wrote (edit if you want), click **Commit to main**, then **Push origin**.
 
 ### Installing modules
 
@@ -229,6 +231,7 @@ Claude will read the module's install guide and walk you through it step by step
 | "Who's due for a check-in?" | Refreshes and shows who's overdue in the client re-engagement cadence |
 | "Draft the next batch" | Drafts personalized re-engagement emails into Gmail for your review |
 | "Launch a new mastermind cohort" | Walks the T-minus checklist in `context/mastermind-launch.md` — dates, page audit, invitation + nudge, intake window |
+| "What's in my What I'm Watching digest?" | Checks Gmail drafts for today's "What I'm Watching" — daily research (economic trends / growth & scaling) for the $250K-$4M B2B service segment, drafted by the `what-im-watching-cloud` cloud routine and folded into both the dashboard and the morning brief as a collapsible section (name shared with the existing HubSpot "What I'm Watching" newsletter thread, in case Jackie wants to draw from it there — it's personal reading only until she says otherwise) |
 
 ### Setting up Cowork scheduled tasks
 
@@ -237,6 +240,8 @@ Cowork can run recurring tasks automatically. Once DataOS or IntelOS is installe
 > **"Set up a daily task to collect my [Slack / Notion / analytics] data"**
 
 Claude will help you configure it as a Cowork scheduled task — no cron jobs or scripts needed.
+
+**Local vs. cloud:** Most scheduled tasks in this workspace are local — they run on this Mac and require the Cowork app to be open (if it's closed at the scheduled time, they run on next launch). For anything that must run reliably regardless of whether this app is open — and where you want visibility into whether it actually ran — say so, and Claude can set up an Anthropic **cloud routine** instead (via the `/schedule` skill). Cloud routines run on Anthropic's servers, show their own run history at [claude.ai/code/routines](https://claude.ai/code/routines), but cannot read/write local files — they can only reach the outside world through connected services (Gmail, HubSpot, etc.), so they're best suited to research-and-email or research-and-post tasks rather than anything that edits files in this workspace. The `what-im-watching-cloud` routine is the first example: it researches daily (Economic Trends + Growth & Scaling) and saves the result as a Gmail draft addressed to jackie@synnovatia.com (this connector can only create drafts, not send — same as every other email-touching automation in this workspace). Both the dashboard and the weekday morning brief pick it up from that draft and render it as a "What I'm Watching" section with a collapsible (`<details>`/`<summary>`) block per theme, so it doesn't grow the page unbounded.
 
 ---
 
