@@ -23,6 +23,10 @@ Warm audience. Go direct:
 ### Drifting (382) — Monthly, value-first
 Not pitchy — goal is re-earning attention before they go fully cold. Thought leadership, useful content, warm reconnection tone. Home of the "What I'm Watching" thread (see below).
 
+**Standing send day: Wednesdays** (decided 2026-07-28, to match the day Active Engagers sends tend to land on). First real send (using live `what-im-watching-cloud` research instead of the earlier generic placeholder) goes out 2026-07-29.
+
+**Reply-ask experiment (2026-07-29 send only, not yet a standing rule):** the drafted "no CTA, no ask" closer got replaced in Jackie's final edit with a genuine reply-engagement ask ("hit reply and let me know what you found most helpful") — driven by her own curiosity about reception, since this is the first "What I'm Watching" send to this segment, not a deliberate permanent strategy shift. Watch reply volume/content on this send before deciding whether to make it standing for future Drifting/Lapsed sends or drop back to pure value-only with no ask.
+
 ### Lapsed (511) — Bi-monthly (every ~6-8 weeks), pure value, no ask
 **Decided 2026-07-12:** explicitly NOT a repeat of the previous "we miss you" / "should we stay in touch" win-back sequence Jackie already ran. Instead: fold into the same "What I'm Watching" content thread as Drifting, at lower frequency (deliverability best practice — don't over-mail cold contacts). No CTA, no ask. The rebrand itself is the quiet reason to notice her again. If someone re-engages, they naturally move to Drifting/Active cadence based on actual behavior — no explicit opt-back-in moment needed.
 

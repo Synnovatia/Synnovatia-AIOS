@@ -194,7 +194,9 @@
       "Bash(node -e ' *)",
       "Bash(command -v node)",
       "Read(//usr/local/**)",
-      "Bash(cp \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/e74128f0-1e7b-4742-9674-da188287f4cd/scratchpad/morning-brief.html\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/_preview_morning_brief.html\" *)"
+      "Bash(cp \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/e74128f0-1e7b-4742-9674-da188287f4cd/scratchpad/morning-brief.html\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/_preview_morning_brief.html\" *)",
+      "Bash(python3 scripts/list_opportunities.py)",
+      "Bash(date -j -f \"%Y-%m-%d\" \"2026-07-29\" \"+%A\")"
     ]
   }
 }
