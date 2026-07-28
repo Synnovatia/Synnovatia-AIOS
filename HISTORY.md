@@ -8,6 +8,15 @@
 
 ---
 
+## 2026-07-28
+
+### Day A Printable Card + Workout Results Logged
+- Built a printable Day A session card (`outputs/strength-log/2026-07-28-day-a-printable.html`, published as a claude.ai artifact) showing last session's (2026-07-21) weight/reps per exercise plus a progression recommendation per the double-progression rule in `personal/workout-plan.md`, with blank fields to pen in today's actual sets.
+- Pointed Jackie to the existing Strength Log artifact tool (rebuilt 2026-07-21, `outputs/strength-log/strength-training-log.html`) for fast post-workout entry rather than building a new one — she logged today's session there and pasted the CSV back for filing.
+- Appended 27 sets to `data/strength-training-log.csv`. She hit every recommendation from the printable card: Goblet Squat/RDL/Bench Press all moved up in weight at 12 reps, Farmer's Carry pushed distance to 50ft, Balance Reach and Glute Bridge both added load (8lb, 10lb respectively), Face Pull moved to the red band.
+- Flagged one inconsistent-looking set (Single-Arm Row: 4/15/4 reps across sets, breaking from the session's otherwise-consistent pattern) rather than silently logging it — confirmed with Jackie it was intentional (deliberately varying weight across sets to push herself), corrected the note from "flagged for confirmation" to "confirmed intentional."
+- Logged session-level stats to `personal/workout-logs/session-log.csv`: hill warm-up (0.67mi, ~15min, HR 125, 62 METs) and the main strength session (62min, avg HR 111, 201 MET-minutes) — noted both HR and MET-minutes came in lower than the two prior Day A/B sessions, consistent with today's more experimental/exploratory set structure.
+
 ## 2026-07-27
 
 ### Dianne Pearce Meeting Prep Note — Book Coaching Engagement

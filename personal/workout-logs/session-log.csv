@@ -13,3 +13,5 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-07-26,Hike,106,122,not captured,319,"3.8 miles, computes to 27:53/mile. HRV not reported. Sunday hike."
 2026-07-26,Walk (2nd of day),28,103,not captured,18,"1.3 miles, computes to 21:32/mile. HRV not reported. Short recovery walk; low MET-min (18) is expected for an easy recovery effort, not a data problem."
 2026-07-27,Walk,60,104,not captured,85,"3.1 miles, reported avg pace 19:17/mile (computes to 19:21 - reconciles). HRV not reported."
+2026-07-28,Hill Warm-up,15,125,not captured,62,"0.67 miles, reported avg pace 22:06/mile (computes to ~14.8 min for the distance - duration rounded to 15). HRV not reported."
+2026-07-28,Strength (Day A),62,111,not captured,201,"Reported via Welltory: 62 min, avg HR 111, 201 MET-minutes - lower HR/METs than the two prior Day A/B sessions (123-131 avg HR, 345-356 MET-min), consistent with more experimental/lower-intensity work between sets today. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv."

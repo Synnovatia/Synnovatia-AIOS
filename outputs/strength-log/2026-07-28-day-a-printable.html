@@ -1,0 +1,317 @@
+<title>Day A — Printable</title>
+<h2 class="sr-only">Strength Training Day A — printable session card with last session's numbers and today's targets</h2>
+
+<style>
+  :root{
+    --ink:#1B1F23; --paper:#F1F2F0; --steel:#D6D9D5; --steel-dim:#EAEBE8;
+    --ink-soft:#5B615F; --surface:#FFFFFF;
+    --teal:#0E8A72; --teal-bg:#E3F1EC;
+    --rust:#C2571C; --rust-bg:#F7E7DC;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#ECEEEC; --paper:#17191B; --steel:#33383A; --steel-dim:#222527;
+      --ink-soft:#9AA09D; --surface:#1F2224;
+      --teal-bg:#123028; --rust-bg:#331C10;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#ECEEEC; --paper:#17191B; --steel:#33383A; --steel-dim:#222527;
+    --ink-soft:#9AA09D; --surface:#1F2224;
+    --teal-bg:#123028; --rust-bg:#331C10;
+  }
+  :root[data-theme="light"]{
+    --ink:#1B1F23; --paper:#F1F2F0; --steel:#D6D9D5; --steel-dim:#EAEBE8;
+    --ink-soft:#5B615F; --surface:#FFFFFF;
+    --teal-bg:#E3F1EC; --rust-bg:#F7E7DC;
+  }
+
+  .dp-root, .dp-root *{ box-sizing:border-box; }
+  .dp-root{
+    background:var(--paper); color:var(--ink);
+    font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    max-width:800px; margin:0 auto; padding:28px 22px 60px;
+  }
+  .mono{ font-family:ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,monospace; font-variant-numeric:tabular-nums; }
+  .eyebrow{
+    font-family:'Arial Narrow',Arial,sans-serif; text-transform:uppercase;
+    letter-spacing:.09em; font-weight:700; font-size:11px; color:var(--ink-soft);
+  }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+  /* Header */
+  .dp-header{
+    display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:14px;
+    padding-bottom:16px; border-bottom:2px solid var(--ink); margin-bottom:20px;
+  }
+  .dp-title-row{ display:flex; align-items:center; gap:12px; }
+  .day-badge{
+    background:var(--teal); color:#fff; font-family:'Arial Narrow',Arial,sans-serif;
+    font-weight:700; font-size:15px; letter-spacing:.04em; padding:6px 14px; border-radius:6px;
+  }
+  .dp-title{ font-size:24px; font-weight:700; margin:0; letter-spacing:-.01em; }
+  .dp-dates{ text-align:right; font-size:12px; color:var(--ink-soft); line-height:1.5; }
+  .dp-dates strong{ color:var(--ink); font-weight:600; }
+
+  /* Legend */
+  .dp-legend{ display:flex; gap:18px; flex-wrap:wrap; margin-bottom:20px; font-size:11.5px; color:var(--ink-soft); }
+  .dp-legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .swatch{ width:10px; height:10px; border-radius:3px; display:inline-block; }
+  .swatch.rec{ background:var(--rust); }
+  .swatch.last{ background:var(--ink-soft); }
+
+  /* Exercise cards */
+  .ex-list{ display:flex; flex-direction:column; gap:10px; }
+  .ex-card{
+    background:var(--surface); border:1px solid var(--steel); border-radius:10px;
+    padding:14px 16px; break-inside:avoid; page-break-inside:avoid;
+  }
+  .ex-top{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:8px; }
+  .ex-name{ font-size:15px; font-weight:700; }
+  .ex-target{ font-size:12px; color:var(--ink-soft); }
+
+  .ex-body{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:520px){ .ex-body{ grid-template-columns:1fr; } }
+
+  .ex-last, .ex-today{ }
+  .ex-last .eyebrow, .ex-today .eyebrow{ margin-bottom:5px; }
+  .set-row{ display:flex; gap:8px; font-size:13px; }
+  .set-row .set-num{ color:var(--ink-soft); width:16px; flex:none; }
+  .set-row.last-row{ color:var(--ink-soft); }
+  .blank{ display:inline-block; border-bottom:1px solid var(--steel); min-width:34px; height:14px; }
+  .today-set{ display:flex; align-items:baseline; gap:6px; font-size:13px; margin-bottom:4px; }
+  .today-set .unit{ font-size:10.5px; color:var(--ink-soft); }
+
+  .ex-rec{
+    margin-top:10px; padding:8px 10px; background:var(--rust-bg); border-left:3px solid var(--rust);
+    border-radius:0 6px 6px 0; font-size:12.5px; color:var(--ink);
+  }
+  .ex-rec strong{ color:var(--rust); font-weight:700; }
+
+  .dp-footer{ margin-top:22px; font-size:11px; color:var(--ink-soft); text-align:center; }
+
+  @media print{
+    .dp-root{ max-width:100%; padding:0; background:#fff; color:#1B1F23; }
+    :root{ --steel:#C9CCC8; --ink-soft:#5B615F; --surface:#fff; --paper:#fff; --rust-bg:#FBEFE6; --teal-bg:#E3F1EC; }
+    .ex-card{ border:1px solid #C9CCC8; }
+    .dp-legend{ display:none; }
+    @page{ size:letter; margin:0.5in; }
+  }
+</style>
+
+<div class="dp-root">
+  <div class="dp-header">
+    <div class="dp-title-row">
+      <span class="day-badge">DAY A</span>
+      <h1 class="dp-title">Full-Body Strength — Session Card</h1>
+    </div>
+    <div class="dp-dates">
+      Today: <strong>_______________</strong><br>
+      Last Day A: <strong>2026-07-21</strong>
+    </div>
+  </div>
+
+  <div class="dp-legend">
+    <span><span class="swatch last"></span> Last session (2026-07-21)</span>
+    <span><span class="swatch rec"></span> Today's recommendation</span>
+  </div>
+
+  <div class="ex-list">
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">1. Goblet Squat (dumbbell)</span>
+        <span class="ex-target mono">3 × 8–12</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> 15 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> 15 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> 15 lb × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Bump the load:</strong> hit 15 reps on all 3 sets last time — try 20 lb, aim for 8–12 reps.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">2. Dumbbell Romanian Deadlift</span>
+        <span class="ex-target mono">3 × 8–12</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> 20 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> 20 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> 20 lb × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Bump the load:</strong> 15 reps across all sets at 20 lb — try 25 lb, back to 8–12 reps.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">3. Dumbbell Floor/Bench Press</span>
+        <span class="ex-target mono">3 × 8–12</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> 15 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> 15 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> 15 lb × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Bump the load:</strong> 15 reps across all sets at 15 lb — try 20 lb, aim for 8–12 reps.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">4. Single-Arm Dumbbell Row</span>
+        <span class="ex-target mono">3 × 8–12 / side</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> 15 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> 15 lb × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> 15 lb × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Bump the load:</strong> 15 reps/side across all sets at 15 lb — try 20 lb, aim for 8–12/side.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">5. Single-Leg Balance Reach</span>
+        <span class="ex-target mono">2 × 8–10 / side</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> BW × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> BW × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> BW × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="unit">reps</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="unit">reps</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Add challenge, not weight:</strong> 15 reps/side is well past range — try eyes closed, slower tempo, or holding a light dumbbell.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">6. Plank</span>
+        <span class="ex-target mono">2 × 30–45 sec</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> 45 sec</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> 45 sec</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> 45 sec</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="unit">sec</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="unit">sec</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>At the top of range:</strong> held 45 sec x3 last time — try shoulder-taps or a longer hold to keep progressing.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">7. Dumbbell Farmer's Carry</span>
+        <span class="ex-target mono">3 × 40–60 ft</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> 40 lb × 40 ft</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> 40 lb × 40 ft</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> 40 lb × 40 ft</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span><span class="unit">ft</span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span><span class="unit">ft</span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Hold the weight, push distance:</strong> stayed at the bottom of the range (40 ft) — keep 40 lb, work up toward 60 ft before adding weight.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">8. Glute Bridge</span>
+        <span class="ex-target mono">3 × 15</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> BW × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> BW × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> BW × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="unit">reps</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="unit">reps</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>Right on target:</strong> hit 15/15/15 at bodyweight — consider a light dumbbell across the hips next time.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">9. Band Face Pull</span>
+        <span class="ex-target mono">3 × 12–15</span>
+      </div>
+      <div class="ex-body">
+        <div class="ex-last">
+          <div class="eyebrow">Last time</div>
+          <div class="set-row last-row mono"><span class="set-num">1</span> Band × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">2</span> Band × 15</div>
+          <div class="set-row last-row mono"><span class="set-num">3</span> Band × 15</div>
+        </div>
+        <div class="ex-today">
+          <div class="eyebrow">Today</div>
+          <div class="today-set"><span class="set-num mono">1</span><span class="unit">band</span><span class="blank"></span><span class="unit">reps</span><span class="blank"></span></div>
+          <div class="today-set"><span class="set-num mono">2</span><span class="unit">band</span><span class="blank"></span><span class="unit">reps</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="ex-rec"><strong>At the top of range:</strong> 15 reps x3 last time — move up to the next resistance band.</div>
+    </div>
+
+  </div>
+
+  <div class="dp-footer">Synnovatia AIOS — Strength Training Log · Day A · plan: personal/workout-plan.md · last session: data/strength-training-log.csv (2026-07-21)</div>
+</div>

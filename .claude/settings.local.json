@@ -190,7 +190,11 @@
       "Bash(mkdir -p \"/Users/jackienagel/Desktop/Synnovatia AIOS/.claude/commands\")",
       "mcp__36d88e54-7eb8-4d49-91b0-117bd5ed3313__read_file_content",
       "Bash(date -j -f \"%Y-%m-%d\" \"2026-07-27\" \"+%A\")",
-      "Bash(date -j -v+3d -f \"%Y-%m-%d\" \"2026-07-27\" \"+%Y-%m-%d %A\")"
+      "Bash(date -j -v+3d -f \"%Y-%m-%d\" \"2026-07-27\" \"+%Y-%m-%d %A\")",
+      "Bash(node -e ' *)",
+      "Bash(command -v node)",
+      "Read(//usr/local/**)",
+      "Bash(cp \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/e74128f0-1e7b-4742-9674-da188287f4cd/scratchpad/morning-brief.html\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/_preview_morning_brief.html\" *)"
     ]
   }
 }
