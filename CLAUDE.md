@@ -107,15 +107,24 @@ These are how you know your EVOLV-OS is working:
 │   ├── onboarding/tracking.csv    # Client onboarding checklist state (source of truth, not HubSpot properties)
 │   └── meeting-prep/tracking.csv # Pre-meeting objective-ask + post-meeting recap state for existing clients
 ├── scripts/                 # DataOS collectors (Stripe live; HubSpot via MCP; GA manual)
+│   └── content_pipeline/    # Content Pipeline module scripts (db.py, writer.py, context_aggregator.py, generate_pipeline.py) — namespaced in its own subfolder so it doesn't collide with DataOS's scripts/db.py
+├── content/                 # Content Pipeline — LinkedIn + blog idea tracking (capture → develop → schedule)
+│   ├── strategy.md          # Platform/cadence, pillars, competitive positioning, Search Console keyword targets
+│   ├── brand-and-audience.md # Brand positioning + 3 audience segments
+│   ├── offers-and-funnels.md # Offers, funnels, CTA bank, audience→offer alignment
+│   ├── pipeline.md          # Auto-generated dashboard view of all content ideas by stage
+│   └── concepts/            # Full developed concept docs, one per idea, written by /develop
 ├── config/                  # launchd job for daily 6am data collection
 ├── docs/                    # System documentation
 │   ├── _index.md            # Documentation routing index
 │   └── _templates/          # Templates for creating new docs
+├── .claude/commands/        # Slash commands — capture.md, develop.md, schedule.md (Content Pipeline)
 ├── module-installs/         # EVOLV-OS modules — install by telling Claude
 │   ├── context-os/          # Context layer (install first)
 │   ├── infra-os/            # Version control + documentation
 │   ├── data-os/             # Business data pipeline
-│   └── intel-os/            # Meeting + Slack intelligence
+│   ├── intel-os/            # Meeting + Slack intelligence
+│   └── content-pipeline-v1/ # Content intelligence system (installed 2026-07-27)
 ├── client-reengagement/     # 6-month client check-in cadence (176-client roster, migrated 2026-07-11)
 │   ├── README.md            # Full weekly workflow
 │   ├── data/                 # roster.csv, due_now.csv, outreach_log.csv, meeting_notes.csv
@@ -185,6 +194,19 @@ Say things like:
 
 Full details: `client-reengagement/README.md`
 
+### Content Pipeline (LinkedIn + blog)
+
+Idea-tracking system for LinkedIn (existing Mon/Wed/Fri batch cadence, per `context/linkedin-marketing.md`) and the blog (`synnovatia.com/business-coaching-blog/`, monthly, SEO-driven). Installed 2026-07-27 on top of — not replacing — the existing LinkedIn Monday-batch workflow; it adds structured capture → develop → schedule tracking in `data/content.db`.
+
+Say things like:
+- **"/capture [idea]"** → classifies and stores a raw idea as a stub
+- **"/develop #[id]"** → full concept development: strategic positioning (audience/authority/offer), then platform-specific packaging (LinkedIn hooks + visual concept, or blog meta title/H1/subheadings/internal links using real Search Console keyword data), interactive at each stage
+- **"/schedule"** → batch-plan which developed ideas to create next and when
+
+Strategy docs live in `content/` (`strategy.md`, `brand-and-audience.md`, `offers-and-funnels.md`) — read fresh by `/develop` every time, update them as positioning/offers/keyword targets evolve. `content/strategy.md` includes a real competitor ICP-fit analysis and a Search Console-sourced keyword-target table (re-pull periodically, since positions shift). No free offer/lead magnet is currently active — the blog's old "Core Business Assessment" download is confirmed outdated (flagged separately for removal from the live site).
+
+Full details: `docs/content-pipeline.md`
+
 ### Saving your work
 
 Say: **"Save my work"**
@@ -210,6 +232,7 @@ Claude will read the module's install guide and walk you through it step by step
 2. **"Install InfraOS"** — Version control and documentation — 20-30 min
 3. **"Install DataOS"** — Business data pipeline — 30-60 min
 4. **"Install IntelOS"** — Meeting + Slack intelligence — 20-30 min
+5. **"Install Content Pipeline"** (optional, requires ContextOS + DataOS) — LinkedIn + blog content idea tracking — 30-45 min
 
 ### Other things you can say
 
@@ -232,6 +255,9 @@ Claude will read the module's install guide and walk you through it step by step
 | "Draft the next batch" | Drafts personalized re-engagement emails into Gmail for your review |
 | "Launch a new mastermind cohort" | Walks the T-minus checklist in `context/mastermind-launch.md` — dates, page audit, invitation + nudge, intake window |
 | "What's in my What I'm Watching digest?" | Checks Gmail drafts for today's "What I'm Watching" — daily research (economic trends / growth & scaling) for the $250K-$4M B2B service segment, drafted by the `what-im-watching-cloud` cloud routine and folded into both the dashboard and the morning brief as a collapsible section (name shared with the existing HubSpot "What I'm Watching" newsletter thread, in case Jackie wants to draw from it there — it's personal reading only until she says otherwise) |
+| "/capture [idea]" | Content Pipeline — classifies a raw LinkedIn/blog idea and stores it as a stub in `data/content.db` |
+| "/develop #[id]" | Content Pipeline — turns a stub into a full concept: strategic positioning, LinkedIn hooks or blog SEO packaging (using real Search Console keyword targets), CTA alignment — interactive, confirms at each stage |
+| "/schedule" | Content Pipeline — batch-plan which developed ideas to create next and when, against the real LinkedIn Mon/Wed/Fri + monthly blog cadence |
 
 ### Setting up Cowork scheduled tasks
 
