@@ -10,6 +10,11 @@
 
 ## 2026-07-27
 
+### Dianne Pearce Meeting Prep Note — Book Coaching Engagement
+- Jackie asked for a summary of key points from two Google Docs ahead of her Thursday 2026-07-30 3pm meeting with Dianne Pearce, a book-coaching client (memoir *Warriors With Lipstick*) — distinct from Synnovatia's usual strategy-consulting clients.
+- Pulled and summarized a coaching-questions doc (engagement preferences, book timeline/structure, writing blocks) and a draft prelude excerpt from the book itself.
+- Saved as `data/meeting-prep/notes/2026-07-30-dianne-pearce-prep.md` — a new `notes/` subfolder for standalone prep docs, kept separate from the automated `pre-meeting-objective-check`/`post-meeting-recap-check` system in `context/meeting-prep.md` (that system only covers existing strategy-consulting clients, not book-coaching engagements).
+
 ### Content Pipeline Live-Tested on LinkedIn — Surfaced a Real Gap in the Positioning Work
 - Captured a LinkedIn thought-leadership idea (stub #2, "Most Business Coaching Isn't Built for Your Size of Company") via `/capture`, then ran `/develop`. Jackie corrected the authority angle mid-flow: don't invent a named framework ("Two Funnels of Knowledge") for what's really just plain substance — broad cross-industry pattern recognition plus deep specific awareness.
 - **Bigger catch:** Jackie flagged that "Different Is Better Than Better" has been used loosely across the workspace (including in `content/strategy.md`, written this session) as if it *is* the positioning itself. It isn't — it's the name of the client interview research that was supposed to produce the positioning. Even the "positioning thesis" as currently documented in `brand-voice.md`/`business-info.md` is just the meta-level philosophy ("compete on different, not better-along-the-same-dimensions"), not a synthesized, usable positioning statement.

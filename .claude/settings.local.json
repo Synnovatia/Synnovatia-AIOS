@@ -187,7 +187,10 @@
       "mcp__claude-in-chrome__find",
       "mcp__claude-in-chrome__form_input",
       "mcp__claude-in-chrome__get_page_text",
-      "Bash(mkdir -p \"/Users/jackienagel/Desktop/Synnovatia AIOS/.claude/commands\")"
+      "Bash(mkdir -p \"/Users/jackienagel/Desktop/Synnovatia AIOS/.claude/commands\")",
+      "mcp__36d88e54-7eb8-4d49-91b0-117bd5ed3313__read_file_content",
+      "Bash(date -j -f \"%Y-%m-%d\" \"2026-07-27\" \"+%A\")",
+      "Bash(date -j -v+3d -f \"%Y-%m-%d\" \"2026-07-27\" \"+%Y-%m-%d %A\")"
     ]
   }
 }
