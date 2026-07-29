@@ -103,7 +103,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── data.db                    # Daily snapshots from connected sources
 │   ├── key-metrics.md             # Manual baseline + goals-progress tracking
 │   ├── collect.log                # Daily collection job output
-│   ├── meeting-summaries/         # Manual/fallback meeting notes (pre-2026-07-11 or non-Zoom)
+│   ├── meeting-summaries/         # Manual/fallback meeting notes (pre-Fathom or non-Fathom)
 │   ├── onboarding/tracking.csv    # Client onboarding checklist state (source of truth, not HubSpot properties)
 │   └── meeting-prep/tracking.csv # Pre-meeting objective-ask + post-meeting recap state for existing clients
 ├── scripts/                 # DataOS collectors (Stripe live; HubSpot via MCP; GA manual)
@@ -134,8 +134,9 @@ These are how you know your EVOLV-OS is working:
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
 │   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
+│   ├── positioning/          # Positioning brief (statement + full rationale/proof points) — internal strategy doc, not customer-facing
 │   ├── strength-log/         # Strength Training Log tool source (published as a claude.ai artifact)
-│   └── website-redesign/     # "Different Is Better Than Better" website mockups (homepage concept)
+│   └── website-redesign/     # "Different Is Better Than Better" website homepage/About copy + mockups
 ├── reference/               # Templates, examples, reusable patterns
 │   └── email-templates/     # onboarding-welcome.md, onboarding-reminder.md, pre-meeting-objective.md, post-meeting-recap.md
 └── shares/                  # Packaged systems for sharing
@@ -173,9 +174,9 @@ Claude can also run live queries against `data/data.db` directly if you ask abou
 
 Say: **"Find that meeting with [name]"** or **"What did we decide about [topic]?"**
 
-Claude searches your Zoom account directly (meetings, transcripts, AI summaries, recordings) — no manual work needed for any meeting from 2026-07-11 onward, since cloud recording and auto-summary are both on.
+Claude searches your Fathom account directly (meetings, transcripts, AI summaries, recordings) — no manual work needed for any meeting Fathom recorded. **Switched from Zoom to Fathom 2026-07-29** — meetings before that date live in Zoom's cloud (if recorded there) rather than Fathom's.
 
-For older meetings, or calls on a platform other than Zoom, say: **"Save this meeting summary: [paste]"** — Claude structures it and saves it to `data/meeting-summaries/`.
+For older meetings, or calls Fathom didn't capture, say: **"Save this meeting summary: [paste]"** — Claude structures it and saves it to `data/meeting-summaries/`.
 
 Slack is not connected (not used in the business).
 
@@ -249,7 +250,7 @@ Claude will read the module's install guide and walk you through it step by step
 | "Update my metrics" | Refreshes key-metrics.md from HubSpot/Stripe + asks for manual numbers |
 | "Write a report on [X]" | Produces a structured, professional output based on your context |
 | "Save my work" | Updates HISTORY.md and docs, then guides you to commit in GitHub Desktop |
-| "Find that meeting with [name]" | Searches Zoom directly for meetings, transcripts, summaries |
+| "Find that meeting with [name]" | Searches Fathom directly for meetings, transcripts, summaries |
 | "Save this meeting summary: [paste]" | Structures and saves to data/meeting-summaries/ |
 | "Who's due for a check-in?" | Refreshes and shows who's overdue in the client re-engagement cadence |
 | "Draft the next batch" | Drafts personalized re-engagement emails into Gmail for your review |

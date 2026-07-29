@@ -21,8 +21,10 @@ Both skip: meetings with more than 2 non-Jackie attendees (mastermind group meet
 
 **`post-meeting-recap-check`** (hourly, 8am-8pm):
 1. Scans the last 24 hours of calendar for candidate meetings that have already ended
-2. Extracts the Zoom meeting ID from the calendar event's own description and pulls that meeting's AI summary (`get_meeting_assets`)
-3. Once the summary is ready (may take time to process — the task just tries again next hour if not), drafts a same-day recap: a brief 1-2 sentence summary of what was covered, plus the action items from Zoom's "next steps"
+2. Matches the meeting to a Fathom recording by attendee email + date (`list_meetings`, filtered by day and matched on `calendar_invitees`) and pulls that meeting's AI summary (`get_meeting_summary`)
+3. Once the summary is ready (may take time to process — the task just tries again next hour if not), drafts a same-day recap: a brief 1-2 sentence summary of what was covered, plus the action items from the summary
+
+**Changed 2026-07-29:** meeting recording/notetaking moved from Zoom to Fathom this week. Detection logic (calendar scan) is unchanged — only how the recording/summary gets matched to a calendar event changed, since Fathom doesn't embed an ID in the calendar description the way Zoom did. `docs/intel-os.md` has the full system-level writeup.
 
 Both are draft-only — Jackie reviews and sends.
 
@@ -42,7 +44,7 @@ Both are draft-only — Jackie reviews and sends.
 - **Existing clients only** — matched by excluding any email present in `data/onboarding/tracking.csv`
 - **Separate from `client-reengagement/`'s post-call flow** — that one is for former/lapsed-client re-engagement calls specifically, and is manually triggered by Jackie telling Claude what happened. This system is automatic and covers regular ongoing 1:1 sessions instead. No overlap.
 - **4-day pre-meeting timing** — chosen so the client has time to reply, but it's still fresh when the meeting happens
-- **Same-day post-meeting timing** — hourly checks (rather than once daily) so the recap goes out same-day once Zoom's summary is actually ready, not the next morning
+- **Same-day post-meeting timing** — hourly checks (rather than once daily) so the recap goes out same-day once Fathom's summary is actually ready, not the next morning
 - **Group meetings excluded** — masterminds already have their own hot-topics/agenda system; only meetings with ≤2 non-Jackie attendees qualify
 - **Objective field isn't always used** — Jackie confirmed clients sometimes fill in Boomerang's own Objective question at booking and sometimes don't; the pre-meeting ask only fires when it's genuinely missing
 - **Recap wording gets light editing, not raw AI-summary paste** — per `context/brand-voice.md` (peer not guru, warm not soft)

@@ -54,7 +54,7 @@ No API keys required for core use. `python-dotenv` and `requests` (already prese
 
 ## Dependencies
 
-- **Depends on:** ContextOS (`context/` files), DataOS (`data/` directory convention, `python-dotenv`/`requests`). Optionally reads DataOS's `data/data.db` for meeting/YouTube context if those tables exist (they don't yet — IntelOS stores meetings via Zoom search, not a local table, so `recent_meetings` in the context window is currently always empty).
+- **Depends on:** ContextOS (`context/` files), DataOS (`data/` directory convention, `python-dotenv`/`requests`). Optionally reads DataOS's `data/data.db` for meeting/YouTube context if those tables exist (they don't yet — IntelOS stores meetings via Fathom search, not a local table, so `recent_meetings` in the context window is currently always empty).
 - **Used by:** LinkedIn content drafting (supplements, doesn't replace, `context/linkedin-marketing.md`'s Monday batch), blog content planning, feeds `context/task-audit.md` Task Automation KPI if tracked there.
 
 ## History
