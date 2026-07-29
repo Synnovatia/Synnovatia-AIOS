@@ -196,7 +196,12 @@
       "Read(//usr/local/**)",
       "Bash(cp \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/e74128f0-1e7b-4742-9674-da188287f4cd/scratchpad/morning-brief.html\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/_preview_morning_brief.html\" *)",
       "Bash(python3 scripts/list_opportunities.py)",
-      "Bash(date -j -f \"%Y-%m-%d\" \"2026-07-29\" \"+%A\")"
+      "Bash(date -j -f \"%Y-%m-%d\" \"2026-07-29\" \"+%A\")",
+      "Bash(pandoc -t markdown \"/Users/jackienagel/Downloads/DiB_Interview_Synthesis_Master.docx\")",
+      "Bash(pip3 show *)",
+      "Bash(mkdir -p /private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/7e0c4103-7789-45af-94df-c6c70e9466a6/scratchpad/dib_unpacked)",
+      "Bash(unzip -o -q \"/Users/jackienagel/Downloads/DiB_Interview_Synthesis_Master.docx\" -d .)",
+      "Bash(cp \"/Users/jackienagel/Downloads/DiB_Interview_Synthesis_Master.docx\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/context/import/DiB_Interview_Synthesis_Master.docx\" && ls -la \"/Users/jackienagel/Desktop/Synnovatia AIOS/context/import/\")"
     ]
   }
 }
