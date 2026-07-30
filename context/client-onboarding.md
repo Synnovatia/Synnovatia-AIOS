@@ -48,6 +48,10 @@ All three notification patterns were confirmed via a live test on 2026-07-16 (te
 - **Local CSV over HubSpot properties** — the HubSpot MCP connector available here can't create new property definitions, so tracking lives in `data/onboarding/tracking.csv` instead, matching the pattern already used by `client-reengagement/`
 - **Daily polling, not instant/webhook** — consistent with how every other automation here runs (scheduled Claude tasks, not always-on listeners)
 
+## Known Issue (2026-07-29)
+
+`onboarding-daily-check` missed a real Closed Won deal (Dianne Pearce, deal id 63125388426) across at least 2 daily runs — no welcome draft was created, nothing was flagged to Jackie. The deal itself was valid and trivially discoverable via the exact documented search (confirmed manually), so this wasn't a HubSpot data or query problem. Best available explanation: scheduled/background runs may need the HubSpot connector's tool approval pre-granted, and a permission prompt can silently block a run without surfacing anything to Jackie. Fixed manually for this case (welcome draft created, tracking.csv row added). If this recurs, click "Run now" on the task from the Scheduled sidebar to lock in approval — there's no tool available to Claude that can trigger that directly.
+
 ## Future Ideas (not built)
 
 - The Client Profile form captures rich business data (revenue, industry, goals) that could enrich the HubSpot contact/deal record automatically once the checklist logic is already touching it
