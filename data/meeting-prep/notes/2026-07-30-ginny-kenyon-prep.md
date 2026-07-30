@@ -57,4 +57,44 @@ Given she has no active marketing motion today, start with #1 (email to existing
 
 ---
 
-> Note: her 83rd birthday and a possible succession/sale conversation came up as a private note from the 2026-07-07 call — not part of today's sales-strategy agenda, not to be raised unless she brings it up.
+## Post-Call Notes (2026-07-30)
+
+> Source corrected 2026-07-30: pulled the actual **Fathom** recording (id 168904388, [fathom.video/calls/765109200](https://fathom.video/calls/765109200)) — full summary + transcript, not Zoom's AI Companion (which had only caught a stray "lipstick" comment on this call). Fathom is the right tool for all post-meeting recaps going forward, not Zoom.
+
+**Why CDU "never took off" — the real reason:** not just under-marketing. A website migration from WordPress to Duda broke all the Moodle course links and **halted sales for months**. Ginny's EA **Brian** has since fixed the links and Ginny re-reviewed/updated all course content in the process (useful timing, since some drug/treatment info had aged). Before the breakage, she'd sold "100 or 200 at most" — so the product has *some* sell-through history, it just got knocked out technically, on top of one-on-one sales already underperforming (prospects "lack funds, business sense, or sales ability," Constant Contact articles generated no leads, past webinars had poor attendance).
+
+**Course platform correction:** courses live on **Moodle** (the LMS), not "Noodle" — Kenyon Education's Wix store page is just the storefront/checkout, Moodle is where the actual 40+ manuals/courses are hosted. Co-written with University of Washington nurse educators.
+
+**The core strategic pivot discussed:** move from one-on-one retail sales (not working) to a **"one-to-many" B2B model** — selling to home health franchises and large agencies rather than individual small agencies.
+
+**The case study/proof point (nail down as a marketing asset):**
+- A 164-bed nursing home Ginny consulted for paid a **$26,000 fine for 16 preventable CHF/COPD readmissions** in 6 months
+- She trained all 32 CNAs on CDU courses → **zero readmissions for 3 years**, staff turnover dropped **80% → 0%**, recruiting budget eliminated
+- Used laminated "red flag" symptom cards as a companion tool for early intervention
+- Nuance: nursing homes are where the *proof* came from, but they're **not the future target** — tight margins make them a harder sell going forward (they could afford CDU only because it offset recruiting costs). The B2B pivot targets franchises/large home health agencies instead.
+
+**Pricing — now resolved, not open:**
+- **Standard: ~$75/seat** (Ginny's own research put the market range at $75–$300)
+- **Bulk: $25/seat for 100+ seats** ($2,500+ total) — this is the *franchise* discount tier, not a change/replacement of the $75 standard rate
+- **New idea raised: white-label option** — one-time fee + per-seat royalty, letting a franchise brand CDU as their own
+
+**Franchise/ABC thread — fuller picture:** Ben, who Ginny helped start his agency 20 years ago, is now an **Always Best Care (ABC) franchisee doing ~$10M/year**. He reconnected with her last year and invited her to his open house, where she mentioned chronic disease education — he was especially interested in the **Culinary Arts** course. Plan: Ginny gives Ben **5 free seats** to field-test with his staff/aides, then he connects her with ABC's actual decision-maker for a broader franchise conversation. Housekeeping course is ~2/3 built in Moodle; Culinary Arts is started but not yet built — Brian estimates both **under a week** once in progress.
+
+**CHAP thread:** Ginny already sent her manuals to CHAP (Community Health Accreditation Partner — Home Health/Hospice/Medicare) for review, and floated a chronic-disease-education webinar idea to **Denise**, CHAP's education-division director. Not yet scheduled — validates strategy #6 above but needs an actual push to make it real.
+
+**Former private-duty clients:** most of Ginny's past customers were private-duty/non-skilled agencies — she noted they still need this training for competitive differentiation with referral sources, even without the same reimbursement-linked urgency as Medicare-certified agencies.
+
+**Translation:** Jackie raised this near the end as a parking-lot idea — if the franchise/subscription model gets traction, translating courses into another language could be a natural next expansion. Explicitly TBD, not discussed in depth.
+
+**Action items:**
+- **Ginny:** contact Ben to gauge ABC interest and offer him 5 free seats
+- ~~**Jackie:** email Ginny the AI-generated franchise-contacts research~~ — **sent 2026-07-30, 1:40pm PT** ("Consideration: Plan of Action for Chronic Disease University")
+- **Brian (Ginny's EA):** finish the Moodle build-out for Housekeeping within about a week
+
+**Also noted:** Ginny turns **83 on August 11, 2026**.
+
+**Follow-up:** reminder scheduled for 2026-08-06 to prompt Jackie to send Ginny a follow-up email within the 7-day window.
+
+---
+
+> Note: her 83rd birthday (now confirmed: **August 11**) and a possible succession/sale conversation came up as a private note from the 2026-07-07 call — not part of the sales-strategy agenda, not to be raised unless she brings it up.
