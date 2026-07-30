@@ -48,6 +48,11 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 | Side Plank | 2 x 20-30 sec/side |
 | Single-Arm Suitcase Carry | 3 x 40-60 ft/side |
 | Band Face Pull | 3 x 12-15 |
+| Dumbbell Lateral Raise | 3 x 12-15 |
+
+**Weight cap (2026-07-30):** Dumbbell Overhead Press — hold at 10 lb max, don't progress weight past this even after hitting the top of the rep range.
+
+**Added 2026-07-30:** Dumbbell Lateral Raise, added once Overhead Press hit its rep ceiling at the 10 lb cap. Targets the shoulder (medial deltoid) from a different angle than pressing, so it gives somewhere new to progress without touching the capped exercise. Isolation movement, so lighter weight/higher reps than the compound lifts — start light (5-8 lb) since it's new.
 
 ---
 
