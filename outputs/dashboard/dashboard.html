@@ -410,6 +410,26 @@
     font-style: italic;
     padding: 6px 0;
   }
+  .quickadd-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+  }
+  .quickadd-text {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 14.5px;
+    color: var(--fg);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--surface-line);
+    outline: none;
+    padding: 2px 0;
+  }
+  .quickadd-text::placeholder { color: var(--fg-soft); }
+  .quickadd-text:focus { border-bottom-color: var(--accent-2); }
+  .quickadd-text.is-done { text-decoration: line-through; color: var(--fg-soft); }
   .brief-shape {
     font-family: Arial, sans-serif;
     font-size: 13px;
@@ -538,6 +558,17 @@
 
     <div class="card reminders-card" id="remindersCard">
       <h3 class="eyebrow">Reminders</h3>
+
+      <div class="rem-section">
+        <h4>Quick Add</h4>
+        <ul class="rem-list">
+          <li><div class="quickadd-row"><input type="checkbox" class="rem-check quickadd-check" data-slot="0"><input type="text" class="quickadd-text" data-slot="0" placeholder="Add something..."></div></li>
+          <li><div class="quickadd-row"><input type="checkbox" class="rem-check quickadd-check" data-slot="1"><input type="text" class="quickadd-text" data-slot="1" placeholder="Add something..."></div></li>
+          <li><div class="quickadd-row"><input type="checkbox" class="rem-check quickadd-check" data-slot="2"><input type="text" class="quickadd-text" data-slot="2" placeholder="Add something..."></div></li>
+          <li><div class="quickadd-row"><input type="checkbox" class="rem-check quickadd-check" data-slot="3"><input type="text" class="quickadd-text" data-slot="3" placeholder="Add something..."></div></li>
+          <li><div class="quickadd-row"><input type="checkbox" class="rem-check quickadd-check" data-slot="4"><input type="text" class="quickadd-text" data-slot="4" placeholder="Add something..."></div></li>
+        </ul>
+      </div>
 
       <div class="rem-section">
         <h4>Today &middot; Thu Jul 30</h4>
@@ -851,6 +882,31 @@
       state[id] = box.checked;
       row.classList.toggle('is-done', box.checked);
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
+    });
+  });
+
+  // Quick Add — 5 freeform slots for things that come up during the day, persisted via localStorage
+  var QUICKADD_KEY = 'synnovatia-dashboard-quickadd';
+  var quickAddState = [];
+  try { quickAddState = JSON.parse(localStorage.getItem(QUICKADD_KEY)) || []; } catch (e) { quickAddState = []; }
+
+  document.querySelectorAll('.quickadd-row').forEach(function(row) {
+    var checkbox = row.querySelector('.quickadd-check');
+    var text = row.querySelector('.quickadd-text');
+    var slot = parseInt(text.dataset.slot, 10);
+    var saved = quickAddState[slot] || { text: '', checked: false };
+    text.value = saved.text;
+    checkbox.checked = saved.checked;
+    text.classList.toggle('is-done', saved.checked);
+
+    function saveQuickAdd() {
+      quickAddState[slot] = { text: text.value, checked: checkbox.checked };
+      localStorage.setItem(QUICKADD_KEY, JSON.stringify(quickAddState));
+    }
+    text.addEventListener('input', saveQuickAdd);
+    checkbox.addEventListener('change', function() {
+      text.classList.toggle('is-done', checkbox.checked);
+      saveQuickAdd();
     });
   });
 })();

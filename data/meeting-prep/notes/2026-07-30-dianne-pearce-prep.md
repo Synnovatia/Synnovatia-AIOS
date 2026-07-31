@@ -44,6 +44,48 @@ A prelude ("Warriors With Lipstick") — emotional, first-person, names her gran
 
 (See Goals & Intentions above — encouragement first, clarity on next steps every call.)
 
+## Possible Publishers (step 4 territory — not today's agenda)
+
+Researched 2026-07-30 in case it comes up; her own sequence puts this after plan/format/content, so likely premature to raise proactively.
+
+- **[She Writes Press](https://shewritespress.com/submit/)** — best fit. Hybrid publisher built specifically around women's memoir/voices, hundreds of women's memoirs in catalog. $40 submission fee, first 50 pages + chapter summaries via [Submittable](https://shewritespress.submittable.com/submit); two rounds of editorial feedback either way.
+- **SparkPress** — She Writes Press's sister imprint, same hybrid model.
+- **[Atmosphere Press](https://atmospherepress.com/best-hybrid-publishers/)** — selective hybrid publisher, not women-specific, known for editorial quality; a good comparison point.
+
+No press found that specializes narrowly in "true stories" as its own category — that language tends to live inside memoir/hybrid publishers generally, not as a standalone niche.
+
 ---
 
-> Standalone prep note — not part of the automated `pre-meeting-objective-check`/`post-meeting-recap-check` system in `context/meeting-prep.md` (that system is for existing strategy-consulting clients; this is a book-coaching engagement). Updated 2026-07-29 after reviewing the full manuscript-in-progress in Google Drive, replacing the earlier summary based only on the coaching-questions and prelude docs.
+## Post-Meeting Recap (2026-07-30)
+
+> Source: Fathom recording (id 168973535, [fathom.video/calls/767572454](https://fathom.video/calls/767572454)), "Finalize book strategy and payment logistics." Good news — several of the open questions in this prep note got resolved live.
+
+**Structure decided (resolves the "name the gap" agenda item):**
+- **Voice:** first-person "I" for Marta's section, with a hybrid pull-back to third person for context ("Marta went...") — modeled on the book *Princess*
+- **Organization:** three sections (Marta, Lillian, Dianne), each broken into chronological **"phases"** (e.g. "Marta the Child," "Marta the Adolescent"), each phase containing individual story chapters with descriptive, story-driven titles (e.g. "Marta and the Big Bad Wolf")
+- **Process confirmed as "design-build":** write all the stories first, decide afterward whether it's one book or a series
+
+**New story details surfaced (fills in several of the open placeholders in Marta's draft):**
+- Marta born 1876; mother died when Marta was 5
+- The wolf-attack chapter ("Little Red Riding Hood in North Dakota," marked "finish this chapter Dianne") is resolved: Marta protected her siblings from a wolf attack at 16
+- Cleared land in North Dakota with a teacher, deed at $6/acre; left a bad marriage in the US, met Dianne's grandfather in Canada; became a seamstress in Bellingham with help from a couple met on a train (matches the "Marta, Her Own Business" chapter heading already in the draft); suspected her sisters in San Francisco were running a brothel
+- Marta's closing line for her own section: *"I am a warrior with lipstick."*
+- Lillian: sold pies Marta baked during the Depression, slept on a Greyhound bus-station counter overnight; served during the war while her husband flew; threw a man down the stairs in South America for trying to cheat her
+- Dianne: worked jobs including bus driver and rose-seller to pay for school (matches her own raw-idea list); the "Uber that wasn't" Mexico story confirmed as one she wants in
+
+**Publishing:** leaning hybrid over traditional — traditional (e.g. HarperCollins) offers an advance, ghostwriter, and full press support but requires an existing platform/following, hard for a new author; hybrid (e.g. **She Writes Press**, already flagged above) specializes in women's memoirs with professional support and distribution, cost structure still to be nailed down. Jackie's own next step lines up directly with the research already done in this file — **she'll dig further into hybrid publishers at the San Diego Book Festival, Aug 22.**
+
+**Research to do (Dianne):**
+- Ancestry.com profile — find Foregard family records, Marta's father's name, the North Dakota farm location
+- Ellis Island ship manifests for the family's arrival in New York
+- Interview relatives — Graham, Lynn, Annie June's daughter
+
+**Action items:**
+- **Dianne:** pay the $220 USD (~$300 CAD) coaching fee via Wise once home; do the research above; begin writing Marta's section in first-person/phase structure; send writing samples to Jackie for feedback; propose meeting dates for late Aug/early Sept
+- **Jackie:** send the Wise payment link; send Dianne a calendar link for the next meeting; research hybrid publishers at the book festival (Aug 22)
+
+**Reminder set:** one-time check-in scheduled for 2026-08-06 — writing progress and whether she's found clarity on the new phase/voice structure.
+
+---
+
+> Standalone prep note — not part of the automated `pre-meeting-objective-check`/`post-meeting-recap-check` system in `context/meeting-prep.md` (that system is for existing strategy-consulting clients; this is a book-coaching engagement). Updated 2026-07-30 with the actual post-meeting recap from Fathom.
