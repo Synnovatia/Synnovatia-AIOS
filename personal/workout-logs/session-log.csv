@@ -17,3 +17,4 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-07-28,Strength (Day A),62,111,not captured,201,"Reported via Welltory: 62 min, avg HR 111, 201 MET-minutes - lower HR/METs than the two prior Day A/B sessions (123-131 avg HR, 345-356 MET-min), consistent with more experimental/lower-intensity work between sets today. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv."
 2026-07-30,Hill Warm-up,17,111,not captured,74,"0.7 miles, reported avg pace 25:50/mile."
 2026-07-30,Strength (Day B),49,119,not captured,225,"Reported via Welltory: 49 min, avg HR 119, 225 MET-minutes. Per-set detail (24 sets across 8 exercises) logged separately in data/strength-training-log.csv."
+2026-08-01,Walk,110,113,not captured,325,"5.4 miles, computes to 20:22/mile. HRV not reported. Longer than the calendar's planned 4-5 mile/90-min block."

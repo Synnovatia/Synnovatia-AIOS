@@ -8,6 +8,37 @@
 
 ---
 
+## 2026-08-01
+
+### Writing Style, Academic, and Firecrawl Modules Installed
+- Installed the Writing Style module (`.claude/skills/writing-style/`): bans 40+ AI-tell words, enforces 12 plain-writing rules, and runs a self-check before any prose output. Tested against a sample paragraph, passed on em dashes, banned vocabulary, sentence-length variety, and specificity.
+- Scanned all 23 module zips in `~/Desktop/Library/` and gave Jackie a tiered recommendation (install now, good add-ons, check for overlap first, skip, hold off). Flagged OpenClaw AI Employee specifically as a different category of risk (autonomous agents on remote cloud servers, ongoing cost, no human in the loop) rather than recommending it outright.
+- Installed Academic (`.claude/skills/academic/`, `scripts/academic/client.py`): OpenAlex/Unpaywall paper search, no API key needed, tested live against real 2024 papers.
+- Installed Firecrawl (`.claude/skills/firecrawl/`): needed Node.js and npm, neither was on this machine, so installed both via nvm (v24.18.1) without Jackie ever touching a terminal. The account signup and API key were hers to handle, per the standing rule against Claude entering API keys anywhere. Added an empty `FIRECRAWL_API_KEY=` placeholder to `.env` for her to fill in, tested with a real scrape once she had. Added `.firecrawl/` to `.gitignore`.
+- `CLAUDE.md` updated to reflect all three new modules.
+
+### Dashboard Quick Add Self-Clears Checked-Off Items
+- Jackie asked for checked-off Quick Add items to clear automatically on each dashboard refresh, since that widget's state lives only in the browser's `localStorage`, not in the HTML file itself. Added a small JS change to both `dashboard.html` and `dashboard-fragment.html`: on load, any item marked checked gets reset to blank before the inputs populate. Verified with a local HTTP server (the Browser pane's `file://` preview turned out to render static snapshots with no real JS execution, a dead end worth remembering for future local-file testing) by seeding a checked item and an unchecked one, reloading, and confirming only the checked one cleared.
+
+### Morning Brief Rendered
+- Ran the `morning` skill for 2026-08-01, a wide-open Saturday with a single 4-5 mile walk on the calendar and nothing pending in email.
+
+### Workout Logged
+- Logged the day's walk to `personal/workout-logs/session-log.csv`: 5.4 miles, 110 minutes, avg HR 113, 325 MET-minutes, computing to a 20:22/mile pace, longer than the calendar's planned 4-5 mile block.
+
+### Metrics Checked, Unchanged
+- Confirmed Stripe numbers were already current from the morning's automated collection ($0 MTD, $11,785 YTD, 48 customers all-time). Jackie confirmed the rest of the manual figures (income, mastermind headcounts, retainer client count) were unchanged from the July 20 snapshot, so `current-data.md` and `key-metrics.md` were left as-is.
+
+### One-Time Reminder Scheduled: VC Account / EDD / Fed Payment
+- Set a one-time scheduled task (`vc-account-edd-fed-check`) firing 2026-08-06 at 8am to text Jackie's phone via iMessage (310-809-6232, the confirmed reliable channel), reminding her to check the VC account transfer and confirm the EDD and Federal tax payments clear the next day.
+
+### Positioning Work: Name Confirmed, Growth-Plateau Model Rewritten, Brief Fully Reviewed
+- Scraped the live synnovatia.com homepage via Firecrawl and saved it as a before-snapshot for the rebrand (`outputs/website-redesign/2026-08-01-live-homepage-before-snapshot.md`), confirming the old "Messy Middle / Clarity, Focus, Strategy" positioning is still what's publicly live.
+- Ran a full naming session to give the positioning itself a name, distinct from "Different Is Better Than Better" (the research study name, not the positioning). Worked through several rounds (Strategic Closeness, Strategic Presence, Peer/Perspective mashups, several endings) before landing on the confirmed name: **Strategic Perspective You Feel From the First Conversation**. Full edit trail, including what got rejected and why, is in `plans/2026-07-28-positioning-statement-work.md`.
+- Reviewed the older `Stages_of_Business_Growth&Development_REV_Aug2018.docx` (Google Drive, no pandoc or LibreOffice on this machine, extracted text by parsing the docx XML directly) and used its content, not its revenue bands, to sharpen the three-wall growth-plateau model in `outputs/positioning/positioning-brief.md`: documentation gaps and underused tech at $250K-$400K, paper-process-not-a-real-system plus poor hiring at $750K-$1M, and the entrepreneurial-to-professionally-managed-firm shift at $3M-$4M. Rewrote the section to read as one unified model rather than a patchwork citing the old document, and moved that provenance into the plan file instead.
+- Reviewed the full positioning brief section by section with Jackie: both pillars (Relational Depth, Wisdom/Breadth/Depth), supporting differentiators, the Experience Reveals the Difference meta-point, and Craig Ullom's messaging principles all confirmed as still accurate.
+- Checked Gmail for the status of the one open data-quality gap (Wilma Naschin's interview, the only completed-interview gap in the $250K-$400K band): the outreach was actually sent 2026-07-30, not just drafted, with no reply yet. Updated the brief's data-quality notes to reflect the real status.
+
 ## 2026-07-30
 
 ### Dashboard — Quick Add Widget

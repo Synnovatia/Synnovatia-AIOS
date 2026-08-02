@@ -119,12 +119,18 @@ These are how you know your EVOLV-OS is working:
 │   ├── _index.md            # Documentation routing index
 │   └── _templates/          # Templates for creating new docs
 ├── .claude/commands/        # Slash commands — capture.md, develop.md, schedule.md (Content Pipeline)
+├── .claude/skills/writing-style/ # Anti-AI-slop writing enforcement, auto-runs on all prose (installed 2026-08-01)
+├── .claude/skills/academic/ # Academic paper search via OpenAlex/Unpaywall, free, no key (installed 2026-08-01)
+├── .claude/skills/firecrawl/ # Web scrape/search/crawl CLI, needs FIRECRAWL_API_KEY in .env (installed 2026-08-01)
 ├── module-installs/         # EVOLV-OS modules — install by telling Claude
 │   ├── context-os/          # Context layer (install first)
 │   ├── infra-os/            # Version control + documentation
 │   ├── data-os/             # Business data pipeline
 │   ├── intel-os/            # Meeting + Slack intelligence
-│   └── content-pipeline-v1/ # Content intelligence system (installed 2026-07-27)
+│   ├── content-pipeline-v1/ # Content intelligence system (installed 2026-07-27)
+│   ├── writing-style/       # AAA Accelerator module — banned-word list + 12 rules + self-check (installed 2026-08-01)
+│   ├── academic/            # AAA Accelerator module — OpenAlex/Unpaywall paper search (installed 2026-08-01)
+│   └── firecrawl/           # AAA Accelerator module — web scraping/search CLI (installed 2026-08-01)
 ├── client-reengagement/     # 6-month client check-in cadence (176-client roster, migrated 2026-07-11)
 │   ├── README.md            # Full weekly workflow
 │   ├── data/                 # roster.csv, due_now.csv, outreach_log.csv, meeting_notes.csv
@@ -268,7 +274,7 @@ Cowork can run recurring tasks automatically. Once DataOS or IntelOS is installe
 
 Claude will help you configure it as a Cowork scheduled task — no cron jobs or scripts needed.
 
-**Local vs. cloud:** Most scheduled tasks in this workspace are local — they run on this Mac and require the Cowork app to be open (if it's closed at the scheduled time, they run on next launch). For anything that must run reliably regardless of whether this app is open — and where you want visibility into whether it actually ran — say so, and Claude can set up an Anthropic **cloud routine** instead (via the `/schedule` skill). Cloud routines run on Anthropic's servers, show their own run history at [claude.ai/code/routines](https://claude.ai/code/routines), but cannot read/write local files — they can only reach the outside world through connected services (Gmail, HubSpot, etc.), so they're best suited to research-and-email or research-and-post tasks rather than anything that edits files in this workspace. The `what-im-watching-cloud` routine is the first example: it researches daily (Economic Trends + Growth & Scaling) and saves the result as a Gmail draft addressed to jackie@synnovatia.com (this connector can only create drafts, not send — same as every other email-touching automation in this workspace). Both the dashboard and the weekday morning brief pick it up from that draft and render it as a "What I'm Watching" section with a collapsible (`<details>`/`<summary>`) block per theme, so it doesn't grow the page unbounded.
+**Local vs. cloud:** Most scheduled tasks in this workspace are local — they run on this Mac and require the Cowork app to be open (if it's closed at the scheduled time, they run on next launch). For anything that must run reliably regardless of whether this app is open — and where you want visibility into whether it actually ran — say so, and Claude can set up an Anthropic **cloud routine** instead (via the `/schedule` skill). Cloud routines run on Anthropic's servers, show their own run history at [claude.ai/code/routines](https://claude.ai/code/routines), but cannot read/write local files — they can only reach the outside world through connected services (Gmail, HubSpot, etc.), so they're best suited to research-and-email or research-and-post tasks rather than anything that edits files in this workspace. The `what-im-watching-cloud` routine is the first example: it researches daily (Buyer Sentiment & Behavior + Growth & Marketing Tactics — PE/M&A and macro-data-release content deliberately excluded as of 2026-07-31) and saves the result as a Gmail draft addressed to jackie@synnovatia.com (this connector can only create drafts, not send — same as every other email-touching automation in this workspace). Both the dashboard and the weekday morning brief pick it up from that draft and render it as a "What I'm Watching" section with a collapsible (`<details>`/`<summary>`) block per theme, so it doesn't grow the page unbounded.
 
 ---
 

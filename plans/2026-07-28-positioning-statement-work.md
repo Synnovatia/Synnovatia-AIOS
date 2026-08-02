@@ -1,6 +1,36 @@
 # Positioning Statement Work — In Progress
 
-> Started 2026-07-28. Tight statement confirmed 2026-07-29 (see "Current Best Draft" below). Resume here — don't re-derive from scratch.
+> Started 2026-07-28. Tight statement confirmed 2026-07-29 (see "Current Best Draft" below). Positioning name confirmed 2026-08-01 (see "Positioning Name" section below). Growth-plateau wall model in `outputs/positioning/positioning-brief.md` rewritten/sharpened 2026-08-01 (see "Growth Wall Model — Source Note" below). Resume here — don't re-derive from scratch.
+
+## Growth Wall Model — Source Note (2026-08-01)
+
+The three-wall model in the positioning brief's "Who This Is For" section was sharpened this session using content (not revenue bands) from `Stages_of_Business_Growth&Development_REV_Aug2018.docx` (Google Drive → Marketing - Synnovatia → Core Business Assessment Update 2018) — an older internal framework with four stages (I–IV) and much broader bands (Stage I: $0–$500K, Stage II: $500K–$5M, Stage III: $5M–$40M, plus separate manufacturing-industry bands, Stage IV: Organizational Maturity, $40M+, not used).
+
+Its Stage I, II, and III map to the current $250K–$400K / $750K–$1M / $3M–$4M walls by content, not by dollar range — that mapping was Jackie's confirmed judgment call this session, not something the source document states. The brief itself no longer references the 2018 document directly (Jackie asked for it to read as one unified model, not a patchwork with citations) — this note is the only place that provenance lives now, so a future session doesn't need to re-derive where the supporting detail came from.
+
+Also folded in this session, not from the 2018 doc: poor hiring decisions as a recurring $750K–$1M issue (Jackie's own observation, not sourced from the framework).
+
+## Positioning Name — CONFIRMED 2026-08-01
+
+> **Strategic Perspective You Feel From the First Conversation**
+
+Not client-facing yet — undecided whether this becomes public copy or stays an internal/workspace label. Replaces "Different Is Better Than Better" (the research study name) as the actual name of the positioning itself; see `project_positioning-statement-needs-synthesis.md` for the original conflation problem this resolves.
+
+**Why this phrase:** Built to carry both pillars in one line rather than stapling them together as two separate halves.
+- "Strategic Perspective" — Pillar B (Objectivity Gap, 30,000-ft view, Two Funnels breadth+depth, Fortune 500-caliber thinking)
+- "You Feel From the First Conversation" — Pillar A (Human Peer Dynamic, Presence & Listening), plus the "Experience Reveals the Difference" meta-point (differentiation is hard to describe in advance, has to be felt) — and grounded in the real business fact that discovery calls already function as proof-of-concept, not just intake
+
+**Edit trail (2026-08-01):**
+- Started from a live-site scrape of synnovatia.com (saved as `outputs/website-redesign/2026-08-01-live-homepage-before-snapshot.md`) confirming the old "Messy Middle / Clarity, Focus, Strategy" positioning is still what's publicly live — this naming work is prep for replacing it.
+- First round of options (Fortune 500 Thinking Sized for You / Two Funnels / Big Picture Personal / Strategic Closeness / Peer with Perspective / Seasoned and Close) — Jackie picked "Strategic Closeness" as directionally right but flagged it as too vague, same instinct that killed "relational depth" as a standalone term during the original tight-statement work.
+- Sharpened to concrete alternatives: Fortune 500 Thinking One-on-One / **Strategic Presence** (sourced directly from the real "Presence & Listening" theme name, not invented) / Boardroom Thinking Real Conversations. Jackie chose Strategic Presence.
+- Asked to mash "Strategic Presence" with "Peer/Perspective": tried straight parallel splits (Peer Presence, Strategic Perspective) and a crossed version (The Perspective of a Peer, the Presence of a Strategist). Jackie kept "Strategic Perspective" from this round but flagged the relational half (peer/personal presence) as needing more work.
+- Three replacement options for the relational half, all tied to specific research substance rather than restating "presence" again: "Someone Who Actually Listens" (Presence & Listening), "A Human in the Room" (Human Peer Dynamic), "You Can Actually Feel" (Laura Labovich's real quote: "you always leave a session feeling better than when you came in"). Jackie picked "You Can Actually Feel" but flagged it as underspecified — a feeling with no anchor.
+- Sharpened with a concrete anchor point: "From the First Conversation" (ties to the discovery-call-as-proof-of-concept implication of "Experience Reveals the Difference"), "From the Start" (shorter, weaker anchor), "Immediately" (rejected — generic ad-copy intensifier, same category as words her own voice rules already push against, loses the concrete business-fact anchor). Jackie picked "From the First Conversation."
+- Considered swapping "Feel" for "Experience" (which is literally the word in the "Experience Reveals the Difference" theme name) — recommended keeping "Feel": plainer, closer to Laura's actual words, and "experience" risks reading as generic marketing language ("experience the difference"). Jackie agreed.
+- Considered adding an outcome/benefit clause to the name itself — recommended against it. The outcome already lives in the confirmed tight statement ("sized to get your business growing again"); folding it into the name risks the same over-density the original tight-statement work explicitly backed away from. The name's job is to be a reusable handle; the tight statement's job is to carry the outcome. If this phrase is ever used as a standalone hero headline with nothing else on the page, it should sit next to the tight statement (or a short version of it), not absorb it. Jackie agreed.
+
+---
 
 ---
 
@@ -71,9 +101,10 @@ Jackie confirmed the 5 Strong themes cluster into two pillars (this matches — 
 ## Still To Do
 
 1. ~~Get explicit confirmation on the tight statement.~~ **Done 2026-07-29** — see confirmed draft above.
-2. ~~Build the fuller positioning brief.~~ **Started 2026-07-29** — see `outputs/positioning/positioning-brief.md`. Covers: two pillars (Relational Depth, Wisdom/Breadth/Depth) with full proof points, supporting differentiators deferred from the tight statement (no-program, individualized attention, practical collaboration, measurable results, scarcity, genuine/fad-free), the "Experience Reveals the Difference" discovery-call implication, Craig Ullom's messaging principles, the three-plateau growth-stall framework as the problem-first hook, and honest data-quality caveats (no Dominant-tier theme, Warmth mislabeled Strong, 5 interviews still pending per the source doc's roster). Review with Jackie before treating as final.
-3. Adapt into website-ready copy (homepage/About page).
-4. Once finalized, go back and fix every place in the workspace that currently conflates "Different Is Better Than Better" with the positioning itself (`content/strategy.md`'s Content Rules and Competitive Positioning sections, `CLAUDE.md`'s Context Summary, `context/brand-voice.md`'s Positioning Thesis section, `context/business-info.md`) — see the memory file for the full list of places this shows up.
+2. ~~Name the positioning itself (distinct from "Different Is Better Than Better," the research study name).~~ **Done 2026-08-01** — see "Positioning Name" section above.
+3. ~~Build the fuller positioning brief, then review it section by section with Jackie.~~ **Done 2026-08-01.** See `outputs/positioning/positioning-brief.md` — two pillars, supporting differentiators, the "Experience Reveals the Difference" discovery-call implication, Craig Ullom's messaging principles, the growth-plateau wall model (rewritten this session, see "Growth Wall Model — Source Note" above), and honest data-quality caveats, all reviewed and confirmed. Only open thread: Wilma Naschin's interview (outreach sent 2026-07-30, no reply yet) is still the one piece without direct client validation — not a blocker, just noted as a working draft in the brief itself.
+4. Adapt into website-ready copy (homepage/About page).
+5. Once finalized, go back and fix every place in the workspace that currently conflates "Different Is Better Than Better" with the positioning itself (`content/strategy.md`'s Content Rules and Competitive Positioning sections, `CLAUDE.md`'s Context Summary, `context/brand-voice.md`'s Positioning Thesis section, `context/business-info.md`) — see the memory file for the full list of places this shows up. The confirmed positioning name should replace "DiB" in these places where a name is actually needed, not just the tight statement.
 
 ## Third-Person "Synnovatia" Version (for reference, not chosen)
 
