@@ -21,6 +21,11 @@
 - Added `Edit(outputs/morning-brief/brief.html)` to `.claude/settings.json`; rewrote the `morning-brief` scheduled task to publish via `force: true` to its one stable artifact URL (safe here since it's the only editor) and to skip the generic skill's Bash/node/Playwright render-check steps entirely (no node on this Mac). Moved its cron from 6:20am weekdays to 6:15am weekdays to match `dashboard-daily-refresh` exactly. Updated the stale "7:10am" reference in `docs/_index.md` and added the new output folder to `CLAUDE.md`'s workspace structure.
 - Learned the scheduler caches tool approvals per task after a real run, which should also help this task stop pausing on prompts going forward.
 
+### VO2 Max Added to Tracking, First Interval Session Logged
+- Jackie upgraded her regular walk to structured walk/run intervals specifically to raise VO2 max (10-min warmup/cooldown bookending 3-minute walk/run segments), and reported the first reading: 26.2, against a goal of 30.
+- Added VO2 Max as a new tracked metric in `personal/health-goals.md` — a row in the Current Metrics summary plus its own "VO2 Max Tracking" table, since it updates whenever a fresh interval session produces a reading rather than on the weekly Sunday weigh-in cadence.
+- Logged the session itself to `personal/workout-logs/session-log.csv`: 51 minutes, avg HR 126, 282 MET-minutes, 3.3 miles (15:27/mile).
+
 ### Other Pending Changes (automated tasks from other sessions, bundled in at save time)
 - `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`: today's automated `dashboard-daily-refresh` run (6:15am) — fresh Stripe snapshot, refreshed Morning Brief/What I'm Watching cards.
 - `personal/health-goals.md`: 2026-08-02 automated weekly weigh-in — 144.8 lbs, 38% body fat, waist unchanged, HRV up to 26.

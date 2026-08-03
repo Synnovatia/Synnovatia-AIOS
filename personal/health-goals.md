@@ -4,7 +4,7 @@
 
 ---
 
-## Current Metrics (as of 2026-08-02)
+## Current Metrics (as of 2026-08-03)
 
 | Metric | Current | Goal | To Go |
 |---|---|---|---|
@@ -12,14 +12,22 @@
 | Body fat | 38% | 30% | 8 points |
 | Waist | 31 in | 28 in | 3 in |
 | HRV | 26 | — | — |
+| VO2 Max | 26.2 | 30 | 3.8 |
 
 ## How This Gets Tracked
 
 - **Weight / body fat / waist / HRV:** logged weekly via the existing Sunday 8am reminder (`weekly-weigh-in-reminder`) — report the numbers, Claude updates this file's history. HRV added to the weekly check-in 2026-07-19 (previously only tracked per-workout in the session log).
+- **VO2 Max:** added to tracking 2026-08-03, when Jackie upgraded regular walks to structured walk/run intervals (10-min warmup/cooldown bookending 3-minute walk/run segments) specifically to raise it. Not on a fixed cadence like the weekly weigh-in — update whenever a fresh reading comes in from an interval/VO2-focused session. See "VO2 Max Tracking" below for the history.
 - **Workouts and walks:** no direct connector exists for Welltory or fitness/health apps generally (checked the MCP registry 2026-07-15, nothing available) — same fragility issue as the earlier LinkedIn/Sprouts browser-automation attempts. Instead, report each workout/walk's average heart rate, average HRV, and METs as you go (any cadence — after each session or in a batch); Claude logs it to `personal/workout-logs/session-log.csv`. Periodically (e.g. weekly), Claude reviews the trend and suggests adjustments to the coming week's program to keep it aligned with the goals above.
 - The actual strength program lives in `personal/workout-plan.md`; session-level performance data lives in `personal/workout-logs/`
 - **Recovery walks read low on MET-minutes, and that's fine (confirmed by Jackie 2026-07-26).** Easy walks routinely log low MET figures (e.g. 18–72 MET-min) — that's the point of a recovery effort, not a Welltory error. Don't flag low METs on a clearly easy/short/low-HR walk. Still note genuine reconciliation problems (a pace that can't math out against distance and time).
 - **Training-week counting: a Sunday session counts toward the *upcoming* week, not the week just ended** (Jackie's preference, 2026-07-26). So the "Sessions logged this week" tally shouldn't retroactively grow on a Sunday from that day's own workouts.
+
+## VO2 Max Tracking
+
+| Date | VO2 Max | Session HR | Notes |
+|---|---|---|---|
+| 2026-08-03 | 26.2 | 126 avg | First tracked reading, from the first walk/run interval session (upgraded from a regular walk specifically to push this number toward the goal of 30). |
 
 ## History
 
