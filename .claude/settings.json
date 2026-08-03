@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__search_threads",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__list_drafts",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__search_crm_objects",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__list_events",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__get_thread",
+      "mcp__Claude_Browser__read_page",
+      "mcp__Claude_Browser__tabs_context",
+      "Bash(source .venv/bin/activate)",
+      "mcp__Claude_Browser__get_page_text",
+      "Bash(export NVM_DIR=$HOME/.nvm)",
+      "Bash(. $NVM_DIR/nvm.sh)",
+      "Bash(deactivate)",
+      "mcp__ccd_session_mgmt__get_session",
+      "mcp__claude-in-chrome__find",
+      "mcp__Claude_Browser__find",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__search_properties",
+      "mcp__36d88e54-7eb8-4d49-91b0-117bd5ed3313__read_file_content",
+      "mcp__36d88e54-7eb8-4d49-91b0-117bd5ed3313__search_files",
+      "mcp__f5e04d0d-75dc-4bb7-852e-dcef648c4d8d__search_meetings",
+      "Bash(python3 scripts/dashboard_revenue.py)",
+      "Edit(outputs/dashboard/dashboard.html)",
+      "Edit(outputs/dashboard/dashboard-fragment.html)",
+      "Edit(outputs/morning-brief/brief.html)",
+      "Artifact"
+    ]
+  }
+}

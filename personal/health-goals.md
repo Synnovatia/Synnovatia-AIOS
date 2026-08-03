@@ -4,14 +4,14 @@
 
 ---
 
-## Current Metrics (as of 2026-07-26)
+## Current Metrics (as of 2026-08-02)
 
 | Metric | Current | Goal | To Go |
 |---|---|---|---|
-| Weight | 146.4 lbs | 135–138 lbs | 8–11 lbs |
-| Body fat | 37.6% | 30% | 7.6 points |
+| Weight | 144.8 lbs | 135–138 lbs | 7–10 lbs |
+| Body fat | 38% | 30% | 8 points |
 | Waist | 31 in | 28 in | 3 in |
-| HRV | 24 | — | — |
+| HRV | 26 | — | — |
 
 ## How This Gets Tracked
 
@@ -28,6 +28,7 @@
 | 2026-07-15 | 143.5 lbs | 38.3% | 31.5 in | — | Baseline |
 | 2026-07-19 | 145 lbs | 38% | 31 in | 27 | HRV added to weekly check-in starting this entry |
 | 2026-07-26 | 146.4 lbs | 37.6% | 31 in | 24 | Weight up 1.4 lbs, body fat down 0.4 pts. Very active week (6 sessions incl. a 5.2-mi hike + two walks Sat). Morning-of HRV 24 — lowest of the three readings, consistent with accumulated training load. |
+| 2026-08-02 | 144.8 lbs | 38% | 31 in | 26 | Weight down 1.6 lbs from last week, body fat up 0.4 pts (roughly a wash net of the weight change). Waist unchanged. HRV back up to 26, the highest of the four readings so far, a good recovery sign after last week's heavy load. |
 
 ---
 

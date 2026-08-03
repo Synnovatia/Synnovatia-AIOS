@@ -8,6 +8,21 @@
 
 ---
 
+## 2026-08-03
+
+### Morning Brief Rendered, Then Moved to a Fixed Permission-Free Pipeline
+- Ran the day's automated morning brief (weekday scheduled task): a normal-paced Monday — a walk, an "AIOS Setup" call with Adrian Delli Colli at 10am, an Anna/Leon sync at 1pm, open before and after. One Needs Attention item (a Flume high-flow alert on the Front Blvd water line); no Resolved items. Included that morning's "What I'm Watching" (Buyer Sentiment & Behavior, Growth & Marketing Tactics).
+- Jackie asked for the brief to run at the same time as the dashboard, and for the recurring permission-prompt friction on unattended runs to be fixed for good. Root cause: each day's run wrote to a fresh scratchpad path and needed Bash/node/browser-tool calls that can't be pre-approved for a scheduled task with no one at the keyboard.
+- Fixed it to match the pattern that already works cleanly for `dashboard-daily-refresh`: found a stale, half-finished attempt at exactly this from 2026-08-01 (`outputs/morning-brief/brief.html` existed with a solid CSS/dark-mode scaffold but was never wired up) — extended its stylesheet with the What I'm Watching disclosure classes and made it the one fixed file the task edits in place every day, never regenerated from scratch.
+- Added `Edit(outputs/morning-brief/brief.html)` to `.claude/settings.json`; rewrote the `morning-brief` scheduled task to publish via `force: true` to its one stable artifact URL (safe here since it's the only editor) and to skip the generic skill's Bash/node/Playwright render-check steps entirely (no node on this Mac). Moved its cron from 6:20am weekdays to 6:15am weekdays to match `dashboard-daily-refresh` exactly. Updated the stale "7:10am" reference in `docs/_index.md` and added the new output folder to `CLAUDE.md`'s workspace structure.
+- Learned the scheduler caches tool approvals per task after a real run, which should also help this task stop pausing on prompts going forward.
+
+### Other Pending Changes (automated tasks from other sessions, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`: today's automated `dashboard-daily-refresh` run (6:15am) — fresh Stripe snapshot, refreshed Morning Brief/What I'm Watching cards.
+- `personal/health-goals.md`: 2026-08-02 automated weekly weigh-in — 144.8 lbs, 38% body fat, waist unchanged, HRV up to 26.
+- `context/hubspot-marketing.md`, `outputs/hubspot-marketing/2026-08-02-active-engagers-*`: 2026-08-02 automated `hubspot-active-engagers-draft` run — Active Engagers count corrected to 330 (was 340), finalized the 7/22 send stats, moved the draft cadence to Thursdays 6am, and drafted the next Active Engagers email (Word doc + markup + What I'm Watching draft).
+- `scripts/dashboard_revenue.py`: fixed zero-argument revenue-query script (created 2026-08-02) so `dashboard-daily-refresh` invokes the exact same command every morning instead of an ad hoc one-liner.
+
 ## 2026-08-01
 
 ### Writing Style, Academic, and Firecrawl Modules Installed

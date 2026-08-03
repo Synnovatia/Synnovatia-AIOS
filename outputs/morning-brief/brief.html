@@ -128,6 +128,48 @@ body {
   padding: 4px 0 0 0;
 }
 
+details.watch-theme { margin-bottom: 14px; }
+details.watch-theme summary {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2E2C27;
+  padding: 4px 0;
+  list-style: none;
+}
+details.watch-theme summary::-webkit-details-marker { display: none; }
+details.watch-theme summary::before {
+  content: "\25B8";
+  display: inline-block;
+  width: 16px;
+  color: #B4B3A8;
+  font-size: 12px;
+}
+details.watch-theme[open] summary::before { content: "\25BE"; }
+details.watch-theme .watch-items { padding-left: 16px; margin-top: 8px; }
+.watch-item { padding: 14px 0; }
+.watch-item + .watch-item { border-top: 1px solid #E4E3DC; }
+.watch-item-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2E2C27;
+  margin: 0 0 6px 0;
+}
+.watch-item-title a { color: inherit; text-decoration: underline; text-decoration-color: #B4B3A8; text-underline-offset: 2px; }
+.watch-item-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6B6A63;
+  margin: 0 0 6px 0;
+}
+.watch-item-why {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6B6A63;
+  margin: 0;
+}
+.watch-item-why span { color: #2E2C27; font-weight: 600; }
+
 @media (prefers-color-scheme: dark) {
   body { background: #1C1B18; color: #EDEBE4; }
   .band-top { background: #211F1B; border-bottom-color: #34322C; }
@@ -147,6 +189,13 @@ body {
   .calm-line { color: #9C9A90; }
   .terrain-stroke { stroke: #EDEBE4 !important; }
   .terrain-dot { fill: #EDEBE4 !important; }
+  details.watch-theme summary { color: #EDEBE4; }
+  .watch-item + .watch-item { border-top-color: #34322C; }
+  .watch-item-title { color: #EDEBE4; }
+  .watch-item-title a { text-decoration-color: #6B6A63; }
+  .watch-item-body { color: #9C9A90; }
+  .watch-item-why { color: #9C9A90; }
+  .watch-item-why span { color: #EDEBE4; }
 }
 :root[data-theme="dark"] body { background: #1C1B18; color: #EDEBE4; }
 :root[data-theme="dark"] .band-top { background: #211F1B; border-bottom-color: #34322C; }
@@ -164,6 +213,13 @@ body {
 :root[data-theme="dark"] .calm-line { color: #9C9A90; }
 :root[data-theme="dark"] .terrain-stroke { stroke: #EDEBE4 !important; }
 :root[data-theme="dark"] .terrain-dot { fill: #EDEBE4 !important; }
+:root[data-theme="dark"] details.watch-theme summary { color: #EDEBE4; }
+:root[data-theme="dark"] .watch-item + .watch-item { border-top-color: #34322C; }
+:root[data-theme="dark"] .watch-item-title { color: #EDEBE4; }
+:root[data-theme="dark"] .watch-item-title a { text-decoration-color: #6B6A63; }
+:root[data-theme="dark"] .watch-item-body { color: #9C9A90; }
+:root[data-theme="dark"] .watch-item-why { color: #9C9A90; }
+:root[data-theme="dark"] .watch-item-why span { color: #EDEBE4; }
 :root[data-theme="light"] body { background: #FCFCFB; color: #2E2C27; }
 
 @media (max-width: 640px) {
@@ -183,32 +239,33 @@ body {
 
 <div class="band band-top">
   <div class="inner">
-    <div class="day-date">Saturday &middot; August 1 2026</div>
-    <h1 class="headline">The whole day is yours, Jackie &mdash; a walk this morning, then nothing else asking for you.</h1>
+    <div class="day-date">Monday &middot; August 3 2026</div>
+    <h1 class="headline">Two calls bookend the middle of the day, Jackie &mdash; morning and late afternoon are open.</h1>
 
     <svg class="drawing" viewBox="0 0 840 170" xmlns="http://www.w3.org/2000/svg">
-      <path class="terrain-stroke" d="M 0 108 C 60 108, 100 100, 140 92 C 180 100, 220 108, 280 109 C 360 110, 420 109, 480 108 C 540 108, 600 106, 660 100 C 700 96, 740 100, 780 104 C 800 106, 820 107, 840 108" fill="none" stroke="#2E2C27" stroke-width="2" stroke-linecap="round"/>
-      <circle class="terrain-dot" cx="140" cy="92" r="8" fill="#2E2C27"/>
-      <!-- birds: room to breathe -->
-      <path d="M 590 55 q 6 -8 12 0 q 6 -8 12 0" fill="none" stroke="#B4B3A8" stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M 615 68 q 6 -8 12 0 q 6 -8 12 0" fill="none" stroke="#B4B3A8" stroke-width="1.6" stroke-linecap="round"/>
-      <!-- clay accent: sun, open creative time -->
-      <circle cx="700" cy="98" r="9" fill="none" stroke="#C6613F" stroke-width="1.8"/>
-      <path d="M 700 82 L 700 86 M 686 98 L 690 98 M 710 98 L 714 98 M 690.5 88.5 L 693 91 M 707 91 L 709.5 88.5" stroke="#C6613F" stroke-width="1.6" stroke-linecap="round"/>
+      <path class="terrain-stroke" d="M 0 128 C 40 126, 70 122, 90 120 C 108 118, 112 108, 130 106 C 150 104, 155 118, 168 120 C 178 122, 185 118, 200 108 C 218 96, 232 92, 246 96 C 262 100, 270 112, 282 118 C 310 128, 340 130, 360 128 C 372 126, 378 110, 392 100 C 406 90, 418 92, 428 100 C 440 108, 444 122, 456 126 C 480 132, 520 132, 560 130 C 600 128, 630 126, 660 124 C 690 122, 730 124, 780 126 C 800 127, 820 128, 840 128" fill="none" stroke="#2E2C27" stroke-width="2" stroke-linecap="round"/>
+      <circle class="terrain-dot" cx="212" cy="102" r="9" fill="#2E2C27"/>
+      <circle class="terrain-dot" cx="408" cy="96" r="10" fill="#2E2C27"/>
+      <!-- clay accent: sun, open creative time in the afternoon -->
+      <circle cx="660" cy="55" r="13" fill="none" stroke="#C6613F" stroke-width="2"/>
+      <line x1="660" y1="30" x2="660" y2="22" stroke="#C6613F" stroke-width="2"/>
+      <line x1="660" y1="80" x2="660" y2="88" stroke="#C6613F" stroke-width="2"/>
+      <line x1="635" y1="55" x2="627" y2="55" stroke="#C6613F" stroke-width="2"/>
+      <line x1="685" y1="55" x2="693" y2="55" stroke="#C6613F" stroke-width="2"/>
     </svg>
 
     <div class="acts">
       <div class="act">
-        <div class="act-time">8:30 &ndash; 10 AM</div>
-        <div class="act-sentence">A 4&ndash;5 mile walk &mdash; the only thing on the calendar all day.</div>
+        <div class="act-time">8:30 &ndash; 11 AM</div>
+        <div class="act-sentence">A walk to start, then Adrian Delli Colli joins for an AIOS setup call.</div>
       </div>
       <div class="act">
-        <div class="act-time">10 AM &ndash; 5 PM</div>
-        <div class="act-sentence">Wide open. Nothing else booked &mdash; a real stretch to spend however you want.</div>
+        <div class="act-time">11 AM &ndash; 1 PM</div>
+        <div class="act-sentence">Open &mdash; nothing else on the calendar until early afternoon.</div>
       </div>
       <div class="act">
-        <div class="act-time">5 PM onward</div>
-        <div class="act-sentence">Open through the evening, ahead of lunch with Barbara and Jerry tomorrow at 11.</div>
+        <div class="act-time">1 &ndash; 2 PM</div>
+        <div class="act-sentence">Anna and Leon join for an hour, then the rest of the day is yours.</div>
       </div>
     </div>
   </div>
@@ -216,7 +273,70 @@ body {
 
 <div class="band band-bottom">
   <div class="inner">
-    <div class="calm-line">Nothing needs you this morning.</div>
+    <div class="section-heading">Needs Attention</div>
+    <ul class="item-list">
+      <li class="item">
+        <div class="item-num">1</div>
+        <div class="item-body">
+          <div class="item-title">Water's been running steadily at Front Blvd</div>
+          <div class="item-sentence"><span class="src">In a Flume alert this morning</span>, the Front Blvd line ran for 15 straight minutes averaging 7.38 gallons a minute &mdash; worth a quick check before it adds up.</div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="section-heading second">What I'm Watching</div>
+
+    <details class="watch-theme">
+      <summary>Buyer Sentiment &amp; Behavior (5)</summary>
+      <div class="watch-items">
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://www.nfib.com/news/press-release/new-nfib-survey-small-business-optimism-picks-up-in-june/" target="_blank" rel="noopener">NFIB Small Business Optimism Index Picks Up in June</a></p>
+          <p class="watch-item-body">The index rose 2.1 points to 97.4 in June, nearing its 52-year average, driven by improved expectations for business conditions and real sales. The Uncertainty Index fell slightly but stayed well above its historical average.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> a rebound in sales expectations paired with still-elevated uncertainty is the exact mixed signal clients are navigating right now &mdash; buyers are cautiously optimistic but still hedging, which argues for sales messaging that leads with risk-reduction, not just upside.</p>
+        </div>
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://institute.bankofamerica.com/economic-insights/small-business-checkpoint-july-2026.html" target="_blank" rel="noopener">Small Business Checkpoint: Signs of Improvement</a></p>
+          <p class="watch-item-body">Bank of America Institute's real-time transaction data shows small business profitability growth turned positive in June for the first time this year, even as gas/freight cost pressure and a "low-hire, low-fire" posture persist.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> profitability inflecting positive after a defensive year is a leading signal that $250K&ndash;4M service clients may finally have breathing room to invest in growth again &mdash; good timing to shift client conversations from cost-cutting to proactive strategy.</p>
+        </div>
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://www.uschamber.com/small-business/small-business-index-q2-2026" target="_blank" rel="noopener">Small Business Index Q2 2026</a></p>
+          <p class="watch-item-body">The U.S. Chamber's Index held roughly steady at 66.5, but investment plans stayed notably cautious: only 38% of owners plan to increase investment over the next year, down from 47% a year ago, with 57% citing inflation as a top concern.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> this is a buyer-behavior gap worth naming with clients directly &mdash; revenue expectations are up while capital investment intent is down sharply, meaning prospects may be more willing to fund tactical fixes than large strategic engagements right now.</p>
+        </div>
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://www.prnewswire.com/news-releases/us-consumer-confidence-edged-down-in-july-302836484.html" target="_blank" rel="noopener">US Consumer Confidence Edged Down in July</a></p>
+          <p class="watch-item-body">The Conference Board's index fell 1.4 points to 90.8, with the Present Situation Index down for a third straight month and rising references to food/grocery price concerns signaling pressure on discretionary spending.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> consumer caution tends to flow upstream to B2B service demand with a lag of a quarter or two &mdash; clients who sell into consumer-facing industries should expect softer bookings ahead, making now the time to shore up pipeline rather than wait for the slowdown to show up.</p>
+        </div>
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://corporatevisions.com/blog/b2b-buying-behavior-statistics-trends/" target="_blank" rel="noopener">B2B Buying Behavior in 2026: 57 Stats and Five Hard Truths</a></p>
+          <p class="watch-item-body">Buying committees have grown to 6&ndash;10+ stakeholders even on smaller deals, CFOs are now embedded in the process from the start rather than a final signoff, and 77% of buyers describe recent purchases as highly complex.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> this data skews toward larger enterprise deals, but the underlying trend &mdash; more people weighing in, more scrutiny earlier &mdash; is showing up in smaller consulting sales too. Worth building multi-stakeholder proof points into the sales process rather than pitching a single decision-maker.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="watch-theme">
+      <summary>Growth &amp; Marketing Tactics (3)</summary>
+      <div class="watch-items">
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://www.hubspot.com/state-of-marketing" target="_blank" rel="noopener">2026 State of Marketing Report</a></p>
+          <p class="watch-item-body">Surveying 1,500+ marketers, HubSpot finds SEO/website remains the top-ROI channel overall, brand distinctiveness and trust are becoming bigger growth drivers than raw content volume, and 40% of marketers now name lead quality as their top success metric.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> for a solo practice competing against louder, better-funded competitors, this validates a "fewer, better" content strategy &mdash; a distinct point of view matters more than volume, and lead quality is the metric worth coaching clients toward.</p>
+        </div>
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://www.searchenginejournal.com/enterprise-ai-search-report-branch-spa/575983/" target="_blank" rel="noopener">AI Search in 2026: Five Findings From 300 Enterprise Marketing Execs</a></p>
+          <p class="watch-item-body">89% of surveyed marketing leaders say AI-powered search has already improved marketing performance, and they project AI search traffic will jump from 35% to 50% of website traffic in 2026 &mdash; growing alongside traditional SEO, not replacing it.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> small service business owners often assume AI search is a "later" problem. This says the shift is already underway and rewards being found and cited by AI answer engines now &mdash; a low-cost, high-leverage tactic worth recommending to clients before larger competitors catch on.</p>
+        </div>
+        <div class="watch-item">
+          <p class="watch-item-title"><a href="https://growsurf.com/statistics/referral-marketing-statistics/" target="_blank" rel="noopener">Referral Marketing Statistics for 2026</a></p>
+          <p class="watch-item-body">88&ndash;92% of consumers trust recommendations from people they know above any other form of advertising, and referred customers convert at 3&ndash;5x other channels with 37% higher retention.</p>
+          <p class="watch-item-why"><span>Why it matters:</span> most $250K&ndash;4M service businesses already grow primarily through referrals but rarely run a deliberate system for generating them. As trust in ads and cold outreach keeps eroding, formalizing referral generation is one of the highest-leverage, lowest-cost growth levers to prescribe to clients.</p>
+        </div>
+      </div>
+    </details>
   </div>
 </div>
 

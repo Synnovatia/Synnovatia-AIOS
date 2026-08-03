@@ -8,7 +8,7 @@
 
 | Segment | Definition | Count (as of 2026-07-12) | Verified |
 |---|---|---|---|
-| Active Engagers | Opened/clicked a marketing email in the last 90 days | 340 | Confirmed exact match via HubSpot property filter (`hs_email_last_open_date`/`hs_email_last_click_date`) |
+| Active Engagers | Opened/clicked a marketing email in the last 90 days | 330 (updated 2026-08-02, was 340) | Confirmed exact match via HubSpot property filter (`hs_email_last_open_date`/`hs_email_last_click_date`) |
 | Drifting | 90-180 days since last engagement | 382 | Jackie's stated number — HubSpot List membership isn't queryable via this connector, so treated as ground truth rather than independently verified (a rough date-filter approximation found only 88, confirming saved-list logic is more precise than raw property filters) |
 | Lapsed | 180+ days since last engagement | 511 | Same as above — ground truth from Jackie |
 | Messy Middle-fit women | Women who fit the Messy Middle mastermind criteria | 397 | Ground truth from Jackie — cuts across the above segments, used to route the mastermind-specific CTA |
@@ -20,15 +20,21 @@ Warm audience. Go direct:
 - **Messy Middle-fit women (397, overlapping subset):** invite to apply for the Mastermind for the Messy Middle
 - **Everyone else:** book a "solutions on the fly" call, or Seven Figure Forum invite if revenue fit ($1M+)
 
+**Draft cadence (updated 2026-08-02):** the `hubspot-active-engagers-draft` scheduled task now fires every Thursday at 6am Pacific, ~6 days ahead of each biweekly Wednesday send, instead of the prior 2nd/16th-of-month schedule (which had drifted onto a Sunday). Since cron can't express a true 14-day interval, the task self-checks the Send Performance Log below each run and skips drafting if one was already produced in the last ~10 days.
+
 ### Drifting (382) — Monthly, value-first
 Not pitchy — goal is re-earning attention before they go fully cold. Thought leadership, useful content, warm reconnection tone. Home of the "What I'm Watching" thread (see below).
 
 **Standing send day: Wednesdays** (decided 2026-07-28, to match the day Active Engagers sends tend to land on). First real send (using live `what-im-watching-cloud` research instead of the earlier generic placeholder) goes out 2026-07-29.
 
+**Draft cadence (updated 2026-08-03):** the `hubspot-drifting-draft` scheduled task now fires every Thursday at 6am Pacific instead of the prior fixed 9th-of-month/10am schedule — same drift-avoidance fix as Active Engagers. The task self-checks for a Drifting draft in the last ~25 days and skips if one's already been produced this cycle.
+
 **Reply-ask experiment (2026-07-29 send only, not yet a standing rule):** the drafted "no CTA, no ask" closer got replaced in Jackie's final edit with a genuine reply-engagement ask ("hit reply and let me know what you found most helpful") — driven by her own curiosity about reception, since this is the first "What I'm Watching" send to this segment, not a deliberate permanent strategy shift. Watch reply volume/content on this send before deciding whether to make it standing for future Drifting/Lapsed sends or drop back to pure value-only with no ask.
 
 ### Lapsed (511) — Bi-monthly (every ~6-8 weeks), pure value, no ask
 **Decided 2026-07-12:** explicitly NOT a repeat of the previous "we miss you" / "should we stay in touch" win-back sequence Jackie already ran. Instead: fold into the same "What I'm Watching" content thread as Drifting, at lower frequency (deliverability best practice — don't over-mail cold contacts). No CTA, no ask. The rebrand itself is the quiet reason to notice her again. If someone re-engages, they naturally move to Drifting/Active cadence based on actual behavior — no explicit opt-back-in moment needed.
+
+**Draft cadence (updated 2026-08-03):** the `hubspot-lapsed-draft` scheduled task now fires every Thursday at 6am Pacific instead of the prior fixed 23rd-of-odd-months/10am schedule — same drift-avoidance fix as Active Engagers and Drifting. The task self-checks for a Lapsed draft in the last ~45 days and skips if one's already been produced this cycle.
 
 ## Recurring Content Thread — "What I'm Watching"
 
@@ -52,7 +58,7 @@ Running record of real send stats, newest first. Benchmarks for consulting/profe
 
 | Date | Segment | Open | Click (of sent) | CTOR | Bounce | Unsub | Notes |
 |---|---|---|---|---|---|---|---|
-| 2026-07-22 | Active Engagers (~340) | 29.23% | 0.86% | 2.94% | 2 (~0.6%) | 5 (1.43%) | General direct-CTA "book a call" send. Opens strong (well above norm), clicks soft, **unsub ~3× the healthy threshold** — consistent with a hard sales CTA. Keep direct asks to Active Engagers only; Drifting/Lapsed stay value-first. Watch whether the next Active Engagers send's unsub rate stays elevated or was a one-off. |
+| 2026-07-22 | Active Engagers (~340) | 30.09% | 0.86% | 2.86% | 2 (~0.6%) | 6 (1.72%) | **Final stats (2026-08-02 update).** General direct-CTA "book a call" send. Opens strong (well above norm), clicks soft, **unsub ~3.4× the healthy threshold** — consistent with a hard sales CTA. Keep direct asks to Active Engagers only; Drifting/Lapsed stay value-first. Watch whether the next Active Engagers send's unsub rate stays elevated or was a one-off. |
 
 ---
 

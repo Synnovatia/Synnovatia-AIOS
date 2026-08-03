@@ -140,6 +140,7 @@ These are how you know your EVOLV-OS is working:
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
 │   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
+│   ├── morning-brief/        # brief.html = canonical live file for the standalone Morning Brief artifact (weekday auto-refresh, 6:15am, edited in place — not regenerated)
 │   ├── positioning/          # Positioning brief (statement + full rationale/proof points) — internal strategy doc, not customer-facing
 │   ├── strength-log/         # Strength Training Log tool source (published as a claude.ai artifact)
 │   └── website-redesign/     # "Different Is Better Than Better" website homepage/About copy + mockups
