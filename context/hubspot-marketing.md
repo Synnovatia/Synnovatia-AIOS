@@ -36,6 +36,12 @@ Not pitchy — goal is re-earning attention before they go fully cold. Thought l
 
 **Draft cadence (updated 2026-08-03):** the `hubspot-lapsed-draft` scheduled task now fires every Thursday at 6am Pacific instead of the prior fixed 23rd-of-odd-months/10am schedule — same drift-avoidance fix as Active Engagers and Drifting. The task self-checks for a Lapsed draft in the last ~45 days and skips if one's already been produced this cycle.
 
+## Queued Content for Next Active Engagers Send
+
+Article(s) Jackie's flagged to work into the next WIW-format Active Engagers draft (see the every-third-send rotation rule above). Remove each entry once it's been used in a draft.
+
+- **Referral Marketing Statistics for 2026** (GrowSurf, referencing Nielsen's Global Trust in Advertising study) — saved 2026-08-03. 88-92% of consumers trust recommendations from people they know above any other form of advertising; referred customers convert at 3-5x other channels with 37% higher retention. **Why it matters:** most $250K-4M service businesses already grow primarily through referrals but rarely run a deliberate system for generating them — as trust in ads and cold outreach keeps eroding, formalizing referral generation is one of the highest-leverage, lowest-cost growth levers to prescribe to clients. Link: https://growsurf.com/statistics/referral-marketing-statistics/ (unwrapped from the Gmail redirect link Jackie pasted).
+
 ## Recurring Content Thread — "What I'm Watching"
 
 A monthly economic-trends piece: what's happening in the economy, what to watch for, recommendations for small business owners. Positions Jackie as someone who keeps her audience informed, not just a service pitch. Appears in the Drifting monthly send, the Lapsed bi-monthly send (roughly every other cycle), and periodically in the Active Engagers biweekly rotation.

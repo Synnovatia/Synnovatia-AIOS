@@ -1,4 +1,5 @@
 first_name,last_name,email,client_since,hubspot_id,last_checkin,next_checkin_due,status,last_status_date,notes,priority
+Connie,Weatherman,connie@auntconnieswellbeing.com,2013-10-12,37020,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,1
 Donna,Amy,damy@marykay.com,2003-10-20,,2003-10-20,2004-04-20,,,"Added manually; only a web form submission found, weak signal",
 Enid,McGraw,eynez@sbcglobal.net,2009-12-30,,2009-12-30,2010-06-30,,,"Added manually via LinkedIn; connected since 2009, mutual connection Anne Laguzza (also in roster)",
 Pam,Lambert,pkayelambert@yahoo.com,2013-07-24,,2013-07-24,2014-01-24,,,Added manually via Gmail,
@@ -10,7 +11,6 @@ Bea,Nicoletti,beatricenohoice@yahoo.com,2013-10-12,36610,,2014-04-12,,,no Gmail 
 Deborah,Hamilton,deborahhamilton123@yahoo.com,2013-10-12,36702,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
 Diane,Ellis,diane@dianecunningham.com,2013-10-12,36669,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
 Izzy,Assencoa,iassencoa@aol.com,2013-10-12,37029,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
-Connie,Weatherman,connie@auntconnieswellbeing.com,2013-10-12,37020,,2014-04-12,,,no Gmail thread found; using HubSpot client_since,
 Melinda,Flynn,homes@melindaflynn.com,2013-12-16,,2013-12-16,2014-06-16,,,"Added manually; only outbound email found, no reply on record",
 Beth,Cole,beth.a.cole@gmail.com,2013-12-24,42599,,2014-06-24,,,no Gmail thread found; using HubSpot client_since,
 David G.,Kinney,david@thekinneygroup.com,2013-12-24,42986,,2014-06-24,,,no Gmail thread found; using HubSpot client_since,

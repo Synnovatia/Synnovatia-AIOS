@@ -280,7 +280,19 @@
       "Bash(mkdir -p \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/.morning-preview\")",
       "Bash(cp \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/2754234a-ac87-4e5a-9b7c-4e6cac723ac3/scratchpad/morning_brief.html\" \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/.morning-preview/preview.html\")",
       "Bash(rm -rf \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/.morning-preview\")",
-      "Bash(sort -k9)"
+      "Bash(sort -k9)",
+      "Bash(grep '~\\\\$')",
+      "Bash(cd \"/Users/jackienagel/Desktop/Synnovatia AIOS\" && rm \"outputs/hubspot-marketing/~\\\\$26-08-02-active-engagers-drafts.docx\" && echo \"deleted\")",
+      "Bash(python3 scripts/log_outreach.py no_response beryl@bcsstaffing.net)",
+      "Bash(python3 scripts/log_outreach.py no_response lgworkout@aol.com)",
+      "Bash(python3 scripts/log_outreach.py no_response christycarroll@msn.com)",
+      "Bash(python3 scripts/log_outreach.py no_response siva@anubavam.com)",
+      "Bash(python3 scripts/log_outreach.py no_response angelabroadwell@msn.com)",
+      "Bash(date -j -f \"%Y-%m-%d\" \"2026-08-03\" \"+%A\")",
+      "Bash(node \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/58f5884c-2919-4445-8e8e-aa7891cc2fd8/scratchpad/make_linkedin_docx.js\")",
+      "Bash(unzip -q -t \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/linkedin/2026-08-10-to-08-14-drafts.docx\")",
+      "Bash(sed -i '' 's/2026-08-04/2026-08-03/g' context/linkedin-marketing.md outputs/linkedin/2026-08-10-to-08-14-drafts.md)",
+      "Bash(sed -i '' 's/2026-08-04/2026-08-03/g' \"/Users/jackienagel/.claude/projects/-Users-jackienagel-Desktop-Synnovatia-AIOS/memory/feedback_linkedin-post-editing-style.md\")"
     ]
   }
 }

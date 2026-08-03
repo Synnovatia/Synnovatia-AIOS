@@ -10,6 +10,10 @@
 
 ## 2026-08-03
 
+### LinkedIn Batch Drafted for Aug 10-14, Two New Style Patterns Locked In
+- Ran the recurring Monday 7am `linkedin-content-drafting` task: drafted the following week's Mon/Wed/Fri posts (thought leadership on the entrepreneur/leader delegation distinction, a story about texting a client with an idea after hours, a client win about replacing custom quoting with fixed packages), checked against the last three batches to avoid repeating angles, cadence-scrubbed, and delivered as both `outputs/linkedin/2026-08-10-to-08-14-drafts.md` and a companion `.docx` per the standing Word-doc delivery preference.
+- Jackie rewrote both the story and client-win posts herself, surfacing two new reusable patterns for `context/linkedin-marketing.md` and memory: (1) open client-win posts with a direct question to the reader plus a parenthetical caveat conceding the exception case, rather than opening in third person; (2) close every pillar — not just Monday — with a direct question to the reader, and don't smooth out self-aware/double-edged framing of a personality trait ("Fortunately or unfortunately... But that's how I roll"). Also caught and fixed a logic error in an earlier draft (a client texting Jackie an idea that was actually Jackie's to share) before it shipped.
+
 ### Morning Brief Rendered, Then Moved to a Fixed Permission-Free Pipeline
 - Ran the day's automated morning brief (weekday scheduled task): a normal-paced Monday — a walk, an "AIOS Setup" call with Adrian Delli Colli at 10am, an Anna/Leon sync at 1pm, open before and after. One Needs Attention item (a Flume high-flow alert on the Front Blvd water line); no Resolved items. Included that morning's "What I'm Watching" (Buyer Sentiment & Behavior, Growth & Marketing Tactics).
 - Jackie asked for the brief to run at the same time as the dashboard, and for the recurring permission-prompt friction on unattended runs to be fixed for good. Root cause: each day's run wrote to a fresh scratchpad path and needed Bash/node/browser-tool calls that can't be pre-approved for a scheduled task with no one at the keyboard.
