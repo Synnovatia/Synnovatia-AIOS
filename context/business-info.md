@@ -42,7 +42,7 @@ The positioning thesis, drawn from a formal client interview study ("Different I
 - Client acquisition is primarily referral, SEO/website, and repeat/returning former clients
 - Long-term client relationships are common — several clients of 10+ years
 - Long-term plan: bring in another consultant to serve the $250K–$500K segment, freeing Jackie to focus on higher-level strategy clients and business development
-- Differentiators: 25+ years of cross-industry pattern recognition; educator background (Corporate Coach University, Coach University, taught small business development/marketing); Management Development for Entrepreneurs certification from UCLA's Anderson School of Business; runs her own business so clients see her as a peer, not an outside "expert"; practical, honest, emotionally attuned, and stays engaged with client problems between sessions
+- Differentiators: 25+ years of cross-industry pattern recognition; educator background (Corporate Coach University, Coach University, taught small business development/marketing); Management Development for Entrepreneurs certification from UCLA's Anderson School of Business; published author and regular contributor to publications serving entrepreneurs and small business owners; coaching methodology grounded in science-based/evidence-based performance strategy, not just intuition; runs her own business so clients see her as a peer, not an outside "expert"; practical, honest, emotionally attuned, and stays engaged with client problems between sessions
 - See `brand-voice.md` for full positioning, voice rules, and proof points from the client research; `style-guide.md` for the visual identity (colors, typography)
 
 ---

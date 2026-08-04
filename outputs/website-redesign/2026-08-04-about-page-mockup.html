@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Jackie Nagel — Synnovatia</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:       #0D1F4E;
+    --navy-mid:   #1A3A7A;
+    --gold:       #B29200;
+    --gold-lt:    #F5C842;
+    --gold-bg:    #FDF3CC;
+    --teal:       #0F6E56;
+    --teal-lt:    #5DCAA5;
+    --warm-white: #F7F6F2;
+    --body-text:  #444441;
+    --neut-gray:  #EAEAEA;
+    --lt-navy:    #E8ECF5;
+    --white:      #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--warm-white);
+    color: var(--body-text);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 72px;
+  }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--warm-white);
+    border-bottom: 3px solid var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 72px;
+  }
+  .nav-logo img { height: 30px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+  .nav-links a {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--body-text);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a.active { color: var(--navy); }
+  .nav-links a.active::after {
+    content: ""; display: block; height: 2px; background: var(--gold);
+    margin-top: 6px;
+  }
+
+  /* nav dropdowns */
+  .nav-links > li { position: relative; }
+  .nav-links > li.has-dropdown > a { display: inline-flex; align-items: center; gap: 6px; line-height: 1; }
+  .nav-links > li.has-dropdown { display: flex; align-items: center; height: 72px; }
+  .nav-links > li.has-dropdown > a::after {
+    content: ""; width: 6px; height: 6px;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px); transition: transform 0.2s;
+  }
+  .nav-dropdown {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    min-width: 220px; background: var(--white);
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 14px 32px rgba(13,31,78,0.14);
+    list-style: none; padding: 10px 0;
+    opacity: 0; visibility: hidden; translate: 0 8px;
+    transition: opacity 0.18s ease, translate 0.18s ease, visibility 0.18s;
+  }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown {
+    opacity: 1; visibility: visible; translate: 0 0;
+  }
+  .nav-dropdown li a {
+    display: block; padding: 11px 22px;
+    font-size: 11px; letter-spacing: 0.08em;
+  }
+  .nav-dropdown li a:hover { background: var(--warm-white); color: var(--navy); }
+
+  .nav-cta {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--white);
+    text-decoration: none; background: var(--teal);
+    padding: 10px 24px; transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--navy); }
+
+  /* ── PAGE HERO ── */
+  .about-hero-outer { background: var(--navy); }
+  .about-hero {
+    background: var(--navy);
+    padding: 100px 48px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt);
+    margin-bottom: 20px; display: block;
+  }
+  .hero-h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 700; color: var(--white);
+    line-height: 1.15; margin-bottom: 24px;
+  }
+  .hero-lead {
+    font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.78);
+    line-height: 1.75; max-width: 460px;
+  }
+  .hero-photo-wrap { position: relative; }
+  .hero-photo-wrap img {
+    width: 100%; height: 480px;
+    object-fit: cover; object-position: center 25%;
+    display: block;
+  }
+  .hero-photo-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: var(--gold);
+    padding: 14px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .caption-name {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--navy);
+  }
+  .caption-title { font-size: 12px; color: var(--navy); opacity: 0.75; }
+
+  /* ── SECTION BASE ── */
+  .section-inner { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 16px; display: block;
+  }
+  .section-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(26px, 3vw, 38px); font-weight: 700;
+    color: var(--navy); line-height: 1.25; margin-bottom: 24px;
+  }
+
+  /* ── ORIGIN SECTION ── */
+  .origin-section { padding: 96px 0; }
+  .origin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .origin-quotes { display: flex; flex-direction: column; justify-content: center; gap: 52px; height: 100%; }
+  .origin-body p { font-size: 17px; line-height: 1.8; color: var(--body-text); margin-bottom: 22px; }
+  .origin-body p:last-child { margin-bottom: 0; }
+  .origin-pull blockquote {
+    font-family: 'Fraunces', serif; font-size: 17px; font-style: italic;
+    color: var(--navy); line-height: 1.6; margin-bottom: 14px;
+  }
+  .origin-pull cite {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--gold); font-style: normal;
+  }
+  .origin-pull cite span {
+    display: block; font-weight: 400; letter-spacing: 0;
+    text-transform: none; color: var(--body-text); margin-top: 2px;
+  }
+
+  /* ── WHAT MAKES IT DIFFERENT ── */
+  .different-section { background: var(--navy); padding: 96px 0; }
+  .different-section .section-eyebrow { color: var(--gold-lt); }
+  .different-section .section-h2 { color: var(--white); }
+  .dib-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 72px; row-gap: 0; margin-top: 52px; }
+  .dib-card { padding: 38px 0; border-top: 1px solid rgba(255,255,255,0.16); }
+  .dib-card-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 12px;
+  }
+  .dib-card-heading {
+    font-family: 'Fraunces', serif; font-size: 20px; color: var(--white);
+    line-height: 1.3; margin-bottom: 14px;
+  }
+  .dib-card-body { font-size: 15px; color: rgba(255,255,255,0.62); line-height: 1.7; }
+
+  /* ── APPROACH SECTION ── */
+  .approach-section { padding: 96px 0; }
+  .approach-grid { max-width: 760px; }
+  .approach-body p { font-size: 17px; line-height: 1.8; color: var(--body-text); margin-bottom: 22px; }
+  .approach-body p:last-child { margin-bottom: 0; }
+
+  /* ── CREDENTIALS ── */
+  .credentials-section { background: var(--lt-navy); padding: 80px 0; }
+  .credentials-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;
+  }
+  .cred-list { list-style: none; }
+  .cred-item { padding: 17px 0; border-bottom: 1px solid rgba(13,31,78,0.1); }
+  .cred-item:first-child { padding-top: 0; }
+  .cred-item:last-child { border-bottom: none; }
+  .cred-text { font-size: 15px; color: var(--navy); line-height: 1.55; }
+  .cred-sub { font-size: 13px; color: var(--body-text); opacity: 0.65; margin-top: 2px; }
+  .stat-stack { align-self: start; }
+  .stat-block { border-top: 1px solid var(--neut-gray); padding: 24px 0; }
+  .stat-block:first-child { border-top: none; padding-top: 0; }
+  .stat-num {
+    font-family: 'Fraunces', serif; font-size: 44px; font-weight: 700;
+    color: var(--navy); line-height: 1; margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 4px;
+  }
+  .stat-desc { font-size: 14px; color: var(--body-text); opacity: 0.65; line-height: 1.5; }
+
+  /* ── CLIENT VOICES ── */
+  .voices-section { padding: 96px 0; }
+  .voices-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 0 64px;
+    margin-top: 52px; border-top: 1px solid rgba(13,31,78,0.18); padding-top: 52px;
+  }
+  .voice-card { padding: 0; display: flex; flex-direction: column; }
+  .voice-card.nudge { margin-top: 36px; }
+  .voice-quote {
+    font-family: 'Fraunces', serif; font-size: 19px; font-style: italic; font-weight: 400;
+    line-height: 1.55; color: var(--navy); margin-bottom: 24px; flex: 1;
+  }
+  .voice-name { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+  .voice-org { font-size: 12px; color: var(--body-text); opacity: 0.6; }
+  .voice-tenure {
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold); margin-top: 10px;
+  }
+
+  /* ── CTA ── */
+  .cta-section { background: var(--navy); text-align: center; padding: 112px 48px; }
+  .cta-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 24px;
+  }
+  .cta-h2 {
+    font-family: 'Fraunces', serif; font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
+    color: var(--white); line-height: 1.2; max-width: 640px; margin: 0 auto 20px;
+  }
+  .cta-sub {
+    font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.72);
+    line-height: 1.75; max-width: 440px; margin: 0 auto 52px;
+  }
+  .btn-cta-primary {
+    display: inline-block; background: var(--teal); color: var(--white);
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 44px; border: 2px solid var(--teal);
+    transition: all 0.2s; margin-right: 16px;
+  }
+  .btn-cta-primary:hover { background: transparent; color: var(--teal); }
+  .btn-secondary {
+    display: inline-block; border: 2px solid var(--gold-lt); color: var(--gold-lt);
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 14px 36px; transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--gold-lt); color: var(--navy); }
+
+  /* ── FOOTER ── */
+  footer.site-footer {
+    background: #080F1F; padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; display: block; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .about-hero { grid-template-columns: 1fr; padding: 60px 24px; }
+    .hero-photo-wrap img { height: 360px; }
+    .section-inner { padding: 0 24px; }
+    .origin-grid, .credentials-inner,
+    .dib-grid, .voices-grid { grid-template-columns: 1fr; gap: 40px; }
+    .dib-grid { gap: 2px; column-gap: 0; }
+    footer.site-footer { flex-direction: column; gap: 12px; text-align: center; padding: 32px 24px; }
+    .voices-grid { grid-template-columns: 1fr; border-top: none; padding-top: 0; }
+    .voice-card { padding: 32px 0; }
+    .voice-card:first-child { padding-top: 0; }
+    .voice-card.nudge { margin-top: 0; }
+    .voice-card + .voice-card { border-top: 1px solid rgba(13,31,78,0.14); }
+  }
+
+  /* ── TYPE SYSTEM (Fraunces display · Barlow body · Barlow Condensed labels) ── */
+  body { font-optical-sizing: auto; }
+  .section-eyebrow, .hero-eyebrow, .cta-eyebrow,
+  .stat-label, .dib-card-label, .voice-tenure, .caption-title,
+  .nav-links a, .nav-cta, .nav-dropdown li a,
+  .btn-cta-primary, .btn-secondary {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .nav-cta, .btn-cta-primary, .btn-secondary { border-radius: 10px; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/synnovatia-logo-nav.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" class="active" aria-current="page">About</a></li>
+    <li class="has-dropdown">
+      <a href="#">The Messy Middle</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">The Mastermind</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <a href="#" class="nav-cta">Schedule a Conversation</a>
+</nav>
+
+<!-- HERO -->
+<div class="about-hero-outer">
+  <div class="about-hero">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">About Jackie Nagel</span>
+      <h1 class="hero-h1">Strategy built for owners, for the growth stage that doesn't come with instructions.</h1>
+      <p class="hero-lead">Stage II entrepreneurs don't need another program. They need a strategist who does the hard work: deep engagement, sustained effort, and a willingness to go where other advisors stop.</p>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="assets/jackie-about-hero.jpg" alt="Jackie Nagel, founder of Synnovatia">
+      <div class="hero-photo-caption">
+        <span class="caption-name">Jackie Nagel</span>
+        <span class="caption-title">Founder, Synnovatia</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ORIGIN -->
+<section class="origin-section">
+  <div class="section-inner">
+    <div class="origin-grid">
+      <div class="origin-body">
+        <h2 class="section-h2">Why I started Synnovatia</h2>
+        <p>I started Synnovatia because I believe small business owners deserve the same quality of strategic thinking that Fortune 500 companies take for granted, and I wanted to do something about it.</p>
+        <p>What I've found over 25+ years of working with Stage II entrepreneurs (business owners navigating roughly $250,000&ndash;$4M in revenue) is that the problem is rarely what it looks like on the surface. There's almost always a gap between the symptom you're experiencing and the core issue driving it. That's exactly what I built Synnovatia to address.</p>
+        <p>I'm passionate about two things: small business and science-based performance strategies. Together, they let us build an approach that goes beyond your business goals, to how you actually operate, because the two are more connected than most people realize.</p>
+        <p>And I believe in walking the talk. I test and iterate strategies in my own business. When something stops working, I stop. When something new is worth trying, I try it. My clients deserve an advisor who models the same adaptability she coaches.</p>
+      </div>
+      <div class="origin-quotes">
+        <div class="origin-pull">
+          <blockquote>&#8220;Jackie gave me clarity I didn't have. She made my goals feel achievable, not just aspirational.&#8221;</blockquote>
+          <cite>Anne Laguzza
+            <span>The Works Consulting, client since 2003</span>
+          </cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT MAKES IT DIFFERENT -->
+<section class="different-section">
+  <div class="section-inner">
+    <h2 class="section-h2" style="color: var(--white);">Strategic thinking, plus what it actually takes to achieve it.</h2>
+    <div class="dib-grid">
+      <div class="dib-card">
+        <p class="dib-card-label">The View You Can't Get From Inside</p>
+        <p class="dib-card-heading">Clarity that only comes from outside</p>
+        <p class="dib-card-body">When you're running a growing business, you are too close to see it clearly. Clients consistently describe this as the turning point: finally seeing their situation from the outside. That shift in perspective is what makes everything else actionable.</p>
+      </div>
+      <div class="dib-card">
+        <p class="dib-card-label">The Peer Dynamic That Makes It Land</p>
+        <p class="dib-card-heading">A fellow business owner, not a detached expert</p>
+        <p class="dib-card-body">The advice carries weight because it's grounded in lived experience: my own years in business, working with owners across industries and stages. Clients experience me as someone who understands their business, not a coach selling a methodology.</p>
+      </div>
+      <div class="dib-card">
+        <p class="dib-card-label">Where Others Stop, I Don't</p>
+        <p class="dib-card-heading">Sleeves rolled up, not pom-poms raised</p>
+        <p class="dib-card-body">I'm encouraging and supportive, but that's not the same as cheerleading. I engage with the actual problem, work through it collaboratively, and deliver something concrete. That persistence is what clients point to as fundamentally different from other advisors they've worked with.</p>
+      </div>
+      <div class="dib-card">
+        <p class="dib-card-label">The Emotional Intelligence That Changes the Work</p>
+        <p class="dib-card-heading">Space for what's actually happening</p>
+        <p class="dib-card-body">Stage II is isolating. You carry things you can't say to your team, your family, or your competitors. I hold space for the ache and frustration of building a business, because the emotional reality of ownership is part of the strategic reality, not separate from it.</p>
+      </div>
+      <div class="dib-card">
+        <p class="dib-card-label">The Methodology That Sharpens the Intuition</p>
+        <p class="dib-card-heading">Science-based strategy that makes instinct more precise</p>
+        <p class="dib-card-body">Intuition matters, but it's most powerful when it's grounded in science. I use evidence-based strategy to uncover what's actually driving the problem, not just what's visible on the surface. That rigor is what turns a good instinct into a permanent solution.</p>
+      </div>
+      <div class="dib-card">
+        <p class="dib-card-label">The Longevity That Proves the Value</p>
+        <p class="dib-card-heading">Clients who stay, some for over a decade</p>
+        <p class="dib-card-body">The length of a relationship is its own data point. Clients who have worked with me since 2000, 2011, and 2014 aren't renewing a contract. They're continuing a relationship that proves its value repeatedly over time. That's the proof I'm most proud of.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach-section">
+  <div class="section-inner">
+    <div class="approach-grid">
+      <div class="approach-body">
+        <h2 class="section-h2">My approach</h2>
+        <p>The Messy Middle is a specific place: past early-stage chaos, but well short of the plateau of a mature business. It's the stage where the strategies that got you here aren't getting you there: growth creates complexity faster than you can manage it, and you're simultaneously too big to operate intuitively and too small to hire the talent that would solve it.</p>
+        <p>I don't package clients into programs. I listen, ask different questions, and together we develop options calibrated to where you actually are and what's achievable for you to implement, not where a curriculum assumes you should be.</p>
+        <p>And I keep thinking about your problems between sessions. When our appointment ends, I may physically clock out, but I don't mentally clock out, and that's often when the real problem-solving happens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="credentials-section">
+  <div class="credentials-inner">
+    <div>
+      <h2 class="section-h2">Credentials &amp; background</h2>
+      <ul class="cred-list">
+        <li class="cred-item">
+          <div class="cred-text">Diploma, Corporate Coach University &amp; Coach University</div>
+          <div class="cred-sub">Professional coach training program</div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-text">Faculty, Corporate Coach University &amp; Coach University</div>
+          <div class="cred-sub">Taught small business development and marketing</div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-text">Management Development for Entrepreneurs (MDE) certification</div>
+          <div class="cred-sub">UCLA Anderson School of Business</div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-text">Published author and small business contributor</div>
+          <div class="cred-sub">Regular contributor to publications serving entrepreneurs and small business owners</div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-text">Ongoing coursework in cultural anthropology</div>
+          <div class="cred-sub">Committed to continuous learning. It's hard to ask clients to grow if I'm not doing the same.</div>
+        </li>
+        <li class="cred-item">
+          <div class="cred-text">Founder, Mastermind for the Messy Middle &amp; Seven Figure Forum</div>
+          <div class="cred-sub">Two curated peer groups for Stage II entrepreneurs, intentionally matched for perspective and relatability</div>
+        </li>
+      </ul>
+    </div>
+    <div class="stat-stack">
+      <div class="stat-block">
+        <div class="stat-num">25+</div>
+        <div class="stat-label">Years in Practice</div>
+        <div class="stat-desc">Working exclusively with Stage II entrepreneurs navigating the Messy Middle</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">$250K&ndash;<br>$4M</div>
+        <div class="stat-label">Revenue Range</div>
+        <div class="stat-desc">The growth plateaus where strategic thinking makes the biggest difference</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">10+ yrs</div>
+        <div class="stat-label">Avg. Client Tenure</div>
+        <div class="stat-desc">The length of the relationship is the proof of the value</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT VOICES -->
+<section class="voices-section">
+  <div class="section-inner">
+    <h2 class="section-h2">What clients say,<br>in their own words.</h2>
+    <div class="voices-grid">
+      <div class="voice-card">
+        <p class="voice-quote">Jackie is like a therapist to entrepreneurs. She's always jiggling the key, finding the way in. When something isn't working, she doesn't just try a different door, she keeps working the same lock until it gives. That's what's kept us working together since 2011.</p>
+        <p class="voice-name">Sandra Martinez Roe</p>
+        <p class="voice-org">Hello Earth Club</p>
+        <p class="voice-tenure">Client since 2011</p>
+      </div>
+      <div class="voice-card nudge">
+        <p class="voice-quote">Jackie walks the talk. She balances kindness with assertiveness in a way that's distinctly her, not a technique. You feel like she has your back, even when she's pushing you toward something uncomfortable.</p>
+        <p class="voice-name">Christina Carlson</p>
+        <p class="voice-org">Unstuck Leadership Consulting</p>
+        <p class="voice-tenure">Long-term client</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <p class="cta-eyebrow">Start Here</p>
+  <h2 class="cta-h2">Let's have a real conversation.</h2>
+  <p class="cta-sub">Just an honest look at where you are and what's actually getting in the way of your next stage of growth.</p>
+  <a href="#" class="btn-cta-primary">Start the Conversation</a>
+  <a href="#" class="btn-secondary">Explore the Messy Middle</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="assets/synnovatia-logo-footer.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>
