@@ -16,7 +16,7 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 
 - **Experience:** Consistent strength training for 2-3 years
 - **Goals:** General strength, bone density, longevity, balance, energy
-- **Equipment:** Home gym — dumbbells, resistance bands, balance ball, treadmill, bike
+- **Equipment:** Home gym — dumbbells (max ~25 lb per hand, confirmed 2026-08-04), resistance bands, balance ball, treadmill, bike
 - **Injuries:** None
 - **Why full-body A/B:** At 2 sessions/week, full-body maximizes how often each movement pattern is trained. Compound, weight-bearing lifts are emphasized over light/high-rep work, since research favors heavier loading for bone density specifically. Balance work is built in explicitly.
 

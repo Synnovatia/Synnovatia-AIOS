@@ -10,6 +10,12 @@
 
 ## 2026-08-04
 
+### Strength Training — Day A Session Logged, Dumbbell Max Captured
+
+- Logged today's real Day A session to `data/strength-training-log.csv` (27 sets across 9 exercises) and `personal/workout-logs/session-log.csv`: Goblet Squat and Floor/Bench Press both progressed cleanly off last session's data (Bench Press hit its rep ceiling at 20 lb last time, so today's 25 lb × 8 is the double-progression scheme working exactly as designed); Farmer's Carry progressed by distance (40→60 ft) rather than weight, since 50 lb is already two 25 lb dumbbells, Jackie's current max. Cardio: 14-min hill warm-up (89 METs) plus the 53-min strength session itself (196 METs, avg HR 112).
+- Single-Arm Row initially came in with set 3 missing — held that row open rather than guess, asked, and got the correction: all three sets were actually 20 lb (5, 5, 4 reps), revising the second set from an initially-reported 4 to 5.
+- **New standing fact captured:** Jackie's dumbbells max out around 25 lb per hand. Added to `personal/workout-plan.md`'s Equipment line so future progression recommendations don't suggest weights she doesn't have.
+
 ### Website Redesign — About Page Built, Fact-Checking Caught Fabricated Quotes and a Real Client-Identity Discrepancy
 
 - Built the About page (`outputs/website-redesign/2026-08-04-about-page-mockup.html`). Started fresh off the confirmed 2026-07-29 copy draft, matching the homepage's visual system, then Jackie surfaced a richer previously-designed concept (`~/Desktop/Website /synnovatia_about_23_6.html`) already on the confirmed visual system, and asked to make it the new base — Origin story, "What Makes It Different" 6-card grid, Approach, Credentials + stats, Client Voices, CTA.
