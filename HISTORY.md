@@ -10,6 +10,12 @@
 
 ## 2026-08-03
 
+### Flow Mode Installed (Standard Level)
+- Jackie provided the `flow-mode` skill package (found relocated to `module-installs/flow-mode/` after an initial mix-up about its location) — a permission allowlist that installs pattern-based rules into `.claude/settings.json` so routine, safe commands (reads, searches, `git status`/`diff`/`log`/`add`/`commit`, running project scripts, database queries, `open`, `launchctl list`, web search) stop prompting for approval every time.
+- Recommended Standard over Standard + Auto-edits, given this workspace handles client PII, financial data, and outbound drafts — Standard keeps every file edit showing a diff for review before it applies; Auto-edits would skip that.
+- Merged the curated allowlist into `.claude/settings.json` (union with existing rules, nothing overwritten). Destructive/outward-facing commands (`rm`, `git push`, `git reset --hard`, service load/unload, POST requests, sending email, financial actions) remain gated on purpose. Takes effect next session.
+- Added `module-installs/flow-mode/` to CLAUDE.md's workspace structure.
+
 ### LinkedIn Batch Drafted for Aug 10-14, Two New Style Patterns Locked In
 - Ran the recurring Monday 7am `linkedin-content-drafting` task: drafted the following week's Mon/Wed/Fri posts (thought leadership on the entrepreneur/leader delegation distinction, a story about texting a client with an idea after hours, a client win about replacing custom quoting with fixed packages), checked against the last three batches to avoid repeating angles, cadence-scrubbed, and delivered as both `outputs/linkedin/2026-08-10-to-08-14-drafts.md` and a companion `.docx` per the standing Word-doc delivery preference.
 - Jackie rewrote both the story and client-win posts herself, surfacing two new reusable patterns for `context/linkedin-marketing.md` and memory: (1) open client-win posts with a direct question to the reader plus a parenthetical caveat conceding the exception case, rather than opening in third person; (2) close every pillar — not just Monday — with a direct question to the reader, and don't smooth out self-aware/double-edged framing of a personality trait ("Fortunately or unfortunately... But that's how I roll"). Also caught and fixed a logic error in an earlier draft (a client texting Jackie an idea that was actually Jackie's to share) before it shipped.

@@ -25,7 +25,47 @@
       "Edit(outputs/dashboard/dashboard.html)",
       "Edit(outputs/dashboard/dashboard-fragment.html)",
       "Edit(outputs/morning-brief/brief.html)",
-      "Artifact"
+      "Artifact",
+
+      "Read(*)",
+      "WebSearch",
+
+      "Bash(ls:*)",
+      "Bash(pwd)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "Bash(file:*)",
+      "Bash(which:*)",
+      "Bash(du:*)",
+      "Bash(echo:*)",
+      "Bash(date:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(diff:*)",
+
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git stash:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+
+      "Bash(python scripts/:*)",
+      "Bash(python3 scripts/:*)",
+      "Bash(.venv/bin/python scripts/:*)",
+      "Bash(./.venv/bin/python scripts/:*)",
+
+      "Bash(sqlite3:*)",
+      "Bash(launchctl list:*)",
+      "Bash(open:*)"
     ]
   }
 }

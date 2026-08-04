@@ -130,7 +130,8 @@ These are how you know your EVOLV-OS is working:
 │   ├── content-pipeline-v1/ # Content intelligence system (installed 2026-07-27)
 │   ├── writing-style/       # AAA Accelerator module — banned-word list + 12 rules + self-check (installed 2026-08-01)
 │   ├── academic/            # AAA Accelerator module — OpenAlex/Unpaywall paper search (installed 2026-08-01)
-│   └── firecrawl/           # AAA Accelerator module — web scraping/search CLI (installed 2026-08-01)
+│   ├── firecrawl/           # AAA Accelerator module — web scraping/search CLI (installed 2026-08-01)
+│   └── flow-mode/           # Permission allowlist (Standard level) — fewer prompts for safe/routine commands, destructive ones still gated (installed 2026-08-03)
 ├── client-reengagement/     # 6-month client check-in cadence (176-client roster, migrated 2026-07-11)
 │   ├── README.md            # Full weekly workflow
 │   ├── data/                 # roster.csv, due_now.csv, outreach_log.csv, meeting_notes.csv
