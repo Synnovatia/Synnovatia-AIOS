@@ -45,7 +45,7 @@ Stage II entrepreneurs · **$250K–$4M revenue** · navigating the **"Messy Mid
 
 ## Cross-Interview Themes (by signal strength)
 
-The more clients who echo the same idea unprompted, the stronger the positioning signal. From the full interview roster (Mark Chapman, Christina Carlson, Anne Laguzza, Raffi Saroyan, Sandra Martinez/Hilary Beck, Laura Labovich, Naya Troup — clients; Craig Ullom — external marketing observer, not a client).
+The more clients who echo the same idea unprompted, the stronger the positioning signal. From the full interview roster (Mark Chapman, Christina Carlson, Anne Laguzza, Raffi Saroyan, Sandra Martinez/Hilary Beck, Laura Labovich, Nia Troup — clients; Craig Ullom — external marketing observer, not a client).
 
 **Strong (mentioned independently by 2-3+ clients):**
 - **Human Peer Dynamic** — Mark Chapman, Christina Carlson, Anne Laguzza all described relating to Jackie as a fellow business owner, not a detached expert
@@ -62,15 +62,15 @@ The more clients who echo the same idea unprompted, the stronger the positioning
 - **Outside Objectivity** — "I was too close to see my own situation objectively." — Mark Chapman
 - **30,000-Ft Strategic View** — "Jackie helps me see the 30,000-ft view." — Raffi Saroyan
 - **Warmth as Strategic Asset** — Not incidental — load-bearing. Warmth most competitors can't manufacture. — Laura Labovich
-- **Practical Collaboration, Not Cheerleading** — Rolls up her sleeves; delivers something practical, not just encouragement. — Naya Troup
+- **Practical Collaboration, Not Cheerleading** — Rolls up her sleeves; delivers something practical, not just encouragement. — Nia Troup
 - **Emotional Intelligence** — Holds space for the ache and frustration, and knows when it's time to move on. — Christina Carlson
 - **Solopreneur Advisory Scarcity** — "There's no one else doing what Jackie does, at this level, for solopreneurs." — Raffi Saroyan
 - **Entrepreneur/Leader Distinction** — An entrepreneur can't put things down because doing so means no pay, no growth — Jackie coaches to that reality, not a corporate leadership template. — Christina Carlson
 - **Genuine in a Market Full of Grifts** — "In a world where there seem to be so many grifts, Jackie is genuine." — Anne Laguzza
-- **Two Funnels of Knowledge** — Broad cross-industry pattern recognition AND deep specific awareness — most advisors have one, Jackie has both. — Naya Troup
+- **Two Funnels of Knowledge** — Broad cross-industry pattern recognition AND deep specific awareness — most advisors have one, Jackie has both. — Nia Troup
 - **Jiggling the Key** — Persistence and creativity in problem-solving; doesn't give up or switch doors, keeps working the lock until something gives. — Sandra Martinez
 - **Therapist to Entrepreneurs** — Psychological safety as a strategic asset (use carefully — validates emotional intelligence but may need positioning guardrails, per the proof points tracker). — Sandra Martinez
-- **Continued Engagement Between Sessions** — Doesn't clock out when the Zoom ends; keeps thinking about client problems between meetings. — Naya Troup
+- **Continued Engagement Between Sessions** — Doesn't clock out when the Zoom ends; keeps thinking about client problems between meetings. — Nia Troup
 
 ## Additional Messaging Principles (Craig Ullom, external observer)
 

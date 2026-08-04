@@ -2,7 +2,7 @@
 
 > Written 2026-07-29, fresh from `outputs/positioning/positioning-brief.md` and the confirmed tight statement in `plans/2026-07-28-positioning-statement-work.md` — not a rewrite of the earlier Claude Project draft (that one's shelved; see memory note `project_rewrite-website-copy-after-steering-sheet`).
 >
-> **Before this goes live:** every named client quote below needs a fresh sign-off from that client for public website use — interview consent for internal positioning research isn't the same as consent to be quoted publicly. Flag this explicitly, don't skip it. **Sign-off list (6 clients, updated 2026-08-03):** Mark Chapman, Raffi Saroyan (quoted twice — hero + testimonials), Laura Labovich, Anne Laguzza, John Lanza, Naya Troup.
+> **Before this goes live:** every named client quote below needs a fresh sign-off from that client for public website use — interview consent for internal positioning research isn't the same as consent to be quoted publicly. Flag this explicitly, don't skip it. **Sign-off list (6 clients, updated 2026-08-03):** Mark Chapman, Raffi Saroyan (quoted twice — hero + testimonials), Laura Labovich, Anne Laguzza, John Lanza, Nia Troup.
 >
 > CTAs use the confirmed bank from `content/offers-and-funnels.md` — "Start the Conversation" (body/closing), "Schedule a Conversation" (nav), "Apply for Consideration" (mastermind). No free offer exists right now, so nothing here implies one.
 
@@ -52,7 +52,7 @@ I don't sell a program or a system, and I'm not going to hand you a framework an
 
 > "I was too close to see my own situation objectively." — Mark Chapman, The I Do Society, client since 2014
 
-> "Jackie doesn't just cheer — she rolls up her sleeves and engages with the actual problem until something concrete comes out the other side." — Naya Troup, First Legal Services, client since 2010
+> "Jackie doesn't just cheer — she rolls up her sleeves and engages with the actual problem until something concrete comes out the other side." — Nia Troup, First Legal Services, client since 2010
 >
 > *(Moved here 2026-08-03 from What Clients Say, as part of the testimonial trim below — this is a better thematic fit for "Personalized, Not Packaged" than a generic testimonials slot, since it's literally about hands-on collaborative work style rather than a general endorsement. Also cited in the positioning brief's "Practical Collaboration, Not Cheerleading" theme. Pending sign-off.)*
 
@@ -60,7 +60,7 @@ I don't sell a program or a system, and I'm not going to hand you a framework an
 
 ### What Clients Say
 
-*(Trimmed 2026-08-03 from 5 quotes to 4, per Jackie's request to curate rather than stack every sourced quote — see the curation flag that was here. Naya Troup's quote moved to Personalized, Not Packaged above rather than cut outright, since it fit that section's theme better anyway. Raffi and John Lanza both stay: Raffi per Jackie's explicit "use both, different spots" decision on his two quotes; John Lanza per Jackie's explicit "keep it" decision — even though his quote and Raffi's "30,000-ft view" cover similar objectivity/clarity ground, both were individually confirmed, so neither was cut without asking.)*
+*(Trimmed 2026-08-03 from 5 quotes to 4, per Jackie's request to curate rather than stack every sourced quote — see the curation flag that was here. Nia Troup's quote moved to Personalized, Not Packaged above rather than cut outright, since it fit that section's theme better anyway. Raffi and John Lanza both stay: Raffi per Jackie's explicit "use both, different spots" decision on his two quotes; John Lanza per Jackie's explicit "keep it" decision — even though his quote and Raffi's "30,000-ft view" cover similar objectivity/clarity ground, both were individually confirmed, so neither was cut without asking.)*
 
 > "Jackie helps me see the 30,000-ft view." — Raffi Saroyan, client since 2012
 

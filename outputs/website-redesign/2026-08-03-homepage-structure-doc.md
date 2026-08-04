@@ -2,7 +2,9 @@
 
 > Written 2026-08-03. Synthesizes 8 design references scraped this session with the confirmed positioning brief (`outputs/positioning/positioning-brief.md`), the existing homepage copy draft (`2026-07-29-homepage-about-copy.md`), and the 2026 style guide (`context/style-guide.md`). This is a structural/direction doc, not final copy or a build — copy already exists and is linked to below rather than repeated.
 >
-> A frozen mockup exists at `2026-07-16-homepage-mockup.html` — reconciled against it below (Section 0). This doc supersedes that mockup's copy where they conflict; its visual system does not need to change.
+> **Update 2026-08-04 — new canonical mockup:** `2026-08-04-homepage-merged.html` is now the live direction. Jackie confirmed she likes the eyebrows/subheaders and overall structure of the pre-AIOS `synnovatia_homepage_eyebrows_3.html` concept (Downloads) better than the reconciled `2026-07-16-homepage-mockup.html`, so it was merged: the eyebrows_3 file's structure/CSS as the base (two-column hero with photo/stat/pull-quote panel, per-section eyebrow labels, three-pillar "why different" breakdown, the five-words callout, editorial testimonials with a featured quote + three supporting, secondary CTA), with every piece of copy swapped to the confirmed/corrected version — see the reconciliation log below for what changed. `2026-07-16-homepage-mockup.html` is now historical, kept for reference only, same as `2026-07-13-mockup.html` before it.
+>
+> A frozen mockup exists at `2026-07-16-homepage-mockup.html` — reconciled against it below (Section 0). This doc supersedes that mockup's copy where they conflict; its visual system does not need to change. (Superseded 2026-08-04 by the merged file above — this section stays as the historical record of that reconciliation.)
 
 ---
 
@@ -102,22 +104,24 @@ This is the Boyer-arc's second beat. Keep it short — the positioning brief's P
 
 Jackie shared a third homepage concept, built before this workspace existed, from `~/Downloads/synnovatia_homepage_eyebrows_3.html`. It shares the same embedded hero photo and several of the same real client quotes as the workspace mockup, and is fully on-palette/on-font per the style guide (checked). It predates the finished positioning brief, so it carries the same staleness the 2026-07-16 mockup had (old headline, old plateau numbers) — not repeated here since those are already fixed. Two real content ideas from it are worth pulling forward, plus two factual/copy discrepancies that are now resolved.
 
-**Worth incorporating — recommendations, not yet built into any section above:**
+**Built 2026-08-04 into `2026-08-04-homepage-merged.html`** — Jackie confirmed she likes this file's structure and direction, so what was "worth incorporating" below is now live, not just proposed:
 
-- **Three-pillar "why different" structure**, from its Problem section: instead of prose paragraphs, break the differentiation into three numbered, evidence-backed points — Outside Objectivity, Lived Experience, Above & Beyond Engagement — each with a one-line client-sourced proof point (Objectivity Gap, Walks the Talk, Effort Where Others Pass, all real positioning-brief themes). This is a stronger, more scannable treatment of the same substance currently in Section 3 (What I Bring)'s two paragraphs. Worth considering as a restructure of that section rather than a new one.
-- **"Five words" callout**, sourced directly from Laura Labovich's interview in the positioning brief (Compassionate, Curious, Insightful, Thoughtful, Kind) but never given its own visual moment in the confirmed copy or the reconciled mockup — a genuinely unused asset worth a small dedicated callout, likely near Section 4 (Personalized, Not Packaged) or Section 5 (What Clients Say).
-- **Secondary CTA** on the closing section, alongside the primary: "Explore the Messy Middle" — gives a lower-commitment next step for a reader not ready to book a call. Worth considering for Section 6 (Closing CTA).
-
-Restructuring "What I Bring" and adding a new callout are bigger content decisions than the mechanical fixes above — flagging as recommendations rather than executing them, since they'd change already-reviewed sections.
+- **Three-pillar "why different" structure**, from its Problem section: three numbered, evidence-backed points — Outside Objectivity, Lived Experience, Above & Beyond Engagement — each with a one-line client-sourced proof point (Objectivity Gap, Walks the Talk, Effort Where Others Pass, all real positioning-brief themes). Carried over unchanged; already accurate.
+- **"Five words" callout**, sourced directly from Laura Labovich's interview in the positioning brief (Compassionate, Curious, Insightful, Thoughtful, Kind). Carried over unchanged.
+- **Secondary CTA** on the closing section, alongside the primary: "Explore the Messy Middle." Carried over unchanged.
+- **Two-column hero** (photo/stat-block/pull-quote panel on the left, eyebrow/headline/subhead/CTA on the right) and **per-section eyebrow labels** throughout — the specific structural pattern Jackie asked for by name.
+- **Hero headline and eyebrow — reverted 2026-08-04.** First pass swapped the headline to "Growth Stalled?" and dropped "Stage II Entrepreneurs" from the eyebrow/stat-label, on the assumption that "Stage II" was deprecated terminology since it doesn't appear in the positioning brief or the confirmed 2026-07-29 copy draft. Jackie corrected this directly: keep "Stage II Entrepreneurs" as standing terminology in regular communication, and use the original eyebrows_3 headline/first-paragraph content instead ("You're not stuck because you're doing something wrong... I'm Jackie Nagel. For 25+ years I've equipped Stage II entrepreneurs..."), just with the already-corrected $250K–$4M revenue range. Checking `context/brand-voice.md` and `context/business-info.md` afterward confirmed "Stage II entrepreneurs" is in fact live, standing terminology there — it just isn't repeated in the positioning brief or the 2026-07-29 draft, which was the wrong signal to infer deprecation from. **Lesson for future edits:** absence from one reference document (the positioning brief) doesn't mean a term is retired — check the foundational context files (`brand-voice.md`, `business-info.md`) before treating any established term as outdated. Saved as memory `feedback_dont-infer-terminology-deprecated`.
+- **Problem section — settled 2026-08-04 after two passes.** First pass used the confirmed "The Same Wall, More Than Once" diagnosis. Jackie asked to revert to the original eyebrows_3 content instead (simpler $250K–$500K framing). Looking at the sharper diagnosis again, she confirmed she actually prefers that paragraph content ($250,000–$400,000 / $750,000 to $1 million / $3–4 million, with the specific per-wall cause) — just not the header "The Same Wall, More Than Once" itself. **Final state:** header is now **"It Happens More Than Once"** (picked from three options offered — alternates were "You've Been Here Before" and "Growth Stalls in Predictable Places" — swap easily if she wants a different one later), body content is the full sharper diagnosis, both paragraphs merged into flowing prose rather than a separate styled closing line. Also fixed one word in point 03 (Above & Beyond Engagement): "Zoom" → "conversation," so it reads "I don't clock out when the conversation ends."
+- **Status, per Jackie (2026-08-04): `2026-08-04-homepage-merged.html` is now the leading version, not a drift from `2026-07-29-homepage-about-copy.md` to be reconciled back.** The two have diverged on the hero headline ("You're not stuck because you're doing something wrong..." vs. the markdown draft's "Growth Stalled?") and the Problem section's wall-by-wall wording (reworded 2026-08-04: wall 2 now uses the "too complex to hold in your head" line, wall 3 now uses "shift from running on your judgment and presence to running as a professionally managed organization," pulled from the positioning brief's actual $3M–$4M diagnosis). Treat the HTML file as the current source of truth for homepage copy going forward — don't assume the markdown draft should overwrite it, or vice versa, without her say-so.
 
 **Resolved — two discrepancies in the pre-AIOS file, both settled by existing workspace decisions, no new decision needed:**
 
 - **Revenue floor stated as "$350K to $4M."** This is a known-superseded number — `context/task-audit.md` and `context/brand-voice.md` both document an explicit correction on 2026-07-13, from $350K–$4M to $250K–$4M, "per the official 2026 Style Guide — the $250K floor matches the actual Messy Middle mastermind band." The eyebrows_3 file simply predates that fix (it lives outside the workspace, in Downloads, so it wasn't caught in the original sweep). $250K stays correct everywhere; no live copy uses $350K.
-- **CTA button reads "Map Your Next Level."** Not in the approved CTA bank (`content/offers-and-funnels.md`: "Start the Conversation" / "Schedule a Conversation" / "Find a Time That Works" / "Apply for Consideration"). Recommend retiring this phrase if this file's layout is ever built from — use the approved bank instead.
+- **CTA button reads "Map Your Next Level."** Not in the approved CTA bank (`content/offers-and-funnels.md`: "Start the Conversation" / "Schedule a Conversation" / "Find a Time That Works" / "Apply for Consideration"). Fixed 2026-08-04 in the merged file — hero button now reads "Start the Conversation," nav CTA reads "Schedule a Conversation."
 
 **Added to the confirmed copy and both `.docx` files, then trimmed:**
 
-- **Naya Troup testimonial** ("Jackie doesn't just cheer — she rolls up her sleeves and engages with the actual problem until something concrete comes out the other side," First Legal Services, client since 2010) — a real quote, also independently cited in the positioning brief's "Practical Collaboration, Not Cheerleading" theme. Sign-off list is six names total (Chapman, Saroyan ×2, Labovich, Laguzza, Lanza, Troup).
+- **Nia Troup testimonial** ("Jackie doesn't just cheer — she rolls up her sleeves and engages with the actual problem until something concrete comes out the other side," First Legal Services, client since 2010) — a real quote, also independently cited in the positioning brief's "Practical Collaboration, Not Cheerleading" theme. Sign-off list is six names total (Chapman, Saroyan ×2, Labovich, Laguzza, Lanza, Troup).
 - **Trim done 2026-08-03.** What Clients Say was down to 4 quotes (Raffi, Laura, Anne, Lanza) instead of 5 — but not by deleting Naya. Her quote turned out to be a better thematic fit for **Personalized, Not Packaged** than a generic testimonials slot (it's specifically about hands-on collaborative work style, matching that section's own point), so it moved there instead, alongside Mark Chapman's quote. Raffi and John Lanza both stayed in What Clients Say despite covering similar objectivity/clarity ground — cutting either would have overridden an explicit decision Jackie already made (Raffi's two-quote placement; Lanza's "keep it" call), so neither was cut without asking.
 
 ---
@@ -138,6 +142,32 @@ Restructuring "What I Bring" and adding a new callout are bigger content decisio
 **Still open:**
 
 5. **Wilma Naschin's interview** (or Amy Hage's) — the $250K–$400K wall description in Section 2 is still an unvalidated working draft per the positioning brief's own data-quality notes; not a build blocker, but a reason not to treat that section's copy as fully final.
+
+---
+
+## 2026-08-04 — Homepage copy overhaul (current state, supersedes scattered notes above)
+
+Extensive collaborative editing pass directly on `2026-08-04-homepage-merged.html`. Rather than patch every note above, here's the current, authoritative state:
+
+**Who's featured on the page now, and their sign-off status (all pending, none sent yet):**
+1. **Raffi Saroyan** (Showroom Exchange, client since 2012) — hero pull-quote only now ("There is no one else doing what Jackie does..."). Draft in Gmail.
+2. **Diane Leonard** (DH Leonard Consulting & Grant Writing Services, client since 2013) — new addition, sourced from the live pre-redesign homepage snapshot (`2026-08-01-live-homepage-before-snapshot.md`), not the positioning brief. Two quotes used: one woven into the "How I Work" body copy, one in that section's side quote-block. Draft in Gmail (sent 2026-08-04).
+3. **Laura Labovich** (The Career Strategy Group, client since 2000) — moved from "How I Work" into the testimonials feature spot ("Proof you can only feel..."). Draft in Gmail.
+4. **Nia Troup** (First Legal, client since 2010) — testimonials support row. Draft in Gmail, still asks whether she prefers "Nia" or "Naya" published.
+5. **Mark Chapman** (The I Do Society, client since 2014) — testimonials support row.
+6. **John Lanza** (The Money Mammals, client since 2016) — testimonials support row. Draft in Gmail.
+
+**Anne Laguzza is no longer featured anywhere on the page** — her quote was swapped out for Diane Leonard's in the "How I Work" side panel and not placed elsewhere. Drop her from active sign-off tracking; no need to pursue.
+
+**Other changes this pass:**
+- Hero paragraph gap filled: "Most owners are too close to see the real situation clearly. I bring the objective perspective that changes everything."
+- Hero closing line changed to "on the problem you're facing" (echoes John Lanza's testimonial just below it).
+- "How I Work" body rewritten to lead with what clients notice first (questions + hearing what's under the surface) instead of a framework/anti-framework comparison; cut the "harder part" framing so the work doesn't read as difficult for Jackie; kept only the 30,000-foot-view line from the old second paragraph.
+- "Someone who pushes without punishing" (read as managerial) replaced with "encouraging, supportive, hardworking, and quick to make them feel genuinely heard and seen instead of processed."
+- CTA headline changed to "Ready to see what's possible for you and your business?"
+- **Full em-dash sweep across all visible copy on the page**, including inside the two direct client quotes that used dashes as transcription punctuation (John Lanza's, Nia Troup's) — replaced with commas, periods, or parentheses depending on context. Per Jackie's explicit instruction to remove anything that reads as AI-generated. CSS comments and the `<title>` tag were left alone since they're not visible copy.
+
+**Status:** `2026-08-04-homepage-merged.html` remains the leading, authoritative version of the homepage copy (confirmed 2026-08-04) — `2026-07-29-homepage-about-copy.md` is not being kept in sync with it.
 
 ---
 
