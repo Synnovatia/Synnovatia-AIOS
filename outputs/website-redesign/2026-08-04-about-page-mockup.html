@@ -157,14 +157,21 @@
   .origin-pull blockquote {
     font-family: 'Fraunces', serif; font-size: 17px; font-style: italic;
     color: var(--navy); line-height: 1.6; margin-bottom: 14px;
+    border-left: none;
   }
   .origin-pull cite {
+    display: block; margin-left: 14px;
     font-size: 13px; font-weight: 700; letter-spacing: 0.05em;
     text-transform: uppercase; color: var(--gold); font-style: normal;
   }
-  .origin-pull cite span {
+  .origin-pull-org {
     display: block; font-weight: 400; letter-spacing: 0;
     text-transform: none; color: var(--body-text); margin-top: 2px;
+    font-size: 13px;
+  }
+  .origin-pull-tenure {
+    display: block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold); margin-top: 4px;
   }
 
   /* ── WHAT MAKES IT DIFFERENT ── */
@@ -224,13 +231,19 @@
   .voice-card.nudge { margin-top: 36px; }
   .voice-quote {
     font-family: 'Fraunces', serif; font-size: 19px; font-style: italic; font-weight: 400;
-    line-height: 1.55; color: var(--navy); margin-bottom: 24px; flex: 1;
+    line-height: 1.55; color: var(--navy); margin-bottom: 14px !important; flex: 0 1 auto;
   }
-  .voice-name { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
-  .voice-org { font-size: 12px; color: var(--body-text); opacity: 0.6; }
+  .voice-name {
+    font-size: 13px; font-weight: 700; color: var(--navy);
+    line-height: 1.15; margin-top: 0 !important; margin-bottom: 0 !important;
+  }
+  .voice-org {
+    font-size: 12px; color: var(--body-text); opacity: 0.6;
+    line-height: 1.15; margin-top: 2px !important; margin-bottom: 0 !important;
+  }
   .voice-tenure {
     font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--gold); margin-top: 10px;
+    text-transform: uppercase; color: var(--gold); line-height: 1.15; margin-top: 4px !important;
   }
 
   /* ── CTA ── */
@@ -241,7 +254,7 @@
   }
   .cta-h2 {
     font-family: 'Fraunces', serif; font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
-    color: var(--white); line-height: 1.2; max-width: 640px; margin: 0 auto 20px;
+    color: var(--white) !important; line-height: 1.2; max-width: 640px; margin: 0 auto 20px;
   }
   .cta-sub {
     font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.72);
@@ -358,7 +371,8 @@
         <div class="origin-pull">
           <blockquote>&#8220;Jackie gave me clarity I didn't have. She made my goals feel achievable, not just aspirational.&#8221;</blockquote>
           <cite>Anne Laguzza
-            <span>The Works Consulting, client since 2003</span>
+            <span class="origin-pull-org">The Works Consulting</span>
+            <span class="origin-pull-tenure">Client since 2003</span>
           </cite>
         </div>
       </div>
@@ -486,7 +500,7 @@
         <p class="voice-quote">Jackie walks the talk. She balances kindness with assertiveness in a way that's distinctly her, not a technique. You feel like she has your back, even when she's pushing you toward something uncomfortable.</p>
         <p class="voice-name">Christina Carlson</p>
         <p class="voice-org">Unstuck Leadership Consulting</p>
-        <p class="voice-tenure">Long-term client</p>
+        <p class="voice-tenure">Client since 2018</p>
       </div>
     </div>
   </div>

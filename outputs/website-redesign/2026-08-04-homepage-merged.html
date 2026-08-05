@@ -150,6 +150,7 @@
     font-family: 'Fraunces', serif;
     font-size: 13px; font-style: italic;
     color: var(--navy); line-height: 1.55;
+    border-left: none;
     border-right: 3px solid var(--gold);
     padding-right: 14px;
     max-width: 260px;
@@ -231,7 +232,8 @@
   .problem-num {
     font-family: 'Fraunces', serif;
     font-size: 40px; font-weight: 700; line-height: 1;
-    color: rgba(255,255,255,0.08); flex-shrink: 0; width: 48px; margin-top: -4px;
+    color: rgba(255,255,255,0.08); flex-shrink: 0; width: 64px; margin-top: -4px;
+    white-space: nowrap;
   }
   .problem-text strong {
     display: block; font-size: 13px; font-weight: 700;
@@ -254,8 +256,8 @@
     font-size: 20px; font-style: italic;
     color: var(--navy); line-height: 1.65; margin-bottom: 20px;
   }
-  .how-quote-attr { font-size: 13px; font-weight: 700; color: var(--gold); }
-  .how-quote-org { font-size: 12px; color: var(--body-text); opacity: 0.6; margin-top: 3px; }
+  .how-quote-attr { font-size: 13px; font-weight: 700; color: var(--gold); line-height: 1.1; margin-top: 0 !important; margin-bottom: 0 !important; }
+  .how-quote-org { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 2px !important; margin-bottom: 0 !important; }
   .how-traits { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
   .trait-pill {
     font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
@@ -297,7 +299,7 @@
   .t-feature-org  { font-size: 13px; color: var(--body-text); opacity: 0.65; }
   .t-feature-tenure {
     font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--gold); margin-left: auto;
+    text-transform: uppercase; color: var(--gold);
   }
   .t-support {
     display: grid; grid-template-columns: 1.25fr 1fr 1.15fr;
@@ -308,13 +310,13 @@
   .t-item.nudge { margin-top: 44px; }
   .t-quote {
     font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
-    font-size: 19px; line-height: 1.55; color: var(--navy); margin-bottom: 22px;
+    font-size: 19px; line-height: 1.55; color: var(--navy); margin-bottom: 14px !important;
   }
-  .t-name { font-size: 13px; font-weight: 700; color: var(--navy); }
-  .t-org  { font-size: 12px; color: var(--body-text); opacity: 0.6; }
+  .t-name { font-size: 13px; font-weight: 700; color: var(--navy); margin-top: 0 !important; margin-bottom: 0 !important; }
+  .t-org  { font-size: 12px; color: var(--body-text); opacity: 0.6; margin-top: 2px !important; margin-bottom: 0 !important; }
   .t-tenure {
     font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--gold); margin-top: 8px;
+    text-transform: uppercase; color: var(--gold); margin-top: 4px !important;
   }
   @media (max-width: 860px) {
     .testimonials .t-head { grid-template-columns: 1fr; }
@@ -335,7 +337,7 @@
   .cta-h2 {
     font-family: 'Fraunces', serif;
     font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
-    color: var(--white); line-height: 1.2;
+    color: var(--white) !important; line-height: 1.2;
     max-width: 640px; margin: 0 auto 20px;
   }
   .cta-sub {

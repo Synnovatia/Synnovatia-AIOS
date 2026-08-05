@@ -41,7 +41,7 @@ The strongest, most corroborated cluster in the whole research set.
 - **The Way She Makes People Feel** (Strong — Mark Chapman, Laura Labovich): Laura's five-word description — compassionate, curious, insightful, thoughtful, kind — and "you always leave a session feeling better than when you came in."
 - **Kindhearted Assertiveness / Emotional Intelligence** (Emerging — Christina Carlson): Jackie pushes clients without punishing them; holds space for the emotional reality of entrepreneurship *and* knows when it's time to move on — most coaches only do one half of that.
 - **Warmth as Strategic Differentiator** (Emerging — Laura Labovich; downgraded 2026-07-29 from the source doc's "Strong" label, confirmed with Jackie no other client interview actually supports it): warmth isn't incidental, it's load-bearing; most competitors can't manufacture it. Real and worth using, just don't present it as broadly corroborated.
-- **Therapist to Entrepreneurs / "Jiggling the Key"** (Emerging — Sandra Martinez): psychological safety plus persistence — Jackie keeps working a stuck problem from different angles rather than giving up or redirecting.
+- **Therapist to Entrepreneurs / "Jiggling the Key"** (Emerging — Sandra Martinez Roe): psychological safety plus persistence — Jackie keeps working a stuck problem from different angles rather than giving up or redirecting.
 
 **Use for:** About page, "how Jackie works" copy, discovery call framing, testimonials.
 
@@ -72,7 +72,7 @@ The substance behind "Fortune 500-caliber thinking, sized to fit."
 
 ### The Meta-Point: Experience Reveals the Difference
 
-**Not a pillar — a sales/onboarding implication.** Sandra Martinez and Laura Labovich both independently noted that Jackie's differentiation is hard to describe in advance; it's something you feel once you're inside the work. This has a real, practical consequence: **the discovery call and early sessions need to be designed as a deliberate proof-of-concept experience, not just an intake conversation.** Whatever gets someone to a discovery call is doing more selling work than any page of copy — worth designing deliberately (see Craig Ullom's "video as trust accelerator" note below, which is directly related).
+**Not a pillar — a sales/onboarding implication.** Sandra Martinez Roe and Laura Labovich both independently noted that Jackie's differentiation is hard to describe in advance; it's something you feel once you're inside the work. This has a real, practical consequence: **the discovery call and early sessions need to be designed as a deliberate proof-of-concept experience, not just an intake conversation.** Whatever gets someone to a discovery call is doing more selling work than any page of copy — worth designing deliberately (see Craig Ullom's "video as trust accelerator" note below, which is directly related).
 
 ---
 

@@ -185,7 +185,7 @@ Jackie surfaced a previously-designed About page concept (`~/Desktop/Website /sy
 
 **New names added to featured-clients tracking, per Jackie's decision to include both:**
 - **Christina Carlson** — already a known, verified Seven Figure Forum member. HubSpot contact found (christina@unstuck.network, company "Unstuck Leadership Consulting, Inc." — corrected from the candidate file's "Unstuck, Inc."). Sign-off draft sent to Gmail 2026-08-04, matching the tone of the other 7; asked her to confirm her actual client-since year since none was documented anywhere in the workspace.
-- **"Sandra Martinez" — NOT YET RESOLVED, do not treat as sign-off-ready.** The positioning brief and source synthesis doc both name her "Sandra Martinez" (joint interview with "Hilary Beck"), company unlisted in the brief but the candidate file paired her with "InPlay Showroom / Hello Earth Club." HubSpot has **no contact named Martinez at all.** The real contacts tied to those companies are Sandra **Roe** (sandra@helloearthclub.com, Hello Earth Club) and Randy Ziebarth (randy@inplayshowroom.com, InPlay Showroom) — no Hilary Beck either. Strong possibility "Martinez" is a maiden/previous name and "Roe" is current, but this wasn't verified, so no sign-off email was drafted or sent. **Flagged to Jackie directly; needs her confirmation of the correct name before any outreach or publication.** The About page currently still shows "Sandra Martinez" pending that confirmation — treat that name as unconfirmed, not final.
+- **"Sandra Martinez" — RESOLVED 2026-08-04.** Jackie confirmed the full name is **Sandra Martinez Roe** (positioning brief and source synthesis doc named her "Sandra Martinez"; HubSpot's actual contact for Hello Earth Club is Sandra Roe, sandra@helloearthclub.com — confirming "Martinez" and "Roe" are the same person). The About page already shows "Sandra Martinez Roe." Sign-off outreach can proceed under this name.
 
 **Credentials & background section corrected against `context/business-info.md`:** candidate's "Certified, Coach U & Corporate Coach U International" conflated teaching with certification — Jackie taught at both schools, she isn't certified by them — corrected to "Faculty, Corporate Coach University & Coach University." Mastermind names corrected to the official "Mastermind for the Messy Middle" and "Seven Figure Forum" (candidate had informal names). Two claims not previously documented anywhere in the workspace — "published author and regular contributor to publications" and a science-based/evidence-based coaching methodology — confirmed accurate by Jackie and added to `context/business-info.md`'s Differentiators line so they're no longer living only on this page.
 
@@ -201,7 +201,7 @@ Jackie surfaced a previously-designed About page concept (`~/Desktop/Website /sy
 
 **Also confirmed via style-guide.md:** colors, fonts, and pull-quote treatment (Fraunces italic + gold left-rule) all already matched exactly — no changes needed there. Confirmed the locked CTA copy table in brand-voice.md matches what's on the page ("Schedule a Conversation" nav, "Start the Conversation" body).
 
-**Note for later:** `context/brand-voice.md` line 48 lists "Sandra Martinez/Hilary Beck" in its own confirmed client roster — the same name the open Sandra Martinez/Roe discrepancy above involves. If Jackie confirms "Roe" is correct, brand-voice.md's roster needs the same correction, not just this page.
+`context/brand-voice.md`'s client roster updated to "Sandra Martinez Roe" to match.
 
 ---
 

@@ -45,14 +45,14 @@ Stage II entrepreneurs · **$250K–$4M revenue** · navigating the **"Messy Mid
 
 ## Cross-Interview Themes (by signal strength)
 
-The more clients who echo the same idea unprompted, the stronger the positioning signal. From the full interview roster (Mark Chapman, Christina Carlson, Anne Laguzza, Raffi Saroyan, Sandra Martinez/Hilary Beck, Laura Labovich, Nia Troup — clients; Craig Ullom — external marketing observer, not a client).
+The more clients who echo the same idea unprompted, the stronger the positioning signal. From the full interview roster (Mark Chapman, Christina Carlson, Anne Laguzza, Raffi Saroyan, Sandra Martinez Roe/Hilary Beck, Laura Labovich, Nia Troup — clients; Craig Ullom — external marketing observer, not a client).
 
 **Strong (mentioned independently by 2-3+ clients):**
 - **Human Peer Dynamic** — Mark Chapman, Christina Carlson, Anne Laguzza all described relating to Jackie as a fellow business owner, not a detached expert
 - **Presence & Listening** — Mark Chapman, Christina Carlson, Laura Labovich all independently reported feeling genuinely heard and seen, not processed
 - **Warmth as Strategic Differentiator** — surfaces repeatedly as functional, not soft
 - **The Way She Makes People Feel** — Mark Chapman and Laura Labovich both independently reported leaving sessions feeling better
-- **Experience Reveals the Difference** — Sandra Martinez and Laura Labovich both noted the value only becomes clear once inside the work — proof is experiential, not descriptive
+- **Experience Reveals the Difference** — Sandra Martinez Roe and Laura Labovich both noted the value only becomes clear once inside the work — proof is experiential, not descriptive
 
 **Emerging (mentioned by 1 client, worth watching):**
 - Objectivity Gap, Anti-Program, Fear→Confidence, Trust Through Honesty, Emotional Intelligence, Entrepreneur/Leader Distinction, Genuine/Anti-Grift, Fad-Free/Relevant, Iterates on Her Own Business, Clarity + Achievability, Solopreneur Advisory Scarcity, Practical Collaboration, Measurable Results
@@ -68,8 +68,8 @@ The more clients who echo the same idea unprompted, the stronger the positioning
 - **Entrepreneur/Leader Distinction** — An entrepreneur can't put things down because doing so means no pay, no growth — Jackie coaches to that reality, not a corporate leadership template. — Christina Carlson
 - **Genuine in a Market Full of Grifts** — "In a world where there seem to be so many grifts, Jackie is genuine." — Anne Laguzza
 - **Two Funnels of Knowledge** — Broad cross-industry pattern recognition AND deep specific awareness — most advisors have one, Jackie has both. — Nia Troup
-- **Jiggling the Key** — Persistence and creativity in problem-solving; doesn't give up or switch doors, keeps working the lock until something gives. — Sandra Martinez
-- **Therapist to Entrepreneurs** — Psychological safety as a strategic asset (use carefully — validates emotional intelligence but may need positioning guardrails, per the proof points tracker). — Sandra Martinez
+- **Jiggling the Key** — Persistence and creativity in problem-solving; doesn't give up or switch doors, keeps working the lock until something gives. — Sandra Martinez Roe
+- **Therapist to Entrepreneurs** — Psychological safety as a strategic asset (use carefully — validates emotional intelligence but may need positioning guardrails, per the proof points tracker). — Sandra Martinez Roe
 - **Continued Engagement Between Sessions** — Doesn't clock out when the Zoom ends; keeps thinking about client problems between meetings. — Nia Troup
 
 ## Additional Messaging Principles (Craig Ullom, external observer)
