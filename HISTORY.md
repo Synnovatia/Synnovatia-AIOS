@@ -8,6 +8,29 @@
 
 ---
 
+## 2026-08-05
+
+### Seven Figure Forum — Friday Agenda Built and Pushed to the Zoom Invite
+- Turned the raw notes sitting in the Aug 7 Zoom invite (a mix of Mark's AI/vibe-coding question, Christina Carlson's pension-administration hiring-threshold question, two standing check-in prompts, and a stray unattributed HubSpot research clip) into a structured agenda: Welcome & Check-In, Time Shielding & Priority Sorting, two Hot Topics (renamed from "Hot Seat" per Jackie), Closing. Confirmed via calendar search that the pension-administration topic belongs to Christina Carlson (Mobius Benefits) and dropped the stray HubSpot snippet, which had no member attribution.
+- **Real reliability problem found and worked around:** the first attempt to save the agenda into the event description via the calendar API succeeded, then silently reverted about a minute later — almost certainly an automatic Zoom↔Calendar resync overwriting manual edits to a Zoom-managed event. Re-applied and verified with a fresh `get_event` read (not just trusting the update call's own response) before confirming to Jackie. A second identical save attempt, meant to force a resend of the notification, came back as a no-op (unchanged `updated` timestamp) — Google Calendar only emails attendees when content actually changes, so there's no way to force a resend of an identical invite short of an actual edit.
+
+### Messy Middle / Seven Figure Forum Candidate Review
+- Synthesized the current actionable outreach list for both masterminds from `outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md`, `client-reengagement/data/roster.csv`, and a live Gmail cross-check (confirmed no replies had come in since the doc's own same-day status log, so the existing write-up was still current). Split into needs-first-touch, needs-Jackie's-call, and already-out-awaiting-reply for each group.
+- **Connie Weatherman removed from Messy Middle consideration** — Jackie believes the business is likely closed (unconfirmed, flagged as such in the doc rather than treated as settled fact). Cleared her `priority=1` flag in `roster.csv`, which had been set specifically to fast-track her ahead of the Aug 26 invitation; she stays in the general re-engagement roster, same treatment as the earlier Terri Wallin retirement.
+- Drafted three reconnect-only emails (no mastermind mention), pulled forward from Tier 2 ahead of the natural cadence: Liz Mohler (the 2020 spontaneous Joshua Tree trip, asks if she ever settled on a specialty), Carolynn Aristone (the 2020 telehealth-pivot-while-homeschooling stretch), Jill Cohen (asks how sons Felix and Isaac are doing, last mentioned college/high-school age in 2021). All three sitting in Gmail as drafts, none sent.
+
+### Workout Logged
+- Logged today's Long Hike to `personal/workout-logs/session-log.csv`: 78 min, avg HR 117, 3.9 miles, 20:12/mile, 327 MET-minutes.
+
+### Morning Brief
+- Ran the `morning` skill for a wide-open Wednesday (Long Hike, then Tadashi Farm, nothing else on the calendar; nothing pending in email) and published it as an artifact.
+
+### Other Pending Changes (automated tasks from other sessions, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated `dashboard-daily-refresh` and weekday `morning-brief` runs.
+- `client-reengagement/data/meeting_notes.csv`, `.claude/settings.local.json`: an earlier session today logged two `meeting_completed` outcomes via `log_outreach.py` — Katie Hammond (in-person reconnect dinner, 7/31) and Margaret Jacoby (confirmed retired, 8/5) — both already reflected in the roster-mining doc's own status log.
+
+---
+
 ## 2026-08-04
 
 ### Website Redesign — Homepage and About Page Deployed to WordPress Staging, Sandra Martinez Roe Confirmed, Extensive Spacing/Visibility Fixes

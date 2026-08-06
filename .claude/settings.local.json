@@ -292,7 +292,10 @@
       "Bash(node \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/58f5884c-2919-4445-8e8e-aa7891cc2fd8/scratchpad/make_linkedin_docx.js\")",
       "Bash(unzip -q -t \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/linkedin/2026-08-10-to-08-14-drafts.docx\")",
       "Bash(sed -i '' 's/2026-08-04/2026-08-03/g' context/linkedin-marketing.md outputs/linkedin/2026-08-10-to-08-14-drafts.md)",
-      "Bash(sed -i '' 's/2026-08-04/2026-08-03/g' \"/Users/jackienagel/.claude/projects/-Users-jackienagel-Desktop-Synnovatia-AIOS/memory/feedback_linkedin-post-editing-style.md\")"
+      "Bash(sed -i '' 's/2026-08-04/2026-08-03/g' \"/Users/jackienagel/.claude/projects/-Users-jackienagel-Desktop-Synnovatia-AIOS/memory/feedback_linkedin-post-editing-style.md\")",
+      "Bash(awk -F',' '$11==\"1\"{print $1, $2, $3, $8, $9}' roster.csv)",
+      "Bash(python3 scripts/log_outreach.py meeting_completed katie@thelastlayer.co --date 2026-07-31 --notes \"Reconnect dinner with Jackie, in person\")",
+      "Bash(python3 scripts/log_outreach.py meeting_completed margaretjacoby45@gmail.com --date 2026-08-05 --notes \"Spoke with Jackie 8/5 - confirmed retired\")"
     ]
   }
 }

@@ -21,3 +21,4 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-08-03,Walk/Run Intervals (VO2 max),51,126,not captured,282,"3.3 miles, computes to 15:27/mile. First VO2-focused session, upgraded from a regular walk on purpose: 10 min warmup/cooldown bookending 3-minute walk/run segments. VO2 max 26.2 (goal 30) also logged this session, first tracked reading — see personal/health-goals.md."
 2026-08-04,Hill Warm-up,14,135,not captured,89,"0.67 miles, reported avg pace 21:46/mile."
 2026-08-04,Strength (Day A),53,112,not captured,196,"Reported via Welltory: 53 min, avg HR 112, 196 MET-minutes. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv."
+2026-08-05,Long Hike,78,117,not captured,327,"3.9 miles, reported avg pace 20:12/mile (computes to 20:00/mile - reconciles closely). HRV not reported."
