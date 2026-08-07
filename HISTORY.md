@@ -8,6 +8,25 @@
 
 ---
 
+## 2026-08-07
+
+### Friday Meeting Prep — Prospect Intro (Rob Fleming) and Positioning Research Interview (Wilma Nachsin)
+- Built a standalone prep note for the 12:30pm Rob Fleming call (`data/meeting-prep/notes/2026-08-07-rob-fleming-prep.md`) — a Mark Chapman intro, but a real one: confirmed this is the same Rob Fleming Mark introduced back in 2022 (then running Prodigy Public Relations) whom Jackie never actually connected with despite repeated reschedules. He's since founded OnPoint Publicity. Flagged that the entire 2026 intro email thread is sitting in Gmail Trash — not urgent, but the only record of how the meeting got scheduled. Framed the call as neither cold nor a warm reconnection, with a dual-purpose watch: could be a prospective client or a referral-partner conversation given he runs a PR agency.
+- Built a standalone prep note for the 11:30am Wilma Nachsin call (`data/meeting-prep/notes/2026-08-07-wilma-nachsin-prep.md`) — flagged as the single highest-priority pending positioning-research interview, since she's one of only two candidates (with Amy Hage, not yet interviewed) in the $250K–$400K band the growth-plateau "first wall" diagnosis is built around, and no completed interview currently validates it directly. Laid out a conversational flow (warm open on her community launch, general client-experience questions, then growth-plateau validation asked naturally rather than as a checklist) and flagged the post-call step: update `outputs/positioning/positioning-brief.md`'s Data Quality Notes either way, including if what she describes complicates the current diagnosis.
+
+### Ginny Kenyon Follow-Up Sent, Next Reminder Set
+- Logged the 2026-08-06 follow-up email as sent in `data/meeting-prep/notes/2026-07-30-ginny-kenyon-prep.md` — checked in on the Ben/ABC field test and the CHAP/Denise webinar thread, plus a light birthday nod (Ginny turns 83 on 8/11). Set the next reminder for 2026-08-13 to follow up specifically on whether she's talked with Denise yet.
+
+### Day B Strength Session Logged, Post-Ceiling Progression Rules Added to the Plan
+- Logged 2026-08-06's Day B session (24 sets across 8 exercises) to `data/strength-training-log.csv`: Dumbbell Sumo Deadlift hit its extended rep target at the 25 lb equipment ceiling; Reverse Lunge and both bands (Bent-Over Row, Face Pull) bumped up per the day's recommendations; Stability Ball Hip Bridge went clean 10/10/10 across all sets for the first time, resolving a fatigue-dropoff pattern flagged two sessions back; Single-Arm Suitcase Carry hit its 60 ft distance target, still at the 25 lb max. Dumbbell Lateral Raise wasn't reported — flagged as a follow-up gap. Cardio (Hill Warm-up + Strength) logged to `personal/workout-logs/session-log.csv`, with two reported figures reconciled against physically plausible ranges rather than taken at face value (a "69 m/s" pace read as a MET-minutes mis-transcription; a stated 10:00/mile pace that didn't reconcile with reported distance/duration, logged as-reported with the discrepancy noted).
+- **New standing rule added to `personal/workout-plan.md`:** now that Jackie's dumbbells are confirmed maxed at 25 lb per hand, the plan's double-progression model (add weight once you top the rep range) no longer applies past that ceiling. Added an explicit fallback order — extend the rep ceiling first, then add tempo/pause, then swap to a different isolation exercise for the same muscle group — matching the pattern already used for the Overhead Press fix on 2026-07-30. New equipment stays Jackie's call, not something to assume or push toward.
+- Built and printed the next Day B card (`outputs/strength-log/2026-08-06-day-b-printable.html` + PDF) applying these updated recommendations.
+
+### Other Pending Changes (automated tasks from other sessions, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated `dashboard-daily-refresh` and weekday `morning-brief` runs.
+
+---
+
 ## 2026-08-06
 
 ### HubSpot Email Automation Built — Draft Creation, Real Analytics, and a Style-Learning Loop

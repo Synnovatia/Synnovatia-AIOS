@@ -93,7 +93,7 @@ Given she has no active marketing motion today, start with #1 (email to existing
 
 **Also noted:** Ginny turns **83 on August 11, 2026**.
 
-**Follow-up:** reminder scheduled for 2026-08-06 to prompt Jackie to send Ginny a follow-up email within the 7-day window.
+**Follow-up:** reminder scheduled for 2026-08-06 to prompt Jackie to send Ginny a follow-up email within the 7-day window. **Sent 2026-08-06** — checked in on the Ben/ABC field-test and the CHAP/Denise webinar thread, plus a light birthday nod (turns 83 on the 11th). Next reminder set for 2026-08-13 to follow up specifically on whether Ginny has talked with Denise yet.
 
 ---
 

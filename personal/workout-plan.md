@@ -60,6 +60,12 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 
 Work within the rep range shown for each exercise. Once you hit the top of the range on all sets, add weight next session and drop back to the bottom of the range. This is a simple double-progression model — matches Fortify's progressive-overload tracking directly.
 
+**Hard ceiling: 25 lb per hand is the maximum dumbbell weight available (confirmed 2026-08-04).** Never recommend or log a weight above this. Once an exercise tops its rep range at 25 lb, the double-progression model above no longer applies as written — don't suggest "add weight" past 25 lb. Instead, in this order:
+1. **Extend the rep ceiling** — push past the plan's stated top of range (e.g., 8–12 becomes a working target of 15–20) while holding at 25 lb.
+2. **Add tempo/pause** if reps climb past ~20 without a new plateau — slower eccentric (3–4 sec lowering) or a 2-sec pause at the hardest point of the rep.
+3. **Isolation-exercise swap**, same pattern as the 2026-07-30 Overhead Press fix — once weight and reps both plateau at the ceiling, add a new exercise targeting the same muscle group from a different angle rather than continuing to chase the same lift.
+New equipment (heavier dumbbells, kettlebells, bands layered on top of dumbbells) is Jackie's call to make if/when she wants it — not something to assume or push toward by default.
+
 ## Deload
 
 Every 4-6 weeks: same exercises, ~60% of usual weight for one week. Helps longevity goals and prevents plateaus/overuse, especially given the walking/hiking volume on the other days of the week.
