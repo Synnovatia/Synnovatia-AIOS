@@ -44,4 +44,18 @@ Update `outputs/positioning/positioning-brief.md`'s Data Quality Notes — this 
 
 ---
 
-> Standalone prep note — this is a positioning-research interview, not a regular client strategy call, so it sits outside the automated `pre-meeting-objective-check`/`post-meeting-recap-check` system.
+## Post-Interview Notes (2026-08-07)
+
+**Origin story — why she sought out a group:** Wilma was struggling with isolation. Her partner of many years had retired, and she wanted a group experience. She and Jackie actually worked together **1:1 first**, before she moved into the mastermind — a real conversion path (1:1 → group) worth keeping in mind for the growth push toward more mastermind members.
+
+**On the group specifically (not about Jackie/Synnovatia — about the mastermind format itself):** value is getting different perspectives, seeing things she couldn't see on her own, and being able to share ideas and contribute to other members' success from her own perspective. Genuinely new material — useful for mastermind-specific marketing (`content/offers-and-funnels.md`, `context/mastermind-launch.md`), distinct from the 1:1 positioning research below.
+
+**On Jackie / Synnovatia** (note: Jackie's dictated notes said "Senevesha," read here as "Synnovatia" — a likely dictation artifact, flag if that's wrong):
+- *"[Jackie] understands the weight of solving problems by oneself and the feeling of being tired of carrying the weight of all the decisions by oneself."*
+- Great facilitator; asks powerful questions
+- *"Almost like an octopus"* — tentacles in so many different areas, glimpses and insight into a lot of information, well-read, brings a lot of wisdom, very insightful
+- Has a way of seeing things and unwrapping problems that's gracious, and sees things in a way others don't
+
+**Maps directly onto two existing positioning themes** — see updates in `outputs/positioning/positioning-brief.md`: the "weight of solving problems alone" line is a fourth voice for **Human Peer Dynamic**; the octopus/breadth-and-depth material is a second voice for **Two Funnels of Knowledge**, upgrading it from a single-client Emerging theme to Strong.
+
+**Open question — the actual reason this interview was prioritized:** these notes don't mention documentation, systems, pricing, cash flow, or reactive planning — the $250K–$400K growth-plateau diagnosis this interview exists to validate. Did that part of the conversation happen? If it didn't come up naturally, worth a short follow-up rather than treating the gap as closed on the strength of the relational/wisdom material alone.

@@ -8,6 +8,26 @@
 
 ---
 
+## 2026-08-08
+
+### Dashboard Layout Fixes — Equal Columns, Collapsible This Week, Two Overflow Bugs Caught Live
+- Jackie asked to even out the dashboard's three columns (previously an uneven 1.3fr/1fr/0.95fr split, a holdover from the old design) and make "This Week" collapsible like Coming Up/Later already were. First attempt set `grid-template-columns: 1fr 1fr 1fr` — the right ratio, but Jackie reported "no changes made — looks the same." Root cause: CSS Grid's default track sizing (`minmax(auto, 1fr)`) still lets a column's content dictate its minimum width regardless of the fr ratio, so the wider Business Goals card kept stretching its column. Fixed with explicit `minmax(0, 1fr)` per column — verified by driving Jackie's own Chrome tab directly (hard-reload + screenshot) rather than trusting the source diff alone, since the first fix looked correct in the file but wasn't visually correct in the browser.
+- Wrapped "This Week" in a `<details open>`/`<summary>` disclosure matching Coming Up/Later, open by default since it's the most immediately relevant list.
+- **Two overflow bugs Jackie caught by eye after the layout change, both confirmed and fixed the same way (live browser verification, not just re-reading the source):**
+  - The Reminders card carried a leftover `grid-row: span 2` from the old uneven-column design, originally needed to visually balance a taller column 1. With equal columns and This Week defaulting open (17 items), the card's border stopped growing at the old fixed-height assumption and the list spilled out past the card edge. Fixed by dropping the span — the card is a normal single-row grid item now and grows to fit whatever's open inside it.
+  - The Personal card's "Sessions logged this week" row used the same `justify-content: space-between` + `white-space: nowrap` pattern as the short rows above it (Weight, Body fat, etc.), but its value is a long comma-separated session list that can't wrap on one line — it was overflowing past the card while the label got squeezed into a vertical stack of single words. Fixed by restructuring just this one row to stack the label above a wrapping value; the genuinely short stat rows were left untouched.
+- Updated `~/.claude/scheduled-tasks/dashboard-daily-refresh/SKILL.md` so tomorrow's 6:20am automated refresh preserves the equal-column grid and This Week's default-open state instead of silently drifting back to the old layout.
+- Republished the artifact after each individual fix, not just once at the end, so each could be confirmed live before moving to the next.
+
+### Other Pending Changes (automated tasks / other sessions, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`: today's automated `dashboard-daily-refresh` run (Aug 8 reminders rebuilt from calendar + scheduled tasks, revenue sparkline extended to 29 days, "What I'm Watching" folded in from today's cloud-routine draft) — layered underneath the layout work above.
+- `data/linkedin-metrics/log.csv`, `personal/workout-logs/session-log.csv`: routine data log appends from other automated tasks.
+- `outputs/positioning/positioning-brief.md`, `data/meeting-prep/notes/2026-08-07-wilma-nachsin-prep.md`: from the Wilma Nachsin research-interview session — Two Funnels of Knowledge upgraded to Strong (now independently corroborated by both Nia Troup and Wilma), Human Peer Dynamic gained a fourth corroborating client.
+- `CLAUDE.md`: `outputs/research/` folder added to the workspace structure doc, from the session that produced the cultural-anthropology strategic-work brief.
+- `outputs/research/` (untracked): new folder from that same session, not yet added to git.
+
+---
+
 ## 2026-08-07
 
 ### Friday Meeting Prep — Prospect Intro (Rob Fleming) and Positioning Research Interview (Wilma Nachsin)
