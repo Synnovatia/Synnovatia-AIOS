@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-08-09
+
+### Sunday Weigh-In Logged, HRV Hits a New High
+- Logged this week's check-in to `personal/health-goals.md`: weight and waist unchanged (144.8 lbs, 31 in), body fat essentially flat (38.2%, +0.2 pts), but HRV jumped to 32 — the highest reading since tracking started, a strong recovery signal. VO2 Max ticked up to 26.3 (+0.1 from the 8/3 baseline reading), no session HR reported this time.
+
+### Lapsed Segment Follow-Up Reminder
+- Jackie asked to come back later today to the Lapsed segment draft (see 2026-08-08 below) — set a one-time reminder (`lapsed-draft-followup-aug9`) for 6pm to surface the two open decisions: push the draft into HubSpot as a real draft, and/or export it to Word.
+
+---
+
 ## 2026-08-08
 
 ### Dashboard Layout Fixes — Equal Columns, Collapsible This Week, Two Overflow Bugs Caught Live
@@ -25,6 +35,29 @@
 - `outputs/positioning/positioning-brief.md`, `data/meeting-prep/notes/2026-08-07-wilma-nachsin-prep.md`: from the Wilma Nachsin research-interview session — Two Funnels of Knowledge upgraded to Strong (now independently corroborated by both Nia Troup and Wilma), Human Peer Dynamic gained a fourth corroborating client.
 - `CLAUDE.md`: `outputs/research/` folder added to the workspace structure doc, from the session that produced the cultural-anthropology strategic-work brief.
 - `outputs/research/` (untracked): new folder from that same session, not yet added to git.
+
+### Strategic Business Growth Programs PDF — Column Removed, Rebranded to the 2026 Style Guide
+- Jackie asked to remove the "Messy Middle Community Membership" column from the pricing PDF on her Desktop and rebalance the remaining columns, plus update the fees date to "Effective 01/01/2026." No PDF-editing tool could touch the table directly, so rebuilt the page from scratch with `reportlab`, reverse-engineering the original's exact colors/fonts/positions via `pdfplumber` and `pypdf` first (including pulling the real embedded Synnovatia wordmark out of the source PDF via PyMuPDF, restoring its alpha channel with PIL after a first attempt rendered it with a black box behind it).
+- Jackie then asked to apply her actual 2026 style guide (navy/gold/teal, Fraunces/Barlow) instead of the old file's legacy Kelly Green palette — converted the needed Fraunces/Barlow/Barlow Condensed weights from woff2 to ttf (via `fontTools`, since only compressed web fonts were available) so `reportlab` could embed them.
+- **Real correction after Jackie's follow-up:** she flagged that documents shouldn't carry "AI design" patterns — specifically the shaded gold-bordered callout box used for one section, decorative divider rules not in the actual style guide, and dash-style bullets. Rebuilt to map every heading strictly to the style guide's own type-scale roles (H2 = navy Barlow bold, H3 = teal Barlow bold, matching the documented table exactly rather than an invented look) and switched to plain round bullets. Saved as a new standing rule, `feedback_no-ai-design-patterns` — applies to all future documents, not just this one.
+
+### Canon Printer Fixed — Stuck 5-Day-Old Job Was Jamming the Queue
+- Diagnosed via CUPS/`lpstat`: a job from "Leon2023" had been stuck since August 3 with status "Looking for printer," and macOS's own `system_profiler` confirmed Status: Offline over a direct USB (`ippusb://`) connection, not Wi-Fi. Cleared the stuck queue (the cancel command itself hung for a while, waiting on the unreachable printer, then completed once backgrounded) and gave Jackie the physical-layer checklist (cable, power) since a software fix alone can't restore a USB connection that isn't actually plugged in. Confirmed fixed once she reseated the connection.
+
+### Nagel-Carroll Family Trust — Found in Drive, Flagged Before Printing
+- Searched Google Drive for the most recent trust document to print. Found two candidates and flagged a real discrepancy rather than guessing which one counted as "most recent": the actual 2014 Restatement trust instrument (a complete legal document), versus a more recently-dated 2022 cover letter to executors Chris and Brad that only *references* a "2022 Restatement" — which doesn't appear to exist as its own file in Drive. Also flagged that the 2022 letter contains plaintext safe combinations, the alarm code, and LastPass master passwords, so it didn't get sent to a printer without Jackie knowing that was in there. She said she had what she needed without printing either.
+
+### Cultural Anthropology Research Brief Delivered as a Word Doc
+- Converted the 2026-08-07 research brief (`outputs/research/2026-08-07-cultural-anthropology-strategic-work-brief.md`) to `.docx` using `docx` (npm), styled to the brand system (Georgia/Arial per the style guide's documented Word fallback fonts). Verified structurally via zip-integrity check and a `python-docx` read-back, since LibreOffice isn't installed on this machine for a visual render. Rebuilt once per the AI-design-pattern fix above (see PDF section).
+
+### LinkedIn Card Updated on the Dashboard, Published Artifact Was Stale
+- Updated the LinkedIn card's stat rows and sparkline on both `dashboard.html` and `dashboard-fragment.html` to the 8/7 numbers Jackie provided (476 impressions, 5,769 followers, 32 search appearances) and added a new "Social engagements" row (21) that wasn't on the card before.
+- **Real problem:** Jackie reported the dashboard "not showing updates on Chrome" after the edit. The published Artifact URL she had open hadn't been redeployed since the local file changed — republishing requires an explicit `Artifact` call, which hadn't happened. Found the existing artifact URL via the artifact list, fetched its current (stale) content first per the tool's own conflict-safety check, then republished to the same URL. Worth remembering: editing the local dashboard file alone never updates what's live at the published link.
+
+### Drifting vs. Lapsed Segment Mix-Up Caught, Lapsed Draft Built
+- Jackie asked to pull up the Drifting segment draft referenced on her to-do list; searching HubSpot found no Drifting draft had actually been created that week, only a leftover object literally named "TEST — Draft Automation Pipeline (safe to archive)" from the Thursday automation's failed run.
+- Worked out the actual send cadence from the dates Jackie gave for each segment's last send (Active Engagers 8/5, Drifting 7/29, Women-Only Mastermind 7/15, Lapsed 6/17) against each segment's documented cadence in `context/hubspot-marketing.md` — Lapsed was the one actually due (52 days since last send, inside its 6-8 week window, next Wednesday landing 8/12), not Drifting as the to-do note assumed.
+- Checked HubSpot and found the Lapsed automation had the same silent-failure problem as Drifting that week. Drafted the Lapsed "What I'm Watching" edition by hand from that day's live `what-im-watching-cloud` research (owner confidence, small business profitability, marketing-spend benchmarks, AI-fundamentals research), saved to `outputs/hubspot-marketing/2026-08-08-lapsed-draft.md`. Kept it no-CTA/no-ask per the segment's documented default rather than importing Drifting's 7/29 reply-ask experiment, which was never confirmed as standing policy. Corrected the dashboard's own reminder text, which had been pointing at "Drifting" instead of "Lapsed." Left the actual HubSpot-draft creation and Word-doc export for Jackie to confirm.
 
 ---
 
