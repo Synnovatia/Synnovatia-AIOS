@@ -26,6 +26,9 @@
 - After Jackie made a further pass directly in HubSpot's editor (emoji swaps, nested list restructure, italicized bullet leads), reviewed it, fixed one genuine typo ("t hat's"), and synced every change back into the Word doc so both copies match exactly.
 - Jackie scheduled the send herself in HubSpot for Wednesday 8/12 at 6:45am — sending/scheduling has no exposed API here, confirmed again as a hard ceiling, not a gap. Real stats will land automatically via the existing `hubspot-send-stats-tracker` (Mondays) once the send clears its 5-day window.
 
+### Sunday Walk Logged
+- Logged today's walk to `personal/workout-logs/session-log.csv`: 3.1 miles, 56 min, avg HR 116, 228 METs. Reported pace (18:32/mile) computes to ~18:04/mile from distance/duration — close enough to reconcile, logged both per the existing convention.
+
 ---
 
 ## 2026-08-08
