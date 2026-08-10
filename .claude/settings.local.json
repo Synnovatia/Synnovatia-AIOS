@@ -297,7 +297,8 @@
       "Bash(python3 scripts/log_outreach.py meeting_completed katie@thelastlayer.co --date 2026-07-31 --notes \"Reconnect dinner with Jackie, in person\")",
       "Bash(python3 scripts/log_outreach.py meeting_completed margaretjacoby45@gmail.com --date 2026-08-05 --notes \"Spoke with Jackie 8/5 - confirmed retired\")",
       "Bash(rm -f \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/95a5d8b3-e7a7-45b7-ac8f-2592bc00acdb/scratchpad/2026-08-17-to-08-21-drafts.pdf\")",
-      "Bash(python3 scripts/log_outreach.py sent miventrageser@gmail.com --date 2026-08-04 --notes \"Backfilled — draft was already sent 8/4 \\(found in Gmail, never logged\\); referenced her generosity referring clients and sending articles\")"
+      "Bash(python3 scripts/log_outreach.py sent miventrageser@gmail.com --date 2026-08-04 --notes \"Backfilled — draft was already sent 8/4 \\(found in Gmail, never logged\\); referenced her generosity referring clients and sending articles\")",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__get_marketing_email_analytics"
     ]
   }
 }
