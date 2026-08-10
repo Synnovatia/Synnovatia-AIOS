@@ -8,6 +8,26 @@
 
 ---
 
+## 2026-08-10
+
+### Client Re-engagement Monday Batch — Drafted, Then Trimmed Down Live as Jackie Caught Bad Contacts
+- Ran the scheduled Monday-drafting task: Step 1 reply check found only Aida Figgins had replied (a warm multi-message exchange, 19-year PDM anniversary, asked to be reached at her personal email going forward) — logged `responded`. Hallie Jane Culpepper, Kurt Fagan, and Suzi Waddill-Goad had gone 19-21 days with no reply — logged `no_response`. The remaining 11 from the 7/27 batch, at 14 days, were left pending for another week.
+- **Caught a real gap in the tracking system:** found two people (Miven Trageser, confirmed via a Gmail send; Carrie Spell-Hansson, inferred from a matching HubSpot `notes_last_contacted` timestamp with no corresponding Gmail message ever found) who'd already been emailed on 8/4 but never logged as `sent` — likely from an earlier ad hoc batch outside the normal workflow. Skipped both for this week and backfilled `log_outreach.py sent` with the 8/4 date so their 6-month clocks reset correctly and they don't resurface. Worth a look at why those two sends never got logged normally.
+- Drafted the original 5 (Jonathan Karlen, Sue Mandel, Steve Pitchford, Alana Miranda, Caleigh Darragh), pulling real context from Gmail and HubSpot for each rather than templating. Flagged 5 more weak-signal contacts (Alan Armijo, Eric Mead, Marieke Hensel, Gary Dhadda, Alberto Vercellotti) to `someday_contacts.csv`.
+- Jackie then caught, one by one over several follow-up messages, that Sue Mandel's and Steve Pitchford's emails had bounced, Caleigh Darragh was "no longer valid," and Jonathan Karlen was no longer in business — deleted all four from `roster.csv`/`due_now.csv` entirely. No Gmail draft-delete tool is available (only create/update), so each bad draft was neutralized instead: cleared recipient and body, subject changed to "DO NOT SEND — please delete," noting manual deletion in Gmail is still needed.
+- Pulled 4 replacement candidates with real two-way Gmail history to refill the batch: David Díaz Robisco, Martica Jenkins, Kimberly Von Slomski, and Candy Messer (the most recent of the four, with a real 2020 COVID-era exchange about moving to a smaller office and going remote).
+- Final live batch of 5 now sitting in Gmail: Alana Miranda (sent unedited), David Díaz Robisco, Martica Jenkins, Kimberly Von Slomski, Candy Messer.
+
+### Writing-Voice Learning — Compared Edited Drafts, Updated the Standing Memory
+- At Jackie's request, compared her actual edits on 4 of the 5 drafts above against what was originally written, plus confirmed the 5th (Alana) went out completely unedited. Updated `feedback_reengagement-email-edit-patterns.md` with new, sometimes rule-nuancing findings: she often trades a precise historical callback for broad emotional warmth ("I think of you so often," "You popped into my mind") rather than keeping researched specifics, but keeps callbacks that are genuinely business-substantive; recurring signature phrases ("How are you, my friend," "OM goodness!," a near-fixed "If time allows, I'd love to hear..." closer); she layers in her own current knowledge the research didn't have (e.g., a genuine "congratulations on national status"); the "<G>" grin emoticon is confirmed as a decade-plus habit, not a one-off; and the "one question per email" rule only blocks stacking two questions on the same topic, not a genuine bonus tangent question.
+
+### Other Pending Changes (automated tasks / other sessions, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated `dashboard-daily-refresh` run.
+- `outputs/linkedin/2026-08-17-to-08-21-drafts.md` / `.docx` (untracked): next week's (Aug 17-21) LinkedIn Mon/Wed/Fri batch, drafted by the recurring Monday 7am automated task.
+- `.claude/settings.local.json`: permission-allowlist entries accumulated from routine commands run across sessions today.
+
+---
+
 ## 2026-08-09
 
 ### Sunday Weigh-In Logged, HRV Hits a New High
