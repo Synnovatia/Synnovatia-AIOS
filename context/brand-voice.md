@@ -40,6 +40,7 @@ Stage II entrepreneurs · **$250K–$4M revenue** · navigating the **"Messy Mid
 | Warm, not soft | Let warmth come through specificity and client language | Use motivational-speaker tropes or vague encouragement |
 | Confident, not boastful | Let clients make the strong claims; Synnovatia frames the context | Lead with credentials or methodology before the client's problem |
 | Equip, not help | Synnovatia *equips* Stage II owners to navigate the Messy Middle | Use the word "help" — it undersells the strategic depth of the work |
+| "We/our" vs. "you/your" by content mode *(confirmed 2026-08-11)* | Use "we/our" in general/informational passages — it reads as peer-to-peer, fellow-business-owner solidarity | Use "you/your" once the piece shifts into direct advice/instruction to the reader — switching to "we" there blurs who's supposed to act |
 
 ---
 
