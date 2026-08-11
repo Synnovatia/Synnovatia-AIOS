@@ -60,6 +60,9 @@
 - Folded the 6 findings into `feedback_linkedin-post-editing-style.md`, and baked the 3 clearest/most automatable ones directly into `context/linkedin-marketing.md` so they apply without re-prompting on the next batch. Added a full "Recommendations for Future Batches" section to both the `.md` and the `.docx` (hand-edited the Word doc's XML directly and rendered it to PDF to verify formatting before replacing the live file, since the automated verification scripts hit the same Python-version issue as the xlsx ones).
 - Declined to post/schedule the LinkedIn drafts directly when asked — this was a deliberate standing decision already in `context/linkedin-marketing.md` (LinkedIn detects and restricts posting automation; real, hard-to-reverse account risk), not a new judgment call. Opened LinkedIn's post composer in the browser instead so Jackie could paste and schedule each post herself; she confirmed all 3 entered manually.
 
+### End-of-Day Time Log Entries
+- Logged the day's remaining activity to the time tracker: 5 min LinkedIn posting/scheduling, 15 min session wrap-up (Business Development — AI/OS Development), 15 min marketing/client outreach — closing the day at 2.58 hrs total, under the 3-hour daily limit.
+
 ---
 
 ## 2026-08-09
