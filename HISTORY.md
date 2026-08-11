@@ -61,7 +61,14 @@
 - Declined to post/schedule the LinkedIn drafts directly when asked — this was a deliberate standing decision already in `context/linkedin-marketing.md` (LinkedIn detects and restricts posting automation; real, hard-to-reverse account risk), not a new judgment call. Opened LinkedIn's post composer in the browser instead so Jackie could paste and schedule each post herself; she confirmed all 3 entered manually.
 
 ### End-of-Day Time Log Entries
-- Logged the day's remaining activity to the time tracker: 5 min LinkedIn posting/scheduling, 15 min session wrap-up (Business Development — AI/OS Development), 15 min marketing/client outreach — closing the day at 2.58 hrs total, under the 3-hour daily limit.
+- Logged the day's remaining activity to the time tracker: 5 min LinkedIn posting/scheduling, 15 min session wrap-up (Business Development — AI/OS Development), 15 min marketing/client outreach — closing the day at 2.58 hrs total, under the 3-hour daily limit. Two more entries logged the next morning (15 min AI/OS session wrap-up, 15 min marketing/client outreach).
+
+### Automation Schedule Review + Cloud Routine Cleanup
+- At Jackie's request, listed everything scheduled to fire the next day (Tuesday), reasoning through each recurring task's actual cron pattern rather than relying only on the single `nextRunAt` value, since several tasks fire multiple times per day.
+- Moved several tasks earlier per Jackie's request: `business-time-limit-alert` to every 30 min 6am-8pm (was 7am-10pm), `pre-meeting-objective-check` to 6:03am daily (was 8:03am — also corrected task-audit.md's long-standing "hourly" mischaracterization; it has always run once/day), `onboarding-daily-check` to 6:05am daily (was 8:10am).
+- Explained the difference between local scheduled tasks (this Mac, requires the app open) and Anthropic cloud routines (their servers, independent of this Mac) when Jackie asked about moving `what-im-watching-cloud` to 6am — recommended keeping it cloud-hosted rather than converting to local, since an early-morning research/Gmail-draft job benefits from not depending on the app being open. Confirmed no tool in this session can edit cloud routines directly (the `/schedule` skill only reaches local scheduled tasks); walked Jackie through changing it herself at claude.ai/code/routines.
+- Verified the change afterward via Claude in Chrome (navigated to the Routines page directly) and found a second, genuinely separate `what-im-watching-cloud` routine — paused, but with real run history through the day before, meaning it had only just been paused. Confirmed with Jackie and deleted it (permanent, 14 past runs removed with it) after tracking down the actual Delete control, which lived on the underlying detail page rather than inside the Edit modal that first appeared to contain it.
+- Corrected several other stale schedule references surfaced along the way: `docs/_index.md` and `context/task-audit.md` still described `email-reply-drafting-check` as hourly 8am-8pm, missed when its cadence actually changed earlier the same day to every 2 hrs 6am-6pm.
 
 ---
 
