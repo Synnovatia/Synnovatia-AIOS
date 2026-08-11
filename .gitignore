@@ -42,6 +42,11 @@ desktop.ini
 *.tmp
 *.bak
 
+# --- Office lock files (created while a doc is open, e.g. Word/Excel) ---
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
 # --- Node (if applicable) ---
 node_modules/
 
