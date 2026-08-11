@@ -8,6 +8,27 @@
 
 ---
 
+## 2026-08-11
+
+### Blog Content Build — Monthly SEO Planning Session
+- At Jackie's request, ran the monthly blog planning session (matching the `blog-strategy-development-aug11` reminder that fired the same day) — asked clarifying questions first rather than assuming direction: found a fully-developed, ready-to-write concept already sitting unpublished (#1, "How to Accelerate Business Growth When the Economy Feels Uncertain," targeting the site's single largest keyword opportunity), confirmed writing it this month, and confirmed a Search Console refresh + an AI-search-optimization briefing before drafting.
+- Researched current (2026) generative-engine-optimization practices via WebSearch — direct-answer-first structure, numbered/listicle formatting for citability, FAQ blocks in real conversational phrasing, freshness decay, schema markup. Checked `synnovatia.com/robots.txt` directly and confirmed no AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) are blocked — a prerequisite that was already fine, not something that needed fixing.
+- Refreshed the Search Console keyword pull (via Claude in Chrome, matching the manual method already documented) — 799 queries, 30.2K impressions, essentially flat vs. the 2026-07-27 baseline. Confirmed the Accelerate Business Growth cluster's primary keyword improved position (24.8 → 20.2). **New finding:** four turnover-related long-tail queries ("how to reduce turnover," "prevent turnover," "how to decrease turnover," "how to prevent turnover") are already ranking position 1.0 on Google, invisible in the July pull because they're low-volume — upgraded employee turnover from "someday 5th pillar" to a real near-term candidate. Logged the full refresh to `content/strategy.md`.
+- Drafted the full article (`outputs/blog/2026-08-11-accelerate-business-growth-uncertain-times.md` + `.docx`) — checked `context/brand-voice.md`, `content/brand-and-audience.md`, and the native-writing-voice memory fresh before writing, then ran the mandatory AI-tell cadence scrub on the first draft and caught 3 real violations (two negation-pivot pairs, one anaphoric repetition) before presenting it. Structured for AI-search extractability per the research above: direct answer in the first ~140 words, the "Three Moves" section as an actual numbered list instead of prose, and a new FAQ block added beyond the original concept outline. Included full metadata (target keywords, meta title/description, URL slug, preview/excerpt text) per Jackie's request. Kept the piece generalized/composite per her earlier call not to swap in a real client story. The Word doc was hand-built via docx-js (npm `docx` wasn't preinstalled — installed it) and verified by rendering to PDF before delivery.
+- Flagged 2 items as out of scope rather than guessing: schema markup (Article + FAQPage) is a WordPress/technical task, and the piece still needs a `/schedule` pass for an actual publish date.
+
+### Strength Training Day A — Printable Recommendation Sheet, Then Real Session Logged
+- Built a one-page printable PDF (`personal/workout-logs/2026-08-11-day-a-worksheet.pdf`) reasoning from Jackie's actual 8/4 numbers rather than generic targets — most compound lifts (squat, RDL, farmer's carry) were sitting at the 25 lb dumbbell ceiling with reps already maxed, so the sheet recommended extending reps at the same weight per the plan's own ceiling protocol; two exercises (row, glute bridge) had real room to progress normally. Flagged that the 4-6 week deload window (since the program started 7/12) was now open, not yet mandatory.
+- Logged the real session afterward: all 27 sets across 9 exercises to `data/strength-training-log.csv`, plus session summary rows (Hill Warm-up 16 min/HR 115/71 METs, Strength 59 min/HR 117/284 METs) to `session-log.csv`. Real progress across the board — squat and RDL both extended 12→15 reps at the 25 lb ceiling as recommended, the row finally cleared its prior under-target shortfall (5/5/4 → 6/6/6), and Jackie skipped past the suggested 20 lb glute bridge step straight to 25 lb on her own call.
+
+### Business Development Time Logged
+- Logged two more entries to the time tracker for today's blog/automation work: 23 min (automation schedule review, cloud routine cleanup) and 25 min (blog content build and keyword research) — both under Business Development.
+
+### Other Pending Changes (automated tasks, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated `dashboard-daily-refresh` and `morning-brief` runs.
+
+---
+
 ## 2026-08-10
 
 ### HubSpot Send Stats Tracker — First Real Log Entries, Style Diff, Schedule Moved to 6am

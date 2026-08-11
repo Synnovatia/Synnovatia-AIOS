@@ -3,7 +3,7 @@
 > Your master content strategy. Defines your platform, cadence, content pillars, and how content connects to your business goals.
 > This file is read by /develop and /schedule to make informed content decisions.
 >
-> **Last updated:** 2026-07-27
+> **Last updated:** 2026-08-11 (keyword table refreshed)
 
 ---
 
@@ -36,20 +36,22 @@
 
 **Existing blog** (`synnovatia.com/business-coaching-blog/`) — active since at least 2018, dozens of posts archived. Recurring themes already covered, worth building on rather than duplicating: strategic thinking/planning, stalled-growth and business plateaus, the "Messy Middle" framing, mastermind groups, growth-stage frameworks, entrepreneur accountability/self-care, systems thinking. Most recent post (Aug 2022, updated June 2026): "What No One Tells An Entrepreneur About Breaking Through a Business Plateau." New blog topics should extend these themes with fresh angles (per-post SEO intent) rather than repeat what's already published — `/develop` should check the archive before finalizing a topic.
 
-### Keyword Targets (from Google Search Console, pulled 2026-07-27, 3-month window)
+### Keyword Targets (from Google Search Console, refreshed 2026-08-11, 3-month window)
 
-Real query data from `synnovatia.com`'s existing Search Console — 838 tracked queries, 31.1K impressions, but only 112 clicks (0.4% CTR, avg. position 29.5). The gap between impressions and clicks is the opportunity: content is already surfacing for relevant searches, just not ranking high enough to get clicked. Priority clusters for `/develop` and `/schedule` to target, ranked by fixability × alignment to actual positioning:
+Real query data from `synnovatia.com`'s existing Search Console — 799 tracked queries, 30.2K impressions, 113 clicks (0.4% CTR, avg. position 30). Essentially unchanged in aggregate from the 2026-07-27 pull (838 queries / 31.1K impressions / 112 clicks / pos 29.5) — expected at 2 weeks' distance and monthly blog cadence. Priority clusters for `/develop` and `/schedule` to target, ranked by fixability × alignment to actual positioning:
 
 | Cluster | Example queries | Current position | Combined impressions | Why it matters |
 |---|---|---|---|---|
-| **Growth advisor / strategist** | "growth advisor," "business growth advisor," "business growth strategist," "founder growth advisor," "ceo growth advisor" | 29–78 (page 3–8) | ~1,000 | This is literally Jackie's title/positioning, currently barely ranking — highest-alignment fix |
-| **Accountability** | "self accountability definition," "accountability definition," "accountability coach," "self accountability meaning," "business owner accountability system" | 9.7–25.8 (several already page 1–2) | ~1,600 | Near-misses — a few queries are one optimization pass from page 1. Matches the existing "Accountability for Entrepreneurs" post and the "equip not help" voice rule |
-| **Accelerate business growth** | "accelerate business growth," "accelerating business growth," "how to accelerate business growth," "accelerated business growth," "business growth acceleration" | 24.8–85 | ~5,300 | The single largest impression pool on the site — something already loosely targets this but stays mid-pack; worth a dedicated content refresh |
-| **Business strategy** (broad) | "business strategy" | 58.7 | 2,522 | Huge volume but highly competitive — long-game target, not a quick win |
-| **Business plateau** | "business plateau" | 50.2 | 65 | The newest/flagship post's own title term is barely ranking — direct optimization target for that specific page |
-| **Employee turnover/retention** (new territory, not a current pillar) | "reduce turnover," "decrease employee turnover," "small business employee retention," "high turnover in small business" | 24–67 | ~700 | Real search demand, adjacent to Messy Middle team-management pain points — candidate for a future 5th pillar if the blog expands scope |
+| **Growth advisor / strategist** | "growth advisor" (28.5), "business growth advisor" (46.8), "growth advisory" (54.7), "founder growth advisor" (40.0), "ceo growth advisor" (48.5) | 23.7–95.8 (page 3–10) | ~2,100 | This is literally Jackie's title/positioning, still barely ranking — highest-alignment fix, unchanged read from last pull |
+| **Accountability** | "self accountability definition" (9.7 — page 1), "accountability definition" (15.2), "business owner accountability system" (8.9 — page 1), "accountability coaching for business owners" (9.1 — page 1), "accountability coaching for entrepreneurs" (11.2 — page 1) | 8.9–69.7, several genuinely on page 1 | ~2,000 | Strongest near-miss cluster on the site — half a dozen queries already rank on page 1. Matches the existing "Accountability for Entrepreneurs" post |
+| **Accelerate business growth** | "accelerate business growth" (20.2 — improved from 24.8), "how to accelerate business growth" (22.5), "accelerating business growth" (38.3), "accelerated business growth" (40.2) | 20.2–84.1 | ~5,900 | Still the single largest impression pool on the site by a wide margin, and the primary target improved position (24.8 → 20.2) since the last pull. This is concept #1's target cluster — confirms it's still the right call |
+| **Business strategy** (broad) | "business strategy" | 57.5 | 2,557 | Flat vs. last pull (58.7 → 57.5, noise-level). Still huge volume, highly competitive — long-game target, not a quick win |
+| **Business plateau** | "business plateau" (52.0), "overcoming business plateau" (28.2), "break through revenue plateau" (43.8) | 28.2–92.2 | ~150 | Roughly flat. The flagship post's own title term is still barely ranking |
+| **Employee turnover/retention** (candidate 5th pillar) | see note below | 1.0–76.0, several at position 1 | ~1,000 | **Upgraded finding this pull** — see below |
 
-**Noise to ignore:** a "juggling/juggler" query cluster ranks surprisingly well (position 4–9) but converts 0% — almost certainly mismatched to people searching how to literally juggle, not business content. A batch of academic HR-quiz queries shows the same pattern. Neither is real opportunity despite decent position — don't let `/develop` chase them.
+**New finding (2026-08-11): several turnover long-tail queries already rank #1.** "how to reduce turnover," "prevent turnover," "how to decrease turnover," and "how to prevent turnover" all show position 1.0 — genuinely ranking first, not a rounding artifact. They're low-volume (9-25 impressions each) and 0 clicks so far, which is why this wasn't visible as a pattern in the July pull, but "lower employee turnover" also sits at 13.3 (page 2) and "turnover reduction" at 28.0. This reads as a real, currently-invisible opportunity: the site already has enough authority/relevance for Google to rank it first on specific how-to phrasings, it just isn't being clicked yet — likely because there's no dedicated page actually answering these questions, just incidental relevance. Worth treating as a stronger candidate for a near-term dedicated post than "someday 5th pillar," not just adjacent to Messy Middle pain points.
+
+**Noise to ignore (confirmed unchanged):** the "juggling/juggler" cluster is still large and still irrelevant — "jugler" alone is now 1,832 impressions at position 3.8, "juggler" 312 impressions at position 5.3 — almost certainly people searching how to literally juggle. A cluster of quiz/assessment-tool queries ("strategist test," "strategy quiz," "goal vs task," academic HR-cycle questions) also persists and is unrelated to blog content — likely traffic to an old interactive tool or quiz page on the site, not prospects. Don't let `/develop` chase either despite decent positions.
 
 **Refresh this section periodically** (re-pull Search Console data every few months) since positions and impressions shift as content is published/updated.
 
