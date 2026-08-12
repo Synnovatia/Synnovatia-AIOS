@@ -29,3 +29,4 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-08-10,Run,52,129,not captured,336,"3.25 miles, pace not reported (computes to 16:00/mile). HRV not reported."
 2026-08-11,Hill Warm-up,16,115,not captured,71,"HR of 115 recorded at the 0.5 mi mark (not necessarily total distance). HRV not reported."
 2026-08-11,Strength (Day A),59,117,not captured,284,"Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv. Several exercises extended past prior rep ceilings at the 25 lb weight cap (squat, RDL both 12->15 reps); Glute Bridge jumped straight to 25 lb (past the recommended 20 lb step)."
+2026-08-12,Long Hike,74,116,not captured,376,"3.7 miles, avg pace 20:00/mile (computes correctly from distance/duration; initial 10:06/mile report corrected). HRV not reported."

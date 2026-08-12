@@ -8,6 +8,26 @@
 
 ---
 
+## 2026-08-12
+
+### Session Initialized
+- Read context, `HISTORY.md`, `docs/_index.md`, and `context/group/key-metrics.md` at the start of the day; confirmed current priorities (5 new retainer clients by October, mastermind growth, "Different Is Better Than Better" rebrand) and flagged the Lapsed segment "What I'm Watching" HubSpot email scheduled to send at 6:45am today.
+
+### Time Tracker + Hike Logged
+- Logged 15 min to the Business Activity Time Tracker under Marketing → Email (Draft/Edit/Send Setup) for today's marketing email work. Hit the same Python 3.9/`ignore_cleanup_errors` LibreOffice-recalc incompatibility documented 2026-08-11; worked around it again with a small compatibility wrapper (monkeypatches `tempfile.TemporaryDirectory` before importing the skill's `recalc.py`) rather than editing the skill itself. Recalculated clean — 159 formulas, zero errors. Today's total: 0.25 hrs, well under the 3-hour limit.
+- Logged today's hike to `personal/workout-logs/session-log.csv`: 3.7 miles, 74 min, avg HR 116, 376 METs. Initially flagged the reported 10:06/mile pace as not reconciling with distance/duration (computes to ~20:00/mile) — Jackie confirmed 20:00/mile was correct, corrected the note and cleared the flag.
+
+### Three LinkedIn Drafts Built From Jackie's Own Concepts
+- Jackie gave three post concepts directly in chat (AI tells in marketing images, a "build a time framework, not a time audit" thought-leadership take, and a personal take on AI-written contracts vs. a real attorney) — drafted all three from scratch rather than routing through `/capture`/`/develop`, since the ideas arrived fully formed. Checked `context/linkedin-marketing.md`, `content/brand-and-audience.md`, the LinkedIn-editing-style memory, and the writing-style skill's banned-word/AI-tell rules before drafting; cadence-scrubbed and blunt/plain-language-passed per the standing rules (no em dashes, no jargon, no negation-pivot formulas, closing questions on each).
+- Checked all three against the already-drafted 8/17–8/21 batch and its logged recent-angles list — no topic overlap. Made per-post voice calls rather than applying rules mechanically: skipped the `#askingforafriend` closer hashtag on the AI-images and AI-contracts drafts since neither ends on a light, self-directed joke; kept the time-framework post as a direct opinion rather than adding the usual "neither is good or bad" fairness caveat, since Jackie's own framing was already a stated stance, not a neutral both-sides setup.
+- Delivered as both `.md` and `.docx` (`outputs/linkedin/2026-08-12-three-concept-drafts.*`) per the standing Word-doc-by-default preference for marketing drafts — hit the same `docx` npm package and LibreOffice-recalc Python-compat issues as prior sessions, installed `docx` locally and reused the `tempfile` monkeypatch, then rendered to PDF and visually verified formatting via `sips` (no `pdftoppm`/Poppler installed on this Mac, unlike prior sessions — used `sips` as a lighter substitute rather than installing new software without asking) before delivering.
+- Jackie chose the time-framework draft for Monday 8/24 (the next open Monday slot, since 8/17–8/21 is already scheduled). Built `outputs/linkedin/2026-08-24-to-08-28-drafts.*` with Monday filled in and Wednesday/Friday marked open — the AI-images draft (also Monday-fit) and the AI-contracts draft (Wednesday-fit) are still unscheduled, flagged as candidates for a later week rather than force-placed.
+
+### Other Pending Changes (automated tasks, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated `dashboard-daily-refresh` and `morning-brief` runs.
+
+---
+
 ## 2026-08-11
 
 ### Blog Content Build — Monthly SEO Planning Session
