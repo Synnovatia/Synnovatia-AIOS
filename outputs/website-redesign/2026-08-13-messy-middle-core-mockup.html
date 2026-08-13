@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synnovatia: The Messy Middle (Core Page)</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:       #0D1F4E;
+    --navy-mid:   #1A3A7A;
+    --gold:       #B29200;
+    --gold-lt:    #F5C842;
+    --teal:       #0F6E56;
+    --teal-lt:    #5DCAA5;
+    --warm-white: #F7F6F2;
+    --body-text:  #444441;
+    --neut-gray:  #EAEAEA;
+    --lt-navy:    #E8ECF5;
+    --lt-gold:    #FDF3CC;
+    --white:      #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-optical-sizing: auto;
+    background: var(--warm-white);
+    color: var(--body-text);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 72px;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--warm-white);
+    border-bottom: 3px solid var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 72px;
+  }
+  .nav-logo img { height: 30px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+  .nav-links a {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--body-text);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a.active { color: var(--navy); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
+
+  .nav-links > li { position: relative; }
+  .nav-links > li.has-dropdown > a { display: inline-flex; align-items: center; gap: 6px; line-height: 1; }
+  .nav-links > li.has-dropdown { display: flex; align-items: center; height: 72px; }
+  .nav-links > li.has-dropdown > a::after {
+    content: ""; width: 6px; height: 6px;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px); transition: transform 0.2s;
+  }
+  .nav-dropdown {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    min-width: 220px; background: var(--white);
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 14px 32px rgba(13,31,78,0.14);
+    list-style: none; padding: 10px 0;
+    opacity: 0; visibility: hidden; translate: 0 8px;
+    transition: opacity 0.18s ease, translate 0.18s ease, visibility 0.18s;
+  }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown {
+    opacity: 1; visibility: visible; translate: 0 0;
+  }
+  .nav-dropdown li a {
+    display: block; padding: 11px 22px;
+    font-size: 11px; letter-spacing: 0.08em;
+  }
+  .nav-dropdown li a:hover { background: var(--warm-white); color: var(--navy); }
+
+  .nav-cta {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--white);
+    text-decoration: none; background: var(--teal);
+    padding: 10px 24px; transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--navy); }
+
+  /* ── HERO ── */
+  .mm-hero {
+    background: var(--navy);
+    padding: 110px 48px 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .mm-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+  .mm-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 28px;
+  }
+  .mm-h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(36px, 4.6vw, 60px); font-weight: 700; line-height: 1.12;
+    color: var(--white); max-width: 820px; margin-bottom: 18px;
+  }
+  .mm-h1 em { font-style: italic; color: var(--white); }
+  .mm-h1-line2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(20px, 2.2vw, 30px); font-weight: 400; font-style: italic;
+    color: rgba(255,255,255,0.7); line-height: 1.35; margin-bottom: 36px;
+  }
+  .mm-hero-sub {
+    font-size: 17px; font-weight: 300; line-height: 1.85;
+    color: rgba(255,255,255,0.82); max-width: 620px; margin-bottom: 48px;
+  }
+  .mm-hero-sub strong { font-weight: 600; color: var(--white); }
+  .btn-primary {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 36px;
+    border: 2px solid var(--teal); transition: all 0.2s;
+  }
+  .btn-primary:hover { background: transparent; color: var(--teal-lt); border-color: var(--teal-lt); }
+
+  /* ── SHARED SECTION STYLES ── */
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  section { padding: 88px 48px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+  }
+  .section-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px; font-weight: 700; color: var(--navy);
+    line-height: 1.25; margin-bottom: 28px;
+  }
+  .section-body { font-size: 16px; font-weight: 300; line-height: 1.8; color: var(--body-text); }
+  .section-body p + p { margin-top: 16px; }
+  .section-body strong { font-weight: 600; color: var(--navy); }
+
+  /* ── DEFINE: revenue plateau bands ── */
+  .define { background: var(--white); }
+  .define .section-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .plateau-track { display: flex; flex-direction: column; gap: 22px; margin-top: 56px; }
+  .plateau-band {
+    border-left: 4px solid var(--gold);
+    background: var(--warm-white);
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 28px;
+  }
+  .plateau-band:nth-child(2) { border-color: var(--navy-mid); }
+  .plateau-band:nth-child(3) { border-color: var(--navy); }
+  .plateau-range {
+    font-family: 'Fraunces', serif;
+    font-size: 24px; font-weight: 700; color: var(--navy);
+    white-space: nowrap; flex-shrink: 0; min-width: 150px;
+  }
+  .plateau-note { font-size: 13px; color: var(--body-text); opacity: 0.75; line-height: 1.6; }
+  .plateau-caption {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold); margin-top: 6px;
+  }
+
+  /* ── SYMPTOMS ── */
+  .symptoms { background: var(--navy); padding: 80px 48px; }
+  .symptoms .section-eyebrow { color: var(--gold-lt); }
+  .symptoms .section-h2 { color: var(--white); }
+  .symptoms-lede { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.75); max-width: 640px; margin-bottom: 52px; }
+  .symptoms-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.12); }
+  .symptom-cell { background: var(--navy); padding: 32px 34px; }
+  .symptom-cell strong {
+    display: block; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--gold-lt); margin-bottom: 8px;
+  }
+  .symptom-cell p { font-size: 14px; color: rgba(255,255,255,0.62); line-height: 1.7; }
+  .symptoms-kicker {
+    margin-top: 52px; font-family: 'Fraunces', serif;
+    font-size: 22px; font-style: italic; color: var(--white);
+    line-height: 1.55; max-width: 720px;
+  }
+
+  /* ── INFORMATION GAP ── */
+  .gap { background: var(--warm-white); }
+  .gap .section-inner { max-width: 900px; }
+  .gap-bar { display: flex; height: 84px; margin: 48px 0 14px; border: 1px solid var(--neut-gray); }
+  .gap-seg { display: flex; flex-direction: column; justify-content: center; padding-left: 16px; min-width: 0; }
+  .gap-seg .pct { font-family: 'Fraunces', serif; font-weight: 700; font-size: 24px; line-height: 1.1; }
+  .gap-seg .lbl { font-size: 10.5px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; opacity: 0.8; white-space: nowrap; }
+  .gap-seg.stage1 { width: 75%; background: var(--lt-navy); color: var(--navy); }
+  .gap-seg.stage2 { width: 19%; background: var(--gold); color: var(--white); }
+  .gap-seg.stage3 { width: 6%; background: var(--navy); color: var(--white); padding-left: 10px; }
+  .gap-seg.stage3 .lbl { display: none; }
+  .gap-legend { display: flex; gap: 28px; font-size: 12px; color: var(--body-text); margin-bottom: 44px; flex-wrap: wrap; }
+  .gap-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 7px; }
+  .gap-legend .k1::before { background: var(--lt-navy); border: 1px solid var(--neut-gray); }
+  .gap-legend .k2::before { background: var(--gold); }
+  .gap-legend .k3::before { background: var(--navy); }
+  .gap-caption { font-size: 11px; color: var(--body-text); opacity: 0.5; margin-top: -30px; margin-bottom: 44px; }
+
+  /* ── THRIVING ── */
+  .thrive { background: var(--white); }
+  .thrive-label {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 22px;
+  }
+  .thrive .section-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .thrive-list { list-style: none; display: flex; flex-direction: column; gap: 0; border-top: 2px solid var(--navy); }
+  .thrive-list li {
+    padding: 20px 4px; border-bottom: 1px solid var(--neut-gray);
+    font-size: 15px; font-weight: 400; color: var(--body-text);
+    display: flex; gap: 16px; align-items: baseline;
+  }
+  .thrive-list li::before {
+    content: "—"; color: var(--gold); font-weight: 700; flex-shrink: 0;
+  }
+
+  /* ── PATHWAYS (editorial split — no cards) ── */
+  .pathways { background: var(--lt-navy); }
+  .pathways-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+  .pathways-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    max-width: 940px; margin: 0 auto;
+    border-top: 1px solid rgba(13,31,78,0.20);
+  }
+  .pcard {
+    padding: 44px 48px;
+    display: flex; flex-direction: column;
+  }
+  .pcard:first-child { padding-left: 0; }
+  .pcard:last-child  { padding-right: 0; }
+  .pcard + .pcard { border-left: 1px solid rgba(13,31,78,0.16); }
+  .pcard-kicker {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+  }
+  .pcard-title {
+    font-family: 'Fraunces', serif;
+    font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 16px;
+  }
+  .pcard-body { font-size: 15px; font-weight: 300; line-height: 1.75; margin-bottom: 32px; flex-grow: 1; }
+  .pcard-link {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--teal); text-decoration: none;
+    align-self: flex-start; border-bottom: 2px solid var(--teal);
+    padding-bottom: 3px; transition: color 0.2s, border-color 0.2s;
+  }
+  .pcard-link:hover { color: var(--navy); border-color: var(--navy); }
+
+  /* ── CTA SECTION ── */
+  .cta-section { background: var(--navy); text-align: center; padding: 112px 48px; }
+  .cta-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 24px;
+  }
+  .cta-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
+    color: var(--white); line-height: 1.2;
+    max-width: 640px; margin: 0 auto 20px;
+  }
+  .cta-sub {
+    font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.72);
+    line-height: 1.75; max-width: 460px; margin: 0 auto 52px;
+  }
+  .btn-cta-primary {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 44px;
+    border: 2px solid var(--teal); transition: all 0.2s;
+  }
+  .btn-cta-primary:hover { background: transparent; color: var(--teal-lt); border-color: var(--teal-lt); }
+
+  /* ── FOOTER ── */
+  footer.site-footer {
+    background: #080F1F; padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+  /* ── MOCKUP BANNER ── */
+  .mockup-banner {
+    background: var(--navy-mid); color: rgba(255,255,255,0.55);
+    text-align: center; padding: 9px;
+    font-size: 11px; font-family: monospace; letter-spacing: 0.06em;
+  }
+
+  /* ── TYPE SYSTEM (Fraunces display · Barlow body · Barlow Condensed labels) ── */
+  .section-eyebrow, .mm-eyebrow, .cta-eyebrow,
+  .plateau-caption, .pcard-kicker, .gap-seg .lbl,
+  .symptom-cell strong, .thrive-label,
+  .nav-links a, .nav-cta, .nav-dropdown li a,
+  .pcard-link, .btn-primary, .btn-cta-primary {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  /* softer CTA corners */
+  .nav-cta, .btn-primary, .btn-cta-primary { border-radius: 10px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    section, .mm-hero, .symptoms, .cta-section { padding-left: 24px; padding-right: 24px; }
+    .define .section-inner, .thrive .section-inner, .pathways-grid { grid-template-columns: 1fr; gap: 44px; }
+    .pathways-grid { gap: 0; }
+    .pcard { padding: 36px 0; }
+    .pcard + .pcard { border-left: none; border-top: 1px solid rgba(13,31,78,0.16); }
+    .plateau-track { margin-top: 0; }
+    .symptoms-grid { grid-template-columns: 1fr; }
+    .gap-seg .lbl { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">📄 SYNNOVATIA · The Messy Middle (Core Page) · Aug 13, 2026 · adapted from Jackie's own earlier build · revenue bands corrected to match the live homepage</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/synnovatia-logo-nav.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#" class="active" aria-current="page">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="#">Masterminds</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Mastermind for the Messy Middle</a></li>
+        <li><a href="#">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <a href="#" class="nav-cta">Schedule a Conversation</a>
+</nav>
+
+<!-- HERO -->
+<section class="mm-hero">
+  <div class="mm-hero-inner">
+    <p class="mm-eyebrow">The Messy Middle · Stage II Business Growth</p>
+    <h1 class="mm-h1">Where ambition collides with <em>reality</em></h1>
+    <p class="mm-h1-line2">…and chaos becomes the breeding ground for your next level of growth.</p>
+    <p class="mm-hero-sub">
+      The Messy Middle is the stretch between startup and smooth sailing where the growth that once came easy stops and the cash gets tight. Everyone, including you, is running on empty. But it's also where <strong>innovation shines and new ideas take hold and the real breakthroughs happen</strong>. It's far more than just a stage to get through.
+    </p>
+    <a href="#pathways" class="btn-primary">Find Out What's Possible</a>
+  </div>
+</section>
+
+<!-- DEFINING -->
+<section class="define">
+  <div class="section-inner">
+    <div>
+      <h2 class="section-h2">You've made it this far and yet it doesn't feel like you've arrived.</h2>
+      <div class="section-body">
+        <p>You expected smoother sailing and fewer hours as the reward for years of hard work. Instead the hours stretch beyond what's possible. It feels like the business is held together with duct tape and glue.</p>
+        <p>How did you get here? Like most entrepreneurs: <strong>by default not by plan.</strong> The Messy Middle isn't a detour or a failure. It's a natural unavoidable phase of the business growth continuum. And it tends to arrive in predictable revenue bands.</p>
+        <p>At this point one thing becomes unmistakably clear: <strong>what got you here is no longer working.</strong> The strategies you used to build the business won't carry you to the next level.</p>
+      </div>
+    </div>
+    <div>
+      <div class="plateau-track">
+        <div class="plateau-band">
+          <div class="plateau-range">$250K to $400K</div>
+          <div class="plateau-note">Nothing about how the work gets done is documented so every engagement depends on what the owner remembers that day and the client experience ends up inconsistent.</div>
+        </div>
+        <div class="plateau-band">
+          <div class="plateau-range">$750K to $1M</div>
+          <div class="plateau-note">Documentation exists now but isn't systemized enough for anyone else to actually run it, so the owner is still the one holding it all together.</div>
+        </div>
+        <div class="plateau-band">
+          <div class="plateau-range">$3M to $4M</div>
+          <div class="plateau-note">The business still runs on the owner's judgment and presence instead of real management layers, so sales keep growing while profit doesn't.</div>
+        </div>
+      </div>
+      <p class="plateau-caption">The three revenue bands where growth predictably stalls</p>
+    </div>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section class="symptoms">
+  <div class="section-inner">
+    <h2 class="section-h2">The symptoms are predictable but that doesn't make them painless.</h2>
+    <p class="symptoms-lede">Every business enters this phase. Whether it passes through to the next level depends on the decisions and actions taken from here.</p>
+    <div class="symptoms-grid">
+      <div class="symptom-cell">
+        <strong>Stagnant or Slowed Growth</strong>
+        <p>Momentum that once felt unstoppable flattens. No amount of pushing harder restarts it.</p>
+      </div>
+      <div class="symptom-cell">
+        <strong>Dwindling Cash Flow</strong>
+        <p>Limited cash squeezes every decision. So does how staff and time and money get deployed.</p>
+      </div>
+      <div class="symptom-cell">
+        <strong>A Withering Talent Pool</strong>
+        <p>Insufficient access to the people you need to succeed right when the business demands more of everyone.</p>
+      </div>
+      <div class="symptom-cell">
+        <strong>Burnout &amp; Fatigue</strong>
+        <p>What was once a temporary stretch of extended hours is now untenable for you and your team.</p>
+      </div>
+      <div class="symptom-cell">
+        <strong>No Time to Think Strategically</strong>
+        <p>There's no pause to make clear data-based decisions. The cracks widen while you fight fires.</p>
+      </div>
+      <div class="symptom-cell">
+        <strong>Missed Opportunities</strong>
+        <p>Critical pieces of the business quietly vanish while attention is consumed by what's urgent.</p>
+      </div>
+    </div>
+    <p class="symptoms-kicker">Even though you're drowning in seemingly unsolvable complications The Messy Middle is survivable. You are not alone.</p>
+  </div>
+</section>
+
+<!-- INFORMATION GAP -->
+<section class="gap">
+  <div class="section-inner">
+    <p class="section-eyebrow">Why No One Warned You</p>
+    <h2 class="section-h2">A colossal information gap and you're standing in it.</h2>
+    <div class="section-body">
+      <p>The sad truth is there's remarkably little knowledge available about this stage of business growth. Most business journals focus on large organizations yet only a sliver of all enterprises fit that profile.</p>
+    </div>
+    <div class="gap-bar">
+      <div class="gap-seg stage1"><span class="pct">75%</span><span class="lbl">Start-Ups</span></div>
+      <div class="gap-seg stage2"><span class="pct">19%</span><span class="lbl">The Messy Middle</span></div>
+      <div class="gap-seg stage3"><span class="pct">6%</span></div>
+    </div>
+    <div class="gap-legend">
+      <span class="k1">Start-ups 75%</span>
+      <span class="k2">The Messy Middle (you) 19%</span>
+      <span class="k3">Large enterprises 6%</span>
+    </div>
+    <p class="gap-caption">Illustrative breakdown not a cited statistic.</p>
+    <div class="section-body">
+      <p>Nearly everything written for business serves the corporate behemoths in the top 6% or the start-up crowd. The 19% in the middle are left to figure it out alone. <strong>That's why I've started this conversation. It's one we need to have and it's long overdue.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- THRIVING -->
+<section class="thrive">
+  <div class="section-inner">
+    <div>
+      <h2 class="section-h2">Interrupting a stall requires new knowledge rather than more effort.</h2>
+      <div class="section-body">
+        <p>Moving through a plateau means you can no longer rely on the know-how and expertise that got you to this point. That's especially true in difficult economic times.</p>
+        <p>The strategy is specific to your business but the work is always a balancing act: <strong>testing the boundaries of what's possible while staying honest about the business's real limits.</strong></p>
+        <p>You want a proven strategy that stops the stall and turns the momentum back toward the next level. That's exactly where we begin.</p>
+      </div>
+    </div>
+    <div>
+      <p class="thrive-label">What we build together</p>
+      <ul class="thrive-list">
+        <li>Room to pause and think strategically</li>
+        <li>Access to the resources you need</li>
+        <li>A clear growth plan</li>
+        <li>Strategic deployment of staff, time, and money</li>
+        <li>Reduced burnout and fatigue for you and your team</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PATHWAYS -->
+<section class="pathways" id="pathways">
+  <div class="pathways-header">
+    <h2 class="section-h2" style="margin-bottom:14px;">We've guided countless clients through this critical phase.</h2>
+    <p style="font-size:16px; font-weight:300;">Our approach: embrace the chaos and use it to fuel your success.</p>
+  </div>
+  <div class="pathways-grid">
+    <div class="pcard">
+      <p class="pcard-kicker">One-on-One</p>
+      <h3 class="pcard-title">Strategic Coaching</h3>
+      <p class="pcard-body">Build sustainable growth with a customized approach tailored to your business and objectives. You get a strategic peer who stays engaged with your business long after each conversation ends.</p>
+      <a href="#" class="pcard-link">Explore Strategic Coaching</a>
+    </div>
+    <div class="pcard">
+      <p class="pcard-kicker">Peer Cohort</p>
+      <h3 class="pcard-title">The Mastermind</h3>
+      <p class="pcard-body">Navigate the intricate challenges of the Messy Middle alongside entrepreneurs who are in it too because the fastest way through is rarely alone.</p>
+      <a href="#" class="pcard-link">Explore the Mastermind</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <p class="cta-eyebrow">Start Here</p>
+  <h2 class="cta-h2">Ready to elevate your business above the chaos?</h2>
+  <p class="cta-sub">If you need advice on where to grow next or just a listening ear we're happy to chat.</p>
+  <a href="#" class="btn-cta-primary">Start the Conversation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="assets/synnovatia-logo-footer.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>

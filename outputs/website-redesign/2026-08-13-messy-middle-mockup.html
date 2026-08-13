@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synnovatia — The Messy Middle Mockup</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:       #0D1F4E;
+    --navy-mid:   #1A3A7A;
+    --gold:       #B29200;
+    --gold-lt:    #F5C842;
+    --teal:       #0F6E56;
+    --teal-lt:    #5DCAA5;
+    --warm-white: #F7F6F2;
+    --body-text:  #444441;
+    --neut-gray:  #EAEAEA;
+    --lt-navy:    #E8ECF5;
+    --lt-gold:    #FDF3CC;
+    --white:      #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--warm-white);
+    color: var(--body-text);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 72px;
+    font-optical-sizing: auto;
+  }
+
+  /* ── NAV (identical to Home/About/Work With Me) ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--warm-white);
+    border-bottom: 3px solid var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 72px;
+  }
+  .nav-logo img { height: 30px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+  .nav-links a {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--body-text);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a.active { color: var(--navy); }
+  .nav-links a.active::after {
+    content: ""; display: block; height: 2px; background: var(--gold);
+    margin-top: 6px;
+  }
+  .nav-links > li { position: relative; }
+  .nav-links > li.has-dropdown > a { display: inline-flex; align-items: center; gap: 6px; line-height: 1; }
+  .nav-links > li.has-dropdown { display: flex; align-items: center; height: 72px; }
+  .nav-links > li.has-dropdown > a::after {
+    content: ""; width: 6px; height: 6px;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px); transition: transform 0.2s;
+  }
+  .nav-dropdown {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    min-width: 220px; background: var(--white);
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 14px 32px rgba(13,31,78,0.14);
+    list-style: none; padding: 10px 0;
+    opacity: 0; visibility: hidden; translate: 0 8px;
+    transition: opacity 0.18s ease, translate 0.18s ease, visibility 0.18s;
+  }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown {
+    opacity: 1; visibility: visible; translate: 0 0;
+  }
+  .nav-dropdown li a { display: block; padding: 11px 22px; font-size: 11px; letter-spacing: 0.08em; }
+  .nav-dropdown li a:hover { background: var(--warm-white); color: var(--navy); }
+  .nav-cta {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--white);
+    text-decoration: none; background: var(--teal);
+    padding: 10px 24px; transition: background 0.2s; border-radius: 10px;
+  }
+  .nav-cta:hover { background: var(--navy); }
+
+  /* ── SHARED SECTION STYLES ── */
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  section { padding: 88px 48px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+  }
+  .section-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px; font-weight: 700; color: var(--navy);
+    line-height: 1.25; margin-bottom: 28px;
+  }
+  .section-body { font-size: 16px; font-weight: 300; line-height: 1.8; color: var(--body-text); }
+  .section-body p + p { margin-top: 16px; }
+  .section-body strong { font-weight: 600; color: var(--navy); }
+
+  /* ── PAGE INTRO (navy band, single column — identical treatment to Work With Me's) ── */
+  .page-intro { background: var(--navy); padding: 96px 48px 88px; }
+  .page-intro .section-inner { max-width: 820px; }
+  .page-intro .section-eyebrow { color: var(--gold-lt); }
+  .page-intro .section-h2 {
+    color: var(--white); font-size: clamp(28px, 3vw, 40px); margin-bottom: 24px;
+  }
+  .page-intro .section-body { color: rgba(255,255,255,0.78); font-size: 17px; }
+  .page-intro .section-body p + p { margin-top: 14px; }
+
+  /* ── PROGRAM SECTION (single column, same treatment as Work With Me's track sections) ── */
+  .program-section { padding: 96px 48px; background: var(--white); }
+  .program-grid { max-width: 760px; margin: 0 auto; }
+  .program-eyebrow-sub {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: 19px; color: var(--navy); line-height: 1.5; margin-bottom: 24px;
+  }
+  .program-grid p { font-size: 17px; line-height: 1.8; color: var(--body-text); margin-bottom: 22px; }
+  .program-grid p:last-of-type { margin-bottom: 0; }
+
+  .btn-primary, .btn-track {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 15px 34px;
+    border: 2px solid var(--teal); transition: all 0.2s;
+    border-radius: 10px; font-family: 'Barlow Condensed', sans-serif;
+  }
+  .btn-primary:hover, .btn-track:hover { background: transparent; color: var(--teal); }
+
+  /* ── COHORT DETAILS (stat row, adapted from the homepage's .hero-stat-num/.hero-stat-label treatment) ── */
+  .details-section { background: var(--lt-navy); padding: 72px 48px; }
+  .details-grid {
+    max-width: 900px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;
+    text-align: center;
+  }
+  .detail-num {
+    font-family: 'Fraunces', serif;
+    font-size: 40px; font-weight: 700; line-height: 1; color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .detail-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 8px; font-family: 'Barlow Condensed', sans-serif;
+  }
+  .detail-desc { font-size: 13px; color: var(--body-text); opacity: 0.7; line-height: 1.5; }
+
+  /* ── CTA SECTION (identical to Home/About/Work With Me) ── */
+  .cta-section { background: var(--navy); text-align: center; padding: 112px 48px; }
+  .cta-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 24px;
+  }
+  .cta-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
+    color: var(--white) !important; line-height: 1.2;
+    max-width: 640px; margin: 0 auto 20px;
+  }
+  .cta-sub {
+    font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.78);
+    line-height: 1.75; max-width: 620px; margin: 0 auto 24px;
+  }
+  .cta-fine {
+    font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.55);
+    line-height: 1.6; max-width: 480px; margin: 0 auto 44px;
+  }
+  .btn-cta-primary {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 44px;
+    border: 2px solid var(--teal); transition: all 0.2s; border-radius: 10px;
+  }
+  .btn-cta-primary:hover { background: transparent; color: var(--teal); }
+
+  /* ── FOOTER (identical to Home/About/Work With Me) ── */
+  footer.site-footer {
+    background: #080F1F; padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+  /* ── MOCKUP BANNER ── */
+  .mockup-banner {
+    background: var(--navy-mid); color: rgba(255,255,255,0.55);
+    text-align: center; padding: 9px;
+    font-size: 11px; font-family: monospace; letter-spacing: 0.06em;
+  }
+
+  /* ── TYPE SYSTEM ── */
+  .section-eyebrow, .cta-eyebrow, .nav-links a, .nav-cta, .nav-dropdown li a,
+  .btn-primary, .btn-track, .btn-cta-primary {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  @media (max-width: 720px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    section, .page-intro, .program-section, .details-section, .cta-section { padding-left: 24px; padding-right: 24px; }
+    .details-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">📄 SYNNOVATIA · The Messy Middle Mockup · Aug 13, 2026 · reuses the confirmed Home/About/Work With Me visual system</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/synnovatia-logo-nav.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li class="has-dropdown">
+      <a href="#" class="active" aria-current="page">The Messy Middle</a>
+      <ul class="nav-dropdown">
+        <li><a href="#" class="active">The Mastermind</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <a href="#" class="nav-cta">Schedule a Conversation</a>
+</nav>
+
+<!-- PAGE INTRO -->
+<section class="page-intro">
+  <div class="section-inner">
+    <p class="section-eyebrow">The Messy Middle</p>
+    <h2 class="section-h2">You've Hit the First Wall</h2>
+    <div class="section-body">
+      <p>It shows up somewhere around $250,000 to $500,000 in revenue, when whatever got the business off the ground stops being enough on its own. Revenue's plateaued. Your team is stretched thinner than you are. The instincts that built the business are running out of runway.</p>
+      <p>That's the Messy Middle. Nearly every owner in this range hits it. Most just don't have anyone to talk to about it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE MASTERMIND -->
+<section class="program-section">
+  <div class="program-grid">
+    <h2 class="section-h2">The Mastermind for the Messy Middle</h2>
+    <p class="program-eyebrow-sub">A room built for exactly this stage, not the one before it or the one after.</p>
+    <p>This is a small, hand-selected group of women running B2B service businesses in the same $250K–$500K range, working through the same terrain at the same time. Four are already in the room.</p>
+    <p>We meet every other Friday morning and work through what's actually on the table: growing without burning out, who to hire and who to let go, the client conversation you've been putting off, using AI without losing what makes the business yours.</p>
+    <p>This isn't a networking group, and it isn't a cheerleading session. It's a room where the right minds work your actual problem until the path forward is clear.</p>
+    <p>I lead every session myself, not as a member who happens to have more experience, but as the strategist guiding the agenda toward what will actually move you forward. You need a room that gets it, and a facilitator who's spent 25+ years learning the difference between a growth problem and a strategy problem.</p>
+  </div>
+</section>
+
+<!-- COHORT DETAILS -->
+<section class="details-section">
+  <div class="details-grid">
+    <div>
+      <div class="detail-num">$675</div>
+      <div class="detail-label">Per Quarter</div>
+      <div class="detail-desc">Six sessions, one hand-selected room</div>
+    </div>
+    <div>
+      <div class="detail-num">Fridays</div>
+      <div class="detail-label">Every Other Week</div>
+      <div class="detail-desc">8:00–9:15am Pacific, over Zoom</div>
+    </div>
+    <div>
+      <div class="detail-num">8</div>
+      <div class="detail-label">Seats</div>
+      <div class="detail-desc">Capacity stays small on purpose so every voice matters</div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY CTA -->
+<section class="cta-section">
+  <p class="cta-eyebrow">Four Women Are Already In</p>
+  <h2 class="cta-h2">The Next Cohort Starts October 9</h2>
+  <p class="cta-sub">Applications are reviewed as they come in, but the window closes September 25 to leave real time for the conversations that come before a yes.</p>
+  <p class="cta-fine">A handful of seats are still open. Submitting an application starts a conversation, not a commitment.</p>
+  <a href="#" class="btn-cta-primary">Apply for Consideration</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="assets/synnovatia-logo-footer.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>
