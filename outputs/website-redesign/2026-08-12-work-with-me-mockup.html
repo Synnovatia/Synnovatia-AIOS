@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synnovatia — Work With Me Mockup</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:       #0D1F4E;
+    --navy-mid:   #1A3A7A;
+    --gold:       #B29200;
+    --gold-lt:    #F5C842;
+    --teal:       #0F6E56;
+    --teal-lt:    #5DCAA5;
+    --warm-white: #F7F6F2;
+    --body-text:  #444441;
+    --neut-gray:  #EAEAEA;
+    --lt-navy:    #E8ECF5;
+    --lt-gold:    #FDF3CC;
+    --white:      #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--warm-white);
+    color: var(--body-text);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 72px;
+    font-optical-sizing: auto;
+  }
+
+  /* ── NAV (identical to Home/About) ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--warm-white);
+    border-bottom: 3px solid var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 72px;
+  }
+  .nav-logo img { height: 30px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+  .nav-links a {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--body-text);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a.active { color: var(--navy); }
+  .nav-links a.active::after {
+    content: ""; display: block; height: 2px; background: var(--gold);
+    margin-top: 6px;
+  }
+  .nav-links > li { position: relative; }
+  .nav-links > li.has-dropdown > a { display: inline-flex; align-items: center; gap: 6px; line-height: 1; }
+  .nav-links > li.has-dropdown { display: flex; align-items: center; height: 72px; }
+  .nav-links > li.has-dropdown > a::after {
+    content: ""; width: 6px; height: 6px;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px); transition: transform 0.2s;
+  }
+  .nav-dropdown {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    min-width: 220px; background: var(--white);
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 14px 32px rgba(13,31,78,0.14);
+    list-style: none; padding: 10px 0;
+    opacity: 0; visibility: hidden; translate: 0 8px;
+    transition: opacity 0.18s ease, translate 0.18s ease, visibility 0.18s;
+  }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown {
+    opacity: 1; visibility: visible; translate: 0 0;
+  }
+  .nav-dropdown li a { display: block; padding: 11px 22px; font-size: 11px; letter-spacing: 0.08em; }
+  .nav-dropdown li a:hover { background: var(--warm-white); color: var(--navy); }
+  .nav-cta {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--white);
+    text-decoration: none; background: var(--teal);
+    padding: 10px 24px; transition: background 0.2s; border-radius: 10px;
+  }
+  .nav-cta:hover { background: var(--navy); }
+
+  /* ── SHARED SECTION STYLES ── */
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  section { padding: 88px 48px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+  }
+  .section-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px; font-weight: 700; color: var(--navy);
+    line-height: 1.25; margin-bottom: 28px;
+  }
+  .section-body { font-size: 16px; font-weight: 300; line-height: 1.8; color: var(--body-text); }
+  .section-body p + p { margin-top: 16px; }
+  .section-body strong { font-weight: 600; color: var(--navy); }
+
+  /* ── PAGE INTRO (navy band, single column — adapted from the homepage's .problem treatment) ── */
+  .page-intro { background: var(--navy); padding: 96px 48px 88px; }
+  .page-intro .section-inner { max-width: 820px; }
+  .page-intro .section-eyebrow { color: var(--gold-lt); }
+  .page-intro .section-h2 {
+    color: var(--white); font-size: clamp(28px, 3vw, 40px); margin-bottom: 24px;
+  }
+  .page-intro .section-body { color: rgba(255,255,255,0.78); font-size: 17px; }
+  .page-intro .section-body p + p { margin-top: 14px; }
+
+  /* ── TRACK SECTIONS (single column, adapted from About's .approach-section) ── */
+  .track-section { padding: 96px 48px; }
+  .track-section.alt { background: var(--white); }
+  .track-grid { max-width: 760px; margin: 0 auto; }
+  .track-eyebrow-sub {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: 19px; color: var(--navy); line-height: 1.5; margin-bottom: 24px;
+  }
+  .track-grid p { font-size: 17px; line-height: 1.8; color: var(--body-text); margin-bottom: 22px; }
+  .track-grid p:last-of-type { margin-bottom: 0; }
+  .track-cta { margin-top: 36px; }
+
+  .btn-primary, .btn-track {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 15px 34px;
+    border: 2px solid var(--teal); transition: all 0.2s;
+    border-radius: 10px; font-family: 'Barlow Condensed', sans-serif;
+  }
+  .btn-primary:hover, .btn-track:hover { background: transparent; color: var(--teal); }
+
+  /* ── CTA SECTION (identical to Home/About) ── */
+  .cta-section { background: var(--navy); text-align: center; padding: 112px 48px; }
+  .cta-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 24px;
+  }
+  .cta-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
+    color: var(--white) !important; line-height: 1.2;
+    max-width: 640px; margin: 0 auto 20px;
+  }
+  .cta-sub {
+    font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.78);
+    line-height: 1.75; max-width: 620px; margin: 0 auto 24px;
+  }
+  .cta-fine {
+    font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.55);
+    line-height: 1.6; max-width: 480px; margin: 0 auto 44px;
+  }
+  .btn-cta-primary {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 44px;
+    border: 2px solid var(--teal); transition: all 0.2s; border-radius: 10px;
+  }
+  .btn-cta-primary:hover { background: transparent; color: var(--teal); }
+
+  /* ── FOOTER (identical to Home/About) ── */
+  footer.site-footer {
+    background: #080F1F; padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+  /* ── MOCKUP BANNER ── */
+  .mockup-banner {
+    background: var(--navy-mid); color: rgba(255,255,255,0.55);
+    text-align: center; padding: 9px;
+    font-size: 11px; font-family: monospace; letter-spacing: 0.06em;
+  }
+
+  /* ── TYPE SYSTEM ── */
+  .section-eyebrow, .cta-eyebrow, .nav-links a, .nav-cta, .nav-dropdown li a,
+  .btn-primary, .btn-track, .btn-cta-primary {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  @media (max-width: 720px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    section, .page-intro, .track-section, .cta-section { padding-left: 24px; padding-right: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">📄 SYNNOVATIA · Work With Me Mockup · Aug 12, 2026 · reuses the confirmed Home/About visual system</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/synnovatia-logo-nav.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li class="has-dropdown">
+      <a href="#">The Messy Middle</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">The Mastermind</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#" class="active" aria-current="page">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#strategic-coaching">Strategic Coaching</a></li>
+        <li><a href="#solutions-on-the-fly">Solutions on the Fly</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <a href="#" class="nav-cta">Schedule a Conversation</a>
+</nav>
+
+<!-- PAGE INTRO -->
+<section class="page-intro">
+  <div class="section-inner">
+    <p class="section-eyebrow">Work With Me</p>
+    <h2 class="section-h2">Different Stages of Business Growth Call for Different Kinds of Support</h2>
+    <div class="section-body">
+      <p>Some problems need an ongoing thinking partner. Others need one sharp conversation and a clear next step. Every engagement is built around your business and your aspirations.</p>
+      <p>Here's what each one actually looks like.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGIC COACHING -->
+<section class="track-section alt" id="strategic-coaching">
+  <div class="track-grid">
+    <h2 class="section-h2">Strategic Coaching</h2>
+    <p class="track-eyebrow-sub">An ongoing thinking partner for the stretch you're in now.</p>
+    <p>This is the deepest way to work together: a one-on-one engagement focused entirely on your business. We set the strategic direction, work the plan, and adjust as reality unfolds. It's individual attention, not a group format.</p>
+    <p>It's also where the work goes beyond strategy. Stage II ownership is isolating, and decisions carry weight you can't share with your team. The emotional reality of ownership is part of the strategic reality, not separate from it.</p>
+    <p>We meet on a cadence that matches what you're working through, whether that's once a month or closer to weekly. What doesn't change is the depth. This isn't a status check-in. You stay on my mind after our conversation ends.</p>
+    <div class="track-cta">
+      <a href="#" class="btn-track">Start the Conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS ON THE FLY -->
+<section class="track-section" id="solutions-on-the-fly">
+  <div class="track-grid">
+    <h2 class="section-h2">Solutions on the Fly</h2>
+    <p class="track-eyebrow-sub">Sometimes you don't need a long-term engagement.</p>
+    <p>Sometimes you need an outside perspective on one specific thing: the pricing decision you've been circling, the hire you're not sure about, the plan you wrote and now doubt. Solutions on the Fly is targeted strategic input, precisely when you need it.</p>
+    <p>We get to the core issue fast, pressure-test your options, and you leave with a decision you can act on.</p>
+    <p>Schedule a single session. No ongoing commitment. You bring the issue. We work it until you leave with an actual next step.</p>
+    <div class="track-cta">
+      <a href="#" class="btn-track">Find a Time That Works</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA: LET'S TALK FIRST -->
+<section class="cta-section">
+  <p class="cta-eyebrow">Not Sure Which One Fits?</p>
+  <h2 class="cta-h2">Let's Talk First</h2>
+  <p class="cta-sub">Not sure which one fits, or whether I'm the right person for the job? That's exactly what the first conversation is for. I want to understand what's actually going on in your business, confirm I can be of real value, and make sure it feels like the right fit on both sides.</p>
+  <p class="cta-fine">I deliberately work with a small number of clients at a time, so every client gets my full attention. I read every message myself and reply personally, usually within a day or two.</p>
+  <a href="#" class="btn-cta-primary">Start the Conversation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="assets/synnovatia-logo-footer.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>
