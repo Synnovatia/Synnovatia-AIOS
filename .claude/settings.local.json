@@ -299,7 +299,10 @@
       "Bash(rm -f \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/95a5d8b3-e7a7-45b7-ac8f-2592bc00acdb/scratchpad/2026-08-17-to-08-21-drafts.pdf\")",
       "Bash(python3 scripts/log_outreach.py sent miventrageser@gmail.com --date 2026-08-04 --notes \"Backfilled — draft was already sent 8/4 \\(found in Gmail, never logged\\); referenced her generosity referring clients and sending articles\")",
       "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__get_marketing_email_analytics",
-      "mcp__3ef6ca01-80b7-4b97-8510-379f9816e9bf__find_person"
+      "mcp__3ef6ca01-80b7-4b97-8510-379f9816e9bf__find_person",
+      "Bash(mkdir -p \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/f3c59296-0d14-4187-a183-213a3f94cf8c/scratchpad\")",
+      "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__search_events",
+      "Bash([ -f \"$STATE_FILE\" ])"
     ]
   }
 }

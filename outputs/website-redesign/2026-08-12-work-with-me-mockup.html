@@ -135,6 +135,16 @@
   }
   .btn-primary:hover, .btn-track:hover { background: transparent; color: var(--teal); }
 
+  /* ── CLIENT QUOTE (standalone, between the two tracks — same type treatment as the homepage's .how-quote-block, on the About page's .credentials-section tint) ── */
+  .quote-section { background: var(--lt-navy); padding: 80px 48px; text-align: center; }
+  .quote-inner { max-width: 720px; margin: 0 auto; }
+  .quote-text {
+    font-family: 'Fraunces', serif; font-style: italic;
+    font-size: 23px; color: var(--navy); line-height: 1.6; margin-bottom: 24px;
+  }
+  .quote-attr { font-size: 13px; font-weight: 700; color: var(--gold); line-height: 1.1; }
+  .quote-org { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 4px; }
+
   /* ── CTA SECTION (identical to Home/About) ── */
   .cta-section { background: var(--navy); text-align: center; padding: 112px 48px; }
   .cta-eyebrow {
@@ -247,6 +257,15 @@
   </div>
 </section>
 
+<!-- CLIENT QUOTE -->
+<section class="quote-section">
+  <div class="quote-inner">
+    <p class="quote-text">Synnovatia is a strategic coaching firm that is detailed and knowledgeable about business. I have a small business that grew from $150K to $750K because of the goal setting and resources that Synnovatia provided. It saves me years of learning on my own.</p>
+    <p class="quote-attr">Brooke Billingsley</p>
+    <p class="quote-org">Vice President · Perception Strategies</p>
+  </div>
+</section>
+
 <!-- SOLUTIONS ON THE FLY -->
 <section class="track-section" id="solutions-on-the-fly">
   <div class="track-grid">
@@ -254,7 +273,7 @@
     <p class="track-eyebrow-sub">Sometimes you don't need a long-term engagement.</p>
     <p>Sometimes you need an outside perspective on one specific thing: the pricing decision you've been circling, the hire you're not sure about, the plan you wrote and now doubt. Solutions on the Fly is targeted strategic input, precisely when you need it.</p>
     <p>We get to the core issue fast, pressure-test your options, and you leave with a decision you can act on.</p>
-    <p>Schedule a single session. No ongoing commitment. You bring the issue. We work it until you leave with an actual next step.</p>
+    <p>Schedule a single session with no ongoing commitment. You bring the issue. We work through it and you leave with an achievable next step.</p>
     <div class="track-cta">
       <a href="#" class="btn-track">Find a Time That Works</a>
     </div>
@@ -265,8 +284,8 @@
 <section class="cta-section">
   <p class="cta-eyebrow">Not Sure Which One Fits?</p>
   <h2 class="cta-h2">Let's Talk First</h2>
-  <p class="cta-sub">Not sure which one fits, or whether I'm the right person for the job? That's exactly what the first conversation is for. I want to understand what's actually going on in your business, confirm I can be of real value, and make sure it feels like the right fit on both sides.</p>
-  <p class="cta-fine">I deliberately work with a small number of clients at a time, so every client gets my full attention. I read every message myself and reply personally, usually within a day or two.</p>
+  <p class="cta-sub">Not sure which one fits, or whether I'm the right person for the job? That's exactly what the first conversation is for. I want to understand what's actually going on in your business, confirm I can be of real value, and make sure it feels like the right fit for both of us.</p>
+  <p class="cta-fine">I deliberately work with a small number of clients so every client gets my full attention. I read every message myself and usually reply within a day or two.</p>
   <a href="#" class="btn-cta-primary">Start the Conversation</a>
 </section>
 

@@ -1,4 +1,4 @@
-# Work With Me — Page Copy (2026-08-12, revision 8 — current)
+# Work With Me — Page Copy (2026-08-13, revision 11 — current)
 
 > Full revision history in the Notes section at the bottom. Summary of where this landed: Mastermind section removed (stays scoped to the two 1:1 tracks, per the original nav plan — masterminds live on their own "The Messy Middle" page), typos fixed, eyebrow/"BUILT FOR" labels cut from 7 to 1, concrete examples restored to Solutions on the Fly, the closing reframed as one "Let's Talk First" section (mutual-fit discovery conversation, not a program-picker), and the Strategic Coaching/Solutions on the Fly closing lines both rewritten per Jackie's direction.
 
@@ -36,7 +36,7 @@ Sometimes you need an outside perspective on one specific thing: the pricing dec
 
 We get to the core issue fast, pressure-test your options, and you leave with a decision you can act on.
 
-Schedule a single session. No ongoing commitment. You bring the issue. We work it until you leave with an actual next step.
+Schedule a single session with no ongoing commitment. You bring the issue. We work through it and you leave with an achievable next step.
 
 **[Find a Time That Works]**
 
@@ -44,9 +44,9 @@ Schedule a single session. No ongoing commitment. You bring the issue. We work i
 
 ## Let's Talk First
 
-Not sure which one fits, or whether I'm the right person for the job? That's exactly what the first conversation is for. I want to understand what's actually going on in your business, confirm I can be of real value, and make sure it feels like the right fit on both sides.
+Not sure which one fits, or whether I'm the right person for the job? That's exactly what the first conversation is for. I want to understand what's actually going on in your business, confirm I can be of real value, and make sure it feels like the right fit for both of us.
 
-I deliberately work with a small number of clients at a time, so every client gets my full attention. I read every message myself and reply personally, usually within a day or two.
+I deliberately work with a small number of clients so every client gets my full attention. I read every message myself and usually reply within a day or two.
 
 **[Start the Conversation]**
 
@@ -66,3 +66,6 @@ I deliberately work with a small number of clients at a time, so every client ge
 - **Revision 6 (2026-08-12, HTML mockup only):** removed a redundant gold eyebrow label directly above each track's H2 that just repeated the H2 text verbatim ("Strategic Coaching" over "Strategic Coaching," "Solutions on the Fly" over "Solutions on the Fly"). These were never part of the approved copy — added by mistake while building the HTML mockup, and they reintroduced the exact eyebrow-overuse problem already fixed in Revision 2 (brand-voice.md caps eyebrows at two per page; page is back to one, "WORK WITH ME").
 - **Revision 7 (2026-08-12):** fixed a repeated verb in the "Let's Talk First" paragraph — "make sure I can be of real value, and make sure it feels like the right fit" repeated "make sure" twice back to back. Changed the first instance to "confirm I can be of real value."
 - **Revision 8 (2026-08-12):** cut "The program comes after, based on what you need, not before" from the end of the same paragraph. It still presupposed a program was the outcome, just avoided saying which one before the call — a milder version of the same assumption already corrected earlier. The paragraph now ends on "make sure it feels like the right fit on both sides," which doesn't presuppose any particular outcome, including "no program at all, just this one conversation."
+- **Revision 9 (2026-08-13):** AI-cadence scrub pass, per Jackie's direct flag. "On both sides" → "for both of us" (matches how Jackie actually said it). Removed the comma-joined connector clauses in the closing paragraph — "at a time, so every client" → "at a time so every client," and "reply personally, usually within a day or two" → "usually reply within a day or two" — flagged as reading like AI, folded into `feedback_scrub-ai-cadence-before-presenting.md` as a distinct pattern from em-dash overuse. Also caught and fixed, unprompted, a live violation of the writing-style skill's "no 3+ similar-length sentences in a row" rule in Solutions on the Fly's closing paragraph ("Schedule a single session. No ongoing commitment. You bring the issue." — three short sentences back to back) — combined into two sentences with natural connectors.
+- **Revision 10 (2026-08-13):** Jackie asked for the commas eliminated from the Revision 9 fix on Solutions on the Fly's closing line too — "Schedule a single session, no ongoing commitment. You bring the issue, and we work it until you leave with an actual next step." → "Schedule a single session with no ongoing commitment. You bring the issue. We work through it and you leave with an actual next step." Three short, unevenly-lengthed sentences instead of two comma-joined ones.
+- **Revision 11 (2026-08-13):** two more word-level fixes — "an actual next step" → "an achievable next step" (Solutions on the Fly's closing line), and "a small number of clients at a time" → "a small number of clients" ("at a time" cut as unnecessary, closing paragraph).

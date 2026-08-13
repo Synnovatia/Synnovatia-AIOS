@@ -8,6 +8,40 @@
 
 ---
 
+## 2026-08-13
+
+### Active Engagers Draft — Automated (hubspot-active-engagers-draft)
+- Skip-check found the last Active Engagers draft was 08-02 (11 days prior, over the ~10-day skip window), so drafted this cycle's biweekly send for the 08-19 Wednesday slot: general version back to a direct "book a solutions-on-the-fly-call" CTA (last send, 08-05, was the WIW value-first format — that cycle's now complete on the every-third-send rotation), Messy Middle-fit women version stayed a light-touch direct CTA with no hard deadline (that urgency belongs to the standalone Aug 26 invitation and its real Sept 25 close date).
+- Delivered as markdown (`outputs/hubspot-marketing/2026-08-13-active-engagers-drafts.md`) and matching Word doc, plus built both as real HubSpot drafts via `manage_marketing_email` (general: list 400/exclude 404; Messy Middle: list 404) — Jackie reviews/edits either and sends manually in HubSpot, nothing scheduled or sent.
+- Left the queued referral-marketing stat (saved 2026-08-03) queued for the next WIW-format cycle rather than using it here, since this send went direct-CTA instead.
+
+### Session Initialized
+- Read context, `HISTORY.md`, `docs/_index.md`, and `context/group/key-metrics.md`; confirmed current priorities (5 new retainer clients by October, mastermind growth, "Different Is Better Than Better" rebrand) and flagged a decent pile of uncommitted work still sitting from the 2026-08-12 session.
+
+### Work With Me Page Deployed to Staging
+- Deployed the reviewed Work With Me mockup to the staging site as a new page at `/work-with-me/` — a clean slug rather than the homepage's "-new-design-draft" pattern, since there was no reserved-slug constraint forcing that workaround this time — leaving the two old separate service pages untouched rather than overwriting either.
+- Found a real deploy gap: pasting the raw mockup HTML into the Custom HTML block wasn't enough on its own. The GeneratePress theme's own header, nav, page title, and sidebar rendered on top of the page until a WordPress-theme-override CSS block was added (the same fix the homepage/About deploys already carry, previously undocumented as a reusable step), plus a button-visibility fix for the theme's link-color CSS washing out the mockup's teal buttons to match their own background.
+- Verified via the REST API and a cache purge, not just the visual "Saved" state, per the established deploy protocol. Folded the full deploy mechanics into the `project_website-redesign-status` memory and CLAUDE.md's website-redesign section so the next page deploy doesn't have to re-derive this from scratch.
+
+### Draft Email Style Check — Gmail Inbox Replies, Not HubSpot
+- Checked the 08/19 Active Engagers HubSpot drafts (general + Messy Middle) for edits first — both came back word-for-word identical to the original draft, nothing to learn from yet.
+- Jackie clarified she meant two Gmail inbox-reply drafts instead (Sandra Roe re: a rejected About-page quote; Virginia Kenyon re: a coaching thread). Since that system overwrites the Gmail draft in place with no revision history, read both as voice samples rather than a true before/after diff. Real patterns surfaced: offering a lettered menu of alternative phrasings rather than guessing at one rewrite when a quote gets rejected, letting the recipient pick or write their own; stacking short repeated reassurances under real personal strain instead of trimming to one line; all-caps encouragement extending from LinkedIn into personal replies; naming a third party directly in closing warmth; and a lighter, single-question version of the "close with a question, not an answer" coaching instinct in live business-thread replies. Saved as a new memory (`feedback_inbox-reply-voice-patterns.md`), kept separate from the client re-engagement patterns since it's a genuinely different channel.
+
+### Day B Strength Session Logged
+- Logged today's Day B session (24 sets across 8 exercises) after resolving several voice-dictation ambiguities directly with Jackie rather than guessing: confirmed "Band face pushup" meant Band Face Pull, merged two duplicate purple-band-pull mentions into one Band Bent-Over Row entry, and corrected garbled hill-warmup (138 HR / 20:38 pace) and strength-session (349 MET-minutes) numbers that didn't parse as given.
+- Logged the hill warmup and strength session summary to `personal/workout-logs/session-log.csv`. Flagged two open items rather than silently resolving them: Band Face Pull was done but no rep count was ever given, and Dumbbell Pushups isn't part of the current Day B plan — Jackie's call whether to make it a standing addition.
+
+### Client Quote Added to Work With Me Page
+- Jackie asked whether the page needed a client quote like the one on the old live `/solutions/` page. Recommended one shared quote between the two tracks over a per-track split — lower lift, reusing the already-confirmed-quote precedent rather than sourcing two new track-specific ones.
+- Jackie supplied a new quote from Brooke Billingsley (VP, Perception Strategies) directly in chat. Mocked it up as a standalone centered section between Strategic Coaching and Solutions on the Fly, reusing the homepage's `.how-quote-block` type treatment (Fraunces italic, gold attribution) on the About page's existing light-navy tint rather than inventing new visual language. Removed the wrapping quotation marks on request, matching how some of the site's other quote treatments already rely on the italic styling alone.
+- Hit and fixed a real bug deploying the update: WordPress silently strips literal HTML comments from Custom HTML block content on save, so splicing new content in relative to a comment anchor landed it at the very end of the page instead of between the two tracks on the first attempt. Fixed by re-anchoring on real markup instead, verified the section order via the REST API, and folded the gotcha into the `project_website-redesign-status` memory.
+- Flagged: Brooke Billingsley's quote has no sign-off outreach tracked anywhere, unlike the other 9 quotes across the site — needs a direct ask before this page goes any further than staging.
+
+### Other Pending Changes (automated tasks + prior-session backlog, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated `dashboard-daily-refresh` and `morning-brief` runs.
+- `outputs/website-redesign/2026-08-12-work-with-me-copy.md` / `.docx`, `outputs/website-redesign/assets/jackie-about-hero.jpg`: left uncommitted from the 2026-08-12 session, bundled into this commit rather than left stranded.
+- `outputs/hubspot-marketing/2026-08-13-active-engagers-drafts.md` / `.docx`, `outputs/strength-log/2026-08-13-day-b-printable.html`, `personal/workout-logs/2026-08-13-day-b.pdf`: generated earlier today, first commit for these.
+
 ## 2026-08-12
 
 ### Session Initialized
