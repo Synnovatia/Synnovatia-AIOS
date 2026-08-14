@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synnovatia: The Mastermind for the Messy Middle</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:       #0D1F4E;
+    --navy-mid:   #1A3A7A;
+    --gold:       #B29200;
+    --gold-lt:    #F5C842;
+    --teal:       #0F6E56;
+    --teal-lt:    #5DCAA5;
+    --warm-white: #F7F6F2;
+    --body-text:  #444441;
+    --neut-gray:  #EAEAEA;
+    --lt-navy:    #E8ECF5;
+    --lt-gold:    #FDF3CC;
+    --white:      #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-optical-sizing: auto;
+    background: var(--warm-white);
+    color: var(--body-text);
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 72px;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--warm-white);
+    border-bottom: 3px solid var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 72px;
+  }
+  .nav-logo img { height: 30px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+  .nav-links a {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--body-text);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a.active { color: var(--navy); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
+
+  .nav-links > li { position: relative; }
+  .nav-links > li.has-dropdown > a { display: inline-flex; align-items: center; gap: 6px; line-height: 1; }
+  .nav-links > li.has-dropdown { display: flex; align-items: center; height: 72px; }
+  .nav-links > li.has-dropdown > a::after {
+    content: ""; width: 6px; height: 6px;
+    border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px); transition: transform 0.2s;
+  }
+  .nav-dropdown {
+    position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    min-width: 220px; background: var(--white);
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 14px 32px rgba(13,31,78,0.14);
+    list-style: none; padding: 10px 0;
+    opacity: 0; visibility: hidden; translate: 0 8px;
+    transition: opacity 0.18s ease, translate 0.18s ease, visibility 0.18s;
+  }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown {
+    opacity: 1; visibility: visible; translate: 0 0;
+  }
+  .nav-dropdown li a {
+    display: block; padding: 11px 22px;
+    font-size: 11px; letter-spacing: 0.08em;
+  }
+  .nav-dropdown li a.active { border-bottom: none; color: var(--navy); background: var(--warm-white); }
+  .nav-dropdown li a:hover { background: var(--warm-white); color: var(--navy); }
+
+  .nav-cta {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--white);
+    text-decoration: none; background: var(--teal);
+    padding: 10px 24px; transition: background 0.2s;
+    border-radius: 10px;
+  }
+  .nav-cta:hover { background: var(--navy); }
+
+  /* ── HERO ── */
+  .mm-hero {
+    background: var(--navy);
+    padding: 110px 48px 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .mm-hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+  .mm-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 28px;
+  }
+  .mm-h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(36px, 4.6vw, 60px); font-weight: 700; line-height: 1.12;
+    color: var(--white); max-width: 820px; margin-bottom: 18px;
+  }
+  .mm-h1 em { font-style: italic; color: var(--white); }
+  .mm-h1-line2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(20px, 2.2vw, 30px); font-weight: 400; font-style: italic;
+    color: rgba(255,255,255,0.7); line-height: 1.35; margin-bottom: 36px;
+  }
+  .mm-hero-sub {
+    font-size: 17px; font-weight: 300; line-height: 1.85;
+    color: rgba(255,255,255,0.82); max-width: 640px; margin-bottom: 48px;
+  }
+  .mm-hero-sub strong { font-weight: 600; color: var(--white); }
+  .hero-actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 36px;
+    border: 2px solid var(--teal); transition: all 0.2s;
+    border-radius: 10px;
+  }
+  .btn-primary:hover { background: transparent; color: var(--teal-lt); border-color: var(--teal-lt); }
+  .link-ghost {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold-lt); text-decoration: none;
+    border-bottom: 2px solid rgba(245,200,66,0.4); padding-bottom: 3px;
+    transition: border-color 0.2s;
+  }
+  .link-ghost:hover { border-color: var(--gold-lt); }
+
+  /* ── SHARED SECTION STYLES ── */
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  section { padding: 88px 48px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+  }
+  .section-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px; font-weight: 700; color: var(--navy);
+    line-height: 1.25; margin-bottom: 28px;
+  }
+  .section-body { font-size: 16px; font-weight: 300; line-height: 1.8; color: var(--body-text); }
+  .section-body p + p { margin-top: 16px; }
+  .section-body strong { font-weight: 600; color: var(--navy); }
+
+  /* ── WHAT IT IS ── */
+  .what-it-is { background: var(--white); }
+  .what-it-is .section-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 80px; align-items: center; }
+  .stat-block { display: flex; flex-direction: column; gap: 26px; border-left: 3px solid var(--gold); padding-left: 32px; }
+  .stat-num {
+    font-family: 'Fraunces', serif; font-size: 40px; font-weight: 700;
+    color: var(--navy); line-height: 1;
+  }
+  .stat-label {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--body-text); opacity: 0.65; margin-top: 6px;
+  }
+
+  /* ── DEFINE ── */
+  .define { background: var(--lt-navy); }
+  .define .section-inner { max-width: 820px; }
+
+  /* ── VOICE (testimonial) ── */
+  .voice { background: var(--white); }
+  .voice .section-inner { max-width: 780px; }
+  .voice-block { border-left: 4px solid var(--gold); padding-left: 32px; }
+  .voice-quote {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: 26px; line-height: 1.5; color: var(--navy); margin-bottom: 22px;
+  }
+  .voice-name { font-size: 13px; font-weight: 700; color: var(--gold); line-height: 1.1; }
+  .voice-org { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 4px; }
+
+  /* ── ROOM ── */
+  .room { background: var(--navy); }
+  .room .section-eyebrow { color: var(--gold-lt); }
+  .room .section-h2 { color: var(--white); max-width: 680px; }
+  .room-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.12);
+    margin-top: 52px;
+  }
+  .room-cell { background: var(--navy); padding: 32px 30px; }
+  .room-cell .w {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 10px;
+  }
+  .room-cell p { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.7; }
+  .room-foot {
+    margin-top: 52px; font-family: 'Fraunces', serif;
+    font-size: 20px; font-style: italic; color: var(--white);
+    line-height: 1.55; max-width: 680px;
+  }
+  .room-cta { margin-top: 40px; }
+
+  /* ── FACILITATOR ── */
+  .facil { background: var(--white); }
+  .facil .section-inner { max-width: 780px; }
+  .facil-sig {
+    font-family: 'Fraunces', serif; font-style: italic;
+    font-size: 20px; color: var(--gold); margin-top: 28px;
+  }
+
+  /* ── COHORT DETAILS ── */
+  .details { background: var(--lt-navy); }
+  .details-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px;
+    max-width: 1000px; margin: 0 auto;
+  }
+  .detail-num {
+    font-family: 'Fraunces', serif; font-size: 40px; font-weight: 700; color: var(--navy); line-height: 1;
+  }
+  .detail-label {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold); margin-top: 10px;
+  }
+  .detail-desc { font-size: 14px; color: var(--body-text); opacity: 0.75; margin-top: 8px; line-height: 1.6; }
+
+  /* ── APPLY / CTA ── */
+  .cta-section { background: var(--navy); text-align: center; padding: 112px 48px; }
+  .cta-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 24px;
+  }
+  .cta-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 3.2vw, 44px); font-weight: 700;
+    color: var(--white); line-height: 1.2;
+    max-width: 640px; margin: 0 auto 20px;
+  }
+  .cta-sub {
+    font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.72);
+    line-height: 1.75; max-width: 500px; margin: 0 auto 20px;
+  }
+  .cta-fine {
+    font-size: 13px; color: rgba(255,255,255,0.5);
+    max-width: 460px; margin: 0 auto 40px; line-height: 1.6;
+  }
+  .btn-cta-primary {
+    display: inline-block; background: var(--teal);
+    color: var(--white); font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; padding: 16px 44px;
+    border: 2px solid var(--teal); transition: all 0.2s;
+    border-radius: 10px;
+  }
+  .btn-cta-primary:hover { background: transparent; color: var(--teal-lt); border-color: var(--teal-lt); }
+
+  /* ── FOOTER ── */
+  footer.site-footer {
+    background: #080F1F; padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+  /* ── MOCKUP BANNER ── */
+  .mockup-banner {
+    background: var(--navy-mid); color: rgba(255,255,255,0.55);
+    text-align: center; padding: 9px;
+    font-size: 11px; font-family: monospace; letter-spacing: 0.06em;
+  }
+
+  /* ── TYPE SYSTEM ── */
+  .section-eyebrow, .mm-eyebrow, .cta-eyebrow, .stat-label, .detail-label,
+  .nav-links a, .nav-cta, .nav-dropdown li a,
+  .btn-primary, .btn-cta-primary, .link-ghost {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    section, .mm-hero, .room, .cta-section { padding-left: 24px; padding-right: 24px; }
+    .what-it-is .section-inner { grid-template-columns: 1fr; gap: 44px; }
+    .room-grid { grid-template-columns: 1fr; }
+    .details-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">📄 SYNNOVATIA · The Mastermind for the Messy Middle · Aug 13, 2026 · adapted from Jackie's own reference design, real cohort/pricing details verified against the live site</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/synnovatia-logo-nav.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="#" class="active">Masterminds</a>
+      <ul class="nav-dropdown">
+        <li><a href="#" class="active" aria-current="page">Mastermind for the Messy Middle</a></li>
+        <li><a href="#">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <a href="#apply" class="nav-cta">Apply for Consideration</a>
+</nav>
+
+<!-- HERO -->
+<section class="mm-hero">
+  <div class="mm-hero-inner">
+    <p class="mm-eyebrow">The Mastermind for the Messy Middle · A Hand-Selected Peer Group</p>
+    <h1 class="mm-h1">The breakthrough you're after is <em>here</em>.</h1>
+    <p class="mm-h1-line2">You've built something real. Now you're stuck in the part nobody talks about.</p>
+    <p class="mm-hero-sub">
+      Revenue has plateaued. Cash flow is thinner than it should be. Your team is stretched and the strategies that got you this far have quietly stopped working. You've hit the Messy Middle and you don't have to work through it alone.
+    </p>
+    <div class="hero-actions">
+      <a href="#apply" class="btn-primary">Apply for Consideration</a>
+      <a href="#room" class="link-ghost">What Happens in the Room</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT IS -->
+<section class="what-it-is">
+  <div class="section-inner">
+    <div>
+      <h2 class="section-h2">So what is the Mastermind exactly?</h2>
+      <div class="section-body">
+        <p>A hand-selected group of eight women running B2B service businesses in the same $250K to $500K range, working through the same terrain at the same time.</p>
+        <p>Real friendships form here, but this isn't a networking group. The encouragement is real, but nobody's just here to cheer you on. Everyone in the room gets serious about your actual problem until the path forward is clear.</p>
+      </div>
+    </div>
+    <div class="stat-block">
+      <div>
+        <div class="stat-num">8</div>
+        <div class="stat-label">Women in the Room</div>
+      </div>
+      <div>
+        <div class="stat-num">Biweekly</div>
+        <div class="stat-label">Every Other Friday</div>
+      </div>
+      <div>
+        <div class="stat-num">25+ yrs</div>
+        <div class="stat-label">Facilitated by Jackie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEFINE -->
+<section class="define">
+  <div class="section-inner">
+    <h2 class="section-h2">The Messy Middle is the stretch nobody warns you about.</h2>
+    <div class="section-body">
+      <p>It shows up somewhere between $250,000 and $500,000 in revenue right when whatever got the business off the ground stops being enough on its own.</p>
+      <p>Most owners respond by pushing harder. Pushing harder isn't the answer. <strong>What worked to get here won't carry you to the next level</strong> and there's rarely anyone around who's dealt with this exact stage to ask.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="voice">
+  <div class="section-inner">
+    <p class="section-eyebrow">From a Member</p>
+    <div class="voice-block">
+      <p class="voice-quote">Jackie doesn't just talk strategy. She walks the talk and the room holds you to it.</p>
+      <p class="voice-name">Christina Carlson</p>
+      <p class="voice-org">Founder, Unstuck · Mastermind member</p>
+    </div>
+  </div>
+</section>
+
+<!-- ROOM -->
+<section class="room" id="room">
+  <div class="section-inner">
+    <p class="section-eyebrow">What Happens in the Room</p>
+    <h2 class="section-h2">Every member's experience is her own. Here's what a room like this makes possible.</h2>
+    <div class="room-grid">
+      <div class="room-cell">
+        <div class="w">Accountability</div>
+        <p>"I'll get to it eventually" doesn't survive long when seven other owners are following up. You keep moving.</p>
+      </div>
+      <div class="room-cell">
+        <div class="w">Collaboration</div>
+        <p>Eight sharp minds working your challenge at once. That's close to an unfair advantage.</p>
+      </div>
+      <div class="room-cell">
+        <div class="w">Feedback</div>
+        <p>Direct, experienced perspective replaces guesswork. Less second-guessing, more decisions you actually trust.</p>
+      </div>
+      <div class="room-cell">
+        <div class="w">Resources</div>
+        <p>The right workbook, checklist, or framework shows up right when you need it, not after.</p>
+      </div>
+      <div class="room-cell">
+        <div class="w">Support</div>
+        <p>People in your corner who've navigated the same stretch. It changes how you handle the hard weeks.</p>
+      </div>
+      <div class="room-cell">
+        <div class="w">Facilitation</div>
+        <p>Good discussion feels nice. Leaving with a clear next step is better. That's the job.</p>
+      </div>
+    </div>
+    <p class="room-foot">This is what happens when strategy meets accountability meets people who understand exactly where you are.</p>
+    <div class="room-cta">
+      <a href="#apply" class="btn-primary">Apply for Consideration</a>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITATOR -->
+<section class="facil">
+  <div class="section-inner">
+    <p class="section-eyebrow">Who Leads the Room</p>
+    <h2 class="section-h2">I'm Jackie Nagel, founder of Synnovatia.</h2>
+    <div class="section-body">
+      <p>For more than 25 years I've worked with entrepreneurs exactly where you are now: successful enough that quitting isn't an option, stuck enough that pushing harder stopped working.</p>
+      <p>The Mastermind is the group I hand-select and lead myself every session. I set the agenda and guide the discussion because what you need isn't another peer group circling the same conversations. You need a strategist who's spent decades learning the difference between a growth problem and a strategy problem.</p>
+    </div>
+    <p class="facil-sig">Different is better than better.</p>
+  </div>
+</section>
+
+<!-- COHORT DETAILS -->
+<section class="details">
+  <div class="details-grid">
+    <div>
+      <div class="detail-num">$675</div>
+      <div class="detail-label">Per Quarter</div>
+      <div class="detail-desc">Six sessions, one hand-selected room</div>
+    </div>
+    <div>
+      <div class="detail-num">Fridays</div>
+      <div class="detail-label">Every Other Week</div>
+      <div class="detail-desc">8:00&ndash;9:15am Pacific, over Zoom</div>
+    </div>
+    <div>
+      <div class="detail-num">8</div>
+      <div class="detail-label">Seats</div>
+      <div class="detail-desc">Capacity stays small on purpose so every voice matters</div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="cta-section" id="apply">
+  <h2 class="cta-h2">The Next Cohort Starts October 9.</h2>
+  <p class="cta-sub">Applications are reviewed as they come in. The window closes September 25 to leave time for the conversations that come before a yes.</p>
+  <p class="cta-fine">A handful of seats are still open. Submitting an application starts a conversation, not a commitment.</p>
+  <a href="#" class="btn-cta-primary">Apply for Consideration</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="assets/synnovatia-logo-footer.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>
