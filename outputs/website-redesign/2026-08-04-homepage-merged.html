@@ -159,7 +159,12 @@
   .hero-pull-attr {
     font-family: 'Barlow', sans-serif;
     font-size: 11px; font-style: normal; font-weight: 700;
-    color: var(--gold); margin-top: 10px; display: block;
+    color: var(--body-text); opacity: 0.6; margin-top: 10px; display: block;
+  }
+  .hero-pull-tenure {
+    font-family: 'Barlow', sans-serif;
+    font-size: 11px; font-style: normal; font-weight: 700;
+    color: var(--gold); margin-top: 2px; display: block;
   }
 
   /* RIGHT — headline/copy panel, 60% */
@@ -177,7 +182,7 @@
     font-size: clamp(32px, 3.4vw, 52px); font-weight: 700; line-height: 1.15;
     color: var(--white); margin-bottom: 16px;
   }
-  .hero-h1 em { font-style: italic; color: var(--gold-lt); }
+  .hero-h1 em { font-style: italic; color: var(--white); }
   .hero-h1-line2 {
     font-family: 'Fraunces', serif;
     font-size: clamp(22px, 2.4vw, 34px); font-weight: 400; font-style: italic;
@@ -258,6 +263,10 @@
   }
   .how-quote-attr { font-size: 13px; font-weight: 700; color: var(--gold); line-height: 1.1; margin-top: 0 !important; margin-bottom: 0 !important; }
   .how-quote-org { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 2px !important; margin-bottom: 0 !important; }
+  .how-quote-tenure {
+    font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold); margin-top: 4px !important;
+  }
   .how-traits { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
   .trait-pill {
     font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
@@ -286,14 +295,10 @@
     font-size: clamp(30px, 4.4vw, 56px); line-height: 1.18;
     color: var(--navy); letter-spacing: -0.01em;
   }
-  .t-feature-quote em { font-style: italic; color: var(--gold); }
+  .t-feature-quote em { font-style: italic; color: var(--navy-mid); }
   .t-feature-attr {
     display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
-    margin-top: 28px; padding-top: 18px;
-  }
-  .t-feature-attr::before {
-    content: ""; display: block; width: 56px; height: 2px;
-    background: var(--gold); margin-right: 4px; align-self: center;
+    margin-top: 0; padding-top: 0;
   }
   .t-feature-name { font-size: 15px; font-weight: 700; color: var(--navy); }
   .t-feature-org  { font-size: 13px; color: var(--body-text); opacity: 0.65; }
@@ -312,11 +317,11 @@
     font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
     font-size: 19px; line-height: 1.55; color: var(--navy); margin-bottom: 14px !important;
   }
-  .t-name { font-size: 13px; font-weight: 700; color: var(--navy); margin-top: 0 !important; margin-bottom: 0 !important; }
-  .t-org  { font-size: 12px; color: var(--body-text); opacity: 0.6; margin-top: 2px !important; margin-bottom: 0 !important; }
+  .t-name { font-size: 13px; font-weight: 700; color: var(--navy); line-height: 1.1; margin-top: 0 !important; margin-bottom: 0 !important; }
+  .t-org  { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 2px !important; margin-bottom: 0 !important; }
   .t-tenure {
     font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--gold); margin-top: 4px !important;
+    text-transform: uppercase; color: var(--gold); line-height: 1.1; margin-top: 4px !important;
   }
   @media (max-width: 860px) {
     .testimonials .t-head { grid-template-columns: 1fr; }
@@ -380,7 +385,7 @@
   /* ── TYPE SYSTEM (Fraunces display · Barlow body · Barlow Condensed labels) ── */
   body { font-optical-sizing: auto; }
   .section-eyebrow, .hero-eyebrow, .cta-eyebrow,
-  .hero-stat-label, .t-feature-tenure, .t-tenure,
+  .hero-stat-label, .t-feature-tenure, .t-tenure, .how-quote-tenure,
   .nav-links a, .nav-cta, .nav-dropdown li a,
   .problem-text strong, .trait-pill,
   .btn-primary, .btn-cta-primary, .btn-secondary {
@@ -411,10 +416,12 @@
   </a>
   <ul class="nav-links">
     <li><a href="#">About</a></li>
+    <li><a href="#">The Messy Middle</a></li>
     <li class="has-dropdown">
-      <a href="#">The Messy Middle</a>
+      <a href="#">Masterminds</a>
       <ul class="nav-dropdown">
-        <li><a href="#">The Mastermind</a></li>
+        <li><a href="#">Mastermind for the Messy Middle</a></li>
+        <li><a href="#">Seven Figure Forum</a></li>
       </ul>
     </li>
     <li class="has-dropdown">
@@ -441,8 +448,9 @@
       <div class="hero-stat-num">25+</div>
       <div class="hero-stat-label">Years coaching Stage II entrepreneurs</div>
       <blockquote class="hero-pull">
-        &#8220;There is no one else doing what Jackie does, at this level, for entrepreneurs like us.&#8221;
-        <span class="hero-pull-attr">Raffi Saroyan, Showroom Exchange<br>Client since 2012</span>
+        There is no one else doing what Jackie does at this level for entrepreneurs like us.
+        <span class="hero-pull-attr">SaaS Solution Developer, Southern California</span>
+        <span class="hero-pull-tenure">Client since 2012</span>
       </blockquote>
     </div>
   </div>
@@ -450,7 +458,7 @@
   <!-- 60% — headline + copy + CTA -->
   <div class="hero-right">
     <p class="hero-eyebrow">Strategic Business Coaching · Stage II Entrepreneurs</p>
-    <h1 class="hero-h1">When Growth Stalls, It's Rarely <em>What You Think.</em></h1>
+    <h1 class="hero-h1">When Growth Stalls It's Rarely <em>What You Think.</em></h1>
     <p class="hero-h1-line2">You've outgrown the strategy that got you here.</p>
     <p class="hero-sub">
       I'm Jackie Nagel. For 25+ years I've equipped <strong>Stage II entrepreneurs</strong> (roughly $250K to $4M in revenue) to work through the growth plateaus that stall most businesses. Most owners are too close to see their own situation clearly. I bring the objective perspective that changes everything. We work as peers, owner to owner, on the challenge you're facing.
@@ -467,8 +475,8 @@
       <p class="section-eyebrow">The Messy Middle</p>
       <h2 class="section-h2">It Happens More Than Once</h2>
       <div class="section-body">
-        <p>Most owners hit the first wall somewhere around <strong>$250,000&ndash;$400,000</strong>, when whatever got the business off the ground (hustle, doing everything yourself, figuring it out as you go) stops being enough. The second usually shows up around <strong>$750,000 to $1 million</strong>, when the business gets too complex to hold in your head the way you used to. The third tends to hit around <strong>$3&ndash;4 million</strong>, when the business has to shift from running on your judgment and presence to running as a professionally managed organization.</p>
-        <p>Each time, it rarely feels like part of a pattern. It feels like something's wrong, with the market, the team, or you. Usually, it's none of those things. The strategy that worked to get you here needs an upgrade to get you to the next level.</p>
+        <p>Most owners hit the first wall somewhere around <strong>$250,000&ndash;$400,000</strong> when whatever got the business off the ground (hustle, doing everything yourself, figuring it out as you go) stops being enough. The second usually shows up around <strong>$750,000 to $1 million</strong> when the business gets too complex to hold in your head the way you used to. The third tends to hit around <strong>$3&ndash;4 million</strong> when the business has to shift from running on your judgment and presence to running as a professionally managed organization.</p>
+        <p>Each time it rarely feels like part of a pattern. It feels like something's wrong with the market, the team, or you. Usually it's none of those things. The strategy that worked to get you here needs an upgrade to get you to the next level.</p>
       </div>
     </div>
     <div class="problem-right">
@@ -476,14 +484,14 @@
         <div class="problem-num">01</div>
         <div class="problem-text">
           <strong>Outside Objectivity</strong>
-          <p>&ldquo;I was too close to see my own situation objectively,&rdquo; is how one client put it. An outside read clears the blind spot, and often the fear around a hard call, too.</p>
+          <p>&ldquo;I was too close to see my own situation objectively,&rdquo; is how one client put it. An outside read clears the blind spot and often the fear around a hard call too.</p>
         </div>
       </div>
       <div class="problem-point">
         <div class="problem-num">02</div>
         <div class="problem-text">
           <strong>Lived Experience</strong>
-          <p>The credibility comes from having lived the entrepreneurial life, not from a framework built for teams of 500. Clients call it walking the talk, and it shapes how every conversation goes.</p>
+          <p>The credibility comes from having lived the entrepreneurial life, not from a framework built for teams of 500. Clients call it walking the talk and it shapes how every conversation goes.</p>
         </div>
       </div>
       <div class="problem-point">
@@ -501,23 +509,24 @@
 <section class="how">
   <div class="section-inner">
     <div>
-      <h2 class="section-h2">What clients notice first, and remember longest.</h2>
+      <h2 class="section-h2">What clients notice first and remember longest.</h2>
       <div class="section-body">
-        <p>Clients notice the listening first, the kind that hears what's under the surface: what's being hinted at, what isn't being said outright. Then come the questions, the ones that get to the core of what's really going on.</p>
+        <p>Clients notice the listening first, the kind that hears what's under the surface: what's being hinted at and isn't being said outright. Then come the questions that get to the core of what's really going on.</p>
         <p>I bring a <strong>30,000-foot view</strong> that's impossible to see from inside your own business.</p>
         <p>Clients tend to describe the work as having <strong>a peer in their corner</strong>: encouraging, supportive, hardworking, and quick to make them feel genuinely heard and seen instead of processed. That feeling, they tell me, turns out to be the part that matters most.</p>
       </div>
       <div class="how-words">
-        <span class="how-words-label">Five words one client used to describe Jackie, unprompted</span>
+        <span class="how-words-label">Five words one client used to describe Jackie unprompted</span>
         <p class="how-words-list">Compassionate. Curious. Insightful. Thoughtful. Kind.</p>
       </div>
     </div>
     <div>
     <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding-top: 72px;">
       <div class="how-quote-block">
-        <p class="how-quote-text">"Her tough questions were a powerful tool in helping me solidify my growth strategies. The unbiased support was critical to help me reflect on how I wanted to shift and shape my business growth."</p>
+        <p class="how-quote-text">Her tough questions were a powerful tool in helping me solidify my growth strategies. The unbiased support was critical to help me reflect on how I wanted to shift and shape my business growth.</p>
         <p class="how-quote-attr">Diane Leonard</p>
-        <p class="how-quote-org">DH Leonard Consulting &amp; Grant Writing Services · Client since 2013</p>
+        <p class="how-quote-org">DH Leonard Consulting &amp; Grant Writing Services</p>
+        <p class="how-quote-tenure">Client since 2013</p>
       </div>
     </div>
     </div>
@@ -530,7 +539,7 @@
 
     <div class="t-head">
       <div>
-        <h2 class="section-h2" style="margin-bottom:0;">Proof you can only feel<br>once you're inside the work.</h2>
+        <h2 class="section-h2" style="margin-bottom:0;">Proof you feel<br>once you're inside the work.</h2>
       </div>
       <p class="t-anchor">
         My clients don't just renew.
