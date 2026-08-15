@@ -10,6 +10,9 @@
 
 ## 2026-08-15
 
+### Walk Logged
+- Logged today's walk to `personal/workout-logs/session-log.csv`: 61 min, avg HR 120, 3.31 miles at 18:29/mile, 364 METs. Reported pace checks out against distance/duration (computes to ~18:26/mile).
+
 ### Seven Figure Forum Page Built From Scratch and Extensively Iterated
 - Jackie asked to build the Seven Figure Forum page next, mirroring the Mastermind for the Messy Middle draft. Before drafting, researched everything the workspace already knew about the group and found major gaps — no price, session time, or seat cap documented anywhere, and no draft copy existed at all. Rather than guess, asked Jackie directly and pulled real facts from the group's actual live public page (`synnovatia.com/7-figure-forum-business-coaching-mastermind-synnovatia/`), which the workspace had no prior record of: $1,299 per round (a round = one 6-month cycle, 2 rounds/year, 5 meetings each), every ~6 weeks on Fridays 8:00–9:15am Pacific, a real 6-seat cap, and eligibility criteria (5+ years in business, proven model, $1M+ revenue, 8-10+ team). Found a real, usable testimonial from a member (Zoey, President & CEO) on that same live page.
 - Also surfaced two real decisions along the way: confirmed nav architecture should fold both mastermind pages into the Work With Me dropdown instead of the previously-planned standalone "Masterminds" nav item (a UX call, not SEO — explained why nav depth barely affects SEO at this site's scale, on-page title/H1/meta matters far more), and flagged that Christina Carlson's mastermind testimonial on the Messy Middle page is technically misattributed since she's actually a Seven Figure Forum member, not Messy Middle (Jackie's call: leave it where it is, source a separate SFF-specific quote from her later if wanted).
