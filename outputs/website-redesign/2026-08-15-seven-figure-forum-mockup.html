@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Synnovatia: The Mastermind for the Messy Middle</title>
+<title>Synnovatia: Seven Figure Forum</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -62,7 +62,7 @@
   }
   .nav-dropdown {
     position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
-    min-width: 220px; background: var(--white);
+    min-width: 240px; background: var(--white);
     border-top: 3px solid var(--gold);
     box-shadow: 0 14px 32px rgba(13,31,78,0.14);
     list-style: none; padding: 10px 0;
@@ -179,6 +179,35 @@
   .voice-name { font-size: 13px; font-weight: 700; color: var(--gold); line-height: 1.1; }
   .voice-org { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 4px; }
 
+  /* ── VIDEO PLACEHOLDER ── */
+  .video-section { background: var(--lt-navy); }
+  .video-section .section-inner { max-width: 780px; }
+  .video-block {
+    background: var(--navy); border: 2px dashed var(--gold-lt);
+    padding: 56px 40px; text-align: center; border-radius: 4px;
+  }
+  .video-play-icon {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--gold); display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+  }
+  .video-play-icon::after {
+    content: ""; width: 0; height: 0;
+    border-top: 11px solid transparent; border-bottom: 11px solid transparent;
+    border-left: 18px solid var(--navy); margin-left: 5px;
+  }
+  .video-placeholder-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 14px;
+  }
+  .video-placeholder-desc {
+    font-size: 15px; color: rgba(255,255,255,0.7); max-width: 420px;
+    margin: 0 auto 24px; line-height: 1.7;
+  }
+  .video-name { font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.1; }
+  .video-org { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.1; margin-top: 4px; }
+
   /* ── ROOM ── */
   .room { background: var(--navy); }
   .room .section-eyebrow { color: var(--gold-lt); }
@@ -188,6 +217,7 @@
     background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.12);
     margin-top: 52px;
   }
+  .room-grid-4 { grid-template-columns: repeat(2, 1fr); }
   .room-cell { background: var(--navy); padding: 32px 30px; }
   .room-cell .w {
     font-family: 'Barlow Condensed', sans-serif;
@@ -239,7 +269,7 @@
   }
   .cta-sub {
     font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.72);
-    line-height: 1.75; max-width: 500px; margin: 0 auto 20px;
+    line-height: 1.75; max-width: 520px; margin: 0 auto 20px;
   }
   .cta-fine {
     font-size: 13px; color: rgba(255,255,255,0.5);
@@ -290,7 +320,7 @@
 </head>
 <body>
 
-<div class="mockup-banner">📄 SYNNOVATIA · The Mastermind for the Messy Middle · Aug 13, 2026 · adapted from Jackie's own reference design, real cohort/pricing details verified against the live site</div>
+<div class="mockup-banner">📄 SYNNOVATIA · Seven Figure Forum · Aug 15, 2026 · cohort/pricing/eligibility verified against the live page (synnovatia.com/7-figure-forum-business-coaching-mastermind-synnovatia/) · Mark Chapman testimonial is a placeholder pending the real video</div>
 
 <!-- NAV -->
 <nav>
@@ -305,8 +335,8 @@
       <ul class="nav-dropdown">
         <li><a href="#">Strategic Coaching</a></li>
         <li><a href="#">Solutions on the Fly</a></li>
-        <li><a href="#" class="active" aria-current="page">Mastermind for the Messy Middle</a></li>
-        <li><a href="#">Seven Figure Forum</a></li>
+        <li><a href="#">Mastermind for the Messy Middle</a></li>
+        <li><a href="#" class="active" aria-current="page">Seven Figure Forum</a></li>
       </ul>
     </li>
     <li><a href="#">Blog</a></li>
@@ -317,15 +347,18 @@
 <!-- HERO -->
 <section class="mm-hero">
   <div class="mm-hero-inner">
-    <p class="mm-eyebrow">The Mastermind for the Messy Middle · A Hand-Selected Peer Group</p>
-    <h1 class="mm-h1">A group built to sharpen your next move.</h1>
-    <p class="mm-h1-line2">Owners and a strategist focused on your actual business opportunities and challenges, not a curriculum.</p>
+    <p class="mm-eyebrow">Seven Figure Forum · For CEOs Scaling Past $1M</p>
+    <h1 class="mm-h1">What got you to $1M won't scale you past it alone.</h1>
+    <p class="mm-h1-line2">A sounding board for bootstrapped CEOs who need more than grit for what's next.</p>
     <p class="mm-hero-sub">
-      Every other Friday, a hand-selected group of owners bring the decisions they can't quite make alone to the conversation. You leave with clarity and a focused next step tested by people who've actually been where you are.
+      Crossing the million-dollar mark is exhilarating and exhausting at once. You've proven your model works and growth from here demands more than grit. The challenges shift at this stage and growth comes from thinking differently, not just working harder.
+    </p>
+    <p class="mm-hero-sub">
+      The Seven Figure Forum is where CEOs have real, open conversations with peers about what it actually takes to grow past the million-dollar plateau, where insight replaces isolation and strategy replaces reaction. You already know there's a smarter, more scalable way forward. You just need the space and support to uncover it.
     </p>
     <div class="hero-actions">
       <a href="#apply" class="btn-primary">Apply for Consideration</a>
-      <a href="#room" class="link-ghost">What Happens in the Group</a>
+      <a href="#room" class="link-ghost">Inside the Forum</a>
     </div>
   </div>
 </section>
@@ -334,20 +367,20 @@
 <section class="what-it-is">
   <div class="section-inner">
     <div>
-      <h2 class="section-h2">What is the Mastermind for the Messy Middle?</h2>
+      <h2 class="section-h2">CEOs who understand what you're building.</h2>
       <div class="section-body">
-        <p>A hand-selected group of women running B2B service businesses in the same $250K to $400K range working through the same terrain at the same time.</p>
-        <p>Friendships form here and the encouragement is genuine. The insights, the solutions, and the progress that come from the conversation move you forward every time.</p>
+        <p>A hand-selected group of CEOs running $1M+ B2B service businesses at your exact stage, each with a proven model, a team of 8 to 10 or more, and the same bootstrapped path instead of outside capital. They understand what you're building because they're building it too.</p>
+        <p>Every session is built around one real challenge or opportunity. You leave knowing what's actually working for CEOs at your stage, with honest input on your own ideas.</p>
       </div>
     </div>
     <div class="stat-block">
       <div>
-        <div class="stat-num">8</div>
-        <div class="stat-label">Women in the Group</div>
+        <div class="stat-num">6</div>
+        <div class="stat-label">CEOs in the Group</div>
       </div>
       <div>
-        <div class="stat-num">Biweekly</div>
-        <div class="stat-label">Every Other Friday</div>
+        <div class="stat-num">Every 6 Weeks</div>
+        <div class="stat-label">Fridays, on Zoom</div>
       </div>
       <div>
         <div class="stat-num">25+ yrs</div>
@@ -360,10 +393,10 @@
 <!-- DEFINE -->
 <section class="define">
   <div class="section-inner">
-    <h2 class="section-h2">This is exactly the stage a mastermind is built for.</h2>
+    <h2 class="section-h2">Built for CEOs who bootstrapped their way here.</h2>
     <div class="section-body">
-      <p>Revenue between $250,000 and $400,000 is where a lot of owners find out that pushing harder stops working. The instincts that built the business are already at their ceiling, and there's rarely anyone in your life who's dealt with this exact stage to call.</p>
-      <p>A mastermind solves for both problems at once. <strong>Owners in the same range bring outside eyes to your specific problem</strong>, with a strategist steering the conversation so it turns into a decision instead of a nice talk.</p>
+      <p>Most peer groups at this revenue level are full of venture- or private-equity-backed founders playing a different game, with someone else's money on the table. Yours is bootstrapped and the challenges and opportunities in front of you are different. There's rarely another CEO in your life navigating them from the same position.</p>
+      <p><strong>Other CEOs bootstrapping the same stage bring outside eyes to your specific challenge or opportunity</strong> and a strategist steers it toward a plan.</p>
     </div>
   </div>
 </section>
@@ -372,9 +405,22 @@
 <section class="voice">
   <div class="section-inner">
     <div class="voice-block">
-      <p class="voice-quote">Jackie doesn't just talk strategy. She walks the talk and the room holds you to it.</p>
-      <p class="voice-name">Christina Carlson</p>
-      <p class="voice-org">Founder, Unstuck · Mastermind member</p>
+      <p class="voice-quote">Having a way to connect with other business leaders is invaluable. You leave each meeting energized and better prepared to help move your company in a positive direction.</p>
+      <p class="voice-name">Zoey</p>
+      <p class="voice-org">President &amp; CEO · Seven Figure Forum member</p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIAL PLACEHOLDER -->
+<section class="video-section">
+  <div class="section-inner">
+    <div class="video-block">
+      <div class="video-play-icon"></div>
+      <p class="video-placeholder-label">Video Placeholder</p>
+      <p class="video-placeholder-desc">Reserved for Mark Chapman's video testimonial about his Seven Figure Forum experience &mdash; embed to replace this placeholder once the file is ready.</p>
+      <p class="video-name">Mark Chapman</p>
+      <p class="video-org">The I Do Society · Seven Figure Forum member</p>
     </div>
   </div>
 </section>
@@ -382,35 +428,27 @@
 <!-- ROOM -->
 <section class="room" id="room">
   <div class="section-inner">
-    <p class="section-eyebrow">What Happens in the Group</p>
-    <h2 class="section-h2">Every member's experience is her own. Here's what a group like this makes possible.</h2>
-    <div class="room-grid">
+    <p class="section-eyebrow">Inside the Forum</p>
+    <h2 class="section-h2">This is what you get that you can't get anywhere else.</h2>
+    <div class="room-grid room-grid-4">
       <div class="room-cell">
-        <div class="w">Momentum</div>
-        <p>"I'll get to it eventually" doesn't survive long when other owners are following up. You keep moving.</p>
+        <div class="w">Peer Caliber Advice</div>
+        <p>Every CEO here runs a business your size, not one they're aspiring to. The advice fits because the stakes match.</p>
       </div>
       <div class="room-cell">
-        <div class="w">Collaboration</div>
-        <p>Multiple sharp minds working your challenge at once. That's close to an unfair advantage.</p>
+        <div class="w">Confidentiality</div>
+        <p>Say the real number, the real challenge, the real fear. Nobody here competes with you or reports to you.</p>
       </div>
       <div class="room-cell">
-        <div class="w">Feedback</div>
-        <p>Direct, experienced perspective replaces guesswork so you make decisions you trust.</p>
+        <div class="w">Pattern Recognition</div>
+        <p>25 years across industries means the strategist has usually seen your exact challenge somewhere else.</p>
       </div>
       <div class="room-cell">
-        <div class="w">Resources</div>
-        <p>The right workbook, checklist, or framework shows up right when you need it.</p>
-      </div>
-      <div class="room-cell">
-        <div class="w">Support</div>
-        <p>People in your corner who've navigated the same stretch change how you handle the hard weeks.</p>
-      </div>
-      <div class="room-cell">
-        <div class="w">Facilitation</div>
-        <p>Good discussion feels nice. Leaving with a clear next step is better. That's the job.</p>
+        <div class="w">A Plan You Can Use</div>
+        <p>Every session ends with a real next step.</p>
       </div>
     </div>
-    <p class="room-foot">This is what happens when strategy meets momentum meets people who understand exactly where you are.</p>
+    <p class="room-foot">Most CEOs say they wish they'd found this group two years earlier.</p>
     <div class="room-cta">
       <a href="#apply" class="btn-primary">Apply for Consideration</a>
     </div>
@@ -422,8 +460,8 @@
   <div class="section-inner">
     <h2 class="section-h2">I'm Jackie Nagel, Founder of Synnovatia.</h2>
     <div class="section-body">
-      <p>For more than 25 years I've worked with entrepreneurs exactly where you are now: successful enough that quitting isn't an option, stuck enough that pushing harder stopped working.</p>
-      <p>The Mastermind for the Messy Middle is the hand-selected group I lead. I guide the discussions and make sure each person contributes and leaves with real clarity on what's next.</p>
+      <p>For more than 25 years I've worked with CEOs exactly where you are now: running a real business past $1M, weighing growth against profit against the life you actually want to keep living.</p>
+      <p>I built the Seven Figure Forum because CEOs at this stage rarely have anyone who actually understands the math, especially bootstrapping it instead of running on outside capital. I run every session myself and nobody leaves without a next step.</p>
     </div>
     <p class="facil-sig">Strategic perspective you feel from the first conversation.</p>
   </div>
@@ -433,17 +471,17 @@
 <section class="details">
   <div class="details-grid">
     <div>
-      <div class="detail-num">$675</div>
-      <div class="detail-label">Per Quarter</div>
-      <div class="detail-desc">Six conversations</div>
+      <div class="detail-num">$1,299</div>
+      <div class="detail-label">Per Round</div>
+      <div class="detail-desc">Five meetings, twice a year</div>
     </div>
     <div>
       <div class="detail-num">Fridays</div>
-      <div class="detail-label">Every Other Week</div>
+      <div class="detail-label">Every Six Weeks</div>
       <div class="detail-desc">8:00&ndash;9:15am Pacific, over Zoom</div>
     </div>
     <div>
-      <div class="detail-num">8</div>
+      <div class="detail-num">6</div>
       <div class="detail-label">Seats</div>
       <div class="detail-desc">Capacity stays small on purpose</div>
     </div>
@@ -452,9 +490,8 @@
 
 <!-- APPLY -->
 <section class="cta-section" id="apply">
-  <h2 class="cta-h2">The Next Cohort Starts October 9.</h2>
-  <p class="cta-sub">Applications are reviewed as they come in. The window closes September 25 to leave time for the conversations that come before a yes.</p>
-  <p class="cta-fine">A handful of seats are still open. Submitting an application starts a conversation, not a commitment.</p>
+  <h2 class="cta-h2">Applying Starts a Conversation, Nothing More.</h2>
+  <p class="cta-sub">New rounds open twice a year and membership is reviewed as applications come in. There's no reason to wait for a specific date.</p>
   <a href="#" class="btn-cta-primary">Apply for Consideration</a>
 </section>
 

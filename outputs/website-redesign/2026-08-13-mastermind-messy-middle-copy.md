@@ -1,6 +1,6 @@
 # The Mastermind for the Messy Middle — Page Copy
 
-**Nav:** About / The Messy Middle / Masterminds (Mastermind for the Messy Middle / Seven Figure Forum) / Work With Me / Blog
+**Nav:** About / The Messy Middle / Work With Me (Strategic Coaching / Solutions on the Fly / Mastermind for the Messy Middle / Seven Figure Forum) / Blog
 **Nav CTA:** Apply for Consideration
 
 ---
