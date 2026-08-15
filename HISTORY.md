@@ -8,6 +8,36 @@
 
 ---
 
+## 2026-08-15
+
+### Session Initialized
+- Read context, `HISTORY.md`, `docs/_index.md`, and `context/group/key-metrics.md`; confirmed current priorities (5 new retainer clients by October, mastermind growth, "Different Is Better Than Better" rebrand) and flagged a pile of uncommitted work sitting from the 2026-08-13 session.
+
+### Sandra Martinez Roe's About Page Testimonial Replaced and Deployed
+- Jackie supplied the replacement quote directly in chat, resolving the "doesn't sound like her" flag logged 2026-08-12: swapped the old "jiggling the key" quote for "I've returned to Jackie for one consistent reason: wise counsel paired with the right questions. She provides guidance rooted in a genuine understanding of what I was navigating." in `outputs/website-redesign/2026-08-04-about-page-mockup.html`.
+- Deployed live to the About page on staging (post ID 156) via the established `wp.data` block-editor JS method, verified by pulling the live page's rendered text and confirming the old quote was gone. Cache-purge step hit a browser-tool glitch mid-session and was skipped — DreamHost's cache TTL is short, so low risk, but worth a visual double-check next time the page is touched. Updated the `project_website-redesign-status` memory to mark Sandra's sign-off status resolved.
+
+### Mastermind for the Messy Middle Page Refocused from the Stage to the Mastermind Itself
+- Long iterative rewrite session, per Jackie's direction to "shift it from the messy middle to the benefits of a mastermind": asked clarifying questions first (what happens to the plateau-explainer section, whether the hero leads with the problem or the format, whether audience specifics stay prominent), then rewrote section by section with many rounds of live feedback across `outputs/website-redesign/2026-08-13-mastermind-messy-middle-mockup.html` and its matching `.md`/`.docx`, kept in sync after every round.
+- **Hero:** rewrote to lead with the mastermind format rather than the "you're stuck" framing, landing on "A group built to sharpen your next move." after several rounds of headline options; subhead and body iterated through multiple passes (dropped headcount numbers per Jackie's "in case we don't hit 8" concern, cut "seven other owners...follow through" accountability-flavored language, replaced "into one room" with "to the conversation" since the sessions are actually over Zoom).
+- **Revenue band corrected** from $250K–$500K to $250K–$400K throughout at Jackie's direction, which also brought this page in line with the homepage's already-established plateau-band language.
+- **"So what is the Mastermind exactly?" retitled** to "What is the Mastermind for the Messy Middle?"; its closing sentence rewritten twice, first to include "opportunities" per Jackie's "including opportunities makes it less negative" note, then reworked again around a "the conversations are real" idea Jackie sketched out, landing on "The insights, the solutions, and the progress that come from the conversation move you forward every time" after also trying and rejecting "hard-won" (Jackie: "sounds hard, find something more uplifting").
+- **The old plateau-explainer section rewritten** as "This is exactly the stage a mastermind is built for" — reframed in the context of why the mastermind format specifically works for this stage, rather than a standalone problem description; "on a schedule" cut per Jackie's edit.
+- **"Room" language replaced with "Group"** in five spots (hero ghost button, section eyebrow, section H2, stat label, cohort detail) at Jackie's request, since the sessions are actually a Zoom call, not a physical room — Christina Carlson's testimonial quote was deliberately left untouched since it's her actual words, not page copy.
+- **"What Happens in the Group" grid relabeled:** "Accountability" → "Momentum" (Jackie flagged the accountability framing as reading like babysitting, same objection she'd raised earlier about the hero copy) with "seven" dropped from its body text; "Collaboration" changed "Eight" to "Multiple"; "Feedback" and "Resources" cells reworded to cut a "less X, more Y" contrast formula and a trailing "not after"; "Support" cell merged into one sentence, fixing a subject-verb mismatch in Jackie's own draft ("People...changes" → "People...change") rather than applying it broken.
+- **Eyebrow count trimmed from four to two** (kept hero + "What Happens in the Group," per `brand-voice.md`'s documented cap) — "From a Member" eyebrow dropped since the testimonial already reads as a quote without a label; "Who Leads the Room" eyebrow dropped and its H2 promoted to carry the section on its own.
+- **Facilitator bio paragraph rewritten twice** at Jackie's request to cut a negative comparison ("you don't need another peer group circling the same conversations") in favor of a positive-only description of what she does as facilitator, landing on "The Mastermind for the Messy Middle is the hand-selected group I lead. I guide the discussions and make sure each person contributes and leaves with real clarity on what's next." Capitalized "Founder" in the H2 per Jackie's request.
+- **"Different is better than better" signature line swapped** for the actually-confirmed positioning name after Jackie flagged it wasn't her concept — pulled the correct positioning ("Strategic perspective you feel from the first conversation") from the `positioning-statement-needs-synthesis` memory rather than guessing, and confirmed the four already-deployed pages don't carry the stale phrase. Logged remaining cleanup spots (content/brand-and-audience.md, content/strategy.md, CLAUDE.md, context/brand-voice.md, context/business-info.md) to the same memory as still-open, not touched this session.
+- Cohort Details simplified: "Six sessions, one hand-selected group" → "Six conversations" (Jackie's call between "conversations" and "sessions," recommended for consistency with the conversation language built up elsewhere on the page); "Capacity stays small on purpose so every voice matters" trimmed to "Capacity stays small on purpose."
+- Not yet deployed to staging — stays local pending the Seven Figure Forum half, per the standing plan to combine both into the future Masterminds page.
+
+### Other Pending Changes (automated tasks + prior-session backlog, bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: automated `dashboard-daily-refresh` and `morning-brief` runs.
+- `data/linkedin-metrics/log.csv`: automated collector row.
+- `personal/health-goals.md`, `personal/workout-logs/session-log.csv`: an early (Saturday, one day ahead of the usual Sunday slot) health check-in logged in a prior session — weight down 1.2 lbs and waist down 0.25 in week-over-week, body fat essentially flat, HRV down from last week's peak of 32 to 28 but still the second-highest reading of the series.
+
+---
+
 ## 2026-08-13
 
 ### Mastermind for the Messy Middle Page Drafted

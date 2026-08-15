@@ -9,35 +9,33 @@
 
 **Eyebrow:** The Mastermind for the Messy Middle · A Hand-Selected Peer Group
 
-**H1:** The breakthrough you're after is *here*.
+**H1:** A group built to sharpen your next move.
 
-**Subhead:** You've built something real. Now you're stuck in the part nobody talks about.
+**Subhead:** Owners and a strategist focused on your actual business opportunities and challenges, not a curriculum.
 
-**Body:** Revenue has plateaued. Cash flow is thinner than it should be. Your team is stretched and the strategies that got you this far have quietly stopped working. You've hit the Messy Middle and you don't have to work through it alone.
+**Body:** Every other Friday, a hand-selected group of owners bring the decisions they can't quite make alone to the conversation. You leave with clarity and a focused next step tested by people who've actually been where you are.
 
-**Buttons:** Apply for Consideration | What Happens in the Room
-
----
-
-## So what is the Mastermind exactly?
-
-A hand-selected group of eight women running B2B service businesses in the same $250K to $500K range, working through the same terrain at the same time.
-
-Real friendships form here, but this isn't a networking group. The encouragement is real, but nobody's just here to cheer you on. Everyone in the room gets serious about your actual problem until the path forward is clear.
-
-**Stats:** 8 — Women in the Room · Biweekly — Every Other Friday · 25+ yrs — Facilitated by Jackie
+**Buttons:** Apply for Consideration | What Happens in the Group
 
 ---
 
-## The Messy Middle is the stretch nobody warns you about.
+## What is the Mastermind for the Messy Middle?
 
-It shows up somewhere between $250,000 and $500,000 in revenue right when whatever got the business off the ground stops being enough on its own.
+A hand-selected group of women running B2B service businesses in the same $250K to $400K range working through the same terrain at the same time.
 
-Most owners respond by pushing harder. Pushing harder isn't the answer. What worked to get here won't carry you to the next level and there's rarely anyone around who's dealt with this exact stage to ask.
+Friendships form here and the encouragement is genuine. The insights, the solutions, and the progress that come from the conversation move you forward every time.
+
+**Stats:** 8 — Women in the Group · Biweekly — Every Other Friday · 25+ yrs — Facilitated by Jackie
 
 ---
 
-## From a Member
+## This is exactly the stage a mastermind is built for.
+
+Revenue between $250,000 and $400,000 is where a lot of owners find out that pushing harder stops working. The instincts that built the business are already at their ceiling, and there's rarely anyone in your life who's dealt with this exact stage to call.
+
+A mastermind solves for both problems at once. Owners in the same range bring outside eyes to your specific problem, with a strategist steering the conversation so it turns into a decision instead of a nice talk.
+
+---
 
 "Jackie doesn't just talk strategy. She walks the talk and the room holds you to it."
 
@@ -47,40 +45,38 @@ Most owners respond by pushing harder. Pushing harder isn't the answer. What wor
 
 ---
 
-## What Happens in the Room
+## What Happens in the Group
 
-Every member's experience is her own. Here's what a room like this makes possible.
+Every member's experience is her own. Here's what a group like this makes possible.
 
-- **Accountability** — "I'll get to it eventually" doesn't survive long when seven other owners are following up. You keep moving.
-- **Collaboration** — Eight sharp minds working your challenge at once. That's close to an unfair advantage.
-- **Feedback** — Direct, experienced perspective replaces guesswork. Less second-guessing, more decisions you actually trust.
-- **Resources** — The right workbook, checklist, or framework shows up right when you need it, not after.
-- **Support** — People in your corner who've navigated the same stretch. It changes how you handle the hard weeks.
+- **Momentum** — "I'll get to it eventually" doesn't survive long when other owners are following up. You keep moving.
+- **Collaboration** — Multiple sharp minds working your challenge at once. That's close to an unfair advantage.
+- **Feedback** — Direct, experienced perspective replaces guesswork so you make decisions you trust.
+- **Resources** — The right workbook, checklist, or framework shows up right when you need it.
+- **Support** — People in your corner who've navigated the same stretch change how you handle the hard weeks.
 - **Facilitation** — Good discussion feels nice. Leaving with a clear next step is better. That's the job.
 
-This is what happens when strategy meets accountability meets people who understand exactly where you are.
+This is what happens when strategy meets momentum meets people who understand exactly where you are.
 
 **Button:** Apply for Consideration
 
 ---
 
-## Who Leads the Room
-
-**H2:** I'm Jackie Nagel, founder of Synnovatia.
+## I'm Jackie Nagel, Founder of Synnovatia.
 
 For more than 25 years I've worked with entrepreneurs exactly where you are now: successful enough that quitting isn't an option, stuck enough that pushing harder stopped working.
 
-The Mastermind is the group I hand-select and lead myself every session. I set the agenda and guide the discussion because what you need isn't another peer group circling the same conversations. You need a strategist who's spent decades learning the difference between a growth problem and a strategy problem.
+The Mastermind for the Messy Middle is the hand-selected group I lead. I guide the discussions and make sure each person contributes and leaves with real clarity on what's next.
 
-*Different is better than better.*
+*Strategic perspective you feel from the first conversation.*
 
 ---
 
 ## Cohort Details
 
-- **$675** Per Quarter — Six sessions, one hand-selected room
+- **$675** Per Quarter — Six conversations
 - **Fridays** Every Other Week — 8:00–9:15am Pacific, over Zoom
-- **8** Seats — Capacity stays small on purpose so every voice matters
+- **8** Seats — Capacity stays small on purpose
 
 ---
 
