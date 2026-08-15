@@ -11,6 +11,8 @@
 
 **Who you are:** Jackie, founder and sole practitioner of Synnovatia — a strategic consulting practice for bootstrapped B2B service business owners navigating the "Messy Middle" ($250K–$4M revenue).
 
+**Positioning name:** "Strategic Perspective You Feel From the First Conversation" (confirmed 2026-08-01 — not "Different Is Better Than Better," which is the name of the client interview research the positioning was drawn from, not the positioning itself). Full details in `context/brand-voice.md`'s Positioning Thesis section.
+
 **Your authority:** 25+ years of cross-industry pattern recognition working with hundreds of small businesses; educator background (Corporate Coach University, Coach University — taught small business development/marketing); Entrepreneurship certification from UCLA; runs her own business, so clients experience her as a peer, not an outside "expert."
 
 **Brand voice:** Peer, not guru. Precise, not generic. Warm, not soft. Confident, not boastful. Equip, not help.

@@ -25,6 +25,10 @@ The differentiation lives at the intersection of:
 
 Neither element alone is the differentiator — it's the combination clients can't find anywhere else.
 
+**Positioning name** (confirmed 2026-08-01): "Strategic Perspective You Feel From the First Conversation." Not yet decided whether this is client-facing or internal-only. This name — not "Different Is Better Than Better" — is the actual name of the positioning; see the note under "Source" below.
+
+**Tight positioning statement** (confirmed 2026-07-29, first person): "If you're a B2B service business owner generating $250K–$4M in revenue whose growth has stalled, I bring the kind of strategic thinking usually reserved for Fortune 500 companies, sized to get your business growing again. That comes from 25+ years running my own company and working alongside owners across a wide range of industries, which gives me both the big-picture view and the depth to understand your specific situation."
+
 ## Audience
 
 Stage II entrepreneurs · **$250K–$4M revenue** · navigating the **"Messy Middle"** — stalled growth, resource constraints, strategic complexity. *(Corrected 2026-07-13 from $350K–$4M per the official 2026 Style Guide — the $250K floor matches the actual Messy Middle mastermind band.)*
@@ -96,4 +100,4 @@ The more clients who echo the same idea unprompted, the stronger the positioning
 
 ---
 
-_Source: "Different Is Better Than Better" Top Client Interview Synthesis (master document, updated 2026-07-13) · Synnovatia Style Guide 2026 Edition_
+_Source: "Different Is Better Than Better" Top Client Interview Synthesis (master document, updated 2026-07-13) · Synnovatia Style Guide 2026 Edition. "Different Is Better Than Better" is the name of that research study, not the positioning itself — see "Positioning name" above._

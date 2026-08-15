@@ -10,6 +10,14 @@
 
 ## 2026-08-15
 
+### Workspace-Wide "Different Is Better Than Better" / Positioning Conflation Cleaned Up
+- Jackie asked to close out the cleanup flagged earlier the same session: five reference files where "Different Is Better Than Better" (DiB) had been getting used loosely as if it were Synnovatia's actual positioning, rather than the name of the client interview research it was drawn from.
+- `context/brand-voice.md`'s Positioning Thesis section and `context/business-info.md` were already correctly framed (DiB explicitly called out as the research study), but both were missing the actual confirmed positioning entirely — added the confirmed positioning name ("Strategic Perspective You Feel From the First Conversation," confirmed 2026-08-01) and the confirmed tight positioning statement (2026-07-29) to `brand-voice.md`, plus a cross-reference from `business-info.md`.
+- `content/strategy.md`'s "Your unique angle" line *did* conflate the two directly, labeling DiB itself as the unique angle — replaced the label with the confirmed positioning name, kept DiB mentioned only as the research source.
+- `content/brand-and-audience.md` never mentioned DiB at all, but was also missing the positioning name — a real gap since `/develop` reads this file to position every piece of content — added it.
+- `CLAUDE.md` had three separate instances (the Context Summary's "Current focus" line, and two workspace-structure tree comments for `brand-voice.md` and `website-redesign/`) all using DiB as a label for the rebrand itself — all three now lead with the confirmed positioning name and mention DiB only as the research it came from.
+- Updated the `positioning-statement-needs-synthesis` memory to mark this cleanup done — the fuller positioning brief review (`outputs/positioning/positioning-brief.md`) is still the one open item from that memory's original scope.
+
 ### Session Initialized
 - Read context, `HISTORY.md`, `docs/_index.md`, and `context/group/key-metrics.md`; confirmed current priorities (5 new retainer clients by October, mastermind growth, "Different Is Better Than Better" rebrand) and flagged a pile of uncommitted work sitting from the 2026-08-13 session.
 

@@ -19,7 +19,7 @@
 
 Synnovatia is a solo strategic consulting practice founded and run by Jackie, built on 25+ years of experience working with hundreds of small businesses. Synnovatia helps bootstrapped B2B service business owners recognize patterns in what works and what doesn't when it comes to growth and scaling — combining coaching, consulting, advising, and research into a practical, relationship-driven advisory model.
 
-The positioning thesis, drawn from a formal client interview study ("Different Is Better Than Better" — see `brand-voice.md`), is that Synnovatia wins by being *different* rather than *better along the same dimensions* as competitors — sitting at the intersection of Fortune 500-grade strategic expertise and genuine peer-level relational depth.
+The positioning thesis, drawn from a formal client interview study ("Different Is Better Than Better" — see `brand-voice.md`), is that Synnovatia wins by being *different* rather than *better along the same dimensions* as competitors — sitting at the intersection of Fortune 500-grade strategic expertise and genuine peer-level relational depth. The positioning's actual confirmed name is "Strategic Perspective You Feel From the First Conversation" (see `brand-voice.md`'s Positioning Thesis section) — "Different Is Better Than Better" is the name of the research that produced it, not the positioning itself.
 
 ## Who Synnovatia Serves
 
