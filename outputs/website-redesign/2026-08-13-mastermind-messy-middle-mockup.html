@@ -114,9 +114,13 @@
   }
   .mm-hero-sub {
     font-size: 17px; font-weight: 300; line-height: 1.85;
-    color: rgba(255,255,255,0.82); max-width: 640px; margin-bottom: 48px;
+    color: rgba(255,255,255,0.82); max-width: 640px; margin-bottom: 28px;
   }
   .mm-hero-sub strong { font-weight: 600; color: var(--white); }
+  .mm-hero-bridge {
+    font-size: 18px; font-weight: 600; line-height: 1.5;
+    color: var(--white); max-width: 640px; margin-bottom: 48px;
+  }
   .hero-actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
   .btn-primary {
     display: inline-block; background: var(--teal);
@@ -178,6 +182,35 @@
   }
   .voice-name { font-size: 13px; font-weight: 700; color: var(--gold); line-height: 1.1; }
   .voice-org { font-size: 12px; color: var(--body-text); opacity: 0.6; line-height: 1.1; margin-top: 4px; }
+
+  /* ── VIDEO PLACEHOLDER ── */
+  .video-section { background: var(--lt-navy); }
+  .video-section .section-inner { max-width: 780px; }
+  .video-block {
+    background: var(--navy); border: 2px dashed var(--gold-lt);
+    padding: 56px 40px; text-align: center; border-radius: 4px;
+  }
+  .video-play-icon {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--gold); display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+  }
+  .video-play-icon::after {
+    content: ""; width: 0; height: 0;
+    border-top: 11px solid transparent; border-bottom: 11px solid transparent;
+    border-left: 18px solid var(--navy); margin-left: 5px;
+  }
+  .video-placeholder-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--gold-lt); margin-bottom: 14px;
+  }
+  .video-placeholder-desc {
+    font-size: 15px; color: rgba(255,255,255,0.7); max-width: 420px;
+    margin: 0 auto 24px; line-height: 1.7;
+  }
+  .video-name { font-size: 13px; font-weight: 700; color: var(--white); line-height: 1.1; }
+  .video-org { font-size: 12px; color: rgba(255,255,255,0.55); line-height: 1.1; margin-top: 4px; }
 
   /* ── ROOM ── */
   .room { background: var(--navy); }
@@ -290,7 +323,7 @@
 </head>
 <body>
 
-<div class="mockup-banner">📄 SYNNOVATIA · The Mastermind for the Messy Middle · Aug 13, 2026 · adapted from Jackie's own reference design, real cohort/pricing details verified against the live site</div>
+<div class="mockup-banner">📄 SYNNOVATIA · The Mastermind for the Messy Middle · Aug 13, 2026, hero sharpened + video placeholder added Aug 16 · Christina Carlson's video testimonial is a placeholder pending the real video file</div>
 
 <!-- NAV -->
 <nav>
@@ -318,11 +351,12 @@
 <section class="mm-hero">
   <div class="mm-hero-inner">
     <p class="mm-eyebrow">The Mastermind for the Messy Middle · A Hand-Selected Peer Group</p>
-    <h1 class="mm-h1">A group built to sharpen your next move.</h1>
-    <p class="mm-h1-line2">Owners and a strategist focused on your actual business opportunities and challenges, not a curriculum.</p>
+    <h1 class="mm-h1">This is the stage nobody warns you about.</h1>
+    <p class="mm-h1-line2">You've built something real. Now you're stuck in the part nobody talks about.</p>
     <p class="mm-hero-sub">
-      Every other Friday, a hand-selected group of owners bring the decisions they can't quite make alone to the conversation. You leave with clarity and a focused next step tested by people who've actually been where you are.
+      Revenue has plateaued. Cash flow is thinner than you'd like. Your team is stretched, and the strategies that carried you this far have quietly clocked out. You've entered the Messy Middle. You don't have to white-knuckle your way through it alone.
     </p>
+    <p class="mm-hero-bridge">That's exactly the stage this group is built for.</p>
     <div class="hero-actions">
       <a href="#apply" class="btn-primary">Apply for Consideration</a>
       <a href="#room" class="link-ghost">What Happens in the Group</a>
@@ -379,11 +413,24 @@
   </div>
 </section>
 
+<!-- VIDEO TESTIMONIAL PLACEHOLDER -->
+<section class="video-section">
+  <div class="section-inner">
+    <div class="video-block">
+      <div class="video-play-icon"></div>
+      <p class="video-placeholder-label">Video Placeholder</p>
+      <p class="video-placeholder-desc">Reserved for Christina Carlson's video testimonial about her Mastermind for the Messy Middle experience &mdash; embed to replace this placeholder once the file is ready.</p>
+      <p class="video-name">Christina Carlson</p>
+      <p class="video-org">Founder, Unstuck · Mastermind member</p>
+    </div>
+  </div>
+</section>
+
 <!-- ROOM -->
 <section class="room" id="room">
   <div class="section-inner">
     <p class="section-eyebrow">What Happens in the Group</p>
-    <h2 class="section-h2">Every member's experience is her own. Here's what a group like this makes possible.</h2>
+    <h2 class="section-h2">Every member's experience is their own. Here's what this group makes possible.</h2>
     <div class="room-grid">
       <div class="room-cell">
         <div class="w">Momentum</div>
