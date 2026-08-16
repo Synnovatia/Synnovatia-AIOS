@@ -21,7 +21,7 @@
 
 ## What Success Looks Like
 
-By early 2027: Synnovatia has grown from a ~$35K/year trajectory toward ~$100K/year, driven by new retainer clients and larger mastermind cohorts. The Seven Figure Forum has 6 members, the Messy Middle has a second cohort launching, the website and brand reflect the new "Different Is Better Than Better" positioning, and rates have increased ~40% to match the repositioned value.
+By early 2027: Synnovatia has grown from a ~$35K/year trajectory toward ~$100K/year, driven by new retainer clients and larger mastermind cohorts. The Seven Figure Forum has 6 members, the Messy Middle has a second cohort launching, the website and brand reflect the new "Strategic Perspective You Feel From the First Conversation" positioning, and rates have increased ~40% to match the repositioned value.
 
 ## Active Decisions
 

@@ -1,6 +1,6 @@
 # Seven Figure Forum — Page Copy
 
-**Nav:** About / The Messy Middle / Work With Me (Strategic Coaching / Solutions on the Fly / Mastermind for the Messy Middle / Seven Figure Forum) / Blog
+**Nav:** About / The Messy Middle / Work With Me (Strategic Coaching / Solutions on the Fly / Mastermind for the Messy Middle / Seven Figure Forum) / Perspective
 **Nav CTA:** Apply for Consideration
 
 ---
