@@ -10,6 +10,13 @@
 
 ## 2026-08-16
 
+### Mastermind for the Messy Middle and Seven Figure Forum Deployed to Staging
+- Deployed both mastermind pages to the DreamHost staging site at Jackie's request: `synnovatiacom.stage.site/mastermind-for-the-messy-middle/` (post ID 11287) and `synnovatiacom.stage.site/seven-figure-forum/` (post ID 11289), using the established Custom HTML block + theme-override CSS + base64-chunking deploy recipe. Both verified live with full top-to-bottom screenshot scrolls — hero, video placeholders, benefit grids, and footer all rendering correctly.
+- Rolled the new 4-item nav (Masterminds folded into Work With Me, no standalone nav item) out to all four already-live pages — homepage, About, Work With Me, The Messy Middle — in the same pass, via the established `wp.data` block-editor JS method. The whole site is now nav-consistent for the first time since the 2026-08-15 nav-architecture change.
+- Hit a real deploy snag: the new `/mastermind-for-the-messy-middle/` page 301-redirected to the old `messy-middle-mastermind` page instead of rendering, even though the REST API confirmed it was published correctly. Traced it to a pre-existing legacy redirect rule in the site's Redirection plugin (925+ rules, mostly migrated from the live site's old URL history) that happened to exactly match the new slug. Disabled (not deleted, to keep it reversible) the one offending rule rather than picking a different slug. Logged the gotcha and the diagnostic technique (`fetch(url, {redirect:'manual'})` — `opaqueredirect` means a rule will intercept it) in memory and `CLAUDE.md` for future page deploys.
+- Updated the `project_website-redesign-status` memory and `CLAUDE.md`'s website-redesign section to reflect all six pages now live with matching nav.
+
+
 ### Session Initialized
 - Read context, `HISTORY.md`, and `context/group/key-metrics.md`; confirmed current priorities and flagged that `context/strategy.md` still conflated the "Different Is Better Than Better" (DiB) client research with Synnovatia's actual confirmed positioning — missed in the 2026-08-15 cleanup pass since that pass covered `content/strategy.md`, a different file.
 
