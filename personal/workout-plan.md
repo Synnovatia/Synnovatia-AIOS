@@ -1,14 +1,15 @@
 # Strength Training Plan
 
-> Designed 2026-07-12. Full-body A/B split for 2x/week strength sessions (Tuesday/Thursday, after the 15-min hill warm-up — see Google Calendar). Built for Fortify tracking.
+> Designed 2026-07-12. Full-body A/B/C split, 3x/week strength sessions (Tuesday/Thursday/Sunday, after the 15-min hill warm-up — see Google Calendar). Built for Fortify tracking.
+> **Day C added 2026-08-16** as a third full-body strength session on Sunday.
 
 ---
 
 ## Weekly Schedule (live on Google Calendar)
 
-Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hill warm-up + strength (8:30-9:45) · Wed long hike 90+min (8:30-10:00) · Thu hill warm-up + strength (8:30-9:45) · Sat 4-5mi walk (8:30-10:00). Fri/Sun off. Conflicts get moved per-occurrence on request rather than rescheduling the series.
+Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hill warm-up + strength (8:30-9:45) · Wed long hike 90+min (8:30-10:00) · Thu hill warm-up + strength (8:30-9:45) · Sat 4-5mi walk (8:30-10:00) · Sun hill warm-up + strength (Day C, 8:30-9:45). Fri off. Conflicts get moved per-occurrence on request rather than rescheduling the series.
 
-**Weekly check-in:** Sunday mornings, 8:00am — recurring Google Calendar reminder to log weight, body fat %, and waist measurement. See `personal/task-audit.md`.
+**Weekly check-in:** Sunday mornings, 7:00am — recurring Google Calendar reminder to log weight, body fat %, and waist measurement. Moved from 8:00am on 2026-08-16 to clear room for the new Sunday strength session — discovered at the same time that this recurring event had never actually been created on Google Calendar despite being documented here; both it and Day C were created fresh, first occurrence 2026-08-23. See `personal/task-audit.md`.
 
 ---
 
@@ -53,6 +54,22 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 **Weight cap (2026-07-30):** Dumbbell Overhead Press — hold at 10 lb max, don't progress weight past this even after hitting the top of the rep range.
 
 **Added 2026-07-30:** Dumbbell Lateral Raise, added once Overhead Press hit its rep ceiling at the 10 lb cap. Targets the shoulder (medial deltoid) from a different angle than pressing, so it gives somewhere new to progress without touching the capped exercise. Isolation movement, so lighter weight/higher reps than the compound lifts — start light (5-8 lb) since it's new.
+
+## Day C — Sunday
+
+| Exercise | Sets x Reps |
+|---|---|
+| Bulgarian Split Squat (dumbbell) | 3 x 8-12/side |
+| Single-Leg Romanian Deadlift (dumbbell) | 3 x 8-10/side |
+| Dumbbell Incline Press (stability ball as incline support) | 3 x 8-12 |
+| Renegade Row (dumbbell) | 3 x 6-10/side |
+| Bird Dog | 2 x 8-10/side |
+| Dead Bug | 2 x 10-12/side |
+| Dumbbell Overhead Carry | 3 x 30-40 ft/side |
+| Single-Leg Glute Bridge | 3 x 10-12/side |
+| Band Pull-Apart | 3 x 15-20 |
+
+**Design notes (2026-08-16):** Third full-body day, same movement patterns as A/B (squat, hinge, press, row, core, carry, glute) but every exercise is a different variation than its A/B counterpart, so nothing is redundant with the other two days: unilateral squat/hinge/glute work (vs. A/B's bilateral versions) adds a balance-loading component beyond what A's Single-Leg Balance Reach covers alone; the incline press hits the chest/shoulder from a third angle after A's floor press and B's overhead press; Renegade Row combines the row pattern with anti-rotation core work; Bird Dog/Dead Bug are a different core stimulus (anti-rotation/anti-extension) than Plank/Side Plank; the Overhead Carry is a third loaded-carry variation after Farmer's (A) and Suitcase (B); Band Pull-Apart covers the same rear-delt/postural need as Face Pull without repeating the exact movement a third time.
 
 ---
 

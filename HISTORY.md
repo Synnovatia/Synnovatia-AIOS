@@ -8,6 +8,23 @@
 
 ---
 
+## 2026-08-16
+
+### Session Initialized
+- Read context, `HISTORY.md`, and `context/group/key-metrics.md`; confirmed current priorities and flagged that `context/strategy.md` still conflated the "Different Is Better Than Better" (DiB) client research with Synnovatia's actual confirmed positioning — missed in the 2026-08-15 cleanup pass since that pass covered `content/strategy.md`, a different file.
+
+### Strategy.md Positioning Language Fixed
+- Replaced both remaining "Different Is Better Than Better" positioning references in `context/strategy.md` (the Current Priorities list and the Longer-Term Vision paragraph) with the actual confirmed positioning name, "Strategic Perspective You Feel From the First Conversation," keeping DiB mentioned only as the research it's drawn from. Closes out the last file from the 2026-08-15 conflation cleanup.
+
+### Hike Logged
+- Logged today's hike to `personal/workout-logs/session-log.csv`: 93 min, avg HR 114, 4.4 miles at 21:19/mile, 247 METs. Reported pace checks out closely against distance/duration (computes to ~21:08/mile).
+
+### Strength Training Day C Added
+- Built a third full-body strength day (`personal/workout-plan.md`) at Jackie's request, via clarifying questions on scheduling and focus: lands on Sunday as a 6th weekly session (not replacing an existing walk/hike day) and continues the full-body-every-session approach rather than shifting to a push/pull/legs split. Nine exercises selected as distinct variations of A/B's same movement patterns (squat, hinge, press, row, two core patterns, carry, glute, rear-delt/postural) so nothing is redundant across the three days — e.g. unilateral Bulgarian Split Squat/Single-Leg RDL/Single-Leg Glute Bridge add balance-loading beyond A's dedicated balance exercise, Renegade Row combines pulling with anti-rotation core work, Bird Dog/Dead Bug give a third core stimulus after Plank/Side Plank.
+- Discovered while wiring this into the calendar that the "Sunday 8:00am weekly check-in" (weight/body fat/waist) documented in `workout-plan.md` had never actually been created as a Google Calendar event, despite the doc describing it as live — checked all four connected calendars to confirm. Flagged this to Jackie rather than assuming, then per her direction: created both a new recurring Sunday 7:00am check-in event and the new recurring Sunday 8:30-9:45am Day C workout event (mirroring the existing Tue/Thu hill-warm-up-plus-strength structure), first occurrence 2026-08-23. `workout-plan.md` updated to match — schedule now shows 3x/week strength (Tue/Thu/Sun), and the doc/calendar mismatch is corrected.
+
+---
+
 ## 2026-08-15
 
 ### Walk Logged

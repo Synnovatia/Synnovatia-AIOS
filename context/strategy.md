@@ -17,7 +17,7 @@
 
 1. **New client acquisition** — sign 5 new monthly (retainer) clients within the next 3 months (by ~October 2026)
 2. **Grow the masterminds** — Seven Figure Forum: 4 → 6 members by January 2027. Mastermind for the Messy Middle: currently 4 members of whom only **2 are paying**. Target is **8 total by October 2026, so that 6 members are paying**. Then launch a **second** Messy Middle cohort in January 2027. (Revised 2026-07-20: advertised capacity on the website is a flat 8 seats (changed from 6-10); the goal is a full 8, because two permanently unpaid seats mean total headcount overstates revenue by two members.)
-3. **Rebrand and reposition** — roll out the "Different Is Better Than Better" positioning and brand voice (website redesign, new messaging) in order to support a **40% rate increase within 6 months** (by ~January 2027)
+3. **Rebrand and reposition** — roll out the "Strategic Perspective You Feel From the First Conversation" positioning and brand voice (built from the "Different Is Better Than Better" client research, website redesign, new messaging) in order to support a **40% rate increase within 6 months** (by ~January 2027)
 
 ## What Success Looks Like
 
@@ -30,7 +30,7 @@ By early 2027: Synnovatia has grown from a ~$35K/year trajectory toward ~$100K/y
 
 ## Longer-Term Vision
 
-Build toward a Synnovatia where Jackie operates at the top of the business — strategy, highest-tier clients, and experimentation with new offers — while another consultant delivers day-to-day work for the $250K–$500K segment. The "Different Is Better Than Better" positioning underpins premium pricing and a scarcity-based reputation as the go-to strategic advisor for solopreneurs and small B2B service businesses in the Messy Middle.
+Build toward a Synnovatia where Jackie operates at the top of the business — strategy, highest-tier clients, and experimentation with new offers — while another consultant delivers day-to-day work for the $250K–$500K segment. The "Strategic Perspective You Feel From the First Conversation" positioning underpins premium pricing and a scarcity-based reputation as the go-to strategic advisor for solopreneurs and small B2B service businesses in the Messy Middle.
 
 ---
 

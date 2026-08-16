@@ -34,3 +34,4 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-08-13,Strength (Day B),63,119,not captured,349,"Reported: 63 min, avg HR 119, 349 MET-minutes. Per-set detail (24 sets across 8 exercises; Band Face Pull done but no rep count given) logged separately in data/strength-training-log.csv."
 2026-08-14,Walk,33,106,not captured,30,"1.5 miles, avg pace 22:00/mile (computes correctly from distance/duration). HRV not reported. Short/easy effort, consistent with the low MET-minute figure."
 2026-08-15,Walk,61,120,not captured,364,"3.31 miles, avg pace 18:29/mile (computes to ~18:26/mile from distance/duration, consistent). HRV not reported."
+2026-08-16,Hike,93,114,not captured,247,"4.4 miles, reported avg pace 21:19/mile (computes to ~21:08/mile from distance/duration, consistent). HRV not reported."
