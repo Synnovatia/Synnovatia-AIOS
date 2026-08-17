@@ -174,23 +174,41 @@
   #masthead, #site-navigation, .site-header,
   div.site-footer, footer.site-info,
   .entry-header, .featured-image.page-header-image,
-  .widget-area.sidebar {
+  .widget-area, .sidebar, #right-sidebar, #left-sidebar {
+    display: none !important;
+  }
+  /* This page's theme header can lack #masthead/.site-header on some templates, letting the
+     WordPress fallback "list every page" menu slip through — kill it by its actual
+     wp_list_pages() class instead (found on the all-posts feed and archive pages) */
+  header:has(.page_item),
+  .page_item {
     display: none !important;
   }
   body.page #content,
   body.page .site-content,
   body.page #primary,
   body.page .content-area,
-  body.page .entry-content {
+  body.page .entry-content,
+  body.page .grid-container,
+  body.page .container,
+  body.page #page {
+    display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    grid-template-columns: 1fr !important;
   }
+
+  /* ===== "Browse by Topic" background — force it so it can't lose to a theme rule ===== */
+  .topics { background: var(--navy) !important; }
 
   /* ===== BUTTON VISIBILITY FIX — required, do not remove ===== */
   .btn-primary, .btn-cta-primary, .nav-cta {
     color: #FFFFFF !important;
+    text-indent: 0 !important;
+    overflow: visible !important;
+    line-height: normal !important;
   }
 
   /* ===== LINK COLOR OVERRIDES — required, do not remove ===== */
