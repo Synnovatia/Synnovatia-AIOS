@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-17 (continued)
+
+### Blog Mockups — Copy Polish Pass Across All 8
+- Follow-up pass on top of the same-day brand reconciliation, working through the pages one at a time as Jackie reviewed each:
+  - **Front page:** reviewed for em dashes and unnecessary commas at Jackie's request — 5 fixes applied (masthead tagline split into two sentences on its existing line break, cover excerpt and two post excerpts rewritten without dashes, browser-tab title switched to a colon). Explored adding a subscribe feature to the front page to match the feed page's; recommended against a full duplicate section (front page already has one clear CTA) but added a lighter-touch version instead — a single muted link in the footer ("Get New Notes in Your Inbox →") — which Jackie approved and asked to keep. "Messy Middle" in the masthead title tried at gold (original), then navy-mid (proposed as the closest brand-blue), then settled on plain navy per Jackie's direction — italics alone now carry the emphasis, no color contrast against the surrounding title text.
+  - **All six archive pages:** same em-dash/comma cleanup (20 em dashes total across the six files, several repeated post excerpts shared identical fixes since posts are cross-tagged to multiple topics) and the same lightweight footer subscribe link added to each, matching the front page treatment.
+  - **All-posts feed page:** "Messy Middle" masthead color updated to match the front page's final navy decision; 10 em dashes fixed (parenthetical asides converted to actual parentheses, appositives converted to colons, independent-clause pairs joined with commas or split into two sentences depending on which read cleaner) plus one unnecessary comma dropped from a shared-subject compound predicate.
+- Common fix patterns applied throughout: em dashes replaced with periods, commas, colons, or parentheses depending on the grammatical relationship (never a blanket single substitution); "no noise, no filler"-style stacked fragments rewritten as one flowing sentence; this workspace's writing-style skill (zero em dashes, vary sentence rhythm) used as the standard throughout.
+- All 8 files verified zero remaining em dashes via direct search after each pass, plus in-browser visual checks on the front page, one archive page, and the feed page confirming render, color, and footer link placement.
+
+---
+
 ## 2026-08-17
 
 ### Blog Redesign — 8 Mockups Reconciled to Current Brand
