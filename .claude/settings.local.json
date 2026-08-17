@@ -302,7 +302,14 @@
       "mcp__3ef6ca01-80b7-4b97-8510-379f9816e9bf__find_person",
       "Bash(mkdir -p \"/private/tmp/claude-502/-Users-jackienagel-Desktop-Synnovatia-AIOS/f3c59296-0d14-4187-a183-213a3f94cf8c/scratchpad\")",
       "mcp__233ebce3-40d6-4de6-9ac0-6ff887b2866b__search_events",
-      "Bash([ -f \"$STATE_FILE\" ])"
+      "Bash([ -f \"$STATE_FILE\" ])",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__manage_marketing_email",
+      "Bash(python3 scripts/log_outreach.py responded cspellhansson@gmail.com)",
+      "Bash(python3 scripts/log_outreach.py no_response donna@dfdcoaching.com)",
+      "Bash(python3 scripts/log_outreach.py no_response brooke@perstrat.com)",
+      "Bash(python3 scripts/log_outreach.py no_response kirsten@bullockconsulting.net)",
+      "Bash(python3 scripts/log_outreach.py no_response annette@ready4hire.com)",
+      "Bash(pandoc -t markdown \"2026-08-24-to-08-28-drafts.docx\")"
     ]
   }
 }
