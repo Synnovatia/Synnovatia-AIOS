@@ -269,6 +269,7 @@ Claude will read the module's install guide and walk you through it step by step
 | "/develop #[id]" | Content Pipeline — turns a stub into a full concept: strategic positioning, LinkedIn hooks or blog SEO packaging (using real Search Console keyword targets), CTA alignment — interactive, confirms at each stage |
 | "/schedule" | Content Pipeline — batch-plan which developed ideas to create next and when, against the real LinkedIn Mon/Wed/Fri + monthly blog cadence |
 | "Send the reply to [name/subject]" | Sends that specific, already-drafted email reply — the one action in this workspace where Claude actually executes a send (via browser automation on your real Gmail), and only ever when you name the specific email in the moment. See `docs/email-response.md` |
+| Share a LinkedIn "Aggregate Analytics" export | Logs per-post and daily performance into `data/linkedin-metrics/` (post-performance.csv, daily-engagement.csv, log.csv) and gives an updated read on whether M/W/F is still the best posting cadence, building toward a real data-backed answer over time. See `context/linkedin-marketing.md`'s Cadence Performance Tracking section |
 
 ### Setting up Cowork scheduled tasks
 

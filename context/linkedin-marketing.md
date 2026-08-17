@@ -50,6 +50,19 @@ All of the following, in priority order matching `context/strategy.md`:
 | Wednesday | Story | Personal or client story that humanizes the "peer, not guru" positioning. Warmth through specificity, not platitudes. |
 | Friday | Client win | A real result or transformation (anonymized/generalized unless a client has explicitly agreed to be named — check before naming anyone). Confident, not boastful — let the result speak. |
 
+## Cadence Performance Tracking (started 2026-08-17)
+
+LinkedIn doesn't expose an API/connector this workspace can pull automatically, so this is manual: whenever Jackie downloads a fresh **"Aggregate Analytics" export** from her LinkedIn profile (the `.xlsx` with DISCOVERY/ENGAGEMENT/TOP POSTS/FOLLOWERS/AUDIENCE DEMOGRAPHICS/CONTENT DEMOGRAPHICS sheets) and shares it, Claude should:
+
+1. Read the **TOP POSTS** sheet — merge its two side-by-side lists (sorted by engagements and by impressions) into one per-post record, and append/update rows in `data/linkedin-metrics/post-performance.csv` (dedupe by post URL — a post's impressions/engagements grow across exports as it keeps circulating, so update the existing row's `impressions`/`engagements`/`last_updated_export` rather than adding a duplicate). Compute `day_of_week` from `publish_date`.
+2. Read the **ENGAGEMENT** sheet (the 7-day daily impressions/engagements table) and append new dates to `data/linkedin-metrics/daily-engagement.csv` (skip dates already logged from a prior export's overlapping window).
+3. Add a new dated row to `data/linkedin-metrics/log.csv` (the existing weekly summary log — see `context/task-audit.md`'s LinkedIn metrics row), same schema as before (`post_impressions_7d` from the DISCOVERY sheet's "Impressions" line, `followers` from FOLLOWERS' total, `social_engagements_7d` as the sum of ENGAGEMENT's Engagements column). Leave `profile_views_90d`/`search_appearances_7d` blank if this export doesn't include them — those come from a different LinkedIn analytics page Jackie sometimes pastes in separately.
+4. Recompute the day-of-week performance read (avg. impressions per weekday, using only current-cadence-era posts — 2026 onward, since older posts predate the M/W/F regime) and give Jackie an updated version of the analysis, calling out whether the pattern seen so far (Wednesday outperforming Monday/Friday, first observed 2026-08-17 off just 2 Wednesday posts) is holding up or changing as more data comes in.
+
+**Why:** Jackie asked whether M/W/F is still the best posting cadence (2026-08-17). No real engagement data existed in the workspace to answer that from anything but general LinkedIn best-practice assumptions, so she pulled her own export. She asked to keep tracking this every time she exports going forward, to build toward an actual data-backed answer rather than a one-off snapshot.
+
+**Sample size caveat, worth repeating every time this is updated:** this is a small account (~5,800 followers, low-hundreds of impressions per week) — early reads will be noisy. Don't present a pattern as confirmed until there's a meaningful number of posts per weekday (aim for at least 5-6 per day before treating a gap as real rather than variance).
+
 ## Outreach / Connection Request Templates
 
 **Template 1 — Cold connection, ICP match found via search/content:**

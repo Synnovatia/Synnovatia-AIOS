@@ -8,6 +8,31 @@
 
 ---
 
+## 2026-08-17 (continued, part 3)
+
+### LinkedIn Cadence Performance Tracking Set Up
+- Jackie asked whether Monday/Wednesday/Friday is still the best posting cadence. No real engagement data existed in the workspace to answer from anything but general assumptions, so recommended she pull her own LinkedIn "Aggregate Analytics" export to get a real answer — she did.
+- Read the export (TOP POSTS, ENGAGEMENT, DISCOVERY, FOLLOWERS sheets) and computed day-of-week averages for posts published under the current M/W/F regime (2026 onward, excluding older pre-cadence posts): Wednesday averaged 106 impressions (n=2), Friday 18 (n=6), Monday 14 (n=4) — a real but very small-sample signal, explicitly caveated rather than presented as confirmed.
+- Jackie asked to keep tracking this every time she exports going forward. Built two new logs: `data/linkedin-metrics/post-performance.csv` (per-post impressions/engagements/day-of-week, deduped by post URL so a post's growing numbers update in place across exports) and `data/linkedin-metrics/daily-engagement.csv` (day-by-day traffic regardless of publish day). Added a new dated row to the existing `data/linkedin-metrics/log.csv` weekly summary log.
+- Documented the full merge/update workflow in a new "Cadence Performance Tracking" section of `context/linkedin-marketing.md`, including the sample-size caveat (don't call a weekday pattern real until there's meaningful volume per day) so future sessions don't overclaim from a handful of posts. Added the trigger phrase to `CLAUDE.md`'s things-you-can-say table.
+
+### LinkedIn Drafts (08/24-08/28 batch) Reviewed, Style Learned, Friday Post Edited
+- Jackie asked to review the batch, note what she'd changed since the automated draft, learn her voice from it, and edit the Friday post specifically.
+- Found she'd replaced Monday entirely (a blunter, first-person dismissal of the drafted time-audit framework) and Friday entirely (a from-scratch post about a podcast episode, replacing the planned client-win story), and trimmed Wednesday (cut a personal-anecdote paragraph, added a direct "shout out to all the attorneys on LinkedIn" aside).
+- Saved four new voice observations to `feedback_jackie-native-writing-voice.md`: she rewrites a disagreed-with drafted angle shorter and more bluntly personal rather than refining its structure; she'll shout out a specific slice of her audience by name/profession mid-post; she'll swap a planned post entirely for something she's genuinely excited about in the moment, off-angle from the content calendar; and a new mechanical-slip category (missing words, raw pasted URLs) plus one real rhetorical issue worth flagging rather than silently fixing (a hard-sell closer line out of step with how every other sample in this memory ends).
+- Edited the Friday post for mechanics only, preserving her voice and structure: pulled the raw podcast URL from the post body (LinkedIn penalizes outbound links in-post; better as a first comment), fixed several dropped words ("listening the episode" → "listening to it," etc.), and cut "It literally will enhance your project outcomes" as an overclaim inconsistent with her established closing style. Also silently fixed two recurring typos while in there: Monday's "is decided" → "is deciding," Wednesday's "attorney's" → "attorneys" (same apostrophe-pluralization habit already on file).
+- Flagged rather than fixed: Friday's header still reads "Client Win" but the content is now a personal reflection, not a client story — a content-strategy call, not a copy fix.
+- Updated the Notes section, which still described the old (replaced) Friday draft's structure and disclaimers — rewrote to describe what actually shipped. Edited via direct `document.xml` XML manipulation (the skill's own `merge_runs.py`/`validate.py`/`soffice.py` helpers all failed on this machine's Python 3.9 — they require 3.10+ syntax; worked around by editing the unzipped XML directly and rendering through LibreOffice's `soffice` binary directly for visual verification instead of the wrapper script). Both `.docx` and `.md` versions updated to match.
+
+### Strength Training Day A Session Card Prepared for 2026-08-18
+- Jackie asked for a print-ready Day A worksheet with recommendations ahead of her next session.
+- Pulled the real most-recent Day A numbers from `data/strength-training-log.csv` (2026-08-11) — found the per-set detail actually lives there, not in `personal/workout-logs/exercise-log.csv` as that file's own last entry (2026-07-14) would suggest; the newer file is the real source of truth per `session-log.csv`'s own cross-references.
+- Built exercise-by-exercise recommendations per `personal/workout-plan.md`'s progression scheme: 4 of 9 exercises (Goblet Squat, Romanian Deadlift, Farmer's Carry, Glute Bridge) are at the hard 25 lb/hand dumbbell ceiling and now in rep-ceiling-extension mode; Floor Press is close but not yet capped; Single-Arm Row is still building toward its rep floor; Single-Leg Balance Reach and Band Face Pull have plateaued at their current load for two sessions running, flagged as ready for a nudge.
+- Saved as `outputs/strength-log/2026-08-18-day-a-printable.html`, matching the established printable-card format from prior Day A/B worksheets, verified by rendering in-browser before sending. Delivered directly to Jackie as a file.
+
+### Cardio Session Logged
+- Logged a 50-minute mixed walk/run (3.28 miles, avg HR 133, 366 MET-minutes) to `personal/workout-logs/session-log.csv`, matching the existing session-log format and computing pace from distance/duration per that log's established convention.
+
 ## 2026-08-17 (continued)
 
 ### Blog Mockups — Copy Polish Pass Across All 8
