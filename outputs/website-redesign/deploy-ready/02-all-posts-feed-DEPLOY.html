@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes From the Messy Middle: All Posts (Page 1) | Synnovatia</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  :root {
+    --navy:#0D1F4E; --navy-mid:#1A3A7A; --gold:#B29200; --gold-lt:#F5C842;
+    --teal:#0F6E56; --teal-lt:#5DCAA5; --warm-white:#F7F6F2; --body-text:#444441;
+    --neut-gray:#EAEAEA; --lt-navy:#E8ECF5; --lt-gold:#FDF3CC; --white:#FFFFFF;
+    --footer:#080F1F; 
+  }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Barlow',sans-serif; font-optical-sizing:auto;
+    background:var(--warm-white); color:var(--body-text); font-size:16px; line-height:1.7; padding-top:72px; }
+  a { color:inherit; text-decoration:none; }
+
+  /* ── mockup banner ── */
+  .mockup-banner { background:var(--navy-mid); color:rgba(255,255,255,0.55); text-align:center;
+    padding:9px; font-size:11px; font-family:monospace; letter-spacing:0.06em; }
+
+  /* ── NAV ── */
+  nav:not(.pager) { position:fixed; top:0; left:0; right:0; z-index:100; background:var(--warm-white);
+    border-bottom:3px solid var(--navy); display:flex; align-items:center;
+    justify-content:space-between; padding:0 48px; height:72px; }
+  .nav-logo img { height:30px; width:auto; display:block; }
+  .nav-links { display:flex; gap:36px; list-style:none; align-items:center; }
+  .nav-links a { font-size:12px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--body-text); transition:color .2s; }
+  .nav-links a:hover { color:var(--navy); }
+  .nav-links a.active { color:var(--navy); border-bottom:2px solid var(--gold); padding-bottom:2px; }
+  .nav-links > li { position:relative; }
+  .nav-links > li.has-dropdown { display:flex; align-items:center; height:72px; }
+  .nav-links > li.has-dropdown > a { display:inline-flex; align-items:center; gap:6px; line-height:1; }
+  .nav-links > li.has-dropdown > a::after { content:""; width:6px; height:6px;
+    border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor;
+    transform:rotate(45deg); margin-top:-3px; opacity:.6; }
+  .nav-dropdown { position:absolute; top:72px; left:-16px; min-width:210px; background:var(--white);
+    border:1px solid var(--neut-gray); border-top:2px solid var(--gold);
+    list-style:none; padding:8px 0; opacity:0; visibility:hidden; transform:translateY(6px);
+    transition:all .18s; box-shadow:0 14px 34px rgba(13,31,78,0.12); }
+  .nav-links > li.has-dropdown:hover .nav-dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+  .nav-dropdown a { display:block; padding:9px 20px; font-size:11px; }
+  .nav-dropdown a:hover { color:var(--navy); background:var(--warm-white); }
+  .nav-cta { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:14px;
+    letter-spacing:0.04em; text-transform:uppercase; color:var(--white); background:var(--teal);
+    padding:11px 22px; border-radius:10px; transition:background .2s; }
+  .nav-cta:hover { background:#0c5a47; }
+
+  /* ── MASTHEAD ── */
+  .masthead { background:var(--warm-white); border-bottom:1px solid rgba(13,31,78,0.12);
+    padding:64px 48px 30px; }
+  .masthead-inner { max-width:1100px; margin:0 auto; }
+  .masthead-title { font-family:'Fraunces',serif; font-weight:600; color:var(--navy);
+    font-size:clamp(40px,6vw,68px); line-height:1.02; letter-spacing:-0.01em; }
+  .masthead-title em { font-style:italic; color:var(--navy); }
+  .masthead-tag { font-size:18px; color:var(--body-text); margin-top:14px; max-width:640px; }
+
+  /* ── UTILITY BAR ── */
+  .utility { max-width:1100px; margin:0 auto; padding:18px 48px 0; }
+  .utility-inner { max-width:1100px; margin:0 auto; display:flex; align-items:flex-end;
+    justify-content:space-between; gap:24px; flex-wrap:wrap;
+    border-top:1px solid rgba(13,31,78,0.10); padding-top:16px; }
+  .utility-context { font-family:'Barlow Condensed',sans-serif; }
+  .utility-eyebrow { text-transform:uppercase; letter-spacing:0.14em; font-weight:600;
+    font-size:12px; color:var(--gold); }
+  .utility-page { font-family:'Fraunces',serif; font-size:20px; color:var(--navy); margin-top:2px; }
+  .utility-page b { font-weight:600; }
+  .blog-search { display:flex; align-items:center; gap:8px; border-bottom:1.5px solid var(--navy);
+    padding-bottom:6px; min-width:240px; }
+  .blog-search svg { flex:0 0 auto; }
+  .blog-search input { border:none; background:transparent; outline:none; font-family:'Barlow',sans-serif;
+    font-size:14px; color:var(--navy); width:100%; }
+  .blog-search input::placeholder { color:rgba(13,31,78,0.45); }
+
+  /* ── FEED ── */
+  .feed { padding:8px 48px 64px; }
+  .feed-inner { max-width:1100px; margin:0 auto; }
+  .post-row { display:grid; grid-template-columns:200px 1fr; gap:34px; align-items:start;
+    padding:38px 0; border-bottom:1px solid rgba(13,31,78,0.12); }
+  .post-row:first-child { padding-top:34px; }
+  .post-thumb { display:block; overflow:hidden; background:var(--lt-navy); }
+  .post-thumb img { width:100%; height:150px; object-fit:cover; display:block;
+    transition:transform .5s ease; }
+  .post-thumb:hover img { transform:scale(1.04); }
+  .post-topic { font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.12em; font-weight:600; font-size:12px; color:var(--gold); margin-bottom:8px; }
+  .post-title { font-family:'Fraunces',serif; font-weight:600; line-height:1.14;
+    font-size:clamp(23px,2.6vw,30px); letter-spacing:-0.01em; }
+  .post-title a { color:var(--navy); transition:color .2s; }
+  .post-title a:hover { color:var(--gold); }
+  .post-excerpt { margin:11px 0 14px; font-size:16px; max-width:62ch; }
+  .post-more { font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.05em; font-weight:600; font-size:14px; color:var(--teal); }
+  .post-more:hover { color:var(--navy); }
+
+  /* ── PAGER ── */
+  .pager { max-width:1100px; margin:0 auto; padding:6px 48px 0;
+    display:flex; align-items:center; justify-content:center; gap:6px; flex-wrap:wrap; }
+  .pg { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:15px;
+    letter-spacing:0.03em; text-transform:uppercase; color:var(--navy);
+    padding:9px 14px; border-radius:10px; transition:all .18s; }
+  .pg-num { min-width:42px; text-align:center; }
+  .pg:hover { background:var(--lt-navy); }
+  .pg-active { background:var(--navy); color:var(--white); }
+  .pg-active:hover { background:var(--navy); }
+  .pg-gap { color:rgba(13,31,78,0.4); padding:0 4px; font-family:'Fraunces',serif; }
+  .pg-prev, .pg-next { color:var(--teal); }
+  .pg-prev:hover, .pg-next:hover { background:var(--lt-navy); }
+  .pager-all { text-align:center; padding:18px 0 0; }
+  .pager-all a { font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.12em; font-size:12px; font-weight:600; color:var(--body-text);
+    border-bottom:1px solid var(--gold); padding-bottom:2px; }
+  .pager-all a:hover { color:var(--navy); }
+
+  /* ── SUBSCRIBE STRIP ── */
+  .subscribe { border-top:1px solid rgba(13,31,78,0.12); margin-top:56px; padding:46px 48px; }
+  .subscribe-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center;
+    justify-content:space-between; gap:36px; flex-wrap:wrap; }
+  .subscribe-copy h4 { font-family:'Fraunces',serif; font-weight:600; color:var(--navy);
+    font-size:26px; line-height:1.15; }
+  .subscribe-copy p { font-size:15px; margin-top:6px; max-width:46ch; }
+  .subscribe-form { display:flex; align-items:flex-end; gap:14px; }
+  .subscribe-field { display:flex; flex-direction:column; }
+  .subscribe-field label { font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.12em; font-size:11px; font-weight:600; color:var(--gold); margin-bottom:6px; }
+  .subscribe-field input { border:none; border-bottom:1.5px solid var(--navy); background:transparent;
+    outline:none; font-family:'Barlow',sans-serif; font-size:15px; color:var(--navy);
+    padding:6px 2px; min-width:260px; }
+  .subscribe-form button { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:14px;
+    letter-spacing:0.04em; text-transform:uppercase; color:var(--white); background:var(--teal);
+    border:none; cursor:pointer; padding:11px 22px; border-radius:10px; transition:background .2s; }
+  .subscribe-form button:hover { background:#0c5a47; }
+
+  /* ── BROWSE BY TOPIC ── */
+  .topics { background:var(--navy); padding:54px 48px; }
+  .topics-inner { max-width:1100px; margin:0 auto; text-align:center; }
+  .section-eyebrow { font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+    letter-spacing:0.18em; font-weight:600; font-size:13px; color:var(--gold-lt); margin-bottom:18px; }
+  .topics-row { display:flex; align-items:center; justify-content:center; flex-wrap:wrap;
+    gap:6px 10px; }
+  .topics-row .topic { font-family:'Fraunces',serif; font-size:clamp(18px,2vw,23px);
+    color:var(--white); transition:color .2s; }
+  .topics-row .topic:hover { color:var(--gold-lt); }
+  .topic-dot { color:rgba(255,255,255,0.35); }
+
+  /* ── CTA ── */
+  .cta-section { background:var(--warm-white); text-align:center; padding:74px 48px; }
+  .cta-h2 { font-family:'Fraunces',serif; font-weight:600; color:var(--navy);
+    font-size:clamp(28px,4vw,42px); line-height:1.1; }
+  .cta-sub { font-size:18px; max-width:560px; margin:16px auto 28px; }
+  .btn-cta-primary { display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:600;
+    font-size:16px; letter-spacing:0.04em; text-transform:uppercase; color:var(--white);
+    background:var(--teal); padding:15px 34px; border-radius:10px; transition:background .2s; }
+  .btn-cta-primary:hover { background:#0c5a47; }
+
+  /* ── FOOTER ── */
+  footer.site-footer { background:var(--footer); padding:40px 48px;
+    display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { color:rgba(255,255,255,0.6); font-size:13px; letter-spacing:0.02em; }
+
+  @media (max-width:880px) {
+    nav:not(.pager) { padding:0 22px; }
+    .nav-links { display:none; }
+    .masthead, .utility, .feed, .pager, .subscribe, .topics, .cta-section, footer.site-footer { padding-left:22px; padding-right:22px; }
+    .post-row { grid-template-columns:1fr; gap:16px; }
+    .post-thumb img { height:200px; }
+    .utility-inner { flex-direction:column; align-items:flex-start; }
+    .blog-search { width:100%; }
+    .subscribe-inner { flex-direction:column; align-items:flex-start; }
+    .subscribe-form { width:100%; flex-wrap:wrap; }
+    .subscribe-field input { min-width:0; width:100%; }
+    footer.site-footer { flex-direction:column; text-align:center; }
+  }
+
+  /* ===== WORDPRESS THEME OVERRIDES — required, do not remove ===== */
+  #masthead, #site-navigation, .site-header,
+  div.site-footer, footer.site-info,
+  .entry-header, .featured-image.page-header-image,
+  .widget-area, .sidebar, #right-sidebar, #left-sidebar {
+    display: none !important;
+  }
+  /* This page's theme header lacks #masthead/.site-header, so it slips past the rule above —
+     kill it by its actual fallback-menu markup (wp_list_pages' .page_item class) instead */
+  header:has(.page_item),
+  .page_item {
+    display: none !important;
+  }
+  body.page #content,
+  body.page .site-content,
+  body.page #primary,
+  body.page .content-area,
+  body.page .entry-content,
+  body.page .grid-container,
+  body.page .container,
+  body.page #page {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ===== "Browse by Topic" background was losing to a theme rule without !important ===== */
+  .topics { background: var(--navy) !important; }
+
+  /* ===== BUTTON TEXT WAS RENDERING INVISIBLE — force every button property explicitly ===== */
+  .nav-cta, .btn-cta-primary, .btn-primary {
+    color: #FFFFFF !important;
+    background: var(--teal) !important;
+    text-indent: 0 !important;
+    overflow: visible !important;
+    line-height: normal !important;
+    font-size: 14px !important;
+  }
+
+  /* ===== FIXED NAV FIX — required, do not remove ===== */
+  /* position:fixed doesn't render inside the theme's page wrapper (same issue found on the front page) — nav sits in normal flow instead */
+  nav:not(.pager) {
+    position: relative !important;
+    top: auto !important; left: auto !important; right: auto !important;
+  }
+  body { padding-top: 0 !important; }
+
+  /* ===== BUTTON VISIBILITY FIX — required, do not remove ===== */
+  .btn-cta-primary, .nav-cta {
+    color: #FFFFFF !important;
+  }
+  .subscribe-form button {
+    background: var(--teal) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    font-family:'Barlow Condensed',sans-serif !important;
+  }
+
+  /* ===== FORM FIELD RESET — this page has real <input>/<button> elements the front page didn't ===== */
+  .blog-search input, .subscribe-field input {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 6px 2px !important;
+  }
+  .blog-search { border-bottom: 1.5px solid var(--navy) !important; }
+  .subscribe-field input { border-bottom: 1.5px solid var(--navy) !important; }
+
+  /* ===== LINK COLOR OVERRIDES — required, do not remove ===== */
+  .nav-links a { color: var(--body-text) !important; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy) !important; }
+  .nav-dropdown a { color: var(--body-text) !important; }
+  .nav-dropdown a:hover { color: var(--navy) !important; }
+  .post-title a { color: var(--navy) !important; }
+  .post-title a:hover { color: var(--gold) !important; }
+  .post-more { color: var(--teal) !important; }
+  .post-more:hover { color: var(--navy) !important; }
+  .pg { color: var(--navy) !important; }
+  .pg-active { color: var(--white) !important; }
+  .pg-prev, .pg-next { color: var(--teal) !important; }
+  .pager-all a { color: var(--body-text) !important; }
+  .pager-all a:hover { color: var(--navy) !important; }
+  .topics-row .topic { color: var(--white) !important; }
+  .topics-row .topic:hover { color: var(--gold-lt) !important; }
+
+  /* ===== HEADING COLOR OVERRIDES — required, do not remove ===== */
+  .masthead-title { color: var(--navy) !important; }
+  .post-title { color: var(--navy) !important; }
+  .utility-page { color: var(--navy) !important; }
+  .subscribe-copy h4 { color: var(--navy) !important; }
+  .cta-h2 { color: var(--navy) !important; }
+
+  /* ===== TEXT LOGO (no image file uploaded to WordPress yet) ===== */
+  .nav-logo-text {
+    font-family:'Barlow Condensed',sans-serif !important; font-weight:700 !important;
+    font-size:20px !important; letter-spacing:0.06em !important; text-transform:uppercase !important;
+    color: var(--navy) !important; text-decoration:none !important;
+  }
+  .footer-logo-text {
+    font-family:'Barlow Condensed',sans-serif !important; font-weight:700 !important;
+    font-size:18px !important; letter-spacing:0.06em !important; text-transform:uppercase !important;
+    color: rgba(255,255,255,0.92) !important;
+  }
+
+  /* ===== LAYOUT HARDENING — required, do not remove ===== */
+  .post-row { display: grid !important; grid-template-columns: 200px 1fr !important; }
+  .pager { display: flex !important; align-items: center !important; justify-content: center !important; }
+  .topics-row { display: flex !important; justify-content: center !important; }
+  .subscribe-inner { display: flex !important; align-items: center !important; justify-content: space-between !important; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">&#128240; SYNNOVATIA &middot; Blog &middot; All Posts (Page 1 of 71, real post data) &middot; Fraunces + Barlow &middot; staging preview Aug 17, 2026 &middot; static preview, real pagination pending template build</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo-text">Synnovatia</a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+        <li><a href="#">Mastermind for the Messy Middle</a></li>
+        <li><a href="#">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="active" aria-current="page">Perspective</a></li>
+  </ul>
+  <a href="/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+</nav>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <h1 class="masthead-title">Notes From the <em>Messy Middle</em></h1>
+    <p class="masthead-tag">Strategic thinking for Stage II owners. The growth phase no one warns you about.</p>
+  </div>
+</div>
+
+<!-- UTILITY BAR -->
+<div class="utility">
+  <div class="utility-inner">
+    <div class="utility-context">
+      <div class="utility-eyebrow">All Posts</div>
+      <div class="utility-page">Page <b>1</b> <span style="color:rgba(13,31,78,.4)">of 71</span></div>
+    </div>
+    <div class="blog-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="11" r="7" stroke="#0D1F4E" stroke-width="2"/>
+        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="#0D1F4E" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input type="text" placeholder="Search the blog">
+    </div>
+  </div>
+</div>
+
+<!-- FEED -->
+<section class="feed">
+  <div class="feed-inner">
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/accelerate-business-growth-uncertain-times/"><img src="https://www.synnovatia.com/wp-content/uploads/2026/08/amy-hirschi-uwpo02K55zw-unsplash-300x200.jpg" alt="business colleagues reviewing growth plans" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Growth & Scaling</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/accelerate-business-growth-uncertain-times/">How to Accelerate Business Growth When the Economy Feels Uncertain</a></h3>
+          <p class="post-excerpt">Waiting for things to stabilize is the growth-killer myth. Here&rsquo;s what actually moves a stalled business forward, uncertain economy or not.</p>
+          <a class="post-more" href="https://www.synnovatia.com/accelerate-business-growth-uncertain-times/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/"><img src="https://www.synnovatia.com/wp-content/uploads/2022/08/daniel-gonzalez-KeiUIl9Lzo4-unsplash-1-300x208.jpeg" alt="entrepreneur at a business plateau" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Growth & Scaling</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/">What No One Tells an Entrepreneur About Breaking Through a Business Plateau</a></h3>
+          <p class="post-excerpt">Entrepreneurship is exciting, until you hit a plateau most people never talk about.</p>
+          <a class="post-more" href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/business-coaching-bid-72474-nine-steps-to-building-trust-online-offline-for-your-small-business/"><img src="https://www.synnovatia.com/wp-content/uploads/2020/06/AdobeStock_88879100-300x200.jpeg" alt="building trust with small business customers" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Sales & Marketing</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/business-coaching-bid-72474-nine-steps-to-building-trust-online-offline-for-your-small-business/">Nine Steps to Building Trust Online &amp; Offline for Your Small Business</a></h3>
+          <p class="post-excerpt">Trust was already eroding when this was first written in 2018, and the numbers have only grown more striking since.</p>
+          <a class="post-more" href="https://www.synnovatia.com/business-coaching-bid-72474-nine-steps-to-building-trust-online-offline-for-your-small-business/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/business-coaching-got-strategic-skills/"><img src="https://www.synnovatia.com/wp-content/uploads/2024/06/StrategicSkills-300x200.jpg" alt="test your strategic skills quiz" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Strategy & Planning</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/business-coaching-got-strategic-skills/">Are You a Master Strategist? Test Your Strategic Skills With This Quiz</a></h3>
+          <p class="post-excerpt">Where do your strategic skills stand? A quick gauge of how you navigate complex problems and reach long-term goals.</p>
+          <a class="post-more" href="https://www.synnovatia.com/business-coaching-got-strategic-skills/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/navigating-the-distinct-challenges-women-in-business/"><img src="https://www.synnovatia.com/wp-content/uploads/2024/09/Jasper_2024-09-11T163A273A00.445Z-300x200.jpeg" alt="women navigating distinct business challenges" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Ownership & Entrepreneurship</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/navigating-the-distinct-challenges-women-in-business/">Navigating the Distinct Challenges of Women in Business</a></h3>
+          <p class="post-excerpt">Women-owned firms are reshaping the economy through remarkable growth alongside a distinct set of challenges.</p>
+          <a class="post-more" href="https://www.synnovatia.com/navigating-the-distinct-challenges-women-in-business/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/business-coaching-year-end-assessment-annual-business-planning/"><img src="https://www.synnovatia.com/wp-content/uploads/2020/06/Magnifing-glass-and-documents-with-analytics-data-lying-on-table-300x200.jpeg" alt="annual strategic planning review" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Strategy & Planning</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/business-coaching-year-end-assessment-annual-business-planning/">Unlock Business Growth Through Annual Strategic Planning</a></h3>
+          <p class="post-excerpt">Maximize growth by planning ahead. A clear-eyed year-end review sets the tone for the year to come.</p>
+          <a class="post-more" href="https://www.synnovatia.com/business-coaching-year-end-assessment-annual-business-planning/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/business-coaching-bid-182599-how-strategic-thinking-shapes-small-business-success-and-saves-money/"><img src="https://www.synnovatia.com/wp-content/uploads/2021/05/jasper-e1717773386880-280x300.jpg" alt="strategic thinking for business growth" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">Strategy & Planning</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/business-coaching-bid-182599-how-strategic-thinking-shapes-small-business-success-and-saves-money/">How Strategic Thinking Shapes Small Business Success&hellip;And Saves Money</a></h3>
+          <p class="post-excerpt">Discover how strategic thinking can shape the success of your small business and save you real time and money along the way.</p>
+          <a class="post-more" href="https://www.synnovatia.com/business-coaching-bid-182599-how-strategic-thinking-shapes-small-business-success-and-saves-money/">Read the full story &rarr;</a>
+        </div>
+      </article>
+      <article class="post-row">
+        <a class="post-thumb" href="https://www.synnovatia.com/business-coaching-bid-105758-strategic-alliances-the-future-of-small-business-growth/"><img src="https://www.synnovatia.com/wp-content/uploads/2024/05/strategicalliances_unsplash-246x300.jpg" alt="strategic alliances for business growth" loading="lazy"></a>
+        <div class="post-body">
+          <div class="post-topic">People & Partnerships</div>
+          <h3 class="post-title"><a href="https://www.synnovatia.com/business-coaching-bid-105758-strategic-alliances-the-future-of-small-business-growth/">Strategic Alliances: The Catalyst for Business Growth</a></h3>
+          <p class="post-excerpt">Growth is rarely a straight line, and it&rsquo;s seldom a solo act. Strategic alliances (mutually beneficial partnerships) are a proven avenue for forward movement.</p>
+          <a class="post-more" href="https://www.synnovatia.com/business-coaching-bid-105758-strategic-alliances-the-future-of-small-business-growth/">Read the full story &rarr;</a>
+        </div>
+      </article>
+  </div>
+</section>
+
+<!-- PAGER -->
+<nav class="pager" aria-label="Blog pagination">
+      <a class="pg pg-num pg-active" href="https://www.synnovatia.com/business-coaching-blog/" aria-current="page">1</a>
+      <a class="pg pg-num" href="https://www.synnovatia.com/business-coaching-blog/2/">2</a>
+      <a class="pg pg-num" href="https://www.synnovatia.com/business-coaching-blog/3/">3</a>
+      <a class="pg pg-num" href="https://www.synnovatia.com/business-coaching-blog/4/">4</a>
+      <span class="pg-gap">&hellip;</span>
+      <a class="pg pg-num" href="https://www.synnovatia.com/business-coaching-blog/71/">71</a>
+      <a class="pg pg-next" href="https://www.synnovatia.com/business-coaching-blog/2/">Next &rarr;</a>
+</nav>
+<div class="pager-all"><a href="https://synnovatia.com/business-coaching-blog/all/">View All Posts</a></div>
+
+<!-- SUBSCRIBE -->
+<section class="subscribe">
+  <div class="subscribe-inner">
+    <div class="subscribe-copy">
+      <h4>New notes, every so often.</h4>
+      <p>Strategy for the messy middle, without the noise or nonsense. Unsubscribe anytime.</p>
+    </div>
+    <div class="subscribe-form">
+      <div class="subscribe-field">
+        <label for="sub-email">Email</label>
+        <input id="sub-email" type="email" placeholder="you@yourcompany.com">
+      </div>
+      <button type="button">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- BROWSE BY TOPIC -->
+<section class="topics">
+  <div class="topics-inner">
+    <div class="section-eyebrow">Browse by Topic</div>
+    <div class="topics-row">
+      <a class="topic" href="/topic/strategy-planning/">Strategy &amp; Planning</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/growth-scaling/">Growth &amp; Scaling</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/sales-marketing/">Sales &amp; Marketing</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/people-partnerships/">People &amp; Partnerships</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/mindset-resilience/">Mindset &amp; Resilience</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/ownership-entrepreneurship/">Ownership &amp; Entrepreneurship</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-h2">Stuck somewhere in the Middle?</h2>
+  <p class="cta-sub">Strategy is easier with someone who has seen this stretch before. Let's talk about where your business is headed.</p>
+  <a class="btn-cta-primary" href="#">Start the Conversation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo-text">Synnovatia</div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>
