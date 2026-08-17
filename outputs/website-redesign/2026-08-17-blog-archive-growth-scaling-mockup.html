@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synnovatia — Growth &amp; Scaling Archive</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  :root { --navy:#0D1F4E; --navy-mid:#1A3A7A; --gold:#B29200; --gold-lt:#F5C842;
+    --teal:#0F6E56; --teal-lt:#5DCAA5; --warm-white:#F7F6F2; --body-text:#444441;
+    --neut-gray:#EAEAEA; --lt-navy:#E8ECF5; --lt-gold:#FDF3CC; --white:#FFFFFF;  }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Barlow',sans-serif; font-optical-sizing:auto; background:var(--warm-white);
+    color:var(--body-text); font-size:16px; line-height:1.7; padding-top:72px; }
+  a { color:inherit; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:var(--warm-white);
+    border-bottom:3px solid var(--navy); display:flex; align-items:center; justify-content:space-between;
+    padding:0 48px; height:72px; }
+  .nav-logo img { height:30px; width:auto; display:block; }
+  .nav-links { display:flex; gap:36px; list-style:none; align-items:center; }
+  .nav-links a { font-size:12px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--body-text); text-decoration:none; transition:color .2s; }
+  .nav-links a:hover { color:var(--navy); }
+  .nav-links a.active { color:var(--navy); border-bottom:2px solid var(--gold); padding-bottom:2px; }
+  .nav-links > li { position:relative; }
+  .nav-links > li.has-dropdown > a { display:inline-flex; align-items:center; gap:6px; line-height:1; }
+  .nav-links > li.has-dropdown { display:flex; align-items:center; height:72px; }
+  .nav-links > li.has-dropdown > a::after { content:""; width:6px; height:6px;
+    border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor;
+    transform:rotate(45deg) translateY(-2px); transition:transform .2s; }
+  .nav-dropdown { position:absolute; top:100%; left:50%; transform:translateX(-50%); min-width:220px;
+    background:var(--white); border-top:3px solid var(--gold); box-shadow:0 14px 32px rgba(13,31,78,0.14);
+    list-style:none; padding:10px 0; opacity:0; visibility:hidden; translate:0 8px;
+    transition:opacity .18s ease, translate .18s ease, visibility .18s; }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown { opacity:1; visibility:visible; translate:0 0; }
+  .nav-dropdown li a { display:block; padding:11px 22px; font-size:11px; letter-spacing:0.08em; }
+  .nav-dropdown li a:hover { background:var(--warm-white); color:var(--navy); }
+  .nav-cta { font-size:12px; font-weight:700; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--white); text-decoration:none; background:var(--teal); padding:10px 24px;
+    border-radius:10px; transition:background .2s; }
+  .nav-cta:hover { background:var(--navy); }
+  .section-inner { max-width:1200px; margin:0 auto; }
+  .arch-header { background:var(--navy); padding:60px 48px 56px; }
+  .arch-inner { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between;
+    align-items:flex-end; gap:48px; flex-wrap:wrap; }
+  .arch-headtext { max-width:600px; }
+  .breadcrumb { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600;
+    letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:18px; }
+  .breadcrumb a { color:var(--gold-lt); text-decoration:none; }
+  .breadcrumb a:hover { color:var(--white); }
+  .breadcrumb .sep { margin:0 10px; color:rgba(255,255,255,0.3); }
+  .arch-h1 { font-family:'Fraunces',serif; font-size:clamp(32px,4vw,50px); font-weight:700;
+    line-height:1.08; letter-spacing:-0.01em; color:var(--white); margin-bottom:16px; }
+  .arch-desc { font-size:16px; font-weight:300; line-height:1.75; color:rgba(255,255,255,0.78); }
+  .topic-search-label { font-family:'Barlow Condensed',sans-serif; font-size:12px; font-weight:600;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:12px; }
+  .topic-search { display:flex; align-items:center; gap:11px; border-bottom:1.5px solid rgba(255,255,255,0.4);
+    padding-bottom:8px; min-width:272px; }
+  .topic-search .s-ico { width:17px; height:17px; color:var(--gold-lt); flex-shrink:0; display:block; }
+  .topic-search input { flex:1; border:none; background:transparent; outline:none; font-family:inherit;
+    font-size:14.5px; color:var(--white); padding:0; }
+  .topic-search input::placeholder { color:rgba(255,255,255,0.5); }
+  .arch-body { max-width:1200px; margin:0 auto; padding:56px 48px 84px; }
+  .arch-count { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }
+  .post-row { display:grid; grid-template-columns:200px 1fr; gap:30px; padding:32px 0;
+    border-top:1px solid rgba(13,31,78,0.12); align-items:start; }
+  .post-row:first-of-type { border-top:none; padding-top:6px; }
+  .post-thumb { width:200px; height:132px; overflow:hidden; background:var(--lt-navy); }
+  .post-thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .post-thumb.ph { display:flex; align-items:center; justify-content:center; }
+  .post-thumb.ph span { font-family:'Fraunces',serif; font-size:34px; color:rgba(13,31,78,0.2); }
+  .post-row-title { font-family:'Fraunces',serif; font-size:22px; font-weight:700; line-height:1.28;
+    color:var(--navy); margin-bottom:10px; }
+  .post-row-title a { text-decoration:none; transition:color .2s; }
+  .post-row-title a:hover { color:var(--gold); }
+  .post-row-excerpt { font-size:15px; font-weight:300; line-height:1.7; color:var(--body-text);
+    margin-bottom:14px; max-width:600px; }
+  .read-link { font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:600;
+    letter-spacing:0.04em; color:var(--gold); text-decoration:none; transition:color .2s; }
+  .read-link:hover { color:var(--navy); }
+  .empty-more { margin-top:30px; padding-top:28px; border-top:1px solid rgba(13,31,78,0.12); }
+  .empty-more p { font-family:'Fraunces',serif; font-style:italic; font-size:18px; color:var(--navy); margin-bottom:8px; }
+  .pager { display:flex; align-items:center; justify-content:space-between; margin-top:48px;
+    padding-top:30px; border-top:1px solid rgba(13,31,78,0.18); }
+  .pager-btns { display:flex; gap:12px; }
+  .pager-btn { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600;
+    letter-spacing:0.06em; text-transform:uppercase; text-decoration:none; padding:11px 24px;
+    border-radius:10px; border:2px solid var(--navy); color:var(--navy); transition:all .2s; }
+  .pager-btn:hover { background:var(--navy); color:var(--white); }
+  .pager-btn.disabled { opacity:0.28; pointer-events:none; }
+  .pager-all { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600;
+    letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); text-decoration:none; }
+  .pager-all:hover { color:var(--navy); }
+  .topics { background:var(--navy); padding:66px 48px; }
+  .topics .section-eyebrow { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:16px; }
+  .topics-row { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 30px; }
+  .topics-row + .topics-row { margin-top:16px; }
+  .topic { font-family:'Fraunces',serif; font-weight:400; font-size:clamp(20px,2.4vw,29px);
+    color:var(--white); text-decoration:none; transition:color .2s; }
+  .topic:hover { color:var(--gold-lt); }
+  .topic.is-active { color:var(--gold-lt); font-style:italic; }
+  .topic-dot { color:var(--gold); font-size:18px; align-self:center; }
+  footer.site-footer { background:#080F1F; padding:40px 48px; display:flex;
+    justify-content:space-between; align-items:center; }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { font-size:12px; color:rgba(255,255,255,0.3); }
+  .mockup-banner { background:var(--navy-mid); color:rgba(255,255,255,0.55); text-align:center;
+    padding:9px; font-size:11px; font-family:monospace; letter-spacing:0.06em; }
+  @media (max-width:880px) {
+    .post-row { grid-template-columns:1fr; }
+    .post-thumb { width:100%; height:200px; }
+    .topic-search { min-width:0; width:100%; }
+    .nav-links { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="mockup-banner">&#128193; SYNNOVATIA &middot; Topic Archive &middot; Growth &amp; Scaling &middot; search-this-topic + two-line band &middot; reconciled to current brand Aug 17, 2026</div>
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="assets/synnovatia-logo-nav.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+        <li><a href="#">Mastermind for the Messy Middle</a></li>
+        <li><a href="#">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="active" aria-current="page">Perspective</a></li>
+  </ul>
+  <a href="/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+</nav>
+<header class="arch-header">
+  <div class="arch-inner">
+    <div class="arch-headtext">
+      <div class="breadcrumb"><a href="#">Notes from the Messy Middle</a><span class="sep">/</span>Growth &amp; Scaling</div>
+      <h1 class="arch-h1">Growth &amp; Scaling</h1>
+      <p class="arch-desc">What it takes to grow past the plateau &mdash; building the structure, capacity, and clarity to scale without breaking what works.</p>
+    </div>
+    <div class="topic-search-wrap">
+      <div class="topic-search-label">Search this topic</div>
+      <div class="topic-search">
+        <svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="Search Growth & Scaling" aria-label="Search within Growth & Scaling">
+      </div>
+    </div>
+  </div>
+</header>
+<section class="arch-body">
+  <div class="arch-count">3 Articles</div>
+  <article class="post-row">
+    <div class="post-thumb"><img src="https://www.synnovatia.com/wp-content/uploads/2022/08/daniel-gonzalez-KeiUIl9Lzo4-unsplash-1-300x208.jpeg" alt=""></div>
+    <div>
+      <h2 class="post-row-title"><a href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/">What No One Tells an Entrepreneur About Breaking Through a Business Plateau</a></h2>
+      <p class="post-row-excerpt">Entrepreneurship is fun and exciting &mdash; until it isn't. A look at why the know-how that built the business often isn't what takes it to the next level.</p>
+      <a class="read-link" href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/">Read the full story</a>
+    </div>
+  </article>
+  <article class="post-row">
+    <div class="post-thumb"><img src="https://www.synnovatia.com/wp-content/uploads/2020/06/Magnifing-glass-and-documents-with-analytics-data-lying-on-table-300x200.jpeg" alt=""></div>
+    <div>
+      <h2 class="post-row-title"><a href="https://www.synnovatia.com/business-coaching-year-end-assessment-annual-business-planning/">Unlock Business Growth Through Annual Strategic Planning</a></h2>
+      <p class="post-row-excerpt">Maximize growth by planning ahead. A clear-eyed year-end review sets the tone for the year to come.</p>
+      <a class="read-link" href="https://www.synnovatia.com/business-coaching-year-end-assessment-annual-business-planning/">Read the full story</a>
+    </div>
+  </article>
+  <article class="post-row">
+    <div class="post-thumb ph"><span>S</span></div>
+    <div>
+      <h2 class="post-row-title"><a href="https://www.synnovatia.com/entrepreneurs-balancing-uncertainty-and-complexity/">Entrepreneurs: Balancing Uncertainty and Complexity</a></h2>
+      <p class="post-row-excerpt">Growth doesn't simplify a business &mdash; it complicates it. How to hold steady when uncertainty and complexity rise together.</p>
+      <a class="read-link" href="https://www.synnovatia.com/entrepreneurs-balancing-uncertainty-and-complexity/">Read the full story</a>
+    </div>
+  </article>
+  <div class="pager">
+    <div class="pager-btns">
+      <a class="pager-btn disabled" href="#">Previous</a>
+      <a class="pager-btn disabled" href="#">Next</a>
+    </div>
+    <a class="pager-all" href="https://synnovatia.com/business-coaching-blog/all/">All Posts</a>
+  </div>
+</section>
+<section class="topics">
+  <div class="section-inner">
+    <div class="section-eyebrow">Browse Other Topics</div>
+    <div class="topics-row">
+      <a class="topic" href="/topic/strategy-planning/">Strategy &amp; Planning</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic is-active" href="/topic/growth-scaling/">Growth &amp; Scaling</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/sales-marketing/">Sales &amp; Marketing</a>
+    </div>
+    <div class="topics-row">
+      <a class="topic" href="/topic/people-partnerships/">People &amp; Partnerships</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/mindset-resilience/">Mindset &amp; Resilience</a>
+      <span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/ownership-entrepreneurship/">Ownership &amp; Entrepreneurship</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-logo">
+    <img src="assets/synnovatia-logo-footer.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com</div>
+</footer>
+</body>
+</html>
