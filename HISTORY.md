@@ -8,6 +8,23 @@
 
 ---
 
+## 2026-08-17 (continued, part 4)
+
+### Blog Front Page Deployed to Staging via Option B (Manual Paste)
+- DreamHost support confirmed the staging basic-auth wall cannot be removed, ruling out automated browser deploy entirely. Proceeded with "Option B": Claude prepares ready-to-paste HTML, Jackie builds the page herself in her own logged-in WordPress admin, reporting back screenshots after each attempt.
+- Real snag on the first try: Jackie's first paste showed only plain page text with no styling, images, or layout at all. Root cause was a file-opening issue, not a paste issue — double-clicking the file opened it in a browser and she'd copied the *rendered page's visible text* rather than the underlying HTML source; a follow-up attempt via TextEdit hit the same problem since TextEdit renders `.html` files as formatted text by default rather than showing code. Resolved by pasting the raw HTML directly in chat for her to copy from there, sidestepping the file-opening question entirely — this became the standard method for the rest of the session.
+- Once the real code was in, found and fixed a series of real theme-conflict bugs one at a time by iterating against live screenshots, each with an `!important`-scoped fix so it can't lose to the theme's own CSS regardless of the theme's selector specificity:
+  - Theme's own header/nav/sidebar template elements still rendered around the mockup — added a `display:none !important` block targeting `#masthead, #site-navigation, .site-header, div.site-footer, footer.site-info, .entry-header, .featured-image.page-header-image, .widget-area.sidebar`, plus a full-bleed-width override on the theme's content container.
+  - Theme's own link color overrode the mockup's white/navy/gold link colors on headings-with-links and topic tags — added a dedicated `!important` link-color-override block per element.
+  - Theme's own heading color overrode the mockup's white CTA/cover headings — same pattern, a `!important` heading-color-override block.
+  - The mockup's fixed-position nav (meant to stick to the top on scroll) didn't render at all inside the theme's page wrapper — likely a `transform` or similar on an ancestor breaking `position:fixed`. Fixed by switching the nav to normal in-flow positioning (`position:relative`) instead of fighting the theme, since scroll-stickiness isn't essential for a design preview.
+  - Nav/footer logo images were broken (no logo file uploaded to WP media library yet) — swapped both for a styled text wordmark ("SYNNOVATIA") as a placeholder, noted as swappable for the real logo image once uploaded.
+  - The "04" figure in the numbered post list was wrapping its own two digits onto separate lines — the fixed-width number box was a few pixels too narrow for this specific two-digit combination in the actual rendered font; widened the box and added `white-space:nowrap`.
+  - The "Browse by Topic" links rendered left-aligned instead of centered — added `justify-content:center`/`text-align:center` to the section.
+  - The horizontal divider lines between the two-column "Latest" post list didn't align between columns, since each column was an independent stack whose height depended on that column's own content length. Restructured from two nested flex columns into a true CSS Grid (`grid-auto-flow:column`, explicit 2x2 rows) so row heights are shared across both columns and the dividers lock together regardless of title length — required flattening the HTML (removing the `.latest-col` wrapper divs) and switching the alternating-column CSS from `:first-child`/`+` selectors to `:nth-child`.
+- Final verified, working file saved to `outputs/website-redesign/deploy-ready/01-front-page-DEPLOY.html` — this is the exact content now live on staging (not just a mockup source file; includes every fix above baked in as `!important` overrides so it doesn't depend on the theme staying the same).
+- This recipe (the full override CSS block, the raw-code-in-chat paste method, the general shape of what breaks and why) should transfer directly to the other 7 blog pages — expect faster iteration on those since the theme-conflict pattern is now known rather than being discovered fresh each time.
+
 ## 2026-08-17 (continued, part 3)
 
 ### LinkedIn Cadence Performance Tracking Set Up

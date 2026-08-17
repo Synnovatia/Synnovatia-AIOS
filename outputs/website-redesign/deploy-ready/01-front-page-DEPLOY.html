@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synnovatia: Blog Mockup (Magazine)</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:#0D1F4E; --navy-mid:#1A3A7A; --gold:#B29200; --gold-lt:#F5C842;
+    --teal:#0F6E56; --teal-lt:#5DCAA5; --warm-white:#F7F6F2; --body-text:#444441;
+    --neut-gray:#EAEAEA; --lt-navy:#E8ECF5; --lt-gold:#FDF3CC; --white:#FFFFFF;
+    
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family:'Barlow',sans-serif; font-optical-sizing:auto;
+    background:var(--warm-white); color:var(--body-text);
+    font-size:16px; line-height:1.7;
+  }
+  a { color: inherit; }
+
+  /* ── NAV (shared) ── */
+  nav { position:relative; z-index:100; background:var(--warm-white);
+    border-bottom:3px solid var(--navy); display:flex; align-items:center;
+    justify-content:space-between; padding:0 48px; height:72px; }
+  .nav-logo img { height:30px; width:auto; display:block; }
+  .nav-links { display:flex; gap:36px; list-style:none; align-items:center; }
+  .nav-links a { font-size:12px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--body-text); text-decoration:none; transition:color .2s; }
+  .nav-links a:hover { color:var(--navy); }
+  .nav-links a.active { color:var(--navy); border-bottom:2px solid var(--gold); padding-bottom:2px; }
+  .nav-links > li { position:relative; }
+  .nav-links > li.has-dropdown > a { display:inline-flex; align-items:center; gap:6px; line-height:1; }
+  .nav-links > li.has-dropdown { display:flex; align-items:center; height:72px; }
+  .nav-links > li.has-dropdown > a::after { content:""; width:6px; height:6px;
+    border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor;
+    transform:rotate(45deg) translateY(-2px); transition:transform .2s; }
+  .nav-dropdown { position:absolute; top:100%; left:50%; transform:translateX(-50%);
+    min-width:220px; background:var(--white); border-top:3px solid var(--gold);
+    box-shadow:0 14px 32px rgba(13,31,78,0.14); list-style:none; padding:10px 0;
+    opacity:0; visibility:hidden; translate:0 8px;
+    transition:opacity .18s ease, translate .18s ease, visibility .18s; }
+  .nav-links > li.has-dropdown:hover .nav-dropdown,
+  .nav-links > li.has-dropdown:focus-within .nav-dropdown { opacity:1; visibility:visible; translate:0 0; }
+  .nav-dropdown li a { display:block; padding:11px 22px; font-size:11px; letter-spacing:0.08em; }
+  .nav-dropdown li a:hover { background:var(--warm-white); color:var(--navy); }
+  .nav-cta { font-size:12px; font-weight:700; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--white); text-decoration:none; background:var(--teal); padding:10px 24px;
+    border-radius:10px; transition:background .2s; }
+  .nav-cta:hover { background:var(--navy); }
+
+  /* shared section frame */
+  .section-inner { max-width:1200px; margin:0 auto; }
+  .section-eyebrow { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }
+
+  /* ── MASTHEAD STRIP ── */
+  .masthead { background:var(--warm-white); padding:46px 48px 0; }
+  .masthead-inner { max-width:1200px; margin:0 auto; padding-bottom:30px;
+    border-bottom:1px solid rgba(13,31,78,0.16);
+    display:flex; align-items:flex-end; justify-content:space-between; gap:40px; flex-wrap:wrap; }
+  .masthead-title { font-family:'Fraunces',serif; font-size:clamp(28px,3.2vw,38px); font-weight:700;
+    line-height:1.05; letter-spacing:-0.01em; color:var(--navy); margin-bottom:14px; }
+  .masthead-title em { font-style:italic; color:var(--navy); }
+  .masthead-tag { font-size:14px; font-weight:300; color:var(--body-text); max-width:420px;
+    line-height:1.6; text-align:left; }
+  .masthead-search { display:flex; align-items:center; gap:11px; align-self:flex-end;
+    border-bottom:1.5px solid var(--navy); padding-bottom:7px; min-width:232px; flex:0 0 auto; }
+  .masthead-search .s-ico { width:17px; height:17px; flex-shrink:0; color:var(--navy); display:block; }
+  .masthead-search input { flex:1; border:none; background:transparent; outline:none;
+    font-family:inherit; font-size:14.5px; color:var(--body-text); padding:0; }
+  .masthead-search input::placeholder { color:rgba(68,68,65,0.5); }
+
+  /* ── COVER STORY (45 / 55, echoes the homepage hero) ── */
+  .cover { display:grid; grid-template-columns:48fr 52fr; min-height:520px; max-height:600px;
+    background:var(--warm-white); }
+  .cover-left { position:relative; overflow:hidden; background:var(--lt-navy);
+    border-right:1px solid var(--neut-gray); }
+  .cover-left img { width:100%; height:100%; object-fit:cover; display:block; }
+  .cover-right { background:var(--navy); display:flex; flex-direction:column;
+    justify-content:center; padding:64px 72px 64px 64px; }
+  .cover-kicker { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:22px;
+    display:flex; align-items:center; gap:14px; }
+  .cover-kicker span { font-weight:300; color:rgba(255,255,255,0.45); letter-spacing:0.06em; }
+  .cover-title { font-family:'Fraunces',serif; font-size:clamp(30px,3.4vw,46px); font-weight:700;
+    line-height:1.12; letter-spacing:-0.01em; color:var(--white); margin-bottom:22px; }
+  .cover-title a { text-decoration:none; transition:color .2s; }
+  .cover-title a:hover { color:var(--gold-lt); }
+  .cover-excerpt { font-size:16px; font-weight:300; line-height:1.85; color:rgba(255,255,255,0.8);
+    max-width:520px; margin-bottom:40px; }
+  .btn-primary { display:inline-block; align-self:flex-start; background:var(--teal); color:var(--white);
+    font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.08em;
+    text-transform:uppercase; text-decoration:none; padding:14px 34px; border:2px solid var(--teal);
+    border-radius:10px; transition:all .2s; }
+  .btn-primary:hover { background:transparent; color:var(--teal-lt); border-color:var(--teal-lt); }
+
+  /* ── LATEST (numbered editorial spread) ── */
+  .latest { background:var(--white); padding:88px 48px; }
+  .latest-head { display:flex; align-items:flex-end; justify-content:space-between;
+    margin-bottom:40px; flex-wrap:wrap; gap:20px; }
+  .latest-h2 { font-family:'Fraunces',serif; font-size:30px; font-weight:700; color:var(--navy);
+    line-height:1.2; letter-spacing:-0.01em; }
+  .latest-all { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600;
+    letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); text-decoration:none; }
+  .latest-all:hover { color:var(--navy); }
+  .latest-cols { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:auto auto;
+    grid-auto-flow:column; column-gap:0; }
+  .note:nth-child(1), .note:nth-child(2) { padding-right:56px; }
+  .note:nth-child(3), .note:nth-child(4) { border-left:1px solid rgba(13,31,78,0.14); padding-left:56px; }
+  .note { display:grid; grid-template-columns:auto 1fr; gap:24px; align-items:start;
+    padding:30px 0; border-bottom:1px solid rgba(13,31,78,0.12); }
+  .note:nth-child(2), .note:nth-child(4) { border-bottom:none; }
+  .note-num { font-family:'Fraunces',serif; font-size:40px; font-weight:700; line-height:1;
+    color:rgba(13,31,78,0.13); width:54px; }
+  .note-title { font-family:'Fraunces',serif; font-size:21px; font-weight:700; line-height:1.3;
+    color:var(--navy); margin-bottom:8px; }
+  .note-title a { text-decoration:none; transition:color .2s; }
+  .note-title a:hover { color:var(--gold); }
+  .note-excerpt { font-size:14.5px; font-weight:300; line-height:1.65; color:var(--body-text); }
+
+  /* ── BROWSE BY TOPIC ── */
+  .topics { background:var(--navy); padding:72px 48px; text-align:center; }
+  .topics .section-eyebrow { color:var(--gold-lt); }
+  .topics-row { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:center; gap:10px 30px; }
+  .topics-row + .topics-row { margin-top:16px; }
+  .topic { font-family:'Fraunces',serif; font-weight:400; font-size:clamp(20px,2.4vw,29px);
+    color:var(--white); text-decoration:none; transition:color .2s; }
+  .topic:hover { color:var(--gold-lt); }
+  .topic-dot { color:var(--gold); font-size:18px; align-self:center; }
+
+  /* ── CTA (shared) ── */
+  .cta-section { background:#091735; text-align:center; padding:104px 48px; }
+  .cta-h2 { font-family:'Fraunces',serif; font-size:clamp(28px,3.2vw,44px); font-weight:700;
+    color:var(--white); line-height:1.2; max-width:640px; margin:0 auto 18px; letter-spacing:-0.01em; }
+  .cta-sub { font-size:17px; font-weight:300; color:rgba(255,255,255,0.72); line-height:1.75;
+    max-width:480px; margin:0 auto 48px; }
+  .btn-cta-primary { display:inline-block; background:var(--teal); color:var(--white);
+    font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.08em;
+    text-transform:uppercase; text-decoration:none; padding:16px 44px; border:2px solid var(--teal);
+    border-radius:10px; transition:all .2s; }
+  .btn-cta-primary:hover { background:transparent; color:var(--teal-lt); border-color:var(--teal-lt); }
+
+  /* ── FOOTER (shared) ── */
+  footer.site-footer { background:#080F1F; padding:40px 48px; display:flex;
+    justify-content:space-between; align-items:center; }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
+  .footer-copy { font-size:12px; color:rgba(255,255,255,0.3); }
+  .footer-subscribe a { font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:600;
+    letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.55);
+    text-decoration:none; transition:color 0.2s; }
+  .footer-subscribe a:hover { color:var(--gold-lt); }
+
+  .mockup-banner { background:var(--navy-mid); color:rgba(255,255,255,0.55); text-align:center;
+    padding:9px; font-size:11px; font-family:monospace; letter-spacing:0.06em; }
+
+  @media (max-width:880px) {
+    .cover { grid-template-columns:1fr; max-height:none; }
+    .cover-left { height:300px; }
+    .cover-right { padding:48px 40px; }
+    .latest-cols { grid-template-columns:1fr; grid-auto-flow:row; }
+    .note:nth-child(1), .note:nth-child(2), .note:nth-child(3) { padding-right:0; }
+    .note:nth-child(3), .note:nth-child(4) { border-left:none; padding-left:0;
+      border-top:1px solid rgba(13,31,78,0.14); margin-top:8px; }
+    .note:nth-child(2) { border-bottom:1px solid rgba(13,31,78,0.12); }
+    .masthead-tag { text-align:left; }
+    .nav-links { display:none; }
+  }
+
+  /* ===== WORDPRESS THEME OVERRIDES — required, do not remove ===== */
+  #masthead, #site-navigation, .site-header,
+  div.site-footer, footer.site-info,
+  .entry-header, .featured-image.page-header-image,
+  .widget-area.sidebar {
+    display: none !important;
+  }
+  body.page #content,
+  body.page .site-content,
+  body.page #primary,
+  body.page .content-area,
+  body.page .entry-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ===== BUTTON VISIBILITY FIX — required, do not remove ===== */
+  .btn-primary, .btn-cta-primary, .nav-cta {
+    color: #FFFFFF !important;
+  }
+
+  /* ===== LINK COLOR OVERRIDES — required, do not remove ===== */
+  /* Your theme has its own link color that overrides ours unless forced */
+  .nav-links a { color: var(--body-text) !important; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy) !important; }
+  .nav-dropdown li a { color: var(--body-text) !important; }
+  .nav-dropdown li a:hover { color: var(--navy) !important; }
+  .cover-title a { color: var(--white) !important; }
+  .cover-title a:hover { color: var(--gold-lt) !important; }
+  .note-title a { color: var(--navy) !important; }
+  .note-title a:hover { color: var(--gold) !important; }
+  .latest-all { color: var(--gold) !important; }
+  .latest-all:hover { color: var(--navy) !important; }
+  .topic { color: var(--white) !important; }
+  .topic:hover { color: var(--gold-lt) !important; }
+
+  /* ===== HEADING COLOR OVERRIDES — required, do not remove ===== */
+  /* Your theme has its own heading color that overrides ours unless forced */
+  .masthead-title { color: var(--navy) !important; }
+  .cover-title { color: var(--white) !important; }
+  .latest-h2 { color: var(--navy) !important; }
+  .note-title { color: var(--navy) !important; }
+  .cta-h2 { color: var(--white) !important; }
+
+  /* ===== TEXT LOGO (no image file uploaded to WordPress yet) ===== */
+  .nav-logo-text {
+    font-family:'Barlow Condensed',sans-serif !important; font-weight:700 !important;
+    font-size:20px !important; letter-spacing:0.06em !important; text-transform:uppercase !important;
+    color: var(--navy) !important; text-decoration:none !important;
+  }
+  .footer-logo-text {
+    font-family:'Barlow Condensed',sans-serif !important; font-weight:700 !important;
+    font-size:18px !important; letter-spacing:0.06em !important; text-transform:uppercase !important;
+    color: rgba(255,255,255,0.92) !important;
+  }
+
+  /* ===== LAYOUT HARDENING — required, do not remove ===== */
+  /* Forces our grid/flex layouts to hold even if the theme resets div display */
+  .note { display: grid !important; grid-template-columns: auto 1fr !important; }
+  .note-num { width: 64px !important; white-space: nowrap !important; }
+  .latest-cols { display: grid !important; grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important; grid-auto-flow: column !important; }
+  .note:nth-child(1), .note:nth-child(2) { padding-right: 56px !important; }
+  .note:nth-child(3), .note:nth-child(4) { border-left: 1px solid rgba(13,31,78,0.14) !important; padding-left: 56px !important; }
+  .note:nth-child(2), .note:nth-child(4) { border-bottom: none !important; }
+  .cover { display: grid !important; }
+  .topics-row { display: flex !important; justify-content: center !important; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">&#128240; SYNNOVATIA &middot; Blog Mockup B &middot; Magazine front page &middot; Fraunces + Barlow &middot; reconciled to current brand Aug 17, 2026</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo-text">Synnovatia</a>
+  <ul class="nav-links">
+    <li><a href="#">About</a></li>
+    <li><a href="#">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="#">Work With Me</a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Strategic Coaching</a></li>
+        <li><a href="#">Solutions on the Fly</a></li>
+        <li><a href="#">Mastermind for the Messy Middle</a></li>
+        <li><a href="#">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="active" aria-current="page">Perspective</a></li>
+  </ul>
+  <a href="/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+</nav>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-identity">
+      <h1 class="masthead-title">Notes From the <em>Messy Middle</em></h1>
+      <p class="masthead-tag">Strategic thinking for Stage II owners.<br>The growth phase no one warns you about.</p>
+    </div>
+    <div class="masthead-search">
+      <svg class="s-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" placeholder="Search all posts" aria-label="Search all posts">
+    </div>
+  </div>
+</div>
+
+<!-- COVER STORY -->
+<section class="cover">
+  <div class="cover-left">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2022/08/daniel-gonzalez-KeiUIl9Lzo4-unsplash-1-300x208.jpeg" alt="Entrepreneur at a business plateau">
+  </div>
+  <div class="cover-right">
+    <div class="cover-kicker">Cover Story <span>Updated June 2026</span></div>
+    <h2 class="cover-title">
+      <a href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/">What No One Tells an Entrepreneur About Breaking Through a Business Plateau</a>
+    </h2>
+    <p class="cover-excerpt">Entrepreneurship is fun and exciting, until it isn't. There comes a point when the skills, industry knowledge, and personal know-how that built the business are no longer the right components to take it to the next level.</p>
+    <a class="btn-primary" href="https://www.synnovatia.com/entrepreneur-breaking-through-a-business-plateau/">Read the Cover Story</a>
+  </div>
+</section>
+
+<!-- LATEST -->
+<section class="latest">
+  <div class="section-inner">
+    <div class="latest-head">
+      <h2 class="latest-h2">The Latest</h2>
+      <a class="latest-all" href="https://synnovatia.com/business-coaching-blog/all/">All Posts &rarr;</a>
+    </div>
+    <div class="latest-cols">
+
+      <article class="note">
+        <div class="note-num">01</div>
+        <div>
+          <h3 class="note-title"><a href="https://www.synnovatia.com/business-coaching-bid-72474-nine-steps-to-building-trust-online-offline-for-your-small-business/">Nine Steps to Building Trust Online &amp; Offline for Your Small Business</a></h3>
+          <p class="note-excerpt">Trust was already eroding when this was first written in 2018, and the numbers have only grown more striking since.</p>
+        </div>
+      </article>
+      <article class="note">
+        <div class="note-num">02</div>
+        <div>
+          <h3 class="note-title"><a href="https://www.synnovatia.com/business-coaching-got-strategic-skills/">Are You a Master Strategist? Test Your Strategic Skills With This Quiz</a></h3>
+          <p class="note-excerpt">Where do your strategic skills stand? A quick gauge of how you navigate complex problems and reach long-term goals.</p>
+        </div>
+      </article>
+      <article class="note">
+        <div class="note-num">03</div>
+        <div>
+          <h3 class="note-title"><a href="https://www.synnovatia.com/navigating-the-distinct-challenges-women-in-business/">Navigating the Distinct Challenges of Women in Business</a></h3>
+          <p class="note-excerpt">Women-owned firms are reshaping the economy through remarkable growth alongside a distinct set of challenges.</p>
+        </div>
+      </article>
+      <article class="note">
+        <div class="note-num">04</div>
+        <div>
+          <h3 class="note-title"><a href="https://www.synnovatia.com/business-coaching-year-end-assessment-annual-business-planning/">Unlock Business Growth Through Annual Strategic Planning</a></h3>
+          <p class="note-excerpt">Maximize growth by planning ahead. A clear-eyed year-end review sets the tone for the year to come.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- BROWSE BY TOPIC -->
+<section class="topics">
+  <div class="section-inner">
+    <div class="section-eyebrow">Browse by Topic</div>
+    <div class="topics-row">
+      <a class="topic" href="/topic/strategy-planning/">Strategy &amp; Planning</a><span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/growth-scaling/">Growth &amp; Scaling</a><span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/sales-marketing/">Sales &amp; Marketing</a>
+    </div>
+    <div class="topics-row">
+      <a class="topic" href="/topic/people-partnerships/">People &amp; Partnerships</a><span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/mindset-resilience/">Mindset &amp; Resilience</a><span class="topic-dot">&bull;</span>
+      <a class="topic" href="/topic/ownership-entrepreneurship/">Ownership &amp; Entrepreneurship</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-h2">Stuck somewhere in the Middle?</h2>
+  <p class="cta-sub">Strategy is easier with someone who has seen this stretch before. Let's talk about where your business is headed.</p>
+  <a class="btn-cta-primary" href="#">Start the Conversation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-logo-text">Synnovatia</div>
+  <div class="footer-subscribe"><a href="#">Get New Notes in Your Inbox &rarr;</a></div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com</div>
+</footer>
+
+</body>
+</html>
