@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-18 (continued)
+
+### Dynamic Pagination Build — Phase 1 Built, Published, and Finished
+- Continued from the same-day scoping session: Jackie confirmed Cover Story should be fully automatic (cleaned up a leftover "flag now" note in the plan that still posed it as an open question), then asked to start Phase 1 — the reusable post-card component.
+- Before building, checked the actual live deploy-ready blog files against the plan's premise that "the same card" appears on the all-posts feed, the six topic archives, and the front page's Latest section — found the three aren't identical: the feed page shows a topic tag, the archives deliberately omit it (redundant on a page already filtered to one topic), and the front page's Latest section is a separate numbered-notes design with no thumbnail, tag, or link at all. Flagged this to Jackie before building rather than guessing; she confirmed one reusable card (tag conditional) used in two places, with the front page's Latest list built separately later in Phase 3.
+- Built and published a new Elementor Loop Item template, "Blog Post Card," in Theme Builder → Loop Items on production: a fixed-width Featured Image column beside a stacked column of Post Info (topic tag), Post Title, Post Excerpt, and a "Read the full story →" link.
+- The build itself was the hard part: Elementor's canvas click-to-add reliably defaulted to creating a brand-new root section instead of targeting the specific nested column, no matter how the target was pre-selected (tried Navigator-select, precise DOM-measured coordinates, fresh reloads — all inconsistent). Worked around it with a Copy/Paste-based technique that turned out fully reliable: add each widget wherever it lands, right-click → Copy, right-click the real target → Paste, then delete the stray original. Used this same pattern about a dozen times to assemble and order the final card.
+- Two settings needed Elementor's Select2-style searchable dropdowns (the Post Info taxonomy picker and the button's Dynamic Tags link picker) — every automated click on those consistently deselected the widget instead of opening the list, a genuine limitation of synthetic clicks against that specific control rather than a targeting mistake. Documented exact manual steps for both instead of leaving Jackie guessing, and she completed both herself in the live editor: Post Info's taxonomy set to Topics (confirmed rendering real topic terms against a sample post) and the button's link wired to the Post URL dynamic tag (confirmed in the editor panel).
+- Updated `plans/2026-08-18-blog-dynamic-pagination-build.md` throughout to record all of this — what's resolved, what Jackie closed out herself, and the one remaining open item before Phase 2: a color/typography pass to bring the card from Elementor's plain defaults to the site's navy/gold/teal + Fraunces/Barlow system, deferred to Phase 2 since it'll be visible in real context there.
+- Also refreshed `outputs/morning-brief/brief.html` this session: found the 6:15am scheduled run had already published a more complete version (with dark-mode support) to the standing artifact URL than the one this session first drafted, so synced the local file to match the live published version rather than overwriting it with a lesser one.
+
 ## 2026-08-18
 
 ### Dynamic Pagination Template Build — Scoped

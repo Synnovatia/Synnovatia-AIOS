@@ -20,14 +20,24 @@
 
 ## The build, in five phases
 
-**Phase 1 — Build the reusable post-card design once.**
-The same card look (thumbnail, topic tag, title, excerpt, "read more" link) appears in three places: the six topic archives, the front page's "Latest" grid, and the all-posts page. Building it once as a reusable Elementor component and reusing it three times is both less work and guarantees the three places always look identical.
+**Phase 1 — Build the reusable post-card design once. DONE (2026-08-18).**
+Checked the actual deploy-ready files against this before building — the three listing surfaces aren't identical: the all-posts feed shows a topic tag, the six archives deliberately omit it (redundant on a page that's already filtered to one topic), and the front page's "Latest" section is a separate numbered-notes design with no thumbnail, tag, or read-more link at all.
+
+Resolved with Jackie: build **one** reusable Elementor Loop Item template (thumbnail, title, excerpt, "Read the full story" link) with the topic tag as a conditional element — visible on the all-posts feed, hidden on the six archives. Used in two places (archives + all-posts), not three. The front page's "Latest" list stays its own distinct design, built separately in Phase 3, not part of this component.
+
+Built and published as an Elementor Loop Item template named "Blog Post Card" (Theme Builder → Loop Items). Structure: Featured Image in a fixed-width left column; a right column stacking a Post Info element (configured for the Topic taxonomy, author/date/comments removed), Post Title, Post Excerpt, and a "Read the full story →" button-as-link. Confirmed correct in Elementor's own element tree before publishing.
+
+**Two of three follow-up details closed out by Jackie directly (2026-08-18)**, after this session's browser automation couldn't operate Elementor's Select2 dropdowns (kept deselecting the widget instead of opening the list — a genuine automation limitation, not a data problem):
+- Post Info's Taxonomy is now set to Topics — confirmed in the editor canvas, real topic terms rendering (e.g. "Growth & Scaling, Strategy & Planning" on the sample post).
+- The "Read the full story →" button's Link field is now wired to the Post URL dynamic tag — confirmed in the editor panel.
+
+**Still open:** No color/typography styling pass yet — the card currently renders in Elementor's plain defaults, not the site's navy/gold/teal + Fraunces/Barlow system from `context/style-guide.md`. Phase 2 (building the archive template around this card) is a natural point to do that styling pass, since it'll be visible in context there.
 
 **Phase 2 — The six topic archive pages.**
 One Elementor "Archive" template, set to apply to the Topic taxonomy generally (not six separate templates) — it automatically detects which of the six topics it's showing and pulls the right posts, title, and description for each. Needs the six topic description blurbs (already written, sitting in the mockup files) entered into each topic's real WordPress record. Real pagination via WP-PageNavi. Since nothing real currently lives at these URLs, this can be previewed privately and then published directly once it looks right — lower stakes than the next phase.
 
 **Phase 3 — The front page and all-posts page.**
-Built as new draft pages first (not edited in place on the live URL), using the same reusable card design. Front page gets the Cover Story + Latest 4 layout (Cover Story defaults to whatever the single most recent post is — flag now if you'd rather manually pick it instead of it always being the latest). All-posts page becomes a genuine chronological, paginated feed of all 563 posts, 8 per page.
+Built as new draft pages first (not edited in place on the live URL), using the same reusable card design. Front page gets the Cover Story + Latest 4 layout (Cover Story is fully automatic — always whatever post is currently most recent, no manual pinning). All-posts page becomes a genuine chronological, paginated feed of all 563 posts, 8 per page.
 
 **Phase 4 — Review, then go live.**
 You review both new pages as drafts. Once approved, we make the swap at the real `/business-coaching-blog/` and `/business-coaching-blog/all/` URLs — this is the moment the old live blog page gets retired, so it's a deliberate step with your sign-off, not something that happens automatically mid-build.
