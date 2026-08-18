@@ -8,6 +8,15 @@
 
 ---
 
+## 2026-08-18 (continued, part 5)
+
+### Dynamic Pagination Build — Phase 3 Complete (All-Posts Page Built)
+- Built the all-posts feed page draft, completing Phase 3: Masthead (same as the front page), the main feed (a Loop Grid using Phase 1's "Blog Post Card" template — topic tag visible per the original Phase 1 decision — 1 column, 8 items per page, genuinely chronological across all 563 posts, real Numbers + Previous/Next pagination set to Page Reload), and the same Browse by Topic and CTA sections as the front page.
+- Cleared the draft's old leftover content first (a stale hero-image layout with a plain post list) before building fresh, same pattern as the front page draft.
+- Verified the whole page live end-to-end: real most-recent post showing correctly with its topic tags, real pagination numbers rendering (1 through 5+), Browse by Topic and CTA both clean.
+- Found a real but expected limitation while testing the pagination link: clicking page 2 on the still-unpublished draft produces a malformed URL (`?page_id=11672/2/`) because WordPress serves draft previews through query-string URLs, not real permalinks — confirmed by checking the resulting URL directly. The Loop Grid's own pagination configuration is correct and will produce real, crawlable `/page/2/`-style URLs automatically once this page is actually published at Phase 4. Documented this clearly in the plan doc so it isn't mistaken for a build defect later.
+- **Phase 3 is now fully done** — both the front page and all-posts feed are completely built on their draft pages. What's left before Phase 4 (the reviewed go-live swap): Jackie's visual review of both drafts, and the still-deferred color/typography styling pass across all of Phases 1–3's plain-Elementor-defaults elements.
+
 ## 2026-08-18 (continued, part 4)
 
 ### Dynamic Pagination Build — Phase 3 Front Page DONE

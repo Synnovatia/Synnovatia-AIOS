@@ -47,7 +47,7 @@ Built and published as an Elementor Archive template named "Topic Archive" (Them
 - Remaining 3 of 6 topic archive URLs not yet spot-checked live (`/topic/sales-marketing/`, `/topic/people-partnerships/`, `/topic/ownership-entrepreneurship/`), along with confirming `/page/2/` pagination actually works once a topic has more than 8 posts (all six do).
 - The mockup's "Browse Other Topics" cross-navigation band and the per-topic search box weren't built in this pass — not blocking, but worth a decision on whether they're in scope for this template or a later polish pass.
 
-**Phase 3 — The front page and all-posts page. In progress, started 2026-08-18.**
+**Phase 3 — The front page and all-posts page. DONE (both drafts), 2026-08-18.**
 Built as new draft pages first (not edited in place on the live URL), using the same reusable card design. Front page gets the Cover Story + Latest 4 layout (Cover Story is fully automatic — always whatever post is currently most recent, no manual pinning). All-posts page becomes a genuine chronological, paginated feed of all 563 posts, 8 per page.
 
 Two new draft pages created on production: **"Business Coaching Blog — New Design Draft"** (slug `business-coaching-blog-new-design-draft`, cloned from the live front page, nested under it) and **"All Posts — New Design Draft"** (slug `all-posts-new-design-draft`, cloned from the live "All" page) — both start as exact duplicates of the currently-live pages, safe to rebuild without touching production. Confirmed both use the "Elementor Full Width" page template, meaning the site's real theme header/footer wrap the content automatically — no need to rebuild the mockup's nav/footer HTML by hand, unlike the old static-paste deploy method.
@@ -61,7 +61,14 @@ Two new draft pages created on production: **"Business Coaching Blog — New Des
 
 **Real editing-quirk found and worked around this session:** this Elementor version's Text Editor "Code" (raw HTML) textarea does not respond to keyboard Delete/Backspace/Home/Cmd+Up/Cmd+Down at all when driven by browser automation — only mouse-based selection (click, click-drag, double-click, shift-click) and actual character-typing register. Fixing a stray leftover character requires selecting a small range via mouse (verify the exact selected substring first), then typing the corrected replacement text over it — never relying on a bare Delete/Backspace keystroke.
 
-**All-posts page:** cloned as a draft but not yet touched — still contains the old live page's content, not rebuilt. This is the only remaining piece of Phase 3.
+**All-posts page — DONE (draft), 2026-08-18.** All sections built, saved, and verified live on the draft URL:
+- **Masthead:** same H1 + tagline as the front page.
+- **Feed:** a Loop Grid using Phase 1's "Blog Post Card" template (topic tag visible, per the original Phase 1 decision that the tag shows on the all-posts feed but not the six archives), 1 column, 8 items per page, Source: Posts, Order By Date DESC — genuinely chronological across all 563 posts, no taxonomy filter. Pagination set to Numbers + Previous/Next, Load Type Page Reload (same real-URL approach as the topic archives).
+- **Browse by Topic** and **CTA:** identical content to the front page's matching sections (same six topic links, same CTA copy and button).
+
+**Known limitation, not a bug:** clicking a pagination number while still viewing the page as an unpublished draft produces a malformed preview URL (`?page_id=11672/2/` instead of a real path), because WordPress serves drafts through query-string preview URLs, not pretty permalinks — the Loop Grid's own pagination settings (Page Reload, Numbers + Previous/Next) are correct and will generate real, crawlable `/page/2/`-style URLs automatically once this page is actually published at Phase 4. Confirmed by inspecting the resulting URL directly rather than assuming from the visual (mis-)behavior.
+
+Phase 3 (front page + all-posts feed) is now fully built on both draft pages. What's left before Phase 4 (the reviewed go-live swap): a final visual review by Jackie of both drafts, and the color/typography styling pass across all of Phase 1–3's plain-defaults elements (still deferred, not blocking).
 
 **New automation quirks found this session (beyond Phase 1/2's Select2 and stuck-click issues):**
 - Elementor's widget drag-and-drop only registers when the left panel is actively showing the **Elements/Widgets browser** — if a widget or section is selected (panel shows its settings instead), dragging silently fails. Click blank canvas first to force the panel back to Elements before every drag.
