@@ -47,8 +47,25 @@ Built and published as an Elementor Archive template named "Topic Archive" (Them
 - Remaining 3 of 6 topic archive URLs not yet spot-checked live (`/topic/sales-marketing/`, `/topic/people-partnerships/`, `/topic/ownership-entrepreneurship/`), along with confirming `/page/2/` pagination actually works once a topic has more than 8 posts (all six do).
 - The mockup's "Browse Other Topics" cross-navigation band and the per-topic search box weren't built in this pass — not blocking, but worth a decision on whether they're in scope for this template or a later polish pass.
 
-**Phase 3 — The front page and all-posts page.**
+**Phase 3 — The front page and all-posts page. In progress, started 2026-08-18.**
 Built as new draft pages first (not edited in place on the live URL), using the same reusable card design. Front page gets the Cover Story + Latest 4 layout (Cover Story is fully automatic — always whatever post is currently most recent, no manual pinning). All-posts page becomes a genuine chronological, paginated feed of all 563 posts, 8 per page.
+
+Two new draft pages created on production: **"Business Coaching Blog — New Design Draft"** (slug `business-coaching-blog-new-design-draft`, cloned from the live front page, nested under it) and **"All Posts — New Design Draft"** (slug `all-posts-new-design-draft`, cloned from the live "All" page) — both start as exact duplicates of the currently-live pages, safe to rebuild without touching production. Confirmed both use the "Elementor Full Width" page template, meaning the site's real theme header/footer wrap the content automatically — no need to rebuild the mockup's nav/footer HTML by hand, unlike the old static-paste deploy method.
+
+**Front page — Masthead and Cover Story built and saved (draft) 2026-08-18:**
+- Masthead: an H1 ("Notes From the Messy Middle") and a tagline line, plain widgets, no styling pass yet.
+- Cover Story: a new Elementor Loop Item template, **"Cover Story Card"** (Theme Builder → Loop Items, published) — Featured Image column + a stacked "Cover Story" kicker / dynamic Post Title / dynamic Post Excerpt / "Read the Cover Story" button (linked via the Post URL dynamic tag) column. Placed on the front page via a Loop Grid widget, template set to Cover Story Card, Columns/Items Per Page both set to 1, Pagination None. Query confirmed Source: Posts, Order By: Date, Order: DESC, Ignore Sticky Posts: Yes — this is what makes the cover story fully automatic (always whatever post is currently most recent, no manual pinning, per the earlier locked-in decision).
+
+**Still open on the front page:** The Latest (4 more-recent posts, numbered-notes design, no image/tag/button per the Phase 1 surface-mismatch finding), Browse by Topic (static links to the six live `/topic/*/` archive URLs), and the CTA band. None built yet.
+
+**All-posts page:** cloned as a draft but not yet touched — still contains the old live page's content, not rebuilt.
+
+**New automation quirks found this session (beyond Phase 1/2's Select2 and stuck-click issues):**
+- Elementor's widget drag-and-drop only registers when the left panel is actively showing the **Elements/Widgets browser** — if a widget or section is selected (panel shows its settings instead), dragging silently fails. Click blank canvas first to force the panel back to Elements before every drag.
+- Dropping a new widget into a column that already has content only registers when dropped **directly on top of the existing widget's rendered text/image**, not in the empty space below it within the same column. Dropping into a truly empty (zero-widget) column works anywhere in it.
+- Widget order within a column is easiest to fix via the **Structure panel's drag-to-reorder**, which is reliable (unlike canvas drag for repositioning).
+- The Elementor "Publish" button intermittently doesn't register synthetic clicks at all — same issue as Phase 2, no reliable automated workaround found this time (the classic-editor-Publish trick that worked in Phase 2 wasn't reachable either, since "Exit to WordPress" from the editor's hamburger menu also hit stuck clicks). Jackie clicked Publish herself to get "Cover Story Card" live.
+- The Browser pane's `navigate()` tool unconditionally drops the WordPress login session on every call, even with "Remember Me" checked — required multiple re-logins this session. In-page link/menu clicks preserve the session fine. Going forward: navigate to WP admin URLs only via clicking real links/menus in the page, never the navigate tool.
 
 **Phase 4 — Review, then go live.**
 You review both new pages as drafts. Once approved, we make the swap at the real `/business-coaching-blog/` and `/business-coaching-blog/all/` URLs — this is the moment the old live blog page gets retired, so it's a deliberate step with your sign-off, not something that happens automatically mid-build.

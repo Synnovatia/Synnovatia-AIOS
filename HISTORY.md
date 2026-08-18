@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-18 (continued, part 3)
+
+### Dynamic Pagination Build — Phase 3 Started (Front Page Masthead + Cover Story)
+- Started Phase 3 (the front page and all-posts feed rebuild) — cloned both live pages ("Business Coaching Blog" and "All") into new draft pages on production (`business-coaching-blog-new-design-draft`, `all-posts-new-design-draft`) so the rebuild happens safely without touching the live URLs, matching the pattern used for prior phases.
+- Confirmed both draft pages use the "Elementor Full Width" template, meaning the site's real theme header/footer wrap the content automatically — no need to hand-rebuild nav/footer HTML like the old static-paste deploy method required.
+- Built the front page's Masthead (H1 + tagline) and Cover Story section on the draft, both saved. Cover Story is a new Elementor Loop Item template, "Cover Story Card" (published to Theme Builder → Loop Items), placed via a Loop Grid limited to 1 item ordered by date descending — confirmed this makes it fully automatic (always whatever post is currently most recent, no manual pinning), per the locked-in decision from Phase 3's scoping.
+- Found and worked through several new Elementor automation quirks this session, beyond Phase 1/2's known Select2 and stuck-click issues: widget drag-and-drop only works when the left panel is actively showing the Elements browser (not a widget's settings panel); dropping into an occupied column only registers when dropped directly on the existing widget's rendered content, not the empty space below it; Structure-panel drag-to-reorder is reliable for fixing widget order. Documented all of these in the plan doc for the remaining Phase 3 work.
+- Hit the same "Publish button doesn't register clicks" issue as Phase 2, with no automated workaround found this time (the Phase 2 fallback — publishing via the classic WP editor — wasn't reachable either, since exiting the Elementor editor also hit stuck clicks in this session). Jackie clicked Publish herself to get "Cover Story Card" live.
+- Also discovered a real environment quirk: the browser tool's `navigate()` function drops the WordPress login session on every call, even with "Remember Me" checked, requiring several re-logins this session — in-page link and menu clicks don't have this problem. Documented as the go-forward rule for all future admin navigation.
+- Still open for Phase 3: the front page's Latest (4 posts), Browse by Topic, and CTA sections; the entire all-posts feed page (cloned as a draft but not yet rebuilt).
+
 ## 2026-08-18 (continued, part 2)
 
 ### Dynamic Pagination Build — Phase 2 Built and Verified Live
