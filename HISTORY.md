@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-18 (continued, part 2)
+
+### Dynamic Pagination Build — Phase 2 Built and Verified Live
+- Continued straight from Phase 1: entered all six topic description blurbs (already written, pulled from the mockup files) into their real WordPress term records via Posts → Topics, one at a time — a plain textarea field, no automation trouble here unlike Phase 1's dropdowns.
+- Built and published a new Elementor Archive template, "Topic Archive" (Theme Builder → Archive): an Archive Title header, a description text block, and a Loop Grid widget pulling in Phase 1's "Blog Post Card" template — one column, 8 posts per page, Numbers + Previous/Next pagination set to Page Reload (real `/page/2/`-style URLs, not AJAX, per the locked-in decision).
+- The Loop Grid's own template-picker field turned out to have the exact same Select2 automation problem as Phase 1 — every click just deselected the widget. Kept trying variations (fresh tabs, ref-based clicks, keyboard-only) since this one was too central to punt to Jackie, and eventually found a working combination: click the field, type the template name to trigger its live AJAX search, then click the single matching result at freshly-read coordinates. Reliable once found; used it to connect the template.
+- Also hit and solved the session's other recurring annoyance directly: Elementor's own "Publish" button intermittently stopped registering clicks mid-session (the same "stuck tab" pattern from Phase 1) — worked around by publishing through the classic WordPress editor's Publish button instead, which never had the problem, then continuing configuration back in Elementor.
+- Set Display Conditions through Elementor's newer Theme Builder app (found via Theme Builder → the individual template's "Edit Conditions" link) to "Include: Topics" — the taxonomy generally, one condition covering all six terms, not six separate ones. Confirmed this correctly takes precedence over the site's existing generic "Search Page Design" archive template for `/topic/*/` URLs specifically, leaving Categories/Search/other archives untouched.
+- **Found and fixed a real bug during verification, not just a cosmetic gap:** checked two different live topic URLs and found they showed the identical post list — the Loop Grid's Query Source was set to plain "Posts" (an independent, unfiltered query) instead of "Current Query" (WordPress's own archive query, which already knows which topic term the page represents). Fixed by switching the source; re-verified on `/topic/strategy-planning/` and `/topic/mindset-resilience/` live and confirmed genuinely different, correctly filtered posts on each via real screenshots.
+- Updated `plans/2026-08-18-blog-dynamic-pagination-build.md` with everything above and what's still open before this phase is fully done: the description block still needs its Dynamic Tag set to Archive Description (same manual Select2 fix Jackie will need to do, like Phase 1's two items), no styling pass yet, and only 2 of the 6 topic URLs have been spot-checked live so far.
+- Jackie fixed the description block's Dynamic Tag herself (same manual Select2 method as Phase 1's two items) — verified live on `/topic/strategy-planning/` and `/topic/growth-scaling/`, both now showing real term-specific descriptions instead of placeholder Lorem Ipsum, alongside genuinely different, correctly filtered post lists. That closes out every open item from this phase's core build — 3 of 6 topic URLs spot-checked live in total. Updated the plan doc to mark Phase 2 fully done, with only non-blocking polish (styling pass, remaining 3 URL checks, "Browse Other Topics" band) left for later.
+
 ## 2026-08-18 (continued)
 
 ### Dynamic Pagination Build — Phase 1 Built, Published, and Finished
