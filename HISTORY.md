@@ -8,6 +8,15 @@
 
 ---
 
+## 2026-08-18 (continued, part 4)
+
+### Dynamic Pagination Build — Phase 3 Front Page DONE
+- Picked Phase 3 back up and finished the entire front-page draft: built The Latest (4 more-recent posts), Browse by Topic, and the CTA band, completing every section of the front page alongside the Masthead and Cover Story from the previous pass.
+- The Latest needed a second new Loop Item template, "Latest Note" (H3 title linked to the post + excerpt, no image/tag/button), published to Theme Builder. Its Loop Grid pulls 5 posts instead of 4, then hides the first one via Custom CSS (`.e-loop-item:first-of-type { display: none !important; }`) — this Elementor Pro version's Loop Grid has no Offset control in its Query panel at all, so this was the only way to keep it fully automatic (always excludes whichever post the Cover Story is currently showing, with no fixed post ID anywhere).
+- Found a genuine automation limitation in this Elementor version: the Text Editor widget's raw-HTML "Code" textarea never responds to keyboard Delete, Backspace, Home, or Cmd+Up/Down when driven by browser automation — only mouse-based selection and actual typed characters register. Hit this while building Browse by Topic's six topic links and the CTA subtext; both needed several rounds of mouse-drag-select-then-retype to land clean, with the exact selected text verified before typing over it. Documented the technique in the plan doc for future text-editing work in this editor.
+- Verified the whole front page live end-to-end on its draft URL: Masthead, Cover Story (real post, real dynamic title/excerpt/link), Latest (4 posts, correctly excluding the Cover Story post, 2 posts showing blank excerpts because those specific WordPress posts have none set — a real data gap, not a build issue), Browse by Topic (clicked through to confirm the real Topic Archive page loads), and the CTA button link.
+- Front page is now fully built on the draft. Only the all-posts feed page remains for Phase 3 — cloned as a draft earlier but not yet rebuilt.
+
 ## 2026-08-18 (continued, part 3)
 
 ### Dynamic Pagination Build — Phase 3 Started (Front Page Masthead + Cover Story)
