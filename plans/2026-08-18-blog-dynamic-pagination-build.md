@@ -77,8 +77,12 @@ Phase 3 (front page + all-posts feed) is now fully built on both draft pages. Wh
 - The Elementor "Publish" button intermittently doesn't register synthetic clicks at all — same issue as Phase 2, no reliable automated workaround found this time (the classic-editor-Publish trick that worked in Phase 2 wasn't reachable either, since "Exit to WordPress" from the editor's hamburger menu also hit stuck clicks). Jackie clicked Publish herself to get "Cover Story Card" live.
 - The Browser pane's `navigate()` tool unconditionally drops the WordPress login session on every call, even with "Remember Me" checked — required multiple re-logins this session. In-page link/menu clicks preserve the session fine. Going forward: navigate to WP admin URLs only via clicking real links/menus in the page, never the navigate tool.
 
-**Phase 4 — Review, then go live.**
+**Phase 4 — Review, then go live. Styling pass DONE (2026-08-18); go-live swap still pending.**
 You review both new pages as drafts. Once approved, we make the swap at the real `/business-coaching-blog/` and `/business-coaching-blog/all/` URLs — this is the moment the old live blog page gets retired, so it's a deliberate step with your sign-off, not something that happens automatically mid-build.
+
+Jackie reviewed both drafts (screenshots) and chose to do the deferred styling pass before going live rather than after. All three Loop Item templates (Blog Post Card, Cover Story Card, Latest Note) and the page-level Masthead/"Browse by Topic" elements on both drafts are now styled to the navy/gold/teal + Fraunces/Barlow system — see `HISTORY.md`'s 2026-08-18 (continued, part 6) entry for the full detail, including a real Post Excerpt bug found and fixed (some cards showed no excerpt text — the widget's "Apply to post content" fallback was off; now on, with an Excerpt Length set per template). Blog Post Card is shared with the six live Topic Archive pages, so that part of the styling pass is already live there (verified on `/topic/strategy-planning/`, `/topic/sales-marketing/`, `/topic/growth-scaling/`) — done with Jackie's explicit sign-off since it was always the natural point to do it. Both actual draft Pages were saved via Elementor's "Save Draft," never "Publish," to keep them off the live site.
+
+**Still open:** Jackie's final visual review of both restyled drafts, then the actual go-live swap.
 
 **Phase 5 — Cleanup.**
 Delete the six temporary "preview-*" pages on staging (they become redundant once the real archive pages are live) and double-check the Redirection plugin doesn't have any old rule that would intercept the new `/page/2/`-style URLs — the same kind of gotcha that bit a new page earlier in this project.
