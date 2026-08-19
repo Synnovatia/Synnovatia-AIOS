@@ -82,15 +82,19 @@ You review both new pages as drafts. Once approved, we make the swap at the real
 
 Jackie reviewed both drafts (screenshots) and chose to do the deferred styling pass before going live rather than after. All three Loop Item templates (Blog Post Card, Cover Story Card, Latest Note) and the page-level Masthead/"Browse by Topic" elements on both drafts are now styled to the navy/gold/teal + Fraunces/Barlow system — see `HISTORY.md`'s 2026-08-18 (continued, part 6) entry for the full detail, including a real Post Excerpt bug found and fixed (some cards showed no excerpt text — the widget's "Apply to post content" fallback was off; now on, with an Excerpt Length set per template). Blog Post Card is shared with the six live Topic Archive pages, so that part of the styling pass is already live there (verified on `/topic/strategy-planning/`, `/topic/sales-marketing/`, `/topic/growth-scaling/`) — done with Jackie's explicit sign-off since it was always the natural point to do it. Both actual draft Pages were saved via Elementor's "Save Draft," never "Publish," to keep them off the live site.
 
-**Still open:** Jackie's final visual review of both restyled drafts, then the actual go-live swap.
+Both drafts reviewed top-to-bottom with Jackie (screenshots, full scroll-through of both pages) and confirmed clean and on-brand — including a follow-up fix to the all-posts page's pagination numbers (Previous/1/2/3/4/5/Next), which had been left in WordPress's default blue link style outside the original card/masthead scope. Now styled to match (navy numbers, gold active/hover, Barlow Condensed uppercase) and re-saved as Draft.
+
+**2026-08-19: go-live swap on production paused — the whole blog build is being folded into the staging launch instead.** Jackie confirmed the rest of the site redesign (homepage, About, Work With Me, Messy Middle, both mastermind pages) has been on **staging** (synnovatiacom.stage.site) this whole time — a different track from this blog build, which was deliberately built on **production** back at Phase 1 (a build-location choice, not a go-live-timing one: Elementor content stays private until published either way). Rather than the blog going live on production on its own now, Jackie wants it to launch together with the rest of the redesign when staging goes live. That means this build needs to be **replicated on staging**: the three Loop Item templates (Blog Post Card, Cover Story Card, Latest Note), the Topic Archive template, and both the front page and all-posts page — all with the same navy/gold/teal + Fraunces/Barlow styling already done on production. Not yet started or scoped in detail (plugin/taxonomy parity on staging hasn't been re-verified since the 2026-08-16 taxonomy build there).
+
+The six Topic Archive pages already live on production (from the Blog Post Card styling pass, done with Jackie's explicit sign-off since it was the natural point to do it) are **not being unwound** — that decision stands regardless of the staging-launch plan.
 
 **Phase 5 — Cleanup.**
-Delete the six temporary "preview-*" pages on staging (they become redundant once the real archive pages are live) and double-check the Redirection plugin doesn't have any old rule that would intercept the new `/page/2/`-style URLs — the same kind of gotcha that bit a new page earlier in this project.
+Delete the six temporary "preview-*" pages on staging (they become redundant once the real archive pages are live there) and double-check the Redirection plugin doesn't have any old rule that would intercept the new `/page/2/`-style URLs — the same kind of gotcha that bit a new page earlier in this project. Note: this cleanup now happens on staging alongside the new build, not standalone.
 
 ## Resolved
 
 **Cover Story curation:** confirmed 2026-08-18 — Cover Story is fully automatic, always whatever post is currently most recent. No manual pinning.
 
-## Not in scope here
+## Not in scope here — SUPERSEDED 2026-08-19
 
-Replicating this same build on staging (currently only has the old static previews) — optional, lower priority once production is the real, working version. Can revisit later if you want staging to match.
+~~Replicating this same build on staging (currently only has the old static previews) — optional, lower priority once production is the real, working version. Can revisit later if you want staging to match.~~ No longer optional — see the 2026-08-19 note in Phase 4 above. This is now the plan for how the blog goes live.

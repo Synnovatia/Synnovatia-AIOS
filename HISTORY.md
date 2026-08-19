@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-08-19 (continued)
+
+### Blog Staging Rebuild — Phase 1 Done: "Blog Post Card" Pattern (GenerateBlocks)
+- Built and saved a reusable "Blog Post Card" synced pattern on the staging site (`wp_block` post ID 11896) via the Site Editor — natively in GenerateBlocks, since staging turned out to run GenerateBlocks/GeneratePress rather than Elementor (see the 2026-08-19 staging-rebuild scoping entry below).
+- Structure: a flex-row Container with a fixed 200×150px featured image on the left, and a stacked topic tag / title / excerpt / "Read the full story" button on the right, each using GenerateBlocks Dynamic Tags (Featured Image, Term List on the Topic taxonomy, Post Title linked to the post, Post Excerpt at 20 words, Post Permalink).
+- Styled every element to the navy/gold/teal + Fraunces/Barlow/Barlow Condensed system in `context/style-guide.md`, matching production's Elementor "Blog Post Card" exactly: topic tag (gold `#B29200`, Barlow Condensed, uppercase, letter-spaced), title (navy `#0D1F4E`, Fraunces, 24px, bold, gold on hover), excerpt (body text `#444441`, Barlow, 16px), button (teal `#0F6E56` background, white uppercase Barlow Condensed text, navy `#0D1F4E` background on hover).
+- **Real bug found and fixed:** GenerateBlocks' per-block Font Family dropdown only lists 7 web-safe system fonts — no Google Fonts registered anywhere in its settings or a dedicated font-library page. Fixed via each Typography panel's "More options" kebab → "Enter Custom Value," which accepts a raw CSS font-family string and renders correctly (confirmed visually in the Site Editor canvas) — the brand fonts are already loading site-wide, just not exposed in that dropdown.
+- **Real bug found and fixed:** mid-build, the image and content ended up as unnested top-level pattern siblings instead of living inside the flex-row Container, so they stacked vertically instead of sitting side-by-side. GenerateBlocks' empty-container "+" appenders proved unusable for this (consistent with the appender problems already documented from the production build), and pasting clipboard content onto a *selected* block always replaces that block rather than appending next to it. The reliable fix: use the top-toolbar Block Inserter to add a fresh *empty* sibling block inside the target container (this appends correctly when the currently-selected block is non-empty), then select that empty placeholder and paste — paste replaces the empty block in place, keeping it correctly positioned as a sibling.
+- Phases 2-5 (Topic Archive template, front page + all-posts page, review/launch coordination, cleanup) not yet started. Full plan and progress notes in `plans/2026-08-19-blog-staging-rebuild.md`.
+
+### Workout Log Corrections
+- Logged 2026-08-18's Day A strength session (hill warm-up + 27 sets across 9 exercises) and 2026-08-19's walk into `data/strength-training-log.csv` and `personal/workout-logs/session-log.csv`.
+- Jackie corrected a mischaracterization: four Day A exercises (Single-Leg Balance Reach at 10 lb, shoulder-tap Plank, banded Glute Bridge with a 25 lb weight, purple-band Face Pull) were logged as new/added variations, but they were already part of the plan she'd been given — just never written into `personal/workout-plan.md`'s Day A table in that detail. Fixed the plan doc to reflect this as a documentation gap, and corrected the wording in both log files to match.
+
 ## 2026-08-18 (continued, part 6)
 
 ### Dynamic Pagination Build — Phase 4 Styling Pass Done (Still in Draft)

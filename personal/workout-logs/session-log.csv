@@ -36,3 +36,6 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-08-15,Walk,61,120,not captured,364,"3.31 miles, avg pace 18:29/mile (computes to ~18:26/mile from distance/duration, consistent). HRV not reported."
 2026-08-16,Hike,93,114,not captured,247,"4.4 miles, reported avg pace 21:19/mile (computes to ~21:08/mile from distance/duration, consistent). HRV not reported."
 2026-08-17,Walk/Run,50,133,not captured,366,"3.28 miles, computes to ~15:15/mile avg pace from distance/duration. HRV not reported."
+2026-08-18,Hill Warm-up,16,129.7,not captured,82,"Reported: 16 min, avg HR 129.7, pace 23:03/mile, 82 MET-minutes. Distance not given."
+2026-08-18,Strength (Day A),58,116,not captured,245,"Reported: 58 min, avg HR 116, 245 MET-minutes. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv. Day A's weighted Single-Leg Balance Reach, shoulder-tap Plank, banded/weighted Glute Bridge, and purple-band Face Pull were all already part of the plan - workout-plan.md updated 2026-08-19 to reflect this, a documentation gap rather than a change."
+2026-08-19,Walk,53,116,not captured,147,"2.57 miles, reported avg pace 18:39/mile. NOTE: pace doesn't reconcile - 53 min over 2.57 mi computes to ~20:37/mile, closer to 2 min/mile slower than reported; logged the reported figures as given."
