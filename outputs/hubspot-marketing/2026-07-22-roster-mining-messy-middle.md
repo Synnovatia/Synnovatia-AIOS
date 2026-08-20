@@ -31,6 +31,19 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 - **Still untouched:** Connie Weatherman — despite the `priority=1` flag set 7/27 to get her ahead of 8/26, no reconnect email has gone out yet as of 8/5. Worth a nudge given the invitation sends 8/26. Katie Hammond has had no 2026 reconnect touch either, despite being "the warmest of the four" Forum names — last contact on file is 5/28/2025. Candy Messer, Jo Lynn Deal, Chris Lane, Hava Volterra, Hamid Kashani, and the full Tier 2/3 Messy Middle list remain untouched, consistent with the 7/27 queue review (expected — most don't surface until Oct–Jan on the natural cadence).
 - No retirements, closures, or other status changes surfaced this round.
 
+**2026-08-20 (status check):** Reconciled every named candidate against `roster.csv`, `outreach_log.csv`, and Gmail.
+- **Diane Leonard (Forum)** — real catch-up call happened 8/12 (logged as `meeting_completed`). Her oldest daughter recovered fully from a brain tumor, new book releases 12/1, press tour to follow. **She's interested in a mastermind once the book/press tour wraps — Forum, not Messy Middle, per Jackie's read.** Queued: `next_checkin_due` in `roster.csv` set to **2027-01-04**, with a matching reminder in `meeting_notes.csv` to raise it with her then. No action needed before January.
+- **Candy Messer (Forum)** — replied 8/19 to the 8/11 reconnect note. Warm: team now fully remote across 5 states, and she's expanding into helping owners escape owner-dependent businesses. Worth checking whether she's still in the other mastermind she cited when declining a pitch in 2020, before any Forum ask. Logged `responded`. **Next action: reply to keep the thread going** — no pitch yet.
+- **Katie Hammond (Forum)** — dinner 7/31 (already logged `meeting_completed`), no next step recorded since. Jackie's call whether/when to raise the Forum.
+- **Still awaiting reply, no change:** Beth Clarke (sent 7/27, 24 days), Donna Dobrovich (sent 7/27, 24 days), Brooke Billingsley (sent 7/27, 24 days), Kurt Fagan (sent 7/20, 31 days), Sivakumar Veerappan (sent 7/14, 37 days), Beryl Smith (sent 7/14, 37 days), Suzi Waddill-Goad (formal reconnect sent 7/22, 29 days — separate from the ongoing natural thread, last exchange 7/15).
+- **Still untouched:** Chris Lane, Hamid Kashani, Hava Volterra, Jo Lynn Deal, plus the rest of Tier 2/3.
+- No retirements, closures, or other status changes surfaced this round. Connie Weatherman stays excluded (no Gmail thread found, business likely closed).
+
+**2026-08-20 (later same day, reported by Jackie):** The three Tier 2 drafts noted above as "prepared, not sent" turned out to have gone out and gotten responses:
+- **Carolynn Aristone** — draft sent, she replied. Logged `responded`.
+- **Jill Cohen** — replied: *"Will reconnect when she gets back from New York."* Logged `responded`, with that line noted in `roster.csv` so the next check knows to expect a follow-up once she's back rather than treating this as stalled.
+- **Liz Mohler** — went further than an email reply: a real Zoom call happened, catching up on her business. **She's semi-retired.** Logged `meeting_completed`; no mastermind next action planned given semi-retired status — same treatment as Terri Wallin and Connie Weatherman (relationship continues, pulled from mastermind consideration).
+
 **2026-08-05 (same day, reported by Jackie):** Two updates since the status check above.
 - **Katie Hammond (Forum)** — Jackie met her for dinner in person on 7/31, ahead of any Forum conversation. Logged as `meeting_completed` in `roster.csv`/`outreach_log.csv`. No opportunity or next action recorded yet — Jackie's call whether/when to raise the Forum.
 - **Margaret Jacoby** — not a mastermind/Forum candidate herself (she's the referrer credited for introducing Hava Volterra, an "Additional candidates" Forum name), but Jackie spoke with her 8/5 and confirmed she's **retired**. Logged as `meeting_completed` in the roster with that note. No action needed against this doc, but flagging since Hava Volterra's file mentions her.
@@ -109,11 +122,11 @@ Solo or professional practices. Often below the band, but Jackie knows which hav
 | Sibo Ncube | Trusted Touch Healthcare LLC | Director |
 | Elizabeth Teliz-McQuarrie | — | Leadership Coach |
 
-## Tier 3 — Owner title, no company data (5)
+## Tier 3 — Owner title, no company data (4)
 
 HubSpot has "Owner" and nothing else. Jackie either knows them or they're not worth chasing.
 
-Lisa Black · Christine Meshell · Amanda Perrot · Elyse Koenig (CEO) · Maxine Fuller (consultant)
+Christine Meshell · Amanda Perrot · Elyse Koenig (CEO) · Maxine Fuller (consultant)
 
 ---
 
@@ -171,7 +184,9 @@ Also worth a look if the Forum takes professional-practice partners: **Carol Kul
 
 **Below band on the evidence available** — Diana Pointer (revenue on file: **under $10,000**), Sherry Schaefer (**$150,000**, coaching).
 
-**Removed by Jackie's call (1): David G. Kinney**, The Kinney Group. Pulled from Forum consideration 2026-07-27, no reason recorded — stays in the normal client re-engagement roster.
+**Removed by Jackie's call (2): David G. Kinney**, The Kinney Group. Pulled from Forum consideration 2026-07-27, no reason recorded — stays in the normal client re-engagement roster.
+
+**Lisa Black**, Tier 3 Messy Middle. Removed from mastermind consideration 2026-08-20, then removed from the client re-engagement roster entirely the same day (no reason recorded for either) — 174 → 173 clients. Gone from `roster.csv` and `due_now.csv`; no `outreach_log.csv` or `meeting_notes.csv` history existed for her.
 
 **Disqualified — felony conviction (1): Cora Willard**, Red Hen Business Services.
 
@@ -196,6 +211,8 @@ Confirmed against the U.S. Department of Justice press release (Eastern District
 **Removed from the roster entirely (1): Diahana Barnes.** Removed 2026-07-22 per Jackie, after research showed she is now a Wellness Specialist at Pacific Retirement Services and owner of Harmony Fitness Studio — employed elsewhere, different line of work, and the entire relationship was a single virtual coffee in Jan 2018. Not a client relationship worth a 6-month cadence. Roster 175 → 174.
 
 **Retired (1)** — **Terri Wallin** (Wallin Enterprises, CEO). Confirmed retired by Jackie 2026-07-20. Removed from mastermind consideration entirely, but **stays in the client re-engagement roster** — the relationship continues, only the mastermind pitch doesn't apply. She is not in `someday_contacts.csv` and will keep surfacing in the normal 6-month cadence, which is correct.
+
+**Semi-retired (1) — Liz Mohler**, Liz Mohler & Associates. Confirmed via a real Zoom reconnect call 2026-08-20. Pulled from mastermind consideration; same treatment as Terri Wallin and Connie Weatherman — **stays in the client re-engagement roster**, only the mastermind pitch doesn't apply.
 
 **Likely closed (1) — Connie Weatherman**, Body Unique. Removed from Messy Middle consideration 2026-08-05 — Jackie believes the business is probably closed down. Unconfirmed (no research done, just Jackie's read), so treat as a flag worth revisiting rather than settled fact if it ever comes up again. Same as Terri Wallin: **stays in the client re-engagement roster**, only pulled from the mastermind list. The `priority=1` flag set 2026-07-27 (to get her a reconnect touch ahead of the 8/26 invitation) is cleared in `roster.csv` since its purpose was mastermind-specific.
 

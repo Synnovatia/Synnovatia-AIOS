@@ -45,7 +45,7 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 |---|---|
 | Dumbbell Sumo Deadlift | 3 x 8-12 |
 | Dumbbell Reverse Lunge | 3 x 8-10/side |
-| Dumbbell Overhead Press | 3 x 8-12 |
+| Single-Arm Dumbbell Overhead Press | 3 x 8-12/side |
 | Band Bent-Over Row | 3 x 10-15 |
 | Stability Ball Hip Bridge/Hamstring Curl | 2 x 10-12 |
 | Side Plank | 2 x 20-30 sec/side |
@@ -53,9 +53,9 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 | Band Face Pull | 3 x 12-15 |
 | Dumbbell Lateral Raise | 3 x 12-15 |
 
-**Weight cap (2026-07-30):** Dumbbell Overhead Press — hold at 10 lb max, don't progress weight past this even after hitting the top of the rep range.
+**Swapped 2026-08-20:** Dumbbell Overhead Press → Single-Arm Dumbbell Overhead Press. The bilateral version had been capped at 10 lb since 2026-07-30, and by 2026-08-20 was hitting 18 reps/set — past the new 15-rep soft ceiling (see Progression Scheme) with no tempo or weight lever left for a press movement. Going unilateral adds a real anti-lateral-flexion core demand, matching the program's existing balance-work emphasis, and per-side reps reset to the bottom of a fresh range rather than inheriting the old exercise's plateau. Same 10 lb dumbbells, no new equipment. Start at 10 lb/side — if that feels like too much of a jump from the bilateral version's history, it's fine to start lighter (8 lb) and build back up.
 
-**Added 2026-07-30:** Dumbbell Lateral Raise, added once Overhead Press hit its rep ceiling at the 10 lb cap. Targets the shoulder (medial deltoid) from a different angle than pressing, so it gives somewhere new to progress without touching the capped exercise. Isolation movement, so lighter weight/higher reps than the compound lifts — start light (5-8 lb) since it's new.
+**Added 2026-07-30:** Dumbbell Lateral Raise, added once the (now-retired) bilateral Overhead Press hit its rep ceiling at the 10 lb cap. Targets the shoulder (medial deltoid) from a different angle than pressing, so it gives somewhere new to progress without touching the capped exercise. Isolation movement, so lighter weight/higher reps than the compound lifts — currently at 8 lb, per session 2026-08-20.
 
 ## Day C — Sunday
 
@@ -79,10 +79,13 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 
 Work within the rep range shown for each exercise. Once you hit the top of the range on all sets, add weight next session and drop back to the bottom of the range. This is a simple double-progression model — matches Fortify's progressive-overload tracking directly.
 
-**Hard ceiling: 25 lb per hand is the maximum dumbbell weight available (confirmed 2026-08-04).** Never recommend or log a weight above this. Once an exercise tops its rep range at 25 lb, the double-progression model above no longer applies as written — don't suggest "add weight" past 25 lb. Instead, in this order:
-1. **Extend the rep ceiling** — push past the plan's stated top of range (e.g., 8–12 becomes a working target of 15–20) while holding at 25 lb.
-2. **Add tempo/pause** if reps climb past ~20 without a new plateau — slower eccentric (3–4 sec lowering) or a 2-sec pause at the hardest point of the rep.
-3. **Isolation-exercise swap**, same pattern as the 2026-07-30 Overhead Press fix — once weight and reps both plateau at the ceiling, add a new exercise targeting the same muscle group from a different angle rather than continuing to chase the same lift.
+**Hard ceiling: 25 lb per hand is the maximum dumbbell weight available (confirmed 2026-08-04).** Never recommend or log a weight above this.
+
+**Rep soft ceiling: 15 reps per set (set 2026-08-20).** Don't recommend or log a working target past 15 reps on any exercise, regardless of weight — this replaces "extend the rep ceiling toward 18–20" from the original ceiling order below. Once an exercise is maxed on weight (25 lb dumbbell cap, or a band/bodyweight exercise that's plateaued) and hits 15 reps for the working sets, move straight to tempo or an exercise swap rather than pushing reps higher.
+
+Once an exercise tops its rep range at max weight, the double-progression model above no longer applies as written — don't suggest "add weight" past the cap. Instead, in this order:
+1. **Add tempo/pause** — slower eccentric (3–4 sec lowering) or a 2-sec pause at the hardest point of the rep, holding at 15 reps rather than pushing further.
+2. **Isolation-exercise swap**, same pattern as the 2026-07-30 Overhead Press fix — once weight, reps, and tempo have all plateaued at the ceiling, add a new exercise targeting the same muscle group from a different angle rather than continuing to chase the same lift.
 New equipment (heavier dumbbells, kettlebells, bands layered on top of dumbbells) is Jackie's call to make if/when she wants it — not something to assume or push toward by default.
 
 ## Deload

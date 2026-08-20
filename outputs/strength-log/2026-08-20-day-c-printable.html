@@ -1,0 +1,250 @@
+<title>Day C — Printable</title>
+<h2 class="sr-only">Strength Training Day C — first-ever session, printable card with starting-point recommendations</h2>
+
+<style>
+  :root{
+    --ink:#1B1F23; --paper:#F1F2F0; --steel:#D6D9D5; --steel-dim:#EAEBE8;
+    --ink-soft:#5B615F; --surface:#FFFFFF;
+    --teal:#0E8A72; --teal-bg:#E3F1EC;
+    --rust:#C2571C; --rust-bg:#F7E7DC;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#ECEEEC; --paper:#17191B; --steel:#33383A; --steel-dim:#222527;
+      --ink-soft:#9AA09D; --surface:#1F2224;
+      --teal-bg:#123028; --rust-bg:#331C10;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#ECEEEC; --paper:#17191B; --steel:#33383A; --steel-dim:#222527;
+    --ink-soft:#9AA09D; --surface:#1F2224;
+    --teal-bg:#123028; --rust-bg:#331C10;
+  }
+  :root[data-theme="light"]{
+    --ink:#1B1F23; --paper:#F1F2F0; --steel:#D6D9D5; --steel-dim:#EAEBE8;
+    --ink-soft:#5B615F; --surface:#FFFFFF;
+    --teal-bg:#E3F1EC; --rust-bg:#F7E7DC;
+  }
+
+  .dp-root, .dp-root *{ box-sizing:border-box; }
+  .dp-root{
+    background:var(--paper); color:var(--ink);
+    font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    max-width:800px; margin:0 auto; padding:28px 22px 60px;
+  }
+  .mono{ font-family:ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,monospace; font-variant-numeric:tabular-nums; }
+  .eyebrow{
+    font-family:'Arial Narrow',Arial,sans-serif; text-transform:uppercase;
+    letter-spacing:.09em; font-weight:700; font-size:11px; color:var(--ink-soft);
+  }
+  .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+  /* Header */
+  .dp-header{
+    display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:14px;
+    padding-bottom:16px; border-bottom:2px solid var(--ink); margin-bottom:14px;
+  }
+  .dp-title-row{ display:flex; align-items:center; gap:12px; }
+  .day-badge{
+    background:var(--teal); color:#fff; font-family:'Arial Narrow',Arial,sans-serif;
+    font-weight:700; font-size:15px; letter-spacing:.04em; padding:6px 14px; border-radius:6px;
+  }
+  .dp-title{ font-size:24px; font-weight:700; margin:0; letter-spacing:-.01em; }
+  .dp-dates{ text-align:right; font-size:12px; color:var(--ink-soft); line-height:1.5; }
+  .dp-dates strong{ color:var(--ink); font-weight:600; }
+
+  .dp-intro{
+    font-size:12.5px; color:var(--ink-soft); margin-bottom:20px; padding:10px 12px;
+    background:var(--teal-bg); border-left:3px solid var(--teal); border-radius:0 6px 6px 0;
+  }
+  .dp-intro strong{ color:var(--teal); }
+
+  /* Legend */
+  .dp-legend{ display:flex; gap:18px; flex-wrap:wrap; margin-bottom:20px; font-size:11.5px; color:var(--ink-soft); }
+  .dp-legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .swatch{ width:10px; height:10px; border-radius:3px; display:inline-block; }
+  .swatch.rec{ background:var(--rust); }
+  .swatch.new{ background:var(--teal); }
+
+  /* Exercise cards */
+  .ex-list{ display:flex; flex-direction:column; gap:10px; }
+  .ex-card{
+    background:var(--surface); border:1px solid var(--steel); border-radius:10px;
+    padding:14px 16px; break-inside:avoid; page-break-inside:avoid;
+  }
+  .ex-top{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:8px; }
+  .ex-name{ font-size:15px; font-weight:700; }
+  .ex-target{ font-size:12px; color:var(--ink-soft); }
+
+  .ex-today .eyebrow{ margin-bottom:5px; }
+  .set-row{ display:flex; gap:8px; font-size:13px; }
+  .set-row .set-num{ color:var(--ink-soft); width:16px; flex:none; }
+  .blank{ display:inline-block; border-bottom:1px solid var(--steel); min-width:34px; height:14px; }
+  .today-set{ display:flex; align-items:baseline; gap:6px; font-size:13px; margin-bottom:4px; }
+  .today-set .unit{ font-size:10.5px; color:var(--ink-soft); }
+
+  .ex-new{
+    margin-top:10px; padding:8px 10px; background:var(--teal-bg); border-left:3px solid var(--teal);
+    border-radius:0 6px 6px 0; font-size:12.5px; color:var(--ink);
+  }
+  .ex-new strong{ color:var(--teal); font-weight:700; }
+
+  .dp-footer{ margin-top:22px; font-size:11px; color:var(--ink-soft); text-align:center; }
+
+  @media print{
+    .dp-root{ max-width:100%; padding:0; background:#fff; color:#1B1F23; }
+    :root{ --steel:#C9CCC8; --ink-soft:#5B615F; --surface:#fff; --paper:#fff; --rust-bg:#FBEFE6; --teal-bg:#E3F1EC; }
+    .ex-card{ border:1px solid #C9CCC8; }
+    .dp-legend{ display:none; }
+    @page{ size:letter; margin:0.5in; }
+  }
+</style>
+
+<div class="dp-root">
+  <div class="dp-header">
+    <div class="dp-title-row">
+      <span class="day-badge">DAY C</span>
+      <h1 class="dp-title">Full-Body Strength — Session Card</h1>
+    </div>
+    <div class="dp-dates">
+      Today: <strong>2026-08-20</strong><br>
+      Last Day C: <strong>none yet</strong>
+    </div>
+  </div>
+
+  <div class="dp-intro"><strong>First-ever Day C session.</strong> No history to compare against, so every exercise below is a suggested starting point rather than a progression call. Starting weights are set conservatively where the movement is new and balance-heavy (unilateral squat/hinge, overhead carry, plank-based row), based on where your other unilateral lifts actually began — Reverse Lunge and Single-Leg Balance Reach both started at 10 lb, Overhead Press at 8–10 lb. Prioritize clean form and balance over hitting the top of the rep range today; it's fine to come in under target on a first pass.</div>
+
+  <div class="dp-legend">
+    <span><span class="swatch new"></span> Starting-point recommendation</span>
+  </div>
+
+  <div class="ex-list">
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">1. Bulgarian Split Squat (dumbbell)</span>
+        <span class="ex-target mono">3 × 8–12 / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Start at 10 lb/hand.</strong> A new, more balance-demanding unilateral squat than Day B's Reverse Lunge (rear foot elevated), which itself started at 10 lb. Rear foot on a chair/step if you don't have a bench — hold something for balance the first few reps if needed, no shame in it on a brand-new movement.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">2. Single-Leg Romanian Deadlift (dumbbell)</span>
+        <span class="ex-target mono">3 × 8–10 / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Start at 10 lb/hand — or bodyweight only for the first set if balance feels shaky.</strong> Single-leg hip-hinge balance is typically the hardest of the new movements to stabilize under load; better to nail the pattern light today than fight for reps at a weight that breaks form.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">3. Dumbbell Incline Press (stability ball as incline support)</span>
+        <span class="ex-target mono">3 × 8–12</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Start at 10 lb/hand — well under your 25 lb Floor Press weight.</strong> The stability ball adds real core/balance demand on top of the incline angle itself; this isn't comparable to your flat press load. Get the ball position and rep groove down first, load it up over future sessions.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">4. Renegade Row (dumbbell)</span>
+        <span class="ex-target mono">3 × 6–10 / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Start at 10 lb/hand — lighter than your 20 lb standing Single-Arm Row.</strong> The plank hold underneath is the real challenge here; if your hips rotate or sag while rowing, that's the signal to drop weight further, not push reps.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">5. Bird Dog</span>
+        <span class="ex-target mono">2 × 8–10 / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="unit">reps</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="unit">reps</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Bodyweight.</strong> Anti-rotation core work — focus on keeping the hips level and moving slowly, not speed or rep count.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">6. Dead Bug</span>
+        <span class="ex-target mono">2 × 10–12 / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="unit">reps</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="unit">reps</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Bodyweight.</strong> Keep your lower back flat against the floor throughout — that's the real form check, not how far the leg extends.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">7. Dumbbell Overhead Carry</span>
+        <span class="ex-target mono">3 × 30–40 ft / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span><span class="unit">ft</span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span><span class="unit">ft</span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="blank"></span><span class="unit">lb ×</span><span class="blank"></span><span class="unit">ft</span></div>
+      </div>
+      <div class="ex-new"><strong>Start at 10 lb/hand — well under your 25 lb Farmer's/Suitcase Carry weight.</strong> Loaded overhead is a much bigger shoulder-stability ask than a carry at your side. Arm should stay locked out directly over your shoulder, not drifting forward — drop the weight if it does.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">8. Single-Leg Glute Bridge</span>
+        <span class="ex-target mono">3 × 10–12 / side</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="unit">reps</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="unit">reps</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="unit">reps</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Bodyweight to start.</strong> Same pattern as your Day A bilateral Glute Bridge, which started bodyweight before you added the band + 25 lb weight over time — expect this one to follow the same arc once the single-leg version feels solid.</div>
+    </div>
+
+    <div class="ex-card">
+      <div class="ex-top">
+        <span class="ex-name">9. Band Pull-Apart</span>
+        <span class="ex-target mono">3 × 15–20</span>
+      </div>
+      <div class="ex-today">
+        <div class="eyebrow">Today</div>
+        <div class="today-set"><span class="set-num mono">1</span><span class="unit">band</span><span class="blank"></span><span class="unit">reps</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">2</span><span class="unit">band</span><span class="blank"></span><span class="unit">reps</span><span class="blank"></span></div>
+        <div class="today-set"><span class="set-num mono">3</span><span class="unit">band</span><span class="blank"></span><span class="unit">reps</span><span class="blank"></span></div>
+      </div>
+      <div class="ex-new"><strong>Start with a lighter band than your purple Face Pull band</strong> (red or black) — Pull-Apart loads the rear delts differently than Face Pull and tends to feel harder at the same band tension. Build toward 20 reps before moving up.</div>
+    </div>
+
+  </div>
+
+  <div class="dp-footer">Synnovatia AIOS — Strength Training Log · Day C · plan: personal/workout-plan.md · first session, no prior data</div>
+</div>

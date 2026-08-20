@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-08-20
+
+### Strength Training — Day B and Day C Printable Cards, a Progression Rule Change, and an Exercise Swap
+- Built and sent a printable Day B session card (`personal/workout-logs/2026-08-20-day-b.pdf`, source in `outputs/strength-log/`) using the same design established for prior cards — last session's numbers next to blanks for today, with a per-exercise recommendation grounded in real progression logic rather than generic advice.
+- Built the first-ever **Day C** printable card too, structured differently since there was no prior Day C data to compare against: one starting-point recommendation per exercise instead of a last-time/today comparison. Starting weights were grounded in how Jackie's other unilateral/stability movements actually began (Reverse Lunge and Single-Leg Balance Reach both started at 10 lb, Overhead Press at 8–10 lb) rather than guessed.
+- **Two real data corrections to the 2026-08-13 Day B log**, both caught while building the Day B card: a "Dumbbell Pushups" entry (3 sets, logged separately from that day's real Overhead Press entry) was confirmed with Jackie as a dictation duplicate and removed rather than merged. Band Face Pull (purple band, 15 reps) and Dumbbell Lateral Raise (5 lb, 15 reps — its actual first-ever logged session, despite being added to the plan back on 2026-07-30) were both filled in with real numbers Jackie provided after the fact, correcting two gaps the printable card itself had flagged.
+- Logged the actual 2026-08-20 Day B session in full (`data/strength-training-log.csv` + `personal/workout-logs/session-log.csv`) — hill warm-up (16 min, 0.7 mi, 14 METs, a figure well below this exercise's usual 62–89 range that Jackie explicitly double-checked and confirmed) plus all 9 strength exercises. Caught two more real dictation issues along the way rather than logging them blind: Side Plank's reported "12" didn't map to sets/reps/seconds for a time-based exercise, logged as reported with a flag; Band Bent-Over Row's rep count was first missing entirely, then reported as "50 reps" — implausible against the exercise's 10-15 target range and everything else logged that day — confirmed with Jackie as a mishearing of "15."
+- **New standing rule, set by Jackie:** a 15-rep soft ceiling on every exercise, replacing the plan's old "extend reps toward 18-20" step once weight is maxed. Once weight and reps are both capped, the next lever is tempo, then an exercise swap — not higher reps. Documented in `personal/workout-plan.md`'s Progression Scheme.
+- The new rule immediately flagged Day B's Overhead Press (10 lb cap, 18 reps that same session) as needing a swap. Replaced it with **Single-Arm Dumbbell Overhead Press** — same equipment, but unilateral adds a real anti-lateral-flexion core demand matching the program's existing balance-work emphasis, and resets reps to the bottom of a fresh range rather than inheriting the old exercise's plateau. Plan table and notes updated accordingly.
+
 ## 2026-08-19 (continued, part 5)
 
 ### Blog Staging Rebuild — Phase 2 Done: Real Topic Archive Template, Plus a Site-Wide Nav Fix Along the Way
