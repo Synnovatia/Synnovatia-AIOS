@@ -116,9 +116,9 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-04,A,Single-Leg Balance Reach (per side),1,12,8,
 2026-08-04,A,Single-Leg Balance Reach (per side),2,12,8,
 2026-08-04,A,Single-Leg Balance Reach (per side),3,12,8,
-2026-08-04,A,Plank,1,45,,"reps column = seconds held; shoulder-tap variation"
-2026-08-04,A,Plank,2,45,,"reps column = seconds held; shoulder-tap variation"
-2026-08-04,A,Plank,3,45,,"reps column = seconds held; shoulder-tap variation"
+2026-08-04,A,Plank,1,45,,reps column = seconds held; shoulder-tap variation
+2026-08-04,A,Plank,2,45,,reps column = seconds held; shoulder-tap variation
+2026-08-04,A,Plank,3,45,,reps column = seconds held; shoulder-tap variation
 2026-08-04,A,Dumbbell Farmer's Carry,1,60,50,reps column = feet carried
 2026-08-04,A,Dumbbell Farmer's Carry,2,60,50,reps column = feet carried
 2026-08-04,A,Dumbbell Farmer's Carry,3,60,50,reps column = feet carried
@@ -130,34 +130,34 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-04,A,Band Face Pull,3,15,,red band
 2026-08-06,B,Dumbbell Sumo Deadlift,1,15,25,
 2026-08-06,B,Dumbbell Sumo Deadlift,2,15,25,
-2026-08-06,B,Dumbbell Sumo Deadlift,3,15,25,"Hit the extended rep target recommended after reaching the 25 lb equipment ceiling last session (25 lb is Jackie's confirmed dumbbell max) - right on plan."
+2026-08-06,B,Dumbbell Sumo Deadlift,3,15,25,Hit the extended rep target recommended after reaching the 25 lb equipment ceiling last session (25 lb is Jackie's confirmed dumbbell max) - right on plan.
 2026-08-06,B,Dumbbell Reverse Lunge (per side),1,8,20,
 2026-08-06,B,Dumbbell Reverse Lunge (per side),2,8,20,
 2026-08-06,B,Dumbbell Reverse Lunge (per side),3,8,20,"Set count not explicitly stated by Jackie; logged as 3 sets to match the plan's standard and the rest of this session's pattern - flag if wrong. Weight bumped from 15 to 20 lb, per today's recommendation."
 2026-08-06,B,Dumbbell Overhead Press,1,12,10,
 2026-08-06,B,Dumbbell Overhead Press,2,12,10,
-2026-08-06,B,Dumbbell Overhead Press,3,12,10,"Set count not explicitly stated; logged as 3 sets to match session pattern - flag if wrong. At the standing 10 lb weight cap."
-2026-08-06,B,Band Bent-Over Row,1,15,,"Black band (upped from red per today's recommendation)"
-2026-08-06,B,Band Bent-Over Row,2,15,,"Black band (upped from red)"
-2026-08-06,B,Band Bent-Over Row,3,15,,"Black band (upped from red)"
+2026-08-06,B,Dumbbell Overhead Press,3,12,10,Set count not explicitly stated; logged as 3 sets to match session pattern - flag if wrong. At the standing 10 lb weight cap.
+2026-08-06,B,Band Bent-Over Row,1,15,,Black band (upped from red per today's recommendation)
+2026-08-06,B,Band Bent-Over Row,2,15,,Black band (upped from red)
+2026-08-06,B,Band Bent-Over Row,3,15,,Black band (upped from red)
 2026-08-06,B,Stability Ball Hip Bridge (per side),1,10,,
 2026-08-06,B,Stability Ball Hip Bridge (per side),2,10,,
 2026-08-06,B,Stability Ball Hip Bridge (per side),3,10,,"Clean 10/10/10 across all sets - hits the top of the 10-12 target range consistently for the first time, resolving the fatigue-dropoff pattern from two sessions ago."
 2026-08-06,B,Side Plank (per side),1,45,5,"Logged by Jackie as 'Plank' but matches Day B's Side Plank per today's printable card - 45 sec/side with a 5 lb weight added, per the card's recommendation to add difficulty once past the 20-30 sec target range."
 2026-08-06,B,Side Plank (per side),2,45,5,
 2026-08-06,B,Side Plank (per side),3,45,5,"3 sets done, one more than the plan's standard 2 sets."
-2026-08-06,B,Single Arm Suitcase Carry (per side),1,60,25,"reps column = feet carried"
-2026-08-06,B,Single Arm Suitcase Carry (per side),2,60,25,"reps column = feet carried"
+2026-08-06,B,Single Arm Suitcase Carry (per side),1,60,25,reps column = feet carried
+2026-08-06,B,Single Arm Suitcase Carry (per side),2,60,25,reps column = feet carried
 2026-08-06,B,Single Arm Suitcase Carry (per side),3,60,25,"reps column = feet carried; hit the 60 ft target recommended after last session, still at the 25 lb max"
-2026-08-06,B,Band Face Pull,1,15,,"Black band (upped from red per today's recommendation)"
-2026-08-06,B,Band Face Pull,2,15,,"Black band (upped from red)"
-2026-08-06,B,Band Face Pull,3,15,,"Black band (upped from red)"
-2026-08-11,A,Goblet Squat (dumbbell),1,15,25,"Extended past prior top of range (was 12 reps @ 25 lb 8/4) per recommended rep-ceiling extension"
-2026-08-11,A,Goblet Squat (dumbbell),2,15,25,"Extended past prior top of range (was 12 reps @ 25 lb 8/4) per recommended rep-ceiling extension"
-2026-08-11,A,Goblet Squat (dumbbell),3,15,25,"Extended past prior top of range (was 12 reps @ 25 lb 8/4) per recommended rep-ceiling extension"
-2026-08-11,A,Dumbbell Romanian Deadlift,1,15,25,"Extended past prior top of range (was 12 reps @ 25 lb 8/4)"
-2026-08-11,A,Dumbbell Romanian Deadlift,2,15,25,"Extended past prior top of range (was 12 reps @ 25 lb 8/4)"
-2026-08-11,A,Dumbbell Romanian Deadlift,3,15,25,"Extended past prior top of range (was 12 reps @ 25 lb 8/4)"
+2026-08-06,B,Band Face Pull,1,15,,Black band (upped from red per today's recommendation)
+2026-08-06,B,Band Face Pull,2,15,,Black band (upped from red)
+2026-08-06,B,Band Face Pull,3,15,,Black band (upped from red)
+2026-08-11,A,Goblet Squat (dumbbell),1,15,25,Extended past prior top of range (was 12 reps @ 25 lb 8/4) per recommended rep-ceiling extension
+2026-08-11,A,Goblet Squat (dumbbell),2,15,25,Extended past prior top of range (was 12 reps @ 25 lb 8/4) per recommended rep-ceiling extension
+2026-08-11,A,Goblet Squat (dumbbell),3,15,25,Extended past prior top of range (was 12 reps @ 25 lb 8/4) per recommended rep-ceiling extension
+2026-08-11,A,Dumbbell Romanian Deadlift,1,15,25,Extended past prior top of range (was 12 reps @ 25 lb 8/4)
+2026-08-11,A,Dumbbell Romanian Deadlift,2,15,25,Extended past prior top of range (was 12 reps @ 25 lb 8/4)
+2026-08-11,A,Dumbbell Romanian Deadlift,3,15,25,Extended past prior top of range (was 12 reps @ 25 lb 8/4)
 2026-08-11,A,Dumbbell Floor/Bench Press,1,10,25,"Up from 8 reps @ 25 lb 8/4, still within 8-12 target range"
 2026-08-11,A,Dumbbell Floor/Bench Press,2,10,25,"Up from 8 reps @ 25 lb 8/4, still within 8-12 target range"
 2026-08-11,A,Dumbbell Floor/Bench Press,3,10,25,"Up from 8 reps @ 25 lb 8/4, still within 8-12 target range"
@@ -179,54 +179,54 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-11,A,Band Face Pull,1,15,,"Red band, same as 8/4"
 2026-08-11,A,Band Face Pull,2,15,,"Red band, same as 8/4"
 2026-08-11,A,Band Face Pull,3,15,,"Red band, same as 8/4"
-2026-08-13,B,Dumbbell Sumo Deadlift,1,15,25,"Extended past 8-12 target range at the 25 lb cap"
-2026-08-13,B,Dumbbell Sumo Deadlift,2,15,25,"Extended past 8-12 target range at the 25 lb cap"
-2026-08-13,B,Dumbbell Sumo Deadlift,3,15,25,"Extended past 8-12 target range at the 25 lb cap"
-2026-08-13,B,Dumbbell Reverse Lunge (per side),1,10,20,"Top of 8-10 target range"
-2026-08-13,B,Dumbbell Reverse Lunge (per side),2,10,20,"Top of 8-10 target range"
-2026-08-13,B,Dumbbell Reverse Lunge (per side),3,10,20,"Top of 8-10 target range"
-2026-08-13,B,Dumbbell Overhead Press,1,15,10,"Extended past 8-12 target range at the 10 lb weight cap (set 2026-07-30)"
-2026-08-13,B,Dumbbell Overhead Press,2,15,10,"Extended past 8-12 target range at the 10 lb weight cap (set 2026-07-30)"
-2026-08-13,B,Dumbbell Overhead Press,3,15,10,"Extended past 8-12 target range at the 10 lb weight cap (set 2026-07-30)"
-2026-08-13,B,Band Bent-Over Row,1,12,,"Purple band; within 10-15 target range"
-2026-08-13,B,Band Bent-Over Row,2,12,,"Purple band; within 10-15 target range"
-2026-08-13,B,Band Bent-Over Row,3,12,,"Purple band; within 10-15 target range"
-2026-08-13,B,Stability Ball Hip Bridge,1,12,,"3 sets (plan lists 2x10-12) — extended to 3 sets at top of rep range"
-2026-08-13,B,Stability Ball Hip Bridge,2,12,,"3 sets (plan lists 2x10-12) — extended to 3 sets at top of rep range"
-2026-08-13,B,Stability Ball Hip Bridge,3,12,,"3 sets (plan lists 2x10-12) — extended to 3 sets at top of rep range"
+2026-08-13,B,Dumbbell Sumo Deadlift,1,15,25,Extended past 8-12 target range at the 25 lb cap
+2026-08-13,B,Dumbbell Sumo Deadlift,2,15,25,Extended past 8-12 target range at the 25 lb cap
+2026-08-13,B,Dumbbell Sumo Deadlift,3,15,25,Extended past 8-12 target range at the 25 lb cap
+2026-08-13,B,Dumbbell Reverse Lunge (per side),1,10,20,Top of 8-10 target range
+2026-08-13,B,Dumbbell Reverse Lunge (per side),2,10,20,Top of 8-10 target range
+2026-08-13,B,Dumbbell Reverse Lunge (per side),3,10,20,Top of 8-10 target range
+2026-08-13,B,Dumbbell Overhead Press,1,15,10,Extended past 8-12 target range at the 10 lb weight cap (set 2026-07-30)
+2026-08-13,B,Dumbbell Overhead Press,2,15,10,Extended past 8-12 target range at the 10 lb weight cap (set 2026-07-30)
+2026-08-13,B,Dumbbell Overhead Press,3,15,10,Extended past 8-12 target range at the 10 lb weight cap (set 2026-07-30)
+2026-08-13,B,Band Bent-Over Row,1,12,,Purple band; within 10-15 target range
+2026-08-13,B,Band Bent-Over Row,2,12,,Purple band; within 10-15 target range
+2026-08-13,B,Band Bent-Over Row,3,12,,Purple band; within 10-15 target range
+2026-08-13,B,Stability Ball Hip Bridge,1,12,,3 sets (plan lists 2x10-12) — extended to 3 sets at top of rep range
+2026-08-13,B,Stability Ball Hip Bridge,2,12,,3 sets (plan lists 2x10-12) — extended to 3 sets at top of rep range
+2026-08-13,B,Stability Ball Hip Bridge,3,12,,3 sets (plan lists 2x10-12) — extended to 3 sets at top of rep range
 2026-08-13,B,Side Plank (per side),1,45,8,"reps column = seconds held; plan lists 2x20-30 sec/side — extended sets/duration and added an 8 lb weight, new"
 2026-08-13,B,Side Plank (per side),2,45,8,"reps column = seconds held; plan lists 2x20-30 sec/side — extended sets/duration and added an 8 lb weight, new"
 2026-08-13,B,Side Plank (per side),3,45,8,"reps column = seconds held; plan lists 2x20-30 sec/side — extended sets/duration and added an 8 lb weight, new"
-2026-08-13,B,Single-Arm Suitcase Carry (per side),1,80,25,"reps column = feet carried; plan lists 3x40-60 ft/side — extended distance at the 25 lb cap"
-2026-08-13,B,Single-Arm Suitcase Carry (per side),2,80,25,"reps column = feet carried; plan lists 3x40-60 ft/side — extended distance at the 25 lb cap"
-2026-08-13,B,Single-Arm Suitcase Carry (per side),3,80,25,"reps column = feet carried; plan lists 3x40-60 ft/side — extended distance at the 25 lb cap"
+2026-08-13,B,Single-Arm Suitcase Carry (per side),1,80,25,reps column = feet carried; plan lists 3x40-60 ft/side — extended distance at the 25 lb cap
+2026-08-13,B,Single-Arm Suitcase Carry (per side),2,80,25,reps column = feet carried; plan lists 3x40-60 ft/side — extended distance at the 25 lb cap
+2026-08-13,B,Single-Arm Suitcase Carry (per side),3,80,25,reps column = feet carried; plan lists 3x40-60 ft/side — extended distance at the 25 lb cap
 2026-08-13,B,Band Face Pull,1,15,,"Purple band; top of 12-15 target range. Added 2026-08-20, previously logged as done but no numbers given."
 2026-08-13,B,Band Face Pull,2,15,,"Purple band; top of 12-15 target range. Added 2026-08-20, previously logged as done but no numbers given."
 2026-08-13,B,Band Face Pull,3,15,,"Purple band; top of 12-15 target range. Added 2026-08-20, previously logged as done but no numbers given."
-2026-08-13,B,Dumbbell Lateral Raise,1,15,5,"First logged session for this exercise — added to the plan 2026-07-30 but not previously recorded as performed. Added to log 2026-08-20."
-2026-08-13,B,Dumbbell Lateral Raise,2,15,5,"First logged session for this exercise — added to the plan 2026-07-30 but not previously recorded as performed. Added to log 2026-08-20."
-2026-08-13,B,Dumbbell Lateral Raise,3,15,5,"First logged session for this exercise — added to the plan 2026-07-30 but not previously recorded as performed. Added to log 2026-08-20."
-2026-08-18,A,Goblet Squat,1,18,25,"exceeded top of range (target 8-12)"
-2026-08-18,A,Goblet Squat,2,18,25,"exceeded top of range (target 8-12)"
-2026-08-18,A,Goblet Squat,3,18,25,"exceeded top of range (target 8-12)"
-2026-08-18,A,Dumbbell Romanian Deadlift,1,18,25,"exceeded top of range (target 8-12)"
-2026-08-18,A,Dumbbell Romanian Deadlift,2,18,25,"exceeded top of range (target 8-12)"
-2026-08-18,A,Dumbbell Romanian Deadlift,3,18,25,"exceeded top of range (target 8-12)"
-2026-08-18,A,Dumbbell Floor/Bench Press,1,12,25,"at top of range (target 8-12); reported as '3 reps' but read as 3 sets of 12 given the rest of the session's pattern - confirm if that's wrong"
-2026-08-18,A,Dumbbell Floor/Bench Press,2,12,25,"at top of range (target 8-12); reported as '3 reps' but read as 3 sets of 12 given the rest of the session's pattern - confirm if that's wrong"
-2026-08-18,A,Dumbbell Floor/Bench Press,3,12,25,"at top of range (target 8-12); reported as '3 reps' but read as 3 sets of 12 given the rest of the session's pattern - confirm if that's wrong"
-2026-08-18,A,Single-Arm Dumbbell Row,1,8,20,"at bottom of range (target 8-12/side)"
-2026-08-18,A,Single-Arm Dumbbell Row,2,8,20,"at bottom of range (target 8-12/side)"
-2026-08-18,A,Single-Arm Dumbbell Row,3,8,20,"at bottom of range (target 8-12/side)"
+2026-08-13,B,Dumbbell Lateral Raise,1,15,5,First logged session for this exercise — added to the plan 2026-07-30 but not previously recorded as performed. Added to log 2026-08-20.
+2026-08-13,B,Dumbbell Lateral Raise,2,15,5,First logged session for this exercise — added to the plan 2026-07-30 but not previously recorded as performed. Added to log 2026-08-20.
+2026-08-13,B,Dumbbell Lateral Raise,3,15,5,First logged session for this exercise — added to the plan 2026-07-30 but not previously recorded as performed. Added to log 2026-08-20.
+2026-08-18,A,Goblet Squat,1,18,25,exceeded top of range (target 8-12)
+2026-08-18,A,Goblet Squat,2,18,25,exceeded top of range (target 8-12)
+2026-08-18,A,Goblet Squat,3,18,25,exceeded top of range (target 8-12)
+2026-08-18,A,Dumbbell Romanian Deadlift,1,18,25,exceeded top of range (target 8-12)
+2026-08-18,A,Dumbbell Romanian Deadlift,2,18,25,exceeded top of range (target 8-12)
+2026-08-18,A,Dumbbell Romanian Deadlift,3,18,25,exceeded top of range (target 8-12)
+2026-08-18,A,Dumbbell Floor/Bench Press,1,12,25,at top of range (target 8-12); reported as '3 reps' but read as 3 sets of 12 given the rest of the session's pattern - confirm if that's wrong
+2026-08-18,A,Dumbbell Floor/Bench Press,2,12,25,at top of range (target 8-12); reported as '3 reps' but read as 3 sets of 12 given the rest of the session's pattern - confirm if that's wrong
+2026-08-18,A,Dumbbell Floor/Bench Press,3,12,25,at top of range (target 8-12); reported as '3 reps' but read as 3 sets of 12 given the rest of the session's pattern - confirm if that's wrong
+2026-08-18,A,Single-Arm Dumbbell Row,1,8,20,at bottom of range (target 8-12/side)
+2026-08-18,A,Single-Arm Dumbbell Row,2,8,20,at bottom of range (target 8-12/side)
+2026-08-18,A,Single-Arm Dumbbell Row,3,8,20,at bottom of range (target 8-12/side)
 2026-08-18,A,Single-Leg Balance Reach,1,12,10,"per the plan (weighted, 10 lb); extended to 3 sets, exceeded top of rep range (target 2x8-10/side)"
 2026-08-18,A,Single-Leg Balance Reach,2,12,10,"per the plan (weighted, 10 lb); extended to 3 sets, exceeded top of rep range (target 2x8-10/side)"
 2026-08-18,A,Single-Leg Balance Reach,3,12,10,"per the plan (weighted, 10 lb); extended to 3 sets, exceeded top of rep range (target 2x8-10/side)"
 2026-08-18,A,Plank,1,50,,"reps column = seconds held; per the plan (shoulder-tap variation); extended to 3 sets, 50 sec (target 2x30-45 sec)"
 2026-08-18,A,Plank,2,50,,"reps column = seconds held; per the plan (shoulder-tap variation); extended to 3 sets, 50 sec (target 2x30-45 sec)"
 2026-08-18,A,Plank,3,50,,"reps column = seconds held; per the plan (shoulder-tap variation); extended to 3 sets, 50 sec (target 2x30-45 sec)"
-2026-08-18,A,Dumbbell Farmer's Carry,1,85,25,"reps column = feet carried; plan lists 3x40-60 ft - exceeded top of range at the established 25 lb cap"
-2026-08-18,A,Dumbbell Farmer's Carry,2,85,25,"reps column = feet carried; plan lists 3x40-60 ft - exceeded top of range at the established 25 lb cap"
-2026-08-18,A,Dumbbell Farmer's Carry,3,85,25,"reps column = feet carried; plan lists 3x40-60 ft - exceeded top of range at the established 25 lb cap"
+2026-08-18,A,Dumbbell Farmer's Carry,1,85,25,reps column = feet carried; plan lists 3x40-60 ft - exceeded top of range at the established 25 lb cap
+2026-08-18,A,Dumbbell Farmer's Carry,2,85,25,reps column = feet carried; plan lists 3x40-60 ft - exceeded top of range at the established 25 lb cap
+2026-08-18,A,Dumbbell Farmer's Carry,3,85,25,reps column = feet carried; plan lists 3x40-60 ft - exceeded top of range at the established 25 lb cap
 2026-08-18,A,Glute Bridge,1,18,25,"per the plan (banded, 25 lb weight on hips); exceeded rep target (3x15)"
 2026-08-18,A,Glute Bridge,2,18,25,"per the plan (banded, 25 lb weight on hips); exceeded rep target (3x15)"
 2026-08-18,A,Glute Bridge,3,18,25,"per the plan (banded, 25 lb weight on hips); exceeded rep target (3x15)"
@@ -236,12 +236,12 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-20,B,Dumbbell Sumo Deadlift,1,15,25,"Tempo added (slow eccentric) per today's recommendation — reps held at 15, same as the prior two sessions, since weight is capped at 25 lb"
 2026-08-20,B,Dumbbell Sumo Deadlift,2,15,25,"Tempo added (slow eccentric) per today's recommendation — reps held at 15, same as the prior two sessions, since weight is capped at 25 lb"
 2026-08-20,B,Dumbbell Sumo Deadlift,3,15,25,"Tempo added (slow eccentric) per today's recommendation — reps held at 15, same as the prior two sessions, since weight is capped at 25 lb"
-2026-08-20,B,Dumbbell Reverse Lunge (per side),1,8,25,"Weight bumped from 20 to 25 lb (equipment cap) per today's recommendation; reps reset to bottom of range as expected after a weight increase"
-2026-08-20,B,Dumbbell Reverse Lunge (per side),2,8,25,"Weight bumped from 20 to 25 lb (equipment cap) per today's recommendation; reps reset to bottom of range as expected after a weight increase"
-2026-08-20,B,Dumbbell Reverse Lunge (per side),3,8,25,"Weight bumped from 20 to 25 lb (equipment cap) per today's recommendation; reps reset to bottom of range as expected after a weight increase"
-2026-08-20,B,Dumbbell Overhead Press,1,18,10,"Extended further past range at the 10 lb weight cap (set 2026-07-30) — up from 15 reps last session"
-2026-08-20,B,Dumbbell Overhead Press,2,18,10,"Extended further past range at the 10 lb weight cap (set 2026-07-30) — up from 15 reps last session"
-2026-08-20,B,Dumbbell Overhead Press,3,18,10,"Extended further past range at the 10 lb weight cap (set 2026-07-30) — up from 15 reps last session"
+2026-08-20,B,Dumbbell Reverse Lunge (per side),1,8,25,Weight bumped from 20 to 25 lb (equipment cap) per today's recommendation; reps reset to bottom of range as expected after a weight increase
+2026-08-20,B,Dumbbell Reverse Lunge (per side),2,8,25,Weight bumped from 20 to 25 lb (equipment cap) per today's recommendation; reps reset to bottom of range as expected after a weight increase
+2026-08-20,B,Dumbbell Reverse Lunge (per side),3,8,25,Weight bumped from 20 to 25 lb (equipment cap) per today's recommendation; reps reset to bottom of range as expected after a weight increase
+2026-08-20,B,Dumbbell Overhead Press,1,18,10,Extended further past range at the 10 lb weight cap (set 2026-07-30) — up from 15 reps last session
+2026-08-20,B,Dumbbell Overhead Press,2,18,10,Extended further past range at the 10 lb weight cap (set 2026-07-30) — up from 15 reps last session
+2026-08-20,B,Dumbbell Overhead Press,3,18,10,Extended further past range at the 10 lb weight cap (set 2026-07-30) — up from 15 reps last session
 2026-08-20,B,Band Bent-Over Row,1,15,,"Purple band; top of 10-15 target range, per today's recommendation to build back toward 15. Originally reported as 50 reps — confirmed with Jackie as a dictation mix-up for 15."
 2026-08-20,B,Band Bent-Over Row,2,15,,"Purple band; top of 10-15 target range, per today's recommendation to build back toward 15. Originally reported as 50 reps — confirmed with Jackie as a dictation mix-up for 15."
 2026-08-20,B,Band Bent-Over Row,3,15,,"Purple band; top of 10-15 target range, per today's recommendation to build back toward 15. Originally reported as 50 reps — confirmed with Jackie as a dictation mix-up for 15."
@@ -260,3 +260,30 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-20,B,Dumbbell Lateral Raise,1,10,8,"Weight bumped from 5 to 8 lb per today's recommendation; reps landed below the 12-15 range, expected right after a weight increase"
 2026-08-20,B,Dumbbell Lateral Raise,2,10,8,"Weight bumped from 5 to 8 lb per today's recommendation; reps landed below the 12-15 range, expected right after a weight increase"
 2026-08-20,B,Dumbbell Lateral Raise,3,10,8,"Weight bumped from 5 to 8 lb per today's recommendation; reps landed below the 12-15 range, expected right after a weight increase"
+2026-08-21,C,Bulgarian Split Squat (per side),1,8,10,
+2026-08-21,C,Bulgarian Split Squat (per side),2,8,10,
+2026-08-21,C,Bulgarian Split Squat (per side),3,8,10,
+2026-08-21,C,Single-Leg Romanian Deadlift (per side),1,8,10,
+2026-08-21,C,Single-Leg Romanian Deadlift (per side),2,8,10,
+2026-08-21,C,Single-Leg Romanian Deadlift (per side),3,8,10,
+2026-08-21,C,Dumbbell Incline Press,1,8,10,
+2026-08-21,C,Dumbbell Incline Press,2,8,10,
+2026-08-21,C,Dumbbell Incline Press,3,8,10,
+2026-08-21,C,Renegade Row (per side),1,6,10,
+2026-08-21,C,Renegade Row (per side),2,6,10,
+2026-08-21,C,Renegade Row (per side),3,6,10,
+2026-08-21,C,Bird Dog (per side),1,10,0,3 sets reported vs. plan's 2 x 8-10/side — logged as reported
+2026-08-21,C,Bird Dog (per side),2,10,0,3 sets reported vs. plan's 2 x 8-10/side — logged as reported
+2026-08-21,C,Bird Dog (per side),3,10,0,3 sets reported vs. plan's 2 x 8-10/side — logged as reported
+2026-08-21,C,Dead Bug (per side),1,10,0,3 sets reported vs. plan's 2 x 10-12/side — logged as reported
+2026-08-21,C,Dead Bug (per side),2,10,0,3 sets reported vs. plan's 2 x 10-12/side — logged as reported
+2026-08-21,C,Dead Bug (per side),3,10,0,3 sets reported vs. plan's 2 x 10-12/side — logged as reported
+2026-08-21,C,Dumbbell Overhead Carry,1,30,10,reps column = feet carried
+2026-08-21,C,Dumbbell Overhead Carry,2,30,10,reps column = feet carried
+2026-08-21,C,Dumbbell Overhead Carry,3,30,10,reps column = feet carried
+2026-08-21,C,Single-Leg Glute Bridge (per side),1,10,0,
+2026-08-21,C,Single-Leg Glute Bridge (per side),2,10,0,
+2026-08-21,C,Single-Leg Glute Bridge (per side),3,10,0,
+2026-08-21,C,Band Pull-Apart,1,15,0,"No band available today — done bodyweight-only, confirmed with Jackie (not a data error)."
+2026-08-21,C,Band Pull-Apart,2,15,0,"No band available today — done bodyweight-only, confirmed with Jackie (not a data error)."
+2026-08-21,C,Band Pull-Apart,3,15,0,"No band available today — done bodyweight-only, confirmed with Jackie (not a data error)."

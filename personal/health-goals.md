@@ -4,14 +4,14 @@
 
 ---
 
-## Current Metrics (as of 2026-08-15)
+## Current Metrics (as of 2026-08-21)
 
 | Metric | Current | Goal | To Go |
 |---|---|---|---|
 | Weight | 143.6 lbs | 135–138 lbs | 6–9 lbs |
 | Body fat | 38.3% | 30% | 8.3 points |
 | Waist | 30.75 in | 28 in | 2.75 in |
-| HRV | 28 | — | — |
+| HRV | 26 | — | — |
 | VO2 Max | 26.3 | 30 | 3.7 |
 
 ## How This Gets Tracked
@@ -40,6 +40,7 @@
 | 2026-08-02 | 144.8 lbs | 38% | 31 in | 26 | Weight down 1.6 lbs from last week, body fat up 0.4 pts (roughly a wash net of the weight change). Waist unchanged. HRV back up to 26, the highest of the four readings so far, a good recovery sign after last week's heavy load. |
 | 2026-08-09 | 144.8 lbs | 38.2% | 31 in | 32 | Weight and waist unchanged from last week. Body fat up 0.2 pts, essentially flat. HRV jumped to 32, the highest reading yet, a strong recovery sign. |
 | 2026-08-15 | 143.6 lbs | 38.3% | 30.75 in | 28 | Early check-in, a day ahead of the usual Sunday slot. Weight down 1.2 lbs and waist down 0.25 in from last week, both moving the right direction. Body fat essentially flat (+0.1 pt). HRV down from last week's peak of 32 to 28, still the second-highest reading of the series so far. |
+| 2026-08-21 | 143.6 lbs | 38.3% | 30.75 in | 26 | Off the usual Sunday slot again. Weight, body fat, and waist all unchanged from last week. HRV down 2 points to 26, third-lowest reading of the series — worth keeping an eye on given this week's active load (5.1-mi walk logged same day). |
 
 ---
 

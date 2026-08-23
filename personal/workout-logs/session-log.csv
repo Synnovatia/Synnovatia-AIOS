@@ -41,3 +41,6 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-08-19,Walk,53,116,not captured,147,"2.57 miles, reported avg pace 18:39/mile. NOTE: pace doesn't reconcile - 53 min over 2.57 mi computes to ~20:37/mile, closer to 2 min/mile slower than reported; logged the reported figures as given."
 2026-08-20,Hill Warm-up,16,96,not captured,14,"0.7 miles, avg pace 22:27/mile (computes to ~15.7 min for 0.7 mi at that pace — reconciles closely with the 16 min duration). MET figure (14) is notably lower than this exercise's established range (62-89 across prior sessions) — Jackie confirmed after double-checking that 14 is correct, logged as reported despite the discrepancy from pattern."
 2026-08-20,Strength (Day B),65,112,not captured,244,"Reported: 65 min, avg HR 112, 244 MET-minutes. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv. Band Bent-Over Row's rep count, initially missing, was reported as 50 and confirmed with Jackie as a dictation mix-up for 15."
+2026-08-21,Walk,96,107,not captured,236,"5.1 miles, reported avg pace 19:02/mile (computes to ~18:49/mile, close enough to reconcile)."
+2026-08-21,Hill Warm-up,15,110,not captured,53,"0.8 miles."
+2026-08-21,Strength (Day C),42,109,not captured,141,"Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv."

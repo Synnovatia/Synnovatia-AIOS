@@ -1,16 +1,34 @@
-post_label,post_url,publish_date,day_of_week,engagements,impressions,first_seen_export,last_updated_export
-I texted a client after hours,https://www.linkedin.com/posts/synnovatia_i-texted-a-client-after-normal-business-hours-share-7490053646492094466-uwjG,2026-08-12,Wednesday,7,110,2026-08-17,2026-08-17
-I'm back in school,https://www.linkedin.com/posts/synnovatia_im-back-in-school-now-working-toward-a-share-7487543673870503936-xI4D,2026-08-05,Wednesday,4,102,2026-08-17,2026-08-17
-Has this ever happened to you (service list consolidation),https://www.linkedin.com/posts/synnovatia_has-this-ever-happened-to-you-you-spend-share-7490052794922553344-O2AB,2026-08-14,Friday,3,73,2026-08-17,2026-08-17
-askingforafriend,https://www.linkedin.com/posts/synnovatia_askingforafriend-share-7492720396090134528-14qY,2026-08-17,Monday,1,25,2026-08-17,2026-08-17
-Every leadership book says delegate,https://www.linkedin.com/posts/synnovatia_every-leadership-book-says-delegate-most-share-7490050940906094594-yHDp,2026-08-10,Monday,,25,2026-08-17,2026-08-17
-Client turned away 13%,https://www.linkedin.com/posts/synnovatia_recently-a-client-turned-away-13-of-the-share-7487543950329733120-cE6g,2026-08-07,Friday,1,19,2026-08-17,2026-08-17
-Client raised rates 30%,https://www.linkedin.com/posts/synnovatia_a-client-raised-her-rates-30-certain-shed-share-7485096718544289792-dWWc,2026-07-31,Friday,,13,2026-08-17,2026-08-17
-27 years of consulting,https://www.linkedin.com/posts/synnovatia_in-27-years-of-consulting-across-industries-share-7487543440814256129-37Te,2026-08-03,Monday,,4,2026-08-17,2026-08-17
-Mastermind post,https://www.linkedin.com/posts/synnovatia_mastermind-womenbusinessowner-smallbusiness-share-7473788251225370624-HkSN,2026-06-19,Friday,,3,2026-08-17,2026-08-17
-25 years cross-industry,https://www.linkedin.com/posts/synnovatia_in-25-years-of-cross-industry-consulting-share-7485096161427693569-GoYy,2026-07-27,Monday,,1,2026-08-17,2026-08-17
-Client landed biggest account,https://www.linkedin.com/posts/synnovatia_a-client-landed-her-biggest-account-yet-share-7483301247303974913-bJnt,2026-07-24,Friday,,1,2026-08-17,2026-08-17
-Messy Middle pricing,https://www.linkedin.com/posts/synnovatia_themessymiddle-smallbusiness-pricing-share-7481383938439962625-MENS,2026-07-10,Friday,,1,2026-08-17,2026-08-17
-Business growth post,https://www.linkedin.com/posts/synnovatia_businessgrowth-entrepreneurship-smallbusiness-share-7456396210199969793-uo_a,2026-05-05,Tuesday,,1,2026-08-17,2026-08-17
-Providence acute rehab (pre-cadence),https://www.linkedin.com/posts/synnovatia_providence-acute-rehab-ranks-in-the-top-48-ugcPost-7359598008549732354-l-uC,2025-08-08,Friday,,3,2026-08-17,2026-08-17
-Small business Facebook (pre-cadence),https://www.linkedin.com/posts/synnovatia_smallbusiness-entrepreneur-facebook-share-6856669402444681216-j8o8,2021-10-20,Wednesday,,1,2026-08-17,2026-08-17
+post_label,post_url,publish_date,day_of_week,engagements,impressions,first_seen_export,last_updated_export,export_period_start,export_period_end
+I texted a client after hours,https://www.linkedin.com/posts/synnovatia_i-texted-a-client-after-normal-business-hours-share-7490053646492094466-uwjG,2026-08-12,Wednesday,7,110,2026-08-17,2026-08-17,,
+I'm back in school,https://www.linkedin.com/posts/synnovatia_im-back-in-school-now-working-toward-a-share-7487543673870503936-xI4D,2026-08-05,Wednesday,4,102,2026-08-17,2026-08-17,,
+Has this ever happened to you (service list consolidation),https://www.linkedin.com/posts/synnovatia_has-this-ever-happened-to-you-you-spend-share-7490052794922553344-O2AB,2026-08-14,Friday,3,73,2026-08-17,2026-08-17,,
+askingforafriend,https://www.linkedin.com/posts/synnovatia_askingforafriend-share-7492720396090134528-14qY,2026-08-17,Monday,1,25,2026-08-17,2026-08-17,,
+Every leadership book says delegate,https://www.linkedin.com/posts/synnovatia_every-leadership-book-says-delegate-most-share-7490050940906094594-yHDp,2026-08-10,Monday,,25,2026-08-17,2026-08-17,,
+Client turned away 13%,https://www.linkedin.com/posts/synnovatia_recently-a-client-turned-away-13-of-the-share-7487543950329733120-cE6g,2026-08-07,Friday,1,19,2026-08-17,2026-08-17,,
+Client raised rates 30%,https://www.linkedin.com/posts/synnovatia_a-client-raised-her-rates-30-certain-shed-share-7485096718544289792-dWWc,2026-07-31,Friday,,13,2026-08-17,2026-08-17,,
+27 years of consulting,https://www.linkedin.com/posts/synnovatia_in-27-years-of-consulting-across-industries-share-7487543440814256129-37Te,2026-08-03,Monday,,4,2026-08-17,2026-08-17,,
+Mastermind post,https://www.linkedin.com/posts/synnovatia_mastermind-womenbusinessowner-smallbusiness-share-7473788251225370624-HkSN,2026-06-19,Friday,,3,2026-08-17,2026-08-17,,
+25 years cross-industry,https://www.linkedin.com/posts/synnovatia_in-25-years-of-cross-industry-consulting-share-7485096161427693569-GoYy,2026-07-27,Monday,,1,2026-08-17,2026-08-17,,
+Client landed biggest account,https://www.linkedin.com/posts/synnovatia_a-client-landed-her-biggest-account-yet-share-7483301247303974913-bJnt,2026-07-24,Friday,,1,2026-08-17,2026-08-17,,
+Messy Middle pricing,https://www.linkedin.com/posts/synnovatia_themessymiddle-smallbusiness-pricing-share-7481383938439962625-MENS,2026-07-10,Friday,,1,2026-08-17,2026-08-17,,
+Business growth post,https://www.linkedin.com/posts/synnovatia_businessgrowth-entrepreneurship-smallbusiness-share-7456396210199969793-uo_a,2026-05-05,Tuesday,,1,2026-08-17,2026-08-17,,
+Providence acute rehab (pre-cadence),https://www.linkedin.com/posts/synnovatia_providence-acute-rehab-ranks-in-the-top-48-ugcPost-7359598008549732354-l-uC,2025-08-08,Friday,,3,2026-08-17,2026-08-17,,
+Small business Facebook (pre-cadence),https://www.linkedin.com/posts/synnovatia_smallbusiness-entrepreneur-facebook-share-6856669402444681216-j8o8,2021-10-20,Wednesday,,1,2026-08-17,2026-08-17,,
+Most advisors specialize in one lane,https://www.linkedin.com/posts/synnovatia_askingforafriend-share-7492720396090134528-14qY,2026-08-17,Monday,1,78,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+I texted a client after hours,https://www.linkedin.com/posts/synnovatia_i-texted-a-client-after-normal-business-hours-share-7490053646492094466-uwjG,2026-08-12,Wednesday,3,58,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Has this ever happened to you (service list consolidation),https://www.linkedin.com/posts/synnovatia_has-this-ever-happened-to-you-you-spend-share-7490052794922553344-O2AB,2026-08-14,Friday,2,57,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+askingforafriend #2,https://www.linkedin.com/posts/synnovatia_askingforafriend-share-7492720561568260096-CbpP,2026-08-19,Wednesday,1,42,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+I'm back in school,https://www.linkedin.com/posts/synnovatia_im-back-in-school-now-working-toward-a-share-7487543673870503936-xI4D,2026-08-05,Wednesday,1,28,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Has this ever happened to you (you know exactly),https://www.linkedin.com/posts/synnovatia_has-this-ever-happened-to-you-you-know-exactly-share-7492720846827069440-Y4v5,2026-08-21,Friday,1,15,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Client landed biggest account,https://www.linkedin.com/posts/synnovatia_a-client-landed-her-biggest-account-yet-share-7483301247303974913-bJnt,2026-07-24,Friday,5,9,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Every leadership book says delegate,https://www.linkedin.com/posts/synnovatia_every-leadership-book-says-delegate-most-share-7490050940906094594-yHDp,2026-08-10,Monday,,8,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Client turned away 13%,https://www.linkedin.com/posts/synnovatia_recently-a-client-turned-away-13-of-the-share-7487543950329733120-cE6g,2026-08-07,Friday,,5,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Ghosts of Sicily (pre-cadence),https://www.linkedin.com/posts/synnovatia_ghostsofsicily-ghostsofhonolulu-ncis-share-7449842641036279809-K1uI,2026-04-14,Tuesday,,4,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+27 years of consulting,https://www.linkedin.com/posts/synnovatia_in-27-years-of-consulting-across-industries-share-7487543440814256129-37Te,2026-08-03,Monday,,3,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Providence acute rehab (pre-cadence),https://www.linkedin.com/posts/synnovatia_providence-acute-rehab-ranks-in-the-top-48-ugcPost-7359598008549732354-l-uC,2025-08-08,Friday,,3,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Client raised rates 30%,https://www.linkedin.com/posts/synnovatia_a-client-raised-her-rates-30-certain-shed-share-7485096718544289792-dWWc,2026-07-31,Friday,,2,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+25 years cross-industry,https://www.linkedin.com/posts/synnovatia_in-25-years-of-cross-industry-consulting-share-7485096161427693569-GoYy,2026-07-27,Monday,,2,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Disaster prep,https://www.linkedin.com/posts/synnovatia_disasterprep-providence-sanpedro-share-7462207209133789184-_M_O,2026-05-18,Monday,,2,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+7 Figure Forum post (pre-cadence),https://www.linkedin.com/posts/synnovatia_7figureforum-scalingsmart-founderlife-share-7392708849130102784-P9Ok,2025-11-11,Tuesday,,2,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+Client sat on hiring decision,https://www.linkedin.com/posts/synnovatia_a-client-sat-on-a-hiring-decision-for-four-share-7483299289688023040-n6KT,2026-07-17,Friday,,1,2026-08-21,2026-08-21,2026-08-15,2026-08-21
+27 years of B2B strategizing,https://www.linkedin.com/posts/synnovatia_27-years-of-b2b-strategizing-has-taught-me-share-7483299468067373057-hnXl,2026-07-20,Monday,,1,2026-08-21,2026-08-21,2026-08-15,2026-08-21
