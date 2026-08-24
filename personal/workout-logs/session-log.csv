@@ -44,3 +44,4 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,note
 2026-08-21,Walk,96,107,not captured,236,"5.1 miles, reported avg pace 19:02/mile (computes to ~18:49/mile, close enough to reconcile)."
 2026-08-21,Hill Warm-up,15,110,not captured,53,"0.8 miles."
 2026-08-21,Strength (Day C),42,109,not captured,141,"Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv."
+2026-08-24,Mixed Cardio,49,143,not captured,418,"3.36 miles, avg pace ~14:35/mile."

@@ -8,6 +8,28 @@
 
 ---
 
+## 2026-08-24
+
+### Manual Revenue/Health Log Entries
+- Added a $210.12 PayPal payment (non-Stripe) to `context/current-data.md`'s self-reported YTD income total ($17,000 → $17,210.12) — Stripe's own auto-refreshed numbers stay untouched, since that card is explicitly Stripe-only.
+- Added a new "Non-Stripe income (self-reported)" stat-row to the dashboard's Business Goals card (both `dashboard.html` and `dashboard-fragment.html`), republished the artifact, and updated the `dashboard-daily-refresh` scheduled task so this row self-maintains going forward — it recomputes the non-Stripe delta from `current-data.md` vs. Stripe's `revenue_ytd` on every morning refresh instead of staying a hardcoded one-off number.
+- Logged a Mixed Cardio session (49 min, avg HR 143, 3.36 miles, 418 METs) to `personal/workout-logs/session-log.csv`.
+
+### Client Re-Engagement Roster — Kate McCullough Removed
+- Removed Kate McCullough (family friend, not a re-engagement-appropriate contact) from `client-reengagement/data/roster.csv` and `due_now.csv` — no prior outreach history to clean up elsewhere.
+
+### SEO Prep for Website Relaunch
+- Researched Claude Code plugins/skills for SEO — Anthropic's own official `knowledge-work-plugins` Marketing plugin (bundles a `/seo-audit` command) came out safest and most credible vs. several thin or star-inflated third-party options; Jackie installed it herself via the Claude Code terminal (`/plugin marketplace add anthropics/knowledge-work-plugins`, `/plugin install marketing`), since plugin installation isn't available from this Cowork session.
+- Drafted keyword-informed page titles and meta descriptions for all 17 redesign pages (9 core pages, both Apply pages, Schedule a Conversation, blog front page, all-posts, and all six topic archives), grounded in the existing Search Console keyword clusters in `content/strategy.md` and real on-page copy — saved to `outputs/website-redesign/2026-08-24-seo-titles-meta-descriptions.md`. Added a corresponding item to the pre-launch checklist, flagging that no SEO plugin had been confirmed installed.
+- Checking staging directly found **DreamHost SEO Toolkit** is installed and active but its subscription is licensed to a different domain (almost certainly production `synnovatia.com`) and doesn't work on the staging subdomain — meta descriptions can't be set there until that's resolved (Jackie can ask DreamHost support to extend the subscription, or wait until go-live when the domain will match).
+- Real page titles were still gettable without the plugin (WordPress's native page-title field becomes the actual `<title>` tag when no SEO plugin is overriding it) — logged into staging via Claude in Chrome (Basic Auth + WP admin login both required the 1Password credential-request flow, after the in-app Browser pane proved unable to complete Basic Auth at all) and set real titles on all 11 live pages (homepage, About, Work With Me, The Messy Middle, both mastermind pages, both Apply pages, Schedule a Conversation, blog front page, All Posts). Verified each via the WP REST API and confirmed the About page's live rendered `<title>` tag updated correctly with the visible page content unchanged. The six topic archives and all meta descriptions remain blocked on the subscription issue.
+
+### LinkedIn Drafts — Word Doc Made Standard
+- Generated a Word doc (`outputs/linkedin/2026-08-31-to-09-04-drafts.docx`) for this morning's automated LinkedIn batch, matching the existing brand styling (navy Georgia headings, no invented callout/divider elements) used on past weeks' docs.
+- Updated the `linkedin-content-drafting` scheduled task so every future Monday batch generates the matching `.docx` automatically alongside the markdown file, per Jackie's standing preference that marketing drafts go out as an editable Word doc.
+
+---
+
 ## 2026-08-23
 
 ### Website Go-Live Prep — Homepage Featured Quote Spacing Fixed

@@ -309,7 +309,8 @@
       "Bash(python3 scripts/log_outreach.py no_response brooke@perstrat.com)",
       "Bash(python3 scripts/log_outreach.py no_response kirsten@bullockconsulting.net)",
       "Bash(python3 scripts/log_outreach.py no_response annette@ready4hire.com)",
-      "Bash(pandoc -t markdown \"2026-08-24-to-08-28-drafts.docx\")"
+      "Bash(pandoc -t markdown \"2026-08-24-to-08-28-drafts.docx\")",
+      "Bash(python3 scripts/log_outreach.py no_response miventrageser@gmail.com)"
     ]
   }
 }

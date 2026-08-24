@@ -17,6 +17,7 @@
 - [x] **Video testimonials — done 2026-08-23.** Both real YouTube videos embedded live on staging, replacing the placeholders:
   - Christina Carlson (Messy Middle mastermind page)
   - Mark Chapman, The I Do Society (Seven Figure Forum page)
+- [ ] **Set real page titles and meta descriptions.** Checked 2026-08-24 — none of the redesigned pages have them. The mockup/deploy files' `<title>` tags are internal labels only ("Synnovatia — Homepage Mockup") and don't survive being pasted into WordPress as Custom HTML. Drafted, keyword-informed titles/descriptions for all 17 pages (core pages, both Apply pages, Schedule a Conversation, blog front page + all-posts + six topic archives) are ready in `outputs/website-redesign/2026-08-24-seo-titles-meta-descriptions.md` — just needs entering into WordPress's title field + SEO plugin (Yoast/RankMath, or native equivalent) per page at launch. No SEO plugin has been confirmed installed on staging/production — worth checking before go-live, since meta descriptions need somewhere to live.
 
 ## Client quote sign-offs
 
