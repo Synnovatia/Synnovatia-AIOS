@@ -12,21 +12,21 @@
 
 ## Must-fix before launch
 
-- [ ] **Name correction:** "Nia Troup" → **Naya James** — she confirmed this is her current legal name across all contexts. Still shows as "Nia Troup" on the About/homepage testimonial copy.
+- [x] **Name correction — done 2026-08-23.** "Nia Troup" → **Naya James** on the homepage testimonial (the only page it appeared on — About was checked and never had it). Also removed a resolved code comment that had flagged this as an open question pending her reply.
 - [ ] **HubSpot form styling:** the embedded "Mastermind Application" and "7-Figure Forum Application" forms still show HubSpot's default button styling, not the site's teal (`#0F6E56`). Fix lives in HubSpot's own Style tab for each form — Jackie deliberately held off doing this earlier since it would also change the forms' appearance on the *current live* public pages, not just staging. Do this as part of the launch sequence, not before.
-- [ ] **Video testimonials — still placeholders:**
+- [x] **Video testimonials — done 2026-08-23.** Both real YouTube videos embedded live on staging, replacing the placeholders:
   - Christina Carlson (Messy Middle mastermind page)
   - Mark Chapman, The I Do Society (Seven Figure Forum page)
 
 ## Client quote sign-offs
 
-Jackie confirmed (2026-08-12) these are **not hard blockers** — but worth clearing before the quotes go live to the public.
+All confirmed as of 2026-08-23 — **this section is fully closed out.**
 
-- [ ] **Diane Leonard** — sign-off request has sat in Gmail Drafts since 2026-08-04, never sent
-- [ ] **Anne Laguzza** (About page) — status never directly confirmed either way
-- [ ] **Brooke Billingsley**, VP Perception Strategies (Work With Me page) — quote is live on the staging page but no sign-off outreach has been sent or tracked at all
+- [x] Diane Leonard — confirmed
+- [x] Anne Laguzza (About page) — confirmed
+- [x] Brooke Billingsley, VP Perception Strategies (Work With Me page) — confirmed (had signed off previously, just not tracked here until now)
 
-Already confirmed and clear: Mark Chapman, Christina Carlson, Raffi Saroyan, Laura Labovich, John Lanza, Sandra Martinez Roe.
+Already confirmed and clear before this: Mark Chapman, Christina Carlson, Raffi Saroyan, Laura Labovich, John Lanza, Sandra Martinez Roe.
 
 ## Blog — one thing not to touch
 
