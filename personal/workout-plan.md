@@ -31,13 +31,15 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 | Dumbbell Romanian Deadlift | 3 x 8-12 |
 | Dumbbell Floor/Bench Press | 3 x 8-12 |
 | Single-Arm Dumbbell Row | 3 x 8-12/side |
-| Single-Leg Balance Reach (weighted, 10 lb) | 2 x 8-10/side |
+| Single-Leg Balance Reach (weighted, 12.5 lb) | 2 x 8-10/side |
 | Plank (shoulder-tap variation) | 2 x 30-45 sec |
-| Dumbbell Farmer's Carry | 3 x 40-60 ft |
+| Dumbbell Farmer's Carry | 3 x 100 ft |
 | Glute Bridge (banded, 25 lb weight on hips) | 3 x 15 |
 | Band Face Pull (purple band) | 3 x 12-15 |
 
-**Clarified 2026-08-19:** Single-Leg Balance Reach is weighted (10 lb), Plank uses the shoulder-tap variation, Glute Bridge is banded with a 25 lb weight resting on the hips, and Band Face Pull uses the purple band — all already part of the plan, just not previously written into this table. Documentation gap, not a change Jackie made on her own.
+**Clarified 2026-08-19:** Single-Leg Balance Reach is weighted, Plank uses the shoulder-tap variation, Glute Bridge is banded with a 25 lb weight resting on the hips, and Band Face Pull uses the purple band — all already part of the plan, just not previously written into this table. Documentation gap, not a change Jackie made on her own.
+
+**Plank sequencing (2026-08-25):** Jackie dropped the shoulder-tap variation for one session (60 sec target, up from 50 sec) to confirm the hold at the new duration before reintroducing the tap. Next Day A session: repeat 60 sec plain plank one more time; once that's clean, add the shoulder taps back in.
 
 ## Day B — Thursday
 
@@ -81,7 +83,7 @@ Work within the rep range shown for each exercise. Once you hit the top of the r
 
 **Hard ceiling: 25 lb per hand is the maximum dumbbell weight available (confirmed 2026-08-04).** Never recommend or log a weight above this.
 
-**Rep soft ceiling: 15 reps per set (set 2026-08-20).** Don't recommend or log a working target past 15 reps on any exercise, regardless of weight — this replaces "extend the rep ceiling toward 18–20" from the original ceiling order below. Once an exercise is maxed on weight (25 lb dumbbell cap, or a band/bodyweight exercise that's plateaued) and hits 15 reps for the working sets, move straight to tempo or an exercise swap rather than pushing reps higher.
+**Rep soft ceiling: 20 reps per set (raised 2026-08-25 from 15, mid-session, Jackie's own call).** Don't recommend or log a working target past 20 reps on any exercise, regardless of weight. The 15-rep version (set 2026-08-20) held for one session — Goblet Squat, Dumbbell Romanian Deadlift, and Glute Bridge all hit 20 reps at the 25 lb max on 2026-08-25. Once an exercise is maxed on weight (25 lb dumbbell cap, or a band/bodyweight exercise that's plateaued) and hits 20 reps for the working sets, move straight to tempo or an exercise swap rather than pushing reps higher.
 
 Once an exercise tops its rep range at max weight, the double-progression model above no longer applies as written — don't suggest "add weight" past the cap. Instead, in this order:
 1. **Add tempo/pause** — slower eccentric (3–4 sec lowering) or a 2-sec pause at the hardest point of the rep, holding at 15 reps rather than pushing further.

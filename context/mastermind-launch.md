@@ -110,3 +110,5 @@ Use these as the template when setting up the next launch:
 | `messymiddle-nudge-draft-sep9` | Sep 9 | Draft the nudge from real numbers |
 | `messymiddle-nudge-send-sep16` | Sep 16 | Send day — re-verify numbers first |
 | `school-term-syllabus-checkin` | Aug 25 | Catches the Oct 23 term-end/session collision |
+
+**Known gap (found 2026-08-25):** `messymiddle-invitation-build-aug24` fired on schedule (8/19) but left no retrievable output anywhere in the workspace — no file, no HISTORY.md entry. The build day's checklist had to be re-run manually, six days later. Next cycle: confirm a one-time scheduled task actually produced something the day after it fires, rather than assuming it did.

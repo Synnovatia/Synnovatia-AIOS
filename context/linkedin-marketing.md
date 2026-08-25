@@ -43,12 +43,13 @@ All of the following, in priority order matching `context/strategy.md`:
 - **Gender-neutral "they" by default for anonymized/composite client references (added 2026-08-10):** don't default to "she" or "he" for variety — use "they" unless there's a specific reason to name a gender.
 - **No invented quantified outcomes in illustrative/composite client-win stories (added 2026-08-10):** a specific stat ("beat what she'd projected for the whole quarter") reads as a real, verifiable claim even when the story is a generalized composite. For any client-win post not built from a real, confirmed result, close on a general insight/lesson instead of a made-up number. Reserve specific numbers for stories with real, confirmed details behind them.
 - **Hold Story-post topics loosely (added 2026-08-10):** Jackie has fully swapped a drafted Story's entire topic/angle rather than editing the wording — the specific anecdote isn't sacred. Treat the angle as a proposal, not a final choice; if she wants a different story entirely, that's a normal outcome, not a miss.
+- **No dropped-subject sentence openers (added 2026-08-25):** Jackie rewrote "Came across a stat this week I can't stop thinking about" to "I came across an interesting stat this week re: referrals" — she writes full sentences with the subject stated ("I came across..."), not a gerund/fragment opener. This is the same AI-tell instinct as the other scrub rules — a dropped subject reads as crafted, not spoken. Default to stating "I" explicitly rather than opening on the verb.
 
 | Day | Pillar | Notes |
 |---|---|---|
 | Monday | Thought leadership | A pattern/insight from 25+ years of cross-industry consulting. Precise, not generic — name the revenue range/stage per voice rules. |
 | Wednesday | Story | Personal or client story that humanizes the "peer, not guru" positioning. Warmth through specificity, not platitudes. |
-| Friday | Client win | A real result or transformation (anonymized/generalized unless a client has explicitly agreed to be named — check before naming anyone). Confident, not boastful — let the result speak. |
+| Friday | What I'm Watching | (Changed 2026-08-25 from Client Win — Jackie felt client wins read as self-serving and not her voice.) A real stat, trend, or observation relevant to the $250K-$4M B2B service audience, cited with a real source (e.g. "GrowSurf, 2026") — not an anecdote. Close on a direct question inviting the reader's own experience/data, same as the other two pillars. |
 
 ## Cadence Performance Tracking (started 2026-08-17)
 
