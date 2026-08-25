@@ -140,6 +140,7 @@ These are how you know your EVOLV-OS is working:
 │   └── workout-plan.md      # Strength training program (Fortify-compatible)
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
+│   ├── core-business-assessment/ # Rebranded version of the old "Core Business Assessment" fillable-PDF lead magnet (navy/gold/teal, 2026 copyright, 16 pages after removing the old free-consultation/About-the-Author pages) — visual/copyright refresh only, not wired into the live site
 │   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
 │   ├── morning-brief/        # brief.html = canonical live file for the standalone Morning Brief artifact (weekday auto-refresh, ~7:15am, edited in place — not regenerated)
 │   ├── positioning/          # Positioning brief (statement + full rationale/proof points) — internal strategy doc, not customer-facing
@@ -213,7 +214,7 @@ Say things like:
 - **"/develop #[id]"** → full concept development: strategic positioning (audience/authority/offer), then platform-specific packaging (LinkedIn hooks + visual concept, or blog meta title/H1/subheadings/internal links using real Search Console keyword data), interactive at each stage
 - **"/schedule"** → batch-plan which developed ideas to create next and when
 
-Strategy docs live in `content/` (`strategy.md`, `brand-and-audience.md`, `offers-and-funnels.md`) — read fresh by `/develop` every time, update them as positioning/offers/keyword targets evolve. `content/strategy.md` includes a real competitor ICP-fit analysis and a Search Console-sourced keyword-target table (re-pull periodically, since positions shift). No free offer/lead magnet is currently active — the blog's old "Core Business Assessment" download is confirmed outdated (flagged separately for removal from the live site).
+Strategy docs live in `content/` (`strategy.md`, `brand-and-audience.md`, `offers-and-funnels.md`) — read fresh by `/develop` every time, update them as positioning/offers/keyword targets evolve. `content/strategy.md` includes a real competitor ICP-fit analysis and a Search Console-sourced keyword-target table (re-pull periodically, since positions shift). No free offer/lead magnet is currently active — the blog's old "Core Business Assessment" download is confirmed outdated (flagged separately for removal from the live site). A rebranded version of that same asset now exists (`outputs/core-business-assessment/`, 2026-08-24) — visual/copyright refresh only, not wired into the site as an active lead magnet; that stays a separate future decision.
 
 Full details: `docs/content-pipeline.md`
 

@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-08-24 (continued, part 2)
+
+### Core Business Assessment Rebranded
+- Jackie asked to redo the old "Core Business Assessment" lead-magnet PDF (18 pages, a real fillable form with 157 AcroForm fields — 100 self-assessment checkboxes, 10 auto-calculating section totals with embedded JavaScript, plus a progress-tracking table) with current branding, scoped as a visual-only pass: same content throughout, kept as a fillable PDF, not wired back into the live site as an active lead magnet.
+- Rebuilt every page's visual layer (navy/gold/teal palette, Georgia headings, real Synnovatia logo, a redesigned typographic cover replacing the old generic stock map photo, recolored CTA buttons) while leaving all 157 form fields and their calculation scripts completely untouched — verified via a full word-for-word text diff against the original plus a widget count check after every edit pass.
+- Real technical finding: `apply_redactions()` (PyMuPDF) silently drops any image that was itself added via `insert_image()` in an earlier editing pass, the moment a *second* redaction is later applied to that same page — even in a completely fresh script run reopening the saved file. Cost two full redo cycles (the appendix table image vanished entirely, then came back once every redaction needed on a page was batched into a single `apply_redactions()` call instead of several sequential ones). Documented the fix directly in the build script's comments for next time.
+- Also caught and fixed two subtler bugs before calling it done: vertical (rotated) column headers on the Progress Chart page initially rendered horizontally-overlapping because the rewrite didn't preserve original text rotation; and two adjacent recolored headings on the About Author page briefly overlapped because the new font's character widths differ from the original OpenSans, fixed by merging same-line same-color runs into one draw call instead of drawing each span independently.
+- Follow-up requests handled in the same session: updated the copyright line on every page to "©2026 Jackie Nagel. Used by Synnovatia with permission." (confirmed with Jackie that "Cinevasia" was a dictation slip for Synnovatia before making the change — worth flagging since it would've been a real error in a legal/attribution line), deleted the old free-consultation/blog-subscribe CTA page and the About the Author page (printed pages 15–16, now 16 pages total), and removed the "Don't have a business coach? Get in touch!" note from the Instructions page.
+- Final file saved to `outputs/core-business-assessment/2026-08-24-core-business-assessment-rebranded.pdf` and dropped alongside (not overwriting) the original at `~/Desktop/Google Drive /Business Resources/Core Business Assessment/Core_Business_Assessment_REBRANDED.pdf`.
+
 ## 2026-08-24
 
 ### Manual Revenue/Health Log Entries
