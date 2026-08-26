@@ -8,6 +8,25 @@
 
 ---
 
+## 2026-08-25 (continued, part 2)
+
+### Mastermind Referral-Ask Emails — 4 Personalized Gmail Drafts
+- Brainstormed a "cure for isolation" hook line with Jackie ("We have the antidote to going it alone") for a referral-ask email to the 4 current Messy Middle members, then drafted the full email and iterated through several of her own edits — a warmer verb ("would love" over "want"), the full proper name ("The Mastermind for the Messy Middle") instead of a generic "this group," em-dash-joined clauses split into two sentences (confirmed now across a fourth content type: personal member email, not just LinkedIn/HubSpot/blog), and two redundant commas cut. Logged all of it to `feedback_linkedin-post-editing-style.md` and `feedback_jackie-native-writing-voice.md`.
+- Looked up real HubSpot contact records to confirm exact names/emails rather than guessing from memory — caught two real corrections: "Sandra Roe" (not "Sandra Roe Martinez," no record ties that surname to her) and "Elise Eidsness" (not "Eisdness"). For Amy Hage, two email addresses existed on file; used `amy@focusandfuel.com` after confirming via Gmail thread history that it's the one with real, active correspondence (the yahoo.com address had none).
+- Created 4 individual Gmail drafts, each with the other three members' first names correctly swapped into the "who's in the room" line (e.g., Sandra's draft lists Amy/Elise/Wilma, not herself). Subject "A favor to ask" on all four. Nothing sent — sitting in Gmail Drafts for Jackie's review.
+
+### Homepage Hero Photo Swapped on Staging
+- Jackie wanted to replace the homepage hero photo. She initially preferred a wider, oval-masked photo's framing but disliked the oval shape itself — turned out the oval was a soft-edged mask baked into that file with no unmasked original available, so used the plain square close-up instead (Jackie to hunt for the original unmasked photo separately if she wants that wider framing later).
+- Real environment finding: pasted chat images aren't accessible to this session's file tools at all (confirmed by an exhaustive filesystem search) — the workaround, now the standard method for any future photo swap, is Jackie uploads the file herself to the WP Media Library and shares the resulting URL.
+- Logged into staging via Jackie's real Chrome (Claude in Chrome), not the in-app Browser pane, since the staging password wall requires a real authenticated session. Swapped the hero `<img>` src via the block editor's `wp.data` API (Custom HTML block on post 11226), same safe-edit pattern used throughout this project.
+- **Real fit problem found and partially fixed:** the hero photo container has a `hero-stat-block` ("25+ years...") absolutely positioned over the bottom ~1/3 of the photo — the old photo's framing kept her face above that overlay, but the new square close-up's face sat lower in the frame, so the stat block was covering her chin. Fixed with a CSS `transform: translateY()` shift on the image inside its existing `object-fit: cover` box (no crop/box-size change, still full-bleed). Went through several rounds tuning the exact shift amount (a large shift cleared the chin but made her face read too large/zoomed; dialing it back to -60px restored natural headroom while keeping the chin and collar visible) — verified against Jackie's own screenshots, not just this session's own test window, since a fixed-pixel shift's *relative* effect changes with the container's actual rendered height.
+- **Open, unresolved:** Jackie reported the chin still looked cut off in a screenshot she sent, then on a second identical-looking screenshot said "that's not what I'm seeing" without further detail — never got a clear answer on what specifically still looks wrong from her side, despite matching screenshots on both ends by the end of the session. Pick this up fresh next time by asking her to point at the exact spot in a live screenshot, rather than assuming the -60px version is finished.
+
+### Real Full Disk Access Outage, Mid-Session
+- File access to the entire workspace suddenly broke mid-session — every read/write returned `EPERM`/`Operation not permitted`, including basic shell commands losing their working directory. Same category of issue as the DataOS launchd Full-Disk-Access bug documented earlier in this file, but this time hitting the interactive app itself, not a background cron job.
+- Root cause confirmed via System Settings → Privacy & Security → Full Disk Access: the `claude` entry's permission had gone stale for the already-running process, even though the toggle showed as on. Fix: toggle it off and back on, then fully quit and relaunch the app. Worked immediately once Jackie did this.
+- **Worth remembering for next time this happens:** don't assume a visibly-enabled Full Disk Access toggle means the running process actually has the grant — a stale process can hold a cached, revoked permission state. Toggle off/on plus a full app restart is the fix, not just checking the setting.
+
 ## 2026-08-25
 
 ### LinkedIn Friday Pillar Changed from Client Win to "What I'm Watching"
