@@ -25,7 +25,7 @@ The differentiation lives at the intersection of:
 
 Neither element alone is the differentiator — it's the combination clients can't find anywhere else.
 
-**Positioning name** (confirmed 2026-08-01): "Strategic Perspective You Feel From the First Conversation." Not yet decided whether this is client-facing or internal-only. This name — not "Different Is Better Than Better" — is the actual name of the positioning; see the note under "Source" below.
+**Positioning name** (confirmed 2026-08-01): "Strategic Perspective You Feel From the First Conversation." Confirmed client-facing 2026-08-26 — first deployed on the homepage redesign (staging) as the testimonials section header, in a shortened, sentence-case form: "Strategic perspective you can feel." This name — not "Different Is Better Than Better" — is the actual name of the positioning; see the note under "Source" below.
 
 **Tight positioning statement** (confirmed 2026-07-29, first person): "If you're a B2B service business owner generating $250K–$4M in revenue whose growth has stalled, I bring the kind of strategic thinking usually reserved for Fortune 500 companies, sized to get your business growing again. That comes from 25+ years running my own company and working alongside owners across a wide range of industries, which gives me both the big-picture view and the depth to understand your specific situation."
 
