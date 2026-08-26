@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-26 (continued)
+
+### Trademark Symbol Removed From the Logo, Site-Wide
+- Jackie asked to remove the trademark mark from the logo across every page. Found it on inspection: a small "®" baked directly into the pixels of both logo PNGs (`synnovatia-logo-nav.png` for the dark nav version, `synnovatia-logo-footer.png` for the white footer version) — not a text overlay or CSS-generated symbol, so it couldn't be removed by editing any page's copy.
+- Located the mark's exact pixel bounds programmatically (drew each image to an offscreen canvas and scanned column-by-column for non-transparent ink) rather than eyeballing it — found it isolated in the last 6px of each 574×60 image, with the wordmark itself ending at pixel 546. Used WordPress's native image editor (Crop tool, with its precise numeric Selection/Starting Coordinates fields rather than an imprecise drag) to crop both files to 550×60, verified via `naturalWidth`/`naturalHeight` before and after saving.
+- **Real complication:** WordPress's image editor doesn't overwrite the original file on "Save Edits" on this install — it writes a new file with an `-e{timestamp}` suffix (`synnovatia-logo-nav-e1787756796460.png`, `synnovatia-logo-footer-e1787756917923.png`) and repoints only that one attachment's own postmeta. Every live page hardcodes the old filename directly in its own Custom HTML block (this site's established pattern — no shared template), so cropping the two media-library files alone fixed nothing on the actual site until each page's `<img src>` was updated individually.
+- Updated all 9 pages that use the custom nav/footer treatment: homepage (11226), About (156), Work With Me (11258), The Messy Middle (9694), Mastermind for the Messy Middle (11287), Seven Figure Forum (11289), both Apply pages (11291, 11294), and Schedule a Conversation (11297) — same `wp.data` find-and-replace-in-block-content pattern used throughout this project, verified server-side after every save (not just the editor's own state) since several saves on this session silently failed to persist on the first click and only "stuck" once the "Saving…" transitional state was actually observed.
+- Checked whether the blog front page, all-posts page, and the six topic archives needed the same fix — they don't. Those pages render through the theme's own native header (a plain-text "Synnovatia" title, not the image wordmark) rather than the custom nav pattern, so they never had the mark to begin with.
+- **Real wrinkle:** staging (synnovatiacom.stage.site) flapped between working and 503 twice mid-task — the same recurring DreamHost instability from earlier in the day, confirmed via direct network-request status checks each time before retrying, not assumed. Paused and asked Jackie how to proceed rather than hammering a possibly-down server; she confirmed it was back and the work continued cleanly once it was.
+- Verified all 9 pages live via a zoomed screenshot of each nav after a cache purge — confirmed mark-free on every one — rather than trusting the saved block content alone.
+
 ## 2026-08-26
 
 ### Homepage Hero Photo — Stat-Block Overlay Reduced
