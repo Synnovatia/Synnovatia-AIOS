@@ -8,6 +8,23 @@
 
 ---
 
+## 2026-08-27
+
+### Lanise (Big Sand Productions) Meeting Prep
+- Prepped for the 8:00 AM Thursday "Strategize // Lanise // Jackie" call: pulled the July 29 Fathom recording (Pete also attended) and built a recap — Lanise performing well per Pete, but revenue down on a high volume of "fully booked" dates and zero conversions from 120+ leads from The I Do Society; the bigger thread was Big Sand's pivot from regional expansion toward building/reselling software (GigBook, a bulk music downloader) and Lanise's planned post-November shift from operations into revenue generation
+- Cross-referenced the actual action-item checkboxes against the "Next Steps" list to separate what's genuinely still open (5 items for Lanise, 2 for Jackie, 1 for Pete) from what's already done (calendar invite, summary email) — checked Gmail for a reply to the 8/24 pre-meeting objective ask and confirmed there wasn't one, so flagged that Jackie may be walking in without Lanise's stated agenda
+- Saved as a note in the "Pete Ford" Apple Notes folder, then reformatted per Jackie's request into proper rich text (bold section headers, real bullet lists, italic aside, linked transcript) at 18px. Found a real quirk in the process: Apple Notes silently shifts any font-size value down by exactly 3px on save (18→15, 24→21, confirmed with a throwaway test note) — the fix was specifying 21px to get the requested 18px rendered
+
+### Strength Training — Day B Worksheet Updated and Printed
+- Built the 2026-08-27 Day B printable from the actual 2026-08-20 logged numbers in `data/strength-training-log.csv` (not the unfilled 8/20 printable's placeholders), matching the same session-card template used for prior days
+- Folded in the rep-ceiling raise (15→20, set 2026-08-25 mid-Day-A) — several Day B lifts had plateaued at the old 15 cap and now have real room to climb before the next lever (tempo/swap) kicks in; flagged this explicitly since Day B hadn't run under the new ceiling yet
+- Carried forward the Overhead Press → Single-Arm Overhead Press swap (decided in the plan after the 8/20 session, first live session today) as a fresh "first-ever" entry rather than continuing the retired exercise's numbers
+- Sent the file directly and opened it in the browser preview pane for printing (built-in `@media print` styling, letter-size)
+
+### Routine Automation (no manual work)
+- Daily dashboard/metrics refresh bumped `context/group/key-metrics.md`, `outputs/dashboard/`, and `outputs/morning-brief/brief.html` to 2026-08-27 — no change in the underlying numbers
+- Thursday HubSpot drafting task produced this week's Active Engagers and Drifting segment drafts (`outputs/hubspot-marketing/2026-08-27-*`), and used up the queued referral-marketing stat in `context/hubspot-marketing.md`
+
 ## 2026-08-26 (continued, part 3)
 
 ### About Page Copy Refinements

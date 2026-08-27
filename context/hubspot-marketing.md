@@ -40,7 +40,9 @@ Not pitchy — goal is re-earning attention before they go fully cold. Thought l
 
 Article(s) Jackie's flagged to work into the next WIW-format Active Engagers draft (see the every-third-send rotation rule above). Remove each entry once it's been used in a draft.
 
-- **Referral Marketing Statistics for 2026** (GrowSurf, referencing Nielsen's Global Trust in Advertising study) — saved 2026-08-03. 88-92% of consumers trust recommendations from people they know above any other form of advertising; referred customers convert at 3-5x other channels with 37% higher retention. **Why it matters:** most $250K-4M service businesses already grow primarily through referrals but rarely run a deliberate system for generating them — as trust in ads and cold outreach keeps eroding, formalizing referral generation is one of the highest-leverage, lowest-cost growth levers to prescribe to clients. Link: https://growsurf.com/statistics/referral-marketing-statistics/ (unwrapped from the Gmail redirect link Jackie pasted).
+_(empty as of 2026-08-27 — the referral-marketing stat below was used in that day's draft)_
+
+- ~~**Referral Marketing Statistics for 2026** (GrowSurf, referencing Nielsen's Global Trust in Advertising study) — saved 2026-08-03. 88-92% of consumers trust recommendations from people they know above any other form of advertising; referred customers convert at 3-5x other channels with 37% higher retention.~~ **Used 2026-08-27** in Draft 1's short nod (not a full WIW piece — folded into an otherwise direct-CTA email per the every-third-send rotation). Link: https://growsurf.com/statistics/referral-marketing-statistics/
 
 ## Queued Content for Next Lapsed Send
 
