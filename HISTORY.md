@@ -8,6 +8,42 @@
 
 ---
 
+## 2026-08-26 (continued, part 2)
+
+### About Page Copy/Typography Pass
+- Bumped the hero-photo caption font sizes ("Jackie Nagel" / "Founder, Synnovatia"), removed the comma after "owners" in the hero headline, changed "$250,000" to "$250K" for consistency, and scrubbed several plain-unnecessary commas — logged as a new sub-pattern in `feedback_scrub-ai-cadence-before-presenting.md` (distinct from the connector-comma and em-dash tells already on file)
+- Capitalized "Credentials & Background," pulled the $250K–$4M stat onto one row, rewrote the Peer Dynamic card sentence to Jackie's wording, spelled out "Average Client Tenure" and "10+ years," realigned Christina's testimonial with Sandra's, reworded the MDE credential to "Certification, Management Development for Entrepreneurs (MDE)" and moved the Founder credential up beneath it, capitalized "Published Author and Small Business Contributor," and changed the anthropology credential to "Student, Cultural Anthropology" with a one-sentence rewrite
+- Real environment note: staging had a genuine multi-minute 503 outage mid-session (server-side, confirmed unrelated to any edit — one queued save had already landed, verified via a Revisions-count bump). A naive curl health-check script misread the server's return to normal (HTTP 401, Basic Auth) as "still down" since it only accepted 200/302 — 401 means healthy on this site, not broken
+
+### Sitewide Typography Standardized
+- Audited hero heading size, hero eyebrow weight, hero subtext size/opacity, and body-paragraph size/weight across About, Home, Messy Middle, Work With Me, and Schedule a Conversation — found a real two-camp split (About/Work With Me on a heavier scale, Home/Messy Middle/Schedule on a lighter one, hero-heading size differing on nearly every page)
+- Jackie picked one canonical scale (48px hero heading / 700-weight eyebrow / 18px at .82 opacity subtext / 17px at 400-weight body text) and it was applied to all five pages, then retrofitted onto the blog's Cover Story card and masthead once she confirmed the blog should match too
+
+### Blog Header/Nav Brought to Parity With the Rest of the Site
+- The blog (front page, All Posts, six topic archives) had never gotten the custom-nav treatment — plain-text "Synnovatia" instead of the logo image, the theme's unstyled default nav with no Schedule CTA, and a redundant visible WP page title duplicating the real masthead heading on the two singular pages
+- Front page and All Posts (full custom content) got the complete fix: real logo, the same nav markup/CSS used sitewide, a Schedule a Conversation button, duplicate title hidden
+- The six topic archives run off a shared PHP template Claude can't edit directly — fixed via Customizer → Additional CSS scoped to `body.tax-topic` (logo swap, nav restyle, no duplicate title to hide there) plus a prepared `functions.php` snippet (`generate_after_header` hook) for the one thing CSS can't do: a real CTA button, since none exists in the live WP menu to restyle. Jackie pasted it herself; the button first rendered at the wrong vertical position (fixed-position value didn't account for the WP admin toolbar's 32px) — fixed with an admin-bar-aware override, verified via exact `getBoundingClientRect()` math
+- Found and fixed an unrelated bug on the archives while in there: the real theme's "Work With Me" flyout submenu had no background, so its text bled onto the navy hero below — restyled `.sub-menu` to a proper white boxed dropdown matching the custom nav's own
+
+### Sitewide Nav Links Fixed, Duplicate Dropdown Items Removed
+- Every nav link across all seven custom-nav pages was a literal `href="#"` placeholder — only the Schedule CTA had a real URL. Replaced all with real destination URLs and set the correct `active` state per page (Strategic Coaching/Solutions on the Fly both point at `/work-with-me/`, since they're sections within that page, not separate destinations)
+- Per Jackie's follow-up, removed Strategic Coaching and Solutions on the Fly as separate dropdown items entirely — dropdown is now just Mastermind for the Messy Middle + Seven Figure Forum on all seven pages
+
+### Sitewide Mobile Navigation Built From Scratch
+- None of the seven custom-nav pages had a mobile fallback — below 900px the nav links simply vanished with no toggle, leaving the site unnavigable on a phone (confirmed live, not assumed)
+- Built a hamburger-toggle + slide-down mobile panel (all links, mastermind sub-links, Schedule CTA, correct active state) with a small inline vanilla-JS toggle script per page, applied to all seven
+- The archives didn't need a build — GeneratePress's native mobile menu already worked there, just visually covered by the new CTA button; fixed by hiding that CTA below 900px
+- Browser viewport-resize tooling was unreliable this session (reported success but often didn't change rendered width) — verified functionally instead by scripting real clicks against the toggle/panel DOM and checking resulting class state
+
+### Schedule a Conversation Page Polish
+- The light lavender "Select a time" section was a narrow centered card, inconsistent with the page's other full-bleed sections — moved the `--lt-navy` background onto the outer section so it bleeds edge-to-edge like the navy hero (confirmed `--lt-navy`/`#E8ECF5` is an established site color already used on About, Messy Middle, and Work With Me, not a new addition)
+- Tightened two comma constructions and changed "pick" to "select" in the scheduler copy
+
+### Hero-Touches-Nav Gap Bug Found and Fixed on Seven Pages
+- About, Home, Messy Middle, Work With Me, Schedule, Mastermind for the Messy Middle, and Seven Figure Forum each had a `body.admin-bar { padding-top: 104px; }` rule meant to compensate for the WP admin toolbar — but it double-counted an offset the browser already applies automatically, leaving a consistent 32px gap between the nav and the hero band whenever viewed while logged in (a logged-in-only artifact, confirmed via computed-style math before treating it as worth fixing). Corrected to 72px on all seven pages
+- The two mastermind pages had a second, compounding cause the other five didn't: GeneratePress's default `.inside-article { padding-top: 40px; }` was never zeroed out there (the other five reset it as part of their theme-override block) — fixed by adding `.inside-article` to that existing reset-selector list on both
+- Blog pages didn't have either bug (built fresh this session); the six archives have no full-bleed hero directly under the nav, so nothing applied there
+
 ## 2026-08-26 (continued)
 
 ### Trademark Symbol Removed From the Logo, Site-Wide
