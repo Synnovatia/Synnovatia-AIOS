@@ -8,6 +8,39 @@
 
 ---
 
+## 2026-08-26 (continued, part 3)
+
+### About Page Copy Refinements
+- Eyebrow on the "Peer Dynamic" card changed from "Where Others Stop, I Don't" to "The Persistence That Delivers Results" (kept Title Case in source, matching the site's convention for these labels — CSS renders it uppercase)
+- That same card's own eyebrow was then further reworded from "The Peer Dynamic That Makes It Land" to "The Peer Dynamic That Makes It Work"
+- The card's body copy rewritten: "The advice carries weight because it's grounded in lived experience — my own years running a business, plus years working with owners across industries and stages. Clients tell me I'm someone who understands their business." (was "...my own years in business and years working with owners across industries and stages. Clients experience me as someone who understands their business, not a coach selling a methodology.")
+
+### Schedule a Conversation — Nav Brought to Parity, Full Bleed Fixed
+- This page had silently never received the sitewide nav/full-bleed fixes the 8/26 (session 3) pass claimed had reached it. Real, confirmed bugs found by direct measurement: the nav was missing its "Schedule a Conversation" CTA button entirely (no markup, and no base `.nav-cta` style rule at all — not even a leftover unused one), the hero wasn't full-bleed and sat 40px below the nav, and once the button was added it rendered as a plain underlined link because the button's font-family/border-radius come from a separate shared type-system rule (`.nav-links a, .nav-cta, .nav-dropdown li a { font-family: 'Barlow Condensed' }` + `.nav-cta { border-radius: 10px }`) that this page's CSS had never included
+- Fixed all three: added the desktop + mobile CTA markup and its base style block, added `.inside-article` to the full-bleed reset selector list (GeneratePress's default 40px padding on all sides was the real cause of both the gap and the non-full-bleed inset), and added the missing type-system rule scoped to this page's own nav selectors
+- Verified live at each step, including a functional test of the mobile panel (forced via a temporary injected override, since viewport-resize tooling was unreliable this session) confirming the toggle opens/closes and the button renders as a real rounded teal pill, not a bare link
+
+### Mastermind for the Messy Middle & Seven Figure Forum — Full Nav Catch-Up
+- Both pages, it turned out, had never actually received the 8/26 sitewide nav pass despite the historical record implying "all seven custom-nav pages" got it — real content check found every nav link on both (including the logo) was still a literal `href="#"`, the Work With Me dropdown still carried the stale "Strategic Coaching"/"Solutions on the Fly" items, and neither page had any mobile navigation at all (no toggle button, no slide-down panel)
+- Fixed on both: real destination URLs throughout, dropdown trimmed to just the two mastermind items with correct `active`/`aria-current` state for whichever page it is, and a mobile nav built from scratch (hamburger toggle + slide-down panel, same markup/CSS/inline-JS pattern used sitewide) — functionally verified via a forced-open test with the real link styling injected, confirming correct active-state coloring and click-to-close behavior on both
+- The full-bleed/nav-to-hero-gap CSS itself checked out fine on Mastermind's page on direct measurement (both logged-in and a simulated logged-out state showed correct alignment) — left untouched there, since nothing was actually broken
+
+### The Messy Middle & Work With Me — Same Full-Bleed Bug Found and Fixed
+- Both pages showed the identical `.inside-article`-missing-from-reset-selector bug already diagnosed on Schedule a Conversation: hero inset 40px on each side and sitting 40px below the nav instead of flush. Same one-line fix applied to both (`.inside-article` added to the shared reset selector), verified live
+
+### Business Coaching Blog (Front Page + All Posts) — Three More Real Bugs Found
+- **Gap between masthead and nav:** traced to three stacked, unreset GeneratePress defaults specific to these two native GenerateBlocks pages (not the Custom-HTML pattern the rest of the site uses) — `#main.site-main`'s 20px margin-top, `.inside-article`'s 40px padding, and `.entry-content`'s 32px margin-top. Fixed via scoped rules in the Customizer's Additional CSS (`body.page-id-11921` / `body.page-id-11924`), the same mechanism already used for the topic archive pages, in two passes (first the vertical gap, then tightened further per Jackie's follow-up)
+- **Nav riding up under the admin bar:** a real, confirmed logged-in-only bug — while every other page's nav shifts to `top: 32px` while logged in (clearing the WP admin bar), these two pages' nav stayed pinned at `top: 0px`, sitting partly behind the bar. Confirmed it doesn't affect real visitors (simulated logged-out state showed correct alignment on both) before fixing it with the same `body.admin-bar.page-id-X nav:not(#site-navigation):not(#mobile-menu-control-wrapper)` pattern already used on the About page's Additional CSS
+- **Not actually full-bleed:** first attempt only zeroed `.inside-article`'s padding-top, leaving 40px on the other three sides (missed on both pages initially). The real width-constraining element turned out to be GeneratePress's own `.site.grid-container.container` default `max-width: 1200px` (auto-centered) — never overridden on these two native pages, unlike every Custom-HTML page on the site. Fixed by zeroing max-width/margin on that wrapper, scoped to both page IDs
+
+### Mastermind & Seven Figure Forum Apply Pages — Same Full-Bleed and Nav Fixes
+- Both Apply pages (checked the Seven Figure Forum one proactively, since it's the direct structural twin of the Mastermind one) had the identical `.inside-article` full-bleed bug plus all-placeholder nav links and the stale dropdown items — same fixes applied to both, verified live
+
+### HubSpot Form Styling Mismatch — Investigated, Not Fixable From the Website Side
+- Jackie asked why the Seven Figure Forum Apply page's embedded form doesn't look like the Mastermind Apply page's (visible labels and plain square gray inputs vs. hidden-label pill-style fields). Investigated thoroughly: both forms actually render inside a same-origin (`srcdoc`) iframe carrying HubSpot's own default stylesheet (confirmed by reading the iframe's `contentDocument` directly — it loads Google's "Open Sans," not the site's fonts), so neither page's CSS can reach into either form regardless of embed method
+- Tested the one lever that seemed plausible — swapping Seven Figure Forum's embed from the newer `hs-form-frame` pattern to the older `hbspt.forms.create()`/v2.js pattern Mastermind uses — and confirmed it made zero visual difference (both embed methods produce the same iframe). Reverted that change cleanly, leaving the page's original working embed in place
+- Real conclusion: the Mastermind form's polished look is a per-form "Style & Preview" theme configured directly inside HubSpot's own dashboard, not something reachable from WordPress or page CSS. Flagged for Jackie to either copy that theme onto the Seven Figure Forum form herself in HubSpot, or bring Claude in once she's logged into HubSpot to walk through the exact settings (no HubSpot access authorized in this session)
+
 ## 2026-08-26 (continued, part 2)
 
 ### About Page Copy/Typography Pass
