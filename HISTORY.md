@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-27 (continued, part 2)
+
+### Day B Strength Session Logged
+- Logged today's full Day B results (dictated by Jackie) into `data/strength-training-log.csv` (27 sets across 9 exercises) and the session-level summary into `personal/workout-logs/session-log.csv` (30-min hill warm-up + 64-min strength block)
+- Real dictation ambiguity caught and resolved: two back-to-back lines ("Bentova Band" and "Bentova Rose Purple Band," both 3×15) read as a possible duplicate rather than two distinct exercises — flagged to Jackie before logging rather than guessing silently; she confirmed it's one Band Bent-Over Row entry, notes on all three affected rows updated to reflect the confirmation
+- Notable results against this session's printed recommendations: Sumo Deadlift climbed to 18 reps now that the ceiling is 20 (not the old 15); the swapped Single-Arm Overhead Press got its first live session; Band Face Pull moved up a level (purple → green) per the standing rec, with reps dropping to 10 as expected right after a band upgrade
+
+### HubSpot Email Visual Styling Recipe (automated pass, not this session's direct work)
+- A background pass this same day added a permanent "Email Visual Styling Recipe" to `context/hubspot-marketing.md` — Barlow/Barlow Condensed fonts, teal links/CTAs, real padding — replacing HubSpot's unstyled defaults that drafts had been shipping with. Real technical finding along the way: HubSpot's base email CSS sets `p{margin:0}`, so stacked `<p>` tags render with zero visual gap regardless of line-height; Jackie's own workaround (manual empty spacer paragraphs) got folded into the recipe as explicit `margin-bottom` on every paragraph instead
+- `outputs/hubspot-marketing/style-learning-log.md` picked up a same-day in-editor diff entry (Active Engagers, 09/02 send) — several voice edits logged (question-form subject lines, dropping the "$250K-$4M" figure a second confirmed time, list-to-catch-all phrasing, inline bolding of a service name), plus a likely-harmless HubSpot editor quirk (base font silently switching to a Traditional Chinese font stack after a hand-edit) flagged to Jackie rather than auto-corrected
+
 ## 2026-08-27
 
 ### Lanise (Big Sand Productions) Meeting Prep
