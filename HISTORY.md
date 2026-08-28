@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-08-28
+
+### Flow Mode Cleanup
+- Explained a spare `~/Downloads/flow-mode/` folder Jackie pointed at — the same Standard-level permission allowlist already installed in this workspace since 2026-08-03, just a duplicate download. Deleted it at her request; nothing in the workspace was affected since it lived entirely outside this repo
+
+### Seven Figure Forum HubSpot Form — Field Reduction Explained, Not a Bug
+- After Jackie updated the "7-Figure Forum Application" form's style in HubSpot to match "Mastermind Application," a check showed it rendering with only an Email field instead of all 9 — flagged as a likely regression. Jackie explained it's HubSpot's progressive-profiling/smart-fields behavior collapsing already-known fields for a recognized contact. Verified there are no HubSpot tracking cookies on the WordPress domain itself (tracking lives entirely on HubSpot's own side via a same-origin frame), so a true "fresh visitor" test wasn't possible from here — accepted her explanation as authoritative given she has direct visibility into the form's HubSpot-side configuration
+
+### Both Apply Pages — Nav Gap, Font Scale Fixed (Full Bleed Already OK)
+- Real root cause found for the nav-to-hero gap on both Mastermind and Seven Figure Forum Apply pages: `body.admin-bar { padding-top: 104px; }` was double-counting the 32px admin-bar height on top of the 72px nav height, instead of just the 72px alone (with the admin-bar offset already handled separately via `html`'s own margin). Fixed on both pages to `72px`
+- Checked both pages' hero typography against Schedule a Conversation as the sitewide reference and found two real mismatches, present on both Apply pages: the eyebrow label was weight 600 instead of the sitewide 700, and the subtext line was 17px instead of 18px. Fixed both values on both pages
+- Full bleed itself was already correct on both pages from an earlier pass — confirmed still holding, no change needed
+- All four checks (nav-to-hero flush, full width, eyebrow weight, subtext size) verified live and matching between the two pages after the fixes
+
 ## 2026-08-27 (continued, part 2)
 
 ### Day B Strength Session Logged
