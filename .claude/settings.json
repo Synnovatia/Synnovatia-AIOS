@@ -1,5 +1,10 @@
 {
   "permissions": {
+    "deny": [
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__reply",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__send_message",
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__forward"
+    ],
     "allow": [
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__search_threads",
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__list_drafts",

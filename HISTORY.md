@@ -8,6 +8,33 @@
 
 ---
 
+## 2026-08-29
+
+### Seven Figure Forum & Mastermind Apply Pages — Nav Fixed, Round Windows Added
+- Found both Apply pages (Seven Figure Forum and Mastermind for the Messy Middle) were missing the sitewide nav's "Schedule a Conversation" CTA button and mobile hamburger menu entirely — copied the exact working pattern from the About page (nav-toggle button, mobile-nav-panel, toggle script) onto both, verified live including the mobile panel's per-page active state
+- Seven Figure Forum Apply: added the actual Jan-June/July-Dec round windows to the "twice a year" copy (after workshopping phrasing with Jackie — settled on "Two rounds run each year: January through June, and July through December"), removed the "Twice a Year" stat tile since the sentence now says it directly, simplified "Five meetings, twice a year" to "Two rounds a year"
+
+### Seven Figure Forum Main Page — Copy Cleanup, Video/Quote Reordered
+- Removed 4 unnecessary commas, spelled out "they'd" as "they had," removed the boxed grid-lines around the "Inside the Forum" six-item feature grid (was a 1px `rgba(255,255,255,0.12)` background/border creating a table-like look)
+- Swapped the display order of the video testimonial and text quote (video now leads) — caught a real mistake mid-task: initially misread "swap the quote and video" as relabeling which person went with which format, which would have mislabeled Mark Chapman's actual recorded YouTube testimonial as "Zoey." Reverted before saving, confirmed the fix was purely a position swap, correctly re-verified live
+- Same round-window language and "Two rounds a year" stat added here too, matching the Apply page
+
+### Business Coaching Blog — Full-Bleed Backgrounds Weren't Matched by Content Padding
+- Found and fixed three separate instances of the same bug: full-bleed section backgrounds were correct, but the actual text/content inside had zero horizontal padding, so headlines and cards sat flush against the browser edge instead of being inset like the rest of the site. Fixed: the front page's masthead ("Notes From the Messy Middle" + search bar), "The Latest" section's heading/link row, and separately the All Posts page's entire post list + pagination (missing the page-margin the Topic Archive pages get natively from the theme)
+- Fixed via scoped `body.page-id-XXXX` rules in the Customizer's Additional CSS, matching this site's established override pattern. Real gotcha hit twice: WP's Customizer silently failed to persist the CSS change on the first save attempt both times — had to verify via `wp.customize.state('saved')` directly rather than trusting the "Publish" button's visual state, and re-save
+
+### LinkedIn Metrics Updated (8/22-8/28 export)
+- Logged the week's Aggregate Analytics export into `data/linkedin-metrics/` (14 post snapshots, 7 daily-engagement rows, one log.csv summary row) — cadence read holds: Wednesday still leads at 35.6 avg impressions vs. Monday's 10.3 and Friday's 12.2, sample size growing (21 current-cadence posts logged)
+- Filled in profile_views_90d (51) and search_appearances_7d (23) from Jackie's separately-reported numbers; kept the export's 285 post-impressions figure over her reported 286 (1-off discrepancy), logged rather than silently picked
+
+### Hours Exchange Tracker Built (Google Sheet)
+- Built a 3-tab Google Sheet (Summary/Log/Settlements) to track hours traded between Jackie ($300/hr) and Adrian Delli Collie ($100/hr) — dollar-value running balance, settlement log, and a hours-equivalent balance (debtor's own rate) added after the first pass. Asked clarifying questions upfront per standing preference (balance method, settlement expectations, access, entry detail) before building
+- Real friction: `create_file`'s base64 upload path rejected two rebuild attempts (name correction "Adrianne"→"Adriene"→"Adrian") with a generic "invalid argument" error despite the files validating perfectly locally (byte-exact round-trip, well-formed XML). Traced part of it to openpyxl's default theme XML being needlessly large (10KB) and swapped in a minimal valid theme, which fixed the "Adriene" rebuild — but the final "Adrian" rename failed 3 additional times against fully-valid files for a reason never root-caused. Recommended Jackie use Sheets' own Find & Replace ("also search within formulas") instead of a fourth rebuild attempt, since it's a safer and more reliable path for a plain text substitution
+
+### Strength Training — Day C Worksheet Built, Two Walks Logged
+- Built and sent a print-ready Day C worksheet (matching the existing Day A/B worksheet format) with per-exercise recommendations based on the one prior Day C session (8/21) — all 9 exercises were at the bottom of their rep range at 10 lb last time, so targets push toward the top of each range rather than adding weight yet. Flagged two things for Jackie to confirm: Bird Dog/Dead Bug/Single-Leg Glute Bridge were done at 3 sets vs. the plan's written 2, and Band Pull-Apart's target assumes a band is on hand this time (last session had none)
+- Logged two separate walk entries for 8/28 (1.58 mi/44 min and 5.04 mi/95 min) and added a new `exertion_rpe` column to `session-log.csv`, backfilled blank on all prior rows since it wasn't tracked before
+
 ## 2026-08-28
 
 ### Flow Mode Cleanup
