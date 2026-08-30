@@ -81,7 +81,7 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 
 Work within the rep range shown for each exercise. Once you hit the top of the range on all sets, add weight next session and drop back to the bottom of the range. This is a simple double-progression model — matches Fortify's progressive-overload tracking directly.
 
-**Hard ceiling: 25 lb per hand is the maximum dumbbell weight available (confirmed 2026-08-04).** Never recommend or log a weight above this.
+**Hard ceiling: 30 lb per hand is the maximum dumbbell weight available (raised from 25 lb 2026-08-30 — Jackie added 30 lb dumbbells to the home gym).** Never recommend or log a weight above this. Per the equipment rule below, moving any exercise up to 30 lb is still Jackie's call, not something to push by default — most exercises are still working in the 8-10 lb range with plenty of rep-range room left before the old 25 lb cap, let alone the new one.
 
 **Rep soft ceiling: 20 reps per set (raised 2026-08-25 from 15, mid-session, Jackie's own call).** Don't recommend or log a working target past 20 reps on any exercise, regardless of weight. The 15-rep version (set 2026-08-20) held for one session — Goblet Squat, Dumbbell Romanian Deadlift, and Glute Bridge all hit 20 reps at the 25 lb max on 2026-08-25. Once an exercise is maxed on weight (25 lb dumbbell cap, or a band/bodyweight exercise that's plateaued) and hits 20 reps for the working sets, move straight to tempo or an exercise swap rather than pushing reps higher.
 
@@ -93,6 +93,8 @@ New equipment (heavier dumbbells, kettlebells, bands layered on top of dumbbells
 ## Deload
 
 Every 4-6 weeks: same exercises, ~60% of usual weight for one week. Helps longevity goals and prevents plateaus/overuse, especially given the walking/hiking volume on the other days of the week.
+
+**First deload recommended for the week of 2026-09-01 (Tue 9/1 Day A, Thu 9/3 Day B, Sun 9/6 Day C).** Program started 2026-07-14 with no deload taken yet — by 8/30 that's ~6.5 weeks in, past the upper end of the 4-6 week window. Reps have also climbed to the top of the prescribed range on multiple exercises across all three days as of the 8/25 (A), 8/27 (B), and 8/30 (C) sessions, the kind of broad plateau signal the deload is meant to catch. Recommend introducing the new 30 lb dumbbells afterward, starting the week of 2026-09-08, so the equipment jump lands in a fresh block rather than overlapping the deload.
 
 ---
 

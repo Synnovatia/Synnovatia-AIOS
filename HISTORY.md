@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-08-30
+
+### Day C Strength Session Logged — First Deload Recommended
+- Logged today's hill warm-up + Day C strength session (9 exercises, 27 sets) to `personal/workout-logs/session-log.csv` and `data/strength-training-log.csv` — broad progression, with squat, RDL, incline press, and overhead carry all hitting the top of their prescribed rep ranges
+- Flagged one dictation ambiguity (Single-Leg Glute Bridge reported as "body weight, 12 lbs" — contradictory since it's a bodyweight exercise) and logged it as 12 reps, a clean progression from last session's 10 and exactly the top of the range; noted in the log for Jackie to confirm
+- Reviewed deload timing against `personal/workout-plan.md`: the program started 2026-07-14 with no deload yet taken — today is ~6.5 weeks in, past the 4-6 week guideline — and reps topping out across all three days (A on 8/25, B on 8/27, C today) reinforced the case. Recommended the week of 2026-09-01 (Tue/Thu/Sun) as the first deload week, written into `workout-plan.md`
+- Jackie confirmed she has new 30 lb dumbbells available for future sessions — raised the documented hard ceiling from 25 lb to 30 lb in `workout-plan.md`, with a note to bring them in after the deload week (starting 2026-09-08) rather than stacking the equipment jump on top of the deload
+
+---
+
 ## 2026-08-29
 
 ### Seven Figure Forum & Mastermind Apply Pages — Nav Fixed, Round Windows Added
