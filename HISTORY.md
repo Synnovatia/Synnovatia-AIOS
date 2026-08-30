@@ -8,6 +8,30 @@
 
 ---
 
+## 2026-08-30 (continued)
+
+### Blog Single-Post Template Built and Debugged Live on Staging
+- Designed a static mockup (`outputs/website-redesign/2026-08-30-blog-single-post-mockup.html`, published as a Claude Artifact) matching the rest of the redesigned site's brand system, based on the existing live single-post page, then implemented it as a real, live PHP + CSS template on staging — applies automatically to all ~563 blog posts via `wp_body_open`/`the_content`/`wp_footer` hooks in the Synnovatia Child theme plus scoped Customizer Additional CSS. Covers nav, hero (eyebrow/title/byline), article body typography and width, image spacing, topic-accurate related posts ("More From [Topic]"), Browse by Topic band, closing CTA, and matching footer
+- Fixed several real bugs found via live screenshots during the build: full-bleed gaps not matching content padding, a margin-collapse bug exposing a gray band above the featured image, a reentrant `the_content` filter bug garbling one related post's excerpt (fixed with a reentrancy guard), and a related-posts topic mismatch caused by OR-matching on the current post's topics instead of the single named topic
+- Only page-editor-direct PHP edits (small, surgical ones) went through my own permission classifier; larger PHP changes were written to scratchpad files and pasted by Jackie, per established workflow for this workspace
+
+### "The Latest" Section (Front Page) — CTA Buttons, Bug Recovery, Alignment
+- Added a "Read the Full Story" CTA to each of the front page's four "Latest" post cards. Item 01's button first shipped with invisible text (theme's global teal link-color rule beating the button's own color via CSS specificity) — fixed by adding `!important` to the CSS Mode color declarations
+- Real bug: copying item 01's button into items 02–04 via Gutenberg's block-level Copy/Paste accidentally *replaced* their entire title+excerpt+button Container instead of appending a sibling, silently deleting all three cards' titles and excerpts (only their numbers and a full-width orphaned button remained) — both live and in the editor. Recovered by copying item 01's intact Container (title+excerpt+button, all using per-loop dynamic tags) and pasting it in place of each orphaned button, then deleting the leftover duplicates
+- Per follow-up direction, restyled the four CTAs from filled teal buttons to plain teal text links (kept the Cover Story's own CTA as a full button, scoped the strip-down to exclude it), and changed "The Latest" card titles from permanent teal to navy-by-default/gold-on-hover-only (no `:visited` state, so it reverts once the reader moves on) — matching color already used elsewhere in this same section
+- Removed the "Updated [date]" text next to the Cover Story eyebrow (kept the "Cover Story" label itself)
+
+### Front Page + All Posts — Missing Footer, Browse by Topic Hover, Cream Gap
+- Found and fixed a real gap in coverage: the front page and All Posts page (built with GenerateBlocks Query/Loop blocks, unlike every other page which has its footer baked into a pasted Custom HTML block) had never received the site's real footer — extended the existing single-post `wp_footer` PHP hook's condition to also fire on these two page IDs, plus matching Customizer CSS
+- Added the same navy→gold-on-hover-only treatment to the "Browse by Topic" links on both pages (plain inline-styled links with no class, targeted via `a[href*="/topic/"]`) — initially used the sitewide `--gold` (#B29200), corrected to the lighter `--gold-lt` (#F5C842) since that's the shade this specific section already uses on its navy background for contrast
+- Closed a ~20px cream-colored gap between the last content section and the new footer on both pages (a GeneratePress `#main.site-main { margin-bottom: 20px; }` default exposing the body background)
+
+### Messy Middle Page — Revenue-Band Cards Restyled and Realigned
+- Removed the offwhite background bands and gold/navy left-border accent bars behind the three revenue-range cards ($250K–$400K / $750K–$1M / $3M–$4M), leaving plain text on white; moved the "The three revenue bands where growth predictably stalls" caption from below the cards to above them (via flexbox `order`, no HTML changes)
+- Aligned the revenue-band column against the left column's heading, per two rounds of direction: first attempt aligned the block's top to the last line of the left paragraph; corrected to instead vertically center the first amount ($250K to $400K) on the last line of the heading ("...doesn't feel like you've arrived") — hit that alignment via a large negative `margin-top`, which incidentally pushed the caption up behind the navy hero section above (invisible, confirmed by zoomed screenshot). Fixed by splitting the offset between a smaller column margin and a reduced internal caption-to-cards gap, landing the caption back inside the white section (~31px clear) while keeping the amount-to-heading alignment intact
+
+---
+
 ## 2026-08-30
 
 ### Day C Strength Session Logged — First Deload Recommended
