@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-30 (continued, part 5)
+
+### Blog Single-Post Template — Mobile Nav Built From Scratch, No PHP Access Needed
+- Mobile-responsiveness QA (flagged as the remaining open item after the earlier structural sweep) surfaced a real, significant bug immediately: the single-post template's nav (`.spt-nav`) hides its links and CTA below 900px via `display: none` but has no hamburger toggle to replace them — every one of the 563 posts showed just the bare logo on a phone, no way to navigate the site from a blog post
+- This template's nav markup is emitted by a PHP theme hook, not a per-page Custom HTML block, so the usual per-page paste-a-`<script>`-tag fix (used on the other 7 custom-nav pages) wasn't available, and direct theme PHP edits have always required Jackie to paste them herself in this workspace. Found a way to add the fix without any PHP file access: GP Premium (already installed and licensed) has an "Elements" module — its "Hooks" feature injects arbitrary HTML/CSS/JS at a named WordPress action hook via the dashboard, no file editing needed. Activated the module (previously off) and built a new Hook element ("Blog Single-Post Mobile Nav Toggle") targeting `wp_footer`, scoped via Display Rules to "Post → All Posts" only (an initial "Blog" rule looked right but only matches the archive/index page, not individual posts — found and corrected)
+- The injected script builds a hamburger toggle + slide-down panel at runtime (About, The Messy Middle, Work With Me with its Mastermind/Seven Figure Forum dropdown, Perspective marked active, and a teal "Schedule a Conversation" CTA), replicating the exact visual pattern already established on the site's other pages (same breakpoint, same animation, same colors) but using this template's own hardcoded hex values since it doesn't use the sitewide `--navy`/`--gold`/`--teal` CSS custom properties
+- Found and fixed a second real bug during testing: the panel's `top` offset was hardcoded to the nav's own height (72px), which is correct for real visitors but hides the top of the panel behind the header for a logged-in admin viewer (WP admin bar adds extra height). Fixed by computing the offset dynamically (`nav.getBoundingClientRect().bottom`) on each open rather than hardcoding it, so it's correct in both states
+- Hit two rounds of real friction along the way, both resolved: GP Elements' save didn't reliably persist on the first click-based attempt (had to verify via a fresh page reload rather than trusting in-browser state, then resubmit via a direct JS form-submit) — worth remembering as a pattern for future GP Elements edits; and the staging site's server-level Basic Auth session dropped sitewide twice more mid-task, requiring Jackie to re-authenticate each time before work could resume, same as earlier in the day
+- Verified working end-to-end at mobile width after the final fix: toggle renders and opens/closes correctly, all links present and in the right order including "About" now fully visible at the top, active-state styling correct on Perspective, CTA button styled and present
+
+---
+
 ## 2026-08-30 (continued, part 4)
 
 ### Blog Single-Post Template — QA Sweep, a Real Sitewide Bug Fixed, Full 563-Post Verification
