@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-30 (continued, part 4)
+
+### Blog Single-Post Template — QA Sweep, a Real Sitewide Bug Fixed, Full 563-Post Verification
+- Ran a QA sweep on the single-post template (built 2026-08-30, applies automatically to all posts via theme hooks, not per-post assignment) across a deliberately diverse 9-post sample: the oldest post on the site (2010, with a legacy floated image and manually-numbered list), the newest, a post with no featured image, and one post from each of the six Topic terms
+- **Real, significant bug found:** 498 of 563 posts (88%) had WordPress's native discussion/comments left open, so those posts rendered a completely unstyled default "Leave a Comment" form (gray textarea, gray button, no brand styling at all) wedged between the closing CTA band and the footer — invisible during the original build's spot-checks purely because those specific posts happened to have comments already closed
+- Fixed by bulk-closing comments on all 498 affected posts via `wp.apiFetch` REST calls (batches of 100, run from an authenticated wp-admin tab so the nonce was already available) rather than paging through the classic Bulk Edit UI 20 posts at a time; confirmed the sitewide Discussion Settings default ("Allow people to submit comments on new posts") was already unchecked, so this can't silently reappear on future posts. Verified live on the original post where the bug was found — comment form gone, page now flows straight from Browse by Topic into the CTA band and footer
+- One other real finding, not a bug: a post with two Topic terms assigned (Ownership & Entrepreneurship + People & Partnerships) shows its "More From [Topic]" module using whichever term is listed first — expected multi-topic behavior, not a mismatch
+- When directly asked "are all blog posts verified," gave an honest answer distinguishing the 9-post visual sample from a genuine full sweep, then ran one: fetched all 563 posts' live rendered HTML and checked each for the custom nav, the hero eyebrow, the Browse by Topic band, absence of the comment form, and a 200 status. All 563 passed on every check (one transient fetch error on first pass, clean on retry) — real, individual verification of every post rather than an extrapolation from the sample. Not yet checked: mobile responsiveness (the resize tool isn't taking effect on the real Chrome window this session drives) and pixel-level visual QA beyond the structural markers checked here
+
+---
+
 ## 2026-08-30 (continued, part 3)
 
 ### Messy Middle Page — Revenue-Band Caption Alignment, Copy, and a Real Invisible-Text Bug
