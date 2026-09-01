@@ -18,6 +18,25 @@
 
 ---
 
+## 2026-08-31 (continued)
+
+### Dashboard — Full Fall School Syllabus Logged, Kim Brooks Reminder Added
+- Logged all 8 Bioanthropology Lab deadlines (Sep 7 – Oct 25, weekly Monday cadence) and the full 27-item Statistics syllabus (Sep 1 – Oct 25, both confirmed by Jackie against the real course pages) into the dashboard's Reminders card (`outputs/dashboard/dashboard.html` and its `dashboard-fragment.html` companion), combining same-date items into single lines per the site's existing convention. Also wrote both syllabuses into `context/personal-info.md` as the durable source of truth, replacing the earlier "deadlines not yet known" placeholder
+- Flagged a real scheduling collision rather than silently resolving it: Statistics Exam 4 and the Bioanthropology Lab final project both land on Sun Oct 25, and the final project is 2 days after the term's on-file end date (Oct 23)
+- Jackie sent a second screenshot of the Statistics syllabus later the same day asking if it was "more detailed" than the first — compared line-by-line and confirmed it was the identical table (same crop, missing only the "To begin, go to Module 1" header line), so no update was needed
+- Added a one-off reminder for Kim Brooks' surgery (Sep 29) to the same Reminders card
+
+### Strength Training — First Deload Confirmed, Day A Worksheet Built
+- Logged today's Mixed Cardio session (47 min, 3.16 miles, avg pace ~14:52/mile, HR 136, 355 METs) to `personal/workout-logs/session-log.csv`
+- Confirmed today's deload question against `workout-plan.md`: this is genuinely the program's first deload week (started 2026-07-14, ~7 weeks in, overdue by the 4-6 week guideline). Built and sent a print-ready Day A deload worksheet (`personal/workout-logs/2026-09-01-day-a-worksheet.html`) — same 9 exercises at ~60% of the 8/25 session's working weight, reps back to the bottom of each range instead of the 20-rep ceiling reached since raising the soft cap. Caught a real date mismatch before sending: Day A has landed on Tuesdays for three straight sessions and the deload plan explicitly names "Tue 9/1," but the request came in on Monday 8/31 — dated the worksheet for Tuesday and flagged the discrepancy rather than assuming; Jackie confirmed she's doing it Tuesday as planned
+
+### Background — Monday Re-engagement Batch, LinkedIn Voice Notes, Mastermind Candidate Update
+- The `client-reengagement-monday-drafting` scheduled task ran automatically this morning (time moved from 7am to 6am, per `client-reengagement/README.md`) — drafted 5 more re-engagement emails into Gmail (oldest-overdue first) and logged 2 new someday-contacts (Dora Goncalves, Christine Meshell) with no real relationship history to draw from
+- Jackie's edits to the week's LinkedIn drafts (`outputs/linkedin/2026-09-07-to-09-11-drafts.md`, first post under the new "What I'm Watching" Friday pillar) surfaced three new voice patterns, logged to `context/linkedin-marketing.md`: inclusive "we/us" framing over third-person "owners" for shared struggles, the same heavy-cut/favor-economy instinct from the old Client Win pillar now confirmed for What I'm Watching too, and "Here's a/an [descriptor] stat" reconfirmed (a second time) as an exception to the "Here's the thing" avoidance rule specifically for stat-intro openers
+- `outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md` picked up two mastermind-candidate updates from earlier direct instruction: Sherry Schaefer reinstated as a Tier 2 Seven Figure Forum possibility despite being below the revenue band (reconnect email already sent, logged in `roster.csv`), and Fern Stanford added as a Messy Middle possibility with no prior relationship on record anywhere in the system
+
+---
+
 ## 2026-08-30 (continued, part 6)
 
 ### Six Topic Archives — Full Polish Pass: Footer, Nav, Pagination, Hero, Search Box

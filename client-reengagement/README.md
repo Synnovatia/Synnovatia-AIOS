@@ -13,9 +13,9 @@ Tracks former/current clients and manages a 6-month check-in cadence, with respo
 
 ## Weekly workflow
 
-**Draft day: Mondays 7am. Send day: Tuesdays.** Monday's too busy for opens/replies, so batches go out Tuesday — but drafting happens Monday morning so there's a full day to review before sending. We're tracking reply rate by day to confirm Tuesday is actually the best send day (see `response_rate_report.py`).
+**Draft day: Mondays 6am. Send day: Tuesdays.** Monday's too busy for opens/replies, so batches go out Tuesday — but drafting happens Monday morning so there's a full day to review before sending. We're tracking reply rate by day to confirm Tuesday is actually the best send day (see `response_rate_report.py`).
 
-Steps 1-2 run automatically via the `client-reengagement-monday-drafting` scheduled task (Mondays 7am, 5 emails per batch, established 2026-07-20). That task also runs the step-5 reply check before drafting.
+Steps 1-2 run automatically via the `client-reengagement-monday-drafting` scheduled task (Mondays 6am, established 2026-07-20, moved from 7am to 6am 2026-08-31; 5 emails per batch). That task also runs the step-5 reply check before drafting.
 
 1. `python3 scripts/check_reengagement.py` — refreshes `due_now.csv` with everyone past their 6-month mark
 2. Claude drafts the next batch of 5 (oldest-first) into Gmail as drafts

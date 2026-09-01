@@ -54,3 +54,4 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,exertion_rpe,note
 2026-08-28,Walk,95,112,not captured,341,4.8,"5.04 miles, reported pace 18:49/mile (computes to ~18:51/mile from distance/duration — reconciles closely). New metric added this session: exertion_rpe (perceived exertion), backfilled blank for all prior rows since not previously tracked."
 2026-08-30,Hill Warm-up,14,111,not captured,84,,
 2026-08-30,Strength (Day C),50,117,not captured,257,,"Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv. Broad progression across the board — several exercises hit the top of their prescribed rep range."
+2026-08-31,Mixed Cardio,47,136,not captured,355,,"3.16 miles, avg pace ~14:52/mile."

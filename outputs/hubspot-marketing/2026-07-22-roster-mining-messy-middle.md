@@ -121,12 +121,21 @@ Solo or professional practices. Often below the band, but Jackie knows which hav
 | Diane Darling | Diane Darling | Speaker, Consultant, Business Coach |
 | Sibo Ncube | Trusted Touch Healthcare LLC | Director |
 | Elizabeth Teliz-McQuarrie | — | Leadership Coach |
+| Sherry Schaefer | — (independent coach) | Coach |
 
 ## Tier 3 — Owner title, no company data (4)
 
 HubSpot has "Owner" and nothing else. Jackie either knows them or they're not worth chasing.
 
 Christine Meshell · Amanda Perrot · Elyse Koenig (CEO) · Maxine Fuller (consultant)
+
+---
+
+## Fern Stanford — external, no prior client relationship (added 2026-08-20)
+
+**fern@fernstanford.com.** Not in `roster.csv`, HubSpot, `someday_contacts.csv`, or any Gmail history — no record of her anywhere in the system. Added as a Messy Middle possibility per Jackie's direct instruction, not sourced from the roster mining this document is otherwise built on.
+
+Since there's no existing relationship, the "reconnect first" pattern this document uses for everyone else doesn't apply to her — there's nothing to reconnect to. Not added to `client-reengagement/roster.csv`, since that system is specifically for the 6-month check-in cadence with past clients, and she's never been one. Jackie's call on how to make first contact.
 
 ---
 
@@ -182,7 +191,9 @@ Also worth a look if the Forum takes professional-practice partners: **Carol Kul
 
 **Men (~30)** — group is women-only.
 
-**Below band on the evidence available** — Diana Pointer (revenue on file: **under $10,000**), Sherry Schaefer (**$150,000**, coaching).
+**Below band on the evidence available** — Diana Pointer (revenue on file: **under $10,000**).
+
+**Sherry Schaefer** — previously excluded here as below band (**$150,000**, coaching). **Reinstated as a Tier 2 possibility 2026-08-20 per Jackie's call**, despite the revenue figure. Gmail history: she was building her own coaching practice as of 2022, including taking over coaching materials from a downsizing Dianne Pearce. A reconnect email had already gone out 2026-08-31 ("Thinking of you... following your successes on LinkedIn") — logged as `sent` in `roster.csv`/`outreach_log.csv`, no reply yet.
 
 **Removed by Jackie's call (2): David G. Kinney**, The Kinney Group. Pulled from Forum consideration 2026-07-27, no reason recorded — stays in the normal client re-engagement roster.
 
