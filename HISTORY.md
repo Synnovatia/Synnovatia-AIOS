@@ -8,6 +8,19 @@
 
 ---
 
+## 2026-09-02 (continued)
+
+### Staging Site — Client Cafe Client Profile Page Rebuilt to Match the Site
+- The legacy `/client-cafe-client-profile/` page (post 2300) was an orphaned, unstyled leftover from the old theme — bare heading, a stray IE conditional-comment fragment, and the real client-intake form long gone. Jackie flagged the form "may be in HubSpot." Found it live on production's still-existing copy of the same page and pulled the real embed straight from its `hbspt.forms.create()` script (portalId 110120, formId 9a81c956-de6f-4292-96d9-560bb2e0b1d7) rather than guessing among the portal's forms — 16 real fields (contact info, address, business size/revenue, three goal fields)
+- Rebuilt the page from scratch matching the established site pattern: real logo, working nav with the Work With Me dropdown and mobile hamburger, a navy hero band, and the branded footer — reverse-engineered the exact tokens (colors, nav CSS, mobile-panel CSS, override rules) directly from the live Mastermind Apply page's rendered DOM and stylesheet rather than guessing, since bulk-reading its raw page content kept tripping the browser tool's content-safety filter on embedded tracking-URL query strings; worked around it with per-selector `getComputedStyle`/`cssRules` lookups instead of full-page dumps
+- The page had been built on a **Classic block** (`core/freeform`), which runs `wpautop` and mangles pasted markup — replaced with a genuine Custom HTML block, matching the established convention for this build
+- Found and fixed a real bug before calling it done: the nav's teal CTA button rendered with invisible teal-on-teal text, the same GeneratePress link-color override fight seen elsewhere on this site — fixed with `!important`
+- **Follow-up round the same day** — capitalized "Client Profile," updated the subhead and form-note copy to a "we/us" collaborative frame per Jackie's direction (logged as a new standing voice pattern, see `feedback_we-us-collaborative-framing` memory — extends the already-established "Human Peer Dynamic" brand pillar into transactional/utilitarian copy, not just marketing copy), and attempted a full-bleed fix on the hero and form-section backgrounds that didn't actually work (mixed two incompatible CSS full-bleed techniques — `position:relative;left:50%` computed against the wrong, narrower containing block while a separate negative-margin rule fought it, producing an asymmetric gap Jackie caught by screenshot)
+- **Real root cause found on the retry:** the page's own GeneratePress "Sidebar Layout" setting was still "Default," so its layout grid kept reserving a sidebar-width column even with the sidebar itself hidden via CSS — no CSS override could fix that from outside. Fixed at the source by setting the page's native Layout panel to "No Sidebars" instead of continuing to patch around it; full-bleed now measures exactly full viewport width with zero gap, verified numerically (`getBoundingClientRect()`), not just visually. Also fixed a real 20px gap between the fixed nav and the hero band — an unreset GeneratePress `#main.site-main` default margin-top, the same class of bug documented elsewhere in this build
+- Mobile verified properly this time: resized the viewport, confirmed via computed styles that the 900px breakpoint actually swaps nav-links/CTA for the hamburger, then clicked the toggle and confirmed the slide-down panel genuinely opens with working links, the Work With Me sub-items, and the CTA — not just a visual screenshot check
+
+---
+
 ## 2026-09-02
 
 ### Staging Site — Topic Archives Down, Traced to a Bulk Plugin Deactivation
