@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-09-02
+
+### Staging Site — Topic Archives Down, Traced to a Bulk Plugin Deactivation
+- Asked to check the Sales & Marketing topic archive (`/topic/sales-marketing/`) for styling issues, found instead that it — and all six topic archives — were 301-redirecting straight to the homepage. Root cause: **Custom Post Type UI**, the plugin registering the Topic taxonomy, had been deactivated, so the taxonomy and its `/topic/` rewrite rules no longer existed (`Invalid taxonomy` in admin, taxonomy missing from the REST `taxonomies` list). **WP-PageNavi** (archive pagination) was deactivated in the same event, along with four unrelated plugins (Custom Sidebars, Classic Widgets, Better Search Replace, WP Popular Posts) — a single bulk-deactivation, not six separate failures. Jackie confirmed this was Deb Buxton, prepping the site for the staging-to-live move, not realizing these were load-bearing
+- Fixed with Jackie's go-ahead: reactivated Custom Post Type UI and WP-PageNavi, flushed permalinks (Settings → Permalinks → Save) to regenerate the `/topic/` rewrite rules, confirmed via REST that all six archive terms and their `link` fields resolved correctly
+- **Second bug surfaced in the same pass:** WP-PageNavi's own settings had reset to blank on reactivation, so archives showed a bare "Next" link with no page numbers. Restored `Text For Page` / `Text For Current Page` to `%PAGE_NUMBER%` and filled in the blank "…" ellipsis text, matching the documented "Numbers + Previous/Next" pagination convention — verified all six archives now show correct numbered pagination against their real post counts (up to 20 pages on the two largest topics)
+- **Third bug, a real red herring resolved carefully:** after the fix, Jackie's own browser (including a fresh incognito window) kept redirecting to the homepage even though direct server checks showed 200. Traced to the Nginx Helper cache plugin serving stale cached responses specifically to logged-out visitors — my own verification had been running from an already-logged-in admin session, which caching plugins typically bypass, so it looked fixed to me while a real anonymous visitor still hit the old cached redirect. Fixed via Nginx Helper's "Purge Entire Cache" (more thorough than the admin-bar quick-purge used earlier this week) — Jackie confirmed working in incognito after
+- **Fourth finding, caught while investigating:** Jackie had also trashed the old "Business Coaching Blog (ARCHIVED – Old Static Mockup)" page and its six child "Preview: * Archive" pages as part of the same go-live prep. Checked each for live dependencies before treating this as safe: the parent page and five of the six children are genuinely inert leftovers, but one — **"Preview: Strategy & Planning Archive" (page 11852)** — is the actual CSS source (`style-11852.css`) that all six *live* topic archives pull their card styling from, a fragile hardcoded dependency flagged as a known risk when the archives were originally built in August. Confirmed via the live HTML on all six archives that they all reference `style-11852.css` specifically, not their own matching preview page. Restored and republished only that one page (untrash defaults to draft, had to explicitly re-publish); left the parent and other five children trashed, since nothing live depends on them
+- Confirmed with Jackie that trashed content isn't deleted, just hidden, so a normal staging-to-production migration carries content over in whatever state it's currently in (trashed stays trashed, published stays published) — relevant since the site is mid-prep for going live
+
+---
+
 ## 2026-09-01 (continued)
 
 ### Staging Site — About Page and Messy Middle Fixes
