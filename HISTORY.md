@@ -8,6 +8,15 @@
 
 ---
 
+## 2026-09-01 (continued)
+
+### Staging Site — About Page and Messy Middle Fixes
+- **About page (`/about/`, post 156):** verified Anne Laguzza's testimonial (name spelling, "The Works Consulting," "Client since 2003") against brand-voice.md and the positioning brief — all correct, confirmed by Jackie against a CRM date discrepancy that turned out to be a backfilled Gmail-search artifact, not her real start date. Fixed a real alignment bug: the attribution block (`.origin-pull cite`) had `margin-left: 14px` while the blockquote's own text started at a 28px padding offset, so the name/company/tenure sat 14px left of "Jackie gave me..." — matched the two. Also removed a trailing period from the "Student, Cultural Anthropology" credential subtext so it matches the other two credential items, which don't end in periods
+- **The Messy Middle page (`/the-messy-middle/`, post 9694), "symptoms" section:** Jackie flagged what looked like a hard line break before "decisions and actions taken from here" — traced to a `max-width: 640px` constraint on `.symptoms-lede` forcing an early wrap, not a literal `<br>`. Widened to 900px (via an intermediate 760px step) so the phrase no longer sits stranded on its own line. Also brought that paragraph's type up to the sitewide subtext standard (16px/300-weight/75%-opacity → 18px/400-weight), and separately brightened/enlarged the six `.symptom-cell` card descriptions (14px/62%-opacity → 16px/78%-opacity) without touching the gold labels above them, since they were reading as too dim against the navy background. Closed up the visual gap between the six symptom cards by trimming `.symptom-cell` padding (32px 34px → 24px 32px) — the grid's own gap was already a 1px hairline, so the perceived whitespace was entirely internal card padding stacking between rows
+- All edits made via direct textarea/`wp.data` manipulation of the page's single Custom HTML block in the WordPress block editor (find-and-replace on the raw HTML/CSS, verified unique-match before applying), saved through the real Save button (not just the REST call), and re-verified via the REST API (`context=edit`) after each save — matching the established verification pattern for this build, since WP admin has no reliable "did it actually save" indicator. Cache purged and each fix re-confirmed live on the front end before moving to the next
+
+---
+
 ## 2026-09-01
 
 ### Core Business Assessment Landing Page Copy — Multi-Round Review Pass
