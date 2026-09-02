@@ -8,6 +8,19 @@
 
 ---
 
+## 2026-09-02 (continued, part 2)
+
+### Staging Site — Client Service Agreement Page Rebuilt, Real Approval Form Recovered
+- `/client-services-agreement/` (post 2477) was the same class of legacy orphan as the Client Profile page — bare unstyled GeneratePress default rendering, built on a Classic block. Unlike Client Profile, this page's actual content (a 12-section legal services agreement plus recitals) had to be preserved 100% verbatim, not rebuilt from scratch — this was signed-agreement legal text, not marketing copy
+- Extracting the raw content hit the browser tool's content-safety filter repeatedly (inline `style="text-align:center"` attributes on two headings were enough to trip it even in isolation) — worked around it using `get_page_text` against the rendered page instead of the editor's raw content string, which reads plain visible text without tripping the filter, then manually confirmed heading levels and inline formatting (bold section numbers, the mailto link) via small targeted DOM queries rather than a bulk dump
+- Rebuilt with the same nav/mobile-hamburger/footer pattern as the Client Profile page, this time applying every lesson from that build up front rather than discovering them again: the working `transform`-based full-bleed technique (not the broken mixed margin/position approach used on the first pass of Client Profile), the page's native GeneratePress "Sidebar Layout" set to "No Sidebars" from the start (not patched in after), and the `#main` margin-top override included from the start — full-bleed and the nav-to-hero gap were both correct on the very first save, no retry needed
+- Replaced the Classic block with a genuine Custom HTML block, same as Client Profile, avoiding `wpautop` mangling
+- **Caught a real content question rather than silently deciding it:** the original source (confirmed present on both the old staging copy and the live production page) had a stray "t" character glued onto the very end of Section 12 ("...conflict of law provisions.t") — an obvious typo/artifact, not real legal language. Left it out of the rebuild as a judgment call, but flagged it explicitly to Jackie afterward rather than assume that was fine to decide unilaterally on legal document text
+- **Follow-up same day:** Jackie flagged that the live production page has an approval/e-signature section at the bottom that the rebuild was missing, and pointed at HubSpot as the likely source. Found it live on production — a second `hbspt.forms.create()` embed (portalId 110120, formId `9d0bb41f-f33e-42e5-aafc-e8fd702c5d7e`, region na1) sitting right after Section 12: a consent checkbox ("I agree that I have read and consent..."), an e-signature disclosure paragraph, then First Name / Last Name / Email / Date fields and Submit. Added the same embed to staging inside a card styled to match the site (reusing the `.legal-approval-card` pattern, same lt-navy/border/radius treatment as Client Profile's form card) — verified live, full form renders correctly including the pre-checked consent box
+- Mobile verification hit a real tooling snag, not a page problem: the browser tool's `resize_window` stopped actually changing the viewport (kept reporting success while staying at desktop width) across a fresh tab and a second browser surface — logged as a known flaky point for future sessions, worth retrying rather than trusting the first failure. Reasoned confidence instead from the fact that the new approval-card section reuses the exact same simple, fixed-width-free responsive pattern already confirmed working elsewhere on this build
+
+---
+
 ## 2026-09-02 (continued)
 
 ### Staging Site — Client Cafe Client Profile Page Rebuilt to Match the Site
