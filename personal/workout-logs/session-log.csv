@@ -55,3 +55,5 @@ date,activity_type,duration_min,avg_hr,avg_hrv,mets,exertion_rpe,note
 2026-08-30,Hill Warm-up,14,111,not captured,84,,
 2026-08-30,Strength (Day C),50,117,not captured,257,,"Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv. Broad progression across the board — several exercises hit the top of their prescribed rep range."
 2026-08-31,Mixed Cardio,47,136,not captured,355,,"3.16 miles, avg pace ~14:52/mile."
+2026-09-01,Yoga Warm-up,18,85,not captured,0,,"First yoga warm-up logged (prior warm-ups have all been hill walks). 0 METs reported — plausible for gentle yoga at a low heart rate, logged as reported."
+2026-09-01,Strength (Day A) - Deload,31,106,not captured,41,,"First deload session of the program (see workout-plan.md's Deload section, recommended for the week of 9/1). Per-set detail (26 sets across 9 exercises) logged separately in data/strength-training-log.csv, weights at ~60% of the 8/25 pre-deload session and reps back to the bottom of each range. Much lower MET-minutes (41 vs. the 200-280 range on recent Day A sessions) is expected given the reduced weight and shorter 31-min duration."

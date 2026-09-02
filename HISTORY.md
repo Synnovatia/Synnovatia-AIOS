@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-09-01
+
+### Core Business Assessment Landing Page Copy — Multi-Round Review Pass
+- Full review of `outputs/core-business-assessment/2026-08-31-landing-page-copy-draft.docx` against the writing-style scrub and brand-voice.md, run across several rounds as Jackie made her own edits in between
+- Found and fixed a real functional bug on the first pass: the CTA button read "Download my assessment" while the reassurance line underneath described an email-delivery flow — mismatched promise. Resolved to "Send my assessment" / "I'll send the assessment straight over," consistent throughout
+- Caught two voice-rule violations that had been fixed once already but came back in Jackie's own edit pass: a clunky "area(s) require(s) your attention" parenthetical-plural, and a dropped "your growth is stuck" line that ties the page to the site's plateau/stall language — restored as "exactly where your growth has stalled," which turned out to echo the homepage's own "stalled in the Messy Middle" phrasing even more closely than the original wording did. Logged as a new standing rule: give Jackie's own edits the same full pass as a fresh draft, not a lighter one (`review-jackies-own-edits` memory)
+- Also caught and fixed on the first pass: the literal word "pick" (two instances) and a fragment sentence opener ("Ten sections, ten questions each...") lacking a real subject-verb structure — both logged as new standing rules for all marketing/website copy going forward (`avoid-word-pick-and-fragment-openers` memory)
+- Rewrote the "why self-scored" line to explain the mechanism (a score vs. a feeling) rather than just restating that the assessment exists — Jackie had asked for the actual rationale, not just cleaner grammar, in the "This assessment tells you what area requires your attention" line
+- Found a garbled edit on a later pass — "They are cleared about what's actually working" wasn't a real sentence (an in-progress "much clearer about" edit had gotten cut mid-word) — fixed to "They're much clearer about what's actually working and what's just noise"
+- Also cleaned up a redundant "essential and critical" down to "critical," and a stray curly apostrophe inconsistent with the straight ones used everywhere else in the doc
+- Copy is now considered ready to move to build; the page itself, the opt-in form, and the delivery email still need to be built (noted in the doc itself) — the assessment PDF was already rebranded 2026-08-24
+
+---
+
 ## 2026-08-31
 
 ### Topic Archive Search Wired Up, Sitewide Nav Vertical-Centering Bug Fixed
