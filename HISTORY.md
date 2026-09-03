@@ -45,6 +45,21 @@
 
 ---
 
+## 2026-09-03 (continued, part 4)
+
+### Sitewide Link Audit — Closed Out (Final 2 Items Fixed)
+- Fixed the two items left open from earlier today's audit (`outputs/website-redesign/2026-09-03-link-audit.xlsx`), closing out all 12 findings
+- **Wrong-domain link:** the "What No One Tells An Entrepreneur About Breaking Through a Business Plateau" related-article link inside "How to Accelerate Business Growth When the Economy Feels Uncertain" (post 11954) pointed at production instead of staging. Located the exact post via the WP REST search API, fixed the href through the block editor's link-edit popover, saved. Verified live: all 5 instances of this link on the page now resolve to staging
+- **Hidden sidebar bug — two-part fix.** (1) The 7 non-blog pages still affected (Work With Me, The Messy Middle, both mastermind pages, both Apply pages, Schedule a Conversation) each had their GeneratePress "Sidebar Layout" page setting switched to "No Sidebars" individually — the same classic-metabox fix (needs `requestMetaBoxUpdates()` to persist) already documented elsewhere in this project, matching how Home/About were already set. (2) All 563 blog posts were fixed in one shot, with no per-post editing: found via Customizer → Layout → Sidebars that a site-wide "Single Post Sidebar Layout" default (Content/Sidebar) was driving every individual post, since none of them override it — switched that one setting to "Content (no sidebars)" and published, clearing the sidebar everywhere at once
+- Verified thoroughly: on all 7 pages plus a 3-post sample, the sidebar `<div>` and its ~535 dead links are now genuinely absent from the raw HTML (not just CSS-hidden as before), and no visual regression anywhere checked
+- Real environment note: the staging site went fully unreachable three separate times mid-session (a network-level failure, not a WordPress error — confirmed by loading an unrelated site in the same tab, which worked fine) — each time it cleared on its own within about 10-30 seconds. Checked Wordfence's blocked-IP log and it showed nothing, so the cause wasn't confirmed, but it tracked with bursts of rapid automated REST API requests; slowing the request pace and pausing between pages avoided repeat incidents for the rest of the session
+
+### Day B Deload Session Logged
+- Logged today's actual Day B deload session in full: cardio summary (Yoga warm-up 24 min/HR 80/0 METs, Strength block 30 min/HR 105/68 METs) to `data/strength-training-sessions.csv`, and per-set detail (27 sets across 9 exercises) to `data/strength-training-log.csv`
+- Checked every exercise against the Day B deload worksheet's targets: all 9 hit or matched exactly, except Stability Ball Hip Bridge and Side Plank, both done at 3 sets instead of the worksheet's 2 — logged as reported and flagged as Jackie's own call, consistent with the same pattern from the 9/1 Day A deload session
+
+---
+
 ## 2026-09-02 (continued, part 14)
 
 ### Redirect Audit Prep — Plan + Tracking Spreadsheet for Tomorrow
