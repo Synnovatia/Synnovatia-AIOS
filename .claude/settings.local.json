@@ -336,7 +336,8 @@
       "Bash(rm build-docx2.js)",
       "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" -L \"https://meet.boomerangapp.com/jackie.synnovatia.com/meeting60\")",
       "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" -L \"https://meet.boomerangapp.com/jackie.synnovatia.com/meeting\")",
-      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__get_draft"
+      "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__get_draft",
+      "Bash(md5 dashboard-fragment.html)"
     ]
   }
 }

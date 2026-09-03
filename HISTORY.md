@@ -8,6 +8,43 @@
 
 ---
 
+## 2026-09-03
+
+### Day B Deload Worksheet — Built, Then Column Order Corrected
+- Built the Thursday Day B deload worksheet (week 1 of 3 deload sessions, following Day A on Tuesday) — same format as the 9/1 Day A worksheet, weights at ~60% of the 8/27 session, reps back at the bottom of each range, bands/added-weight rolled back to their pre-progression state (Bent-Over Row and Face Pull both parked back on the purple band; Stability Ball Hip Bridge back to bodyweight)
+- Jackie flagged the column order still didn't match her Monday instruction ("last session in the first column followed by sets x reps and weight") — the first build had put it as a trailing reference column instead of the true first column. Rebuilt with the correct order (Last Session → Exercise → Sets × Reps → Weight → Actual) and corrected `feedback_strength-worksheet-format.md` in memory, which had captured the wrong order the first time; this should now hold for future worksheets without re-asking
+
+### Wednesday Hike Logged
+- Logged the 9/2 long hike to `data/strength-training-sessions.csv`: 77 min, 3.70 mi, 217 m elevation gain, avg HR 110, pace 21:05/mi — extended the CSV's columns (distance/elevation/pace) since this is the first entry with that full data; the one prior row (7/17) is left blank in those fields rather than backfilled
+
+---
+
+## 2026-09-03 (continued)
+
+### Website Page Cleanup — Old/Orphaned Pages Identified and Trashed on Staging
+- Full audit of staging (`synnovatiacom.stage.site`): all 19 published pages, both drafts, and all 28 items already in Trash. Found nothing stale live — every published page is either a current redesign page or one of the legacy pages already rebuilt to brand on 9/2
+- One real flag: "Preview: Strategy & Planning Archive" (page 11852) looked like leftover clutter but was a load-bearing CSS dependency for all six live Topic Archive pages, and its parent page (185, the archived old blog mockup) had ended up in Trash — a real risk, since WordPress auto-purges trash after 30 days and losing 185 could have broken 11852's permalink and taken the topic archive styling down with it
+- Restored 185 out of Trash first (closing the immediate risk) — hit a real misfire on the first attempt (a ref-based click restored nothing and instead accidentally trashed three unrelated pages: the already-superseded "Contact Us to Supercharge Your Business Growth," the "Claude HTML Transfer Template" utility page, and "Newsletter"). Diagnosed and fixed cleanly with a coordinate-based click after hovering the row; confirmed with Jackie that Contact Us being gone was correct (superseded by Schedule a Conversation) and Claude HTML Transfer Template wasn't in active use, so neither needed restoring
+- Scoped and executed the real fix for 11852's CSS dependency rather than leaving it as a standing risk: converted all six styled elements of the shared "Blog Post Card" pattern (title, excerpt, topic tag, button, image, outer grid) from page-tied local styles to proper GenerateBlocks Global Classes, using the editor's "Move the local block styles" flow. Verified via the pattern's raw block markup and the six live topic archive pages' actual rendered HTML — confirmed none of them reference the old local classes anymore, all pull from a genuinely page-independent `style-global.css` file
+- Once the dependency was confirmed gone (both by regenerating the pattern and by direct verification, not just assumption), trashed both 11852 and 185 for real — 185 no longer serves any purpose once nothing depends on it, and Jackie confirmed she didn't need it kept as a historical record either
+
+---
+
+## 2026-09-03 (continued, part 3)
+
+### Sitewide Link Audit — Spreadsheet Built, 10 of 12 Findings Fixed
+- Full crawl of staging: 17 core pages, all 6 topic archives, and a 5-post sample representing the shared single-post template (563 posts) — 914 raw links down to 152 unique destinations, each checked for HTTP status and `target` behavior against the site's established convention (persistent nav/anchors stay same-tab, content CTAs open in a new tab)
+- Built `outputs/website-redesign/2026-09-03-link-audit.xlsx` — a 12-item punch list (3 broken 404s, 3 broken pagination links, 5 tab-behavior inconsistencies, 1 wrong-domain link) plus a separate tab flagging a real, previously-unknown bug: a hidden WordPress sidebar (~535 old category/archive widget links, invisible via CSS) rendering on 7 pages and very likely all 563 blog posts — not part of the link punch list since it's not user-facing, but real page-weight/SEO bloat worth its own fix later
+- **Fixed the nav dropdown "Mastermind for the Messy Middle" link opening in a new tab sitewide** — root cause wasn't in any page's content at all, it was one WordPress Main Menu item with "Open link in a new tab" checked; fixed in Appearance → Menus (also added the item's missing trailing slash) and verified live across three different page types
+- **Fixed "Start the Conversation" CTA inconsistency** — same-tab on all blog pages, new-tab everywhere else. Fixed the blog front page and All Posts page directly; the single-post template's copy required a new GenerateBlocks Hook element (`Blog Single-Post CTA New Tab Fix`, targeting the button's unique `.spt-cta-btn` class) rather than a functions.php paste, following the same dashboard-only pattern already established for this template
+- **Fixed the footer "Privacy Policy/Terms of Service" tab-behavior split** (new-tab on 13 pages, same-tab on 8) — standardized to same-tab everywhere per the persistent-chrome convention, edited across all 13 affected pages' Custom HTML blocks, verified with a full 21-page sweep afterward
+- **Fixed "Apply for Consideration" button inconsistency** on both mastermind pages — 2 of each page's 5 instances were missing `target="_blank"` while the other 3 had it; brought all 5 into consistency on each page
+- **Fixed the 3 broken 404 links** — one blog post's CTA pointed at the now-retired Strategic Business Consultations page (updated to `/schedule-a-conversation/`); two dead links in a single very old legacy post (`/solutions`, `/services`, neither ever a real page) were unwrapped back to plain text, restoring "solve a problem" and "product or service" to read correctly
+- **Fixed all 3 broken pagination links — a real bug, not just dead links.** Root cause: WordPress's global "posts per page" setting was 10, but the Topic Archive template's own query hardcodes 8; WordPress core validates whether a `/page/N/` URL is real using its own default before the custom template ever runs, so it was 404ing genuine, content-filled pages. Fixed by updating the global setting to 8 to match — the on-screen Reading Settings save silently failed to persist (a known quirk on this install), so wrote it via the REST API instead, which stuck. Verified thoroughly: all three original broken links now work, each archive's true last page renders with real content and correct navigation, one page past the true end still correctly 404s, and the three archives that weren't broken are unaffected
+- Two items remain open on the spreadsheet: one wrong-destination link (a related-post reference pointing to production instead of the staging-equivalent post) and the separate hidden-sidebar-bug finding
+
+---
+
 ## 2026-09-02 (continued, part 14)
 
 ### Redirect Audit Prep — Plan + Tracking Spreadsheet for Tomorrow
