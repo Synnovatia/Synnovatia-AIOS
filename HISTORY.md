@@ -8,6 +8,25 @@
 
 ---
 
+## 2026-09-02 (continued, part 14)
+
+### Redirect Audit Prep — Plan + Tracking Spreadsheet for Tomorrow
+- Jackie plans to work on identifying redirects tomorrow for the eventual staging-to-production go-live; asked for a plan and a tracking spreadsheet (current link / new link / notes / complete checkbox) covering both the core website and the blog
+- Wrote `plans/2026-09-03-redirect-audit-plan.md` first rather than jumping straight to the spreadsheet &mdash; flags that the go-live mechanism itself (DNS cutover vs. content migration vs. manual page-by-page rebuild, per the still-open item in `plans/2026-08-23-website-prelaunch-checklist.md`) changes who ends up creating the final redirects, and lays out concrete audit steps for both the website (pull production's real page list, export the 925+ existing Redirection rules before touching anything, confirm which rebuilt pages kept vs. changed slug) and the blog (the 563 individual posts and the front-page/All-Posts URLs need no redirect at all &mdash; already confirmed; the real remaining work is mapping the old 421-near-duplicate-category archive URLs onto the six new `/topic/&lt;slug&gt;/` pages, for which the existing `2026-08-16-blog-topic-classification.csv` post-level mapping is the fastest starting point)
+- Built `outputs/website-redesign/2026-09-03-redirect-tracker.xlsx` (Instructions tab + Website Redirects + Blog Redirects, with a dropdown-based checkbox column) and pre-filled only what's actually confirmed from this build's own history &mdash; the two known slug changes (`/messy-middle-mastermind/` &rarr; `/mastermind-for-the-messy-middle/`, the old 7-Figure Forum URl &rarr; `/seven-figure-forum/`), the homepage front-page swap flagged as a WordPress setting rather than a redirect, and the blog rows already known to need no work. Left everything else (Strategic Coaching/Solutions on the Fly's old URLs, the 421 category mappings) as open placeholder rows rather than guessing at slugs with no real evidence behind them
+
+---
+
+## 2026-09-02 (continued, part 13)
+
+### Free Business Assessment — First Two Promotion Links Added
+- Checked whether the Free Business Assessment page was linked from anywhere on the site before building anything &mdash; it wasn't; homepage, About, Work With Me, The Messy Middle, and the blog front page all came back clean. Drafted three candidate placements in chat (homepage soft-CTA, The Messy Middle inline CTA, a recurring blog CTA band) with real copy for each, ranked by fit; Jackie approved building the first two now
+- **Homepage:** added a small muted text line directly under the hero's "Start the Conversation" button ("Not ready to talk yet? Take the free assessment instead."), reusing the hero's existing flex-column layout so it reads as part of the same CTA stack rather than a separate element bolted on
+- **The Messy Middle:** added a line directly under the symptoms section's existing reassurance copy ("Even though you're drowning in seemingly unsolvable complications...") &mdash; deliberately placed at the exact moment a reader has just recognized their own situation in the six symptom cards, before the page moves on to the next section
+- Both anchored and verified against the pages' real live HTML rather than assumed formatting &mdash; The Messy Middle's reassurance paragraph in particular used a plain straight apostrophe with no HTML entity, different from the curly-quote/entity conventions used elsewhere on the site, caught only by reading the actual raw content rather than guessing at markup
+
+---
+
 ## 2026-09-02 (continued, part 12)
 
 ### Thank You Page — Positioning-Led Headline, Gray Gap Fixed, One-Line CTA
