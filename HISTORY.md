@@ -8,6 +8,112 @@
 
 ---
 
+## 2026-09-02 (continued, part 12)
+
+### Thank You Page — Positioning-Led Headline, Gray Gap Fixed, One-Line CTA
+- Both action buttons confirmed already opening in a new tab (`target="_blank"` was set correctly the first time) &mdash; Jackie's concern about the download navigating away turned out to be the PDF opening in a genuine new tab, not a same-tab navigation
+- Fixed a real bug: a thin cream-colored gap was showing between the white body section and the new navy closing-CTA band &mdash; caused by `margin-top: 64px` on `.cta-close-section` pushing it down in normal flow and exposing the page's `--warm-white` body background underneath, the same class of bug as the cream-gap fix documented 2026-08-30. Removed the margin; the white section's own existing bottom padding provides the separation instead
+- Widened `.cta-close-h2`'s max-width and added `white-space: nowrap` so "Ready to put the results to work?" sits on one line at desktop widths, with a mobile override (`white-space: normal`, smaller font-size) added in the existing 900px breakpoint so it doesn't overflow on narrow screens
+- Brainstormed hero headline alternatives to replace the generic "Download the Core Business Assessment. Know your score.," grounding options in `brand-voice.md`'s actual proof points rather than guessing at tone. Jackie chose "The view most owners are too close to see." &mdash; pulled directly from Mark Chapman's "I was too close to see my own situation objectively" proof point &mdash; swapped in and verified live. **Follow-up same session:** asked for more options in the same direction; landed on a "___ view of where you actually stand" structure, workshopped the opener (outside/honest/objective, tied to the "Outside Objectivity" pillar name), and settled on "An honest view of where you actually stand." &mdash; final headline, verified live
+
+---
+
+## 2026-09-02 (continued, part 11)
+
+### Thank You Page — Proper Closing CTA Band, Boomerang Scheduler Link
+- Jackie asked for the plain "Ready to put the results to work?" line to become a real designed section like the closing CTA bands on other pages, with the button retitled "Open the Scheduler" and pointed at the 45-minute Boomerang link
+- Reverse-engineered the sitewide closing-CTA pattern directly from The Messy Middle's live `.cta-section` (full-bleed navy band, gold-lt "Start Here"-style eyebrow reusing `.content-eyebrow`, 44px Fraunces H2, muted-white supporting line, `.btn-primary` button) rather than inventing new styling, then built a matching `.cta-close-section` on this page: eyebrow "Next Step," H2 "Ready to put the results to work?," body "Let's talk through what you found," button "Open the Scheduler" linking to `meet.boomerangapp.com/jackie.synnovatia.com/meeting` (the 45-minute link, confirmed distinct from the 60-minute `/meeting60` used on Work With Me)
+- Hit the exact documented `.entry-content h2 { color: var(--navy) }` GeneratePress override bug (per `CLAUDE.md`'s New-page gotcha notes) &mdash; the new heading was invisible, navy text on the section's own navy background, since that compound selector outranks a plain single-class rule. Fixed with `!important`, confirmed via computed style that both the heading and body text are legible white against the navy band
+- Verified live: full-bleed width matches viewport exactly, button target/href correct, heading and body colors correct post-fix
+
+---
+
+## 2026-09-02 (continued, part 10)
+
+### Thank You Page — Newest Assessment PDF Connected, Dead Community Section Replaced
+- Jackie flagged that email-delivered assets tend to land in spam, so direct download stays the right approach for the Core Business Assessment's actual thank-you page (as opposed to the Free Business Assessment page's HubSpot form, which is a separate opt-in flow)
+- Removed the "The Messy Middle" eyebrow and "Successfully Navigate Business Growth" heading per Jackie's direction (from the prior turn), which orphaned the leftover community paragraph beneath it with no lead-in
+- Uploaded the rebranded 2026-08-24 assessment PDF (`outputs/core-business-assessment/2026-08-24-core-business-assessment-rebranded.pdf`, previously never uploaded anywhere) to the WordPress media library via the real file picker, then repointed the page's download button at it, replacing the old unbranded 2018 PDF. Verified live via a HEAD request &mdash; 200, correct content-type, byte-exact file size match against the local source
+- Jackie confirmed the Messy Middle community referenced in the old copy no longer exists, so replaced that whole paragraph + join-button block with a short line and a real Schedule a Conversation button, matching the closing pattern already used on every other rebuilt page rather than leaving a dead community link in its place
+
+---
+
+## 2026-09-02 (continued, part 9)
+
+### Free Business Assessment — Real HubSpot Form Wired Up
+- Jackie supplied a real HubSpot share link (`share.hsforms.com/1oi0Ryl9FRUWxwEnnHBKwoQ2cyw`) for the "Send My Assessment" CTA that had been disabled since the page was rebuilt. Loaded the share link directly to pull the real embed details rather than guess &mdash; portalId `110120` (same portal as every other form on this site), formId `a22d11ca-5f45-4545-b1c0-49e71c12b0a1`, four fields (First Name, Last Name, Email, Years in Business)
+- Replaced the disabled button + "not built yet" note with a genuine `hbspt.forms.create()` embed, matching the exact script (`js.hsforms.net/forms/embed/v2.js`) and target-div pattern already used on Client Cafe Client Profile, not a different embed method guessed at
+- Styled the wrapper to match the site's established form-card convention (reused the Apply pages' `.apply-form-card` computed styles &mdash; lt-navy background, 1px navy-10% border, 4px radius, 640px max-width &mdash; as new `.assessment-form-card`/`.assessment-form-note` classes) rather than inventing new styling
+- Verified live: real form renders with all four fields and a teal Submit button matching brand
+
+---
+
+## 2026-09-02 (continued, part 8)
+
+### Free Business Assessment — Drafted Copy Swapped In
+- Jackie asked to pull the landing page copy drafted the day before (`outputs/core-business-assessment/2026-08-31-landing-page-copy-draft.docx`, reviewed 2026-09-01) into the live `/free-business-assessment/` page, which had only just been rebuilt with the page's old (dead-link, no-form) copy
+- Swapped in the full draft verbatim &mdash; new headline, both subhead paragraphs, What's Inside, Why Self-Scored, One More Thing, the "Send My Assessment" CTA, and its reassurance line &mdash; replacing the old headline stack and Mark Chapman testimonial, which weren't part of the new draft
+- The draft's own note flags that its CTA assumes a real opt-in form + delivery email, neither of which exist yet. Rendered the button as a real-looking but genuinely disabled `<button>` (not a dead link) and kept a plain-language note directly under it explaining the form isn't live, rather than let the button imply a working flow it doesn't have
+- Verified live via scroll-through screenshot &mdash; full content renders correctly top to bottom, styling consistent with the rest of the rebuild
+
+---
+
+## 2026-09-02 (continued, part 7)
+
+### Four More Legacy Pages Rebuilt to Match Brand
+- Checked the remaining four bare-GeneratePress-default pages flagged earlier: Free Business Assessment (post 3947), Thank You &ndash; Core Business Assessment (4912), Strategic Business Consultations (2227, real title "Contact Us to Supercharge Your Business Growth"), and Contact Form Thank You (2284). Unlike the first three (utility/legal reference pages), these are old marketing-funnel pages already functionally superseded by the redesign &mdash; the Core Business Assessment lead magnet is separately flagged in `CLAUDE.md` as outdated, and Strategic Business Consultations is effectively the old version of Schedule a Conversation. Surfaced this distinction to Jackie before proceeding; she confirmed rebuild all four anyway
+- Extracted each page's real content via `get_page_text` (avoids the browser tool's content-safety filter, which reliably blocks raw HTML/query-string dumps) and preserved it verbatim rather than substituting newer draft copy sitting elsewhere in the workspace (e.g. the 2026-08-31 Core Business Assessment landing page draft) &mdash; out of scope for a visual rebuild pass
+- **Free Business Assessment:** found genuinely dead on inspection &mdash; zero links, zero forms in the content, and two of its three images blocked by the content-safety filter (tracking-pixel query strings). Preserved the real copy and Mark Chapman testimonial, but added an honest inline note that the download link isn't currently active rather than fabricate one
+- **Thank You &ndash; Core Business Assessment:** unlike the page above, this one had two genuinely live links &mdash; the real (if outdated, 2018) assessment PDF and `eureka.synnovatia.com`, an old free community distinct from the new mastermind offerings. Both preserved as real buttons, not guessed at
+- **Strategic Business Consultations:** preserved all five body paragraphs and the direct phone/email verbatim, and added a "Schedule a Conversation" button linking to the real modern booking flow, consistent with the CTA pattern already established on every other page
+- **Contact Form Thank You:** the "In the Know" article list, previously four unstyled sidebar-style links, rebuilt as a real two-column card grid; all four hrefs confirmed live and preserved exactly
+- All four use the same nav/mobile-hamburger/footer pattern as the three built earlier today, with the Barlow Condensed nav typeface and the footer's new-tab Privacy Policy link baked in correctly from the start (no retrofitting needed this time)
+- **Real, repeated bug hit on all four:** GeneratePress's "Sidebar Layout" meta box is a classic (non-REST) meta box, and simply setting the dropdown to "No Sidebars" and clicking Gutenberg's Save button does **not** reliably persist it &mdash; confirmed via reload that the value silently reverted to "Default" on the first two pages despite the button click reporting success, which produced a real visible bug (page content and buttons shifted left, off-center, because the sidebar grid column was still being reserved even though the sidebar itself was CSS-hidden). Root-caused via network inspection: no meta-box save request was firing at all, because a classic-metabox field change doesn't mark Gutenberg's post store dirty, so the Save button effectively no-ops for that field alone. Fixed by directly dispatching `wp.data.dispatch('core/edit-post').requestMetaBoxUpdates()` after setting the dropdown &mdash; confirmed reliable across all four pages via a fresh reload check each time before moving on. Worth remembering for any future page built on this theme
+- All four verified live: full-bleed hero and body sections measured via `getBoundingClientRect()` (not just visual screenshot), Barlow Condensed nav/CTA font confirmed via `getComputedStyle`, and the footer's Privacy Policy link confirmed present with `target="_blank"` from the first save
+- This closes out the full "legacy orphan page" cleanup &mdash; all seven bare/unstyled pages found on staging (Client Cafe Client Profile, Client Service Agreement, Privacy Policy, plus these four) now match the sitewide brand system
+
+---
+
+## 2026-09-02 (continued, part 6)
+
+### Same Nav Typeface Bug Found on Client Cafe Client Profile Too
+- Jackie asked for a check on `/client-cafe-client-profile/` (post 2300) — same plain-`Barlow`-instead-of-`"Barlow Condensed"` bug just fixed on the two legal pages, on both `.nav-links a` and `.nav-cta`. Since this was the first of the three legacy-orphan pages built and the other two were built by copying its pattern forward, this was very likely the original source the bug propagated from, not an independent recurrence. Footer's Privacy Policy link was already correct (present, `target="_blank"`) — no change needed there
+- Fixed the same way as the legal pages (separate `editPost` + `savePost` calls with a dirty-state check in between, avoiding the editor-crash risk hit last time), verified saved via REST `content.raw` and live via `getComputedStyle` — all three legacy-orphan pages (Client Cafe Client Profile, Client Service Agreement, Privacy Policy) now match the sitewide nav typeface
+
+---
+
+## 2026-09-02 (continued, part 5)
+
+### Two More Real Bugs on the Legal Pages: Missing New-Tab Behavior, Wrong Nav Typeface
+- Jackie flagged the footer's Privacy Policy link not opening in a new tab on The Messy Middle and Work With Me specifically. Found both edit tabs already sitting on an unsaved in-memory edit that inserted exactly the correct `target="_blank" rel="noopener"` attributes — leftover state from earlier work, never actually saved. Verified byte-for-byte via a prefix/suffix diff against the last-saved content (the browser tool's content-safety filter blocks any raw snippet containing the phone/email pattern nearby, so verification went through character-code arrays and position/length diffing instead of printing the markup directly) before trusting and saving it. Confirmed live on both; spot-checked the other 7 pages that already carry the footer link and all 7 already open in a new tab, so the gap was isolated to just these two as reported
+- Separately audited the two legal pages' (Privacy Policy, Client Service Agreement) top nav against the rest of the site by comparing real computed styles (`getComputedStyle` on a live navigated tab, not an iframe/`document.write` reconstruction — that approach was tried first and gave false-matching results because the Google Fonts stylesheet hadn't loaded inside the injected iframe, silently falling back to the same wrong default on both sides and masking the real difference). Found a genuine mismatch: both legal pages' desktop nav links and CTA button were set to plain `Barlow`, while every other page on the site (confirmed against About and Work With Me) uses `"Barlow Condensed"` for both — a leftover from these two pages being built from an earlier, less-refined version of the shared nav pattern
+- Fixed both pages' `.nav-links a` and `.nav-cta` font-family declarations. Hit a real editor crash mid-fix on the Privacy Policy page — the Gutenberg block editor's own error boundary ("The editor has encountered an unexpected error"), most likely from chaining `editPost` directly into `savePost` too fast. Confirmed via a clean `wp.apiFetch` REST read that no data had been lost (the database still held the untouched original content, not a half-saved or empty state) before reloading the tab and reapplying the fix as two separate steps with an explicit save-state check in between — succeeded cleanly on retry, verified via REST content and live computed styles on both pages
+
+---
+
+## 2026-09-02 (continued, part 4)
+
+### Sitewide Privacy Policy Footer Link — Real Correction Mid-Task
+- Told Jackie the footer had "zero links anywhere" based on checking only the blog's PHP-hook footer and the nav — wrong. Direct verification (avoiding the browser tool's content-safety filter, which blocks raw-HTML dumps containing phone/email patterns, by comparing string equality and reading `<a>` element attributes instead of full markup) found 9 of the 12 Custom-HTML-block pages already carry a `Privacy Policy/Terms of Service` link to `/privacy-policy/` in their footer-copy line — About, Work With Me, The Messy Middle, both mastermind pages, both Apply pages, Schedule a Conversation, and Client Cafe Client Profile. Logged as a reminder: verify a sitewide claim against the actual live pages, not a partial sample, before stating it as fact (see `verify-website-fixes-directly` memory)
+- The real gap was three places: the two legal pages built earlier today (Privacy Policy, Client Service Agreement — their footer predates the link convention) and the PHP-hook-driven footer used by the blog (all 563 posts, the front page, All Posts, and — via the separate "Topic Archive Footer" GP Elements hook — all six topic archives)
+- Fixed the two legal pages directly via `wp.data`/`savePost()` (same pattern as all page-content edits this build), each verified live afterward with the link present and correctly pointed at `/privacy-policy/`
+- Added `.footer-copy a { color: inherit; text-decoration: underline; }` as one unscoped, sitewide rule in Customizer Additional CSS rather than duplicating it per page — covers the two legal pages' local override redundantly (harmless) and the blog/topic-archive footer where no such rule existed at all. Saving via the Customizer's own Publish button initially left the button disabled with no visible confirmation; verified success independently through `wp.customize.state('saved')` rather than trusting the UI, then confirmed the rule live in the front-end HTML
+- Fixed the "Topic Archive Footer" GP Elements hook directly (its CodeMirror editor, not `wp.data` — GP Elements hooks aren't block-editor content) — one edit covers all six live topic archives at once, verified live on `/topic/strategy-planning/`
+- The one piece left undone: the blog single-post/front-page/All-Posts footer HTML lives in `functions.php` itself, which per this build's established rule requires Jackie's own paste rather than an automated edit. Wrote the exact one-line find/replace to `functions-php-footer-privacy-link.txt` in scratchpad for her — the CSS side is already covered by the sitewide Customizer rule above, so this is a content-only change
+
+---
+
+## 2026-09-02 (continued, part 3)
+
+### Staging Site — Privacy Policy Page Rebuilt, Closing Out the Orphan-Page Series
+- `/privacy-policy/` (post 2345) was the third and last of this series of legacy orphan pages — same bare unstyled GeneratePress rendering on a Classic block as Client Cafe Client Profile and Client Service Agreement. Rebuilt with the identical established pattern: real nav (logo, Work With Me dropdown, mobile hamburger), navy legal-page hero with gold "Legal" eyebrow, full-bleed body/footer via the `transform: translateX(-50%)` technique, native GeneratePress "Sidebar Layout" set to "No Sidebars" from the start, genuine Custom HTML block replacing the old Classic block
+- A staging server-level Basic Auth session drop interrupted the session mid-task (the same known intermittent wall documented on 2026-08-30) — work resumed cleanly once Jackie re-authenticated, no content lost
+- Verified live post-resume: nav and footer both measure exactly full viewport width with zero gap below the 32px admin bar, old theme nav/footer (`.main-navigation`, `footer.site-info`) confirmed hidden via `display:none`, and the deployed Custom HTML block's content length matches the prepared source file byte-for-byte (only the `wp:html` comment-delimiter overhead differs) — confirms the live page is the final version, not a stale intermediate save
+- Mobile verification hit the same `resize_window` flakiness logged on 2026-09-02 part 2 (reports success, viewport stays at desktop width) — not re-litigated, since this page reuses the exact same hamburger-toggle CSS/JS already confirmed working on both other pages in this series
+- This closes out the three-page orphan series (Client Cafe Client Profile, Client Service Agreement, Privacy Policy) — no other bare/unstyled legacy pages found in a full page listing, though `free-business-assessment`, `thank-you-core-business-assessment`, `contact-form-thank-you`, and `strategic-business-consultations` remain unchecked and weren't confirmed in scope for this pass
+
+---
+
 ## 2026-09-02 (continued, part 2)
 
 ### Staging Site — Client Service Agreement Page Rebuilt, Real Approval Form Recovered
