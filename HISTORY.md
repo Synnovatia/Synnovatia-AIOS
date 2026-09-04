@@ -60,6 +60,25 @@
 
 ---
 
+## 2026-09-03 (continued, part 5)
+
+### Redirect Audit — Identification Pass, Then Paused Pending Jackie's Own Decision
+- Continued the go-live redirect audit (`plans/2026-09-03-redirect-audit-plan.md`): pulled production's real 21-page list via REST, cross-checked against staging's rebuilt pages, and resolved both of the tracker's open TBD rows with real production pages — "Strategic Coaching" turned out to be `/monthly-coaching/` (excerpt literally opens "Strategic Coaching") and "Solutions on the Fly" is `/solutions/`, both confirmed → `/work-with-me/`
+- Surfaced several real findings not previously known: `/strategic-business-consultations/` needs a redirect after all (the page trashed on staging today during the orphaned-page cleanup); `/schedule-chat/` (old scheduler) and three more old offer pages (`/stage-ii-enterprise-entrepreneur-strategies/`, `/client-cafe-strategy-call-prep-form/` — a real gap, never rebuilt on staging at all — `/coaching/`, `/services/`) needed a human call rather than a guess
+- Blog side: pulled all 421 production categories and all 563 posts' category assignments via REST, cross-referenced against the existing topic classification CSV. 48 categories have a clear (≥60%) majority topic and real volume — added as redirect candidates; 31 more have real volume but a genuinely mixed topic split; the remaining 342 have 0-1 posts each, essentially confirming the "421 near-duplicate categories" problem is real and mostly negligible-traffic. Saved as `outputs/website-redesign/2026-09-03-category-to-topic-mapping.csv`
+- Attempted the production Redirection-plugin export (Tools → Redirection → Export, needed regardless of go-live path) — blocked, the password manager wasn't connected in this session for the credential-autofill flow; still needs Jackie's own login
+- Started working through the ambiguous website items with Jackie one by one, but she flagged a real misunderstanding partway through: her mental model of the redirect direction ("staging pages redirected to links on the current live site") didn't match what the tracker was built around (old production URL → new staging URL, the standard go-live-cutover convention). **Paused here at Jackie's request** — she wants outside advice on how the go-live/redirect approach should actually work before either of us goes further. Nothing was touched live; the tracker and category-mapping CSV stand as of this pause.
+
+### Mastermind Outreach Status Check — Real Data-Quality Bug Found and Fixed
+- Ran the twice-monthly status check (`outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md`) ahead of its 9/5 scheduled run. Found and logged one real update missed by the roster (Hamid Kashani replied 8/24) and reported the four-group status to Jackie
+- Jackie corrected several errors: **Maxine Fuller is retired** (moved to Excluded); **Diane Darling had in fact been contacted** 8/22, which the roster's tracking had completely missed; **Hava Volterra, Carol Kulencavich, Hank Parker, and Richard Greenbaum removed from Forum consideration** entirely, per her direct call
+- Root-caused the Diane Darling miss and a second one Jackie caught by hand (a real, sent "checking in" email to **Elyse Koenig**, dated 8/21, sitting in Trash): Gmail search excludes Trash by default, and a sent-then-trashed email is invisible to a normal search — this is very likely how `roster.csv` itself was originally built, meaning the same blind spot could affect any candidate, not just these two
+- **Full trash-inclusive rebuild of all ~24 active mastermind/Forum candidates**, at Jackie's request after she asked directly what caused the misses. Surfaced one more real, live gap in the process: **a real Zoom call with Jo Lynn Deal happened that same day (9/3)**, following a full reconnection arc (8/22 reconnect → 8/24 reply → scheduling → the call), none of which the roster had captured — logged `meeting_completed`. Also corrected three stale dates: Sherry Schaefer (replied 8/31, thread continued to 9/1 — moved from `sent` to `responded`), Candy Messer (real last activity 8/22, not 8/20), and Diane Leonard (correspondence continued through 8/28, not just the 8/12 call — her Jan 2027 Forum check-in plan is unchanged)
+- Deliberately left Carolynn Aristone's and Jill Cohen's 8/20 dates untouched — they came from Jackie's own direct chat report that day, and an incomplete thread re-read wasn't grounds to overwrite a good record. Jackie confirmed 2026-09-03 she has in fact contacted both and wants them to stay on the Forum list and in the normal client re-engagement cadence (not pulled onto a scheduled mastermind track like Diane Leonard) — confirmed this needs no CSV change, since both are already in `roster.csv` with valid last-checkin dates and no exclusion flag, so they'll resurface naturally around February 2027
+- Standing fix going forward: every future Gmail check against this roster includes Trash by default, not just when something looks off
+
+---
+
 ## 2026-09-02 (continued, part 14)
 
 ### Redirect Audit Prep — Plan + Tracking Spreadsheet for Tomorrow
