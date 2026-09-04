@@ -60,6 +60,10 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 - Also refreshed two dates that were slightly stale: **Sherry Schaefer** actually replied 8/31 (same day as the send) and the thread continued to 9/1 — status corrected from `sent` to `responded`. **Candy Messer**'s real last activity is 8/22 (when Jackie sent her Boomerang scheduling link), not 8/20.
 - **Carolynn Aristone and Jill Cohen were left as-is** — their roster dates (both 8/20) match what Jackie directly reported in chat that day, and a partial thread re-read couldn't be trusted as more accurate than that without risking overwriting a good record with an incomplete one. **Jackie confirmed 2026-09-03 she has contacted both** and wants them to stay on this list and in the normal client re-engagement cadence — not pulled onto a Diane-Leonard-style scheduled mastermind track, just kept warm for a possible direct invitation whenever it feels right. No CSV change needed: both are already in `roster.csv` with real last-checkin dates and no exclusion flag, so they'll resurface naturally for a normal check-in around February 2027.
 
+**2026-09-04:** Jackie extended the same instruction to **Candy Messer and Jo Lynn Deal** — keep both on the mastermind list and in the normal client re-engagement cadence. Same mechanism, already confirmed working for the re-engagement side: both are in `roster.csv` with valid last-checkin dates (Candy 8/22, Jo Lynn 9/3) and no exclusion flag, so they'll resurface for a normal check-in around February 2027 (Candy) and March 2027 (Jo Lynn).
+
+**Correction, same day:** Jackie clarified these four (Candy Messer, Jo Lynn Deal, Carolynn Aristone, Jill Cohen) all belong on the **Mastermind for the Messy Middle** list, not Seven Figure Forum. Carolynn and Jill were already correctly there (the "(Forum)" tag in earlier status-check entries above was this document's own mislabel, not a real list change). Candy and Jo Lynn were real moves — both had been bumped up to the Forum candidate table back on 2026-07-22; moved back to the Messy Middle Tier 2 table now, per Jackie's call, not new research. Earlier entries in this log that tagged them "(Forum)" describe real events (replies, calls) accurately — only the list label was wrong, left as-is rather than rewritten, since the history itself still happened as described.
+
 **2026-08-20 (later same day, reported by Jackie):** The three Tier 2 drafts noted above as "prepared, not sent" turned out to have gone out and gotten responses:
 - **Carolynn Aristone** — draft sent, she replied. Logged `responded`.
 - **Jill Cohen** — replied: *"Will reconnect when she gets back from New York."* Logged `responded`, with that line noted in `roster.csv` so the next check knows to expect a follow-up once she's back rather than treating this as stalled.
@@ -136,6 +140,8 @@ Solo or professional practices. Often below the band, but Jackie knows which hav
 | Liz Mohler | Liz Mohler & Associates | Career Consultant / Speaker / Coach |
 | Carolynn Aristone | The Center for Intimate Relationships LLC | CEO |
 | Jill Cohen | Jill Cohen Mediation | Family Mediator / Attorney |
+| Candy Messer | Affordable Bookkeeping and Payroll Services, Inc. | President/CEO — moved back from the Forum list 2026-09-04, Jackie's call |
+| Jo Lynn Deal | myMarketing Cafe | President — moved back from the Forum list 2026-09-04, Jackie's call |
 | Shadi Halavi-Shaolian | Law Offices of Shadi Halavi | Tax Attorney |
 | Drisa A. Carrizo | DAC Advisory Services | CPA |
 | Meridith Powell | MotionFirst | Speaker / consultant to CEOs |
@@ -167,14 +173,14 @@ Since there's no existing relationship, the "reconnect first" pattern this docum
 > Added 2026-07-22 after Jackie moved three names up from the Messy Middle list. Target: 4 → 6 members by Jan 2027, so **two seats to fill**.
 > **This group is not women-only** (Mark Chapman is a member), so the gender filter that shapes the Messy Middle list does not apply here.
 
-## Moved up by Jackie (4)
+## Moved up by Jackie (2)
+
+**Candy Messer and Jo Lynn Deal moved back to the Messy Middle list 2026-09-04** — see the Tier 2 table above; Jackie's call, not sourced from any new research. Only Diane Leonard and Katie Hammond stay here now, plus Brooke L. Billingsley below.
 
 | Name | Company | Title | Note |
 |---|---|---|---|
 | **Diane Leonard** | DH Leonard Consulting & Grant Writing Services | Owner | HubSpot says $300,000; Jackie places her at Forum level, so that record is badly out of date. **Live conversation as of 2026-07-22 — see note below.** |
-| **Candy Messer** | Affordable Bookkeeping and Payroll Services, Inc. | President/CEO | Team-based B2B firm |
 | **Katie Hammond** | 9SPR | President | PR agency. Jackie has active recent correspondence with her about employee issues — the warmest of the four |
-| **Jo Lynn Deal** | myMarketing Cafe | President | Marketing/PR. Long history with Jackie through the Virtually Anywhere group |
 | **Brooke L. Billingsley** | **Perception Strategies, Inc.** (Indianapolis) | CEO since Nov 1998 | Moved from the Messy Middle list 2026-07-22 after research. Publicly described as the **nation's largest healthcare mystery shopping company**; also CEO of Task To Touch, LLC (healthcare e-learning via Healthstream) — the sub-brand HubSpot had recorded. Professional speaker with agency representation. Real friendship in the record: birthday notes, Jackie following her husband's illness (2018), Brooke sharing her Dec 2020 remarriage. **Last contact Dec 2020.** **Jackie's plan (2026-07-22): re-engage as a friend first, well before any Forum conversation.** Stays in `roster.csv`; re-engagement email drafted 2026-07-22 and pulled forward — she sat 65th of 143 in the due queue, roughly mid-October at 5/week. **Sensitivity when writing to her:** she was following a husband's serious illness in 2018 and remarried in Dec 2020 "so excited to be in love again," which suggests she was widowed. Nothing in the record confirms it. Keep both husbands out of any draft and let her raise what she wants. |
 
 ### Diane Leonard — already in motion, and already pitched once

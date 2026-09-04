@@ -8,6 +8,26 @@
 
 ---
 
+## 2026-09-04
+
+### LinkedIn Metrics Updated, Cadence Recommendations Given
+- Logged the 8/29-9/4 Aggregate Analytics export into `data/linkedin-metrics/` (376 impressions, 5,776 followers, 54 profile views, 16 search appearances, 23 engagements) — top post: "Recently I had a prospective client ask..." (104 impressions, 11 engagements, Wed 9/2)
+- Cadence read: Wednesday still leads (40.2 avg impressions across 6 posts) vs. Monday (19.4 avg, 7 posts) and Friday (11.4 avg, 8 posts) — all three days now have 6+ posts, crossing the sample-size threshold for calling the pattern real rather than noise
+- Gave prioritized, data-backed recommendations: follower growth has been essentially flat (+5 since the 6/12 baseline) despite impressions growing ~30x, meaning the content is reaching people but not converting to follows; ranked every post by engagement rate (not just impressions, which favor recency) and found specific real-client-scenario posts consistently outperform generic "years of experience" openers, which have logged a 0% engagement rate every time
+
+### LinkedIn Content Strategy Changed — Opener Retired, Friday Becomes a Story Series
+- Per the recommendations above, Jackie asked to retire the generic "X years of consulting/cross-industry/B2B strategizing" opener (0% engagement rate, every instance) and turn Friday into an ongoing serialized story to address the follower-stagnation problem directly — a series gives people a real reason to follow
+- Asked Jackie to settle the two open questions (which day, which story) rather than guessing: **Friday** (the currently-weakest day, giving it a real reason to exist) telling **the "Different Is Better Than Better" research journey** (the real client-interview process behind the "Strategic Perspective You Feel From the First Conversation" positioning)
+- Updated `context/linkedin-marketing.md`: retired the opener with the real performance data behind it, replaced Friday's "What I'm Watching" pillar with the new story series (that content isn't gone from the workspace, just off LinkedIn's Friday slot — it continues via the HubSpot thread and the `what-im-watching-cloud` routine), and added format guidance (numbered parts, a one-line recap for new readers from Part 2 on, close each part on a real hook into the next rather than the usual closing question)
+- Drafted Part 1, grounded in real research facts (8 client interviews plus Craig Ullom as the outside marketing observer, the real finding that no single theme reached "Dominant" signal strength) rather than invented specifics — flagged the personal motivating frame as Jackie's to confirm or swap, per the doc's existing "hold story topics loosely" rule
+- Set a one-time reminder (`dib-story-series-planning-sep8`, Tuesday 9/8 9am) to do a more thorough job with Jackie: re-read the full source material fresh and map the story into a real multi-part outline with an actual timeline, rather than improvising each Friday cold
+
+### Mastermind Roster — Two Real Corrections
+- Jackie confirmed Candy Messer, Jill Cohen, Carolynn Aristone, and Jo Lynn Deal all stay on their mastermind list and in the normal client re-engagement cadence — verified all four are already in `client-reengagement/roster.csv` with valid last-checkin dates and no exclusion flag, so no CSV change was needed, just confirmation
+- **Real correction, same day:** Jackie clarified all four belong on the **Mastermind for the Messy Middle** list, not Seven Figure Forum. Carolynn and Jill had actually been correctly there all along — the "(Forum)" tag in recent status-check notes was this document's own mislabel. Candy Messer and Jo Lynn Deal were a real move: both had been bumped up to the Forum candidate table back on 2026-07-22 and are now moved back to the Messy Middle Tier 2 table, per Jackie's call rather than new research. Historical log entries describing real events under the old "(Forum)" tag were left as-is rather than rewritten, since the events themselves still happened as described — only the list label was wrong
+
+---
+
 ## 2026-09-03
 
 ### Day B Deload Worksheet — Built, Then Column Order Corrected

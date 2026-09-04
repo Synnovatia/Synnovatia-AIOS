@@ -48,11 +48,26 @@ All of the following, in priority order matching `context/strategy.md`:
 - **What I'm Watching gets the same heavy-cut treatment as the old Client Win pillar (confirmed 2026-08-31):** the "favor economy over thoroughness" guidance below was originally written for Client Win specifically, but Jackie's first edit of a What I'm Watching draft cut a specific example list plus a full prescriptive paragraph down to one linking sentence. Apply the same "favor economy" instinct to Friday posts under the new pillar, not just the old one.
 - **"Here's a/an [descriptor] stat/thing I came across" is a confirmed exception to the "Here's the thing" avoidance rule, specifically for a stat-intro opener (reconfirmed 2026-08-31, after a first instance 2026-07-31):** two independent edits now show her using this construction herself to introduce a stat or finding. Fine to use as a Friday-post opener; don't extend the exception to other contexts.
 
+**Retire the "X years of [industry/consulting]..." generic credential opener (retired 2026-09-04, per performance data):** every post using this pattern ("27 years of consulting across industries," "25 years of cross-industry consulting," "27 years of B2B strategizing") has logged a **0% engagement rate**, across every export window it's appeared in — see `data/linkedin-metrics/post-performance.csv`. Meanwhile the posts built around one specific, concrete client scenario ("Recently I had a prospective client ask...", "I texted a client after hours...") posted engagement rates from 5% to over 50%. Lead Monday's Thought Leadership posts with the specific moment/scenario the insight came from, not a numbered-years credential line — the years of experience can still be true context, just not the opening hook.
+
 | Day | Pillar | Notes |
 |---|---|---|
-| Monday | Thought leadership | A pattern/insight from 25+ years of cross-industry consulting. Precise, not generic — name the revenue range/stage per voice rules. |
-| Wednesday | Story | Personal or client story that humanizes the "peer, not guru" positioning. Warmth through specificity, not platitudes. |
-| Friday | What I'm Watching | (Changed 2026-08-25 from Client Win — Jackie felt client wins read as self-serving and not her voice.) A real stat, trend, or observation relevant to the $250K-$4M B2B service audience, cited with a real source (e.g. "GrowSurf, 2026") — not an anecdote. Close on a direct question inviting the reader's own experience/data, same as the other two pillars. |
+| Monday | Thought leadership | A pattern/insight from 25+ years of cross-industry consulting, led by a specific scenario/moment (not a "years of experience" credential opener — see retirement note above). Precise, not generic — name the revenue range/stage per voice rules. |
+| Wednesday | Story | Personal or client story that humanizes the "peer, not guru" positioning. Warmth through specificity, not platitudes. **The strongest-performing pillar to date** — every post logged in the 10%+ engagement-rate range has been a Wednesday story built on one specific, real scenario. |
+| Friday | **Ongoing Story Series — "Different Is Better Than Better"** | (Changed 2026-09-04 from What I'm Watching, per Jackie — see the dedicated section below. What I'm Watching isn't gone from the workspace, just off LinkedIn's Friday slot for now; it continues as a separate HubSpot email thread and the daily `what-im-watching-cloud` research routine.) |
+
+## Ongoing Story Series — Friday (started 2026-09-04)
+
+**Why:** follower growth has been essentially flat since the 6/12 baseline (+5 followers in ~3 months) despite impressions growing roughly 30x over the same period — people are seeing and engaging with the content but have no reason to *follow*. A serialized story, told in installments, is a direct fix: each part should give a reason to come back for the next one, not just stand alone.
+
+**The story:** the "Different Is Better Than Better" (DiB) research journey — the real client-interview research process (`DiB_Interview_Synthesis_Master.docx`) that led to the "Strategic Perspective You Feel From the First Conversation" positioning and the current brand voice/rebrand. This is a genuine behind-the-scenes account Jackie actually lived, not a constructed narrative — draw the actual beats from `context/brand-voice.md` and `outputs/positioning/positioning-brief.md` (why she did the research, what surprised her in the interviews, how a finding changed the message, the actual rollout).
+
+**Format guidance:**
+- Number installments explicitly (e.g. "Part 1," "Part 2 of the story") so a reader who hasn't seen the earlier parts knows this is a series worth following, not a one-off
+- Each part should open with a one-line recap of where the story left off (for new readers) before advancing it — don't assume everyone's been following since Part 1
+- Close each installment on a genuine hook into the next part, not just the standard closing question — the serialized format is the whole point
+- Same voice rules as every other pillar (AI-tell scrub, blunt/plain phrasing, no invented specifics) — a series doesn't get a pass on any of that
+- Runs until the arc naturally wraps; revisit the Friday pillar then rather than assuming it continues indefinitely — a second series (e.g. the AIOS/EVOLV-OS build story, raised and set aside 2026-09-04) is a natural next arc once this one concludes
 
 ## Cadence Performance Tracking (started 2026-08-17)
 
