@@ -49,6 +49,22 @@ Everything else below is genuinely unknown until the audit steps run — don't a
 
 ---
 
+## Update 2026-09-06 — real findings from working the audit
+
+**How staging becomes production, per Jackie:** DreamPress's own "Publish Staging to Live" feature (per [DreamHost's help doc](https://help.dreamhost.com/hc/en-us/articles/115003444252-Publishing-your-changes-from-Staging-to-your-live-DreamPress-site)) — a **full overwrite**, not a merge. Staging completely replaces production; anything on production not present on staging is lost (DreamPress backs up live first, so it's recoverable, but nothing survives the swap automatically). The doc says nothing about URL/domain handling — that's on us.
+
+**Real discovery: Redirection is already installed and active on staging**, not empty. It has 820 pre-existing rules (real history, going back to at least 2024 — one rule alone has 3,573 hits, another 669), almost certainly inherited when staging was first cloned from production. Checked the actual stored data via the REST API rather than assuming: **807 of those 820 (98%) have the staging domain hardcoded into the literal redirect target** (`action_data.url` or `action_data.server`/`url_from`), not just how they're displayed. If the final go-live doesn't rewrite that domain across the whole database, every one of these would send real visitors to a broken `synnovatiacom.stage.site` URL post-launch.
+
+**The fix needs no new tooling.** Better Search Replace is already installed on staging — it's exactly the tool for this (serialization-safe domain swap across the whole DB, not just page content), already flagged in `plans/2026-08-23-website-prelaunch-checklist.md` as the presumed migration tool. Whatever the final go-live sequence is, running it (`synnovatiacom.stage.site` → the real final domain, across *every* table) needs to be an explicit, checked-off step — it's easy to think "the content migrated, we're done" and miss that the Redirection plugin's own data needs the same treatment.
+
+**84 new redirects loaded live onto staging's Redirection plugin** (5 core page redirects + 79 blog category redirects), verified via the REST API, not just the admin UI. Added to the existing "Redirections" group (position after the legacy 820). See the tracker for exactly which ones and their Complete status. `/monthly-coaching/` deliberately held out — Jackie wants to check Google Analytics/Search Console traffic before deciding whether it redirects to Work With Me or retires like the other old offer pages; Site Kit by Google is installed on staging but never set up (shows "Start setup"), which would resolve this and give real traffic data generally.
+
+**Confirmed retirements, no redirect target (Jackie's calls, 2026-09-04):** `/stage-ii-enterprise-entrepreneur-strategies/`, `/client-cafe-strategy-call-prep-form/` (a real gap — never rebuilt on staging, unlike its companion Client Cafe Client Profile), `/coaching/`, `/services/`.
+
+**Blog category mapping fully resolved:** all 421 old categories now map to one of the 6 topic pages — 48 high-confidence (≥60% majority topic from real post data), 31 resolved using each category's own slug wording as the tie-break signal (genuinely split votes on small samples), 342 negligible-traffic (0-1 posts each) left unmapped. See `outputs/website-redesign/2026-09-03-category-to-topic-mapping.csv` and `outputs/website-redesign/2026-09-06-ambiguous-category-resolutions.csv`.
+
+---
+
 ## How to use the tracker
 
 - One row per redirect. Current Link = the exact old URL as it exists on production today. New Link = the exact destination it should point to.
