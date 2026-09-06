@@ -64,6 +64,23 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 
 **Correction, same day:** Jackie clarified these four (Candy Messer, Jo Lynn Deal, Carolynn Aristone, Jill Cohen) all belong on the **Mastermind for the Messy Middle** list, not Seven Figure Forum. Carolynn and Jill were already correctly there (the "(Forum)" tag in earlier status-check entries above was this document's own mislabel, not a real list change). Candy and Jo Lynn were real moves — both had been bumped up to the Forum candidate table back on 2026-07-22; moved back to the Messy Middle Tier 2 table now, per Jackie's call, not new research. Earlier entries in this log that tagged them "(Forum)" describe real events (replies, calls) accurately — only the list label was wrong, left as-is rather than rewritten, since the history itself still happened as described.
 
+**2026-09-05 (status check):** Reconciled every named candidate against `roster.csv`, `outreach_log.csv`, and Gmail (trash-inclusive search for the 3 days since the last check).
+- **Candy Messer** — a real call happened 9/4 (booked off the 8/22 Boomerang link), found only in Trash. Jackie's thank-you note and Candy's warm reply ("I enjoyed our chat and catching up... a referral is the best compliment I can receive") were both trashed after sending, same pattern as the earlier Diane Darling/Elyse Koenig misses. Logged `meeting_completed` (date 9/4) in `roster.csv`/`outreach_log.csv`. No Forum mention made — correct. **Per this doc's existing plan, a call having happened is the moment to consider raising the Forum with her — Jackie's call, not made.**
+- **Jo Lynn Deal** — the warm post-call exchange continued 9/3 evening into 9/4 (flying again, "aunt/niece retreat" idea). No status change needed, already `meeting_completed`; no mastermind mention — correct.
+- No new replies found for anyone in the "contacted, no response yet" group.
+- No retirements, closures, or other status changes surfaced this round.
+
+**2026-09-05 (Jackie's decisions on this round's report):**
+- **Candy Messer, Carolynn Aristone** — confirmed on both the Messy Middle list and the client re-engagement roster.
+- **Sherry Schaefer** — stays on the Messy Middle list; check back in **2026-09-15** (`roster.csv` updated).
+- **Jo Lynn Deal** — stays on the Messy Middle list; check back in **2026-09-20** (`roster.csv` updated).
+- **Hamid Kashani** — removed from Forum consideration, stays in client re-engagement only.
+- **Katie Hammond** — removed from Forum consideration, stays in client re-engagement only.
+- **Diane Leonard** — confirmed on the Forum list (2027-01-04 check-in unchanged).
+- **Jill Cohen** — reconnect email drafted, awaiting Jackie's review/send.
+- **Fern Stanford** — contacted; not able to join at this time. Stays on the Messy Middle list for a future ask.
+- **Suzi Waddill-Goad, Amanda Perrot** — mastermind/Forum-interest emails drafted, awaiting Jackie's review/send.
+
 **2026-08-20 (later same day, reported by Jackie):** The three Tier 2 drafts noted above as "prepared, not sent" turned out to have gone out and gotten responses:
 - **Carolynn Aristone** — draft sent, she replied. Logged `responded`.
 - **Jill Cohen** — replied: *"Will reconnect when she gets back from New York."* Logged `responded`, with that line noted in `roster.csv` so the next check knows to expect a follow-up once she's back rather than treating this as stalled.
@@ -138,17 +155,17 @@ Solo or professional practices. Often below the band, but Jackie knows which hav
 | Name | Company | Title |
 |---|---|---|
 | Liz Mohler | Liz Mohler & Associates | Career Consultant / Speaker / Coach |
-| Carolynn Aristone | The Center for Intimate Relationships LLC | CEO |
 | Jill Cohen | Jill Cohen Mediation | Family Mediator / Attorney |
-| Candy Messer | Affordable Bookkeeping and Payroll Services, Inc. | President/CEO — moved back from the Forum list 2026-09-04, Jackie's call |
-| Jo Lynn Deal | myMarketing Cafe | President — moved back from the Forum list 2026-09-04, Jackie's call |
+| Candy Messer | Affordable Bookkeeping and Payroll Services, Inc. | President/CEO — moved back from the Forum list 2026-09-04, Jackie's call. **Confirmed 2026-09-05: stays on this list and in the client re-engagement roster, both.** |
+| Jo Lynn Deal | myMarketing Cafe | President — moved back from the Forum list 2026-09-04, Jackie's call. **Confirmed 2026-09-05: stays on this list; Jackie set a check-back-in for 2026-09-20 (`roster.csv` `next_checkin_due` updated).** |
+| Carolynn Aristone | The Center for Intimate Relationships LLC | CEO — **confirmed 2026-09-05: stays on this list and in the client re-engagement roster, both.** |
 | Shadi Halavi-Shaolian | Law Offices of Shadi Halavi | Tax Attorney |
 | Drisa A. Carrizo | DAC Advisory Services | CPA |
 | Meridith Powell | MotionFirst | Speaker / consultant to CEOs |
 | Diane Darling | Diane Darling | Speaker, Consultant, Business Coach |
 | Sibo Ncube | Trusted Touch Healthcare LLC | Director |
 | Elizabeth Teliz-McQuarrie | — | Leadership Coach |
-| Sherry Schaefer | — (independent coach) | Coach |
+| Sherry Schaefer | — (independent coach) | Coach — **confirmed 2026-09-05: stays on this list; Jackie set a check-back-in for 2026-09-15 (`roster.csv` `next_checkin_due` updated).** |
 
 ## Tier 3 — Owner title, no company data (4)
 
@@ -164,6 +181,8 @@ Christine Meshell · Amanda Perrot · Elyse Koenig (CEO)
 
 Since there's no existing relationship, the "reconnect first" pattern this document uses for everyone else doesn't apply to her — there's nothing to reconnect to. Not added to `client-reengagement/roster.csv`, since that system is specifically for the 6-month check-in cadence with past clients, and she's never been one. Jackie's call on how to make first contact.
 
+**2026-09-05:** Jackie made contact. She's not able to join at this time — **stays on the Messy Middle list** for a future ask, per Jackie's call. No further action now.
+
 ---
 
 ---
@@ -175,12 +194,11 @@ Since there's no existing relationship, the "reconnect first" pattern this docum
 
 ## Moved up by Jackie (2)
 
-**Candy Messer and Jo Lynn Deal moved back to the Messy Middle list 2026-09-04** — see the Tier 2 table above; Jackie's call, not sourced from any new research. Only Diane Leonard and Katie Hammond stay here now, plus Brooke L. Billingsley below.
+**Candy Messer and Jo Lynn Deal moved back to the Messy Middle list 2026-09-04** — see the Tier 2 table above; Jackie's call, not sourced from any new research. **Katie Hammond removed from this list 2026-09-05, Jackie's call** — see the Excluded section. Only Diane Leonard stays here now (**confirmed 2026-09-05**), plus Brooke L. Billingsley below.
 
 | Name | Company | Title | Note |
 |---|---|---|---|
-| **Diane Leonard** | DH Leonard Consulting & Grant Writing Services | Owner | HubSpot says $300,000; Jackie places her at Forum level, so that record is badly out of date. **Live conversation as of 2026-07-22 — see note below.** |
-| **Katie Hammond** | 9SPR | President | PR agency. Jackie has active recent correspondence with her about employee issues — the warmest of the four |
+| **Diane Leonard** | DH Leonard Consulting & Grant Writing Services | Owner | HubSpot says $300,000; Jackie places her at Forum level, so that record is badly out of date. **Live conversation as of 2026-07-22 — see note below. Confirmed 2026-09-05: stays on the Forum list.** |
 | **Brooke L. Billingsley** | **Perception Strategies, Inc.** (Indianapolis) | CEO since Nov 1998 | Moved from the Messy Middle list 2026-07-22 after research. Publicly described as the **nation's largest healthcare mystery shopping company**; also CEO of Task To Touch, LLC (healthcare e-learning via Healthstream) — the sub-brand HubSpot had recorded. Professional speaker with agency representation. Real friendship in the record: birthday notes, Jackie following her husband's illness (2018), Brooke sharing her Dec 2020 remarriage. **Last contact Dec 2020.** **Jackie's plan (2026-07-22): re-engage as a friend first, well before any Forum conversation.** Stays in `roster.csv`; re-engagement email drafted 2026-07-22 and pulled forward — she sat 65th of 143 in the due queue, roughly mid-October at 5/week. **Sensitivity when writing to her:** she was following a husband's serious illness in 2018 and remarried in Dec 2020 "so excited to be in love again," which suggests she was widowed. Nothing in the record confirms it. Keep both husbands out of any draft and let her raise what she wants. |
 
 ### Diane Leonard — already in motion, and already pitched once
@@ -203,7 +221,6 @@ Owner-level, larger or team-based businesses. Jackie confirms revenue.
 |---|---|---|---|
 | **Chris Lane** | Fluted Partition | — | **Revenue on file: $2MM** — the highest figure anywhere in the roster. Packaging, so product rather than service; Jackie's call whether that fits the room. |
 | **Sivakumar Veerappan** | Anubavam | Founder & CEO | IT services. Already received a re-engagement email 7/14 — coordinate timing |
-| **Hamid M. Kashani** | Habitat Architecture, INC | President & Owner | |
 
 Also worth a look if the Forum takes professional-practice partners: **Kurt Fagan** (Partner, Fagan & Fagan LLP — emailed 7/20).
 
@@ -224,6 +241,10 @@ Also worth a look if the Forum takes professional-practice partners: **Kurt Faga
 **Removed by Jackie's call (6): David G. Kinney**, The Kinney Group. Pulled from Forum consideration 2026-07-27, no reason recorded — stays in the normal client re-engagement roster.
 
 **Hava Volterra, Carol Kulencavich, Hank Parker, and Richard Greenbaum** — all four removed from Forum consideration 2026-09-03 per Jackie's direct call, no reason recorded. Kurt Fagan (also a "professional-practice partner" name) stays on the Forum list; only these four were pulled.
+
+**Katie Hammond removed from Forum consideration 2026-09-05, Jackie's call**, no reason recorded. Stays in the normal client re-engagement roster — the 7/31 dinner and the relationship continue, only the Forum pitch is off the table.
+
+**Hamid M. Kashani removed from Forum consideration 2026-09-05, Jackie's call**, no reason recorded. Stays in the normal client re-engagement roster — the warm 8/24–8/28 exchange with him and Terri continues, only the Forum pitch is off the table.
 
 **Lisa Black**, Tier 3 Messy Middle. Removed from mastermind consideration 2026-08-20, then removed from the client re-engagement roster entirely the same day (no reason recorded for either) — 174 → 173 clients. Gone from `roster.csv` and `due_now.csv`; no `outreach_log.csv` or `meeting_notes.csv` history existed for her.
 

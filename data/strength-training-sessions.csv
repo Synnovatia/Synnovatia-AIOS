@@ -3,3 +3,5 @@ date,day,duration_min,avg_hr,mets,distance_mi,elevation_gain_m,pace_min_per_mi,n
 2026-09-02,Wed,77,110,,3.70,217,21:05,Wednesday long hike
 2026-09-03,Thu,24,80,0,,,,"Yoga warm-up (deload week). 0 METs plausible for gentle yoga at a low heart rate, logged as reported."
 2026-09-03,Thu,30,105,68,,,,"Strength (Day B) - Deload. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv; all 9 exercises hit or exceeded their deload targets, two (Stability Ball Hip Bridge, Side Plank) done at 3 sets vs. the worksheet's 2, Jackie's own call."
+2026-09-04,Fri,63,111,195,3.12,,20:13,"Friday walk (off day per the standing schedule, logged as reported). Duration computed from distance x pace (63.1 min), not separately reported."
+2026-09-06,Sun,30,118,156,,,,"Strength (Day C) - Deload, last of the week's three. Reported as '30 minutes, 156 minutes, heart rate 118' - interpreted the 156 as MET-minutes (a 30-min session can't contain 156 minutes), matching this file's established convention. Per-set detail (27 sets across 9 exercises) logged separately in data/strength-training-log.csv; every exercise hit its deload target exactly."

@@ -8,6 +8,19 @@
 
 ---
 
+## 2026-09-06
+
+### Day C Deload Worksheet Built, Then the Real Session Logged
+- Built and printed the Day C deload worksheet (`personal/workout-logs/2026-09-06-day-c-worksheet.html` / `.pdf`) — last of this week's three deload sessions, weights at ~60% of the 8/30 pre-deload session, reps back to the bottom of each range. Flagged one exercise (Band Pull-Apart) that couldn't get a true deload: its last session was already at the bottom of its rep range with the only band on hand, so it was logged as a repeat rather than a forced number
+- Logged the actual session (27 sets across 9 exercises) after resolving several real dictation ambiguities rather than guessing: "Renegade bird" and "Single-leg foot bridge" read as Renegade Row and Single-Leg Glute Bridge (no such exercises exist in the plan); two consecutive "Dead bug" reports with different rep counts (8/side, then 10/side) were split as Bird Dog then Dead Bug, since the reps matched each exercise's own deload target exactly and this pairing has been confused before; "156 minutes" in the session summary was read as 156 MET-minutes, since a 30-minute session can't contain 156 minutes of anything else. Dumbbell Incline Press was reported with no weight/reps at all — flagged and held rather than filled in, then logged once Jackie confirmed (5 lb × 8, matching every other exercise's exact deload target). This closes out the week's 3-session deload block; new 30 lb dumbbells are still on track for the week of 9/8
+- Logged today's weekly health check-in to `personal/health-goals.md`: weight 143.2 lbs (+1.2), body fat 38.8% (-0.2 pts), waist 30.75 in (+0.25), HRV 27 (-2) — a mixed, noisy week rather than a clear trend either direction, landing right at the tail end of the deload block
+
+### Other Pending Changes (bundled in at save time)
+- `client-reengagement/data/{roster,meeting_notes}.csv`, `outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md`: a mastermind outreach status check ran 2026-09-05 in a separate session — a real call happened with Candy Messer (found only via a trash-inclusive Gmail search, logged `meeting_completed`), Jo Lynn Deal's post-call warmth continued, and Jackie made several real decisions on that round's report: Candy/Carolynn confirmed on both the Messy Middle list and client re-engagement; Sherry Schaefer and Jo Lynn Deal each got a specific check-back-in date set (9/15 and 9/20); Hamid Kashani and Katie Hammond removed from Forum consideration; Fern Stanford made contact but can't join right now, stays on the list for a future ask
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`: today's automated `dashboard-daily-refresh` run
+
+---
+
 ## 2026-09-04
 
 ### LinkedIn Metrics Updated, Cadence Recommendations Given

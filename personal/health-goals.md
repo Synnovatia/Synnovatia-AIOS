@@ -4,14 +4,14 @@
 
 ---
 
-## Current Metrics (as of 2026-08-30)
+## Current Metrics (as of 2026-09-06)
 
 | Metric | Current | Goal | To Go |
 |---|---|---|---|
-| Weight | 142 lbs | 135–138 lbs | 4–7 lbs |
-| Body fat | 39% | 30% | 9 points |
-| Waist | 30.5 in | 28 in | 2.5 in |
-| HRV | 29 | — | — |
+| Weight | 143.2 lbs | 135–138 lbs | 5.2–8.2 lbs |
+| Body fat | 38.8% | 30% | 8.8 points |
+| Waist | 30.75 in | 28 in | 2.75 in |
+| HRV | 27 | — | — |
 | VO2 Max | 26.3 | 30 | 3.7 |
 
 ## How This Gets Tracked
@@ -42,6 +42,7 @@
 | 2026-08-15 | 143.6 lbs | 38.3% | 30.75 in | 28 | Early check-in, a day ahead of the usual Sunday slot. Weight down 1.2 lbs and waist down 0.25 in from last week, both moving the right direction. Body fat essentially flat (+0.1 pt). HRV down from last week's peak of 32 to 28, still the second-highest reading of the series so far. |
 | 2026-08-21 | 143.6 lbs | 38.3% | 30.75 in | 26 | Off the usual Sunday slot again. Weight, body fat, and waist all unchanged from last week. HRV down 2 points to 26, third-lowest reading of the series — worth keeping an eye on given this week's active load (5.1-mi walk logged same day). |
 | 2026-08-30 | 142 lbs | 39% | 30.5 in | 29 | Back on the usual Sunday slot. Weight down 1.6 lbs and waist down 0.25 in from last week, both the right direction — weight is now within 4-7 lbs of goal, the closest yet. Body fat up 0.7 pts even as weight and waist dropped, which doesn't track with the scale's usual bioimpedance logic; likely measurement noise rather than a real body-composition shift, but worth a second data point before reading into it either way. HRV up 3 points to 29, a good recovery sign. |
+| 2026-09-06 | 143.2 lbs | 38.8% | 30.75 in | 27 | Usual Sunday slot, right at the end of this week's 3-session deload block. Weight up 1.2 lbs and waist up 0.25 in from last week, both moving the wrong direction, though body fat actually dropped 0.2 pts — a mixed, noisy-looking week rather than a clear signal either way. HRV down 2 points to 27, mid-pack for the series so far; not a concerning drop on its own, consistent with normal week-to-week variation. |
 
 ---
 
