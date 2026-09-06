@@ -19,6 +19,16 @@
 - `client-reengagement/data/{roster,meeting_notes}.csv`, `outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md`: a mastermind outreach status check ran 2026-09-05 in a separate session — a real call happened with Candy Messer (found only via a trash-inclusive Gmail search, logged `meeting_completed`), Jo Lynn Deal's post-call warmth continued, and Jackie made several real decisions on that round's report: Candy/Carolynn confirmed on both the Messy Middle list and client re-engagement; Sherry Schaefer and Jo Lynn Deal each got a specific check-back-in date set (9/15 and 9/20); Hamid Kashani and Katie Hammond removed from Forum consideration; Fern Stanford made contact but can't join right now, stays on the list for a future ask
 - `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`: today's automated `dashboard-daily-refresh` run
 
+### Session Log Reconciled With the Strength Training Tool's Data
+- `personal/workout-logs/session-log.csv` had gone stale since 9/1 while `data/strength-training-sessions.csv` (the Strength Training Log tool's own output) kept recording in parallel — surfaced when this morning's dashboard refresh found the two disagreeing on "sessions logged this week" (3 vs. 7). Backfilled the 5 missing sessions — Wednesday's hike, Thursday's yoga warm-up + Strength Day B deload, Friday's walk, and today's Strength Day C deload — into `session-log.csv` in its own format, folding distance/pace/elevation detail into notes the way existing rows already do. Both logs now agree through 9/6
+
+### Dashboard Refreshed Again, Then Republished
+- Re-ran the dashboard refresh by hand after the reconciliation above: Stripe numbers unchanged ($12,296 YTD, 35.1% to the 2026 goal), Reminders card rebuilt for today (weekly weigh-in, coffee with Christopher, Hill Warm-up + Strength Day C), and the Personal card's "Sessions logged this week" stat corrected from 3 to 7 using the now-accurate log. Morning Brief carried forward unchanged — Kim's August payroll payment ($1,515.73) still open ahead of its 9/15 deadline, nothing new resolved, and What I'm Watching still hadn't produced a draft for either today or yesterday, worth a check if the gap continues
+- Republished `outputs/dashboard/dashboard-fragment.html` a second time once the day's Stripe collector posted its 9/6 row (sparkline extended from 56 to 57 days, still flat at $0 for September)
+
+### Also Bundled In
+- `data/meeting-prep/tracking.csv`: the recurring `pre-meeting-objective-check` task logged a new objective-ask draft date (9/6) for Adrian Delli Colli's upcoming 9/10 meeting — not separately actioned in this conversation, just riding along in the same save
+
 ---
 
 ## 2026-09-04

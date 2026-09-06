@@ -339,7 +339,8 @@
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__get_draft",
       "Bash(md5 dashboard-fragment.html)",
       "Bash(python3 scripts/log_outreach.py meeting_completed candy@abandp.com --date 2026-09-04 --notes \"Real Zoom/call happened 9/4 \\(booked via the 8/22 Boomerang link\\) - warm catch-up, Candy referenced referral potential and 'synergy' from her 8/21 reply. No mastermind/Forum mention made.\" --next-action \"Per the roster-mining doc's plan, this is the moment to consider raising the Seven Figure Forum with her - Jackie's call, not made yet\")",
-      "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,9,6\\).strftime\\('%A'\\)\\)\")"
+      "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,9,6\\).strftime\\('%A'\\)\\)\")",
+      "Bash(awk -F',' '$1>\"2026-09-01\"' data/strength-training-sessions.csv)"
     ]
   }
 }
