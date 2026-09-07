@@ -8,6 +8,23 @@
 
 ---
 
+## 2026-09-08
+
+### Logo Cleaned Up for Calendly, After Two Real Rounds of Fit-Testing
+- Found the real master wordmark (`Synnovatia_Logo_DeepNavy_HighRes.png` in Downloads, June 2026, matching the current navy branding) among several older logo files on Desktop/Downloads, cropped out the small ® mark sitting after "SYNNOVATIA," and delivered a clean trademark-free version — `outputs/brand-assets/2026-09-08-synnovatia-logo-no-trademark.png`
+- Jackie was uploading it to Calendly's own logo field and it kept cropping the S and A off both ends. Two guesses at padding (a ~2.4:1 landscape ratio, then a full square) both still got clipped — turned out Calendly's crop dialog defaults to a selection box sized well inside the image frame, not the full frame, so the fix wasn't the image's aspect ratio but how much of the canvas the wordmark actually filled. Rebuilt the logo shrunk to about 55% of a square canvas's width, confirmed working — `outputs/brand-assets/2026-09-08-synnovatia-logo-no-trademark-calendly-square.png`. The two failed intermediate versions were cleaned up rather than left in the folder
+
+### Boomerang Scheduling Links Replaced With Calendly, Sitewide on Staging
+- Jackie is moving off Boomerang to Calendly for scheduling. Searched all staging pages and posts for `boomerangapp.com` links rather than assuming only the obvious pages had them — found 5 real instances across 2 link types, not just the ones already known from the CTA-tab-behavior audit
+- **45-minute link** (`.../meeting` → `calendly.com/synnovatia/45-minute-strategic-business-conversation`), replaced in 4 places: the Schedule a Conversation page, the Thank You – Core Business Assessment page, and two blog posts ("Entrepreneurs: Balancing Uncertainty and Complexity," "Strategic Thinking: The Ultimate Self-Care for Overwhelmed Entrepreneurs") that also linked out to it
+- **60-minute link** (`.../meeting60` → `calendly.com/synnovatia/60-minute-strategic-business-conversation`), replaced on Work With Me's "Find a Time That Works" button — held out of the first pass since Jackie hadn't supplied that link yet, done once she did
+- Each edit made via the block editor's own content API (`wp.data.dispatch('core/editor')`) rather than a raw REST write, consistent with this project's established pattern for safe in-editor changes. Verified every single one both via the saved REST content and a live front-end link check, then ran a final sitewide search confirming zero remaining `boomerangapp.com` references anywhere on staging
+
+### Free Business Assessment — Two Sentences Cut From the Form Note
+- Removed "I'll send the assessment straight over." and "You'll also hear from me now and then with real perspective, not noise." from the note under the assessment form, per Jackie's request — the remaining line, "You're welcome to revisit it as your business changes," stands on its own now. Verified live
+
+---
+
 ## 2026-09-06
 
 ### Day C Deload Worksheet Built, Then the Real Session Logged
