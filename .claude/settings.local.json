@@ -340,7 +340,12 @@
       "Bash(md5 dashboard-fragment.html)",
       "Bash(python3 scripts/log_outreach.py meeting_completed candy@abandp.com --date 2026-09-04 --notes \"Real Zoom/call happened 9/4 \\(booked via the 8/22 Boomerang link\\) - warm catch-up, Candy referenced referral potential and 'synergy' from her 8/21 reply. No mastermind/Forum mention made.\" --next-action \"Per the roster-mining doc's plan, this is the moment to consider raising the Seven Figure Forum with her - Jackie's call, not made yet\")",
       "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,9,6\\).strftime\\('%A'\\)\\)\")",
-      "Bash(awk -F',' '$1>\"2026-09-01\"' data/strength-training-sessions.csv)"
+      "Bash(awk -F',' '$1>\"2026-09-01\"' data/strength-training-sessions.csv)",
+      "Bash(python3 scripts/log_outreach.py no_response flamewilson@yahoo.com)",
+      "Bash(python3 scripts/log_outreach.py no_response a_yamina_c@hotmail.com)",
+      "Bash(python3 scripts/log_outreach.py no_response drisa@dacadvisory.com)",
+      "Bash(python3 scripts/log_outreach.py no_response elyse@elysekoenig.com)",
+      "Bash(python3 scripts/log_outreach.py no_response diane@dianedarling.com)"
     ]
   }
 }

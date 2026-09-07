@@ -8,6 +8,26 @@
 
 ---
 
+## 2026-09-07
+
+### Client Re-Engagement Monday Batch — Drafted, Then a Real Tracking Gap Found and Fixed Across Six Contacts
+- Ran the standard Monday drafting workflow: checked the 11 people awaiting a reply check (no replies found for any via Gmail), logged 6 as `no_response` (sent 16+ days ago) and left 5 pending another week (sent exactly 14 days ago); refreshed `due_now.csv`; drafted 5 new re-engagement emails into Gmail — Clara Bassett, Diana Pointer, Rhiannon Acre, plus Michael Waltz and Richard Greenbaum
+- Jackie flagged that Waltz and Greenbaum looked like they'd already been contacted in the past week. A trash-inclusive Gmail search confirmed it and surfaced something bigger: **six contacts had real send/reply activity in the past two weeks that was never logged in `outreach_log.csv`/`roster.csv`**, so their cadence clocks never reset and they kept resurfacing as "due now." Richard Greenbaum had a full completed exchange (sent 8/31, replied same day); Michael Pfau, Linda Pogo, and Joan Riddle had real sends 8/31 with no reply yet; Hava Volterra had a real send 8/24; Terri Kashani had an active conversation running through 9/5. Michael Waltz's 8/24 email had actually bounced — `loyaltyvidz.com` no longer resolves
+- Backfilled all six with the correct `sent`/`responded` status and real dates so they re-enter normal cadence tracking instead of resurfacing incorrectly. Moved Michael Waltz to `someday_contacts.csv` pending a working email address. Relabeled the two duplicate Gmail drafts (Waltz, Greenbaum) "DO NOT SEND — duplicate, please delete" since drafts can't be deleted via the connector, and replaced them in the batch with Shari Holland and Brad Gusich after verifying real two-way history for both. Also triaged 4 more contacts with no real correspondence into `someday_contacts.csv` while working down the queue (Tabitha Nichols, Déborah Boriel, Tracey Bloodsaw, FrankEvans Kileo)
+- Final batch of 5 ready in Gmail for Tuesday send: Clara Bassett, Diana Pointer, Rhiannon Acre, Shari Holland, Brad Gusich
+
+### Jackie's Writing Voice — Live-Edit Diff on Today's Batch Confirms a Standing Template Fix
+- Jackie edited 3 of today's 5 drafts live in Gmail mid-session, giving a direct before/after diff instead of an inference. The one edit that showed up in **all 5 drafts, no exceptions**: she deletes "Sincerely, Jackie" from the closer every time, going straight from the last line to the signature block — two of the five (Shari, Brad) had zero other changes made. That's now fixed as a standing rule for this template
+- Other new patterns from the diff: swaps a vague "I hope things are going well" line for a specific, curious question tied to an actual remembered detail; personalizes even throwaway closers to the recipient's field; replaces a guessed personal detail with something she genuinely knows rather than keeping the guess; treats an either/or question split into two short sentences as still "one question," not a stacked pair
+- Separately pulled a genuine two-week from-scratch reconnection thread (Terri & Hamid Kashani) for more native-voice signal: confirmed "Until then..." as a recurring sign-off bridge, a new interjection ("Well, holy moly!"), generous direct affection/praise in happy (not just hardship) reconnections, and a distinct terser register once a thread shifts from reconnecting to scheduling logistics
+- Both sets of findings folded into the existing `feedback_reengagement-email-edit-patterns` and `feedback_jackie-native-writing-voice` memory files rather than new ones, since both already had deep histories on this exact topic
+
+### Other Pending Changes (bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated daily-refresh runs, not actioned in this conversation
+- `context/hubspot-marketing.md`, `outputs/hubspot-marketing/style-learning-log.md`: post-send copy comparisons for the 9/2 Active Engagers and Drifting sends, logged by a separate task
+
+---
+
 ## 2026-09-08
 
 ### Logo Cleaned Up for Calendly, After Two Real Rounds of Fit-Testing
