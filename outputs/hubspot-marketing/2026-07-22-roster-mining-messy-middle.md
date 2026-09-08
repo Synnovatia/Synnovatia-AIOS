@@ -92,6 +92,8 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 - **Connie Weatherman removed from Messy Middle consideration** — Jackie believes the business is likely closed. See Excluded section. `priority=1` flag cleared in `roster.csv`.
 - **Reconnect emails drafted (not sent) for three Tier 2 names, pulled forward ahead of the natural cadence**: Liz Mohler, Carolynn Aristone, Jill Cohen. All three have long-dormant threads (last contact 2020, 2020, and 2022 respectively) with no mastermind mention — reconnect-first, same pattern as the Tier 1 batch.
 
+**2026-09-08 — Elyse Koenig (Tier 3) replied.** Real warm reply came in 9/7 to the 8/21 reconnect send — no mastermind/Forum mention, reconnect-first as planned. Jackie already replied 9/8 with a personal note and a referral offer; Elyse floated catching up again in October, which Jackie confirmed in her reply. Logged `responded` in `roster.csv`/`outreach_log.csv` (the automated no_response→responded transition needed a manual fix since the log's dedup logic doesn't handle a status flip after `no_response` was already recorded once). **Jackie flagged her as a possible Forum candidate too**, alongside her existing Messy Middle Tier 3 listing — not a decision, revenue band still unconfirmed (her business is beauty/wellness/lifestyle PR, per her email signature). Revisit at the October catch-up, same "raise it after real reconnection, not before" pattern as Diane Leonard and Candy Messer above.
+
 ---
 
 ## What the data could and couldn't tell us

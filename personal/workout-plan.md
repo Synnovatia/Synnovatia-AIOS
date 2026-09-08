@@ -34,12 +34,14 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 | Single-Leg Balance Reach (weighted, 12.5 lb) | 2 x 8-10/side |
 | Plank (shoulder-tap variation) | 2 x 30-45 sec |
 | Dumbbell Farmer's Carry | 3 x 100 ft |
-| Glute Bridge (banded, 25 lb weight on hips) | 3 x 15 |
+| Glute Bridge (banded, 30 lb weight on hips) | 3 x 15 |
 | Band Face Pull (purple band) | 3 x 12-15 |
 
 **Clarified 2026-08-19:** Single-Leg Balance Reach is weighted, Plank uses the shoulder-tap variation, Glute Bridge is banded with a 25 lb weight resting on the hips, and Band Face Pull uses the purple band — all already part of the plan, just not previously written into this table. Documentation gap, not a change Jackie made on her own.
 
-**Plank sequencing (2026-08-25):** Jackie dropped the shoulder-tap variation for one session (60 sec target, up from 50 sec) to confirm the hold at the new duration before reintroducing the tap. Next Day A session: repeat 60 sec plain plank one more time; once that's clean, add the shoulder taps back in.
+**Plank sequencing (2026-08-25, confirmed 2026-09-08):** Jackie dropped the shoulder-tap variation for one session (60 sec target, up from 50 sec) to confirm the hold at the new duration before reintroducing the tap. The 8/25 target held clean again on 9/8 (first working session back from deload) — next Day A session, add the shoulder taps back in at 60 sec.
+
+**Post-deload progression (2026-09-08):** First working session at the new 30 lb dumbbell cap — Goblet Squat, Romanian Deadlift, Dumbbell Farmer's Carry, and Glute Bridge all moved up from 25 lb to 30 lb, reps reset to the bottom of range. Single-Arm Dumbbell Row (12/side at 20 lb) and Band Face Pull (20 reps at purple) both hit the top of their current range — next Day A, move the Row up to the next weight (reps back to 8/side) and the Face Pull up to the green band (reps back to 12), same swap already made on Day B's Face Pull.
 
 ## Day B — Thursday
 
@@ -94,7 +96,7 @@ New equipment (heavier dumbbells, kettlebells, bands layered on top of dumbbells
 
 Every 4-6 weeks: same exercises, ~60% of usual weight for one week. Helps longevity goals and prevents plateaus/overuse, especially given the walking/hiking volume on the other days of the week.
 
-**First deload recommended for the week of 2026-09-01 (Tue 9/1 Day A, Thu 9/3 Day B, Sun 9/6 Day C).** Program started 2026-07-14 with no deload taken yet — by 8/30 that's ~6.5 weeks in, past the upper end of the 4-6 week window. Reps have also climbed to the top of the prescribed range on multiple exercises across all three days as of the 8/25 (A), 8/27 (B), and 8/30 (C) sessions, the kind of broad plateau signal the deload is meant to catch. Recommend introducing the new 30 lb dumbbells afterward, starting the week of 2026-09-08, so the equipment jump lands in a fresh block rather than overlapping the deload.
+**First deload taken the week of 2026-09-01 (Tue 9/1 Day A, Thu 9/3 Day B, Sun 9/6 Day C).** Program started 2026-07-14 with no deload taken yet — by 8/30 that's ~6.5 weeks in, past the upper end of the 4-6 week window. Reps had also climbed to the top of the prescribed range on multiple exercises across all three days as of the 8/25 (A), 8/27 (B), and 8/30 (C) sessions, the kind of broad plateau signal the deload is meant to catch. New 30 lb dumbbells introduced starting the week of 2026-09-08 (first live session: Day A, 9/8), landing the equipment jump in a fresh block rather than overlapping the deload as planned.
 
 ---
 

@@ -43,6 +43,21 @@
 ### Free Business Assessment — Two Sentences Cut From the Form Note
 - Removed "I'll send the assessment straight over." and "You'll also hear from me now and then with real perspective, not noise." from the note under the assessment form, per Jackie's request — the remaining line, "You're welcome to revisit it as your business changes," stands on its own now. Verified live
 
+### Post-Deload Day A Worksheet Built, Then the Real Session Logged — First Session at the New 30 lb Dumbbells
+- Logged Monday's mixed cardio (49 min, 3.55 mi, avg HR 133, 347 MET-min) to `personal/workout-logs/session-log.csv`
+- Built the Day A worksheet for the first working session back from the week's deload (`personal/workout-logs/2026-09-08-day-a-worksheet.html`), using the real 8/25 pre-deload numbers (not the 9/1 deload numbers) as the baseline. Three exercises had maxed out reps at the old 25 lb cap on 8/25 (Goblet Squat, Romanian Deadlift, Glute Bridge) plus Farmer's Carry at its old 25 lb/100 ft target — all four recommended to move up to the new 30 lb dumbbells with reps reset to the bottom of range; everything else kept building at its existing weight
+- Logged the actual session: all four recommended jumps landed exactly as worksheeted, and MET-minutes came in at 305 — the highest of any Day A session logged so far (prior range 196–284), consistent with handling meaningfully heavier load rather than a weaker session. Single-Arm Row (12/side) and Band Face Pull (20 reps, purple band) both hit the top of their ranges — flagged for a weight/band bump next Day A. Plank held a clean repeat at 60 sec standard, confirming the shoulder-tap variation can be reintroduced next session per the standing 8/25 plan note. Per-set detail (27 sets) in `data/strength-training-log.csv`, session summary in `personal/workout-logs/session-log.csv`
+- One correction mid-session: the warm-up's distance was initially logged as 2.75 mi (didn't reconcile with the 15-min duration and reported pace), corrected to the real 0.75 mi once Jackie flagged it — reconciles cleanly with the reported 20:06/mile pace
+
+### Elyse Koenig Replied — Logged, and Flagged as a Possible Forum Candidate Too
+- The 8/21 reconnect-only send (Messy Middle Tier 3) got a real, warm reply 9/7; Jackie had already answered it herself 9/8 with a personal note and a publicist referral offer, and the two floated catching up again in October
+- Logged `responded` in `client-reengagement/data/roster.csv` and `outreach_log.csv` (17 days to reply) — the automated `log_outreach.py` script's dedup logic doesn't handle a status flip after a `no_response` was already recorded for the same send, so the `outreach_log.csv` row needed a manual fix to actually mark the reply
+- Jackie flagged her as a possible Seven Figure Forum candidate in addition to her existing Messy Middle Tier 3 listing — not decided, revenue band still unconfirmed. Noted in both `roster.csv` and the running status log in `outputs/hubspot-marketing/2026-07-22-roster-mining-messy-middle.md`, to revisit at the October catch-up — same "raise it after real reconnection, not before" pattern already used for Diane Leonard and Candy Messer
+
+### Other Pending Changes (bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated daily-refresh runs, not actioned in this conversation
+- `outputs/linkedin/2026-09-14-to-09-18-drafts.md` / `.docx`: next week's LinkedIn batch, drafted by the standing Monday content-pipeline task, not actioned in this conversation
+
 ---
 
 ## 2026-09-06

@@ -345,7 +345,9 @@
       "Bash(python3 scripts/log_outreach.py no_response a_yamina_c@hotmail.com)",
       "Bash(python3 scripts/log_outreach.py no_response drisa@dacadvisory.com)",
       "Bash(python3 scripts/log_outreach.py no_response elyse@elysekoenig.com)",
-      "Bash(python3 scripts/log_outreach.py no_response diane@dianedarling.com)"
+      "Bash(python3 scripts/log_outreach.py no_response diane@dianedarling.com)",
+      "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,9,7\\).strftime\\('%A'\\)\\)\")",
+      "Bash(xargs -I{} sh -c 'echo \"=== {} ===\"; grep -A2 \"^## \" \"{}\"')"
     ]
   }
 }
