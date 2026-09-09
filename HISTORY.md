@@ -8,6 +8,27 @@
 
 ---
 
+## 2026-09-09
+
+### Heat-Safety Substitute for Wednesday's Hike, Then the Real Session Logged
+- Wednesday's scheduled long hike ran into upper-80s forecast temps — recommended an indoor treadmill incline-walk substitute (3.0-3.3 mph, 8-12% incline varied every 8-10 min, HR 110-120) sized to land in the same ~300-380 MET-minute range as Jackie's real hike history, rather than a generic substitute
+- The actual hike happened anyway (weather/plans changed) — logged 73 min, 3.69 mi, HR 118, 353 MET-min, right in the normal range, to `personal/workout-logs/session-log.csv`
+
+### Seven Figure Forum Agenda Built for Friday 9/11, Then Revised Twice, Then Drafted (Not Sent) in Gmail
+- Built a reusable Forum session agenda template, then tied it to the real Friday 9/11 8:00-9:15am PT session and its actual 4 attendees (Mark Chapman, Zoey Smith, Anne Laguzza, Christina Carlson), pulled from the real Google Calendar invite rather than assumed
+- The calendar invite's 4 discussion items (Claude/AI automation, hiring for conversion tracking, ChatGPT Ads webinar landing-page feedback, Loom price increase) were unattributed in the invite itself — Jackie confirmed all 4 are Mark's
+- Revised twice at Jackie's direction: first pass matched the exact section structure/titles from the 8/7 meeting's calendar description (numbered sections, "Hot Topic — Mark: [topic]" per item, "Closing — High-Value Takeaway Round"); second pass switched to lettered sections (A/B/C), dropped the now-stale "Time Shielding & Priority Sorting" roundtable, combined all 4 Mark topics under one heading, and moved the "what snags are slowing you down" question from Closing into the Hot Topic section, leaving Closing as just the next-meeting-date confirmation
+- Final version saved to `outputs/seven-figure-forum/2026-09-09-forum-agenda.md` (new folder, added to `CLAUDE.md`'s workspace structure) and drafted — not sent — as an email to all 4 attendees in Gmail, subject "7 Figure Forum — Agenda for Friday, September 11"
+
+### Other Logged Directly, No File-by-File Detail Needed
+- PayPal income (+$214.90) added to `context/current-data.md`'s self-reported YTD total ($17,210.12 → $17,425.02)
+- A blog idea (strategic vs. tactical perspective in business growth) captured as stub #3 in the content pipeline, no target date — `content/pipeline.md` regenerated to reflect it
+
+### Other Pending Changes (bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated daily-refresh runs, not actioned in this conversation
+
+---
+
 ## 2026-09-07
 
 ### Client Re-Engagement Monday Batch — Drafted, Then a Real Tracking Gap Found and Fixed Across Six Contacts

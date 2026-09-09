@@ -21,7 +21,7 @@
 
 | Metric | Value | As Of | Source |
 |--------|-------|-------|--------|
-| Income, year to date (self-reported total) | $17,210.12 | Aug 24, 2026 | Self-reported (+$210.12 PayPal) |
+| Income, year to date (self-reported total) | $17,425.02 | Sep 8, 2026 | Self-reported (+$214.90 PayPal) |
 | Stripe revenue, year to date (net of refunds) | $11,785 | Jul 11, 2026 | Stripe (live, `data/data.db`) |
 | Stripe revenue, month to date | $1,599 | Jul 11, 2026 | Stripe (live) |
 | Stripe total customers (all-time) | 48 | Jul 11, 2026 | Stripe (live) |

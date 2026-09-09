@@ -1,18 +1,23 @@
 # Content Pipeline
 
-> Auto-generated from database. Last updated: 2026-07-27
+> Auto-generated from database. Last updated: 2026-09-09
 > Source: `data/content.db` | Regenerate: `python scripts/content_pipeline/generate_pipeline.py`
 
-**Total ideas:** 2
+**Total ideas:** 3
 
 | Stage | Count |
 |-------|-------|
-| Stubs (captured, needs development) | 1 |
+| Stubs (captured, needs development) | 2 |
 | Developed (full concept ready) | 1 |
 
 ---
 
-## Stubs (captured, needs development) (1)
+## Stubs (captured, needs development) (2)
+
+### #3: Strategic Perspective vs. Tactical Perspective in Business Growth
+- **Priority:** — | **Channel:** blog | **Format:** article | **Source:** manual | **Created:** 2026-09-09
+- **Audience:** — | **Pillar:** seo_search | **Funnel:** awareness
+- **Offer:** —
 
 ### #2: Most Business Coaching Isn't Built for Your Size of Company
 - **Priority:** — | **Channel:** linkedin | **Format:** post | **Source:** manual | **Created:** 2026-07-28
