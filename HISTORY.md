@@ -8,6 +8,35 @@
 
 ---
 
+## 2026-09-11
+
+### Workout Log
+- Logged a light walk: 28 min, 1.59 mi, HR 116, 82 METs (`personal/workout-logs/session-log.csv`)
+
+### Other Pending Changes (bundled in at save time)
+- `data/linkedin-metrics/daily-engagement.csv` / `log.csv` / `post-performance.csv`: automated LinkedIn analytics logging, not actioned in this conversation
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated daily-refresh runs
+- `outputs/hubspot-marketing/2026-09-10-active-engagers-drafts.md` / `.docx`: the standing biweekly Active Engagers send, drafted by its own task
+
+---
+
+## 2026-09-10
+
+### Day B Worksheet Built, Then a Clean Sweep — Every Target Hit at the New 30 lb Dumbbells
+- Built the post-deload Day B worksheet (`personal/workout-logs/2026-09-10-day-b-worksheet.html`) using the real 8/27 pre-deload numbers — recommended Reverse Lunge and Suitcase Carry move up to the new 30 lb cap (both had maxed at 25 lb), Sumo Deadlift push for 20 reps before its own bump, Bent-Over Row move to green band, and Stability Ball Hip Bridge break its two-session plateau at 15 reps
+- Logged the actual session (27 sets, 68 min, HR 119, 348 METs — the highest Day B METs logged yet): every worksheet target was hit, several at the top of range — Sumo Deadlift hit 20/20/20 at the old 25 lb cap (next session moves to 30 lb); Band Face Pull and Dumbbell Lateral Raise both topped their rep ranges, flagged for a band/weight bump next time. Progression notes folded into `personal/workout-plan.md`. Warm-up (indoor treadmill, 0.68 mi/15 min/HR 114/43 METs) logged the same way
+
+### New Client Onboarding — Real Closed Won Deal Found and Kicked Off Same Day
+- Jackie asked what happens when a deal closes; checked HubSpot directly rather than just explaining the documented process, and found a real Closed Won deal from earlier that day — "Business Startup," $325, adellicolli01@gmail.com (Adriane Delli Colli) — created after that day's 8:10am automated `onboarding-daily-check` run, so it wouldn't have been caught until the next day
+- Drafted the welcome email in Gmail per the standard template and logged the deal in `data/onboarding/tracking.csv` immediately rather than waiting on the next automated run, given this exact automation has silently missed a deal once before (see the known-issue note in `context/client-onboarding.md`)
+
+### Adriane Delli Colli — Core Business Assessment Reviewed, Progress Chart Filled In, 90-Day Plan Built
+- Reviewed Adriane's completed Core Business Assessment (in Google Drive, outside this repo) — extracted her 157 form-field responses directly since this environment has no PDF page-rendering support, cross-checked every section's typed score against its actual checkbox count, and found one real discrepancy (Operational System Development: 8 boxes checked, but the typed score reads 7) — flagged rather than silently resolved either way
+- Filled in page 13's Progress Chart (Total Score 55/100, full 10-section breakdown, first Date/Score row dated 9/10) directly in the PDF's form fields, verified by rendering the actual page rather than trusting the write
+- Built a 90-day Plan of Action (docx, same Google Drive folder) following the assessment's own "pick one core area" methodology — recommended Business Foundation Development (4/10) as the single focus, since one of its six open gaps is literally "I assess and upgrade my business plan every 90 days," the habit the whole assessment is built around; Sales Tools and Growth (the actual lowest score, 3/10) deliberately deferred to the next 90-day cycle
+
+---
+
 ## 2026-09-09
 
 ### Heat-Safety Substitute for Wednesday's Hike, Then the Real Session Logged
