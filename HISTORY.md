@@ -13,8 +13,12 @@
 ### Workout Log
 - Logged a light walk: 28 min, 1.59 mi, HR 116, 82 METs (`personal/workout-logs/session-log.csv`)
 
+### LinkedIn Metrics Updated (9/5-9/11 export)
+- The weekly `linkedin-metrics-reminder` scheduled task nudged Jackie via iMessage; she replied in-thread with the 9/5-9/11 Aggregate Analytics export plus her manually-tracked numbers (183 impressions, 5,779 followers, 54 profile views, 23 search appearances)
+- Logged into `data/linkedin-metrics/` (14 post snapshots merged into `post-performance.csv`, 7 daily rows into `daily-engagement.csv`, one summary row into `log.csv`) — post_impressions_7d matched the export's DISCOVERY figure exactly this week, no discrepancy to reconcile
+- Flagged a real dip: 183 impressions is the lightest week since 7/17 (prior weeks ran 285-589) — cadence read still holds Wednesday as the strongest day (59.5 avg impressions across 8 posts vs. Monday's 30.5 and Friday's 21.9), so the read is lighter posting volume that week rather than a cadence breakdown
+
 ### Other Pending Changes (bundled in at save time)
-- `data/linkedin-metrics/daily-engagement.csv` / `log.csv` / `post-performance.csv`: automated LinkedIn analytics logging, not actioned in this conversation
 - `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: today's automated daily-refresh runs
 - `outputs/hubspot-marketing/2026-09-10-active-engagers-drafts.md` / `.docx`: the standing biweekly Active Engagers send, drafted by its own task
 
