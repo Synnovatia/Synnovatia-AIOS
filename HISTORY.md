@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-09-12
+
+### Site Confirmed Live — Workspace Context Updated
+- Jackie confirmed the website redesign went live on production (`synnovatia.com`) 2026-09-11, via DreamHost's full "Publish Staging to Live" overwrite — the mechanism the pre-launch checklist and redirect audit plan had anticipated. Staging (`synnovatiacom.stage.site`) is now retired as the active work surface
+- Updated `CLAUDE.md`'s website-redesign entry with the go-live note. Whether the pre-launch punch list actually carried over cleanly through the overwrite is **unconfirmed** — Jackie didn't know off the top of her head whether the 807 domain-hardcoded redirect targets, the blocked SEO meta descriptions/topic-archive titles, HubSpot form styling, or the two PHP logo bugs from the 9/11 mobile audit are fixed or still open on production. Flagged as needing a fresh production check rather than assumed either way
+- Also surfaced a real environment constraint while trying to pick up the PHP logo bugs: this session has no browser tool and outbound web access is blocked entirely (confirmed via a blocked `WebFetch` to `synnovatia.com` itself) — so unlike earlier sessions that used direct browser automation on the live site, this session can't read or verify anything on the live site directly. Any further WordPress-side fix needs Jackie to paste the current code/URLs in chat rather than being inspected directly
+
+### Other Pending Changes (bundled in at save time)
+- `context/group/key-metrics.md`, `outputs/dashboard/dashboard.html` / `dashboard-fragment.html`, `outputs/morning-brief/brief.html`: automated daily-refresh runs, not actioned in this conversation
+
+---
+
 ## 2026-09-11
 
 ### Workout Log
