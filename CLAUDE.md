@@ -233,6 +233,8 @@ Claude will:
 
 In GitHub Desktop: review the changed files, paste in the summary Claude wrote (edit if you want), click **Commit to main**, then **Push origin**.
 
+**Two different environments, two different save mechanics (noted 2026-09-13):** the flow above (Claude writes a summary, Jackie commits via GitHub Desktop) is how saving works in the **local Cowork Mac app** — that Claude has no direct GitHub access there. If a session is instead running as **Claude Code on the web** (opened via claude.ai/code rather than the local Mac app), Claude has direct `git commit`/`git push` access and just commits and pushes the work itself — no GitHub Desktop step, nothing for Jackie to do. Same "Save my work" request, different mechanics depending on which environment the session is running in; either way, everything ends up committed and pushed to the same GitHub repo.
+
 ### Installing modules
 
 > **"Install [module name]"** — e.g., "Install ContextOS" or "Install the productivity module"
