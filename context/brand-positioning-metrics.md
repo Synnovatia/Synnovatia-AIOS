@@ -30,7 +30,7 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 | Metric | Baseline | Source |
 |---|---|---|
 | Branded search volume ("Synnovatia" queries) | **No real customer brand searches found yet** — see corrected note below | Search Console (manual pull), 2026-09-13 |
-| Organic traffic / referral source mix | Not yet pulled — GA integration is manual, no baseline snapshot exists | Google Analytics (manual) |
+| Organic traffic / referral source mix | **3,750 total sessions** (Jun 21–Sep 13 window): Direct 2,973 (79.3%), Referral 514 (13.7%), Organic Search 173 (4.6%), Email 24 (0.6%), Unassigned 18 (0.5%), Organic Social 13 (0.4%), AI Assistant 1 — see quality flag below | Google Analytics (manual pull), 2026-09-13 |
 | LinkedIn followers | 5,779 | `data/linkedin-metrics/log.csv`, 2026-09-11 |
 | LinkedIn 7-day post impressions | 183 (a slow week — see note below) | Same, 2026-09-11 |
 | LinkedIn 7-day search appearances | 23 | Same, 2026-09-11 |
@@ -43,6 +43,8 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 **Indexing checked 2026-09-13 — also ruled out, independent of the above correction.** `https://synnovatia.com` (no www) shows "URL is not on Google" in URL Inspection, but `https://www.synnovatia.com` is indexed, and the non-www URL correctly 301-redirects to the www version when visited directly — expected canonicalization behavior, not a broken/missing homepage.
 
 **Real baseline going forward:** effectively 0 real branded search impressions as of 2026-09-13. Re-pull in a few weeks (filtering to the exact query "synnovatia," not "contains synnovatia," to avoid catching `site:` operator noise again) to see whether real branded search volume starts appearing as exposure grows.
+
+**GA data-quality flag, 2026-09-13:** the Reports snapshot's Top pages/screens table showed a page titled **"trafficheap.cc"** with 502 views/502 active users and a suspiciously low 0.2% bounce rate — the classic signature of referral-spam bot traffic (a fake "page" disguised as a hostname), not real visitors. This likely also explains why **Direct is 79.3% of all sessions but averages only 2 seconds of engagement time** — real direct visitors (someone typing your URL or using a bookmark) don't typically bounce that fast at that volume. By contrast, Referral (40s avg. engagement, 98.6% engagement rate) and Organic Search (1m19s avg., 90.2% engagement rate) look like genuine human traffic. **Treat the 79.3% Direct figure as inflated by bot traffic, not a real "warm traffic" signal**, until this is filtered out. A real fix (excluding this source, or setting up bot-filtering in GA) is worth doing before trusting the Direct number going forward — flagging as an action item, not yet resolved. Separately, "Page not found – Synnovatia" logged 420 real views in the same window — worth a look for broken internal/external links, possibly tying into the existing redirect-audit work in `outputs/website-redesign/`.
 
 ### Greater Interest
 
@@ -61,7 +63,7 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 - **Stripe/HubSpot revenue and mastermind counts:** already flow into `context/group/key-metrics.md` and `context/current-data.md` via the existing "Update my metrics" workflow — this file re-reads those rather than duplicating collection.
 - **LinkedIn:** already tracked via the Aggregate Analytics export workflow in `context/linkedin-marketing.md` — this file pulls its most recent `log.csv` row rather than asking Jackie to report the same numbers twice.
 - **Search Console branded query volume:** baseline captured 2026-09-13 — effectively 0 real customer searches found (see corrected note above). Re-pull periodically, filtered to the exact query "synnovatia" rather than "contains synnovatia" to avoid catching `site:` operator noise again, and log here.
-- **Google Analytics (traffic source mix, time on page, goal clicks):** manual, same as the rest of this workspace's GA usage — report numbers when you pull them, Claude logs here.
+- **Google Analytics (traffic source mix, time on page, goal clicks):** manual, same as the rest of this workspace's GA usage — report numbers when you pull them, Claude logs here. Traffic-mix baseline captured 2026-09-13; GA on production confirmed live and tracking (resolves that open item from the pre-launch checklist). A likely bot-traffic contamination issue (see flag above) should get filtered out before the next pull, so the Direct/Referral/Organic split is trustworthy.
 - **Discovery calls, rate acceptance, sales cycle:** no automated system exists (HubSpot's deal data doesn't capture this cleanly). Report each discovery call's outcome as it happens — booked, no-show, proposal sent, rate quoted, closed/not closed, and if not closed, why — and Claude logs it to the History table below.
 - **Qualitative echo-back signal:** report whenever a prospect uses your own positioning language ("strategic perspective," "feel it from the first conversation," etc.) unprompted on a call or in writing — this is one of the strongest signals the message is landing, even without a formal metric.
 
@@ -70,7 +72,7 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 | Date | Stripe Rev YTD | LinkedIn Followers | LI 7d Impressions | LI 7d Engagements | Branded search (impr/clicks/pos) | New clients since launch | Notes |
 |---|---|---|---|---|---|---|---|
 | 2026-09-11 (baseline) | $12,385 | 5,779 | 183 | 4 | — | 0 | Launch-day baseline — site redesign and new positioning fully live. Impressions/engagements this specific week ran below the recent average (see caveat above); treat as one data point, not the true run rate. |
-| 2026-09-13 | — | — | — | — | ~0 real | — | First branded Search Console pull initially read as 157 impr/0 clicks/pos 40.4, but the per-query breakdown showed that total was entirely `site:` operator queries (technical checks), not real customer searches — corrected same day. Real branded search volume is effectively 0 so far. Also confirmed homepage indexing/www-redirect are healthy, ruling that out as a factor. |
+| 2026-09-13 | — | — | — | — | ~0 real | — | First branded Search Console pull initially read as 157 impr/0 clicks/pos 40.4, but the per-query breakdown showed that total was entirely `site:` operator queries (technical checks), not real customer searches — corrected same day. Real branded search volume is effectively 0 so far. Also confirmed homepage indexing/www-redirect are healthy, ruling that out as a factor. GA traffic-mix baseline also pulled same day: 3,750 sessions, 79.3% Direct / 13.7% Referral / 4.6% Organic Search — but Direct is likely inflated by bot traffic (a "trafficheap.cc" spam page and abnormally low 2s avg. engagement on Direct sessions), flagged for cleanup before trusting the split. |
 
 ---
 
