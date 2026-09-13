@@ -38,7 +38,11 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 
 *Note: 9/11's LinkedIn week was the lightest in impressions since 7/17 per the existing log — treat as a noisy single data point, not necessarily the "true" launch-week baseline. The 8/28–9/4 weeks (285–376 impressions) may be a more representative recent run rate to compare against going forward.*
 
-**Flag worth a second look:** an average position of 40.4 (page 4+) for your own brand name is unusually low — a company's branded query typically ranks #1, since Google strongly favors a site for searches of its own name. 0 clicks out of 157 impressions is consistent with that (searchers aren't seeing you near the top, so they aren't clicking). Possible causes worth checking: the 9/11 site relaunch could still be re-indexing (a temporary dip is normal right after a big structural change), a name collision with other "Synnovatia"-named entities, or a technical indexing issue independent of the rebrand. Worth a re-pull in a few weeks to see if this is settling post-relaunch or is a standing problem — if it's still ~40 a month from now, that's worth investigating directly (check Search Console's Coverage/Indexing report for the homepage).
+**Flag worth a second look:** an average position of 40.4 (page 4+) for your own brand name is unusually low — a company's branded query typically ranks #1, since Google strongly favors a site for searches of its own name. 0 clicks out of 157 impressions is consistent with that (searchers aren't seeing you near the top, so they aren't clicking).
+
+**Indexing checked 2026-09-13 — ruled out as the cause.** `https://synnovatia.com` (no www) shows "URL is not on Google" in URL Inspection, but `https://www.synnovatia.com` is indexed, and the non-www URL correctly 301-redirects to the www version when visited directly — so this is expected canonicalization behavior (Google correctly treats the redirect target as the real page), not a broken/missing homepage. Not the explanation for the weak branded position.
+
+**Still open:** the 40.4 average is a blend across all "contains synnovatia" queries in the 3-month window, not necessarily the exact query "synnovatia" itself — a handful of unrelated long-tail matches could be dragging the average down while the core brand query ranks fine. Next step: pull the per-query breakdown (not just the aggregate) to see where "synnovatia" itself actually lands, and re-check the aggregate again in a few weeks post-relaunch regardless.
 
 ### Greater Interest
 
