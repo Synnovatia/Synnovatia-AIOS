@@ -24,6 +24,9 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 | Average new deal size | No meaningful baseline — too sparse/varied (recent deals: $325 on 9/10, $225 on 7/26) | HubSpot |
 | Rate acceptance rate (proposals accepted at new pricing without negotiation) | No historical log — start tracking from now | — |
 | Sales cycle length (first contact → signed) | No historical log — start tracking from now | — |
+| **Current standard rates (pre-increase baseline)** | Monthly retainers: **$325/mo** (1 meeting), **$600/mo** (2×60min meetings), **$1,100/mo** (4 meetings) | `context/business-info.md` |
+| **Rate increase progress** (target: **40% by ~January 2027**, per `context/strategy.md`) | **0% so far** — no rate change confirmed as of 2026-09-13. This is the actual named goal this whole rebrand is meant to support; track every new client agreement's rate against the baseline above going forward, and log the date/amount whenever a rate change happens. | — |
+| Client retention / rate-increase pushback | No baseline — watch for it. A 40% increase risks losing existing clients even while it attracts new ones at the higher rate; log any client who leaves, downgrades, or pushes back specifically citing price, so this initiative's net effect (not just new-client wins) stays visible. | — |
 
 ### More Exposure
 
@@ -35,6 +38,7 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 | LinkedIn 7-day post impressions | 183 (a slow week — see note below) | Same, 2026-09-11 |
 | LinkedIn 7-day search appearances | 23 | Same, 2026-09-11 |
 | New inbound contacts with no prior relationship | No baseline — start tracking from now (HubSpot lifecycle stage "new" + source ≠ existing roster) | — |
+| **"How did you hear about us / why now" at intake** | **Not currently captured anywhere.** Checked `context/client-onboarding.md`'s Client Profile form (step 1 of onboarding) — it captures business data (revenue, industry, goals) but attribution/referral-source isn't confirmed as one of its fields. Without this, revenue and traffic numbers can grow without ever confirming the *positioning* is what actually converted someone, versus an existing relationship reactivating on its own. **Action item: check the Client Profile form's real fields, and add a "how did you hear about Synnovatia / what made you reach out now" question if it's missing.** This is the single most direct way to validate the new message is doing real work. | `context/client-onboarding.md` |
 
 *Note: 9/11's LinkedIn week was the lightest in impressions since 7/17 per the existing log — treat as a noisy single data point, not necessarily the "true" launch-week baseline. The 8/28–9/4 weeks (285–376 impressions) may be a more representative recent run rate to compare against going forward.*
 
@@ -53,7 +57,7 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 | LinkedIn 7-day social engagements | 4 (slow week, same caveat as above) | `data/linkedin-metrics/log.csv`, 2026-09-11 |
 | LinkedIn 90-day profile views | 54 | Same |
 | Time on site / pages per session on repositioned pages (About, Work With Me, The Messy Middle) | Not yet pulled — GA is manual | Google Analytics (manual) |
-| Free Business Assessment downloads / Schedule-a-Conversation clicks | Not yet wired as trackable GA goals — flagged to set up | — |
+| Free Business Assessment downloads / Schedule-a-Conversation clicks | **Not yet wired as trackable GA goals/events.** These are the site's two real soft-conversion actions — until they're set up as actual GA Events (or Conversions), there is zero visibility into whether the redesigned site is generating any leads at all. **Action item, not just a data gap: set these up as GA4 Events next time GA is being configured**, so future pulls have real numbers instead of nothing. | — |
 | Qualitative: prospects echoing "Strategic Perspective" language unprompted | No baseline by definition — log each occurrence as it happens | Jackie reports |
 
 ---
@@ -66,6 +70,10 @@ Jackie's question (2026-09-13): since updating the brand and positioning, is it 
 - **Google Analytics (traffic source mix, time on page, goal clicks):** manual, same as the rest of this workspace's GA usage — report numbers when you pull them, Claude logs here. Traffic-mix baseline captured 2026-09-13; GA on production confirmed live and tracking (resolves that open item from the pre-launch checklist). A likely bot-traffic contamination issue (see flag above) should get filtered out before the next pull, so the Direct/Referral/Organic split is trustworthy.
 - **Discovery calls, rate acceptance, sales cycle:** no automated system exists (HubSpot's deal data doesn't capture this cleanly). Report each discovery call's outcome as it happens — booked, no-show, proposal sent, rate quoted, closed/not closed, and if not closed, why — and Claude logs it to the History table below.
 - **Qualitative echo-back signal:** report whenever a prospect uses your own positioning language ("strategic perspective," "feel it from the first conversation," etc.) unprompted on a call or in writing — this is one of the strongest signals the message is landing, even without a formal metric.
+- **Rate increase progress:** report whenever a client agreement locks in a rate — new or renewal — so it can be checked against the $325/$600/$1,100 baseline tiers and rolled into a running "% toward 40%" read.
+- **Client retention / pushback:** report if any client leaves, downgrades, or objects specifically to price — this is the cost side of the rate-increase initiative and needs to stay visible alongside the wins.
+- **"How did you hear about us" intake question:** open action item — check the real fields on the Client Profile HubSpot form (linked from `context/client-onboarding.md`) and add this question if it's missing, so future signed clients' attribution actually gets captured.
+- **GA Events for Free Business Assessment / Schedule-a-Conversation:** open action item — these need to be set up as real GA4 Events before they can be tracked at all.
 
 ## History
 
