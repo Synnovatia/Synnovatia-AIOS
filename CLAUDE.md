@@ -89,6 +89,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── strategy.md          # Current priorities and goals
 │   ├── current-data.md      # Key metrics and current state (manual snapshot)
 │   ├── brand-voice.md       # Positioning ("Strategic Perspective You Feel From the First Conversation") & voice rules, from the "Different Is Better Than Better" client research
+│   ├── brand-positioning-metrics.md # Tracks whether the rebrand/positioning is working — more business, more exposure, greater interest — against a 2026-09-11 launch baseline (added 2026-09-13)
 │   ├── style-guide.md       # Visual identity — colors, typography, type scale (2026 Edition)
 │   ├── linkedin-marketing.md    # LinkedIn content/outreach strategy
 │   ├── hubspot-marketing.md     # HubSpot segment-based email marketing strategy
@@ -262,6 +263,7 @@ Claude will read the module's install guide and walk you through it step by step
 | "What's my current status?" | Reads context + HISTORY.md, gives a summary |
 | "Brainstorm [topic]" | Explores options and trade-offs before taking action |
 | "Update my metrics" | Refreshes key-metrics.md from HubSpot/Stripe + asks for manual numbers |
+| "How's the rebrand doing?" / "Update my brand metrics" | Reviews `context/brand-positioning-metrics.md` against the 2026-09-11 launch baseline — revenue/close-rate signals, LinkedIn/Search Console exposure, engagement/interest signals — and logs any new data point you report |
 | "Write a report on [X]" | Produces a structured, professional output based on your context |
 | "Save my work" | Updates HISTORY.md and docs, then guides you to commit in GitHub Desktop |
 | "Find that meeting with [name]" | Searches Fathom directly for meetings, transcripts, summaries |
