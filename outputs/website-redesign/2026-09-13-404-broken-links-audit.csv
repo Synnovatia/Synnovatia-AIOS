@@ -86,5 +86,5 @@ sessions,views,broken_page_path,referrer,pattern,new_url_(fill_in)
 1,2,/business-coaching-blog/work-life-balance-small-business-owners,,legacy-hubspot-slug-only,
 1,2,/can-you-grow-your-business-in-an-uncertain-economy-yes-with-a-business-growth-strategist/(opens in a new tab,,malformed-href-anchor-text,
 1,2,/hubfs/bigstock-Money-maker-optimized.jpg,,legacy-asset-link,
-1,2,/monthly-coaching,,missing-trailing-slash,
-1,2,/strategic-business-consultations,,missing-trailing-slash,
+1,2,/monthly-coaching,,confirmed-retired-page-redirect-to-work-with-me,/work-with-me/
+1,2,/strategic-business-consultations,,confirmed-missing-trailing-slash,/strategic-business-consultations/
