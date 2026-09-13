@@ -141,6 +141,7 @@ These are how you know your EVOLV-OS is working:
 │   └── workout-plan.md      # Strength training program (Fortify-compatible)
 ├── plans/                   # Implementation plans
 ├── outputs/                 # Work products and deliverables
+│   ├── blog/                 # Blog post drafts and drafting worksheets (content pipeline concepts + ad hoc prep docs like the DiB journey worksheet)
 │   ├── brand-assets/         # Cleaned-up logo files (e.g. trademark-mark-removed wordmark, sized for specific upload targets like Calendly) — sourced from the real master logo in Downloads/Google Drive, not invented
 │   ├── core-business-assessment/ # Rebranded version of the old "Core Business Assessment" fillable-PDF lead magnet (navy/gold/teal, 2026 copyright, 16 pages after removing the old free-consultation/About-the-Author pages) — visual/copyright refresh only, not wired into the live site
 │   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
