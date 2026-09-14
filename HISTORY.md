@@ -8,6 +8,15 @@
 
 ---
 
+## 2026-09-14
+
+### Homepage Hero Photo Crop Fixed
+- Jackie reported the white "25+" stat banner covering her chin and the top of her outfit in the homepage hero. Since this session has no live browser/site access, the fix was worked entirely through Jackie relaying DevTools/editor screenshots — a longer diagnostic than usual with two real wrong turns along the way, worth documenting so a future session doesn't repeat them.
+- **Wrong turn #1:** an early DevTools "Styles" panel screenshot showed `.hero-stat-block` with `position: absolute; top: 0; right: 0; bottom: 0; left: 0` — read as the box being stretched to cover the entire photo height with its content vertically centered, landing on her chin. This looked plausible and matched the symptom, but turned out not to reflect the real saved source.
+- **Wrong turn #2:** a screenshot with DevTools open showed the bug; the same page with DevTools closed looked clean, prompting a wrong "maybe this is fine at normal width" read — DevTools docked at the bottom was compressing the visible viewport height, distorting the apparent layout. Not a real width-dependent bug.
+- **The real fix, found once Jackie opened the block's actual "Edit code" view (a Custom HTML block on the homepage, not a GenerateBlocks component — no visual Position panel exists for it):** `.hero-stat-block`'s real, saved CSS never had a `top` property at all (just `left/right/bottom: 0`, correctly bottom-anchored) — the earlier DevTools reading was stale or misleading. The actual culprit was two rules up: `.hero-photo img { object-position: center 10%; }`, which biases the visible crop toward the top of the photo (lots of headroom/hair showing), cropping tightly at the bottom (chin/collar). Changed to `center 18%` (found via Jackie testing 20% first, then nudging down slightly), shifting the visible crop window down the photo to reveal her full chin and the top of her outfit. Confirmed live.
+- **Lesson for next time:** when working blind through relayed screenshots, treat a DevTools "Styles" panel reading as a hypothesis, not ground truth — the page's actual saved source (via "Edit code" on the real block) is the only fully reliable reference, and should be pulled early rather than after multiple rounds of CSS-position speculation.
+
 ## 2026-09-13
 
 ### Chris Lane — Confirmed Retired
