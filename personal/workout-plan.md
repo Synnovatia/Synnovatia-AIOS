@@ -43,6 +43,8 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 
 **Post-deload progression (2026-09-08):** First working session at the new 30 lb dumbbell cap — Goblet Squat, Romanian Deadlift, Dumbbell Farmer's Carry, and Glute Bridge all moved up from 25 lb to 30 lb, reps reset to the bottom of range. Single-Arm Dumbbell Row (12/side at 20 lb) and Band Face Pull (20 reps at purple) both hit the top of their current range — next Day A, move the Row up to the next weight (reps back to 8/side) and the Face Pull up to the green band (reps back to 12), same swap already made on Day B's Face Pull.
 
+**2026-09-15:** Both flagged progressions landed exactly as planned — Single-Arm Row moved up to 25 lb (8/side), Band Face Pull moved up to the green band (12 reps), both reset to the bottom of range. Plank's shoulder-tap variation came back in cleanly at 60 sec. Squat, RDL, Farmer's Carry (90 ft, up from 70 ft), and Glute Bridge (18 reps, up from 15) are all still building at their current weights, no ceiling hit yet — though Glute Bridge is closing in on the 20-rep soft ceiling at the 30 lb hard cap, so its next progression lever will be tempo/pause per the Progression Scheme, not weight. Bench Press was far more consistent than 8/8's spread (12/12/10 at 25 lb vs. 9/8's 15/15/8) and is close to a clean top-of-range across all three sets — worth a weight bump once that happens. Single-Leg Balance Reach held at 12.5 lb rather than taking the optional bump to 15 lb offered on the 9/15 worksheet, reps reset to 8/side instead of repeating the prior top-of-range 10/side; Jackie noted the right side is closing the strength gap with the left but is still the weaker side.
+
 ## Day B — Thursday
 
 | Exercise | Sets x Reps |
