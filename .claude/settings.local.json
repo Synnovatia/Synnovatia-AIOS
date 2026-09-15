@@ -347,7 +347,11 @@
       "Bash(python3 scripts/log_outreach.py no_response elyse@elysekoenig.com)",
       "Bash(python3 scripts/log_outreach.py no_response diane@dianedarling.com)",
       "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,9,7\\).strftime\\('%A'\\)\\)\")",
-      "Bash(xargs -I{} sh -c 'echo \"=== {} ===\"; grep -A2 \"^## \" \"{}\"')"
+      "Bash(xargs -I{} sh -c 'echo \"=== {} ===\"; grep -A2 \"^## \" \"{}\"')",
+      "Bash(awk -F',' '$1>=\"2026-09-07\" && $1<=\"2026-09-13\"' personal/workout-logs/session-log.csv)",
+      "Bash(python3 __TRACKED_VAR__/scripts/office/soffice.py --headless --convert-to pdf '/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/linkedin/2026-09-21-to-09-25-drafts.docx' --outdir /tmp/docxgen)",
+      "Bash(pdftoppm -jpeg -r 100 /tmp/docxgen/2026-09-21-to-09-25-drafts.pdf /tmp/docxgen/page)",
+      "Bash(rm -rf /tmp/docxgen)"
     ]
   }
 }
