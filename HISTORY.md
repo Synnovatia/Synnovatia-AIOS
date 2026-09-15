@@ -8,6 +8,19 @@
 
 ---
 
+## 2026-09-15
+
+### Blog Font-Size Question, Hero Gap Follow-Up
+- Confirmed this session has no live browser access (searched for one specifically — none available, despite the environment's Chromium/Playwright being for local dev scripts, not driving the live site). Answered "what size is the font on the blog" from the single-post template's own source (`outputs/website-redesign/2026-08-30-blog-single-post-mockup.html`): body paragraphs are 17px Barlow, weight 300, 1.85 line-height — flagged that this is lighter-weight than the sitewide 400-weight body standard documented elsewhere, worth reconciling if intentional.
+- Continued the homepage hero-gap thread from 9/13/9/14: Jackie purged cache and confirmed the gap narrowed (real fix, just caching lag, same pattern as the `/monthly-coaching/` redirect). One more small nudge is still wanted — paused at Jackie's request until the cache is confirmed fully settled, so as not to chase a stale render.
+
+### Day A Worksheet Printed, Session Logged
+- Built and printed `personal/workout-logs/2026-09-15-day-a-worksheet.html`/`.pdf` (rendered to PDF via headless Chromium, `/opt/pw-browsers/chromium-1194`) — recommendations grounded in the 9/8 per-set data in `data/strength-training-log.csv`, not just the summary note in `workout-plan.md`: Single-Arm Row and Band Face Pull both flagged for their planned bump (25 lb / green band), Plank's shoulder-tap reintroduction carried over from the standing plan note. Also flagged one exercise (Single-Leg Balance Reach) that hit the same top-of-range signal as Row/Face Pull on 9/8 but wasn't in the plan's official next-session call — presented as an optional choice on the worksheet rather than assumed.
+- Logged the actual 9/15 session: both flagged progressions (Row to 25 lb, Face Pull to green band) landed exactly as planned; Plank held a clean 60-sec shoulder-tap set; Bench Press was much more consistent than 9/8 (12/12/10 vs. 15/15/8); Glute Bridge (18 reps at 30 lb) is closing in on the 20-rep soft ceiling at the 30 lb hard dumbbell cap, meaning its next progression lever will be tempo/pause rather than weight. Balance Reach held at 12.5 lb instead of the optional 15 lb bump, reps reset to 8/side — Jackie's own right-vs-left asymmetry observation (right side closing the gap, still weaker) recorded in the plan notes for future tracking. Warm-up and strength metrics appended to `personal/workout-logs/session-log.csv`, per-set detail to `data/strength-training-log.csv`, progression note added to `personal/workout-plan.md`.
+
+### DiB Worksheet Re-Sent
+- Re-sent the already-built "Different Is Better Than Better" blog draft worksheet (`outputs/blog/2026-09-13-dib-blog-worksheet.docx`) on request — no changes, just located and delivered.
+
 ## 2026-09-14
 
 ### Homepage Hero Photo Crop Fixed
