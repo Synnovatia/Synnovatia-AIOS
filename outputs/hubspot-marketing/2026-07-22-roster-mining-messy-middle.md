@@ -92,6 +92,8 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 - **Connie Weatherman removed from Messy Middle consideration** — Jackie believes the business is likely closed. See Excluded section. `priority=1` flag cleared in `roster.csv`.
 - **Reconnect emails drafted (not sent) for three Tier 2 names, pulled forward ahead of the natural cadence**: Liz Mohler, Carolynn Aristone, Jill Cohen. All three have long-dormant threads (last contact 2020, 2020, and 2022 respectively) with no mastermind mention — reconnect-first, same pattern as the Tier 1 batch.
 
+**2026-09-13 — Chris Lane (Forum additional candidate) heard back: fully retired.** Removed from the Forum candidate table (see Excluded section). Stays in the client re-engagement roster, no cadence change.
+
 **2026-09-08 — Elyse Koenig (Tier 3) replied.** Real warm reply came in 9/7 to the 8/21 reconnect send — no mastermind/Forum mention, reconnect-first as planned. Jackie already replied 9/8 with a personal note and a referral offer; Elyse floated catching up again in October, which Jackie confirmed in her reply. Logged `responded` in `roster.csv`/`outreach_log.csv` (the automated no_response→responded transition needed a manual fix since the log's dedup logic doesn't handle a status flip after `no_response` was already recorded once). **Jackie flagged her as a possible Forum candidate too**, alongside her existing Messy Middle Tier 3 listing — not a decision, revenue band still unconfirmed (her business is beauty/wellness/lifestyle PR, per her email signature). Revisit at the October catch-up, same "raise it after real reconnection, not before" pattern as Diane Leonard and Candy Messer above.
 
 ---
@@ -221,7 +223,6 @@ Owner-level, larger or team-based businesses. Jackie confirms revenue.
 
 | Name | Company | Title | Signal |
 |---|---|---|---|
-| **Chris Lane** | Fluted Partition | — | **Revenue on file: $2MM** — the highest figure anywhere in the roster. Packaging, so product rather than service; Jackie's call whether that fits the room. |
 | **Sivakumar Veerappan** | Anubavam | Founder & CEO | IT services. Already received a re-engagement email 7/14 — coordinate timing |
 
 Also worth a look if the Forum takes professional-practice partners: **Kurt Fagan** (Partner, Fagan & Fagan LLP — emailed 7/20).
@@ -277,6 +278,8 @@ Confirmed against the U.S. Department of Justice press release (Eastern District
 **Semi-retired (1) — Liz Mohler**, Liz Mohler & Associates. Confirmed via a real Zoom reconnect call 2026-08-20. Pulled from mastermind consideration; same treatment as Terri Wallin and Connie Weatherman — **stays in the client re-engagement roster**, only the mastermind pitch doesn't apply.
 
 **Retired (1) — Maxine Fuller.** Confirmed retired by Jackie 2026-09-03. Removed from the Tier 3 Messy Middle table; same treatment as Terri Wallin — stays in the client re-engagement roster, only the mastermind pitch doesn't apply.
+
+**Retired (1) — Chris Lane**, Fluted Partition. Confirmed fully retired by Jackie 2026-09-13, heard back from her directly. Removed from the Forum "Additional candidates" table; same treatment as Terri Wallin/Liz Mohler/Maxine Fuller — stays in the client re-engagement roster (`roster.csv` unchanged, no exclusion flag needed there), only the Forum pitch doesn't apply.
 
 **Likely closed (1) — Connie Weatherman**, Body Unique. Removed from Messy Middle consideration 2026-08-05 — Jackie believes the business is probably closed down. Unconfirmed (no research done, just Jackie's read), so treat as a flag worth revisiting rather than settled fact if it ever comes up again. Same as Terri Wallin: **stays in the client re-engagement roster**, only pulled from the mastermind list. The `priority=1` flag set 2026-07-27 (to get her a reconnect touch ahead of the 8/26 invitation) is cleared in `roster.csv` since its purpose was mastermind-specific.
 
