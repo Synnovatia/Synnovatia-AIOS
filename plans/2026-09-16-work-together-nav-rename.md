@@ -1,6 +1,8 @@
 # Nav change: "Work With Me" → "Work Together" + new "One-to-One Coaching" dropdown item
 
 > Written 2026-09-16. Scoped in a session with no live browser access; execution needs Cowork (has the browser tool that's done every other live nav edit on this site). This doc is the handoff brief.
+>
+> **Status: Done (2026-09-16).** Rolled out live sitewide — confirmed by Jackie. Spot-checked live on the About page: nav label reads "Work Together," dropdown is One-to-One Coaching / Mastermind for the Messy Middle / Seven Figure Forum (desktop and mobile), One-to-One Coaching linking to `/work-with-me/`. Open question below resolved: One-to-One Coaching placed first, as assumed.
 
 ---
 
