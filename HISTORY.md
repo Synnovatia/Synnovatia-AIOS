@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-09-17
+
+### Nav Change Fully Landed on GitHub
+- Discovered the "Work Together" nav rename work (done live via Cowork on 9/16) had committed to a feature branch rather than `main` — a holdover from a git lock-file mix-up earlier in that session. Opened and merged PR #2 to bring it into `main`, plus the handoff plan commit that had also been sitting unmerged. Confirmed via direct GitHub API checks (not just GitHub Desktop's view) at each step, since local/remote state had drifted out of sync a few times this session.
+- Walked Jackie through a real GitHub Desktop incident along the way: a stale `.git/index.lock` (plus three related lock artifacts, all 0 bytes) blocked switching branches after the Cowork task's browser-driven work collided with a manual branch switch. Diagnosed it as safe to clear (all lock files empty, no active process), talked her through deleting them via Finder rather than approving an overly broad "delete anything in this folder" permission grant Cowork had requested for what was actually a single-file fix.
+
+### Day B Worksheet Printed, Session Logged
+- Built and printed `personal/workout-logs/2026-09-17-day-b-worksheet.html`/`.pdf`, grounded in the 9/10 per-set data in `data/strength-training-log.csv`: Sumo Deadlift and Dumbbell Lateral Raise both flagged for their planned weight bump (30 lb / 10 lb), Band Face Pull given two explicit options since a band heavier than green isn't confirmed as on hand (move up if available, otherwise stay on green with a 2-second pause — the workspace's practice of not assuming equipment that isn't confirmed).
+- Logged the actual 9/17 session: both flagged progressions landed as planned; Face Pull took the pause fallback; Single-Arm Overhead Press hit the top of its range (12/side at 10 lb, candidate for a bump); Stability Ball Hip Bridge hit its 20-rep soft ceiling again at 5 lb — flagged for a real weight increase next Day B rather than a tempo/pause fallback, since 5 lb is nowhere near the 30 lb hard dumbbell cap (unlike Day A's Glute Bridge, which is genuinely maxed). Jackie asked why a hard-feeling session only showed 249 "minutes" — clarified that's MET-minutes (an intensity measure), not duration; actual session was 58 min with HR in the normal range for this session type, so the device metrics didn't pick up anything unusual despite the subjective difficulty.
+- Also logged a Thursday hike (3.9 mi, 83 min, 291 METs) earlier in the session, a schedule deviation from the usual Wednesday long-hike slot, logged as reported rather than force-fit to the weekly template.
+
 ## 2026-09-15
 
 ### Blog Font-Size Question, Hero Gap Follow-Up
