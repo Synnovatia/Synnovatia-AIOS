@@ -8,6 +8,14 @@
 
 ---
 
+## 2026-09-18
+
+### LinkedIn Aggregate Analytics Logged (9/12–9/18)
+- Jackie shared her latest "Aggregate Analytics" export (9/12–9/18) plus the separate analytics-page numbers (57 profile views, 36 search appearances). Merged the TOP POSTS sheet's engagements/impressions lists into 13 new dated rows in `data/linkedin-metrics/post-performance.csv`, appended the 7-day ENGAGEMENT table to `data/linkedin-metrics/daily-engagement.csv`, and logged a new weekly summary row in `data/linkedin-metrics/log.csv` (191 impressions, 5777 followers, 0 net social engagements this window).
+- **Cadence read narrowed sharply**: Wednesday still nominally leads (13.4 avg impressions/8 posts) over Friday (12.1/10 posts) and Monday (6.2/9 posts), but last week's much wider gap (59.5/21.9/30.5) collapsed because the canonical per-post figure is each post's *most recent* in-window snapshot, and this was a broadly quiet week — most older cadence-era posts logged very low residual activity, pulling every weekday's average down together rather than reflecting a real shift in which day performs best.
+- **Followers dipped slightly** (5779 → 5777, -2) — the first drop logged since tracking started 6/12; noted, not yet actionable on two data points.
+- Top post this window: "Here's an intriguing stat I came across" (93 impressions/2 engagements, published Fri 9/11) — the only post with any logged engagement in the Top Posts sheet, though the daily ENGAGEMENT sheet itself nets to 0 for the week (a known LinkedIn-side discrepancy between the two views, same pattern documented in earlier log entries — not a data-entry error).
+
 ## 2026-09-17
 
 ### Nav Change Fully Landed on GitHub
