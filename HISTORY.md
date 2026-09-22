@@ -8,6 +8,22 @@
 
 ---
 
+## 2026-09-21
+
+### Re-engagement Batch Reviewed, Sent, and Style Patterns Documented
+- Compared Jackie's live Gmail edits on 4 of this morning's 5 auto-drafted check-ins (Jennylyn Pringle, Maxine Fuller, Mary O'Maley, Chrissy Galdieei) against the originals recovered from the drafting run's transcript. New patterns added to the re-engagement edit-patterns memory (subjects rewritten to "Thinking of you" / "How are you, [Name]?"; "It's been a while" opener cut in favor of a warm question on the salutation line; researched Gmail-history callbacks swapped for firsthand, often playful details; a stats-class self-share with self-deprecating humor; stacked playful questions for close contacts). The `client-reengagement-monday-drafting` task now reads that memory file before drafting — it previously didn't.
+- Amy Hage's draft was deleted (Jackie is speaking with her this week) — logged `meeting_scheduled` on both of her roster rows. All 4 remaining drafts sent Monday 9/21 and logged; Jennylyn's roster note records that she was emailed at hello@jennylynpringle.com so reply checks look there.
+
+### Positioning Brief: Word Version + Pillar Statements
+- Built `outputs/positioning/positioning-brief.docx` (first Word version of the brief, styled to the style guide).
+- Added an overarching statement, short version, definition, and theme mapping to Pillar A (Relational Depth), Pillar B (Strategic Objectivity), and the Supporting Differentiators (proposed name "Fit and follow-through"), each with honest single-client cautions. Discussed that "relational depth" as a definition needs the client's experience (trust, feeling understood), not just a description of Jackie.
+
+### Web-Session Branch Merged
+- A brand-metrics rundown missed Jackie's 9/18 LinkedIn log — it and 7 other commits (rate-increase rollout decision, 5-year plan, video testimonial guide, 9/19–9/20 workout logs) sat on the unmerged `claude/nice-keller-usj9w3` branch from a Claude Code web session. Fast-forwarded `main` to it; today's run re-appended to the session log after the merge.
+
+### Monday Run Logged
+- 3.39 mi / 48 min / HR 137 / 335 METs (~14:10/mi) — second-fastest Monday pace since tracking began, at a heart rate in the usual range.
+
 ## 2026-09-18
 
 ### LinkedIn Aggregate Analytics Logged (9/12–9/18)

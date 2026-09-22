@@ -36,6 +36,22 @@ Across 8 client interviews, no single theme reached "Dominant" signal strength (
 
 The strongest, most corroborated cluster in the whole research set.
 
+**Overarching statement (added 2026-09-21):** Clients see Jackie as a fellow owner who has carried the same weight they're carrying. She listens closely enough that people feel understood. She pushes them forward with kindness and keeps working a stuck problem from new angles until it gives. People leave a session feeling better than when they came in.
+
+**Short version (how Jackie shows up — About page, discovery calls):** A fellow owner who has carried the same weight, and who listens, pushes kindly and stays with the problem until it moves.
+
+**Definition:** *Relational depth* is the trust that comes from working with a fellow owner who has carried the same weight. She listens until you feel understood, pushes you kindly, and stays with the problem until it moves.
+
+How the statement maps to the themes below:
+- "Fellow owner… same weight": Human Peer Dynamic, including Wilma's line about carrying every decision alone.
+- "Listens… understood": Presence & Listening.
+- "Pushes… with kindness": Kindhearted Assertiveness.
+- "New angles until it gives": Sandra's "jiggling the key."
+- "Feeling better than when they came in": Laura's own words, from The Way She Makes People Feel.
+- Warmth runs through the whole statement but isn't claimed outright, since Warmth as Strategic Differentiator is one client's view (Emerging).
+
+The underlying themes:
+
 - **Human Peer Dynamic** (Strong — Mark Chapman, Christina Carlson, Anne Laguzza, Wilma Nachsin): clients relate to Jackie as a fellow business owner who's lived it, not a detached expert. Christina: "Jackie walks the talk." Anne specifically sought out people with similar struggles as a fellow business owner and found that in Jackie. Wilma (2026-08-07): Jackie "understands the weight of solving problems by oneself and the feeling of being tired of carrying the weight of all the decisions by oneself."
 - **Presence & Listening** (Strong — Mark Chapman, Christina Carlson, Laura Labovich): clients feel genuinely heard, not processed. Laura: Jackie "doesn't just wait to speak — she receives."
 - **The Way She Makes People Feel** (Strong — Mark Chapman, Laura Labovich): Laura's five-word description — compassionate, curious, insightful, thoughtful, kind — and "you always leave a session feeling better than when you came in."
@@ -49,6 +65,24 @@ The strongest, most corroborated cluster in the whole research set.
 
 The substance behind "Fortune 500-caliber thinking, sized to fit."
 
+**Overarching statement (added 2026-09-21):** Clients get an outside view of a business they're too close to see clearly. Jackie brings breadth from 25+ years across industries and business models, plus enough depth in their particular field that her advice fits. She puts words to what they already sense, and she stays in the work with them. When she doesn't know something, she says so. She takes the fear out of big decisions.
+
+**Short version:** An outside view with both breadth and depth, which turns what you already sense into a decision you can act on.
+
+**Definition:** *Strategic objectivity* is the clarity that comes from an advisor who stands outside your business and still understands it. Broad experience across industries and deep knowledge of your field let her put words to what you already sense, so you can decide without fear.
+
+How the statement maps to the themes below:
+- "Too close to see clearly" / "outside view": Objectivity Gap (Strong — Mark's near-verbatim quote, Raffi's 30,000-ft view).
+- "Breadth… plus depth": Two Funnels of Knowledge (Strong — Nia's "two funnels," Wilma's "octopus").
+- "Puts words to what they already sense": Articulating the Gut (Raffi).
+- "Stays in the work with them": Effort Where Others Pass (Raffi).
+- "Says so when she doesn't know": Intellectual Honesty (Mark, Christina).
+- "Takes the fear out": Fear Removal (Mark).
+- Caution: only the first two rest on more than one client. Articulating the Gut, Effort Where Others Pass, and Fear Removal are each single-client, which is why the short version and definition lean mainly on the outside view and on breadth plus depth.
+- Naming: the definition uses "Strategic Objectivity" because it names what the client gets. If "Wisdom, Breadth & Depth" stays the lead name, reword the definition to match.
+
+The underlying themes:
+
 - **Objectivity Gap** (Strong — Mark Chapman, Raffi Saroyan): clients couldn't see their own situation clearly until Jackie provided an outside view. Mark: "I was too close to see my own situation objectively." Raffi's version of the same theme is the "30,000-ft view" / altitude metaphor — real, but it's one client's phrasing for this broader pattern, not a standalone differentiator (this is why it didn't hold up alone in the tight statement).
 - **Two Funnels of Knowledge** (upgraded to Strong 2026-08-07 — Nia Troup, Wilma Nachsin): "One is broad — the accumulated knowledge of working across industries, stages, and business models... The other is deep — the specific industry awareness that makes Jackie's advice feel tailored rather than generic. Most advisors have one. Jackie has both." This is the real mechanism behind "big-picture view and the depth to understand your specific situation" in the tight statement. Independently corroborated by Wilma Nachsin (2026-08-07), in her own vivid image rather than Nia's "funnels" framing: Jackie is "almost like an octopus" — tentacles in so many different areas, glimpses and insight into a lot of information, well-read, brings a lot of wisdom. Two clients, two unrelated metaphors, same underlying claim — meets the doc's own bar for Strong (2–3+ clients, independent).
 - **Fear Removal** (Emerging — Mark Chapman): the value isn't just clarity, it's specifically removing fear from decision-making, grounded in Jackie's own longevity running a business.
@@ -59,6 +93,24 @@ The substance behind "Fortune 500-caliber thinking, sized to fit."
 **Use for:** homepage headline testing, Messy Middle pillar page, About page, proposal language.
 
 ### Supporting Differentiators (deferred from the tight statement — real, but didn't fit one sentence)
+
+**Overarching statement (added 2026-09-21):** Jackie shapes the work around the business in front of her. She listens, lays out options and builds the plan to fit, with no program or template to install. She rolls up her sleeves alongside the owner, makes the fix feel concrete and doable, and ties the work to results that can be measured. In a market full of trends and quick fixes, she stays genuine. Few advisors offer this level of strategic work to owners of businesses this size.
+
+**Short version:** Strategy shaped to your business, done alongside you, with results you can see.
+
+**Definition (proposed name — keep only if it sounds right):** *Fit and follow-through* is the confidence that comes from advice built around your actual business, from an advisor who works alongside you until the plan turns into results you can measure.
+
+How the statement maps to the themes below:
+- "No program or template… lays out options": Anti-Program (Mark).
+- "Shapes the work around the business in front of her": Personalized + Individual Attention (Mark).
+- "Rolls up her sleeves": Practical Collaboration, Not Cheerleading (Nia).
+- "Results that can be measured": Measurable Results (Nia).
+- "Concrete and doable": Clarity + Achievability (Anne).
+- "Genuine… trends and quick fixes": Genuine / Fad-Free (Anne). Her word was "grifts," softened to "quick fixes" for reusable copy.
+- "Few advisors… owners of businesses this size": Advisory Scarcity (Raffi).
+- Caution: each of these seven themes comes from a single client, which is why they sit under the two pillars rather than beside them. "Measurable results" is the claim most likely to be challenged; pair it with a real case example wherever it's used.
+
+The underlying themes:
 
 - **No Program, No System / Anti-Program** (Mark Chapman; tracked as "Emerging" in the theme tracker despite being a clear, repeated client value): "Wasn't selling a program or a system. Listened. Provided options." Direct contrast to templated/systems-based competitors (EOS-style). This is the research grounding for "sized to fit your business instead of delivered as a program or template" — cut from the final tight statement once the growth-plateau/wall framing did equivalent "not generic" work, but the underlying evidence is strong and belongs in fuller copy.
 - **Personalized + Individual Attention** (Mark Chapman): individual attention vs. group/program-based alternatives — differentiates 1:1 work from mastermind-only or cohort-based competitors.

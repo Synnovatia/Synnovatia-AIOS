@@ -96,6 +96,14 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 
 **2026-09-08 — Elyse Koenig (Tier 3) replied.** Real warm reply came in 9/7 to the 8/21 reconnect send — no mastermind/Forum mention, reconnect-first as planned. Jackie already replied 9/8 with a personal note and a referral offer; Elyse floated catching up again in October, which Jackie confirmed in her reply. Logged `responded` in `roster.csv`/`outreach_log.csv` (the automated no_response→responded transition needed a manual fix since the log's dedup logic doesn't handle a status flip after `no_response` was already recorded once). **Jackie flagged her as a possible Forum candidate too**, alongside her existing Messy Middle Tier 3 listing — not a decision, revenue band still unconfirmed (her business is beauty/wellness/lifestyle PR, per her email signature). Revisit at the October catch-up, same "raise it after real reconnection, not before" pattern as Diane Leonard and Candy Messer above.
 
+**2026-09-20 (status check):** Reconciled every named candidate against `roster.csv`, `outreach_log.csv`, and Gmail (trash-inclusive, since 9/3).
+- **Three real sends were missing from the roster, now logged `sent`:** **Amanda Perrot** (9/7, "Been way too long!" — a mastermind/Forum-interest note, no reply in 13 days), **Suzi Waddill-Goad** (9/10, follow-up in the "Hey you!" thread), and **Jill Cohen** (9/10, to her jillcohenmediation@gmail.com address, not the roster's jill@ address). No replies found to any of the three. Suzi's and Jill's thread bodies aren't readable through the Gmail connector (permission error), so what those two 9/10 notes actually said couldn't be checked here.
+- **Jo Lynn Deal** — a warm, practical exchange 9/8–9/14 (Jackie asked her for a freelancer-referral opinion; she helped, "any time!"). No mastermind mention. **Her 9/20 check-back is due today.**
+- **Sherry Schaefer** — her 9/15 check-back is now 5 days overdue; no Gmail activity found since 9/1.
+- **Brooke Billingsley** — the only 9/14 contact was a hacked-account phishing message ("RFQ Quote") from her address; she wrote back that night asking Jackie to delete it. Not a reply to the 7/27 reconnect, so left as `no_response`. Worth knowing her email was compromised.
+- **Candy Messer, Diane Leonard, Elyse Koenig, Carolynn Aristone** — no new mail since the last check; plans unchanged.
+- No retirements, closures, or other status changes surfaced this round.
+
 ---
 
 ## What the data could and couldn't tell us

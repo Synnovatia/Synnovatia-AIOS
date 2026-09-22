@@ -351,7 +351,13 @@
       "Bash(awk -F',' '$1>=\"2026-09-07\" && $1<=\"2026-09-13\"' personal/workout-logs/session-log.csv)",
       "Bash(python3 __TRACKED_VAR__/scripts/office/soffice.py --headless --convert-to pdf '/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/linkedin/2026-09-21-to-09-25-drafts.docx' --outdir /tmp/docxgen)",
       "Bash(pdftoppm -jpeg -r 100 /tmp/docxgen/2026-09-21-to-09-25-drafts.pdf /tmp/docxgen/page)",
-      "Bash(rm -rf /tmp/docxgen)"
+      "Bash(rm -rf /tmp/docxgen)",
+      "mcp__plugin_small-business_gmail__search_threads",
+      "Bash(python3 scripts/log_outreach.py sent amanda@alchemelife.com --date 2026-09-07)",
+      "Bash(python3 scripts/log_outreach.py sent suziq7@msn.com --date 2026-09-10)",
+      "Bash(python3 scripts/log_outreach.py sent jill@jillcohenmediation.com --date 2026-09-10)",
+      "mcp__plugin_small-business_gmail__list_drafts",
+      "Bash(unzip -p outputs/blog/2026-09-13-dib-blog-worksheet.docx word/document.xml)"
     ]
   }
 }
