@@ -67,6 +67,8 @@ Recurring series, no end date, 8:30am start: Mon 3-mi walk (8:30-9:30) · Tue hi
 
 **Added 2026-07-30:** Dumbbell Lateral Raise, added once the (now-retired) bilateral Overhead Press hit its rep ceiling at the 10 lb cap. Targets the shoulder (medial deltoid) from a different angle than pressing, so it gives somewhere new to progress without touching the capped exercise. Isolation movement, so lighter weight/higher reps than the compound lifts — currently at 8 lb, per session 2026-08-20.
 
+**2026-09-24 (planned, shoulder recovery):** at Jackie's request, Single-Arm Dumbbell Overhead Press is swapped out for a Dumbbell Goblet Walk (12.5 lb x 30 ft, same starting point as the 9/20 Day C goblet-carry substitution) while the anterior deltoid flagged on 9/22 Day A heals — no overhead pressing until it's clear. Every other Day B exercise holds flat at 9/17's exact numbers this session too, including two that would otherwise have bumped (Stability Ball Hip Bridge to 8 lb, Side Plank to 55-60 sec) and Band Face Pull's optional pause increase — Jackie's explicit call not to push progress this session, to give the shoulder real recovery time. Not yet confirmed whether the Goblet Walk becomes a permanent swap or Overhead Press returns once the shoulder is clear.
+
 ## Day C — Sunday
 
 | Exercise | Sets x Reps |
