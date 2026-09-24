@@ -357,7 +357,8 @@
       "Bash(python3 scripts/log_outreach.py sent suziq7@msn.com --date 2026-09-10)",
       "Bash(python3 scripts/log_outreach.py sent jill@jillcohenmediation.com --date 2026-09-10)",
       "mcp__plugin_small-business_gmail__list_drafts",
-      "Bash(unzip -p outputs/blog/2026-09-13-dib-blog-worksheet.docx word/document.xml)"
+      "Bash(unzip -p outputs/blog/2026-09-13-dib-blog-worksheet.docx word/document.xml)",
+      "Bash(python3 -c \"import docx; print\\('python-docx ok'\\)\")"
     ]
   }
 }

@@ -46,6 +46,8 @@ _(empty as of 2026-08-27 — the referral-marketing stat below was used in that 
 
 ## Queued Content for Next Lapsed Send
 
+_(Used 2026-08-12: Jackie's shipped Lapsed send was built from the Fast Company and LocaliQ pieces below, so the 2026-09-24 Lapsed draft deliberately did not reuse them. Queue is effectively empty until new items are flagged.)_
+
 Jackie's flagged this combination (2026-08-09) to build the next Lapsed "What I'm Watching" edition around, once the current 2026-08-08 draft (`outputs/hubspot-marketing/2026-08-08-lapsed-draft.md`) has gone out. Three pieces meant to tie together as one throughline (how service businesses grow right now, backed by real numbers) rather than run as separate unrelated items:
 
 - **How service businesses can grow in 2026** (Fast Company) — from the 2026-08-07 `what-im-watching-cloud` digest. Argues the highest-leverage moves in a slower-growth environment are deepening existing-client expansion/retention (cheaper and faster than new-logo acquisition) and building steady referral-partner pipelines, paired with tightly targeted rather than broad campaigns. Link: https://www.fastcompany.com/91502717/how-service-businesses-can-grow-in-2026

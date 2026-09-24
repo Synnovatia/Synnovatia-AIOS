@@ -8,6 +8,23 @@
 
 ---
 
+## 2026-09-24
+
+### Messy Middle Cohort Push: Confirmations, Reminders, Live Site Edits
+- Drafted four individual "Are you in?" emails (Amy Hage, Wilma Nachsin, Elise Eidsness, Sandra Roe) confirming the Oct 9 start, the six Friday dates (Oct 9, Oct 23, Nov 6, Nov 20, Dec 4, Dec 18, 8:00-9:15am Pacific), and a Sept 30 respond-by date. Replaced an initial single group draft at Jackie's request. Price deliberately left out (two of the four seats are permanently non-paying). Jackie edited and sent all four herself the same afternoon (about 3:15-3:20pm Pacific), with the deadline added to each subject line, the ask bolded, two safety-net sentences cut, a personal opener added where she had one, and a referral PS on Elise's and Sandra's (Amy got a thank-you for an earlier referral); edit patterns logged to the mastermind email voice memory.
+- Set an all-day calendar note and a 7:00am one-time task for Sept 30 to check who replied (visibility only, never sends), and a Nov 1 reminder to set 2027 dates for both groups (Seven Figure Forum every 6 weeks, Messy Middle every other Friday).
+- Moved every enabled 9:00am scheduled task to 7:00am at Jackie's direction: 20 one-time reminders and 15 recurring ones, dates and days unchanged.
+- Live site (production): removed the "Applications are reviewed as they come in. The window closes September 25..." paragraph from `/mastermind-for-the-messy-middle/` (page 11287) and the "Sept 25 / Window Closes" tile from the Apply page (11291); tied "either way." together with a non-breaking space so it lands on line 3 of the Apply intro. Lessons: the live page's `page-id-156` body class was the About page, not the mastermind page (look up the ID via the REST slug instead), and the first Apply-page save silently failed. It was caught only because the live page was re-checked afterward.
+- Pulled real HubSpot numbers: the 8/26 invitation had 18% real opens and 0 clicks; the 9/16 nudge had 8% opens, 1 click, and 3 unsubscribes; no applications found as of 9/9. Recommendation accepted: no third broadcast, put effort into personal outreach and treat January as the target for open seats.
+- Mastermind candidate status check: nothing new since 9/20. Drafted plain reconnect check-ins for Jo Lynn Deal and Sherry Schaefer (no mastermind mention, reconnect first) and wrote a Messy Middle LinkedIn post in two lengths (`outputs/linkedin/2026-09-24-messy-middle-mastermind-post.docx`).
+
+### Blog: "Different Is Better Than Better" Part 1 Draft
+- Reviewed Jackie's filled-in worksheet (`outputs/blog/2026-09-21-dib-blog-part1-draft.docx`, built 9/21) and drafted Part 1 in her own words. Flagged rather than guessed: Pete vs. Peter Martin spelling, the "Scale Up Faster" book title, 27+ vs. 25+ years, and unsourced Statista figures. Part 2 (research process, surprises, positioning, results) not yet drafted.
+
+### Training
+- Logged 9/22 Day A (anterior deltoid irritation; Bench Press and Goblet Squat named as likely causes, weight bumps held) with warm-up and strength metrics, and the 9/23 hike (3.88 mi, 85 min, HR 109, 213 METs, lowest of any hike; low-motivation day, noted in the log).
+- Jackie reported left buttock/thigh irritation on top of the left shoulder (stays above the knee, worse sitting, better walking). Recommended a physical therapist or doctor look at both. Rebuilt Thursday 9/24 Day B as a five-exercise recovery session (Goblet Walk replaces Overhead Press; no Sumo Deadlift, Reverse Lunge, or Suitcase Carry; hill warm-up skipped) and documented it in `personal/workout-plan.md`.
+
 ## 2026-09-21
 
 ### Re-engagement Batch Reviewed, Sent, and Style Patterns Documented
