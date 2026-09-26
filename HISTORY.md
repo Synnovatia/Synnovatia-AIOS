@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-09-25
+
+### DiB Blog Part 1 Published, Site-Wide Link and SEO Fixes
+- Reviewed Jackie's successive edits of "Different Is Better Than Better" Part 1 and produced the final (`outputs/blog/2026-09-25-dib-blog-part1-final.docx`). Verified via web search: Pete Martin's book is *Scale Up Faster* (not "Scaling Up Faster"); the book is described as citing 169% average growth, and Jackie kept 149%. The IDC "nearly 182% over five years" figure couldn't be verified (paywalled report), and Jackie kept it.
+- Created and published the post on production: https://www.synnovatia.com/different-is-better-than-better-part-1/ (post 12438, Growth & Scaling topic, ducks featured image + in-post image under "In short" with alt text, book links for *Scaling Up* and *How the World Sees You*, "Verne" Harnish spelling, all in-post links open in a new tab). Several block edits silently failed to persist at first (resetBlocks with no dirty flag); `updateBlockAttributes` + a dirty check before save was the reliable method, verified on the rendered preview each time.
+- Extended the GP Elements hook "Blog Single-Post CTA New Tab Fix" (element 12289) so template links on every blog post (breadcrumb, topic tag, related cards, Browse by Topic, prev/next) open in a new tab. Tested on the draft first, then site-wide. Site strips `<script>` from post content, so Elements is the only route.
+- Found that most custom-built pages' meta descriptions were the pages' CSS code (DreamHost SEO Toolkit falls back to "content extract"). Set real titles and descriptions via the DreamHost SEO panel on 13 pages plus the DiB post; hid four utility pages (both thank-you pages, Client Service Agreement, Client Cafe Client Profile) from search engines (noindex). Homepage description fixed; homepage title still outputs "Synnovatia" regardless of setting, suspected DreamHost SEO Toolkit bug, support message drafted for Jackie.
+- Drafted a "Follow Me Friday" LinkedIn post for Oct 2 (`outputs/linkedin/2026-10-02-follow-me-friday.docx`); open question whether it replaces the drafted Part 3.
+
+### Training
+- 9/24 recovery Day B logged (hip bridge irritated the hip, face pulls irritated the shoulder), plus a 34-min indoor walk that felt fine on the hip. Jackie set a new progression rule: top of range on every set for three sessions in a row, no irritation, before adding weight (in `personal/workout-plan.md` and memory). After a chiropractor adjustment (hip and shoulder) she's back on the regular plan; 9/27 Day C worksheet rebuilt with regular exercises at 9/20 loads and three "watch" exercises.
+
 ## 2026-09-24
 
 ### Messy Middle Cohort Push: Confirmations, Reminders, Live Site Edits

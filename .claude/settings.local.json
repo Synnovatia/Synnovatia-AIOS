@@ -358,7 +358,8 @@
       "Bash(python3 scripts/log_outreach.py sent jill@jillcohenmediation.com --date 2026-09-10)",
       "mcp__plugin_small-business_gmail__list_drafts",
       "Bash(unzip -p outputs/blog/2026-09-13-dib-blog-worksheet.docx word/document.xml)",
-      "Bash(python3 -c \"import docx; print\\('python-docx ok'\\)\")"
+      "Bash(python3 -c \"import docx; print\\('python-docx ok'\\)\")",
+      "Bash(printf '%s\\\\n' '2026-09-25,60,294,5778,23,,\"Reported manually from LinkedIn \\(no export this week\\), so social_engagements_7d left blank. Impressions up 54% from 191 to 294, the best week since 9/4 after two quiet ones. Followers up 1 to 5778, back to rising after last week'\"'\"'s first logged drop. Search appearances down from 36 to 23.\"' >> \"/Users/jackienagel/Desktop/Synnovatia AIOS/data/linkedin-metrics/log.csv\" && tail -n 1 \"/Users/jackienagel/Desktop/Synnovatia AIOS/data/linkedin-metrics/log.csv\")"
     ]
   }
 }
