@@ -8,6 +8,21 @@
 
 High protein, whole foods emphasis (Mayo Clinic diet-style) — lots of vegetables, fruits, oats. Avoid processed foods as much as possible. Quick cooking time preferred.
 
+### Fat-Loss Focus (added 2026-09-28)
+
+Goal is losing fat, not weight (body recomposition): keep or build muscle from the strength days while body fat and waist come down. Judge progress by waist and body fat in the weekly weigh-in (`personal/health-goals.md`), not the scale. A realistic pace is waist down about 1/4 inch a month with weight roughly flat.
+
+- **Protein target: about 110 g a day, roughly 30 g per meal** (about 0.8 g per pound of the 135–138 lb goal weight).
+- **Breakfast upgrade:** the usual one egg + toast + papaya is only about 8–10 g protein. Get to about 30 g with two eggs plus a cup of Greek yogurt, or the Greek Yogurt Oat Parfait below.
+- **Lunch upgrade:** big salad + half turkey sandwich is about 15–20 g. Get to about 30 g with a full serving of turkey, or chicken or tuna on the salad. Salad in place of chips at lunch (Jackie's own swap, 2026-09-27).
+- **Dinner:** the existing protein rotation already covers it, about a palm-and-a-half portion.
+- **Small trim, not a big cut:** fewer snacks and smaller starch portions at dinner. A large calorie cut costs muscle.
+- **Vegetables and fiber stay high.**
+- **Alcohol:** keep drinks to a couple of nights a week. Jackie traced the 9/20 setback to stress → alcohol → poor sleep → poor eating.
+- **Saturday burger night is unchanged.**
+
+When building menus and shopping lists, hit the protein target at every meal and include enough eggs, Greek yogurt, and lunch protein (turkey, chicken, canned tuna) for the upgrades above.
+
 ## Typical Meals
 
 **Breakfast (consistent):** Boiled egg, slice of toast, papaya
@@ -35,7 +50,7 @@ High protein, whole foods emphasis (Mayo Clinic diet-style) — lots of vegetabl
 
 ## Usual Purchase List (baseline for sale-matching)
 
-Eggs, bread (toast), papaya, turkey slices, deli cheese, salad greens/vegetables, fish, chicken breast, beef, pork chops
+Eggs (about 2 dozen/week for 2-egg breakfasts), plain Greek yogurt, bread (toast), papaya, turkey slices, canned tuna, deli cheese, salad greens/vegetables, fish, chicken breast, beef, pork chops
 
 ---
 

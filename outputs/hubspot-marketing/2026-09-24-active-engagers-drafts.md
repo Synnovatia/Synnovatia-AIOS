@@ -1,5 +1,7 @@
 # HubSpot Marketing — Active Engagers Biweekly Send (2026-09-24 draft, for 2026-09-30 send)
 
+> **Update 2026-09-25: Draft 1 replaced.** At Jackie's direction, the Sept 30 send is now the DiB blog Part 1 email instead of the Q4 call email below. The same HubSpot draft ("Email: Active Engagers (09/30/26)") was rewritten in place and now goes to lists 400 + 404 with no exclusion. New copy: `2026-09-25-active-engagers-dib-blog.docx`. The Q4 copy below is kept for reuse.
+
 > Automated run of the `hubspot-active-engagers-draft` scheduled task. Per `context/hubspot-marketing.md` (Active Engagers, 330 marketing contacts as of 2026-08-02, not re-verified this run) and `context/brand-voice.md`.
 
 > **Skip-check:** last Active Engagers draft on file was 2026-09-10 (14 days ago, past the ~10-day skip window), so this cycle goes ahead for **Wednesday, September 30**.

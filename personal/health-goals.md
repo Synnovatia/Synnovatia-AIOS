@@ -4,21 +4,21 @@
 
 ---
 
-## Current Metrics (as of 2026-09-20)
+## Current Metrics (as of 2026-09-27)
 
 | Metric | Current | Goal | To Go |
 |---|---|---|---|
-| Weight | 145.8 lbs | 135–138 lbs | 7.8–10.8 lbs |
-| Body fat | 38.6% | 30% | 8.6 points |
+| Weight | 145 lbs | 135–138 lbs | 7–10 lbs |
+| Body fat | 39.2% | 30% | 9.2 points |
 | Waist | 31 in | 28 in | 3 in |
-| HRV | 24 | — | — |
+| HRV | 26 | — | — |
 | VO2 Max | 26.3 | 30 | 3.7 |
 
 ## How This Gets Tracked
 
 - **Weight / body fat / waist / HRV:** logged weekly via the existing Sunday 8am reminder (`weekly-weigh-in-reminder`) — report the numbers, Claude updates this file's history. HRV added to the weekly check-in 2026-07-19 (previously only tracked per-workout in the session log).
 - **VO2 Max:** added to tracking 2026-08-03, when Jackie upgraded regular walks to structured walk/run intervals (10-min warmup/cooldown bookending 3-minute walk/run segments) specifically to raise it. Not on a fixed cadence like the weekly weigh-in — update whenever a fresh reading comes in from an interval/VO2-focused session. See "VO2 Max Tracking" below for the history.
-- **Workouts and walks:** no direct connector exists for Welltory or fitness/health apps generally (checked the MCP registry 2026-07-15, nothing available) — same fragility issue as the earlier LinkedIn/Sprouts browser-automation attempts. Instead, report each workout/walk's average heart rate, average HRV, and METs as you go (any cadence — after each session or in a batch); Claude logs it to `personal/workout-logs/session-log.csv`. Periodically (e.g. weekly), Claude reviews the trend and suggests adjustments to the coming week's program to keep it aligned with the goals above.
+- **Workouts and walks:** no direct connector exists for Welltory or fitness/health apps generally (checked the MCP registry 2026-07-15, nothing available) — same fragility issue as the earlier LinkedIn/Sprouts browser-automation attempts. Instead, report each workout/walk's average heart rate, average HRV, and total effort score as you go (total effort replaced METs starting 2026-09-27, logged in the `total_effort` column of the session log) (any cadence — after each session or in a batch); Claude logs it to `personal/workout-logs/session-log.csv`. Periodically (e.g. weekly), Claude reviews the trend and suggests adjustments to the coming week's program to keep it aligned with the goals above.
 - The actual strength program lives in `personal/workout-plan.md`; session-level performance data lives in `personal/workout-logs/`
 - **Recovery walks read low on MET-minutes, and that's fine (confirmed by Jackie 2026-07-26).** Easy walks routinely log low MET figures (e.g. 18–72 MET-min) — that's the point of a recovery effort, not a Welltory error. Don't flag low METs on a clearly easy/short/low-HR walk. Still note genuine reconciliation problems (a pace that can't math out against distance and time).
 - **Training-week counting: a Sunday session counts toward the *upcoming* week, not the week just ended** (Jackie's preference, 2026-07-26). So the "Sessions logged this week" tally shouldn't retroactively grow on a Sunday from that day's own workouts.
@@ -45,6 +45,7 @@
 | 2026-09-06 | 143.2 lbs | 38.8% | 30.75 in | 27 | Usual Sunday slot, right at the end of this week's 3-session deload block. Weight up 1.2 lbs and waist up 0.25 in from last week, both moving the wrong direction, though body fat actually dropped 0.2 pts — a mixed, noisy-looking week rather than a clear signal either way. HRV down 2 points to 27, mid-pack for the series so far; not a concerning drop on its own, consistent with normal week-to-week variation. |
 | 2026-09-13 | 143.8 lbs | 38.5% | 30.5 in | 44 | Usual Sunday slot. Weight up 0.6 lbs from last week, but body fat down 0.3 pts and waist down 0.25 in — both moving the right direction even as the scale ticked up, consistent with normal noise rather than a real reversal. HRV jumped to 44, by far the highest reading of the series (prior high was 32 on 8/9) — a strong recovery signal, worth watching whether it holds next week or was a one-off. |
 | 2026-09-20 | 145.8 lbs | 38.6% | 31 in | 24 | Usual Sunday slot. Weight up 2.0 lbs, body fat up 0.1 pt, and waist up 0.5 in from last week — all three moved the wrong direction at once, the broadest one-week reversal in the series so far. HRV dropped from last week's series-high of 44 down to 24, tied for the lowest reading recorded (matching 7/26). Jackie attributed the shift to a stress chain: added stress → increased alcohol → poor sleep → poor eating, self-reported rather than inferred from the numbers alone. |
+| 2026-09-27 | 145 lbs | 39.2% | 31 in | 26 | Usual Sunday slot. Weight down 0.8 lbs from last week and waist unchanged. Body fat up 0.6 pts to 39.2%, the highest reading of the series, but it rose while weight fell, the same pattern as 8/30, so likely scale noise; worth a second reading before reading into it. HRV up 2 to 26, a partial recovery from last week's low of 24, during a week with shoulder/hip irritation, a recovery Day B, and a chiropractor adjustment. Jackie's plan for the week: replace chips at lunch with salad. |
 
 ---
 

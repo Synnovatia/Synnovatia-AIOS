@@ -50,3 +50,30 @@ Jackie
 > - **Worth a look before you edit:** the 08/12 Lapsed send shipped as your own rewrite in the Opportunity → Challenge → Plan of Action structure, with a soft "I'd love to learn from you" closer, rather than the WIW roundup format. That's one data point, so this draft sticks with the WIW format and the documented no-ask rule. If you'd rather Lapsed go out in your native structure going forward, say so and future drafts will switch.
 > - The 08/12 Lapsed send opened at 8.24%, the weakest of any segment so far. The subject here names what the reader gets instead of a bare "What I'm Watching." Worth comparing against the Drifting open rate, since both lists get the same subject line the same day.
 > - Writing-style scrub done: no em dashes in the body, no negation pivots, no trailing hedge clauses.
+
+---
+
+## FINAL (2026-09-27): trimmed version entered in HubSpot
+
+Jackie asked for a shorter version (about 40% cut) and a new opening line. Entered in HubSpot and checked in the rendered preview. Base font reset from a stray PingFang TC stack to Barlow.
+
+**Subject:** What I'm Watching: Cautious Owners and Buyers Who Decide Early
+
+Hi there,
+
+Here are a few things on my radar this fall for B2B service-based businesses:
+
+**Owner confidence** is split. Owners feel good about their own companies but uneasy about the economy. The share planning to increase investment next year dropped from 44% to 37% (U.S. Chamber of Commerce). For a service business, that often shows up as a slower yes.
+
+**Buyers** decide earlier. B2B buyers get through about two-thirds of their buying journey before contacting a seller (Content Marketing Institute). Your website is doing much of the selling before anyone calls.
+
+**Referrals** still lead. 92% of people trust recommendations from people they know over any form of advertising (Nielsen). A regular habit of asking for introductions may beat a new marketing channel.
+
+**Growth without profit** is common. One owner's revenue more than doubled in four and a half years while profit barely moved. When a business gets more complex but runs the same way, the extra revenue gets absorbed. *I've spent much of this year rebuilding how my own business runs. It's slow work, and it's already giving me back hours each week.*
+
+Until next time...
+
+Jackie
+
+
+> **2026-09-27 swap:** the HubSpot "3 in 5 marketers" referral stat couldn't be verified (not on the cited HubSpot page or in either 2026 State of Marketing write-up), so it was replaced with the Nielsen 92% trust stat already used in the 09/02 Active Engagers send. The Chamber of Commerce, CMI, and revenue-doubled stats are still unverified.

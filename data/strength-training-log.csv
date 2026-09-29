@@ -290,9 +290,9 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-25,A,Goblet Squat,1,20,25,"Jackie raised the rep soft ceiling from 15 to 20 today, real-time — hit 20/20/20 at the 25 lb max, up from 18 on 8/18."
 2026-08-25,A,Goblet Squat,2,20,25,"Jackie raised the rep soft ceiling from 15 to 20 today, real-time — hit 20/20/20 at the 25 lb max, up from 18 on 8/18."
 2026-08-25,A,Goblet Squat,3,20,25,"Jackie raised the rep soft ceiling from 15 to 20 today, real-time — hit 20/20/20 at the 25 lb max, up from 18 on 8/18."
-2026-08-25,A,Dumbbell Romanian Deadlift,1,20,25,"Same new 20-rep ceiling as the Squat — up from 18 on 8/18."
-2026-08-25,A,Dumbbell Romanian Deadlift,2,20,25,"Same new 20-rep ceiling as the Squat — up from 18 on 8/18."
-2026-08-25,A,Dumbbell Romanian Deadlift,3,20,25,"Same new 20-rep ceiling as the Squat — up from 18 on 8/18."
+2026-08-25,A,Dumbbell Romanian Deadlift,1,20,25,Same new 20-rep ceiling as the Squat — up from 18 on 8/18.
+2026-08-25,A,Dumbbell Romanian Deadlift,2,20,25,Same new 20-rep ceiling as the Squat — up from 18 on 8/18.
+2026-08-25,A,Dumbbell Romanian Deadlift,3,20,25,Same new 20-rep ceiling as the Squat — up from 18 on 8/18.
 2026-08-25,A,Dumbbell Floor/Bench Press,1,13,25,"Up from 12 on 8/18, at the 25 lb max — still climbing toward the new 20-rep ceiling."
 2026-08-25,A,Dumbbell Floor/Bench Press,2,13,25,"Up from 12 on 8/18, at the 25 lb max — still climbing toward the new 20-rep ceiling."
 2026-08-25,A,Dumbbell Floor/Bench Press,3,13,25,"Up from 12 on 8/18, at the 25 lb max — still climbing toward the new 20-rep ceiling."
@@ -305,24 +305,24 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-25,A,Plank,1,60,,"reps column = seconds held; standard plank today, not the shoulder-tap variation — Jackie's own call for this session. Up from 50 sec on 8/18."
 2026-08-25,A,Plank,2,60,,"reps column = seconds held; standard plank today, not the shoulder-tap variation — Jackie's own call for this session. Up from 50 sec on 8/18."
 2026-08-25,A,Plank,3,60,,"reps column = seconds held; standard plank today, not the shoulder-tap variation — Jackie's own call for this session. Up from 50 sec on 8/18."
-2026-08-25,A,Dumbbell Farmer's Carry,1,100,25,"reps column = feet carried; weight_lbs = 25/hand. Up from 85 ft on 8/18."
-2026-08-25,A,Dumbbell Farmer's Carry,2,100,25,"reps column = feet carried; weight_lbs = 25/hand. Up from 85 ft on 8/18."
-2026-08-25,A,Dumbbell Farmer's Carry,3,100,25,"reps column = feet carried; weight_lbs = 25/hand. Up from 85 ft on 8/18."
+2026-08-25,A,Dumbbell Farmer's Carry,1,100,25,reps column = feet carried; weight_lbs = 25/hand. Up from 85 ft on 8/18.
+2026-08-25,A,Dumbbell Farmer's Carry,2,100,25,reps column = feet carried; weight_lbs = 25/hand. Up from 85 ft on 8/18.
+2026-08-25,A,Dumbbell Farmer's Carry,3,100,25,reps column = feet carried; weight_lbs = 25/hand. Up from 85 ft on 8/18.
 2026-08-25,A,Glute Bridge,1,20,25,"Same new 20-rep ceiling as the Squat/RDL — up from 18 on 8/18, at the 25 lb hip weight."
 2026-08-25,A,Glute Bridge,2,20,25,"Same new 20-rep ceiling as the Squat/RDL — up from 18 on 8/18, at the 25 lb hip weight."
 2026-08-25,A,Glute Bridge,3,20,25,"Same new 20-rep ceiling as the Squat/RDL — up from 18 on 8/18, at the 25 lb hip weight."
 2026-08-25,A,Band Face Pull,1,18,,"Purple band, up from 15 on 8/18 — stayed on purple rather than moving up a band, Jackie's own call."
 2026-08-25,A,Band Face Pull,2,18,,"Purple band, up from 15 on 8/18 — stayed on purple rather than moving up a band, Jackie's own call."
 2026-08-25,A,Band Face Pull,3,18,,"Purple band, up from 15 on 8/18 — stayed on purple rather than moving up a band, Jackie's own call."
-2026-08-27,B,Dumbbell Sumo Deadlift,1,18,25,"Up from 15 (with tempo) on 8/20. Now under the new 20-rep ceiling (raised 8/25) rather than the old 15 cap the tempo rec was written against — still room to climb before the next lever."
-2026-08-27,B,Dumbbell Sumo Deadlift,2,18,25,"Up from 15 (with tempo) on 8/20. Now under the new 20-rep ceiling (raised 8/25) rather than the old 15 cap the tempo rec was written against — still room to climb before the next lever."
-2026-08-27,B,Dumbbell Sumo Deadlift,3,18,25,"Up from 15 (with tempo) on 8/20. Now under the new 20-rep ceiling (raised 8/25) rather than the old 15 cap the tempo rec was written against — still room to climb before the next lever."
+2026-08-27,B,Dumbbell Sumo Deadlift,1,18,25,Up from 15 (with tempo) on 8/20. Now under the new 20-rep ceiling (raised 8/25) rather than the old 15 cap the tempo rec was written against — still room to climb before the next lever.
+2026-08-27,B,Dumbbell Sumo Deadlift,2,18,25,Up from 15 (with tempo) on 8/20. Now under the new 20-rep ceiling (raised 8/25) rather than the old 15 cap the tempo rec was written against — still room to climb before the next lever.
+2026-08-27,B,Dumbbell Sumo Deadlift,3,18,25,Up from 15 (with tempo) on 8/20. Now under the new 20-rep ceiling (raised 8/25) rather than the old 15 cap the tempo rec was written against — still room to climb before the next lever.
 2026-08-27,B,Dumbbell Reverse Lunge (per side),1,10,25,"Up from 8/side on 8/20, now at the top of the 8-10/side range at the 25 lb equipment cap."
 2026-08-27,B,Dumbbell Reverse Lunge (per side),2,10,25,"Up from 8/side on 8/20, now at the top of the 8-10/side range at the 25 lb equipment cap."
 2026-08-27,B,Dumbbell Reverse Lunge (per side),3,10,25,"Up from 8/side on 8/20, now at the top of the 8-10/side range at the 25 lb equipment cap."
-2026-08-27,B,Single-Arm Dumbbell Overhead Press (per side),1,8,10,"First logged session of the swapped exercise (retired the bilateral Overhead Press 8/20 after it hit 18 reps at its 10 lb cap). Landed at the bottom of the new 8-12/side range at the recommended starting weight."
-2026-08-27,B,Single-Arm Dumbbell Overhead Press (per side),2,8,10,"First logged session of the swapped exercise (retired the bilateral Overhead Press 8/20 after it hit 18 reps at its 10 lb cap). Landed at the bottom of the new 8-12/side range at the recommended starting weight."
-2026-08-27,B,Single-Arm Dumbbell Overhead Press (per side),3,8,10,"First logged session of the swapped exercise (retired the bilateral Overhead Press 8/20 after it hit 18 reps at its 10 lb cap). Landed at the bottom of the new 8-12/side range at the recommended starting weight."
+2026-08-27,B,Single-Arm Dumbbell Overhead Press (per side),1,8,10,First logged session of the swapped exercise (retired the bilateral Overhead Press 8/20 after it hit 18 reps at its 10 lb cap). Landed at the bottom of the new 8-12/side range at the recommended starting weight.
+2026-08-27,B,Single-Arm Dumbbell Overhead Press (per side),2,8,10,First logged session of the swapped exercise (retired the bilateral Overhead Press 8/20 after it hit 18 reps at its 10 lb cap). Landed at the bottom of the new 8-12/side range at the recommended starting weight.
+2026-08-27,B,Single-Arm Dumbbell Overhead Press (per side),3,8,10,First logged session of the swapped exercise (retired the bilateral Overhead Press 8/20 after it hit 18 reps at its 10 lb cap). Landed at the bottom of the new 8-12/side range at the recommended starting weight.
 2026-08-27,B,Band Bent-Over Row,1,15,,"Purple band; confirmed 15 for a second consecutive session (8/20, 8/27) per today's recommendation — ready to move up a band level next time. The dictation included a near-duplicate second line ('Bentova Rose Purple Band,' also 3x15) — confirmed with Jackie as a repeat of this same exercise, not a second one."
 2026-08-27,B,Band Bent-Over Row,2,15,,"Purple band; confirmed 15 for a second consecutive session (8/20, 8/27) per today's recommendation — ready to move up a band level next time. The dictation included a near-duplicate second line ('Bentova Rose Purple Band,' also 3x15) — confirmed with Jackie as a repeat of this same exercise, not a second one."
 2026-08-27,B,Band Bent-Over Row,3,15,,"Purple band; confirmed 15 for a second consecutive session (8/20, 8/27) per today's recommendation — ready to move up a band level next time. The dictation included a near-duplicate second line ('Bentova Rose Purple Band,' also 3x15) — confirmed with Jackie as a repeat of this same exercise, not a second one."
@@ -337,30 +337,30 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-08-27,B,Band Face Pull,1,10,,"Green band — moved up a band level from purple per today's recommendation (third session parked at purple x15). Reps dropped to 10, below the 12-15 range, expected right after a band upgrade — same pattern as Bent-Over Row's own black-to-purple jump."
 2026-08-27,B,Band Face Pull,2,10,,"Green band — moved up a band level from purple per today's recommendation (third session parked at purple x15). Reps dropped to 10, below the 12-15 range, expected right after a band upgrade — same pattern as Bent-Over Row's own black-to-purple jump."
 2026-08-27,B,Band Face Pull,3,10,,"Green band — moved up a band level from purple per today's recommendation (third session parked at purple x15). Reps dropped to 10, below the 12-15 range, expected right after a band upgrade — same pattern as Bent-Over Row's own black-to-purple jump."
-2026-08-27,B,Dumbbell Lateral Raise,1,12,8,"Up from 10 reps on 8/20 at the same 8 lb — now at the bottom of the 12-15 target range."
-2026-08-27,B,Dumbbell Lateral Raise,2,12,8,"Up from 10 reps on 8/20 at the same 8 lb — now at the bottom of the 12-15 target range."
-2026-08-27,B,Dumbbell Lateral Raise,3,12,8,"Up from 10 reps on 8/20 at the same 8 lb — now at the bottom of the 12-15 target range."
-2026-08-30,C,Bulgarian Split Squat (per side),1,12,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12/side range."
-2026-08-30,C,Bulgarian Split Squat (per side),2,12,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12/side range."
-2026-08-30,C,Bulgarian Split Squat (per side),3,12,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12/side range."
-2026-08-30,C,Single-Leg Romanian Deadlift (per side),1,10,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-10/side range."
-2026-08-30,C,Single-Leg Romanian Deadlift (per side),2,10,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-10/side range."
-2026-08-30,C,Single-Leg Romanian Deadlift (per side),3,10,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-10/side range."
-2026-08-30,C,Dumbbell Incline Press,1,12,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12 range."
-2026-08-30,C,Dumbbell Incline Press,2,12,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12 range."
-2026-08-30,C,Dumbbell Incline Press,3,12,10,"Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12 range."
-2026-08-30,C,Renegade Row (per side),1,8,10,"Up from 6 reps on 8/21 at the same 10 lb — mid-range of 6-10/side."
-2026-08-30,C,Renegade Row (per side),2,8,10,"Up from 6 reps on 8/21 at the same 10 lb — mid-range of 6-10/side."
-2026-08-30,C,Renegade Row (per side),3,8,10,"Up from 6 reps on 8/21 at the same 10 lb — mid-range of 6-10/side."
+2026-08-27,B,Dumbbell Lateral Raise,1,12,8,Up from 10 reps on 8/20 at the same 8 lb — now at the bottom of the 12-15 target range.
+2026-08-27,B,Dumbbell Lateral Raise,2,12,8,Up from 10 reps on 8/20 at the same 8 lb — now at the bottom of the 12-15 target range.
+2026-08-27,B,Dumbbell Lateral Raise,3,12,8,Up from 10 reps on 8/20 at the same 8 lb — now at the bottom of the 12-15 target range.
+2026-08-30,C,Bulgarian Split Squat (per side),1,12,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12/side range.
+2026-08-30,C,Bulgarian Split Squat (per side),2,12,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12/side range.
+2026-08-30,C,Bulgarian Split Squat (per side),3,12,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12/side range.
+2026-08-30,C,Single-Leg Romanian Deadlift (per side),1,10,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-10/side range.
+2026-08-30,C,Single-Leg Romanian Deadlift (per side),2,10,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-10/side range.
+2026-08-30,C,Single-Leg Romanian Deadlift (per side),3,10,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-10/side range.
+2026-08-30,C,Dumbbell Incline Press,1,12,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12 range.
+2026-08-30,C,Dumbbell Incline Press,2,12,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12 range.
+2026-08-30,C,Dumbbell Incline Press,3,12,10,Up from 8 reps on 8/21 at the same 10 lb — now at the top of the 8-12 range.
+2026-08-30,C,Renegade Row (per side),1,8,10,Up from 6 reps on 8/21 at the same 10 lb — mid-range of 6-10/side.
+2026-08-30,C,Renegade Row (per side),2,8,10,Up from 6 reps on 8/21 at the same 10 lb — mid-range of 6-10/side.
+2026-08-30,C,Renegade Row (per side),3,8,10,Up from 6 reps on 8/21 at the same 10 lb — mid-range of 6-10/side.
 2026-08-30,C,Bird Dog (per side),1,10,0,"2-3 sec hold, held at 10 reps same as 8/21. 3 sets reported vs. plan's 2 x 8-10/side — logged as reported."
 2026-08-30,C,Bird Dog (per side),2,10,0,"2-3 sec hold, held at 10 reps same as 8/21. 3 sets reported vs. plan's 2 x 8-10/side — logged as reported."
 2026-08-30,C,Bird Dog (per side),3,10,0,"2-3 sec hold, held at 10 reps same as 8/21. 3 sets reported vs. plan's 2 x 8-10/side — logged as reported."
 2026-08-30,C,Dead Bug (per side),1,12,0,"Up from 10 reps on 8/21, bodyweight. 3 sets reported vs. plan's 2 x 10-12/side — logged as reported. Now at the top of the 10-12/side range."
 2026-08-30,C,Dead Bug (per side),2,12,0,"Up from 10 reps on 8/21, bodyweight. 3 sets reported vs. plan's 2 x 10-12/side — logged as reported. Now at the top of the 10-12/side range."
 2026-08-30,C,Dead Bug (per side),3,12,0,"Up from 10 reps on 8/21, bodyweight. 3 sets reported vs. plan's 2 x 10-12/side — logged as reported. Now at the top of the 10-12/side range."
-2026-08-30,C,Dumbbell Overhead Carry,1,40,10,"Up from 30 ft on 8/21 at the same 10 lb — now at the top of the 30-40 ft/side range. reps column = feet carried."
-2026-08-30,C,Dumbbell Overhead Carry,2,40,10,"Up from 30 ft on 8/21 at the same 10 lb — now at the top of the 30-40 ft/side range. reps column = feet carried."
-2026-08-30,C,Dumbbell Overhead Carry,3,40,10,"Up from 30 ft on 8/21 at the same 10 lb — now at the top of the 30-40 ft/side range. reps column = feet carried."
+2026-08-30,C,Dumbbell Overhead Carry,1,40,10,Up from 30 ft on 8/21 at the same 10 lb — now at the top of the 30-40 ft/side range. reps column = feet carried.
+2026-08-30,C,Dumbbell Overhead Carry,2,40,10,Up from 30 ft on 8/21 at the same 10 lb — now at the top of the 30-40 ft/side range. reps column = feet carried.
+2026-08-30,C,Dumbbell Overhead Carry,3,40,10,Up from 30 ft on 8/21 at the same 10 lb — now at the top of the 30-40 ft/side range. reps column = feet carried.
 2026-08-30,C,Single-Leg Glute Bridge (per side),1,12,0,"Reported as '12 lbs' but exercise was also reported as bodyweight — interpreted as a dictation slip for 12 reps (matches this exercise's 10-12/side range top exactly, and a clean progression from 10 reps on 8/21). Logged as bodyweight x 12; flag to Jackie to confirm."
 2026-08-30,C,Single-Leg Glute Bridge (per side),2,12,0,"Reported as '12 lbs' but exercise was also reported as bodyweight — interpreted as a dictation slip for 12 reps (matches this exercise's 10-12/side range top exactly, and a clean progression from 10 reps on 8/21). Logged as bodyweight x 12; flag to Jackie to confirm."
 2026-08-30,C,Single-Leg Glute Bridge (per side),3,12,0,"Reported as '12 lbs' but exercise was also reported as bodyweight — interpreted as a dictation slip for 12 reps (matches this exercise's 10-12/side range top exactly, and a clean progression from 10 reps on 8/21). Logged as bodyweight x 12; flag to Jackie to confirm."
@@ -370,15 +370,15 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-09-01,A,Goblet Squat,1,10,15,"Deload session — target was 15 lb per the deload worksheet (down from 25 lb, 8/25's max), reps at the bottom of the 8-10 deload range."
 2026-09-01,A,Goblet Squat,2,10,15,"Deload session — target was 15 lb per the deload worksheet (down from 25 lb, 8/25's max), reps at the bottom of the 8-10 deload range."
 2026-09-01,A,Goblet Squat,3,10,15,"Deload session — target was 15 lb per the deload worksheet (down from 25 lb, 8/25's max), reps at the bottom of the 8-10 deload range."
-2026-09-01,A,Dumbbell Romanian Deadlift,1,10,15,"Deload session — hit the 15 lb / 10-rep target exactly."
-2026-09-01,A,Dumbbell Romanian Deadlift,2,10,15,"Deload session — hit the 15 lb / 10-rep target exactly."
-2026-09-01,A,Dumbbell Romanian Deadlift,3,10,15,"Deload session — hit the 15 lb / 10-rep target exactly."
-2026-09-01,A,Dumbbell Floor/Bench Press,1,10,15,"Deload session — hit the 15 lb / 10-rep target exactly."
-2026-09-01,A,Dumbbell Floor/Bench Press,2,10,15,"Deload session — hit the 15 lb / 10-rep target exactly."
-2026-09-01,A,Dumbbell Floor/Bench Press,3,10,15,"Deload session — hit the 15 lb / 10-rep target exactly."
-2026-09-01,A,Single-Arm Dumbbell Row,1,10,12.5,"Deload session — hit the 12.5 lb / 10-rep-per-side target exactly."
-2026-09-01,A,Single-Arm Dumbbell Row,2,10,12.5,"Deload session — hit the 12.5 lb / 10-rep-per-side target exactly."
-2026-09-01,A,Single-Arm Dumbbell Row,3,10,12.5,"Deload session — hit the 12.5 lb / 10-rep-per-side target exactly."
+2026-09-01,A,Dumbbell Romanian Deadlift,1,10,15,Deload session — hit the 15 lb / 10-rep target exactly.
+2026-09-01,A,Dumbbell Romanian Deadlift,2,10,15,Deload session — hit the 15 lb / 10-rep target exactly.
+2026-09-01,A,Dumbbell Romanian Deadlift,3,10,15,Deload session — hit the 15 lb / 10-rep target exactly.
+2026-09-01,A,Dumbbell Floor/Bench Press,1,10,15,Deload session — hit the 15 lb / 10-rep target exactly.
+2026-09-01,A,Dumbbell Floor/Bench Press,2,10,15,Deload session — hit the 15 lb / 10-rep target exactly.
+2026-09-01,A,Dumbbell Floor/Bench Press,3,10,15,Deload session — hit the 15 lb / 10-rep target exactly.
+2026-09-01,A,Single-Arm Dumbbell Row,1,10,12.5,Deload session — hit the 12.5 lb / 10-rep-per-side target exactly.
+2026-09-01,A,Single-Arm Dumbbell Row,2,10,12.5,Deload session — hit the 12.5 lb / 10-rep-per-side target exactly.
+2026-09-01,A,Single-Arm Dumbbell Row,3,10,12.5,Deload session — hit the 12.5 lb / 10-rep-per-side target exactly.
 2026-09-01,A,Single-Leg Balance Reach,1,8,8,"Deload session — hit the 7.5 lb target's neighborhood at 8 lb, 8 reps/side matches the target rep count. Set count not stated by Jackie; logged at 2 sets per the deload worksheet's prescription, not confirmed."
 2026-09-01,A,Single-Leg Balance Reach,2,8,8,"Deload session — hit the 7.5 lb target's neighborhood at 8 lb, 8 reps/side matches the target rep count. Set count not stated by Jackie; logged at 2 sets per the deload worksheet's prescription, not confirmed."
 2026-09-01,A,Plank,1,40,,"Deload session, reps column = seconds held. Jackie did 3 sets at 40 sec, above the worksheet's 2 x ~35-40 sec deload target (set count, not duration) — her own call."
@@ -455,7 +455,7 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-09-08,A,Dumbbell Romanian Deadlift,3,8,30,"Same weight jump and reset as Goblet Squat, up from 25 lb x 20/20/20 on 8/25."
 2026-09-08,A,Dumbbell Floor/Bench Press,1,15,25,"Up from 13 reps on 8/25, same 25 lb — hit the top of the 8-12 range and beyond, still building toward the 20-rep ceiling."
 2026-09-08,A,Dumbbell Floor/Bench Press,2,15,25,"Up from 13 reps on 8/25, same 25 lb — hit the top of the 8-12 range and beyond, still building toward the 20-rep ceiling."
-2026-09-08,A,Dumbbell Floor/Bench Press,3,8,25,"Third set dropped to 8 reps at the same 25 lb — fatigue drop-off after two strong sets at 15."
+2026-09-08,A,Dumbbell Floor/Bench Press,3,8,25,Third set dropped to 8 reps at the same 25 lb — fatigue drop-off after two strong sets at 15.
 2026-09-08,A,Single-Arm Dumbbell Row,1,12,20,"Up from 10/side on 8/25 — now at the top of the 8-12/side range at 20 lb. Next session: move up in weight, reset reps."
 2026-09-08,A,Single-Arm Dumbbell Row,2,12,20,"Up from 10/side on 8/25 — now at the top of the 8-12/side range at 20 lb. Next session: move up in weight, reset reps."
 2026-09-08,A,Single-Arm Dumbbell Row,3,12,20,"Up from 10/side on 8/25 — now at the top of the 8-12/side range at 20 lb. Next session: move up in weight, reset reps."
@@ -594,9 +594,9 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-09-20,C,Renegade Row (per side),1,10,10,"Hit 10/side at 10 lb, the top of the 6-10/side range — up from 9/side on 9/13. Maxed at this weight; next Day C, move up to the next dumbbell weight, reps back to 6/side."
 2026-09-20,C,Renegade Row (per side),2,10,10,"Hit 10/side at 10 lb, the top of the 6-10/side range — up from 9/side on 9/13. Maxed at this weight; next Day C, move up to the next dumbbell weight, reps back to 6/side."
 2026-09-20,C,Renegade Row (per side),3,10,10,"Hit 10/side at 10 lb, the top of the 6-10/side range — up from 9/side on 9/13. Maxed at this weight; next Day C, move up to the next dumbbell weight, reps back to 6/side."
-2026-09-20,C,Bird Dog (per side),1,10,,"Bodyweight, slow tempo (confirmed — "side-lying tempo" in the original report was a dictation artifact for "slow tempo"). Hit 10/side, the top of the 8-10/side range (up from 8/side on 9/13) — maxed with tempo already in place, so the next lever per the plan's progression scheme is a further tempo/pause increase or an isolation-exercise swap, not more reps."
-2026-09-20,C,Bird Dog (per side),2,10,,"Bodyweight, slow tempo (confirmed — "side-lying tempo" in the original report was a dictation artifact for "slow tempo"). Hit 10/side, the top of the 8-10/side range (up from 8/side on 9/13) — maxed with tempo already in place, so the next lever per the plan's progression scheme is a further tempo/pause increase or an isolation-exercise swap, not more reps."
-2026-09-20,C,Bird Dog (per side),3,10,,"Bodyweight, slow tempo (confirmed — "side-lying tempo" in the original report was a dictation artifact for "slow tempo"). Hit 10/side, the top of the 8-10/side range (up from 8/side on 9/13) — maxed with tempo already in place, so the next lever per the plan's progression scheme is a further tempo/pause increase or an isolation-exercise swap, not more reps."
+2026-09-20,C,Bird Dog (per side),1,10,,"Bodyweight, slow tempo (confirmed — side-lying tempo"" in the original report was a dictation artifact for ""slow tempo""). Hit 10/side", the top of the 8-10/side range (up from 8/side on 9/13) — maxed with tempo already in place, so the next lever per the plan's progression scheme is a further tempo/pause increase or an isolation-exercise swap," not more reps."""
+2026-09-20,C,Bird Dog (per side),2,10,,"Bodyweight, slow tempo (confirmed — side-lying tempo"" in the original report was a dictation artifact for ""slow tempo""). Hit 10/side", the top of the 8-10/side range (up from 8/side on 9/13) — maxed with tempo already in place, so the next lever per the plan's progression scheme is a further tempo/pause increase or an isolation-exercise swap," not more reps."""
+2026-09-20,C,Bird Dog (per side),3,10,,"Bodyweight, slow tempo (confirmed — side-lying tempo"" in the original report was a dictation artifact for ""slow tempo""). Hit 10/side", the top of the 8-10/side range (up from 8/side on 9/13) — maxed with tempo already in place, so the next lever per the plan's progression scheme is a further tempo/pause increase or an isolation-exercise swap," not more reps."""
 2026-09-20,C,Dead Bug (per side),1,12,,"Bodyweight, slow tempo. Hit 12/side, the top of the 10-12/side range (up from 10/side on 9/13) — maxed with tempo already in place; next lever is a further tempo/pause increase or an isolation-exercise swap."
 2026-09-20,C,Dead Bug (per side),2,12,,"Bodyweight, slow tempo. Hit 12/side, the top of the 10-12/side range (up from 10/side on 9/13) — maxed with tempo already in place; next lever is a further tempo/pause increase or an isolation-exercise swap."
 2026-09-20,C,Dead Bug (per side),3,12,,"Bodyweight, slow tempo. Hit 12/side, the top of the 10-12/side range (up from 10/side on 9/13) — maxed with tempo already in place; next lever is a further tempo/pause increase or an isolation-exercise swap."
@@ -651,3 +651,28 @@ date,day,exercise,set_number,reps,weight_lbs,notes
 2026-09-24,B,Band Face Pull,3,15,0,"Green band, 15 reps x 3, same as 9/17. IRRITATED the shoulder per Jackie (confirmed). Pause not reported, logged as reps only."
 2026-09-24,B,Dumbbell Lateral Raise,1,10,8,"2 x 10 at 8 lb (down from 10 lb x 8 on 9/17, per the recovery plan). Reported as '2 x 8 x 10', read as 8 lb, 10 reps; no irritation reported."
 2026-09-24,B,Dumbbell Lateral Raise,2,10,8,"2 x 10 at 8 lb (down from 10 lb x 8 on 9/17, per the recovery plan). Reported as '2 x 8 x 10', read as 8 lb, 10 reps; no irritation reported."
+2026-09-27,C,Bulgarian Split Squat (per side),1,10,12.5,"Same as 9/20 (10/side at 12.5 lb), within the 8-12/side range, not yet maxed."
+2026-09-27,C,Bulgarian Split Squat (per side),2,10,12.5,"Same as 9/20 (10/side at 12.5 lb), within the 8-12/side range, not yet maxed."
+2026-09-27,C,Bulgarian Split Squat (per side),3,10,12.5,"Same as 9/20 (10/side at 12.5 lb), within the 8-12/side range, not yet maxed."
+2026-09-27,C,Single-Leg Romanian Deadlift (per side),1,10,12.5,Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions.
+2026-09-27,C,Single-Leg Romanian Deadlift (per side),2,10,12.5,Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions.
+2026-09-27,C,Single-Leg Romanian Deadlift (per side),3,10,12.5,Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions.
+2026-09-27,C,Dumbbell Incline Press,1,10,12.5,"Watch exercise (shoulder). No irritation reported. Same as 9/20, within the 8-12 range, not yet maxed."
+2026-09-27,C,Dumbbell Incline Press,2,10,12.5,"Watch exercise (shoulder). No irritation reported. Same as 9/20, within the 8-12 range, not yet maxed."
+2026-09-27,C,Dumbbell Incline Press,3,10,12.5,"Watch exercise (shoulder). No irritation reported. Same as 9/20, within the 8-12 range, not yet maxed."
+2026-09-27,C,Renegade Row (per side),1,10,10,Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions.
+2026-09-27,C,Renegade Row (per side),2,10,10,Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions.
+2026-09-27,C,Renegade Row (per side),3,10,10,Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions.
+2026-09-27,C,Bird Dog (per side),1,10,,"Bodyweight, slow tempo. 2 sets as planned. Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions."
+2026-09-27,C,Bird Dog (per side),2,10,,"Bodyweight, slow tempo. 2 sets as planned. Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions."
+2026-09-27,C,Dead Bug (per side),1,12,,"Bodyweight, slow tempo. 2 sets as planned. Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions."
+2026-09-27,C,Dead Bug (per side),2,12,,"Bodyweight, slow tempo. 2 sets as planned. Top-of-range repeat under the three-session rule; session 1 of 3 clean sessions."
+2026-09-27,C,Dumbbell Goblet Carry (sub for Dumbbell Overhead Carry),1,30,12.5,Continuing goblet carry in place of the overhead carry. Reps column = feet carried.
+2026-09-27,C,Dumbbell Goblet Carry (sub for Dumbbell Overhead Carry),2,30,12.5,Continuing goblet carry in place of the overhead carry. Reps column = feet carried.
+2026-09-27,C,Dumbbell Goblet Carry (sub for Dumbbell Overhead Carry),3,30,12.5,Continuing goblet carry in place of the overhead carry. Reps column = feet carried.
+2026-09-27,C,Single-Leg Glute Bridge (per side),1,12,,"Watch exercise (hip). Bodyweight. Mild hip soreness again, not worse than before. Does not count as a clean session; three-session count not started."
+2026-09-27,C,Single-Leg Glute Bridge (per side),2,12,,"Watch exercise (hip). Bodyweight. Mild hip soreness again, not worse than before. Does not count as a clean session; three-session count not started."
+2026-09-27,C,Single-Leg Glute Bridge (per side),3,12,,"Watch exercise (hip). Bodyweight. Mild hip soreness again, not worse than before. Does not count as a clean session; three-session count not started."
+2026-09-27,C,Band Pull-Apart,1,20,,"Watch exercise (shoulder). Black band. Mild arm irritation reported, not worse than before. Does not count as a clean session; three-session count not started."
+2026-09-27,C,Band Pull-Apart,2,20,,"Watch exercise (shoulder). Black band. Mild arm irritation reported, not worse than before. Does not count as a clean session; three-session count not started."
+2026-09-27,C,Band Pull-Apart,3,20,,"Watch exercise (shoulder). Black band. Mild arm irritation reported, not worse than before. Does not count as a clean session; three-session count not started."

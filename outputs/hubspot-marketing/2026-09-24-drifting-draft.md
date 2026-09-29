@@ -47,3 +47,7 @@ Jackie
 > - Deliberately skipped the digests' AI-search and paid-ads items to avoid repeating last month's AI paragraph and to keep the email to four beats.
 > - Writing-style scrub done before delivery: no em dashes, no negation pivots, no trailing hedge commas ("..., which can show up as" was split into its own sentence), and no stacked same-length sentences.
 > - The 09/02 Drifting send opened at 6.25%, the lowest so far for this segment. The subject line is more concrete this time, naming what the reader gets rather than a list of topics. Worth watching whether that moves opens.
+
+---
+
+> **2026-09-27: replaced with the final Lapsed email.** At Jackie's request, the Drifting HubSpot draft (591481043548) now carries the exact same subject and body as the final Lapsed send: see the FINAL section of `2026-09-24-lapsed-draft.md`, plus her own HubSpot edits (a "Try this" action line, a "What to do with it" line, the SurveyMonkey/Reddit 73% referral stat replacing the unverifiable HubSpot one, and no personal aside). The reply-ask closer from this Drifting draft was dropped. Lists unchanged (401 in; 400/402/404 out). The Chamber of Commerce, CMI, and revenue-doubled stats are still unverified.

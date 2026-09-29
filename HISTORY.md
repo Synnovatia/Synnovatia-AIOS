@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-09-26 to 2026-09-28
+
+### Homepage Title Fixed, Lapsed and Drifting Emails Finalized
+- Homepage title: added a WordPress tagline as a test, then confirmed on an uncached load that the title still output only "Synnovatia," which showed the DreamHost SEO Toolkit was forcing it. Drafted Jackie's reply to DreamHost support's follow-up. Re-checked 9/28: the title now reads "Business Growth Advisor for Stage II Companies | Synnovatia" on both cached and uncached loads, and the "State II" tagline typo is fixed. CLAUDE.md updated.
+- Lapsed "What I'm Watching" (HubSpot 591491734624): cut about 40%, new opening line, shorter subject ("What I'm Watching: Cautious Owners and Buyers Who Decide Early"). The HubSpot "3 in 5 marketers rate referrals top-performing" stat couldn't be verified anywhere (not on the cited page or in either 2026 State of Marketing write-up), so it was replaced first with the Nielsen 92% trust stat (turned out to be from 2012) and then with the SurveyMonkey/Reddit "Hidden B2B Journey" study (March 2026, 1,202 U.S. decision-makers, 73% trust peer recommendations above any other source). Jackie added her own "Try this:" and "What to do with it:" action lines in the editor and dropped the personal aside. Final pass fixed one parenthesis inside a link and reset the base font to Barlow. HubSpot's editor keeps switching the base font to a PingFang TC stack on save (third time now).
+- Copied the final Lapsed email into the Drifting draft (591481043548) at Jackie's request, which also removed the unverified HubSpot stat there. The Drifting reply-ask closer was dropped. Both are drafts for Wednesday 9/30. The Chamber of Commerce, CMI, and revenue-doubled stats are still unverified.
+
+### Health and Training
+- Logged the 9/26 walk (4.1 mi, 84 min, HR 108), the 9/27 Day C (same loads as 9/20; clean session 1 of 3 for Single-Leg RDL, Renegade Row, Bird Dog, Dead Bug; Band Pull-Apart caused mild arm irritation and Single-Leg Glute Bridge mild hip soreness again, so neither counts), and the 9/28 mixed cardio (48 min, 3.39 mi, HR 137, second-fastest Monday pace, identical to 9/21 and confirmed by Jackie).
+- Total effort score replaces METs from 9/27 on (new `total_effort` column in the session log).
+- 9/27 weigh-in: 145 lbs, 39.2% body fat, 31 in waist, HRV 26. Jackie's plan for the week: salad in place of chips at lunch.
+- Added Hammer Curl and Dumbbell Triceps Kickback to Day A for arm definition (shoulder-friendly choices, no overhead extensions for now). Built the 9/29 Day A worksheet at 9/22 loads with six watch exercises. Day C worksheet kept unchanged until the rest of the week plays out, per Jackie.
+- Added a fat-loss (body recomposition) focus to `personal/meal-planning.md`: about 110 g protein a day, breakfast and lunch protein upgrades, a small calorie trim, alcohol limits, Saturday burger night unchanged. Usual shopping list updated. Built a one-page breakfast and lunch ideas printout (`personal/grocery-lists/2026-09-28-breakfast-lunch-ideas.pdf`). First waist check-in for the new eating plan: Sunday 10/25.
+
 ## 2026-09-25
 
 ### DiB Blog Part 1 Published, Site-Wide Link and SEO Fixes
