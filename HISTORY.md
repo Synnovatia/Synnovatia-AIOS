@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-09-29 to 2026-09-30
+
+### 2027 Mastermind and Forum Dates Set
+- Q1 2027 Mastermind for the Messy Middle (every other Friday): Jan 8, Jan 22, Feb 5, Feb 19, Mar 5, Mar 19. Seven Figure Forum first 2027 round (every 6 weeks, on the mastermind's off-weeks): Jan 15, Feb 26, Apr 9, May 21, Jun 25. The fifth Forum meeting would have fallen on Jul 2 at strict 6-week spacing; Jackie chose Jun 25 (5-week gap, keeps the round inside January–June). Jun 25 is clear only if the Q2 mastermind runs the usual 6 sessions from Apr 2 (ending Jun 11).
+- All 11 sessions added to Google Calendar, Fridays 8:00–9:15am PT, green (colorId 10), reusing each group's existing Zoom link (Mastermind 89460509158, Forum 88369570455). No invitations sent. Still open from the Nov 1 "Set 2027 dates" reminder: check against the school term calendar and update the landing pages.
+- Both 9/30 "What I'm Watching" emails (Lapsed and Drifting) confirmed scheduled in HubSpot; Jackie changed the subject to "...Cautious Owners and Buyers...and what to do about it" (Drifting version ends with a period).
+
+### Training
+- 9/29 Day A: Jackie dialed all 30 lb exercises (Goblet Squat, RDL, Farmer's Carry, Glute Bridge) back to 25 lb and wants to keep 25 lb as the working level for a while. First session with Hammer Curl (3 x 10 at 10 lb) and Triceps Kickback (3 x 10 at 8 lb). Plank done without shoulder taps. Leg/hip fine; mild anterior deltoid soreness afterward, source not identified. 66 min, effort 3.9.
+- Rest times added: a "Rest between sets" column on the 9/29 worksheet and a standing rest-time guide in `personal/workout-plan.md` for all future worksheets.
+- 9/30 hike logged: 75 min, 3.69 mi (~20:20/mile), HR 111, effort 4.6. About 1.5 min/mile faster than 9/23 at a similar heart rate.
+
 ## 2026-09-26 to 2026-09-28
 
 ### Homepage Title Fixed, Lapsed and Drifting Emails Finalized

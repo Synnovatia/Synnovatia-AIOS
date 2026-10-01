@@ -366,7 +366,12 @@
       "Bash(jq -r '.nextPageToken // \"none\"' mcp-3d6772ff-*list_drafts*.txt)",
       "mcp__3d6772ff-30eb-46bc-a8ba-75aa0cc4acb4__delete_draft",
       "Bash(awk '/^## Friday/,/^---/' 2026-09-14-to-09-18-drafts.md)",
-      "Bash(curl -sL https://synnovatia.com/)"
+      "Bash(curl -sL https://synnovatia.com/)",
+      "Bash(awk '/<body/{f=1} f' brief.html)",
+      "Bash(awk '/^2026-/{print $2}')",
+      "Bash(jq -r '.messages[-2:][] | \"=== \\\\\\(.sender\\) \\\\\\(.date\\)\\\\n\\\\\\(.plaintextBody // .plaintext_body\\)\"' mcp-3d6772ff-*get_thread-1790723351893.txt)",
+      "Bash(awk '/^=== /{print; n=0; next} {n++; if\\(n<=60\\) print}')",
+      "Bash(cd \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/morning-brief\" && sed -i '' 's/ note from Pdm CPAs with a yes/ note with a yes/' brief.html && grep -n \"Thinking of you\" brief.html)"
     ]
   }
 }
