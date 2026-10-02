@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-10-02
+
+### Q4 2026 Mastermind for the Messy Middle Canceled, Everything Repointed to January
+- Jackie canceled the Q4 2026 round. Removed all 11 remaining `messymiddle-*` scheduled reminders (six Wednesday agenda-day reminders, Oct 7 through Dec 16, and five hot-topics drafts, Oct 15 through Dec 14). Their SKILL.md files stay on disk as the template for Q1 2027. Seven Figure Forum reminders untouched.
+- Calendar: deleted the Nov 6, Nov 20, Dec 4, and Dec 18 "Q4 2026 Mastermind for the Messy Middle" blocks; Oct 9 and Oct 23 were already gone. The six Q1 2027 blocks (Jan 8, Jan 22, Feb 5, Feb 19, Mar 5, Mar 19) and the Nov 1 "Set 2027 dates" note remain.
+- Drafted one group cancellation email to Elise Eidsness, Amy Hage, Wilma Nachsin, and Sandra Roe (subject "Mastermind for the Messy Middle: Q4 is canceled, back in January") with the six Q1 2027 dates and a one-on-one coaching offer; no reason for the cancellation, no price, no booking link. Jackie sent it the same day. "Elyse" in her request was read as Elise Eidsness, not Elyse Koenig.
+- `mastermind-outreach-status-check` (5th and 20th) rewritten to target the Q1 2027 cohort starting Jan 8: Q4 marked canceled, Forum 2026/2027 dates added, Gmail searches now include Trash. No application close date or invitation send date exists for January yet; the task flags that each run. `set-2027-mastermind-dates-nov1` description updated to say the dates are set and what is left (school-term check, landing pages, Q1 reminders).
+- Live site (production): `/mastermind-for-the-messy-middle/` (page 11287) closing headline changed from "The Next Cohort Starts October 9." to "The Next Cohort Starts January 8."; Apply page (11291) tile changed from "Oct 9" to "Jan 8". Both verified on the public URLs. Lessons: on both pages the Custom HTML block's `content` attribute read as empty through `getBlocks()`, so the edit went through `getEditedPostContent()` → string replace → `wp.blocks.parse` → `resetBlocks`, with a round-trip equality check before saving. The Apply page's first Save click silently failed again (same as 9/24); `wp.data.dispatch('core/editor').savePost()` worked, confirmed via the REST `context=edit` read.
+- `context/current-data.md` and `context/task-audit.md` updated for the cancellation. Still open: `context/strategy.md` priority 2 still carries the "8 total by October 2026" target, one task-audit row still says "restarts Q4 2026", and per-session hot-topics/agenda reminders for Q1 2027 are not set up.
+
 ## 2026-10-01
 
 ### Training

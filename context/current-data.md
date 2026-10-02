@@ -28,7 +28,7 @@
 | Projected income, full year 2026 (no changes) | ~$35,000 | Jul 2026 | Self-reported estimate |
 | Target income, annualized (with growth plan) | ~$100,000/yr | Goal | Strategy target |
 | Seven Figure Forum members | 4 (target: 6 by Jan 2027) — **includes Christina Carlson**, who moved over from the Messy Middle; verified 2026-07-20, not stale | Jul 2026 | Jackie |
-| Mastermind for the Messy Middle members | 4 total, **2 paying** (target: **8 total by Oct 2026, so 6 are paying**) | Jul 2026 | Confirmed by Jackie 2026-07-20 |
+| Mastermind for the Messy Middle members | 4 total, **2 paying**. **Q4 2026 round canceled (2026-10-02)**; the group resumes Q1 2027 (Jan 8, Jan 22, Feb 5, Feb 19, Mar 5, Mar 19). The earlier target of 8 total by Oct 2026 no longer applies | Oct 2026 | Confirmed by Jackie 2026-10-02 |
 | — the 2 non-paying seats | Family member + close friend. **Staying non-paying permanently, by Jackie's choice** (2026-07-20). Treat as a fixed cost of the room, not a conversion opportunity — never draft an upgrade/payment ask to them. | Jul 2026 | Jackie |
 | Weekly capacity on Synnovatia | ~3 hrs/day | Jul 2026 | Self-reported |
 | Weekly capacity on school (cultural anthropology) | ~20 hrs/week | Jul 2026 | Self-reported |
