@@ -8,6 +8,13 @@
 
 ---
 
+## 2026-10-01
+
+### Training
+- Built the 10/1 Day B worksheet (`personal/workout-logs/2026-10-01-day-b-worksheet.html`/`.pdf`), the first full-length Day B since 9/17, with nothing increasing. Sumo Deadlift, Reverse Lunge, and Suitcase Carry dropped from 30 lb to 25 lb at 9/17's reps, matching the 9/29 decision to keep 25 lb as the working level. Hip Bridge returned at bodyweight, Face Pull without the pause, Lateral Raise back at 8 lb.
+- Two changes at Jackie's request before the session: Goblet Walk (12.5 lb, 3 x 30 ft) replaced the Single-Arm Overhead Press, and Hammer Curl and Triceps Kickback were added from Day A, making eleven exercises. Whether the Overhead Press returns and whether the arm exercises stay on Day B are both undecided.
+- Session logged: 61 min, HR 122, effort 4.9 (highest strength effort score so far), after a 13-min, 0.60-mile warm-up walk. All eleven exercises done as written, Side Plank without the 10 lb weight. Suitcase Carry went really well. Stability Ball Hip Bridge irritated the left glute again at bodyweight (second Day B in a row), so it goes back on hold for the next Day B. Lateral Raise irritated the left arm on the first set and then eased, so it holds at 8 lb as a watch exercise. Face Pull: no irritation reported.
+
 ## 2026-09-29 to 2026-09-30
 
 ### 2027 Mastermind and Forum Dates Set

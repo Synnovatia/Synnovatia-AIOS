@@ -371,7 +371,8 @@
       "Bash(awk '/^2026-/{print $2}')",
       "Bash(jq -r '.messages[-2:][] | \"=== \\\\\\(.sender\\) \\\\\\(.date\\)\\\\n\\\\\\(.plaintextBody // .plaintext_body\\)\"' mcp-3d6772ff-*get_thread-1790723351893.txt)",
       "Bash(awk '/^=== /{print; n=0; next} {n++; if\\(n<=60\\) print}')",
-      "Bash(cd \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/morning-brief\" && sed -i '' 's/ note from Pdm CPAs with a yes/ note with a yes/' brief.html && grep -n \"Thinking of you\" brief.html)"
+      "Bash(cd \"/Users/jackienagel/Desktop/Synnovatia AIOS/outputs/morning-brief\" && sed -i '' 's/ note from Pdm CPAs with a yes/ note with a yes/' brief.html && grep -n \"Thinking of you\" brief.html)",
+      "mcp__Read_and_Send_iMessages__read_imessages"
     ]
   }
 }
