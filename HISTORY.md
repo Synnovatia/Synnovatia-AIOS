@@ -18,6 +18,14 @@
 - Live site (production): `/mastermind-for-the-messy-middle/` (page 11287) closing headline changed from "The Next Cohort Starts October 9." to "The Next Cohort Starts January 8."; Apply page (11291) tile changed from "Oct 9" to "Jan 8". Both verified on the public URLs. Lessons: on both pages the Custom HTML block's `content` attribute read as empty through `getBlocks()`, so the edit went through `getEditedPostContent()` → string replace → `wp.blocks.parse` → `resetBlocks`, with a round-trip equality check before saving. The Apply page's first Save click silently failed again (same as 9/24); `wp.data.dispatch('core/editor').savePost()` worked, confirmed via the REST `context=edit` read.
 - `context/current-data.md` and `context/task-audit.md` updated for the cancellation. Still open: `context/strategy.md` priority 2 still carries the "8 total by October 2026" target, one task-audit row still says "restarts Q4 2026", and per-session hot-topics/agenda reminders for Q1 2027 are not set up.
 
+## 2026-10-03
+
+### Training and Eating Plan
+- Logged the Saturday walk: 91 min, 4.74 mi (~19:12/mile), HR 126, effort 6.0. Third-fastest of the 4+ mile walks and the highest heart rate and effort score of any of them; Jackie attributes that to the heat (86 degrees).
+- Built the 10/4 Day C worksheet (`personal/workout-logs/2026-10-04-day-c-worksheet.html`/`.pdf`): same loads and reps as 9/27, nothing increases. Single-Leg Glute Bridge put on hold (hip soreness two Sundays in a row, plus the 10/1 hip bridge irritation) and replaced with the two-leg Glute Bridge at bodyweight; Band Pull-Apart dropped from 20 to 15 reps. Single-Leg RDL, Renegade Row, Bird Dog, and Dead Bug are on clean session 2 of 3.
+- Added two arm exercises to Day C at Jackie's request, different from Day A/B's Hammer Curl and Kickback: Dumbbell Biceps Curl, palms up (3 x 10 at 10 lb) and Lying Dumbbell Triceps Extension (3 x 10 at 8 lb each hand). Starting weights are a guess.
+- Added a Sweet Tooth List (eight fruit- and protein-based options plus two habits) and a sweet-tooth staples line to `personal/meal-planning.md`.
+
 ## 2026-10-01
 
 ### Training
