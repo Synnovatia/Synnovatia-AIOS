@@ -20,6 +20,15 @@
 
 ## 2026-10-03
 
+### Client Re-engagement: Specific Follow-up Dates Now Work; Rob Fleming, Maxine Fuller, Elyse Koenig
+- `check_reengagement.py` now treats a date in the roster's `next_checkin_due` column as a hand-set follow-up date that overrides the 6-month cadence, and `log_outreach.py` clears it once contact is logged (anything except `no_response`). Documented in `client-reengagement/README.md`. Pair the date with `priority` = `1` and use a Monday so the person lands in that week's 7am drafting batch.
+- Rob Fleming added to the roster as a prospect, not a past client (rob@onpointpublicity.com, last contact set to the 8/7 intro call date), follow-up date Mon Oct 26 for a Tue Oct 27 send. No record here of how the 8/7 call went.
+- Maxine Fuller: follow-up date Mon Dec 7 for a Tue Dec 8 send (Jackie asked for 2 to 3 months out; Dec 7 was chosen to land ahead of the holidays).
+- Three rows already had dates typed into `next_checkin_due` that the script had been ignoring. Diane Leonard (2027-01-04) is fine. Jo Lynn Deal (9/20) and Sherry Schaefer (9/15), both mastermind-conversation check-backs, now show as overdue at the bottom of the due list. Jackie had both dates cleared, so they return to the standard 6-month cadence (next due March 2027).
+- Elyse Koenig: the "reach back out in October" promise from Jackie's 9/8 reply had no date or reminder anywhere. Drafted the follow-up as a reply on the same thread; Jackie added a ":-D" and sent it herself 10/3. Logged `sent`. No mastermind or Forum mention; her HarperCollins-intro offer from 9/8 is still unanswered.
+- Jackie's edits on the first Elyse draft, saved to the re-engagement edit-patterns memory: no "circling back"-style office phrases, and no personal update (school, stats class) on a second touch with someone she has already told.
+- Session-start guidance: "Initialize my session" is no longer needed for single-subject sessions, since CLAUDE.md and saved memory load automatically; it is still useful for broad status, planning, or strategy sessions. CLAUDE.md updated to say so.
+
 ### Training and Eating Plan
 - Logged the Saturday walk: 91 min, 4.74 mi (~19:12/mile), HR 126, effort 6.0. Third-fastest of the 4+ mile walks and the highest heart rate and effort score of any of them; Jackie attributes that to the heat (86 degrees).
 - Built the 10/4 Day C worksheet (`personal/workout-logs/2026-10-04-day-c-worksheet.html`/`.pdf`): same loads and reps as 9/27, nothing increases. Single-Leg Glute Bridge put on hold (hip soreness two Sundays in a row, plus the 10/1 hip bridge irritation) and replaced with the two-leg Glute Bridge at bodyweight; Band Pull-Apart dropped from 20 to 15 reps. Single-Leg RDL, Renegade Row, Bird Dog, and Dead Bug are on clean session 2 of 3.

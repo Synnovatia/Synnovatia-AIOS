@@ -164,7 +164,7 @@ This workspace is designed for **Claude Cowork** — no terminal required. Every
 
 ### Starting a session
 
-Say this at the start of every session:
+For a single-subject session (a workout log, a LinkedIn batch, one page fix), skip this and open with the topic — this file and Claude's saved memory load automatically, and Claude reads only the files that subject needs. For a broad session (current status, planning, strategy, anything touching revenue and goals), say:
 
 > **"Initialize my session"**
 
@@ -204,6 +204,7 @@ Say things like:
 - **"I sent to [name]"** → logs it: `log_outreach.py sent <email>`, resets their cadence clock
 - **"Who's awaiting a reply check?"** → runs `list_pending_replies.py`; Claude checks Gmail for actual replies and logs outcomes (`responded` / `no_response` / `meeting_scheduled`)
 - **"[Name]'s meeting happened, here's what we discussed: ..."** → logs `meeting_completed`, drafts a personalized post-call follow-up email, flags any opportunity + next action
+- **"Check in with [name] at the end of October"** / **"Reach out to [name] in 2 to 3 months"** → sets a specific follow-up date in the roster's `next_checkin_due` column (plus `priority` = 1), which overrides the 6-month cadence and lands them in that Monday's drafting batch; cleared automatically once contact is logged (added 2026-10-03)
 - **"Any open opportunities?"** → runs `list_opportunities.py` — surfaces pending post-call emails and flagged follow-up opportunities
 - **"How's the response rate looking?"** → runs `response_rate_report.py` — reply rate by day of week, to confirm Tuesday is actually the best send day
 
