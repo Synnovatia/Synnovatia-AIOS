@@ -69,6 +69,7 @@ All of the following, in priority order matching `context/strategy.md`:
 - Each part should open with a one-line recap of where the story left off (for new readers) before advancing it — don't assume everyone's been following since Part 1
 - Close each installment on a genuine hook into the next part, not just the standard closing question — the serialized format is the whole point
 - Same voice rules as every other pillar (AI-tell scrub, blunt/plain phrasing, no invented specifics) — a series doesn't get a pass on any of that
+- **Keep each installment to one short paragraph (added 2026-10-05, from her Oct 16 edit):** she collapsed a five-paragraph Part 2 to one beat (a single surprise), cut the specific next-week teaser to "More about that next week. Follow along!", and added "I'm dying to hear!!" after the closing question. Draft one beat per Friday, not two.
 - Runs until the arc naturally wraps; revisit the Friday pillar then rather than assuming it continues indefinitely — a second series (e.g. the AIOS/EVOLV-OS build story, raised and set aside 2026-09-04) is a natural next arc once this one concludes
 
 ## Cadence Performance Tracking (started 2026-08-17)

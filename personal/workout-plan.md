@@ -53,6 +53,10 @@ Every worksheet gets a "Rest between sets" column. Big lifts (squat, deadlift, p
 
 **2026-09-29:** Jackie dialed every 30 lb Day A exercise (Goblet Squat, RDL, Farmer's Carry, Glute Bridge) back to 25 lb and wants to **keep 25 lb as the working level for a while**, so don't move anything back to 30 lb by default. First session with Hammer Curl (3 x 10 at 10 lb) and Triceps Kickback (3 x 10 at 8 lb), both done for 3 sets instead of the planned 2. Plank done without shoulder taps. Leg/hip fine; mild anterior deltoid soreness afterward, source not identified (candidates: Bench Press, Band Face Pull, Plank). 66 min at effort 3.9, the longest Day A so far.
 
+**2026-10-05 (note for the 10/6 Day A):** Jackie reported left knee pain on Monday and walked instead of the usual run/walk (also the heat); the knee felt better going uphill. First mention of the knee. Treat Goblet Squat and Single-Leg Balance Reach as watch exercises on the next Day A and ask how the knee is before building the worksheet.
+
+**2026-10-06 (planned):** nine exercises repeat 9/29 (25 lb top weight, plain Plank, Hammer Curl and Kickback at 3 x 10). Goblet Squat drops to 15 lb, 3 x 10, to chair depth for the left knee (skip and add a Glute Bridge set if it still hurts); Single-Leg Balance Reach is the second knee watch (no weight on the left leg if sore). Bench Press stays a shoulder watch. Jackie sees the chiropractor the same day; their guidance on the knee overrides the worksheet. Worksheet: `personal/workout-logs/2026-10-06-day-a-worksheet.pdf`.
+
 ## Day B — Thursday
 
 | Exercise | Sets x Reps |

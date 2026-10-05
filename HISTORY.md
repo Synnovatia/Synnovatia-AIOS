@@ -18,6 +18,12 @@
 - Live site (production): `/mastermind-for-the-messy-middle/` (page 11287) closing headline changed from "The Next Cohort Starts October 9." to "The Next Cohort Starts January 8."; Apply page (11291) tile changed from "Oct 9" to "Jan 8". Both verified on the public URLs. Lessons: on both pages the Custom HTML block's `content` attribute read as empty through `getBlocks()`, so the edit went through `getEditedPostContent()` → string replace → `wp.blocks.parse` → `resetBlocks`, with a round-trip equality check before saving. The Apply page's first Save click silently failed again (same as 9/24); `wp.data.dispatch('core/editor').savePost()` worked, confirmed via the REST `context=edit` read.
 - `context/current-data.md` and `context/task-audit.md` updated for the cancellation. Still open: `context/strategy.md` priority 2 still carries the "8 total by October 2026" target, one task-audit row still says "restarts Q4 2026", and per-session hot-topics/agenda reminders for Q1 2027 are not set up.
 
+## 2026-10-05
+
+### Training
+- Logged a 61-min, 3.16-mile walk (19:17/mile, HR 110, effort 3.9) in place of the usual Monday run/walk, because of the heat and new left knee pain (the knee felt better going uphill), plus a 21-min yoga session (HR 82, effort 0.3).
+- Built the 10/6 Day A worksheet (`personal/workout-logs/2026-10-06-day-a-worksheet.html`/`.pdf`) around the knee: nine exercises repeat 9/29 at the 25 lb top weight, Goblet Squat drops to 15 lb at chair depth, and Single-Leg Balance Reach is a second knee watch. Jackie sees the chiropractor on 10/6; their guidance on the knee overrides the worksheet.
+
 ## 2026-10-04
 
 ### Weekly Weigh-In and Day C
