@@ -18,6 +18,12 @@
 - Live site (production): `/mastermind-for-the-messy-middle/` (page 11287) closing headline changed from "The Next Cohort Starts October 9." to "The Next Cohort Starts January 8."; Apply page (11291) tile changed from "Oct 9" to "Jan 8". Both verified on the public URLs. Lessons: on both pages the Custom HTML block's `content` attribute read as empty through `getBlocks()`, so the edit went through `getEditedPostContent()` → string replace → `wp.blocks.parse` → `resetBlocks`, with a round-trip equality check before saving. The Apply page's first Save click silently failed again (same as 9/24); `wp.data.dispatch('core/editor').savePost()` worked, confirmed via the REST `context=edit` read.
 - `context/current-data.md` and `context/task-audit.md` updated for the cancellation. Still open: `context/strategy.md` priority 2 still carries the "8 total by October 2026" target, one task-audit row still says "restarts Q4 2026", and per-session hot-topics/agenda reminders for Q1 2027 are not set up.
 
+## 2026-10-04
+
+### Weekly Weigh-In and Day C
+- Weigh-in logged in `personal/health-goals.md`: 144.2 lbs (down 0.8 for the second week in a row), body fat 39.2% (unchanged, still the series high), waist 30.5 in (down 0.5, ties the series low), HRV 27. First weigh-in after a week on the fat-loss eating plan.
+- Day C logged: 55 min, HR 108, effort 3.8, after a 15-min, 0.81-mile warm-up. All eleven exercises done as written, and Jackie reported leg and arm both feeling much better with nothing aggravated, the first irritation-free strength session since 9/20. Single-Leg RDL, Renegade Row, Bird Dog, and Dead Bug are at clean session 2 of 3. The two-leg Glute Bridge and the 15-rep Band Pull-Apart were both clean. Jackie likes the two new arm exercises (palms-up Biceps Curl, Lying Triceps Extension); they stay on Day C.
+
 ## 2026-10-03
 
 ### Client Re-engagement: Specific Follow-up Dates Now Work; Rob Fleming, Maxine Fuller, Elyse Koenig
