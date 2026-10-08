@@ -1,6 +1,6 @@
 # Content Pipeline
 
-> Auto-generated from database. Last updated: 2026-09-09
+> Auto-generated from database. Last updated: 2026-10-05
 > Source: `data/content.db` | Regenerate: `python scripts/content_pipeline/generate_pipeline.py`
 
 **Total ideas:** 3

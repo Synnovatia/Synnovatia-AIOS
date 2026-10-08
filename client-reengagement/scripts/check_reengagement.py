@@ -30,7 +30,10 @@ def main():
         for row in reader:
             reference = row["last_checkin"].strip() or row["client_since"].strip()
             reference_date = parse_date(reference)
-            next_due = add_months(reference_date, CADENCE_MONTHS)
+            # A date already in next_checkin_due is a hand-set follow-up date and
+            # overrides the standard cadence (cleared by log_outreach.py on contact).
+            override = (row.get("next_checkin_due") or "").strip()
+            next_due = parse_date(override) if override else add_months(reference_date, CADENCE_MONTHS)
             row["next_checkin_due"] = next_due.isoformat()
             row["_days_overdue"] = (today - next_due).days
             rows.append(row)

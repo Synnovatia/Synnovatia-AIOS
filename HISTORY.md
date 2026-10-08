@@ -8,6 +8,61 @@
 
 ---
 
+## 2026-10-02
+
+### Q4 2026 Mastermind for the Messy Middle Canceled, Everything Repointed to January
+- Jackie canceled the Q4 2026 round. Removed all 11 remaining `messymiddle-*` scheduled reminders (six Wednesday agenda-day reminders, Oct 7 through Dec 16, and five hot-topics drafts, Oct 15 through Dec 14). Their SKILL.md files stay on disk as the template for Q1 2027. Seven Figure Forum reminders untouched.
+- Calendar: deleted the Nov 6, Nov 20, Dec 4, and Dec 18 "Q4 2026 Mastermind for the Messy Middle" blocks; Oct 9 and Oct 23 were already gone. The six Q1 2027 blocks (Jan 8, Jan 22, Feb 5, Feb 19, Mar 5, Mar 19) and the Nov 1 "Set 2027 dates" note remain.
+- Drafted one group cancellation email to Elise Eidsness, Amy Hage, Wilma Nachsin, and Sandra Roe (subject "Mastermind for the Messy Middle: Q4 is canceled, back in January") with the six Q1 2027 dates and a one-on-one coaching offer; no reason for the cancellation, no price, no booking link. Jackie sent it the same day. "Elyse" in her request was read as Elise Eidsness, not Elyse Koenig.
+- `mastermind-outreach-status-check` (5th and 20th) rewritten to target the Q1 2027 cohort starting Jan 8: Q4 marked canceled, Forum 2026/2027 dates added, Gmail searches now include Trash. No application close date or invitation send date exists for January yet; the task flags that each run. `set-2027-mastermind-dates-nov1` description updated to say the dates are set and what is left (school-term check, landing pages, Q1 reminders).
+- Live site (production): `/mastermind-for-the-messy-middle/` (page 11287) closing headline changed from "The Next Cohort Starts October 9." to "The Next Cohort Starts January 8."; Apply page (11291) tile changed from "Oct 9" to "Jan 8". Both verified on the public URLs. Lessons: on both pages the Custom HTML block's `content` attribute read as empty through `getBlocks()`, so the edit went through `getEditedPostContent()` → string replace → `wp.blocks.parse` → `resetBlocks`, with a round-trip equality check before saving. The Apply page's first Save click silently failed again (same as 9/24); `wp.data.dispatch('core/editor').savePost()` worked, confirmed via the REST `context=edit` read.
+- `context/current-data.md` and `context/task-audit.md` updated for the cancellation. Still open: `context/strategy.md` priority 2 still carries the "8 total by October 2026" target, one task-audit row still says "restarts Q4 2026", and per-session hot-topics/agenda reminders for Q1 2027 are not set up.
+
+## 2026-10-05
+
+### DiB Blog Part 2 Drafted, Edited, and Published
+- Drafted "Different Is Better Than Better, Part 2: What My Clients Said When I Asked Why They Hired Me" from Jackie's worksheet answers and the positioning brief, in Part 1's format (`outputs/blog/2026-10-05-dib-blog-part2-draft.docx`). Clients and the outside marketing observer stay unnamed. Reviewed Jackie's edits (fixed the book title back to *Scale Up Faster*, a typo, an unclear "It's," and two wording mismatches) and kept the final text in `outputs/blog/2026-10-05-dib-blog-part2-reviewed.docx`, updated alongside every later change.
+- Jackie's choices: cut the interview count, the "since 2000" line, the statistics paragraph, and "no theme reached dominant"; condensed the positioning statement to "For B2B service business owners whose growth has stalled in the Messy Middle, I bring Fortune 500-level strategic thinking, sized to fit your business" (the "sized to fit" qualifier went back in after she asked whether "Fortune 500" would scare off prospects); "Claude, my able AI assistant"; "they" for the unnamed client; a parenthetical stats-class aside in the FAQ.
+- Built and published on production: https://www.synnovatia.com/different-is-better-than-better-part-2/ (post 12461, Growth & Scaling, comments closed). Featured and in-post image is the two rubber ducks photo (media 12460, `outputs/blog/different-is-better-than-better-part-2-two-ducks.jpg`) with a "Photo by Brad Switzer on Unsplash" caption. Numbers on both numbered lists are navy via a `navy-numbers` class plus a one-line style in a Custom HTML block inside the post (the theme colors list markers gold). All in-post links open in a new tab.
+- Set the search title and description in the DreamHost SEO panel (focus keyword "different is better than better"), linked "Part 2" in Part 1's "What comes next?" section, and re-saved the blog front page (11921) so its cached copy shows Part 2 as the cover story. All verified logged out.
+- Build notes: the post content was loaded into the page from a local JSON file through a temporary file input, then created as a draft with `wp.apiFetch`; a `core/html` block created with `createBlock` saved empty until its content was set with `updateBlockAttributes`. The gray Jackie saw behind the draft was the block editor's canvas; the published page is white.
+- Found, not fixed: all six `/topic/<slug>/` archive pages return the theme's 404 page on production, logged in or out. The taxonomy, terms, and REST queries are fine, and a permalink flush did not help. Handed off to a separate session ("Fix topic archive pages returning 404").
+- Added Jackie's note to content idea #3 (Strategic Perspective vs. Tactical Perspective): a later part or post should explain strategic perspective itself, why it is important, and how it contributes to immediate focus and clarity.
+
+### Training
+- Logged a 61-min, 3.16-mile walk (19:17/mile, HR 110, effort 3.9) in place of the usual Monday run/walk, because of the heat and new left knee pain (the knee felt better going uphill), plus a 21-min yoga session (HR 82, effort 0.3).
+- Built the 10/6 Day A worksheet (`personal/workout-logs/2026-10-06-day-a-worksheet.html`/`.pdf`) around the knee: nine exercises repeat 9/29 at the 25 lb top weight, Goblet Squat drops to 15 lb at chair depth, and Single-Leg Balance Reach is a second knee watch. Jackie sees the chiropractor on 10/6; their guidance on the knee overrides the worksheet.
+
+## 2026-10-04
+
+### Weekly Weigh-In and Day C
+- Weigh-in logged in `personal/health-goals.md`: 144.2 lbs (down 0.8 for the second week in a row), body fat 39.2% (unchanged, still the series high), waist 30.5 in (down 0.5, ties the series low), HRV 27. First weigh-in after a week on the fat-loss eating plan.
+- Day C logged: 55 min, HR 108, effort 3.8, after a 15-min, 0.81-mile warm-up. All eleven exercises done as written, and Jackie reported leg and arm both feeling much better with nothing aggravated, the first irritation-free strength session since 9/20. Single-Leg RDL, Renegade Row, Bird Dog, and Dead Bug are at clean session 2 of 3. The two-leg Glute Bridge and the 15-rep Band Pull-Apart were both clean. Jackie likes the two new arm exercises (palms-up Biceps Curl, Lying Triceps Extension); they stay on Day C.
+
+## 2026-10-03
+
+### Client Re-engagement: Specific Follow-up Dates Now Work; Rob Fleming, Maxine Fuller, Elyse Koenig
+- `check_reengagement.py` now treats a date in the roster's `next_checkin_due` column as a hand-set follow-up date that overrides the 6-month cadence, and `log_outreach.py` clears it once contact is logged (anything except `no_response`). Documented in `client-reengagement/README.md`. Pair the date with `priority` = `1` and use a Monday so the person lands in that week's 7am drafting batch.
+- Rob Fleming added to the roster as a prospect, not a past client (rob@onpointpublicity.com, last contact set to the 8/7 intro call date), follow-up date Mon Oct 26 for a Tue Oct 27 send. No record here of how the 8/7 call went.
+- Maxine Fuller: follow-up date Mon Dec 7 for a Tue Dec 8 send (Jackie asked for 2 to 3 months out; Dec 7 was chosen to land ahead of the holidays).
+- Three rows already had dates typed into `next_checkin_due` that the script had been ignoring. Diane Leonard (2027-01-04) is fine. Jo Lynn Deal (9/20) and Sherry Schaefer (9/15), both mastermind-conversation check-backs, now show as overdue at the bottom of the due list. Jackie had both dates cleared, so they return to the standard 6-month cadence (next due March 2027).
+- Elyse Koenig: the "reach back out in October" promise from Jackie's 9/8 reply had no date or reminder anywhere. Drafted the follow-up as a reply on the same thread; Jackie added a ":-D" and sent it herself 10/3. Logged `sent`. No mastermind or Forum mention; her HarperCollins-intro offer from 9/8 is still unanswered.
+- Jackie's edits on the first Elyse draft, saved to the re-engagement edit-patterns memory: no "circling back"-style office phrases, and no personal update (school, stats class) on a second touch with someone she has already told.
+- Session-start guidance: "Initialize my session" is no longer needed for single-subject sessions, since CLAUDE.md and saved memory load automatically; it is still useful for broad status, planning, or strategy sessions. CLAUDE.md updated to say so.
+
+### Training and Eating Plan
+- Logged the Saturday walk: 91 min, 4.74 mi (~19:12/mile), HR 126, effort 6.0. Third-fastest of the 4+ mile walks and the highest heart rate and effort score of any of them; Jackie attributes that to the heat (86 degrees).
+- Built the 10/4 Day C worksheet (`personal/workout-logs/2026-10-04-day-c-worksheet.html`/`.pdf`): same loads and reps as 9/27, nothing increases. Single-Leg Glute Bridge put on hold (hip soreness two Sundays in a row, plus the 10/1 hip bridge irritation) and replaced with the two-leg Glute Bridge at bodyweight; Band Pull-Apart dropped from 20 to 15 reps. Single-Leg RDL, Renegade Row, Bird Dog, and Dead Bug are on clean session 2 of 3.
+- Added two arm exercises to Day C at Jackie's request, different from Day A/B's Hammer Curl and Kickback: Dumbbell Biceps Curl, palms up (3 x 10 at 10 lb) and Lying Dumbbell Triceps Extension (3 x 10 at 8 lb each hand). Starting weights are a guess.
+- Added a Sweet Tooth List (eight fruit- and protein-based options plus two habits) and a sweet-tooth staples line to `personal/meal-planning.md`.
+
+## 2026-10-01
+
+### Training
+- Built the 10/1 Day B worksheet (`personal/workout-logs/2026-10-01-day-b-worksheet.html`/`.pdf`), the first full-length Day B since 9/17, with nothing increasing. Sumo Deadlift, Reverse Lunge, and Suitcase Carry dropped from 30 lb to 25 lb at 9/17's reps, matching the 9/29 decision to keep 25 lb as the working level. Hip Bridge returned at bodyweight, Face Pull without the pause, Lateral Raise back at 8 lb.
+- Two changes at Jackie's request before the session: Goblet Walk (12.5 lb, 3 x 30 ft) replaced the Single-Arm Overhead Press, and Hammer Curl and Triceps Kickback were added from Day A, making eleven exercises. Whether the Overhead Press returns and whether the arm exercises stay on Day B are both undecided.
+- Session logged: 61 min, HR 122, effort 4.9 (highest strength effort score so far), after a 13-min, 0.60-mile warm-up walk. All eleven exercises done as written, Side Plank without the 10 lb weight. Suitcase Carry went really well. Stability Ball Hip Bridge irritated the left glute again at bodyweight (second Day B in a row), so it goes back on hold for the next Day B. Lateral Raise irritated the left arm on the first set and then eased, so it holds at 8 lb as a watch exercise. Face Pull: no irritation reported.
+
 ## 2026-09-29 to 2026-09-30
 
 ### 2027 Mastermind and Forum Dates Set

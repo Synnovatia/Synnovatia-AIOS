@@ -8,22 +8,24 @@
 
 | Segment | Definition | Count (as of 2026-07-12) | Verified |
 |---|---|---|---|
-| Active Engagers | Opened/clicked a marketing email in the last 90 days | 330 (updated 2026-08-02, was 340) | Confirmed exact match via HubSpot property filter (`hs_email_last_open_date`/`hs_email_last_click_date`) |
-| Drifting | 90-180 days since last engagement | 382 | Jackie's stated number — HubSpot List membership isn't queryable via this connector, so treated as ground truth rather than independently verified (a rough date-filter approximation found only 88, confirming saved-list logic is more precise than raw property filters) |
-| Lapsed | 180+ days since last engagement | 511 | Same as above — ground truth from Jackie |
+| Active Engagers | Opened/clicked a marketing email in the last 90 days | 260 (updated 2026-10-05; was 330 on 2026-08-02, 340 originally). Rolling filter (last marketing email open in the last 90 days), so it needs no manual date refresh | Confirmed exact match via HubSpot property filter (`hs_email_last_open_date`/`hs_email_last_click_date`) |
+| Drifting | 90-180 days since last engagement | 156 (updated 2026-10-05, window April 8 – July 7, 2026; was 104 on the stale Feb 9 – May 10 window set 2026-08-07; originally 382) | Jackie's stated number — HubSpot List membership isn't queryable via this connector, so treated as ground truth rather than independently verified (a rough date-filter approximation found only 88, confirming saved-list logic is more precise than raw property filters) |
+| Lapsed | 180+ days since last engagement | 481 (updated 2026-10-05, cutoff April 7, 2026 or earlier; originally 511) | Same as above — ground truth from Jackie |
 | Messy Middle-fit women | Women who fit the Messy Middle mastermind criteria | 397 | Ground truth from Jackie — cuts across the above segments, used to route the mastermind-specific CTA |
 
 ## Cadence & Strategy Per Segment
 
-### Active Engagers (340) — Biweekly, direct CTA
+### Active Engagers (260) — Biweekly, direct CTA
 Warm audience. Go direct:
 - **Messy Middle-fit women (397, overlapping subset):** invite to apply for the Mastermind for the Messy Middle
 - **Everyone else:** book a "solutions on the fly" call, or Seven Figure Forum invite if revenue fit ($1M+)
 
 **Draft cadence (updated 2026-08-02):** the `hubspot-active-engagers-draft` scheduled task now fires every Thursday at 6am Pacific, ~6 days ahead of each biweekly Wednesday send, instead of the prior 2nd/16th-of-month schedule (which had drifted onto a Sunday). Since cron can't express a true 14-day interval, the task self-checks the Send Performance Log below each run and skips drafting if one was already produced in the last ~10 days.
 
-### Drifting (382) — Monthly, value-first
+### Drifting (156) — Monthly, value-first
 Not pitchy — goal is re-earning attention before they go fully cold. Thought leadership, useful content, warm reconnection tone. Home of the "What I'm Watching" thread (see below).
+
+**Segment dates are fixed, not rolling (found 2026-10-05):** the Drifting list in HubSpot is built on fixed calendar dates, so it goes stale unless Jackie refreshes it by hand. The window set 2026-08-07 (Feb 9 – May 10) was never moved, so the 09/02 and 09/30 sends went to contacts 116–233 days out, colder than the 90–180 day definition. Refreshed 2026-10-05 to April 8 – July 7 (156 contacts). Before each Drifting send, confirm the window was refreshed: 90 days and 180 days back from the send date. The same check applies to Lapsed's cutoff (180+ days). Active Engagers is on a rolling 90-day filter (confirmed 2026-10-05) and needs no refresh. Read the 09/02 and 09/30 open rates in the Send Performance Log with this in mind; the first send on the corrected window is the fairer test of the format.
 
 **Standing send day: Wednesdays** (decided 2026-07-28, to match the day Active Engagers sends tend to land on). First real send (using live `what-im-watching-cloud` research instead of the earlier generic placeholder) goes out 2026-07-29.
 
@@ -31,7 +33,9 @@ Not pitchy — goal is re-earning attention before they go fully cold. Thought l
 
 **Reply-ask experiment (2026-07-29 send only, not yet a standing rule):** the drafted "no CTA, no ask" closer got replaced in Jackie's final edit with a genuine reply-engagement ask ("hit reply and let me know what you found most helpful") — driven by her own curiosity about reception, since this is the first "What I'm Watching" send to this segment, not a deliberate permanent strategy shift. Watch reply volume/content on this send before deciding whether to make it standing for future Drifting/Lapsed sends or drop back to pure value-only with no ask.
 
-### Lapsed (511) — Bi-monthly (every ~6-8 weeks), pure value, no ask
+### Lapsed (481) — Bi-monthly (every ~6-8 weeks), pure value, no ask
+**Segment cutoff is a fixed date, not rolling:** refreshed 2026-10-05 to April 7, 2026 or earlier (481 contacts). Confirm the cutoff is 180 days back from the send date before each Lapsed send, same as the Drifting check above.
+
 **Decided 2026-07-12:** explicitly NOT a repeat of the previous "we miss you" / "should we stay in touch" win-back sequence Jackie already ran. Instead: fold into the same "What I'm Watching" content thread as Drifting, at lower frequency (deliverability best practice — don't over-mail cold contacts). No CTA, no ask. The rebrand itself is the quiet reason to notice her again. If someone re-engages, they naturally move to Drifting/Active cadence based on actual behavior — no explicit opt-back-in moment needed.
 
 **Draft cadence (updated 2026-08-03):** the `hubspot-lapsed-draft` scheduled task now fires every Thursday at 6am Pacific instead of the prior fixed 23rd-of-odd-months/10am schedule — same drift-avoidance fix as Active Engagers and Drifting. The task self-checks for a Lapsed draft in the last ~45 days and skips if one's already been produced this cycle.
@@ -85,7 +89,7 @@ Every HubSpot marketing email draft Claude creates should now carry this styling
 - **Style learning (added 2026-08-06):** `hubspot-send-stats-tracker` now also diffs the original markdown draft against the final shipped copy (via PREVIEW_CONTENT) once a send clears the 5-day stats window, and appends a plain-English description to `outputs/hubspot-marketing/style-learning-log.md`. That's a raw log, not standing guidance. A separate monthly task, `hubspot-style-pattern-review` (1st of the month), reads the accumulated log for edits that repeat across 2+ sends and texts Jackie a candidate rule to confirm — it never writes to this file or a memory file unsupervised. A pattern only becomes real guidance once she confirms it live, same as how the existing LinkedIn and re-engagement email edit-pattern memories were captured.
 - Claude drafts email copy; Jackie builds/sends via HubSpot (no direct tool access to HubSpot's email/workflow creation)
 - Brand voice throughout: peer not guru, precise not generic, warm not soft, confident not boastful, equip not help (see `context/brand-voice.md`)
-- List segmentation (382/511/397) lives in Jackie's HubSpot Lists — Claude can't query these directly, relies on Jackie's counts
+- List segmentation (Drifting 156 as of 2026-10-05 / Lapsed 481 as of 2026-10-05 / Messy Middle-fit 397) lives in Jackie's HubSpot Lists — Claude can't query these directly, relies on Jackie's counts
 
 ## Handling Unsubscribes (decided 2026-07-26)
 
@@ -105,6 +109,9 @@ Running record of real send stats, newest first. Benchmarks for consulting/profe
 
 | Date | Segment | Open | Click (of sent) | CTOR | Bounce | Unsub | Notes |
 |---|---|---|---|---|---|---|---|
+| 2026-09-30 | Active Engagers (249 delivered) | 27.71% | 1.20% (3 clicks) | 4.35% | 0 | 0 (0.00%) | "Different Is Better Than Better" Part 1 blog email, sent to lists 400 + 404 together, replacing the planned Q4 call email. **Best click performance logged for this segment** — 3 unique clickers (5 total clicks), ahead of the 07/22 direct-CTA send (0.86%) and well ahead of 09/02 (0.41%). Open rate (27.71%) is the lowest of the five Active Engagers sends logged, below the ~36% seen on 08/05 and 09/02, though still above the 20-25% benchmark. Second clean send in a row with zero unsubs and zero bounces. First Active Engagers email in four weeks (no 09/16 send went out). Shipped nearly as drafted — see style-learning-log entry same date. |
+| 2026-09-30 | Drifting (104 delivered) | 3.85% | 0.00% | 0.00% | 0 | 0 (0.00%) | Third "What I'm Watching" send to Drifting, carrying the same body as the Lapsed send below. **Open rate fell again and is now the lowest logged for this segment** (10.89% on 07/29, 6.25% on 09/02, 3.85% here) — only 4 human opens out of 104. The bot-inclusive figure is 24.04% (25 opens), so most recorded opens are automated scanners. The more concrete subject line tried this cycle did not lift opens. Unsub and bounce both clean. Three sends in a row of decline is a trend worth a decision on whether this segment's format or cadence should change. |
+| 2026-09-30 | Lapsed (398 delivered of 401 sent) | 2.01% | 0.00% | 0.00% | 3 (1 hard, 2 soft; 0.75%) | 1 (0.25%) | Second Lapsed send logged. **Lowest open rate of any send in this table** — 8 human opens out of 398, down from 8.24% on 08/12. Bot-inclusive opens read 25.63% (102), the same wide gap seen on Drifting. Unsub stayed in healthy range and bounces are small. Delivered count (398) is down from 449 on 08/12. Same subject line and body as the Drifting send the same day, and both landed at 2-4%, so the low opens look like a list-attention problem more than a subject-line one. |
 | 2026-09-02 | Active Engagers (241 delivered) | 35.68% | 0.41% (1 click) | 1.16% | 0 | 0 (0.00%) | General direct-CTA send (Draft 1 only — the Messy Middle Draft 2 stayed held, as planned). **First real unsub-free send logged in this table** and open rate settled back to the ~36% range seen on 08/05, down from 08/19's outlier 50.42% spike. First click recorded since the 07/22 send — modest (1 of 241), but breaks the two-send zero-click streak (08/05, 08/19). Shipped copy diverged from the drafted version in several real ways — see style-learning-log entry same date. Delivered count (241) again well under the registered ~330 contacts, consistent with the pattern seen on prior sends (list-exclusion filtering, not a send error). |
 | 2026-09-02 | Drifting (112 delivered) | 6.25% | 0.00% | 0.00% | 0 | 0 (0.00%) | Second-ever "What I'm Watching" send to Drifting. **Open rate (6.25%) is the lowest logged for this segment** — below even the already-sub-benchmark 07/29 send (10.89%) — though unsub improved to a clean 0%, down from 07/29's 0.99%. Zero clicks continues to be the norm for this no-hard-CTA format, expected by design. Delivered count (112) is closer to the segment's registered 382 than the 07/29 send's 101, though still well under it. Shipped copy was essentially identical to the drafted "FINAL" version — see style-learning-log entry same date; this one went out close to as-drafted, unlike the Active Engagers send logged above. |
 | 2026-08-19 | Active Engagers (236 delivered) | 50.42% | 0.00% | 0.00% | 0 | 1 (0.42%) | **Shipped content bears no resemblance to either drafted version** — see style-learning-log entry same date; this wasn't the planned direct-CTA "book a call" send at all, it was a different economic-commentary piece linking out to an existing blog post, with no CTA button. Delivered count (236) is well under the segment's registered ~330 contacts and doesn't match either drafted list size — no separate Messy Middle-fit email was found sent this cycle, only this one general-list send. **Open rate (50.42%) is by far the highest logged in this table** — more than double every prior send — but with zero clicks and no CTA in the shipped copy, there's nothing to attribute engagement to beyond the open itself. Unsub and bounce both stayed healthy. |

@@ -117,6 +117,10 @@ def main():
         })
         write_csv(MEETING_NOTES, ["email","name","meeting_date","notes","opportunity","next_action","post_call_email_status"], meeting_rows)
 
+    # Contact happened, so any hand-set follow-up date has been honored.
+    if args.action != "no_response":
+        person["next_checkin_due"] = ""
+
     write_csv(ROSTER, fieldnames, rows)
     write_csv(LOG, log_fieldnames, log_rows)
     print(f"Updated {args.email}: status={person['status']} as of {action_date.isoformat()}")

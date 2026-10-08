@@ -104,6 +104,15 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 - **Candy Messer, Diane Leonard, Elyse Koenig, Carolynn Aristone** — no new mail since the last check; plans unchanged.
 - No retirements, closures, or other status changes surfaced this round.
 
+**2026-10-05 (status check):** First check since the Q4 2026 Messy Middle round was canceled (2026-10-02). Target is now the Q1 2027 cohort starting Jan 8, 2027. Reconciled every named candidate against `roster.csv`, `outreach_log.csv`, and Gmail (trash-inclusive, since 9/19).
+- **Two real 9/24 sends were missing from the roster, now logged `sent`:** **Jo Lynn Deal** ("Mastermind?" — a direct Messy Middle invitation from Jackie listing the October–December dates and telling her she doesn't need to apply) and **Sherry Schaefer** ("Thinking of you!", found only in Trash; body not readable through the Gmail connector). No reply to either in 11 days.
+- **Jo Lynn Deal's invitation now points at a canceled round.** The 10/2 cancellation email went only to the four current members, so she still holds October dates that no longer exist. Needs a correction from Jackie with the January dates.
+- **Elyse Koenig** — Jackie sent the promised October follow-up 10/3 asking for a Zoom catch-up; awaiting reply (2 days). Forum-or-Messy-Middle question still to be raised on that call, not before.
+- **New external name via Amy Hage:** a "Jill" connected to 3D Leadership (not Jill Cohen), an independent contractor. Jackie told Amy 9/23 the contractor status doesn't matter if she'd fit the room; Amy planned to talk with her over coffee. No surname or email on file yet.
+- No replies found from anyone else in the "contacted, no response yet" group. Meridith Powell, Elizabeth Teliz-McQuarrie, and Christine Meshell remain untouched.
+- No retirements or closures among active candidates this round. (Maxine Fuller, already excluded as retired, had a warm catch-up conversation with Jackie around 10/3 — relationship only.)
+- No application close date or invitation send date is set yet for the January cohort. 13.5 weeks remain until Jan 8. By the `context/mastermind-launch.md` timeline, the invitation would send around Nov 27 (the day after Thanksgiving) and applications would close around Dec 25 — both dates need moving earlier.
+
 ---
 
 ## What the data could and couldn't tell us

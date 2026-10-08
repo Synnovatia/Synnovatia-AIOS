@@ -21,6 +21,21 @@ Goal is losing fat, not weight (body recomposition): keep or build muscle from t
 - **Alcohol:** keep drinks to a couple of nights a week. Jackie traced the 9/20 setback to stress → alcohol → poor sleep → poor eating.
 - **Saturday burger night is unchanged.**
 
+### Sweet Tooth List (added 2026-10-03)
+
+Fruit- and protein-based options that fit the fat-loss focus:
+
+- Plain Greek yogurt with berries and cinnamon (a teaspoon of honey if needed); counts toward the protein target
+- Frozen grapes, or a frozen banana blended into soft-serve
+- Apple slices with a tablespoon of peanut or almond butter
+- Warm cinnamon apple: sliced apple, cinnamon, microwave about two minutes
+- Dark chocolate, 70% or higher: one or two squares after dinner
+- Two dates stuffed with a walnut or almond butter (two is the serving)
+- Papaya or berries with a squeeze of lime
+- Chocolate yogurt: a teaspoon of unsweetened cocoa and a little honey stirred into plain Greek yogurt
+
+Habits: have the sweet thing right after a meal, and decide the portion before starting (in a bowl, rest put away).
+
 When building menus and shopping lists, hit the protein target at every meal and include enough eggs, Greek yogurt, and lunch protein (turkey, chicken, canned tuna) for the upgrades above.
 
 ## Typical Meals
@@ -51,6 +66,8 @@ When building menus and shopping lists, hit the protein target at every meal and
 ## Usual Purchase List (baseline for sale-matching)
 
 Eggs (about 2 dozen/week for 2-egg breakfasts), plain Greek yogurt, bread (toast), papaya, turkey slices, canned tuna, deli cheese, salad greens/vegetables, fish, chicken breast, beef, pork chops
+
+Sweet tooth staples (added 2026-10-03, buy as needed): berries, apples, bananas, grapes, limes, dates, dark chocolate (70%+), unsweetened cocoa, cinnamon, honey, peanut or almond butter, walnuts
 
 ---
 
