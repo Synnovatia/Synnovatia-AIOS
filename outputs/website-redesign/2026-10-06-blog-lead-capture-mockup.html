@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog lead capture mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D1F4E; --navy-deep:#091735; --gold:#B29200; --gold-dk:#806A00; --gold-lt:#F5C842;
+  --teal:#0F6E56; --teal-lt:#5DCAA5; --offwhite:#F7F6F2; --body:#444441; --gray:#EAEAEA; --lt-navy:#E8ECF5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#DAD8D1;font-family:Barlow,Arial,sans-serif;color:var(--body);font-size:17px;line-height:1.7}
+.note{max-width:1100px;margin:0 auto;padding:40px 24px 12px}
+.note h1{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--navy);font-size:30px;line-height:1.25;margin:0 0 10px}
+.note h2{font-family:"Barlow Condensed",Arial,sans-serif;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:14px;color:var(--navy);margin:44px 0 6px}
+.note p{margin:0 0 6px;font-size:16px;line-height:1.6}
+.frame{max-width:1100px;margin:14px auto 0;background:#fff;border:1px solid #C9C6BC;overflow:hidden}
+
+/* stand-ins for what is already on the page */
+.ghost{padding:26px 48px;font-family:"Barlow Condensed",Arial,sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:13px;text-align:center}
+.ghost.article{background:#fff;color:#8A8A85;border-bottom:1px solid var(--gray)}
+.ghost.related{background:var(--offwhite);color:#8A8A85;border-top:1px solid var(--gray)}
+.ghost.topics{background:var(--navy);color:rgba(255,255,255,.6)}
+.ghost.cta{background:var(--navy-deep);color:rgba(255,255,255,.6)}
+.ghost.latest{background:#fff;color:#8A8A85}
+.ghost.foot{background:var(--navy-deep);color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.12);font-weight:400;letter-spacing:.04em;text-transform:none;font-family:Barlow,Arial,sans-serif}
+
+.eyebrow{font-family:"Barlow Condensed",Arial,sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:var(--gold-dk);margin:0 0 14px}
+.btn{display:inline-block;font-family:"Barlow Condensed",Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--teal);border:2px solid var(--teal);border-radius:10px;padding:16px 40px;cursor:pointer}
+.btn:hover{background:transparent;color:var(--teal)}
+
+/* 1. assessment band on every post */
+.assess{background:var(--lt-navy);padding:72px 48px}
+.assess-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.5fr auto;gap:56px;align-items:center}
+.assess h2{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--navy);font-size:34px;line-height:1.2;margin:0 0 16px}
+.assess p{margin:0;max-width:620px}
+
+/* 2. sign-up band on the blog front page and All Posts */
+.signup{background:var(--lt-navy);padding:72px 48px;text-align:center}
+.signup h2{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--navy);font-size:34px;line-height:1.2;margin:0 0 14px}
+.signup p{margin:0 auto 30px;max-width:560px}
+.fields{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.fields input{font:inherit;font-size:16px;color:var(--body);background:#fff;border:1px solid #B9C1D6;border-radius:10px;padding:14px 16px;width:230px}
+.fine{font-size:14px;color:#6B6B66;margin:18px 0 0 !important}
+
+/* 3. slim sign-up row above the footer, on every post */
+.footrow{background:var(--navy-deep);padding:36px 48px;border-top:1px solid rgba(255,255,255,.12)}
+.footrow-inner{max-width:1000px;margin:0 auto;display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.footrow .lead{font-family:Fraunces,Georgia,serif;font-weight:500;color:#fff;font-size:22px;line-height:1.3;margin:0}
+.footrow .lead span{display:block;font-family:Barlow,Arial,sans-serif;font-weight:400;font-size:15px;color:rgba(255,255,255,.7);margin-top:4px}
+.footrow .fields{justify-content:flex-start}
+.footrow .fields input{border-color:transparent;width:250px}
+.footrow .btn{background:var(--teal-lt);border-color:var(--teal-lt);color:var(--navy-deep)}
+.footrow .btn:hover{background:transparent;color:var(--teal-lt)}
+
+@media (max-width:800px){
+  .assess,.signup{padding:52px 24px}
+  .assess-inner{grid-template-columns:1fr;gap:28px}
+  .assess h2,.signup h2{font-size:28px}
+  .fields input,.footrow .fields input{width:100%}
+  .fields .btn{width:100%;text-align:center}
+  .footrow{padding:32px 24px}
+  .ghost{padding:20px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="note">
+  <h1>Blog lead capture: three placements</h1>
+  <p>Gray labels stand in for sections already on the live pages. The colored bands are the new pieces. Buttons and fields here are for layout only.</p>
+</div>
+
+<div class="note"><h2>1. Assessment band, on every blog post</h2>
+<p>Sits directly under the article, ahead of “More From [Topic].” The reader has just finished the piece, so this is the first thing offered.</p></div>
+<div class="frame">
+  <div class="ghost article">End of the article and topic tag</div>
+  <section class="assess">
+    <div class="assess-inner">
+      <div>
+        <div class="eyebrow">Free assessment</div>
+        <h2>See exactly where your business needs attention.</h2>
+        <p>The Core Business Assessment is a hundred questions across the ten areas that decide whether your business can run without you. Score yourself in one sitting and you’ll know where to focus first.</p>
+      </div>
+      <a class="btn" href="#">Take the free assessment</a>
+    </div>
+  </section>
+  <div class="ghost related">More From Growth &amp; Scaling (three related posts)</div>
+  <div class="ghost topics">Browse by Topic</div>
+  <div class="ghost cta">Stuck somewhere in the Middle? · Start the Conversation</div>
+</div>
+
+<div class="note"><h2>2. Email sign-up band, on the blog front page and All Posts</h2>
+<p>Sits between “The Latest” and “Browse by Topic.” The form itself would be a HubSpot form, so new sign-ups land in your contacts automatically.</p></div>
+<div class="frame">
+  <div class="ghost latest">Cover Story and The Latest</div>
+  <section class="signup">
+    <div class="eyebrow">Perspective by email</div>
+    <h2>Stay in the loop.</h2>
+    <p>I’ll send a note when there’s something noteworthy on growing a bootstrapped B2B service business. Unsubscribe anytime.</p>
+    <div class="fields">
+      <input type="text" placeholder="First name" aria-label="First name">
+      <input type="email" placeholder="Email address" aria-label="Email address">
+      <a class="btn" href="#">Sign me up</a>
+    </div>
+    <p class="fine">We never share your email address.</p>
+  </section>
+  <div class="ghost topics">Browse by Topic</div>
+  <div class="ghost cta">Start the Conversation</div>
+</div>
+
+<div class="note"><h2>3. Slim sign-up row, above the footer on every post</h2>
+<p>A quieter second chance for readers who scroll to the bottom without taking the assessment or booking a conversation.</p></div>
+<div class="frame">
+  <div class="ghost cta">Stuck somewhere in the Middle? · Start the Conversation</div>
+  <section class="footrow">
+    <div class="footrow-inner">
+      <p class="lead">Stay in the loop<span>A note when there’s something noteworthy on growing a bootstrapped B2B service business.</span></p>
+      <div class="fields">
+        <input type="email" placeholder="Email address" aria-label="Email address">
+        <a class="btn" href="#">Sign me up</a>
+      </div>
+    </div>
+  </section>
+  <div class="ghost foot">© Synnovatia 2026 · Strategic Business Coaching · Privacy Policy/Terms of Service</div>
+</div>
+
+<div style="height:60px"></div>
+</body>
+</html>

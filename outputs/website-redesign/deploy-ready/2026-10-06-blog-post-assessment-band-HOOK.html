@@ -1,0 +1,36 @@
+<style>
+body.single-post .spt-assess { background: #E8ECF5; padding: 72px 48px; width: 100vw; position: relative; left: 50%; transform: translateX(-50%); box-sizing: border-box; }
+body.single-post .spt-assess-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr auto; gap: 56px; align-items: center; }
+body.single-post .spt-assess-eyebrow { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #806A00; margin: 0 0 14px; }
+body.single-post .entry-content h2.spt-assess-h2 { font-family: Fraunces, serif !important; font-weight: 700 !important; font-size: 34px !important; line-height: 1.2 !important; color: #0D1F4E !important; margin: 0 0 16px !important; }
+body.single-post .entry-content p.spt-assess-sub { font-family: Barlow, sans-serif; font-size: 17px; line-height: 1.75; color: #444441; margin: 0 !important; max-width: 620px; }
+body.single-post .entry-content a.spt-assess-btn { display: inline-block; font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none !important; color: #FFFFFF !important; background: #0F6E56 !important; border: 2px solid #0F6E56; border-radius: 10px; padding: 16px 44px; white-space: nowrap; transition: background .2s, color .2s; }
+body.single-post .entry-content a.spt-assess-btn:hover { background: transparent !important; color: #0F6E56 !important; }
+@media (max-width: 880px) {
+  body.single-post .spt-assess { padding: 52px 24px; }
+  body.single-post .spt-assess-inner { grid-template-columns: 1fr; gap: 28px; }
+  body.single-post .entry-content h2.spt-assess-h2 { font-size: 28px !important; }
+  body.single-post .entry-content a.spt-assess-btn { white-space: normal; text-align: center; }
+}
+</style>
+<script>
+(function () {
+  function addAssessmentBand() {
+    if (document.querySelector('.spt-assess')) return;
+    var anchor = document.querySelector('.spt-related') || document.querySelector('.spt-topics') || document.querySelector('.spt-cta');
+    if (!anchor) return;
+    var band = document.createElement('section');
+    band.className = 'spt-assess';
+    band.innerHTML =
+      '<div class="spt-assess-inner"><div>' +
+      '<div class="spt-assess-eyebrow">Free assessment</div>' +
+      '<h2 class="spt-assess-h2">See exactly where your business needs attention.</h2>' +
+      '<p class="spt-assess-sub">The Core Business Assessment is a hundred questions across the ten areas that decide whether your business can run without you. Score yourself in one sitting and you’ll know where to focus first.</p>' +
+      '</div>' +
+      '<a class="spt-assess-btn" href="/free-business-assessment/" target="_blank" rel="noopener noreferrer">Take the free assessment</a>' +
+      '</div>';
+    anchor.parentNode.insertBefore(band, anchor);
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', addAssessmentBand); } else { addAssessmentBand(); }
+})();
+</script>

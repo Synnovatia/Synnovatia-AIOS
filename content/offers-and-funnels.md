@@ -3,13 +3,20 @@
 > Your active offers, sales funnels, and how content connects to revenue.
 > This file is read by /develop to ensure every piece of content has a strategic path to your business goals.
 >
-> **Last updated:** 2026-07-27
+> **Last updated:** 2026-10-06
 
 ---
 
 ## Active Offers
 
-**No free offer/lead magnet currently active.** The blog sidebar still links to a "Core Business Assessment" download, but Jackie confirmed (2026-07-27) it's outdated and being retired — `/develop` should not reference or link to it. Blog CTAs stay light with no specific free-offer path until a replacement exists.
+### Free offer: Core Business Assessment (active as of 2026-10-06)
+
+- **What:** The rebranded hundred-question, self-scored diagnostic across ten business areas, delivered as a direct download after a short HubSpot form
+- **Who it's for:** Any segment not yet ready for a conversation
+- **CTA in content:** "Take the free assessment"
+- **Link:** `/free-business-assessment/`
+- **Where it's promoted:** homepage hero, The Messy Middle page, and a band under the article on every blog post (GP Elements hook "Blog Single-Post Assessment Band," element 12480, added 2026-10-06). `/develop` can reference and link to it.
+- **Still to come:** an email sign-up ("Stay in the loop") on the blog front page, All Posts, and above the footer on posts. Waiting on a new HubSpot form from Jackie.
 
 ### 1. Solutions on the Fly (as-needed 1:1 consulting) — $140/30min, $275/60min
 

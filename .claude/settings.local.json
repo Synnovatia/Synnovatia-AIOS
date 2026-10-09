@@ -376,7 +376,12 @@
       "Bash(awk -F, '$1>=\"2026-09-28\"{print $1\",\"$2}' personal/workout-logs/session-log.csv)",
       "Bash(awk '/Send Performance Log/{f=1} f' context/hubspot-marketing.md)",
       "Bash(python3 scripts/log_outreach.py sent jolynndeal@mymarketingcafe.com --date 2026-09-24)",
-      "Bash(python3 scripts/log_outreach.py sent sscargo1001@gmail.com --date 2026-09-24)"
+      "Bash(python3 scripts/log_outreach.py sent sscargo1001@gmail.com --date 2026-09-24)",
+      "Bash(awk '/<body/{p=1} p' outputs/morning-brief/brief.html)",
+      "Bash(awk '/<\\\\/style>/{f=1} f' brief.html)",
+      "Bash(pandoc outputs/hubspot-marketing/2026-09-25-active-engagers-dib-blog.docx -t plain)",
+      "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__tool_guidance",
+      "Bash(awk '/<body/{f=1} f' outputs/morning-brief/brief.html)"
     ]
   }
 }
