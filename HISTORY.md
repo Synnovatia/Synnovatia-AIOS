@@ -8,6 +8,12 @@
 
 ---
 
+## 2026-10-10
+
+### Expansion Assessment Cover Revised
+- Jackie asked whether the Stage II cover page was necessary; kept it (it's the only place that confirms "this is the Expansion version" before the reader is deep into the sections) but reworked the content per her follow-up direction: title changed to "The Expansion Business Assessment" (was the shared "The Core Business Assessment" title both stages launched with), the "STAGE II · EXPANSION" eyebrow above the title removed, and the tagline swapped from Stage I's "Your Roadmap to Less Stress and Predictable Growth" (a stress/overwhelm frame that doesn't fit this stage) to "Your Roadmap to Systems That Keep Pace With Your Growth," echoing the "you've outgrown the system and strategy that got you here" language already approved on the routing page mockup rather than inventing new framing.
+- `build_assessment_pdf.py`'s cover builder now takes an optional eyebrow and a per-stage title/tagline instead of hardcoding Stage I's copy; Stage I's PDF was rebuilt from the same script and is visually unchanged. `outputs/core-business-assessment/2026-10-09-core-business-assessment-stage2-expansion-fillable.pdf` updated in place (field count, page count, and calculation wiring unaffected — cover text only).
+
 ## 2026-10-09
 
 ### Core Business Assessment Split: Two Fillable, Auto-Calculating PDFs Built
