@@ -10,6 +10,14 @@
 
 ## 2026-10-11
 
+### Expansion Assessment: 4 More Items to Round Out at an Even 50
+- Jackie asked for ideas to bring the item count up to a round 50. Proposed 4 candidates grounded in the Stages of Business Growth & Development chart's own named Stage II challenges rather than invented filler (space requirements change, high employee turnover), she approved all four, added:
+  - Product and Service Development (+1): pricing re-evaluated as the business grows, placed alongside the section's existing Stage I pricing item for consistency.
+  - Operational System Development (+2): physical space/infrastructure fit for the business's current size (directly answers the Stages chart's "space requirements change"); core legal documents (contracts, employee handbooks, IP protections) kept current.
+  - Personnel and Vendor Development (+1): a retention plan that goes beyond compensation (directly answers the Stages chart's "high employee turnover"), placed next to the hiring/onboarding item added in the prior round.
+- Stage II's total went from 46 to 50. Recalculated and verified everywhere: Instructions now says "50 in total, ranging from a single statement in some sections to twelve in others" (Personnel and Vendor is now the largest section at 12), every affected section's "TOTAL (out of N)," the Progress Chart's column headers and "TOTAL SCORE (out of 50)." Checked the two largest pages after the additions — Operational System Development (11 items alone) and Personnel and Vendor Development (12 items alone) — both still fit on one page with room to spare.
+- Verified after rebuild: 50 checkboxes, 107 fields, calculation wiring intact (Operations and Personnel & Vendor score fields reference 11 and 12 checkboxes respectively; `Total Score` still last in `/CO`). Stage I re-rendered unchanged (65 checkboxes, 122 fields).
+
 ### Expansion Assessment: The 6 Flagged Gap Areas Added, Plus a Software-Review Item; Now 46 Total
 - Jackie asked for all 6 previously-flagged gap areas turned into real assessment items (first-person, matching the existing voice), placed under whichever section fit best, plus a new item about re-evaluating software subscriptions annually. Added 7 items total, each tagged stage 2 only (Stage I and both docx files untouched):
   - Personnel and Vendor Development (+2): a management layer that can make key decisions without the owner; a repeatable hiring and onboarding process.
