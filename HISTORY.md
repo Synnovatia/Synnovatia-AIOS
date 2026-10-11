@@ -10,6 +10,11 @@
 
 ## 2026-10-11
 
+### Core Business Assessment (Stage I): New Cover Tagline
+- Replaced the cover tagline "Your Roadmap to Less Stress and Predictable Growth" with "Proof Your Business Model Carries Predictable Growth." Jackie wanted to keep "Predictable Growth" and reframe around proving the business model holds; went through a couple of rounds (she flagged "can" as not fitting the tone she wanted — more "now," less conditional — so "carries" replaced "can carry/can hold" in the finalists).
+- Fits on one line on the cover at the existing tagline font size/position, no layout changes needed. Verified via rendered cover image. No other page references the tagline, so no further propagation needed.
+- Verified after rebuild: 65 checkboxes, 122 fields, 14 pages, unchanged. Stage II unaffected.
+
 ### Core Business Assessment (Stage I): Eyebrow Removed, Welcome Trimmed, Booking Link + 3 Inline Blog Links Added, One Section Merge
 - Work shifted to Stage I for the first time this session — Stage I had been untouched since the Stage I/II split while all prior edits targeted Stage II.
 - Cover: removed the "STAGE I · CORE BUSINESS DEVELOPMENT" eyebrow (`eyebrow=None`), matching Stage II's cleaner cover layout. Tagline left as-is ("Your Roadmap to Less Stress and Predictable Growth") pending Jackie's decision on a replacement built around "Predictable Growth."
