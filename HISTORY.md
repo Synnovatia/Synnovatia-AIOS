@@ -10,6 +10,16 @@
 
 ## 2026-10-11
 
+### Core Business Assessment (Stage I): Cover/Welcome Trims, Recommendations #2+#3 Merged (Fixes Stage II Too), 2 More Inline Blog Links, 1 Item Reworded
+- Cover: removed ", focused on client acquisition" from the revenue line, now just "For service businesses with $0–$500,000 in revenue."
+- Welcome page: removed "Ready to get started?" from the closing line, now just "Let's do this!"
+- Instructions page: "One more thing..." claimed "two recommendations" but rendered three ever since the booking-link item was added last round. Combined #2 ("Review this assessment with a trusted business coach or advisor") and #3 ("Schedule a conversation to review it together") into a single item — original review text plus the booking-CTA text plus the inline "Find a Time That Works" link, all under one "2." heading — restoring an accurate "two recommendations" without editing that lead sentence. Rebuilt the shared rendering logic in `build_instructions()` (previously the review text used a plain `sub_numbered()` call and the booking link rendered as a separate numbered block; now item 2 renders its own merged body with the same same-line-or-wrap link placement the booking block used) so it always renders exactly 2 items, with or without a configured `booking_cta`.
+- This same "two recommendations, three items" bug existed in the Business Expansion Assessment too, since it shares this code and got its booking-CTA item in the same earlier session — fixed there automatically by the same code change. Re-sent the Stage II PDF alongside this one so the correction is live on both; no other Stage II content changed.
+- Added 2 more inline blog links in Product and Service Development: "market tier" and "current lifecycle," each linking to their respective blog posts, using the same `ITEM_LINKS` mechanism built for Stage I's earlier three links.
+- Accounting and Financial Growth's first item reworded from "I have created a detailed budget that guides my decisions" to "I use a detailed budget that guides my decisions."
+- Verified after rebuild: Stage I still 65 checkboxes/122 fields/14 pages; Stage II still 50 checkboxes/107 fields/11 pages. Confirmed all link annotations present on both (7 total on Stage I: Calendly + 6 inline blog links; 1 on Stage II: Calendly). Rendered and visually inspected Stage I's Welcome, Instructions, Product and Service, and Accounting pages, plus Stage II's Instructions page — all clean, no overflow.
+- Jackie asked whether any Personnel and Vendor Development gap exists worth adding for Stage I ($0–$500K) businesses — answered with candidate items in chat, not yet added to the PDF pending her decision.
+
 ### Core Business Assessment (Stage I): New Cover Tagline
 - Replaced the cover tagline "Your Roadmap to Less Stress and Predictable Growth" with "Proof Your Business Model Carries Predictable Growth." Jackie wanted to keep "Predictable Growth" and reframe around proving the business model holds; went through a couple of rounds (she flagged "can" as not fitting the tone she wanted — more "now," less conditional — so "carries" replaced "can carry/can hold" in the finalists).
 - Fits on one line on the cover at the existing tagline font size/position, no layout changes needed. Verified via rendered cover image. No other page references the tagline, so no further propagation needed.
