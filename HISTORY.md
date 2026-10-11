@@ -8,6 +8,10 @@
 
 ---
 
+### Split Routing-Page Mockup: Real Logo Swapped In (Nav + Footer)
+- Jackie asked for the logo sized to match the live site. The mockup's nav and footer had been using a styled text wordmark ("SYNNOVATIA" in Barlow Condensed) as a placeholder rather than the real logo image every other page on the site uses — checked the sitewide convention across multiple deploy-ready/mockup files (`.nav-logo img { height:30px; width:auto; }`, `.footer-logo img { height:30px; width:auto; opacity:0.92; }`, both referencing `assets/synnovatia-logo-nav.png`/`synnovatia-logo-footer.png`) and matched it exactly, pointing at the same local asset files already in `outputs/website-redesign/assets/` that every other local mockup in the folder uses.
+- Verified via headless Chromium screenshot (no Playwright Python package available in this environment, so used the pre-installed Chromium binary directly with `--headless --screenshot`) — both the nav logo and footer logo render at the correct size and proportions, matching the live site's look.
+
 ### Split Routing-Page Mockup: Question Counts and Assessment Names Updated
 - Jackie asked for the landing pages to reflect this session's item-count changes and any other language that needed updating. Found the relevant copy in `outputs/website-redesign/2026-10-09-core-business-assessment-split-mockup.html` (and its matching `2026-10-09-core-business-assessment-split-copy.docx`) — the two-path routing page mockup that presents Stage I ("Core Business Development") and Stage II ("Expansion") as separate destinations, each stating its own question count. This mockup is not yet linked live; it's the planned replacement for the current single-assessment "Free Business Assessment" flow.
 - Stage I path: "Answer sixty-five questions..." → "Answer seventy questions..." (matches today's 65 → 70).
