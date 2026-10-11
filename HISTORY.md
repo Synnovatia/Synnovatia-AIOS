@@ -8,6 +8,13 @@
 
 ---
 
+### Core Business Assessment (Stage I): Welcome Trimmed Further, 4 New Personnel & Vendor Items Added (65 → 69)
+- Removed the standalone "Let's do this!" closing line from the Welcome page entirely (it had been reduced from "Ready to get started? Let's do this!" in an earlier round, and Jackie asked for it gone outright this round) — the Caution paragraph is now the section's closer.
+- Added all 4 of Claude's previously-proposed Personnel and Vendor Development gap items, tagged stage 1 only: knowing which roles are best filled by an employee versus a contractor at this stage; anyone brought on (employee or contractor) having a clear picture of what success in their role looks like; a backup plan if a key vendor or contractor becomes unavailable; knowing which tasks to hand off first. Personnel and Vendor goes from 1 Stage I item (the thinnest section in the document) to 5.
+- Stage I's total went from 65 to 69 — updated everywhere it's shown: `total_items`, the Instructions page's "69 in total," and the Progress Chart's "Personnel and Vendor (of 5)" column header and "TOTAL SCORE (out of 69)."
+- Verified after rebuild: 69 checkboxes, 126 fields, still 14 pages (the merged Operations/Personnel page now holds 9 items between the two sections — checked for overflow, still fits with room to spare). Rendered and visually confirmed the Welcome page, the merged Operations/Personnel page, and the Progress Chart. Stage II untouched (50 checkboxes, 107 fields, 11 pages).
+- Jackie asked for a 5th item in Operational System Development to round the total to 70 and asked for Claude's input — proposed in chat, not yet added pending her confirmation on the wording.
+
 ### Both Assessments: Recommendation #2 Condensed (Review-with-Advisor + Booking CTA)
 - Jackie asked for the merged #2 item ("Review this assessment with a trusted business coach or advisor") shortened on both PDFs — it had grown to 6 sentences once the review text and the booking-CTA text were combined last round.
 - Condensed the shared lead-in from 3 sentences to 2, and dropped "Simply put" (a banned-word flag under `writing-style`) since this is now Claude-authored condensing rather than Jackie's original licensed text being preserved verbatim: "It's hard to be objective about your own business when you're this close to it. An outside, unbiased perspective keeps you honest about what you see. If you'd like to walk through your results together, book time directly on my calendar." This shared text lives once in `build_assessment_pdf.py` (`review_body`), feeding both stages.
