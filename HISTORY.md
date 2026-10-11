@@ -10,6 +10,17 @@
 
 ## 2026-10-11
 
+### Expansion Assessment: New Tagline, 8 Item Rewrites, One More Item Moved
+- Cover subtext replaced with "Strategies and Systems to Set the Pace for Your Growth" (Title Case, matching the existing tagline convention).
+- Eight item-text edits across four sections, all stage 2 only:
+  - Business Foundation Development: the growth-strategy item changed from "I have identified key growth strategies that produce a competitive advantage..." to "I have upgraded my growth strategy to produce a competitive advantage..."; the key-business-variables item changed from "...monitored daily" to "...monitored regularly."
+  - Product and Service Development: "I have a product development process..." shortened to "I have a development process..."; the pricing item extended to end "...and allows for a sustainable profit margin" (dropped "still").
+  - Sales Tools and Growth: the sales-process item extended to "...that delivers results and is followed consistently."
+  - Operational System Development: "My systems are designed to avoid unnecessary paperwork and procedures" changed to "...avoid redundancy in effort"; the infrastructure item's ending changed from "not the one I started with" to "and the one I'm building for tomorrow."
+- Moved "My dedication to lifelong learning..." from Personnel and Vendor Development to Business Skill Growth, reworded from "...develops employees into people they truly want to be" to "...serves as an example for others on my team" (Jackie's own wording, kept verbatim even though "serves as" is normally flagged by the writing-style skill — this is her dictated text, not Claude's drafting).
+- Net item count unchanged at 50 (text edits plus one move, no additions or removals). Personnel and Vendor dropped from 11 to 10 items, still the largest section, so Instructions' range sentence updated from "...to eleven in others" to "...to ten in others." Progress Chart and all section totals recalculated and verified. Caught and fixed a straight apostrophe in the newly-written infrastructure item (should be curly, matching the rest of the document).
+- Verified after rebuild: 50 checkboxes, 107 fields, calculation wiring intact for Personnel & Vendors (10 boxes) and Business Skills (4 boxes) score fields. Stage I re-rendered unchanged (65 checkboxes, 122 fields).
+
 ### Expansion Assessment: Cover Trimmed, Booking Link Pulled Inline, 6 Items Reshuffled and Edited
 - Resolved the cover-page ambiguity flagged earlier in the session: Jackie confirmed she wanted "focused on resources and operational systems" removed from the cover's revenue line, now just "For service businesses with $500,000+ in revenue."
 - Instructions' booking link ("Find a Time That Works") now sits on the same line as "(Your first call is on me.)" instead of wrapping to its own line below. Rebuilt `build_instructions()`'s booking-CTA rendering to wrap the body text itself, measure the last line's width, and place the link right after it when there's room (falling back to a new line only if there isn't) — replacing the previous fixed two-part layout.
