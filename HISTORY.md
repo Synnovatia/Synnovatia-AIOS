@@ -10,6 +10,17 @@
 
 ## 2026-10-11
 
+### Expansion Assessment: Cover Trimmed, Booking Link Pulled Inline, 6 Items Reshuffled and Edited
+- Resolved the cover-page ambiguity flagged earlier in the session: Jackie confirmed she wanted "focused on resources and operational systems" removed from the cover's revenue line, now just "For service businesses with $500,000+ in revenue."
+- Instructions' booking link ("Find a Time That Works") now sits on the same line as "(Your first call is on me.)" instead of wrapping to its own line below. Rebuilt `build_instructions()`'s booking-CTA rendering to wrap the body text itself, measure the last line's width, and place the link right after it when there's room (falling back to a new line only if there isn't) — replacing the previous fixed two-part layout.
+- Reshuffled 6 items across sections and lightly edited 2 of them, net item count unchanged at 50 (pure redistribution, no additions or removals):
+  - Business Foundation Development gained "Key business variables influencing future growth are identified and monitored daily." and "My business could operate for 30 days without my direct involvement." (both moved from Operational System Development).
+  - Accounting and Financial Growth gained "I make profit everyone's responsibility." (from Personnel and Vendor Development) and "A tracking system allows for effective cash management and accounting information to facilitate growth." (from Operations, with "inventory control" removed from the text).
+  - Entrepreneur Performance and Foundation gained "I have a reserve of resources (i.e., time, money, space, skills, staff, and opportunities)." (from Business Skill Growth).
+  - Operations' own infrastructure item trimmed from "My physical space and infrastructure can support..." to "My infrastructure can support..." (not moved, text edit only).
+- Recalculated and verified everywhere the counts show: Instructions' range sentence changed from "two statements... to eleven" (unchanged phrasing needed updating since Entrepreneur Performance's minimum moved from 1 to 2 once it gained the reserve-of-resources item), every affected section's "TOTAL (out of N)," and the Progress Chart's column headers (Business Foundation 4, Accounting and Financial 8, Operational System 8, Personnel and Vendor 11, Business Skill 3, Entrepreneur Performance 2) summing to "TOTAL SCORE (out of 50)." Checked the Marketing and Branding + Accounting and Financial combined page (now 11 items, the largest combined page yet) for overflow — still fits with room to spare.
+- Verified after rebuild: 50 checkboxes, 107 fields, calculation wiring intact for every touched section's score field. Stage I re-rendered unchanged (65 checkboxes, 122 fields).
+
 ### Expansion Assessment: 4 More Items to Round Out at an Even 50
 - Jackie asked for ideas to bring the item count up to a round 50. Proposed 4 candidates grounded in the Stages of Business Growth & Development chart's own named Stage II challenges rather than invented filler (space requirements change, high employee turnover), she approved all four, added:
   - Product and Service Development (+1): pricing re-evaluated as the business grows, placed alongside the section's existing Stage I pricing item for consistency.
