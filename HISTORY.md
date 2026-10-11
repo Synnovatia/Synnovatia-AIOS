@@ -8,6 +8,11 @@
 
 ---
 
+### Split Routing-Page Mockup: Privacy Policy Link Added to Footer
+- Jackie asked for a Privacy Policy link in the bottom navigation. The footer was missing one entirely — checked across local mockups and found no local file actually had this wired (it was only ever done live on WordPress, per the 2026-09-02 footer-link work noted in `CLAUDE.md`'s website-redesign history), so built it fresh here matching the established pattern (a `· Privacy Policy` link appended to the footer's copyright line, underlined, same faint color as the rest of the line).
+- Uses a `#` placeholder href, consistent with every other nav link in this not-yet-deployed mockup — will point to the real `/privacy-policy/` page once this routing flow goes live.
+- Verified via headless Chromium screenshot — renders correctly in the footer, readable and styled consistently.
+
 ### Split Routing-Page Mockup: Real Logo Swapped In (Nav + Footer)
 - Jackie asked for the logo sized to match the live site. The mockup's nav and footer had been using a styled text wordmark ("SYNNOVATIA" in Barlow Condensed) as a placeholder rather than the real logo image every other page on the site uses — checked the sitewide convention across multiple deploy-ready/mockup files (`.nav-logo img { height:30px; width:auto; }`, `.footer-logo img { height:30px; width:auto; opacity:0.92; }`, both referencing `assets/synnovatia-logo-nav.png`/`synnovatia-logo-footer.png`) and matched it exactly, pointing at the same local asset files already in `outputs/website-redesign/assets/` that every other local mockup in the folder uses.
 - Verified via headless Chromium screenshot (no Playwright Python package available in this environment, so used the pre-installed Chromium binary directly with `--headless --screenshot`) — both the nav logo and footer logo render at the correct size and proportions, matching the live site's look.
