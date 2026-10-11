@@ -8,6 +8,13 @@
 
 ---
 
+## 2026-10-11
+
+### Expansion Assessment Copy Scrubbed Against Writing-Style Rules and Brand Voice
+- Jackie asked for a check that the Expansion assessment reads according to Synnovatia's positioning and her writing style. Ran everything authored this session for Stage II (cover tagline, Welcome page, Instructions update, the Action page's rewritten "Select one core area" paragraph) against `.claude/skills/writing-style`'s full rule set and `context/brand-voice.md`. Found and fixed 6 em dashes (the style skill's rule is zero, not "avoid" — split into two sentences or swapped for a comma/colon depending on the sentence) and 2 instances of "helps," which brand-voice.md explicitly flags ("equip, not help — using the word undersells the strategic depth of the work"); both became "shows you."
+- Deliberately left untouched: the per-section intro paragraphs, the 35 assessment item statements themselves, and the still-original portions of Instructions and "Turn Your Score into Action" — all Jackie Nagel's own licensed content ("©2026 Jackie Nagel. Used by Synnovatia with permission."), carried over verbatim per the 2026-08-24 "visual-only pass" precedent rather than rewritten under Synnovatia's brand voice. These do have a few of the same mechanical issues (one more em dash, "Simply put," one metaphorical "navigate") — flagged to Jackie rather than silently fixed, since that's licensed material, not copy written under this project.
+- `outputs/core-business-assessment/2026-10-09-core-business-assessment-stage2-expansion-fillable.pdf` updated in place; page count, field count, and calculation wiring unaffected (prose-only change). Stage I untouched.
+
 ## 2026-10-10
 
 ### Expansion Assessment Cover Revised
