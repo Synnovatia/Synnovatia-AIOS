@@ -10,6 +10,10 @@
 
 ## 2026-10-11
 
+### Expansion Assessment Renamed to "Business Expansion Assessment"
+- Jackie asked for the PDF's title changed. Updated `title_lines` from ["The Expansion Business", "Assessment"] to ["Business Expansion", "Assessment"] — this single change propagates automatically to the cover, the header repeated atop the first content page, and the PDF's own file-title metadata, since all three already derive from the same `title_lines` config (set up during the cover-revision round earlier in the session). Also updated the one in-text reference to the assessment by name, in the Welcome page body ("the Expansion Business Assessment shows you..." → "the Business Expansion Assessment shows you...").
+- Verified after rebuild: PDF metadata title now reads "Business Expansion Assessment — Stage II: Expansion"; 50 checkboxes, 107 fields, unaffected (title-only change). Stage I untouched.
+
 ### Expansion Assessment: New Tagline, 8 Item Rewrites, One More Item Moved
 - Cover subtext replaced with "Strategies and Systems to Set the Pace for Your Growth" (Title Case, matching the existing tagline convention).
 - Eight item-text edits across four sections, all stage 2 only:
