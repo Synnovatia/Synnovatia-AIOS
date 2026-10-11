@@ -8,7 +8,12 @@
 
 ---
 
-## 2026-10-11
+### Both Assessments: Recommendation #2 Condensed (Review-with-Advisor + Booking CTA)
+- Jackie asked for the merged #2 item ("Review this assessment with a trusted business coach or advisor") shortened on both PDFs — it had grown to 6 sentences once the review text and the booking-CTA text were combined last round.
+- Condensed the shared lead-in from 3 sentences to 2, and dropped "Simply put" (a banned-word flag under `writing-style`) since this is now Claude-authored condensing rather than Jackie's original licensed text being preserved verbatim: "It's hard to be objective about your own business when you're this close to it. An outside, unbiased perspective keeps you honest about what you see. If you'd like to walk through your results together, book time directly on my calendar." This shared text lives once in `build_assessment_pdf.py` (`review_body`), feeding both stages.
+- Each stage's `booking_cta.body` in `sections_data.py` is now just its one-line parenthetical close — "(Your first conversation is on me.)" for Stage I, "(Your first call is on me.)" for Stage II — appended after the shared text, preserving each stage's own established wording.
+- Net: combined item #2 went from 6 sentences to 3 on both PDFs, same meaning, same inline "Find a Time That Works" link.
+- Verified after rebuild: Stage I 65 checkboxes/122 fields/14 pages, Stage II 50 checkboxes/107 fields/11 pages, both unchanged. Rendered and visually confirmed both Instructions pages — clean, no overflow, link renders correctly (wraps to its own line on Stage I, stays inline on Stage II, both expected given each stage's resulting line length).
 
 ### Core Business Assessment (Stage I): Cover/Welcome Trims, Recommendations #2+#3 Merged (Fixes Stage II Too), 2 More Inline Blog Links, 1 Item Reworded
 - Cover: removed ", focused on client acquisition" from the revenue line, now just "For service businesses with $0–$500,000 in revenue."
