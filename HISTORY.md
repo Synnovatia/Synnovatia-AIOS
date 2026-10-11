@@ -8,6 +8,11 @@
 
 ---
 
+### Core Business Assessment (Stage I): 70th Item Locked In — Operational System Development
+- Jackie confirmed Claude's proposed 5th Operational System Development item: "My most important day-to-day processes are written down, not just in my head." Tagged stage 1 only, placed after the Excellence item alongside the section's other 4 Stage I items.
+- Stage I's total went from 69 to 70 (the round number Jackie was aiming for) — updated `total_items`, the Instructions page's "70 in total," and the Progress Chart's "Operational System (of 5)" column header and "TOTAL SCORE (out of 70)."
+- Verified after rebuild: 70 checkboxes, 127 fields, still 14 pages. The merged Operations/Personnel page now carries 5 items per section (10 total) and still fits with room to spare — both sections visually balanced at 5 each. Progress Chart confirmed correct. Stage II untouched.
+
 ### Core Business Assessment (Stage I): Welcome Trimmed Further, 4 New Personnel & Vendor Items Added (65 → 69)
 - Removed the standalone "Let's do this!" closing line from the Welcome page entirely (it had been reduced from "Ready to get started? Let's do this!" in an earlier round, and Jackie asked for it gone outright this round) — the Caution paragraph is now the section's closer.
 - Added all 4 of Claude's previously-proposed Personnel and Vendor Development gap items, tagged stage 1 only: knowing which roles are best filled by an employee versus a contractor at this stage; anyone brought on (employee or contractor) having a clear picture of what success in their role looks like; a backup plan if a key vendor or contractor becomes unavailable; knowing which tasks to hand off first. Personnel and Vendor goes from 1 Stage I item (the thinnest section in the document) to 5.
