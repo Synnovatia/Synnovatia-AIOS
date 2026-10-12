@@ -5,11 +5,8 @@ per the established deploy rule for this site).
 Placement: between the "The Latest" section and the "Browse by Topic" band.
 Use on BOTH pages: the blog front page and All Posts.
 
-ONE THING TO FILL IN BELOW: replace REPLACE_WITH_FORM_GUID with the real guid for the
-"Perspective Subscription" form. Find it in HubSpot: Marketing > Lead Capture > Forms >
-open the form > Actions > Share (or Embed) > copy the embed code HubSpot gives you — the
-guid is the long id inside formId: "...". Paste that value in both spots marked below
-(this file and the footer-row file).
+Form guid confirmed by Jackie 2026-10-12: 8bf734c4-833d-4a04-8d0d-a0ef04abd6ee (Perspective
+Subscription, portal 110120, region na1).
 
 Note on styling: this embed renders HubSpot's form inside an iframe, the same way the
 Mastermind/7-Figure Forum Apply forms do — page CSS can't reach inside it to restyle the
@@ -37,11 +34,12 @@ HubSpot, the same way you already did for the Apply forms.
     <div id="hs-form-perspective-feed" class="pbe-form-wrap"></div>
   </div>
 </section>
-<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/110120.js"></script>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
   hbspt.forms.create({
     portalId: "110120",
-    formId: "REPLACE_WITH_FORM_GUID",
+    formId: "8bf734c4-833d-4a04-8d0d-a0ef04abd6ee",
+    region: "na1",
     target: "#hs-form-perspective-feed"
   });
 </script>

@@ -9,8 +9,8 @@ real theme footer (confirmed from outputs/website-redesign/2026-10-05-production
 around the $after .= '<section class="spt-cta">' block) — so this lands exactly above
 the footer, on every post.
 
-ONE THING TO FILL IN: replace REPLACE_WITH_FORM_GUID with the real guid for the
-"Perspective Subscription" form (same guid as the front-page/All-Posts file).
+Form guid confirmed by Jackie 2026-10-12: 8bf734c4-833d-4a04-8d0d-a0ef04abd6ee (Perspective
+Subscription, portal 110120, region na1) — same form as the front-page/All-Posts file.
 
 Same styling caveat as the other file: the embedded form renders in an iframe, so this
 page-side CSS can't restyle its field/button — set that in the form's own Style & Preview
@@ -41,11 +41,12 @@ body.single-post .spt-footrow-form{min-width:280px;flex:1 1 320px;max-width:400p
       '</div>';
     anchor.parentNode.insertBefore(band, anchor.nextSibling);
     var s = document.createElement('script');
-    s.src = 'https://js.hsforms.net/forms/embed/110120.js';
+    s.src = '//js.hsforms.net/forms/embed/v2.js';
     s.onload = function () {
       hbspt.forms.create({
         portalId: '110120',
-        formId: 'REPLACE_WITH_FORM_GUID',
+        formId: '8bf734c4-833d-4a04-8d0d-a0ef04abd6ee',
+        region: 'na1',
         target: '#hs-form-perspective-footrow'
       });
     };
