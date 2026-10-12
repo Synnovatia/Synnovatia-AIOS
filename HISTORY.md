@@ -10,6 +10,13 @@
 
 ## 2026-10-12
 
+### Active Engagers Email Redone as the DiB Part 2 Blog Email
+- At Jackie's direction, the October 14 Active Engagers draft was rewritten in place in HubSpot ("Email: Active Engagers (10/14/26)") to lead with Part 2 of "Different Is Better Than Better," following the 9/30 Part 1 email that earned the best clicks logged for this segment. Subject: "What my clients said when I asked why they hired me." Still a draft, not scheduled or sent.
+- Recipients changed to lists 400 + 404 with no exclusion (one email, both lists; HubSpot sends one copy to anyone on both). Jackie sees these in HubSpot as "Active Engagers" and "High Intent"; the connector shows list IDs only, so the "High Intent" = 404 match is unconfirmed from this side.
+- The year-end call moved to the P.S. and changed from a 45-minute to a 60-minute solutions-on-the-fly call (60-minute Calendly link, no price stated). The LinkedIn Friday line from the Part 1 email was added back once Jackie confirmed the Friday series is still running.
+- Copy saved as `outputs/hubspot-marketing/2026-10-12-active-engagers-dib-blog-part2.docx`; the 10/8 draft file carries an update note and keeps the year-end call copy for reuse.
+- **Messy Middle email (January 8 cohort, list 404) held until the week of October 19.** The HubSpot draft was left untouched and unscheduled. One-time reminder `messy-middle-email-review-reminder` set for Thursday, October 15 at 7am (texts Jackie's phone). Open items for that review: send date (Wednesday 10/21), whether current members on list 404 need excluding, whether to name an application deadline, and the draft's internal name still reading 10/14/26.
+
 ### LinkedIn Drafts for Oct 19-23
 - Drafted the Monday batch for the following week (`outputs/linkedin/2026-10-19-to-10-23-drafts.md` and `.docx`): Monday on getting more specific about who we serve at $750K–$1M, Wednesday a story, Friday as Follow Along Friday Part 3 (the wide-and-deep knowledge beat, with the unnamed "octopus" client comment).
 - Jackie posted the original Wednesday story (the 2010 partnership checklist) early, on Oct 12, alongside that day's scheduled post. Replaced Wednesday Oct 21 with the website "page not found" story (188 visits over 90 days, from the Sept 13 traffic check). The checklist post is kept at the bottom of the markdown file.
@@ -31,6 +38,17 @@
 - Built and iteratively updated a visual HTML mockup (`outputs/website-redesign/2026-10-09-core-business-assessment-split-mockup.html`) showing all three screens stacked with labeled dividers, matching the site's established navy/gold/teal + Fraunces/Barlow pattern pulled from an existing live-page mockup rather than invented fresh, plus a matching Word copy doc. Removed a gold-background callout box after Jackie flagged it as reading "too much like AI."
 - Jackie shared a live screenshot of an existing blog CTA band (added to the site outside this session, not tracked in this workspace's history) promoting the old single 100-question assessment — flagged that its copy will be inaccurate once the new split goes live, drafted a replacement reusing the routing page's own approved line for consistency. Also recovered the saved 2026-08-31 landing-page-copy-draft.docx (swapped into the live `/free-business-assessment/` page per the 2026-09-02 history entry) by reading its raw docx XML directly, since neither `pandoc` nor the `firecrawl` CLI are available in this session and WebFetch to the live site fails with a DNS error — flagged clearly to Jackie that this is a saved local file being read, not a live fetch, and that it needs her own confirmation against the actual live page since other sessions may have touched it since.
 
+## 2026-10-06
+
+### Blog Lead Capture: Assessment Band Live on Every Post
+- Jackie asked what to do about lead generation and list building on the website. A live check found the blog, where search visitors land, had no email capture at all: no assessment link and no sign-up form on the blog front page or on posts. Recommended, in order: capture on the blog, fix the old-blog 404s (188 sessions in 90 days, more than organic search sent), GA events for the two soft conversions, LinkedIn posts pointing at the assessment, and a short welcome sequence.
+- Built a three-placement mockup first (`outputs/website-redesign/2026-10-06-blog-lead-capture-mockup.html`). Jackie approved all three and set the sign-up wording direction ("Stay in the loop").
+- **Placement 1 is live:** a "Free assessment" band under the article on every blog post, ahead of "More From [Topic]," linking to `/free-business-assessment/` in a new tab. Added as GP Elements hook "Blog Single-Post Assessment Band" (element 12480, `wp_footer`, Post → All Posts); source in `outputs/website-redesign/deploy-ready/2026-10-06-blog-post-assessment-band-HOOK.html`. The band is inserted by script because the post's closing sections come from a `the_content` filter in `functions.php`. No PHP changes.
+- Two things fixed during the build: the band sat 24px in from each edge on phones until it was given the same full-width rule the post's other sections use (`width:100vw` + `left:50%` + `translateX(-50%)`), and its mobile breakpoint was matched to the template's 880px. One save silently failed to register along the way; each save was confirmed by reloading the editor.
+- Verified logged out with the cache bypassed on 11 posts (2010-era through both DiB parts), full width at 390/820/1280px, and absent from the homepage, About, blog front page, and topic archives.
+- **Still to build:** the "Stay in the loop" sign-up band (blog front page + All Posts) and the slim sign-up row above the footer on posts. Both wait on a new HubSpot form from Jackie (first name + email).
+- `content/offers-and-funnels.md` and `CLAUDE.md` corrected: the Core Business Assessment is the active free offer.
+
 ## 2026-10-02
 
 ### Q4 2026 Mastermind for the Messy Middle Canceled, Everything Repointed to January
@@ -51,6 +69,10 @@
 - Build notes: the post content was loaded into the page from a local JSON file through a temporary file input, then created as a draft with `wp.apiFetch`; a `core/html` block created with `createBlock` saved empty until its content was set with `updateBlockAttributes`. The gray Jackie saw behind the draft was the block editor's canvas; the published page is white.
 - Found, not fixed: all six `/topic/<slug>/` archive pages return the theme's 404 page on production, logged in or out. The taxonomy, terms, and REST queries are fine, and a permalink flush did not help. Handed off to a separate session ("Fix topic archive pages returning 404"). Resolved the same day; see the next entry.
 - Added Jackie's note to content idea #3 (Strategic Perspective vs. Tactical Perspective): a later part or post should explain strategic perspective itself, why it is important, and how it contributes to immediate focus and clarity.
+
+### HubSpot Segments Refreshed: Drifting and Lapsed Were on Stale Fixed Dates
+- Jackie was updating segments and asked what counts as 90 to 180 days. Found the Drifting list is built on fixed calendar dates, last set 8/7 (Feb 9 – May 10), so the 9/2 and 9/30 sends went to contacts 116–233 days out, colder than the segment's definition. A possible contributor to Drifting's open-rate slide (10.89% → 6.25% → 3.85%), not proven.
+- Jackie refreshed all three in HubSpot: **Drifting** now April 8 – July 7 (156, was 104), **Lapsed** now April 7 or earlier (481, was 511), **Active Engagers** confirmed on a rolling 90-day filter (260, down from 330 on 8/2). `context/hubspot-marketing.md` updated with the counts and a standing note to refresh the Drifting and Lapsed dates before each send.
 
 ### Topic Archive 404s on Production Resolved
 - All six `/topic/<slug>/` archive pages (linked from every blog post and the blog front page) were returning the theme's 404 page. The taxonomy itself was healthy the whole time (REST listed all six terms and returned posts), which pointed at WordPress's stored URL rules for `/topic/` having gone missing.
