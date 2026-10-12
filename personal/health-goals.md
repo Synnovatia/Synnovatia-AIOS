@@ -4,13 +4,13 @@
 
 ---
 
-## Current Metrics (as of 2026-10-04)
+## Current Metrics (as of 2026-10-11)
 
 | Metric | Current | Goal | To Go |
 |---|---|---|---|
-| Weight | 144.2 lbs | 135–138 lbs | 6.2–9.2 lbs |
-| Body fat | 39.2% | 30% | 9.2 points |
-| Waist | 30.5 in | 28 in | 2.5 in |
+| Weight | 144.8 lbs | 135–138 lbs | 6.8–9.8 lbs |
+| Body fat | 38.2% | 30% | 8.2 points |
+| Waist | 30.25 in | 28 in | 2.25 in |
 | HRV | 27 | — | — |
 | VO2 Max | 26.3 | 30 | 3.7 |
 
@@ -47,6 +47,7 @@
 | 2026-09-20 | 145.8 lbs | 38.6% | 31 in | 24 | Usual Sunday slot. Weight up 2.0 lbs, body fat up 0.1 pt, and waist up 0.5 in from last week — all three moved the wrong direction at once, the broadest one-week reversal in the series so far. HRV dropped from last week's series-high of 44 down to 24, tied for the lowest reading recorded (matching 7/26). Jackie attributed the shift to a stress chain: added stress → increased alcohol → poor sleep → poor eating, self-reported rather than inferred from the numbers alone. |
 | 2026-09-27 | 145 lbs | 39.2% | 31 in | 26 | Usual Sunday slot. Weight down 0.8 lbs from last week and waist unchanged. Body fat up 0.6 pts to 39.2%, the highest reading of the series, but it rose while weight fell, the same pattern as 8/30, so likely scale noise; worth a second reading before reading into it. HRV up 2 to 26, a partial recovery from last week's low of 24, during a week with shoulder/hip irritation, a recovery Day B, and a chiropractor adjustment. Jackie's plan for the week: replace chips at lunch with salad. |
 | 2026-10-04 | 144.2 lbs | 39.2% | 30.5 in | 27 | Usual Sunday slot, first weigh-in after a week on the fat-loss eating plan (started 9/28). Weight down 0.8 lbs for the second week in a row (145.8 → 145 → 144.2) and waist down 0.5 in to 30.5, tying the series low (8/30, 9/13); both have now fully recovered the 9/20 setback on waist and most of it on weight. Body fat unchanged at 39.2%, still the series high; it has not followed weight and waist down, so the scale reading remains the outlier. HRV up 1 to 27, third straight small rise from the 9/20 low of 24, mid-pack for the series. |
+| 2026-10-11 | 144.8 lbs | 38.2% | 30.25 in | 27 | Usual Sunday slot, second weigh-in on the fat-loss eating plan. Waist down another 0.25 in to 30.25, a new series low (prior low 30.5). Body fat down 1.0 pt to 38.2%, the largest one-week drop in the series and the lowest reading since 8/9; it reverses the 39.2% readings of the last two weeks. Weight up 0.6 lbs. Weight up with waist and body fat down is the recomposition pattern the plan is aiming for, though a 1-point body fat swing in a week is partly scale noise. HRV unchanged at 27. |
 
 ---
 

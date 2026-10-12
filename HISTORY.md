@@ -8,6 +8,14 @@
 
 ---
 
+## 2026-10-12
+
+### LinkedIn Drafts for Oct 19-23
+- Drafted the Monday batch for the following week (`outputs/linkedin/2026-10-19-to-10-23-drafts.md` and `.docx`): Monday on getting more specific about who we serve at $750K–$1M, Wednesday a story, Friday as Follow Along Friday Part 3 (the wide-and-deep knowledge beat, with the unnamed "octopus" client comment).
+- Jackie posted the original Wednesday story (the 2010 partnership checklist) early, on Oct 12, alongside that day's scheduled post. Replaced Wednesday Oct 21 with the website "page not found" story (188 visits over 90 days, from the Sept 13 traffic check). The checklist post is kept at the bottom of the markdown file.
+- Jackie said the batch needed no edits. Still open for her to confirm: she's comfortable sharing the 188 figure and quoting the octopus comment. The live checklist post says "last week" about an SEO post that doesn't run until Oct 14.
+- The Word doc's formatting wasn't visually checked (no renderer available in this session); the text was confirmed present.
+
 ## 2026-10-09
 
 ### Core Business Assessment Split: Stage III Check, Routing Page Built and Iterated
