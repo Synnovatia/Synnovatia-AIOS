@@ -16,14 +16,12 @@ Same styling caveat as the other file: the embedded form renders in an iframe, s
 page-side CSS can't restyle its field/button — set that in the form's own Style & Preview
 tab in HubSpot if you want it to match more closely.
 
-Heads up on color: this section is still styled navy-deep (#091735), which was chosen to
-blend into the dark footer it used to sit next to. In its new spot it's sandwiched between
-two light sections (the Assessment band's light blue and "More From"'s off-white), so it'll
-read as a dark stripe rather than blending in. Left as-is for now — flagged in chat, easy
-to lighten to match the Assessment band if it looks off once it's live.
+UPDATED 2026-10-12 (2): color changed from navy-deep (#091735, matched the old spot next
+to the footer) to #0D1F4E — the site's standard navy, the same background used for the
+"Notes from the Messy Middle" post/topic header band. Per Jackie's request to match that.
 -->
 <style>
-body.single-post .spt-footrow{background:#091735;padding:36px 48px;border-top:1px solid rgba(255,255,255,.12);width:100vw;position:relative;left:50%;transform:translateX(-50%);box-sizing:border-box}
+body.single-post .spt-footrow{background:#0D1F4E;padding:36px 48px;border-top:1px solid rgba(255,255,255,.12);width:100vw;position:relative;left:50%;transform:translateX(-50%);box-sizing:border-box}
 body.single-post .spt-footrow-inner{max-width:1200px;margin:0 auto;display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 body.single-post .spt-footrow-lead{font-family:Fraunces,serif;font-weight:500;color:#fff;font-size:22px;line-height:1.3;margin:0}
 body.single-post .spt-footrow-lead span{display:block;font-family:Barlow,sans-serif;font-weight:400;font-size:15px;color:rgba(255,255,255,.7);margin-top:4px}
