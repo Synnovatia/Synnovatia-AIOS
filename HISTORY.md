@@ -17,6 +17,12 @@
 - Copy saved as `outputs/hubspot-marketing/2026-10-12-active-engagers-dib-blog-part2.docx`; the 10/8 draft file carries an update note and keeps the year-end call copy for reuse.
 - **Messy Middle email (January 8 cohort, list 404) held until the week of October 19.** The HubSpot draft was left untouched and unscheduled. One-time reminder `messy-middle-email-review-reminder` set for Thursday, October 15 at 7am (texts Jackie's phone). Open items for that review: send date (Wednesday 10/21), whether current members on list 404 need excluding, whether to name an application deadline, and the draft's internal name still reading 10/14/26.
 
+### DiB Part 2 Photo Relit and Replaced on the Live Post
+- Jackie asked for the Part 2 rubber-ducks photo to lose its ominous background. Worked through four versions in `outputs/photo-edits/` (lightened, sunny, sunny with white clouds, clear blue sky); she chose the clear-blue-sky one: sky replaced with a clean blue gradient, dark water brightened, foreground rock warmed, ducks untouched.
+- Uploaded a 1920×1280 web copy (`rubber-ducks-in-conversation-blue-sky.jpg`, media item 12482) and swapped it into both places on post 12461, the featured image and the image inside the article. Verified logged out on the post, the blog front page, and All Posts. The old photo (media item 12460) is still in the media library.
+- Alt text now mentions the clear blue sky. At Jackie's direction the credit reads "Photo by Brad Switzer on Unsplash, edited" (credit kept because the ducks and composition are still his photograph).
+- The blog front page's server-cached copy still showed the old photo at the time of the check and clears when that copy expires.
+
 ### LinkedIn Drafts for Oct 19-23
 - Drafted the Monday batch for the following week (`outputs/linkedin/2026-10-19-to-10-23-drafts.md` and `.docx`): Monday on getting more specific about who we serve at $750K–$1M, Wednesday a story, Friday as Follow Along Friday Part 3 (the wide-and-deep knowledge beat, with the unnamed "octopus" client comment).
 - Jackie posted the original Wednesday story (the 2010 partnership checklist) early, on Oct 12, alongside that day's scheduled post. Replaced Wednesday Oct 21 with the website "page not found" story (188 visits over 90 days, from the Sept 13 traffic check). The checklist post is kept at the bottom of the markdown file.

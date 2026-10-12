@@ -147,6 +147,7 @@ These are how you know your EVOLV-OS is working:
 │   ├── dashboard/            # dashboard.html = canonical live file (daily auto-refresh); mockup kept for history
 │   ├── morning-brief/        # brief.html = canonical live file for the standalone Morning Brief artifact (weekday auto-refresh, ~7:15am, edited in place — not regenerated)
 │   ├── partnership-checklist/ # Rebranded "Keys to Successful Partnerships: A Planning Checklist" (3-page PDF + its HTML source, 2026-10-09) — visual refresh of the 2010 original, wording unchanged; bottom band carries www.synnovatia.com and 310.519.1947
+│   ├── photo-edits/          # Edited photos for blog/site use (2026-10-12: the DiB Part 2 rubber-ducks photo, relit to a clear blue sky; `rubber-ducks-in-conversation-blue-sky.jpg` is the 1920×1280 copy live on the post as media item 12482, replacing 12460, which is still in the media library)
 │   ├── positioning/          # Positioning brief (statement + full rationale/proof points) — internal strategy doc, not customer-facing
 │   ├── research/             # One-off research briefs (dated filenames) — e.g. 2026-08-07-cultural-anthropology-strategic-work-brief.md, applying cultural anthropology theory to client work, brand methodology, and content ideas
 │   ├── seven-figure-forum/   # Session agendas for the Seven Figure Forum mastermind — every 6 weeks, one real challenge/opportunity per session, ends with a concrete next step
