@@ -1,5 +1,7 @@
 # HubSpot Marketing — Active Engagers Biweekly Send (2026-10-08 draft, for 2026-10-14 send)
 
+> **Update 2026-10-12: Draft 1 replaced.** At Jackie's direction, the Oct 14 send is now the DiB blog Part 2 email, with the call offer moved to the P.S. and changed from 45 minutes to 60 minutes (Calendly 60-minute link, no price stated). The same HubSpot draft ("Email: Active Engagers (10/14/26)") was rewritten in place and now goes to lists 400 + 404 with no exclusion. Subject: "What my clients said when I asked why they hired me". New copy: `2026-10-12-active-engagers-dib-blog-part2.docx`. Draft 2 (Messy Middle, list 404) is **held until the week of October 19** at Jackie's direction (2026-10-12), so list 404 gets only the Part 2 email on October 14. A review reminder is set for Thursday, October 15 at 7am. The LinkedIn Friday line from the Part 1 email was added back to the Part 2 email, since the series is still running. The year-end call copy below is kept for reuse.
+
 > Automated run of the `hubspot-active-engagers-draft` scheduled task. Per `context/hubspot-marketing.md` (Active Engagers, 260 marketing contacts as of 2026-10-05) and `context/brand-voice.md`.
 
 > **Skip-check:** the last Active Engagers draft on file is 2026-09-24/25 (13 to 14 days ago) and the last send was 2026-09-30. Both fall outside the ~10-day skip window in the sense that matters: the next biweekly Wednesday is **October 14**, and nothing exists for it yet in the workspace or in HubSpot. This cycle goes ahead.
