@@ -1,0 +1,56 @@
+<!--
+GP Elements Hook — same mechanism as the 2026-10-06 assessment-band hook.
+Appearance > Elements > Add New > Hook element.
+Hook: wp_footer
+Display Conditions: Post > All Posts (same rule as the assessment-band hook)
+
+Anchors after .spt-cta, the last section the single-post template injects before the
+real theme footer (confirmed from outputs/website-redesign/2026-10-05-production-functions-php-reference.php,
+around the $after .= '<section class="spt-cta">' block) — so this lands exactly above
+the footer, on every post.
+
+ONE THING TO FILL IN: replace REPLACE_WITH_FORM_GUID with the real guid for the
+"Perspective Subscription" form (same guid as the front-page/All-Posts file).
+
+Same styling caveat as the other file: the embedded form renders in an iframe, so this
+page-side CSS can't restyle its field/button — set that in the form's own Style & Preview
+tab in HubSpot if you want it to match more closely.
+-->
+<style>
+body.single-post .spt-footrow{background:#091735;padding:36px 48px;border-top:1px solid rgba(255,255,255,.12);width:100vw;position:relative;left:50%;transform:translateX(-50%);box-sizing:border-box}
+body.single-post .spt-footrow-inner{max-width:1200px;margin:0 auto;display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+body.single-post .spt-footrow-lead{font-family:Fraunces,serif;font-weight:500;color:#fff;font-size:22px;line-height:1.3;margin:0}
+body.single-post .spt-footrow-lead span{display:block;font-family:Barlow,sans-serif;font-weight:400;font-size:15px;color:rgba(255,255,255,.7);margin-top:4px}
+body.single-post .spt-footrow-form{min-width:280px;flex:1 1 320px;max-width:400px}
+@media (max-width:880px){
+  body.single-post .spt-footrow{padding:32px 24px}
+}
+</style>
+<script>
+(function () {
+  function addFootrow() {
+    if (document.querySelector('.spt-footrow')) return;
+    var anchor = document.querySelector('.spt-cta');
+    if (!anchor) return;
+    var band = document.createElement('section');
+    band.className = 'spt-footrow';
+    band.innerHTML =
+      '<div class="spt-footrow-inner">' +
+      '<p class="spt-footrow-lead">Stay in the loop<span>A note when there’s something noteworthy on growing a bootstrapped B2B service business.</span></p>' +
+      '<div id="hs-form-perspective-footrow" class="spt-footrow-form"></div>' +
+      '</div>';
+    anchor.parentNode.insertBefore(band, anchor.nextSibling);
+    var s = document.createElement('script');
+    s.src = 'https://js.hsforms.net/forms/embed/110120.js';
+    s.onload = function () {
+      hbspt.forms.create({
+        portalId: '110120',
+        formId: 'REPLACE_WITH_FORM_GUID',
+        target: '#hs-form-perspective-footrow'
+      });
+    };
+    document.body.appendChild(s);
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', addFootrow); } else { addFootrow(); }
+})();
+</script>
