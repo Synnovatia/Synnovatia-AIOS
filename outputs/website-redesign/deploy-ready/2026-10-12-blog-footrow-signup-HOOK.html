@@ -4,10 +4,10 @@ Appearance > Elements > Add New > Hook element.
 Hook: wp_footer
 Display Conditions: Post > All Posts (same rule as the assessment-band hook)
 
-Anchors after .spt-cta, the last section the single-post template injects before the
-real theme footer (confirmed from outputs/website-redesign/2026-10-05-production-functions-php-reference.php,
-around the $after .= '<section class="spt-cta">' block) — so this lands exactly above
-the footer, on every post.
+UPDATED 2026-10-12: moved per Jackie's call. Anchors right after .spt-assess (the Free
+Assessment band) and before .spt-related ("More From [Topic]") — was previously after
+.spt-cta, last before the footer. New order on every post: article -> Assessment band ->
+this sign-up row -> More From [Topic] -> Browse by Topic -> CTA -> footer.
 
 Form guid confirmed by Jackie 2026-10-12: 8bf734c4-833d-4a04-8d0d-a0ef04abd6ee (Perspective
 Subscription, portal 110120, region na1) — same form as the front-page/All-Posts file.
@@ -15,6 +15,12 @@ Subscription, portal 110120, region na1) — same form as the front-page/All-Pos
 Same styling caveat as the other file: the embedded form renders in an iframe, so this
 page-side CSS can't restyle its field/button — set that in the form's own Style & Preview
 tab in HubSpot if you want it to match more closely.
+
+Heads up on color: this section is still styled navy-deep (#091735), which was chosen to
+blend into the dark footer it used to sit next to. In its new spot it's sandwiched between
+two light sections (the Assessment band's light blue and "More From"'s off-white), so it'll
+read as a dark stripe rather than blending in. Left as-is for now — flagged in chat, easy
+to lighten to match the Assessment band if it looks off once it's live.
 -->
 <style>
 body.single-post .spt-footrow{background:#091735;padding:36px 48px;border-top:1px solid rgba(255,255,255,.12);width:100vw;position:relative;left:50%;transform:translateX(-50%);box-sizing:border-box}
@@ -30,7 +36,7 @@ body.single-post .spt-footrow-form{min-width:280px;flex:1 1 320px;max-width:400p
 (function () {
   function addFootrow() {
     if (document.querySelector('.spt-footrow')) return;
-    var anchor = document.querySelector('.spt-cta');
+    var anchor = document.querySelector('.spt-assess');
     if (!anchor) return;
     var band = document.createElement('section');
     band.className = 'spt-footrow';

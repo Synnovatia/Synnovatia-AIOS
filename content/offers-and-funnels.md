@@ -3,7 +3,7 @@
 > Your active offers, sales funnels, and how content connects to revenue.
 > This file is read by /develop to ensure every piece of content has a strategic path to your business goals.
 >
-> **Last updated:** 2026-10-06
+> **Last updated:** 2026-10-12
 
 ---
 
@@ -16,7 +16,14 @@
 - **CTA in content:** "Take the free assessment"
 - **Link:** `/free-business-assessment/`
 - **Where it's promoted:** homepage hero, The Messy Middle page, and a band under the article on every blog post (GP Elements hook "Blog Single-Post Assessment Band," element 12480, added 2026-10-06). `/develop` can reference and link to it.
-- **Still to come:** an email sign-up ("Stay in the loop") on the blog front page, All Posts, and above the footer on posts. Waiting on a new HubSpot form from Jackie.
+
+### Newsletter sign-up: Perspective (active as of 2026-10-12)
+
+- **What:** Email opt-in ("Stay in the loop") into the "Perspectives" subscription type — a note when there's something noteworthy on growing a bootstrapped B2B service business, no set schedule. HubSpot form, no double opt-in. New sign-ups land in the "Perspective Subscribers" active list and get an automated welcome email.
+- **Who it's for:** Cold/SEO blog readers not ready for the assessment or a conversation — the lowest-commitment ask in the funnel
+- **CTA in content:** "Sign me up"
+- **Where it's promoted:** blog front page and All Posts (full version, first name + email), and a slim email-only row above the footer on every individual blog post (GP Elements hook "Blog Post Signup Row," wp_footer, Post → All Posts, added 2026-10-12)
+- **Placement note:** on individual posts this sits right after the Assessment band — before "More From [Topic]," "Browse by Topic," and the "Start the Conversation" CTA. Originally placed last in the stack (just above the footer, matching the approved mockup's "quieter second chance" framing); moved up to second position on 2026-10-12 per Jackie's call, trading some of that low-pressure framing for more exposure.
 
 ### 1. Solutions on the Fly (as-needed 1:1 consulting) — $140/30min, $275/60min
 
@@ -45,6 +52,14 @@
 - **Who it's for:** Segment 2 (Scaling B2B Owner)
 - **CTA in content:** "Apply for Consideration" — target 6 members by January 2027 (currently 4)
 - **Link:** Application page
+
+---
+
+## Open Tracking Items
+
+### Assessment vs. newsletter sign-up conversion on individual blog posts (flagged 2026-10-12)
+
+On individual blog posts, two competing CTAs now live back-to-back in the post-article stack: the Free Assessment band (first, right after the article) and the Perspective newsletter sign-up row (second, right after it). Worth checking once there's enough traffic: how conversion compares between the two, specifically on blog-post traffic — not the front-page/All-Posts newsletter sign-ups, which should be tracked separately since that's a different placement. Check in HubSpot: Free Business Assessment form (portal 110120, formId `a22d11ca-5f45-4545-b1c0-49e71c12b0a1`) vs. Perspective Subscription form (portal 110120, formId `8bf734c4-833d-4a04-8d0d-a0ef04abd6ee`), each form's Performance/submission-source data filtered to blog-post URLs. No tool in this workspace currently pulls that breakdown automatically — it's a manual HubSpot check for now.
 
 ---
 
