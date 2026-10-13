@@ -41,7 +41,8 @@
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 48px; height: 72px;
   }
-  .nav-logo { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.08em; color: var(--navy); font-size: 18px; text-decoration: none; }
+  .nav-logo { display: block; text-decoration: none; }
+  .nav-logo img { height: 30px; width: auto; display: block; }
   .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
   .nav-links a {
     font-size: 12px; font-weight: 600; letter-spacing: 0.07em;
@@ -191,8 +192,10 @@
     background: #080F1F; padding: 36px 48px;
     display: flex; justify-content: space-between; align-items: center;
   }
-  .footer-logo { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.08em; color: var(--white); opacity: 0.6; font-size: 16px; }
+  .footer-logo img { height: 30px; width: auto; opacity: 0.92; }
   .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+  .footer-copy a { color: inherit; text-decoration: underline; }
+  .footer-copy a:hover { color: rgba(255,255,255,0.6); }
 
   @media (max-width: 900px) {
     nav { padding: 0 24px; }
@@ -207,7 +210,7 @@
 
 <!-- NAV (shared, shown once — not part of the mockup scroll, just for context) -->
 <nav>
-  <a href="#" class="nav-logo">SYNNOVATIA</a>
+  <a href="#" class="nav-logo"><img src="assets/synnovatia-logo-nav.png" alt="Synnovatia"></a>
   <ul class="nav-links">
     <li><a href="#">About</a></li>
     <li><a href="#">The Messy Middle</a></li>
@@ -253,7 +256,7 @@
 
 <section class="path-hero">
   <h1 class="path-h1">Your business is up and running. Make sure it's built for growth.</h1>
-  <p class="path-sub">Answer sixty-five questions across ten areas in about twenty minutes. At the end you'll know which part of the business needs attention first and which parts are fine to leave alone for now.</p>
+  <p class="path-sub">Answer seventy questions across ten areas in about twenty minutes. At the end you'll know which part of the business needs attention first and which parts are fine to leave alone for now.</p>
 </section>
 
 <section class="path-body-section">
@@ -267,7 +270,7 @@
     <div class="form-field"><label>Company <span class="optional">(optional)</span></label><input type="text" placeholder="Company name"></div>
     <div class="form-field"><label>How did you hear about us? <span class="optional">(optional)</span></label><input type="text" placeholder="LinkedIn, referral, search, etc."></div>
     <button class="btn-primary">Send My Assessment</button>
-    <p class="form-note">You'll get the Core Business Development Assessment as a<br>direct download.</p>
+    <p class="form-note">You'll get The Core Business Assessment as a<br>direct download.</p>
   </div>
 </section>
 
@@ -276,7 +279,7 @@
 
 <section class="path-hero">
   <h1 class="path-h1">You've outgrown the system and strategy that got you here.</h1>
-  <p class="path-sub">Answer thirty-five questions across ten areas in about twenty minutes. At the end you'll know which systems need to catch up first and which ones are already strong enough to carry more weight.</p>
+  <p class="path-sub">Answer fifty questions across ten areas in about twenty-five minutes. At the end you'll know which systems need to catch up first and which ones are already strong enough to carry more weight.</p>
 </section>
 
 <section class="path-body-section">
@@ -290,14 +293,14 @@
     <div class="form-field"><label>Company <span class="optional">(optional)</span></label><input type="text" placeholder="Company name"></div>
     <div class="form-field"><label>How did you hear about us? <span class="optional">(optional)</span></label><input type="text" placeholder="LinkedIn, referral, search, etc."></div>
     <button class="btn-primary">Send My Assessment</button>
-    <p class="form-note">You'll get the Expansion Assessment as a<br>direct download.</p>
+    <p class="form-note">You'll get the Business Expansion Assessment as a<br>direct download.</p>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <div class="footer-logo">SYNNOVATIA</div>
-  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com</div>
+  <div class="footer-logo"><img src="assets/synnovatia-logo-footer.png" alt="Synnovatia"></div>
+  <div class="footer-copy">© Synnovatia 2026 · Strategic Business Coaching · 310.519.1947 · info@synnovatia.com · <a href="#">Privacy Policy</a></div>
 </footer>
 
 </body>
