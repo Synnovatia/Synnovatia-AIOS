@@ -29,6 +29,14 @@
 - Jackie said the batch needed no edits. Still open for her to confirm: she's comfortable sharing the 188 figure and quoting the octopus comment. The live checklist post says "last week" about an SEO post that doesn't run until Oct 14.
 - The Word doc's formatting wasn't visually checked (no renderer available in this session); the text was confirmed present.
 
+### Training and Health, 10/6 to 10/12
+- Sessions logged: 10/6 Day A (57 min, effort 4.1; Goblet Squat at 25 lb with the knee fine, all good after the same-day chiropractor visit, knee watch lifted), 10/7 hike (3.79 mi), 10/8 Day B (72 min, effort 4.5, the longest strength session logged), 10/9 walk (3 mi), 10/10 long walk (5.09 mi at HR 104, the lowest of any 4+ mile walk), 10/12 Day C (68 min, effort 4.5).
+- Worksheets built for 10/8 Day B and 10/12 Day C. Day B: the Stability Ball Hip Bridge is on hold after irritating the left glute twice, replaced by the two-leg Glute Bridge at bodyweight (clean three sessions running). Day C: Goblet Carry up to 15 lb.
+- Three-session counts: Single-Leg RDL, Renegade Row, Bird Dog, and Dead Bug finished clean session 3 of 3 on 10/12 and are eligible to progress at the next Day C. Bench Press, Single-Leg Balance Reach, and Face Pull are at 1 of 3 on Day A (10/6); Reverse Lunge is at 1 of 3 on Day B (10/8).
+- Irritation: very mild upper arm irritation on 10/8, source not identified (Bent-Over Row, Face Pull, or Lateral Raise). On 10/12 the Incline Press irritated the left shoulder at 12.5 lb, so Jackie dropped to 8 lb x 12; it stays at 8 lb as a watch exercise. The Day C arm exercises caused nothing.
+- 10/11 weigh-in: 144.8 lbs, body fat 38.2% (down 1.0, lowest since 8/9), waist 30.25 in (new series low), HRV 27.
+- Week of 10/12 shifted one day as a one-week test (Mon Day C, Tue mixed cardio, Wed Day A, Thu hike, Fri Day B, Sat long walk, Sun off). Google Calendar updated for this week's occurrences only; the regular schedule resumes 10/19, with the next Day C on Sunday 10/25.
+
 ## 2026-10-09
 
 ### Core Business Assessment Split: Two Fillable, Auto-Calculating PDFs Built
