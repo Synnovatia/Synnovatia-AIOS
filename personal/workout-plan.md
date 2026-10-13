@@ -59,6 +59,8 @@ Every worksheet gets a "Rest between sets" column. Big lifts (squat, deadlift, p
 
 **2026-10-06 (actual):** all eleven exercises done, 57 min, avg HR 112, effort 4.1. Same loads and reps as 9/29 except Goblet Squat, which Jackie did at 25 lb x 10 (not the worksheet's 15 lb; 12 reps on 9/29). **Jackie confirmed the knee felt fine at 25 lb, all is good after the same-day chiropractor visit, and to continue on with the regular plan.** The knee watch is lifted. Bench Press 3 x 12 at 25 lb and Face Pull 3 x 15 with nothing reported. Thursday's Day B can be built as a regular session at 10/1 loads. **Jackie confirmed 10/6 as a clean session: Bench Press (3 x 12 at 25 lb), Single-Leg Balance Reach (3 x 10/side at 12.5 lb), and Band Face Pull (3 x 15, green) are at clean session 1 of 3 at the top of range.** Two more clean Day A sessions (10/13, 10/20) make them eligible to progress on 10/27. Goblet Squat (10 reps) and the others are still inside their ranges, so their counts have not started.
 
+**2026-10-14 (planned; Wednesday, shifted week):** same weights as 10/6, no increases. Bench Press (3 x 12 at 25 lb), Single-Leg Balance Reach (3 x 10/side at 12.5 lb), and Face Pull (3 x 15 green) are on clean session 2 of 3. Goblet Squat, RDL, and Single-Arm Row may build to 10-12 reps at 25 lb. Watch exercises: Bench Press (Incline Press irritated the left shoulder at 12.5 lb on 10/12; drop to 20 lb or stop if it objects, and a 20 lb session does not count toward the three) and Face Pull (possible source of the 10/8 arm irritation). Worksheet: `personal/workout-logs/2026-10-14-day-a-worksheet.pdf`.
+
 ## Day B — Thursday
 
 | Exercise | Sets x Reps |
@@ -122,6 +124,10 @@ Every worksheet gets a "Rest between sets" column. Big lifts (squat, deadlift, p
 **2026-10-12 (actual):** all eleven exercises done, 68 min, avg HR 114, effort 4.5, after a 15-min/0.78-mile warm-up. **Clean session 3 of 3 for Single-Leg RDL (3 x 10/side at 12.5 lb), Renegade Row (3 x 10/side at 10 lb), Bird Dog (3 x 10/side), and Dead Bug (3 x 12/side): all four are eligible to progress at the next Day C.** Per the Progression Scheme that means the next dumbbell weight with reps back to the bottom of range for the two weighted exercises, and a tempo/pause step for the two bodyweight ones; go most carefully on Renegade Row, since it loads the shoulder. **Dumbbell Incline Press at 12.5 lb irritated the left shoulder; Jackie dropped to 8 lb and did 3 x 12.** Keep it at 8 lb as a watch exercise next time. Band Pull-Apart (3 x 15 black), Biceps Curl (3 x 10 at 10 lb), and Lying Triceps Extension (3 x 10 at 8 lb) all with no irritation, so none of them looks like the source of the 10/8 arm irritation. Goblet Carry 3 x 30 ft at 15 lb. Two-leg Glute Bridge 3 x 15, third clean session in a row.
 
 ---
+
+## Open Requests
+
+- **Add one more core exercise that also trains balance (requested by Jackie 2026-10-13, to look at the week of 10/19).** Bring options when building that week's first worksheet; keep it shoulder- and hip-friendly given the recent left-side irritation. Candidates to discuss: Pallof Press with the band in a split or single-leg stance (anti-rotation, standing), Suitcase March (one dumbbell at the side, slow high-knee march in place), Half-Kneeling Band Chop. Avoid anything that loads the shoulder in a plank position. Decide with Jackie which day it goes on; don't add it without her choosing. **Jackie prefers the Pallof Press (2026-10-13), but has no band anchor: she does her Band Face Pull with the band hooked around her feet.** The Pallof Press needs a chest-height anchor (door anchor strap, or a sturdy post), so it depends on her getting one; Suitcase March is the no-equipment fallback. Equipment note for all band work: no fixed anchor point in the home gym as of this date.
 
 ## Progression Scheme (Fortify-compatible)
 

@@ -8,6 +8,13 @@
 
 ---
 
+## 2026-10-13
+
+### Training
+- Logged the run/walk: 3.11 mi in 49 min (~15:45/mile), HR 143, effort 5.3. Slower and at a higher heart rate than the last three run/walks; Jackie attributes it largely to running at 1:00pm instead of 8:30am. Knee felt fine.
+- Built the 10/14 Day A worksheet (`personal/workout-logs/2026-10-14-day-a-worksheet.html`/`.pdf`): 10/6 weights, no increases; Bench Press, Single-Leg Balance Reach, and Face Pull on clean session 2 of 3; Bench Press and Face Pull are watch exercises after the 10/12 Incline Press shoulder irritation.
+- New open request in `personal/workout-plan.md`: add one more core exercise that also trains balance, to look at the week of 10/19. Jackie likes the Pallof Press, but she has no band anchor (she does her Face Pull with the band around her feet), so it depends on a door anchor; Suitcase March is the fallback. Her choice between the two is still open.
+
 ## 2026-10-12
 
 ### Active Engagers Email Redone as the DiB Part 2 Blog Email
