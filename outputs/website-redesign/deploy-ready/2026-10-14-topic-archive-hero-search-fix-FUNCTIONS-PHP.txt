@@ -1,0 +1,210 @@
+STEP 1 — Disable the GP Elements hook (so it doesn't duplicate this)
+
+Go to Elements, open "Topic Archive Hero," and set its Status to Draft, then Update. This
+stops its output everywhere (it was never firing on the search-within-topic page anyway,
+so this changes nothing there — but on the normal topic archive pages it WAS firing, so
+without this step you'd get the hero wrapped twice).
+
+STEP 2 — Paste this at the end of functions.php
+
+This is the exact same style/script content from the GP Elements hook, unchanged, just
+moved into a PHP function hooked on is_tax('topic') directly instead of relying on GP
+Premium's own "Post Topic Archive" condition matching — which is what was silently
+skipping this whole block whenever a search term (?s=) was also in the URL, even though
+the page is still genuinely a topic archive. is_tax('topic') is confirmed true in both
+states, so this fires correctly either way.
+*/
+
+add_action( 'wp_footer', function() {
+	if ( ! is_tax( 'topic' ) ) {
+		return;
+	}
+	?>
+<style>
+body.tax-topic .site-main > div:first-child {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 0 !important;
+}
+body.tax-topic .spt-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  box-sizing: border-box;
+}
+body.tax-topic .spt-hero-left { flex: 1 1 480px; }
+body.tax-topic .spt-hero-search { flex: 0 0 auto; min-width: 260px; }
+body.tax-topic .spt-eyebrow-topic {
+  color: rgba(255,255,255,0.5) !important;
+}
+body.tax-topic .spt-search-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #F5C842;
+  margin: 0 0 10px;
+}
+body.tax-topic .spt-search-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 8px;
+}
+body.tax-topic .spt-search-icon { color: rgba(255,255,255,0.5); flex-shrink: 0; }
+body.tax-topic .spt-search-form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  width: 240px;
+  font-family: inherit;
+}
+body.tax-topic .spt-search-form input::placeholder { color: rgba(255,255,255,0.5); }
+@media (max-width: 900px) {
+ body.tax-topic .spt-hero-inner { flex-direction: column; align-items: flex-start; gap: 4px; }
+  body.tax-topic .spt-hero-search { width: 100%; }
+  body.tax-topic .spt-search-form input { width: 100%; }
+}
+body.tax-topic #site-navigation a.spt-topic-active {
+  color: #0D1F4E;
+  position: relative;
+}
+body.tax-topic #site-navigation a.spt-topic-active::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  height: 2px;
+  background: #B29200;
+}
+body.tax-topic #site-navigation li.spt-nav-cta-item {
+  display: none;
+}
+@media (max-width: 900px) {
+  body.tax-topic #site-navigation li.spt-nav-cta-item {
+    display: block !important;
+    list-style: none !important;
+    width: calc(100% - 40px);
+    margin: 24px auto 0 !important;
+    padding: 0 !important;
+  }
+  body.tax-topic #site-navigation li.spt-nav-cta-item a,
+  body.tax-topic #site-navigation li.spt-nav-cta-item a:visited,
+  body.tax-topic #site-navigation li.spt-nav-cta-item a:hover {
+    display: block !important;
+    background-color: #0F6E56 !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    padding: 10px 12px !important;
+    line-height: 1.3 !important;
+    border-radius: 10px !important;
+    border-bottom: none !important;
+  }
+}
+@media (max-width: 900px) {
+  body.tax-topic:not(.admin-bar) #page {
+    padding-top: 160px !important;
+  }
+  body.tax-topic.admin-bar #page {
+    padding-top: 206px !important;
+  }
+}
+@media (max-width: 900px) {
+  body.tax-topic .spt-hero-inner {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+@media (max-width: 900px) {
+  body.tax-topic .spt-hero-left {
+    height: auto !important;
+  }
+}
+@media (max-width: 900px) {
+  body.tax-topic .spt-hero-left {
+    flex-basis: auto !important;
+  }
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var hero = document.querySelector('.site-main > div:first-child');
+  if (!hero || hero.querySelector('.spt-hero-search')) return;
+  var h1 = hero.querySelector('h1');
+  var topicName = h1 ? h1.textContent.trim() : '';
+
+  var inner = document.createElement('div');
+  inner.className = 'spt-hero-inner';
+
+  var left = document.createElement('div');
+  left.className = 'spt-hero-left';
+  while (hero.firstChild) {
+    left.appendChild(hero.firstChild);
+  }
+  var eyebrow = left.children[0];
+  if (eyebrow && eyebrow.textContent.indexOf('/') !== -1) {
+    var parts = eyebrow.textContent.split('/');
+    eyebrow.innerHTML = parts[0].trim() + ' <span class="spt-eyebrow-topic">/ ' + parts[1].trim() + '</span>';
+  }
+  inner.appendChild(left);
+
+  var right = document.createElement('div');
+  right.className = 'spt-hero-search';
+  right.innerHTML =
+    '<p class="spt-search-label">Search This Topic</p>' +
+    '<form class="spt-search-form" action="" method="get">' +
+      '<svg class="spt-search-icon" viewBox="0 0 24 24" width="16" height="16"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>' +
+      '<input type="search" name="s" placeholder="Search ' + topicName + '" />' +
+    '</form>';
+  inner.appendChild(right);
+
+  hero.appendChild(inner);
+
+  var navLinks = document.querySelectorAll('#site-navigation a');
+  navLinks.forEach(function (a) {
+    if (a.textContent.trim().indexOf('Perspective') === 0) {
+      a.classList.add('spt-topic-active');
+      a.setAttribute('aria-current', 'page');
+    }
+  });
+
+  if (!document.querySelector('.spt-nav-cta-item')) {
+    var navUl = document.querySelector('#site-navigation ul');
+    if (navUl) {
+      var li = document.createElement('li');
+      li.className = 'spt-nav-cta-item';
+      var a = document.createElement('a');
+      a.href = '/schedule-a-conversation/';
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = 'Schedule a Conversation';
+      li.appendChild(a);
+      navUl.appendChild(li);
+    }
+  }
+});
+</script>
+	<?php
+} );
