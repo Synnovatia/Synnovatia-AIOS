@@ -1,0 +1,44 @@
+PART 1 — functions.php (a replacement, not an addition)
+
+In the search results function you already pasted (synnovatia_render_search_results),
+find this block near the top:
+
+	<div style="background:#0D1F4E; padding:48px 40px; margin-bottom:32px;">
+		<div style="color:#F5C842; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; font-weight:600; margin-bottom:12px;">Notes from the Messy Middle &nbsp;/&nbsp; Search</div>
+		<h1 style="color:#ffffff; font-family:'Fraunces',Georgia,serif; font-size:40px; font-weight:700; margin:0 0 16px 0;">
+			<?php echo $search_term ? 'Results for &ldquo;' . esc_html( $search_term ) . '&rdquo;' : 'Search'; ?>
+		</h1>
+	</div>
+
+Replace that whole block with this (adds the same two-layer wrapper the topic archive
+hero uses — an outer band that goes full-bleed, an inner column that keeps the text
+centered at a normal reading width instead of flush against the browser edges):
+
+	<div style="background:#0D1F4E; padding:48px 40px; margin-bottom:32px;">
+		<div class="spt-hero-inner">
+			<div class="spt-hero-left">
+				<div style="color:#F5C842; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; font-weight:600; margin-bottom:12px;">Notes from the Messy Middle &nbsp;/&nbsp; Search</div>
+				<h1 style="color:#ffffff; font-family:'Fraunces',Georgia,serif; font-size:40px; font-weight:700; margin:0;">
+					<?php echo $search_term ? 'Results for &ldquo;' . esc_html( $search_term ) . '&rdquo;' : 'Search'; ?>
+				</h1>
+			</div>
+		</div>
+	</div>
+
+Everything else in the function stays the same.
+
+---
+
+PART 2 — Additional CSS (append, same as always)
+
+Add this to the end of Appearance > Customize > Additional CSS. The first rule is what
+actually makes the band stretch edge-to-edge (same technique already used for the topic
+archive pages, just scoped to the search page instead); the other two give the new
+.spt-hero-inner/.spt-hero-left wrapper the same sizing those same classes already have
+on topic archives.
+
+body.search .site-main > div:first-child { position: relative; width: 100vw; left: 50%; transform: translateX(-50%); max-width: 100vw; box-sizing: border-box; padding: 0px !important; }
+
+body.search .spt-hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; max-width: 1200px; margin: 0px auto; padding: 48px 40px; box-sizing: border-box; }
+
+body.search .spt-hero-left { flex: 1 1 480px; }
