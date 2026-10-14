@@ -1,0 +1,27 @@
+Paste at the end of Appearance > Customize > Additional CSS.
+
+What this fixes: on a phone, every individual blog post's nav logo crowds right up
+against the hamburger menu icon (confirmed via mobile screenshot — the "SYNNOVATIA"
+wordmark's final letters sit almost underneath the hamburger lines). Every other
+page on the site (About, Work With Me, etc.) shrinks the nav's left/right padding
+from 48px down to 24px below 900px width, which is what gives the logo room — the
+blog post's own nav CSS never got that same mobile padding reduction, so it keeps
+the full 48px desktop padding at phone widths, squeezing everything into a much
+tighter space.
+
+Find this existing rule (it's already in Additional CSS, added for the mobile nav
+link/CTA hide):
+
+  @media (max-width: 900px) {
+    body.single-post .spt-nav-links, body.single-post .spt-nav-cta { display: none; }
+  }
+
+Add one line inside it, so it reads:
+
+  @media (max-width: 900px) {
+    body.single-post .spt-nav-links, body.single-post .spt-nav-cta { display: none; }
+    body.single-post .spt-nav { padding: 0 24px; }
+  }
+
+That's the only change — matches the 24px mobile padding every other page already
+uses, so the logo and hamburger line up the same way sitewide.
