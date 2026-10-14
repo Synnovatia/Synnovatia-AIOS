@@ -8,6 +8,26 @@
 
 ---
 
+## 2026-10-14
+
+### Blog Search Results Page Rebuilt to Match the Rest of the Site
+- Jackie reported that `https://www.synnovatia.com/?s=scient+` — WordPress's native search results page, reached via the search box on the Perspective (blog) page — had never been touched by the redesign: plain-text "Synnovatia" header, default sidebar full of old category links, bare excerpt list with "Read more" links.
+- Built a new `template_redirect` template (`synnovatia_render_search_results`), the same mechanism already used for the Topic Archive pages — navy/gold hero band + the shared "Blog Post Card" pattern (post 11896) for each result, no sidebar, scoped to `post_type => 'post'` only (flagged to Jackie: pages like About aren't included in results, a quick change if wanted later). Paired with Additional CSS copying the Topic Archive pages' nav/logo/button styling onto `body.search`. Deploy sources: `outputs/website-redesign/deploy-ready/2026-10-14-search-results-template-FUNCTIONS-PHP.txt` + `-ADDITIONAL-CSS.txt`.
+- Three more real bugs found and fixed as they surfaced on the live page after Jackie pasted the template:
+  1. Missing branded footer — the existing footer hook only ever covered single posts and the front/All-Posts pages, never `is_search()`. Added a small separate `wp_footer` hook with the same footer markup.
+  2. The old default GeneratePress footer bar ("© 2026 Synnovatia • Built with GeneratePress") was still rendering underneath the new branded one — turned out to be a pre-existing, previously-unnoticed sitewide bug (also present on individual posts, not something this work introduced). Both footers share the class `site-footer` but differ by tag (`div.site-footer` vs. the real `footer.site-footer`), so fixed by hiding the div version specifically, scoped across `body.single-post`, the front page, All Posts, and search.
+  3. The hero band wasn't going full-bleed like it does on every other page — added the same `.spt-hero-inner`/`.spt-hero-left` wrapper plus full-bleed CSS the Topic Archive hero uses.
+- All fixes verified live via cache-bypassed scrapes (DreamHost's server cache repeatedly needed a throwaway `?nocache=N` query string to see the real current state during this work).
+
+### Searching Within a Topic Archive Fixed (Separate Bug, Found While Checking the Above)
+- Jackie asked whether the search page rebuild would also fix a related issue she'd noticed: searching from inside a topic archive page (e.g. `/topic/ownership-entrepreneurship/?s=time`) produced a condensed, squished hero missing the "Search This Topic" box every normal topic archive page has.
+- Root cause, confirmed via Jackie's own Display Rules screenshot plus direct HTML inspection: the existing "Topic Archive Hero" GP Elements hook (which builds the two-column hero + search box via JS) uses GP Premium's built-in "Post Topic Archive" Display Rule condition — and that condition silently stops matching once a search term is also in the URL, even though `is_tax('topic')` is still true the whole time. So the hero fell back to the plain, unstyled default whenever someone searched inside a topic.
+- Fixed by moving that hook's exact style/script content (full-bleed CSS, hero layout, the "Search This Topic" box builder script, nav active-state styling) into `functions.php` as a direct `wp_footer` action gated on `is_tax('topic')` — bypassing GP's own condition entirely — and setting the original GP Elements hook to Draft so it doesn't double up on normal topic archive pages. Source: `outputs/website-redesign/deploy-ready/2026-10-14-topic-archive-hero-search-fix-FUNCTIONS-PHP.txt`.
+- Verified live after Jackie pasted it: the search-within-topic hero now renders the correct two-column layout with a working "Search This Topic" box, matching every normal topic archive page. A duplication check (counting actual rendered `.spt-hero-search`/script/`.spt-nav-cta-item` occurrences in the HTML, not just CSS-selector text matches) confirmed exactly one of each — no double-rendering from the old hook.
+
+### Open for Next Session
+- Jackie separately flagged a "wider navigation band" issue specific to individual blog posts. A fresh live check the same day didn't reproduce anything unusual — needs a clearer, cache-busted screenshot (with the browser URL bar visible) to track down.
+
 ## 2026-10-12
 
 ### Blog Lead Capture: Sign-Up Bands Wired Live, Plus a Real Footer Bug Found and Fixed
