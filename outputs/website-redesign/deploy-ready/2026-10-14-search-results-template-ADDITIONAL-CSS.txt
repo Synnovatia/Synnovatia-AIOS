@@ -1,0 +1,38 @@
+/*
+Paste at the end of Appearance > Customize > Additional CSS.
+
+Companion to the functions.php addition in 2026-10-14-search-results-template-FUNCTIONS-PHP.txt.
+Copies the same nav/header styling already applied to the Topic Archive pages (scoped to
+body.tax-topic) over to the new search results page (scoped to body.search, the body class
+WordPress gives it). Without this, the search page would use the forced real nav menu (fine)
+but with the plain-text "Synnovatia" wordmark and default nav link styling instead of the
+branded logo and Barlow Condensed nav typography the rest of the site uses.
+*/
+
+body.search .main-title a { font-size: 0px; display: inline-block; width: 275px; height: 30px; background-image: url("https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-nav-e1787756796460.png"); background-repeat: no-repeat; background-size: contain; background-position: left center; }
+
+body.search #site-navigation .main-nav ul li a { font-family: "Barlow Condensed", sans-serif !important; font-size: 12px !important; font-weight: 600 !important; letter-spacing: 0.07em !important; text-transform: uppercase !important; color: rgb(68, 68, 65) !important; }
+
+body.search #site-navigation .main-nav ul li a:hover, body.search #site-navigation .main-nav ul li.current-menu-item > a { color: rgb(13, 31, 78) !important; }
+
+body.search h1 { font-size: 48px !important; }
+
+body.search .topic-archive-cta { position: fixed; top: 30px; right: 48px; z-index: 101; font-family: "Barlow Condensed", sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; background: rgb(15, 110, 86); padding: 10px 24px; border-radius: 10px; transition: background 0.2s; color: rgb(255, 255, 255) !important; }
+
+body.search .topic-archive-cta:hover { background: rgb(13, 31, 78); }
+
+body.search.admin-bar .topic-archive-cta { top: 62px; }
+
+@media screen and (max-width: 782px) {
+  body.search.admin-bar .topic-archive-cta { top: 76px; }
+}
+
+body.search #site-navigation .sub-menu { background: rgb(255, 255, 255); border-top: 3px solid rgb(178, 146, 0); box-shadow: rgba(13, 31, 78, 0.14) 0px 14px 32px; min-width: 260px; padding: 10px 0px; z-index: 200; }
+
+body.search #site-navigation .sub-menu li a { white-space: normal; line-height: 1.4; font-family: "Barlow Condensed", sans-serif !important; font-size: 11px !important; font-weight: 600 !important; letter-spacing: 0.08em !important; color: rgb(68, 68, 65) !important; padding: 11px 22px !important; }
+
+body.search #site-navigation .sub-menu li a:hover { background: rgb(247, 246, 242); color: rgb(13, 31, 78) !important; }
+
+@media (max-width: 900px) {
+  body.search .topic-archive-cta { display: none; }
+}

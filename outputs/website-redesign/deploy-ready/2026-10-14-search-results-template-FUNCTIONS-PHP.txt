@@ -1,0 +1,115 @@
+/*
+Paste at the END of the Synnovatia Child theme's functions.php (same file the Topic Archive
+template and the self-healing rewrite-rules snippet already live in) — Appearance > Theme
+File Editor, or SFTP if you prefer not to use the in-admin editor.
+
+What this does: WordPress's native search results page (triggered by the search box on the
+blog — e.g. /?s=scient+) was still running on the raw, untouched default GeneratePress theme:
+plain-text "Synnovatia" header, a right sidebar full of old category links, bare excerpt list
+with "Read more" links. This replaces it with the same navy/gold hero + "Blog Post Card" list
+already used on the six Topic Archive pages, reusing that same pattern (post ID 11896) so
+search results look identical to everything else on the blog. Exact same mechanism as the
+Topic Archive template just above this in the file — template_redirect hook, no sidebar,
+shared Blog Post Card stylesheet.
+
+Scoped to blog posts only (not pages like About or Schedule a Conversation), matching how
+the Topic Archive pages work. Flag it if pages should show up in results too — that's a
+quick change (drop the 'post_type' => 'post' line).
+
+Pair this with the matching Additional CSS block in the companion file
+(2026-10-14-search-results-template-ADDITIONAL-CSS.txt) — paste that into Appearance >
+Customize > Additional CSS. Without it the header will render with the forced real nav
+menu (already fixed sitewide) but with the plain-text wordmark and default nav typography
+instead of the branded logo/Barlow Condensed nav styling the rest of the site uses.
+*/
+
+// Real Search Results template — matches the Topic Archive look (navy/gold hero + Blog
+// Post Card results) instead of WordPress's raw default search template.
+
+add_action( 'wp_enqueue_scripts', 'synnovatia_search_results_styles' );
+function synnovatia_search_results_styles() {
+	if ( is_search() ) {
+		wp_enqueue_style(
+			'synnovatia-blog-post-card',
+			home_url( '/wp-content/uploads/generateblocks/style-11852.css' ),
+			array(),
+			null
+		);
+	}
+}
+
+add_filter( 'generate_sidebar_layout', 'synnovatia_search_results_no_sidebar' );
+function synnovatia_search_results_no_sidebar( $layout ) {
+	if ( is_search() ) {
+		return 'no-sidebar';
+	}
+	return $layout;
+}
+
+add_action( 'template_redirect', 'synnovatia_render_search_results' );
+function synnovatia_render_search_results() {
+	if ( ! is_search() ) {
+		return;
+	}
+
+	$search_term = get_search_query();
+
+	get_header();
+	?>
+	<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+
+	<div style="background:#0D1F4E; padding:48px 40px; margin-bottom:32px;">
+		<div style="color:#F5C842; font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; letter-spacing:1.5px; font-size:13px; font-weight:600; margin-bottom:12px;">Notes from the Messy Middle &nbsp;/&nbsp; Search</div>
+		<h1 style="color:#ffffff; font-family:'Fraunces',Georgia,serif; font-size:40px; font-weight:700; margin:0 0 16px 0;">
+			<?php echo $search_term ? 'Results for &ldquo;' . esc_html( $search_term ) . '&rdquo;' : 'Search'; ?>
+		</h1>
+	</div>
+
+	<style>
+	.gb-loop-item { margin-bottom: 32px !important; }
+	.wp-block-group__inner-container { padding-top: 0 !important; padding-bottom: 0 !important; }
+	</style>
+
+	<?php
+	$paged        = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+	$search_query = new WP_Query( array(
+		'post_type'      => 'post',
+		'posts_per_page' => 8,
+		'paged'          => $paged,
+		's'              => $search_term,
+	) );
+
+	$pattern_content = get_post_field( 'post_content', 11896 );
+
+	if ( $search_query->have_posts() ) :
+		while ( $search_query->have_posts() ) : $search_query->the_post();
+			echo '<div class="gb-loop-item">';
+			echo do_blocks( $pattern_content );
+			echo '</div>';
+		endwhile;
+
+		if ( function_exists( 'wp_pagenavi' ) ) {
+			wp_pagenavi( array( 'query' => $search_query ) );
+		}
+
+		wp_reset_postdata();
+	else :
+		echo '<div style="padding:0 40px 48px; text-align:center;">';
+		echo '<p style="font-family:\'Barlow\',Arial,sans-serif; font-size:17px; color:#444441;">No posts matched your search. Try a different term, or <a href="/business-coaching-blog/" style="color:#0F6E56;">browse everything</a>.</p>';
+		echo '</div>';
+	endif;
+	?>
+
+	</main>
+	</div>
+	<?php
+	get_footer();
+	exit;
+}
+
+add_action( 'generate_after_header', function() {
+	if ( is_search() ) {
+		echo '<a href="/schedule-a-conversation/" class="topic-archive-cta">Schedule a Conversation</a>';
+	}
+} );
