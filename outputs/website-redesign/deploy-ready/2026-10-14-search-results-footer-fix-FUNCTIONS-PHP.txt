@@ -1,0 +1,21 @@
+/*
+Paste at the very end of functions.php, after everything you already added for the search
+results template.
+
+What this fixes: the search results page is showing the old default "© 2026 Synnovatia •
+Built with GeneratePress" bar instead of the real branded footer (logo + phone/email). The
+real footer only fires on single blog posts and the front page/All Posts (see the existing
+wp_footer hook earlier in the file) — it was never extended to the new search page. Rather
+than hunt down and edit that existing hook, this adds a small separate one just for search,
+with the identical footer markup.
+*/
+
+add_action( 'wp_footer', function() {
+	if ( ! is_search() ) {
+		return;
+	}
+	echo '<footer class="site-footer">';
+	echo '<div class="footer-logo"><img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-footer-e1787756917923.png" alt="Synnovatia"></div>';
+	echo '<div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com</div>';
+	echo '</footer>';
+} );
