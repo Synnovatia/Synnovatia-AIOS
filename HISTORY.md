@@ -25,8 +25,14 @@
 - Fixed by moving that hook's exact style/script content (full-bleed CSS, hero layout, the "Search This Topic" box builder script, nav active-state styling) into `functions.php` as a direct `wp_footer` action gated on `is_tax('topic')` — bypassing GP's own condition entirely — and setting the original GP Elements hook to Draft so it doesn't double up on normal topic archive pages. Source: `outputs/website-redesign/deploy-ready/2026-10-14-topic-archive-hero-search-fix-FUNCTIONS-PHP.txt`.
 - Verified live after Jackie pasted it: the search-within-topic hero now renders the correct two-column layout with a working "Search This Topic" box, matching every normal topic archive page. A duplication check (counting actual rendered `.spt-hero-search`/script/`.spt-nav-cta-item` occurrences in the HTML, not just CSS-selector text matches) confirmed exactly one of each — no double-rendering from the old hook.
 
-### Open for Next Session
-- Jackie separately flagged a "wider navigation band" issue specific to individual blog posts. A fresh live check the same day didn't reproduce anything unusual — needs a clearer, cache-busted screenshot (with the browser URL bar visible) to track down.
+## 2026-10-15
+
+### Blog Post Mobile Nav Fixed — "Wider Navigation Band" Issue Resolved
+- Picked up the item left open from 2026-10-14: Jackie's flagged "wider navigation band" on individual blog posts. The desktop check that night hadn't reproduced it, so this session went straight to a mobile screenshot instead — found it immediately. At phone width, the "SYNNOVATIA" logo in the blog post's nav ran right up against the hamburger menu icon, nearly touching it.
+- Root cause, confirmed by comparing raw CSS against the About page's nav: every other custom-nav page on the site shrinks the nav's left/right padding from 48px to 24px below 900px width (that's what gives the logo room on a phone). The blog single-post nav has its own separate CSS block (built via a different mechanism than the sitewide nav) and never got that same mobile padding reduction — it kept the full 48px desktop padding at phone widths, squeezing the logo and hamburger into a much tighter space than everywhere else.
+- Fix: one line added to the existing mobile media query in Additional CSS — `body.single-post .spt-nav { padding: 0 24px; }` — matching the 24px convention already used sitewide. Source: `outputs/website-redesign/deploy-ready/2026-10-15-blog-post-mobile-nav-padding-fix.txt`.
+- Jackie found two near-identical copies of the same `@media (max-width: 900px)` block already sitting in Additional CSS (not something this session introduced) and added the new line to the second one. Confirmed this works fine as-is — CSS doesn't mind the harmless duplication — and suggested consolidating down to one block when convenient, not urgent.
+- Verified live via before/after mobile screenshots, zoomed into the nav region: before, the logo's final letters ran into the hamburger lines; after, there's a clear gap between them. Raw HTML confirmed the new rule is correctly live inside the media query. Full-size screenshots looked similar at a glance (the gap is modest, not dramatic) — the zoomed comparison is what made the fix visible.
 
 ## 2026-10-12
 
