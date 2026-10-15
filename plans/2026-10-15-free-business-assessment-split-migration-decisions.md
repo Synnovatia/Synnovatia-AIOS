@@ -4,7 +4,9 @@
 >
 > **All three decisions confirmed by Jackie, 2026-10-15:** one shared HubSpot form tagged by stage (Option A), two separate Thank You pages (Option B), build-as-draft-then-swap go-live (Option B). Ready for execution.
 >
-> **Status: build complete, awaiting Jackie's paste-and-verify pass (2026-10-15).** All five deploy-ready files are written: the draft routing page, both path pages (each with a real HubSpot form embed), and both Thank You pages (one new, one an update to the existing live page). The "tagged by stage" mechanism turned out simpler than a new hidden field — the SAME HubSpot form is embedded on both path pages, each with its own `onFormSubmitted` script sending the visitor to its own Thank You page, so which page a lead submitted from is itself the stage signal (visible in HubSpot's page-of-submission tracking) — no new HubSpot field needed. Step-by-step build order: `outputs/website-redesign/deploy-ready/2026-10-15-free-assessment-split-BUILD-INSTRUCTIONS.md`.
+> **Status: build complete, awaiting Jackie's paste-and-verify pass (2026-10-15).** All five deploy-ready files are written: the draft routing page, both path pages (each with a real HubSpot form embed), and both Thank You pages (one new, one an update to the existing live page). The "tagged by stage" mechanism turned out simpler than a new hidden field — the SAME HubSpot form is embedded on both path pages, each with its own `onFormSubmitted` script sending the visitor to its own Thank You page, so which page a lead submitted from is itself the stage signal (visible in HubSpot's page-of-submission tracking) — no new HubSpot field needed. Step-by-step build order: `outputs/website-redesign/deploy-ready/2026-10-15-free-assessment-split-BUILD-INSTRUCTIONS.md` (also sent as a PDF).
+>
+> **Step 1 done, same day:** Jackie uploaded both PDFs to the WordPress Media Library and sent their real URLs — verified live (200, correct page counts, correct titles). Both Thank You page deploy files already have the real URLs filled in, no placeholders left for step 4.
 
 ---
 

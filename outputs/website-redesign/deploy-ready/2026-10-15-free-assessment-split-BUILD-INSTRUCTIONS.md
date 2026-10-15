@@ -2,13 +2,13 @@
 
 Five files, five real steps. Do them in this order — each one depends on the one before it.
 
-## 1. Upload the two new PDFs
+## 1. Upload the two new PDFs — done (2026-10-15)
 
-Upload both to the WordPress Media Library:
-- `outputs/core-business-assessment/2026-10-09-core-business-assessment-stage1-core-fillable.pdf`
-- `outputs/core-business-assessment/2026-10-09-core-business-assessment-stage2-expansion-fillable.pdf`
+Both uploaded and verified live:
+- Stage I: `https://www.synnovatia.com/wp-content/uploads/2026/10/core-business-assessment-stage1-core-fillable.pdf` (200, 14 pages, correct title)
+- Stage II: `https://www.synnovatia.com/wp-content/uploads/2026/10/core-business-assessment-stage2-expansion-fillable.pdf` (200, 11 pages, correct title)
 
-Copy the two resulting Media Library URLs — you'll need them in step 4.
+Both deploy-ready Thank You files already have these real URLs filled in — no more placeholders to swap in step 4.
 
 ## 2. Check the HubSpot form's Follow-up setting
 
@@ -25,8 +25,8 @@ Both use a Custom HTML block (not Classic). Publish both — safe to do since no
 
 ## 4. Build the two Thank You pages
 
-- **Existing page** `/thank-you-core-business-assessment/` → replace its Custom HTML block content with `2026-10-15-thank-you-core-UPDATED-DEPLOY.html`, swapping `[STAGE-1-PDF-URL]` for the real Media Library URL from step 1.
-- **New page**, slug `thank-you-business-expansion-assessment` → paste `2026-10-15-thank-you-expansion-DEPLOY.html`, swapping `[STAGE-2-PDF-URL]` for its real Media Library URL. Set this page to **noindex** via the DreamHost SEO Toolkit's Advanced tab (matching the existing Core Thank You page).
+- **Existing page** `/thank-you-core-business-assessment/` → replace its Custom HTML block content with `2026-10-15-thank-you-core-UPDATED-DEPLOY.html` (the real PDF URL is already in it, nothing to swap).
+- **New page**, slug `thank-you-business-expansion-assessment` → paste `2026-10-15-thank-you-expansion-DEPLOY.html` (real PDF URL already in it too). Set this page to **noindex** via the DreamHost SEO Toolkit's Advanced tab (matching the existing Core Thank You page).
 
 Re-run the two test submissions from step 3 — this time confirm you land on a real page with the right PDF link, and that the download actually works.
 
