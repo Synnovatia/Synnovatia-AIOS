@@ -8,6 +8,14 @@
 
 ---
 
+## 2026-10-14 to 2026-10-15
+
+### New Weekly Training Program
+- Jackie found two days of schoolwork first and midday workouts raised her stress and overwhelm, made the 10/13 run/walk a struggle, and cut her morning water; sleep was good but recovery low. She skipped Day A on 10/14 for a 30-minute recovery walk and went back to morning workouts. A deload for the week of 10/19 was offered and declined for now.
+- New weekly program, a trial aimed at keeping current health metrics while reducing exhaustion (recorded in `personal/workout-plan.md`): Mon run/walk, Tue Day A, Wed rest + yoga (15-20 min), Thu Day B, Fri rest + yoga, Sat long walk or hike (the Wednesday hike and Saturday walk merged), Sun Day C. Arm exercises back to 2 sets, one new core exercise per strength day (Stability Ball Crunch, Reverse Crunch, and the core-and-balance exercise), about 60 minutes per strength session, morning workouts, water before each warm-up, and a deload every 5-6 weeks. Review after 3-4 weeks against waist, body fat, strength, effort scores, HRV, and how Jackie feels.
+- Bridging week, at Jackie's request so she could hike Thursday: Thu 10/15 hike, Fri 10/16 Day B (worksheet `personal/workout-logs/2026-10-16-day-b-worksheet.pdf`, with 2-set arms and the new Reverse Crunch), Sat rest + yoga, Sun Day C; full program from Mon 10/19. Google Calendar updated: recurring Rest Day + Yoga events on Wednesdays (from 10/21) and Fridays (from 10/23), this week's occurrences moved, and Sun 10/18 Day C restored. **Open:** the old recurring Wednesday hike series must be ended from 10/21 by hand in Google Calendar ("This and following events"); the connector can't do it.
+- Also logged: 10/15 hike (3.53 mi in 88 min, ~24:56/mile, hillier route at a relaxed pace). Answered which body areas the program trains, and added two ab exercises to the plan from next week at Jackie's request. Suggested a lemon-garlic sheet-pan chicken thigh, potato, and broccolini dinner (not saved to the recipe rotation).
+
 ## 2026-10-13
 
 ### Training
