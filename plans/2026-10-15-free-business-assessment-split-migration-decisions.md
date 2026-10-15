@@ -1,6 +1,8 @@
 # Free Business Assessment: migrating to the Stage I/II split flow
 
 > Written 2026-10-15. Scoping doc — the build itself hasn't started. This lays out what's already done, what's left, and the real decisions that need Jackie's call before work can start, so the next session can move straight to execution instead of re-litigating these mid-build.
+>
+> **All three decisions confirmed by Jackie, 2026-10-15:** one shared HubSpot form tagged by stage (Option A), two separate Thank You pages (Option B), build-as-draft-then-swap go-live (Option B). Ready for execution.
 
 ---
 
@@ -24,21 +26,21 @@ Three other spots on the site link to this page and assume the current single-as
 
 ## The three real decisions
 
-### 1. How does a visitor get the right PDF — one form or two?
+### 1. How does a visitor get the right PDF — one form or two? **→ Decided: Option A, one shared form**
 
 - **Option A — one shared HubSpot form, tagged by path.** Both "Start Stage I" and "Start Stage II" buttons on the routing page submit to the same existing form, with a hidden field recording which stage was chosen. Least HubSpot setup work; keeps using the form already built. Downside: any future stage-specific email/workflow needs extra branching logic inside one form's automation.
 - **Option B — two separate HubSpot forms**, one per stage, each able to carry its own workflow/welcome email from the start. More setup work on the HubSpot side (a new form to build), but cleaner separation if you ever want to message Stage I and Stage II leads differently.
 
 **My instinct:** Option A — it's less new HubSpot work, and nothing about the current plan calls for different automated emails per stage yet. But this is your call since it affects how you can segment and follow up with these leads later.
 
-### 2. One Thank You page or two?
+### 2. One Thank You page or two? **→ Decided: Option B, two separate pages**
 
 - **Option A — one shared Thank You page** that serves the correct PDF based on which path the visitor came from (a URL parameter like `?stage=1` vs `?stage=2`, or reading the hidden form field). Less to build and maintain, but needs a small bit of conditional logic.
 - **Option B — two separate Thank You pages**, near-duplicates of the current one, each hardcoded to its own PDF. Dead simple to build (copy the existing page's pattern twice), no conditional logic, but two pages to keep in sync if the closing CTA or design ever changes.
 
 **My instinct:** Option B — matches how every other paired thing on this site has been built (two mastermind pages, two Apply pages, two assessment PDFs already), and avoids introducing new conditional logic into a page that's never needed it before.
 
-### 3. How does this go live — edit in place, or build-and-swap?
+### 3. How does this go live — edit in place, or build-and-swap? **→ Decided: Option B, build as draft then swap**
 
 - **Option A — edit the live page directly.** Faster, but the page is mid-edit and potentially broken for however long it takes to paste and verify.
 - **Option B — build the new routing page as a draft/preview page first, verify it end-to-end, then swap it onto the real `/free-business-assessment/` slug** (same archive-and-promote pattern used for the blog front page and All Posts page go-live on 2026-08-23).
