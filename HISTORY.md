@@ -34,6 +34,15 @@
 - Jackie found two near-identical copies of the same `@media (max-width: 900px)` block already sitting in Additional CSS (not something this session introduced) and added the new line to the second one. Confirmed this works fine as-is — CSS doesn't mind the harmless duplication — and suggested consolidating down to one block when convenient, not urgent.
 - Verified live via before/after mobile screenshots, zoomed into the nav region: before, the logo's final letters ran into the hamburger lines; after, there's a clear gap between them. Raw HTML confirmed the new rule is correctly live inside the media query. Full-size screenshots looked similar at a glance (the gap is modest, not dramatic) — the zoomed comparison is what made the fix visible.
 
+## 2026-10-15 (continued)
+
+### Minor Polish Closed Out: Duplicate CSS Confirmed Removed, Mobile Overflow No Longer Reproducing, and a Real Noindex Bug Found and Fixed
+- Picked up the two remaining low-priority items flagged the day before. The duplicate `@media (max-width: 900px)` block in Additional CSS (from the nav padding fix) was already cleaned up — only one copy of the `.spt-nav-links` rule exists live now.
+- The six topic archives' ~12px mobile horizontal overflow (flagged back in the 2026-09-11 mobile audit, never fixed) no longer reproduces: the Blog Post Card pattern's `176px 1fr` grid now has a `@media (max-width: 767px) { grid-template-columns: 1fr; }` collapse rule in place, and a full-page mobile screenshot of the Strategy & Planning archive shows a clean single-column stack with no clipped content. Couldn't measure exact scrollWidth without a real browser from this session, but found nothing to fix.
+- **Real, previously-unknown bug found while checking that page:** all six `/topic/<slug>/` archives were noindexed — confirmed via robots meta on all six, and confirmed isolated to just the topic archives (About and the blog front page both checked clean). Checked `HISTORY.md` for when noindex was deliberately set — the only documented decision (2026-09-25) covers four specific utility pages (both thank-you pages, Client Service Agreement, Client Cafe Client Profile); the topic archives were never part of that call, so this was unintentional.
+- Root cause, found via a screenshot of DreamHost SEO Toolkit → Search Appearance → Taxonomies → Meta settings: a single sitewide "Do you want to show taxonomies in search result?" toggle was set to No, hiding every taxonomy archive (all six Topic terms) from search engines at once — a blanket default, not a per-page choice. Jackie flipped it to Yes and saved.
+- Verified live on all six archives: noindex is gone everywhere, each now shows only the standard `max-image-preview:large` robots directive. These pages — real content, 8 posts each, linked from "Browse by Topic" sitewide — are indexable again after being invisible to search since (at latest) the 9/25 SEO pass, possibly since the taxonomy itself was built.
+
 ## 2026-10-12
 
 ### Blog Lead Capture: Sign-Up Bands Wired Live, Plus a Real Footer Bug Found and Fixed
