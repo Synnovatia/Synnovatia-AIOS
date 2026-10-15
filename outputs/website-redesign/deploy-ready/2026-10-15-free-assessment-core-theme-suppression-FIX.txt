@@ -1,0 +1,18 @@
+Paste at the end of Appearance > Customize > Additional CSS.
+
+What this fixes: the Core path page (page ID 12514, /free-business-assessment-core/)
+is showing the site's default GeneratePress theme header, nav, and sidebar
+underneath the custom content pasted into it — same root cause every brand-new
+custom page on this site has needed fixing (About, Work With Me, Schedule a
+Conversation, etc., back when each was first built): the theme's own chrome
+needs to be told to hide on this specific page, scoped by its page ID.
+
+body.page-id-12514 #masthead, body.page-id-12514 #site-navigation, body.page-id-12514 div.site-footer, body.page-id-12514 footer.site-info, body.page-id-12514 .entry-header, body.page-id-12514 .featured-image.page-header-image { display: none !important; }
+
+body.page-id-12514 .site, body.page-id-12514 .site-content, body.page-id-12514 .content-area, body.page-id-12514 .site-main, body.page-id-12514 article.type-page, body.page-id-12514 .entry-content { max-width: none !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
+
+body.page-id-12514 .widget-area.sidebar { display: none !important; }
+
+After pasting and publishing, reload the live page (use a throwaway query string
+like ?v=1 to skip the cache) — the default header/nav/sidebar should disappear
+and the custom navy hero band should go full width.

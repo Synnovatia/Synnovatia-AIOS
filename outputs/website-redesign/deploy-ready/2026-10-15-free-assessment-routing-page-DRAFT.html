@@ -11,10 +11,19 @@ every other page redesign on this site — build as a draft first, verify, then
 swap onto the real slug once everything below it is also built and working).
 
 Add a Custom HTML block (not Classic) to that draft page and paste everything
-below this comment block into it. Nothing else needs to be added — no separate
-Additional CSS edit, no theme override snippet. The nav/footer/hero classes used
-below (.content-header, .content-h1, .nav-cta, .btn-primary, etc.) are already
-live sitewide in Additional CSS from earlier pages, so they'll just work.
+below this comment block into it. The nav/footer/hero CLASSES used below
+(.content-header, .content-h1, .nav-cta, .btn-primary, etc.) are already live
+sitewide in Additional CSS, so they'll render correctly once the theme's own
+default chrome is hidden — but that hiding IS page-specific, not automatic
+(found this the hard way on the Core path page — see
+2026-10-15-free-assessment-core-theme-suppression-FIX.txt). This draft page
+will get its own new page ID; if you want to properly preview it before the
+final swap, you may need the same kind of per-page-ID suppression CSS added
+temporarily. It's lower priority here since this content ultimately gets
+copied onto the real /free-business-assessment/ page, which already has its
+own suppression CSS from when it was first built — so this draft's own ID
+suppression isn't a permanent requirement, just helpful for checking the
+draft looks right before promoting it.
 
 The two option cards below link to the two path pages — update those two hrefs
 once you've created those pages (deploy files 2026-10-15-free-assessment-path-core-DEPLOY.html
