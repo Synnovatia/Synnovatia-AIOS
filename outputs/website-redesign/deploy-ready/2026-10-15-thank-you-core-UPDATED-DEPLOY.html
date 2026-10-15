@@ -1,0 +1,102 @@
+<!--
+DEPLOY NOTES (read before pasting, skip this comment block)
+
+This REPLACES the Custom HTML block content on the EXISTING live page at
+/thank-you-core-business-assessment/ (page ID 4912). Two real changes from
+what's there now:
+
+1. The download button now points at the NEW Stage I PDF (70-item "The Core
+   Business Assessment") instead of the old single 100-item PDF. Before
+   pasting this, upload the file at
+   outputs/core-business-assessment/2026-10-09-core-business-assessment-stage1-core-fillable.pdf
+   to the WordPress Media Library, then replace [STAGE-1-PDF-URL] below with
+   the real URL the Media Library gives you.
+
+2. The nav was stale — it still said "Work With Me" with no "One-to-One
+   Coaching" item (missed during the September nav rename since this is a
+   standalone utility page). Fixed to match the current nav used everywhere
+   else on the site.
+
+Don't touch this page's title, slug, or its noindex setting — all three are
+already correct and should stay as-is (this is meant to stay hidden from
+search, same as the Expansion Thank You page being built alongside it).
+
+IMPORTANT: Don't paste this live until the new Core path page's HubSpot form
+is actually wired and tested, since this page is where that form sends people.
+-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+
+<nav>
+  <a href="https://www.synnovatia.com/" class="nav-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-nav-e1787756796460.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://www.synnovatia.com/about/">About</a></li>
+    <li><a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+      <ul class="nav-dropdown">
+        <li><a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a></li>
+        <li><a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a></li>
+        <li><a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a></li>
+  </ul>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav-panel" id="mobileNavPanel">
+  <a href="https://www.synnovatia.com/about/">About</a>
+  <a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a>
+  <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+  <div class="mobile-sub">
+    <a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a>
+    <a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a>
+    <a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a>
+  </div>
+  <a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta-mobile">Schedule a Conversation</a>
+</div>
+
+<section class="content-header">
+  <p class="content-eyebrow">Thank You</p>
+  <h1 class="content-h1">An honest view of where you actually stand.</h1>
+</section>
+
+<section class="content-body-section">
+  <div class="content-body">
+    <a href="[STAGE-1-PDF-URL]" class="btn-primary" target="_blank" rel="noopener">Click Here to Download Your Core Business Assessment</a>
+  </div>
+</section>
+
+<section class="cta-close-section">
+  <p class="content-eyebrow">Next Step</p>
+  <h2 class="cta-close-h2">Ready to put the results to work?</h2>
+  <p class="cta-close-body">Let's talk through what you found.</p>
+  <a href="https://calendly.com/synnovatia/45-minute-strategic-business-conversation" class="btn-primary" target="_blank" rel="noopener">Open the Scheduler</a>
+</section>
+
+<footer class="site-footer-custom">
+  <div class="footer-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-footer-e1787756917923.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com &middot; <a href="https://www.synnovatia.com/privacy-policy/" rel="noopener">Privacy Policy/Terms of Service</a></div>
+</footer>
+
+<script>
+(function() {
+  var toggle = document.getElementById('navToggle');
+  var panel = document.getElementById('mobileNavPanel');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', function() {
+    var isOpen = panel.classList.toggle('open');
+    toggle.classList.toggle('active', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+})();
+</script>

@@ -1,0 +1,135 @@
+<!--
+DEPLOY NOTES (read before pasting, skip this comment block)
+
+This is the NEW routing page — the first screen of the two-path flow. It replaces
+the old single-assessment page's content, but DO NOT paste this onto the live
+/free-business-assessment/ page yet.
+
+STEP 1 of the build: create a brand-new, unpublished WordPress Page with a
+throwaway slug, e.g. "free-business-assessment-new-draft" (same pattern used for
+every other page redesign on this site — build as a draft first, verify, then
+swap onto the real slug once everything below it is also built and working).
+
+Add a Custom HTML block (not Classic) to that draft page and paste everything
+below this comment block into it. Nothing else needs to be added — no separate
+Additional CSS edit, no theme override snippet. The nav/footer/hero classes used
+below (.content-header, .content-h1, .nav-cta, .btn-primary, etc.) are already
+live sitewide in Additional CSS from earlier pages, so they'll just work.
+
+The two option cards below link to the two path pages — update those two hrefs
+once you've created those pages (deploy files 2026-10-15-free-assessment-path-core-DEPLOY.html
+and -path-expansion-DEPLOY.html). Suggested slugs:
+  /free-business-assessment-core/
+  /free-business-assessment-expansion/
+If you use different slugs, just change the two hrefs below to match.
+
+Do NOT publish/promote this draft onto the real /free-business-assessment/ slug
+until both path pages and both Thank You pages are built and verified end to end.
+-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+
+<nav>
+  <a href="https://www.synnovatia.com/" class="nav-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-nav-e1787756796460.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://www.synnovatia.com/about/">About</a></li>
+    <li><a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+      <ul class="nav-dropdown">
+        <li><a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a></li>
+        <li><a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a></li>
+        <li><a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a></li>
+  </ul>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+  <button class="nav-toggle" id="navToggleFba" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav-panel" id="mobileNavPanelFba">
+  <a href="https://www.synnovatia.com/about/">About</a>
+  <a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a>
+  <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+  <div class="mobile-sub">
+    <a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a>
+    <a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a>
+    <a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a>
+  </div>
+  <a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta-mobile">Schedule a Conversation</a>
+</div>
+
+<section class="content-header">
+  <p class="content-eyebrow">Free Assessment</p>
+  <h1 class="content-h1">Where are you in the Messy Middle?</h1>
+  <p class="fba-hero-sub">Most owners hit two walls on their way to growing and scaling their business. The first one feels like you're still finding your footing. The second feels like the business is running you.</p>
+</section>
+
+<section class="content-body-section">
+  <div class="content-body" style="max-width:680px;">
+    <p style="font-weight:600;">Answer one question and we'll send the assessment built for where you actually are.</p>
+    <h2 style="margin-top:36px;">Which one feels more like you right now?</h2>
+  </div>
+
+  <div class="fba-routing-options">
+    <a href="https://www.synnovatia.com/free-business-assessment-core/" class="fba-routing-option">
+      <p>"Things feel inconsistent. Growth has stalled. Honestly, I can't figure out the fix."</p>
+      <span class="fba-option-arrow">This is me &rarr;</span>
+    </a>
+    <a href="https://www.synnovatia.com/free-business-assessment-expansion/" class="fba-routing-option">
+      <p>"I'm buried. Everything runs through me. There's no room to breathe."</p>
+      <span class="fba-option-arrow">This is me &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer-custom">
+  <div class="footer-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-footer-e1787756917923.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com &middot; <a href="https://www.synnovatia.com/privacy-policy/" rel="noopener">Privacy Policy/Terms of Service</a></div>
+</footer>
+
+<style>
+.fba-hero-sub { font-size: 18px; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 580px; margin: 24px auto 0; }
+.fba-routing-options { display: flex; gap: 24px; max-width: 820px; margin: 36px auto 0; flex-wrap: wrap; }
+.fba-routing-option {
+  flex: 1 1 340px;
+  display: block;
+  background: var(--warm-white);
+  border: 2px solid #EAEAEA;
+  border-radius: 10px;
+  padding: 32px 28px;
+  text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.fba-routing-option:hover { border-color: var(--teal); box-shadow: 0 10px 28px rgba(13,31,78,0.08); }
+.fba-routing-option p { font-size: 16px; line-height: 1.7; color: var(--body-text); margin: 0; }
+.fba-option-arrow {
+  display: inline-block; margin-top: 18px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal);
+}
+@media (max-width: 900px) {
+  .fba-routing-options { flex-direction: column; }
+}
+</style>
+
+<script>
+(function() {
+  var toggle = document.getElementById('navToggleFba');
+  var panel = document.getElementById('mobileNavPanelFba');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', function() {
+    var isOpen = panel.classList.toggle('open');
+    toggle.classList.toggle('active', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+})();
+</script>

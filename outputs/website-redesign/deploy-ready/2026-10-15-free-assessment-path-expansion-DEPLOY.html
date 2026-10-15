@@ -1,0 +1,118 @@
+<!--
+DEPLOY NOTES (read before pasting, skip this comment block)
+
+This is the Stage II ("Expansion") path page — Screen 2B of the new assessment
+flow. Same pattern as the Core path page (2026-10-15-free-assessment-path-core-DEPLOY.html)
+— brand-new page, safe to create and publish directly, nothing links to it yet.
+
+STEP: create a new WordPress Page at slug "free-business-assessment-expansion"
+(or your preferred slug — match the routing page's second option card href).
+Add a Custom HTML block and paste everything below this comment block into it.
+
+Same HubSpot form as the Core path page (reused, not a new form) — this page's
+embed script redirects to the Expansion Thank You page instead of the Core one,
+which is the only difference in the form setup between the two path pages.
+
+Reminder from the Core page's notes: confirm the form's Follow-up setting in
+HubSpot is NOT set to a URL redirect, so only this page's own script controls
+where the visitor lands.
+-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+
+<nav>
+  <a href="https://www.synnovatia.com/" class="nav-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-nav-e1787756796460.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://www.synnovatia.com/about/">About</a></li>
+    <li><a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+      <ul class="nav-dropdown">
+        <li><a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a></li>
+        <li><a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a></li>
+        <li><a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a></li>
+  </ul>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+  <button class="nav-toggle" id="navToggleFbaExp" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav-panel" id="mobileNavPanelFbaExp">
+  <a href="https://www.synnovatia.com/about/">About</a>
+  <a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a>
+  <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+  <div class="mobile-sub">
+    <a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a>
+    <a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a>
+    <a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a>
+  </div>
+  <a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta-mobile">Schedule a Conversation</a>
+</div>
+
+<section class="content-header">
+  <p class="content-eyebrow">Business Expansion Assessment</p>
+  <h1 class="content-h1">You've outgrown the system and strategy that got you here.</h1>
+  <p class="fba-hero-sub">Answer fifty questions across ten areas in about twenty-five minutes. At the end you'll know which systems need to catch up first and which ones are already strong enough to carry more weight.</p>
+</section>
+
+<section class="content-body-section">
+  <div class="content-body">
+    <p>Most owners in this range are stretched thinner than they'd admit. They're still in the middle of every decision, and good people are walking out the door. As volume climbs, service begins to slip. Growth does that. It keeps asking for a new version of the business, and the systems and strategy haven't caught up to this one yet.</p>
+  </div>
+
+  <div class="fba-form-card">
+    <div id="hubspotFormExpansion"></div>
+    <p class="fba-form-note">You'll get the Business Expansion Assessment as a direct download.</p>
+  </div>
+</section>
+
+<footer class="site-footer-custom">
+  <div class="footer-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-footer-e1787756917923.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com &middot; <a href="https://www.synnovatia.com/privacy-policy/" rel="noopener">Privacy Policy/Terms of Service</a></div>
+</footer>
+
+<style>
+.fba-hero-sub { font-size: 18px; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 600px; margin: 20px auto 0; }
+.fba-form-card {
+  max-width: 480px; margin: 48px auto 0; background: var(--lt-navy, #E8ECF5);
+  border-radius: 10px; padding: 44px 40px;
+}
+.fba-form-note { font-size: 13px; color: var(--body-text); opacity: 0.6; text-align: center; margin-top: 16px; }
+@media (max-width: 900px) {
+  .fba-form-card { padding: 32px 24px; }
+}
+</style>
+
+<script src="https://js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "110120",
+    formId: "a22d11ca-5f45-4545-b1c0-49e71c12b0a1",
+    target: "#hubspotFormExpansion",
+    onFormSubmitted: function() {
+      window.location.href = "https://www.synnovatia.com/thank-you-business-expansion-assessment/";
+    }
+  });
+</script>
+
+<script>
+(function() {
+  var toggle = document.getElementById('navToggleFbaExp');
+  var panel = document.getElementById('mobileNavPanelFbaExp');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', function() {
+    var isOpen = panel.classList.toggle('open');
+    toggle.classList.toggle('active', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+})();
+</script>

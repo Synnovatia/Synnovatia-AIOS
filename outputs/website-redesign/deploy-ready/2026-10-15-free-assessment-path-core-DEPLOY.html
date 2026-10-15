@@ -1,0 +1,123 @@
+<!--
+DEPLOY NOTES (read before pasting, skip this comment block)
+
+This is the Stage I ("Core Business Development") path page — Screen 2A of the
+new assessment flow. This is a brand-new page, nothing exists at this slug yet,
+so it's safe to create and publish directly (nothing links to it until the
+routing page goes live).
+
+STEP: create a new WordPress Page at slug "free-business-assessment-core"
+(or your preferred slug — just make sure it matches the href used on the
+routing page's first option card). Add a Custom HTML block and paste everything
+below this comment block into it.
+
+BEFORE PASTING: one required check in HubSpot — open the "Free Business
+Assessment" form (portal 110120, form ID a22d11ca-5f45-4545-b1c0-49e71c12b0a1)
+and confirm its Options tab's "Follow-up" setting is NOT set to "redirect to a
+page." Leave it on the default inline thank-you message (or anything that
+isn't a URL redirect). The script below handles the redirect itself — if
+HubSpot's own redirect is also set, the two can conflict.
+
+This same form is reused on BOTH path pages (not a new form) — each page's own
+embed script tells it where to send the visitor afterward, so one form, two
+destinations.
+-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
+
+<nav>
+  <a href="https://www.synnovatia.com/" class="nav-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-nav-e1787756796460.png" alt="Synnovatia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://www.synnovatia.com/about/">About</a></li>
+    <li><a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a></li>
+    <li class="has-dropdown">
+      <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+      <ul class="nav-dropdown">
+        <li><a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a></li>
+        <li><a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a></li>
+        <li><a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a></li>
+  </ul>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta">Schedule a Conversation</a>
+  <button class="nav-toggle" id="navToggleFbaCore" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav-panel" id="mobileNavPanelFbaCore">
+  <a href="https://www.synnovatia.com/about/">About</a>
+  <a href="https://www.synnovatia.com/the-messy-middle/">The Messy Middle</a>
+  <a href="https://www.synnovatia.com/work-with-me/">Work Together</a>
+  <div class="mobile-sub">
+    <a href="https://www.synnovatia.com/work-with-me/">One-to-One Coaching</a>
+    <a href="https://www.synnovatia.com/mastermind-for-the-messy-middle/">Mastermind for the Messy Middle</a>
+    <a href="https://www.synnovatia.com/seven-figure-forum/">Seven Figure Forum</a>
+  </div>
+  <a href="https://www.synnovatia.com/business-coaching-blog/">Perspective</a>
+  <a href="https://www.synnovatia.com/schedule-a-conversation/" class="nav-cta-mobile">Schedule a Conversation</a>
+</div>
+
+<section class="content-header">
+  <p class="content-eyebrow">Core Business Assessment</p>
+  <h1 class="content-h1">Your business is up and running. Make sure it's built for growth.</h1>
+  <p class="fba-hero-sub">Answer seventy questions across ten areas in about twenty minutes. At the end you'll know which part of the business needs attention first and which parts are fine to leave alone for now.</p>
+</section>
+
+<section class="content-body-section">
+  <div class="content-body">
+    <p>Most owners at this stage are underpricing without realizing it. They're running cash flow more on instinct than on a plan. Days get eaten by whatever's loudest instead of what actually moves things forward. That's normal in this stage. It's also the kind of thing that's easy to fix once you see it clearly.</p>
+  </div>
+
+  <div class="fba-form-card">
+    <div id="hubspotFormCore"></div>
+    <p class="fba-form-note">You'll get The Core Business Assessment as a direct download.</p>
+  </div>
+</section>
+
+<footer class="site-footer-custom">
+  <div class="footer-logo">
+    <img src="https://www.synnovatia.com/wp-content/uploads/2026/08/synnovatia-logo-footer-e1787756917923.png" alt="Synnovatia">
+  </div>
+  <div class="footer-copy">&copy; Synnovatia 2026 &middot; Strategic Business Coaching &middot; 310.519.1947 &middot; info@synnovatia.com &middot; <a href="https://www.synnovatia.com/privacy-policy/" rel="noopener">Privacy Policy/Terms of Service</a></div>
+</footer>
+
+<style>
+.fba-hero-sub { font-size: 18px; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 600px; margin: 20px auto 0; }
+.fba-form-card {
+  max-width: 480px; margin: 48px auto 0; background: var(--lt-navy, #E8ECF5);
+  border-radius: 10px; padding: 44px 40px;
+}
+.fba-form-note { font-size: 13px; color: var(--body-text); opacity: 0.6; text-align: center; margin-top: 16px; }
+@media (max-width: 900px) {
+  .fba-form-card { padding: 32px 24px; }
+}
+</style>
+
+<script src="https://js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "110120",
+    formId: "a22d11ca-5f45-4545-b1c0-49e71c12b0a1",
+    target: "#hubspotFormCore",
+    onFormSubmitted: function() {
+      window.location.href = "https://www.synnovatia.com/thank-you-core-business-assessment/";
+    }
+  });
+</script>
+
+<script>
+(function() {
+  var toggle = document.getElementById('navToggleFbaCore');
+  var panel = document.getElementById('mobileNavPanelFbaCore');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', function() {
+    var isOpen = panel.classList.toggle('open');
+    toggle.classList.toggle('active', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+})();
+</script>
