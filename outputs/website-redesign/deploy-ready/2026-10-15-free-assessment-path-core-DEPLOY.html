@@ -11,16 +11,20 @@ STEP: create a new WordPress Page at slug "free-business-assessment-core"
 routing page's first option card). Add a Custom HTML block and paste everything
 below this comment block into it.
 
-BEFORE PASTING: one required check in HubSpot — open the "Free Business
-Assessment" form (portal 110120, form ID a22d11ca-5f45-4545-b1c0-49e71c12b0a1)
-and confirm its Options tab's "Follow-up" setting is NOT set to "redirect to a
-page." Leave it on the default inline thank-you message (or anything that
-isn't a URL redirect). The script below handles the redirect itself — if
-HubSpot's own redirect is also set, the two can conflict.
+BEFORE PASTING: one required check in HubSpot — open the Core Business
+Assessment form (portal 110120, form ID a22d11ca-5f45-4545-b1c0-49e71c12b0a1,
+confirmed by Jackie 2026-10-15) and confirm its Options tab's "Follow-up"
+setting is NOT set to "redirect to a page." Leave it on the default inline
+thank-you message — set it to: "Thanks — pulling up your assessment now."
+The script below handles the redirect itself — if HubSpot's own redirect is
+also set, the two can conflict.
 
-This same form is reused on BOTH path pages (not a new form) — each page's own
-embed script tells it where to send the visitor afterward, so one form, two
-destinations.
+Update 2026-10-15: Jackie has two separate existing HubSpot forms, one for
+each stage, not one shared form as originally planned. This Core page uses
+its own dedicated form (above); the Expansion path page uses its own
+dedicated form (formId ee747f7e-5c95-402a-a85e-949da71e5f68) — see that
+file's own notes. Each form needs its own Follow-up setting checked
+separately now, not just one shared check.
 -->
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">

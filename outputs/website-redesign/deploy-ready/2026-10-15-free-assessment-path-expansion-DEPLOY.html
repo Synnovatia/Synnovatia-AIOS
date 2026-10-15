@@ -9,13 +9,16 @@ STEP: create a new WordPress Page at slug "free-business-assessment-expansion"
 (or your preferred slug — match the routing page's second option card href).
 Add a Custom HTML block and paste everything below this comment block into it.
 
-Same HubSpot form as the Core path page (reused, not a new form) — this page's
-embed script redirects to the Expansion Thank You page instead of the Core one,
-which is the only difference in the form setup between the two path pages.
+Update 2026-10-15: Jackie has two separate existing HubSpot forms, not one
+shared form — a dedicated "Expansion" form (formId ee747f7e-5c95-402a-a85e-949da71e5f68)
+distinct from the Core form used on the other path page. This file is already
+updated to use the correct Expansion form ID below.
 
-Reminder from the Core page's notes: confirm the form's Follow-up setting in
-HubSpot is NOT set to a URL redirect, so only this page's own script controls
-where the visitor lands.
+Reminder from the Core page's notes: confirm the Expansion form's own
+Follow-up setting in HubSpot is NOT set to a URL redirect, so only this page's
+own script controls where the visitor lands. Also set its thank-you message
+to: "Thanks — pulling up your assessment now." (same text used on the Core
+form, since the redirect happens almost immediately either way).
 -->
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap">
@@ -96,7 +99,7 @@ where the visitor lands.
 <script>
   hbspt.forms.create({
     portalId: "110120",
-    formId: "a22d11ca-5f45-4545-b1c0-49e71c12b0a1",
+    formId: "ee747f7e-5c95-402a-a85e-949da71e5f68",
     target: "#hubspotFormExpansion",
     onFormSubmitted: function() {
       window.location.href = "https://www.synnovatia.com/thank-you-business-expansion-assessment/";

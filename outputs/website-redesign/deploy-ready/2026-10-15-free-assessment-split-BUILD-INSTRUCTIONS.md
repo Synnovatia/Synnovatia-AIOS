@@ -10,9 +10,15 @@ Both uploaded and verified live:
 
 Both deploy-ready Thank You files already have these real URLs filled in — no more placeholders to swap in step 4.
 
-## 2. Check the HubSpot form's Follow-up setting
+## 2. Check the Follow-up setting on both HubSpot forms — done (2026-10-15)
 
-Open the "Free Business Assessment" form (portal 110120, form ID `a22d11ca-5f45-4545-b1c0-49e71c12b0a1`) in HubSpot. On its Options tab, make sure "Follow-up" is **not** set to "redirect to a page." Leave it on the default thank-you message, or anything that isn't a URL redirect. This form gets embedded on both new path pages, and each page's own code handles sending people to the right Thank You page — if HubSpot's own redirect is also set, the two can fight each other.
+Turns out there are two separate forms, not one shared form — the plan's updated to match:
+- **Core form** (portal 110120, form ID `a22d11ca-5f45-4545-b1c0-49e71c12b0a1`)
+- **Expansion form** (portal 110120, form ID `ee747f7e-5c95-402a-a85e-949da71e5f68`)
+
+Both deploy-ready path page files are already updated to use their own correct form. On **each** form's Options tab, make sure "Follow-up" is **not** set to "redirect to a page" — leave it on the inline thank-you message, set to: "Thanks — pulling up your assessment now." Each path page's own code handles sending people to the right Thank You page; if either form's own redirect is also set, it can fight the page's script.
+
+Set both forms' lists to **active** (not static) in the workflow, so future submissions keep landing in the right segment automatically.
 
 ## 3. Build the two path pages (safe to publish directly — nothing links to them yet)
 

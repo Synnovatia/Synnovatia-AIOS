@@ -7,6 +7,8 @@
 > **Status: build complete, awaiting Jackie's paste-and-verify pass (2026-10-15).** All five deploy-ready files are written: the draft routing page, both path pages (each with a real HubSpot form embed), and both Thank You pages (one new, one an update to the existing live page). The "tagged by stage" mechanism turned out simpler than a new hidden field — the SAME HubSpot form is embedded on both path pages, each with its own `onFormSubmitted` script sending the visitor to its own Thank You page, so which page a lead submitted from is itself the stage signal (visible in HubSpot's page-of-submission tracking) — no new HubSpot field needed. Step-by-step build order: `outputs/website-redesign/deploy-ready/2026-10-15-free-assessment-split-BUILD-INSTRUCTIONS.md` (also sent as a PDF).
 >
 > **Step 1 done, same day:** Jackie uploaded both PDFs to the WordPress Media Library and sent their real URLs — verified live (200, correct page counts, correct titles). Both Thank You page deploy files already have the real URLs filled in, no placeholders left for step 4.
+>
+> **Real correction to decision #1, same day:** turns out Jackie already had two separate HubSpot forms (Core: `a22d11ca-5f45-4545-b1c0-49e71c12b0a1`, Expansion: `ee747f7e-5c95-402a-a85e-949da71e5f68`), not the single shared form the "tagged by stage" plan assumed. Since both already existed, this is strictly simpler than the original plan — each path page now embeds its own dedicated form instead of one form doing double duty. Both path page deploy files updated to match. Both forms' thank-you message set to "Thanks — pulling up your assessment now."; both set to active (not static) list membership so future submissions keep auto-segmenting correctly.
 
 ---
 
