@@ -383,7 +383,9 @@
       "mcp__0ee5a64b-1dad-4451-add3-295813eee06a__tool_guidance",
       "Bash(awk '/<body/{f=1} f' outputs/morning-brief/brief.html)",
       "Bash(awk '/^## Send Performance Log/{f=1} f' context/hubspot-marketing.md)",
-      "Bash(awk 'NR>1 && /^## /{exit} {print}')"
+      "Bash(awk 'NR>1 && /^## /{exit} {print}')",
+      "Bash(python3 -I -c ' *)",
+      "Bash(python3 -I -)"
     ]
   }
 }

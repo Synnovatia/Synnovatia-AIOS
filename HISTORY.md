@@ -8,12 +8,19 @@
 
 ---
 
+## 2026-10-16
+
+### Weekly LinkedIn Metrics
+- Logged the 10/10-10/16 check-in in `data/linkedin-metrics/log.csv`: profile views 59 (down 4), impressions 220 (down 14% from 257), followers 5,780 (down 1, no new followers all week), search appearances 35 (flat), engagements 7. Added the Aggregate Analytics export's 13 per-post snapshots to `post-performance.csv` and 7 daily rows to `daily-engagement.csv`. Three older posts that appeared in the export (Ghosts of Sicily/Honolulu, Some Men Climb Everest) are labeled pre-cadence.
+- Top post by impressions: "Have you ever compared what your software" (Mon 10/12, 56). Top by engagement: the 10/7 workout post (3), still drawing a week later. Cadence read: Wednesday still leads (17.5 avg impressions, 11 posts); Monday (14.0, 13 posts) moved past Friday (12.2, 13 posts) on the strength of two posts on 10/12.
+- Also in this commit: daily dashboard, morning brief, and key-metrics refreshes, plus the note in `personal/workout-plan.md` that Jackie ended the old Wednesday hike series herself (confirmed 2026-10-15).
+
 ## 2026-10-14 to 2026-10-15
 
 ### New Weekly Training Program
 - Jackie found two days of schoolwork first and midday workouts raised her stress and overwhelm, made the 10/13 run/walk a struggle, and cut her morning water; sleep was good but recovery low. She skipped Day A on 10/14 for a 30-minute recovery walk and went back to morning workouts. A deload for the week of 10/19 was offered and declined for now.
 - New weekly program, a trial aimed at keeping current health metrics while reducing exhaustion (recorded in `personal/workout-plan.md`): Mon run/walk, Tue Day A, Wed rest + yoga (15-20 min), Thu Day B, Fri rest + yoga, Sat long walk or hike (the Wednesday hike and Saturday walk merged), Sun Day C. Arm exercises back to 2 sets, one new core exercise per strength day (Stability Ball Crunch, Reverse Crunch, and the core-and-balance exercise), about 60 minutes per strength session, morning workouts, water before each warm-up, and a deload every 5-6 weeks. Review after 3-4 weeks against waist, body fat, strength, effort scores, HRV, and how Jackie feels.
-- Bridging week, at Jackie's request so she could hike Thursday: Thu 10/15 hike, Fri 10/16 Day B (worksheet `personal/workout-logs/2026-10-16-day-b-worksheet.pdf`, with 2-set arms and the new Reverse Crunch), Sat rest + yoga, Sun Day C; full program from Mon 10/19. Google Calendar updated: recurring Rest Day + Yoga events on Wednesdays (from 10/21) and Fridays (from 10/23), this week's occurrences moved, and Sun 10/18 Day C restored. **Open:** the old recurring Wednesday hike series must be ended from 10/21 by hand in Google Calendar ("This and following events"); the connector can't do it.
+- Bridging week, at Jackie's request so she could hike Thursday: Thu 10/15 hike, Fri 10/16 Day B (worksheet `personal/workout-logs/2026-10-16-day-b-worksheet.pdf`, with 2-set arms and the new Reverse Crunch), Sat rest + yoga, Sun Day C; full program from Mon 10/19. Google Calendar updated: recurring Rest Day + Yoga events on Wednesdays (from 10/21) and Fridays (from 10/23), this week's occurrences moved, and Sun 10/18 Day C restored. The old recurring Wednesday hike series had to be ended from 10/21 by hand in Google Calendar, since the connector can't do it; Jackie did this herself (confirmed 2026-10-15).
 - Also logged: 10/15 hike (3.53 mi in 88 min, ~24:56/mile, hillier route at a relaxed pace). Answered which body areas the program trains, and added two ab exercises to the plan from next week at Jackie's request. Suggested a lemon-garlic sheet-pan chicken thigh, potato, and broccolini dinner (not saved to the recipe rotation).
 
 ## 2026-10-13
