@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-10-17
+
+### Free Business Assessment Migration CLOSED OUT — Found and Fixed a Real Redirect-Rule Bug That Was Sending Live Traffic to the Archived Page
+- Picked up the last three open items from the migration: pasting the "Messy&nbsp;Middle" hero wrap fix live, setting real SEO meta on the routing page, and the final link sweep.
+- The hero fix and SEO title set correctly on the first try, verified live. The SEO **description** didn't take the first time — it was still showing the page's own raw CSS (the "content extract" fallback bug this site has on custom-HTML pages, documented earlier) instead of real text. Jackie went back in and entered it properly; verified live afterward.
+- **Real bug found during the link sweep: `/free-business-assessment/` was 301-redirecting to the archived old page on every plain visit**, despite the correct new routing page being confirmed live and correct underneath (verified repeatedly via cache-bypassed fetches). Jackie reported seeing the archived page in Safari even after purging cache on the pages that link to it (Home, Messy Middle) — which doesn't purge the *target* page's own cache, a distinction worth remembering for next time. Root cause, found by comparing the plain-URL response against a cache-busted one: WordPress's Redirection plugin auto-creates a rule whenever a page's slug changes (its SEO-preservation feature, seen before on this site) — when the old single-assessment page's slug was changed to the archived one during the Step 5 swap, this auto-created a rule sending `/free-business-assessment/` → the archived URL, which then took priority over the newly-promoted page at that same URL. The rule's "exact match" query-parameter setting meant any `?v=`/`?nocache` query string happened to dodge it — which is why every earlier cache-busted check in this session looked correct while plain visits kept hitting the archived page. (This is the same auto-redirect-on-slug-change gotcha documented on 2026-08-23 and 2026-09-03/06 elsewhere in this file — worth checking for immediately next time a page swap doesn't behave as expected, rather than assuming it's caching.)
+- Jackie found and disabled the rule via Tools → Redirection (confirmed via its strikethrough display). One more cache purge on the specific page (not the pages linking to it) cleared the stale cached 301 response, and `/free-business-assessment/` now resolves directly with no redirect — verified live, 200, correct title/description, no redirect chain.
+- Final link sweep completed and verified: the homepage hero soft-CTA, The Messy Middle page's inline CTA, and the blog post assessment band (checked on the DiB Part 2 post) all correctly point to `/free-business-assessment/`, which now serves the new routing page cleanly.
+- **This closes out the Free Business Assessment two-path migration project.** All 5 pages live, verified end to end, all existing site links intact, no open items remaining. `plans/2026-10-15-free-business-assessment-split-migration-decisions.md` and `CLAUDE.md` updated to reflect done status.
+
 ## 2026-10-14
 
 ### Blog Search Results Page Rebuilt to Match the Rest of the Site
