@@ -8,6 +8,16 @@
 
 ---
 
+## 2026-10-16 to 2026-10-18
+
+### Training: First Week of the New Program, and a New Exercise Lineup
+- Logged 10/16 Day B (70 min, effort 4.1, lowest Day B effort since scores began), 10/17 recovery walk and 30-min yoga, and 10/18 Day C (55 min, effort 4.0, inside the 60-minute target). Single-Leg RDL stepped up to 15 lb after three clean sessions; Bird Dog and Dead Bug moved to a 2-second hold; Suitcase March added as the core-and-balance exercise (no band anchor yet for the Pallof Press).
+- Lower abs: Jackie couldn't yet curl her hips for the Reverse Crunch, so she did Heel Taps (3 x 10/side). A four-stage lower-ab progression is now in `personal/workout-plan.md`. After yoga she found her plank and ab work weak; likely causes and a plan (shorter, harder planks; retest around 11/7) are recorded there too.
+- Left arm and shoulder: a pull in the left deltoid on the Lateral Raise (10/16) and slight irritation on the Incline Press and Band Pull-Apart (10/18). Rows with the elbow close to the side have been fine. Jackie prefers 3 sets for arm exercises, so worksheets return to 3.
+- New exercise lineup from Tue 10/20 at Jackie's request (boredom after three months, and to shift muscle emphasis), recorded as "Block 2" in the plan: Day A Step-Up, Wall Push-Up (in place of a floor press Jackie ruled out for the arm), Single-Leg Calf Raise, Dumbbell Hip Thrust, Stability Ball Crunch; Day B Suitcase Deadlift, Side Lunge, Two-Arm Dumbbell Row, Band External Rotation; Day C Incline Push-Up, Seated Band Row. Worksheets built for 10/18 Day C and 10/20 Day A.
+- 10/18 weigh-in in `personal/health-goals.md`: 144 lbs (lowest since 9/6), waist 30.5 in, body fat 39.2% (last week's 38.2% looks like scale noise), HRV 30 (highest since mid-September).
+- Also suggested an easy turkey-vegetable lasagna and a pan-seared sea bass with sides (neither saved to the recipe rotation).
+
 ## 2026-10-16
 
 ### Weekly LinkedIn Metrics
