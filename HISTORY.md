@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-10-22
+
+### Website: PHP Security Fix Checked, PHP Upgraded to 8.3
+- Jackie asked whether the site was exposed to the critical PHP flaws disclosed 10/21 ("PHP2Shell," CVE-2026-109618 and CVE-2026-109619). DreamHost had mitigations in place before disclosure and rolled out the fix; Site Health showed PHP 8.2.35, a patched release. The site doesn't expose its PHP version publicly, and the server blocks hidden folders (.git, .env, .svn all return 403).
+- PHP 8.2 loses security support at the end of 2026, so the site moved to PHP 8.3 the same day (DreamHost panel → synnovatia.com → Settings → PHP Version, with "revert if incompatible" left on). The custom child-theme code (2026-10-05 functions.php reference copy) was checked first for anything 8.3/8.4 removes; nothing found. WordPress 7.1.3, plugins, and themes were all current. A named on-demand backup was made first (DreamHost → Content → Restore Site → Backups; DreamPress also keeps ~16 days of nightly backups around 1:30am).
+- Verified before and after from outside: 15 key pages (homepage, core pages, both mastermind pages, blog front/all posts, two topic archives incl. page 2, a post, both assessment pages, privacy policy) all 200 with no PHP errors, the REST API answering, and wp-admin redirecting normally. Jackie confirmed the homepage looks right while logged in.
+- Found along the way, not acted on: WordPress Updates says "This site appears to be under version control. Automatic updates are disabled" (a version-control folder is in the site files, likely from the staging publish), so core security releases won't auto-install; check Dashboard → Updates monthly until it's removed. The old staging site (synnovatiacom.stage.site) still exists in DreamHost; never publish it to live. messymiddle.synnovatia.com (a redirect) has no SSL certificate.
+
+### Website: Automatic WordPress Updates Turned Back On
+- The "under version control" message on Dashboard → Updates came from a `.git` folder in the live site's main folder (`/home/wp_fee8rw/synnovatia.com/.git`, dated 9/11, copied over by the staging publish). Nothing in the home folder above it or elsewhere was involved. `.gitconfig` in the home folder is a settings file and doesn't trigger the check.
+- Jackie renamed it to `.git-old` in DreamHost's File Manager instead of deleting it, so it can be undone. The name still starts with a dot, so the server keeps blocking it (403). The "After PHP 83" backup from 10:21am the same day covers it. `.gitignore` was left alone. The folder can be deleted later.
+- Verified: Dashboard → Updates now reads "This site is automatically kept up to date with each new version of WordPress," and 10 key pages plus wp-login all return 200 with no PHP errors.
+- Noticed, not acted on: two database export files (`synnovatia_com_2_2026-09-26_*.sql`, about 76MB each) sit in the home folder. They aren't web-reachable, but they're full copies of the database and could be deleted to tidy up.
+
 ## 2026-10-16 to 2026-10-18
 
 ### Training: First Week of the New Program, and a New Exercise Lineup

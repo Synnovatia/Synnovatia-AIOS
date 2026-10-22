@@ -113,6 +113,14 @@ All three are awaiting reply; no next step until they respond, per this doc's "r
 - No retirements or closures among active candidates this round. (Maxine Fuller, already excluded as retired, had a warm catch-up conversation with Jackie around 10/3 — relationship only.)
 - No application close date or invitation send date is set yet for the January cohort. 13.5 weeks remain until Jan 8. By the `context/mastermind-launch.md` timeline, the invitation would send around Nov 27 (the day after Thanksgiving) and applications would close around Dec 25 — both dates need moving earlier.
 
+**2026-10-20 (status check):** Reconciled every named candidate against `roster.csv`, `outreach_log.csv`, Gmail (trash-inclusive, since 10/4), and Fathom.
+- **Amy Hage's referral now has a name: Jill Curtis** (Leaderful LLC, jill@leaderful.llc; personal jillsassocurtis@gmail.com). Amy introduced her 10/6 after talking with her about the mastermind that morning; Jill booked a 45-minute Strategic Conversation via Calendly for **Fri 10/9, 11:00am Pacific**. No Fathom recording or follow-up email found, so whether the call happened is unconfirmed. Not in `roster.csv` (never a client), so nothing logged.
+- **No replies from any other candidate since 10/5.** New sends 10/19, both already in the roster: Elyse Koenig (follow-up on the "checking in" thread with the Calendly link, after no reply to 10/3) and Jill Cohen (fresh "Thinking of you, Jill" note).
+- **Jo Lynn Deal still holds the canceled October dates** from the 9/24 "Mastermind?" invitation; no correction email found since.
+- Untouched: Elizabeth Teliz-McQuarrie, Christine Meshell, Meridith Powell.
+- No retirements, closures, or other status changes this round.
+- January cohort: invitation send and application close dates still unset. 11.4 weeks remain until Jan 8 (T-6 invite ≈ Nov 27, T-2 close ≈ Dec 25 by the launch timeline). Nothing was logged via `log_outreach.py` this round because there were no new outcomes to verify.
+
 ---
 
 ## What the data could and couldn't tell us
